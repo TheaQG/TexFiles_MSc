@@ -1,0 +1,181 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper, hmargin={2cm, 2.5cm}, vmargin={2.5cm, 2.5cm}]{geometry}  
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsfonts,amssymb,wasysym}
+\usepackage{graphicx, wrapfig}
+\usepackage{caption}
+\usepackage{tabularx}
+\usepackage{subcaption}
+\usepackage{mathrsfs}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{appendix}
+\usepackage{etoolbox}
+\usepackage{booktabs}
+\usepackage{gensymb}
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+\BeforeBeginEnvironment{appendices}{\clearpage}
+% Custom colors
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+\usepackage{listings}
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+		language=Python,
+		basicstyle=\ttm,
+		otherkeywords={self},             % Add keywords here
+		keywordstyle=\ttb\color{deepblue},
+		emph={MyClass,__init__},          % Custom highlighting
+		emphstyle=\ttb\color{deepred},    % Custom highlighting style
+		stringstyle=\color{deepgreen},
+		frame=tb,                         % Any extra options here
+		showstringspaces=false            % 
+}}
+
+% Python environment
+\lstnewenvironment{python}[1][]
+{
+	\pythonstyle
+	\lstset{#1}
+}
+{}
+
+\newcommand\pythonexternal[2][]{{
+		\pythonstyle
+		\lstinputlisting[#1]{#2}}}
+
+% Python for inline
+\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}
+
+
+\title{ECM, DEP and chemical profiling}
+\author{Thea Quistgaard}
+\date{Master Thesis 2020/2021}
+
+\begin{document}
+\maketitle
+Electrical conductivity measurements (ECM), dielectric profiling (DEP) and chemical profiling are three ways of analyzing an ice core to examine the past temperatures, climate and atmospheric composition. Some of these methods are sensitive to violent volcanic eruptions, which makes it possible to use known eruptions visible in the ice cores as volcanic horizons, and thus making dating of the ice core more precise and absolute.
+\begin{itemize}
+	\item \textbf{DEP}
+	\item \textbf{ECM}
+	\item \textbf{Chemical composition}
+\end{itemize}
+
+\section{ACIDITY OF POLAR ICE CORES IN RELATION TO ABSOLUTE DATING, PAST VOLCANISM AND RADIO-ECHOES\\ C. U. Hammer (1980) (ECM)}
+\textbf{Summary of abstract} Hammer presents a method for detecting annual stratification and layers of high acidity (volcanic eruptions) in ice cores. The method is based on the relationship between $\text{H}_3\text{O}^+$ concentration, aka pH, of melted samples and the electrical current between two electrodes moved along the ice cores length. The conductivity of the ice arises from the initial current in the build-up of space charges. Well-known historical volcanic  eruptions are marked in the ice. The existence of internal radio echo\footnotemark layers is explained due to high acidity layers. \\
+\footnotetext[1]{Radio echo sounding (or radioglaciology) is the study of ice sheet thickness and rock bottom conditions through radar. Internal reflections needs to be considered, and thus the acidic profile of an ice core is also of great importance to radioglaciology.}
+
+Higher levels of acid impurity concentration ($\text{H}_3 \text{O}^+$ concentration) are due to volcanic eruptions. Large amounts of volcanic gases, i.e. $\text{SO}_2$, in the atmosphere oxidizes and combines with water to form acid, i.e. sulphuric acid, which is the washed out of the air due to precipitation. Thus it is made possible to recognize volcanic horizons in ice cores, and - if the location of the eruption is known - from the amount of acid, the magnitude of the eruption can also be estimated.\\
+Volcanic activity may estimated by one of the two following ways:
+\begin{itemize}
+	\item Measuring the specific conductivity profile of the melted ice core samples.
+	\item Measuring the pH profile.
+\end{itemize}
+This article describes a technique to create the pH profile.
+\subsection{Technique}
+Two electrodes with a potential difference are placed on the ice under examination. A current, induced by the electric potential and the acid balance in the ice sample, can be measured. The current reading can then be transformed into acidity by a calibration curve which relates the current, in $\mu$A, to the acidity, in $\mu$equivalents $\text{H}_3\text{O}^+$ per kilogram. The acidity is derived from pH measurements of melted ice core samples and corrected for $\text{CO}_2$ induced ions. 
+The relation between acidity [$\text{H}^+$] (corrected for $\text{CO}_2$ induced $\text{H}^+$) and current $I$ can be expressed in two ways:
+\begin{itemize}
+	\item $[H^+] = (0.017\, I^2 + 1.2) \mu \text{equiv. H}^+ /\text{kg}$\\
+	without a 50\% correction for $\text{CO}_2$ surplus.
+	\item $[H^+] = (0.045\, I^{1.73}) \mu \text{equiv. H}^+ /\text{kg}$\\
+	with a 50\% correction for $\text{CO}_2$ surplus.
+\end{itemize}
+The salt concentration in the ice can be estimated from measurements of the specific conductivity $\sigma$ of the melted samples. The salt contribution hereto can be expressed as:
+\begin{equation}
+	\sigma_s = \sigma - \sigma(\text{H}^+) - \sigma(X^-) - \sigma(\text{HCO}_3^-)
+\end{equation}
+where the three later terms correspond to the contributions from $\text{H}^+$(through pH measurements) and its anions\footnotemark, $\text{HCO}_3^-$ and any other anions $X^-$. The anion concentration will be equal to the cation concentration, which in this case is only $\text{H}^+$ concentration. Disregarding low acidity samples, the concentration of $\text{HCO}_3^-$ is negligible and thus  $\text{concentration}(X^-) \approx \text{concentration}(\text{H}^+)$. 
+The current is thus heavily influenced on/determined by the $\text{H}^+$ concentration, and the salt concentration has little influence.
+\footnotetext[2]{Anions are molecules losing a number of electrons to become negatively charged. Cations are molecules that gain a number of electrons to become positively charged.}
+
+\subsection{Discussion of the method}
+Not of importance.
+\subsection{Results}
+\subsubsection{Absolute dating}
+Absolute dating of the electric profiles is determined through a $\delta^{18}\text{O}$ profile. The high summer $\delta$ values match higher currents. The acidity is thus higher in summer than in winter snow, due to release of $\text{H}_2 \text{S}$ from the air and the intensity of light for its oxidation is higher in summer than in winter. Other factors contribute, but what is of the essence is that this seasonal variability is visible in the profiles.
+High acidities in layers deposited soon after historically well known volcanic eruptions is also a feature which allows for a more precise absolute dating.
+\subsubsection{Volcanoes}
+A number of different reason can contribute to the signal from a volcanic eruption to be lost in the ice core, but a number of detectable volcanic eruptions have been presented in this article.
+\subsubsection{Internal radio-echo layers}
+High acidity of layers containing volcanic fall-out influence the dielectric constant of ice, so that these layers may be a possible explanation to the internal reflection horizons found in radio-echo sounding.
+\subsection{Conclusion}
+Most, if not all, eruptions from the northern hemispheric volcanoes can be detected through a dielectric profiling method of moving two electrodes across a piece of ice.
+
+
+\section{A NEW TECHNIQUE FOR DIELECTRIC LOGGING OF ANTARCTIC ICE CORES \\ Moore and Paren (1987) (DEP)}
+\textbf{Summary of Abstract} A new system for dielectric profiling of ice cores is presented. This method is shown to obtain detailed dielectric parameters comparable to those obtained by conventional methods.
+
+Radio echo sounding has proven a valuable technique to investigating ice thickness and rock-bottom conditions by radar analysis. Internal reflection during this method may be due to variations in the dielectric absorption in the kHz region. Here the profiling of ice cores is examined in the range 20 Hz to 300 kHz.
+
+\section{DIELECTRIC STRATIGRAPHY OF ICE: A NEW TECHNIQUE FOR DETERMINING TOTAL IONIC CONCENTRATIONS IN POLAR ICE CORES \\ Moore, Mulvaney and Paren (1989) (DEP)}
+\textbf{Summary of Abstract} Demonstrates for the first time how acids and salts plays a decisive role in the determination of the electrical behavior of ice. From the dielectric response of the ice core, the total ionic concentration can be determined.
+
+From radar sounding a natural reflective behavior of the internal ice core was discovered. This points to natural dielectric variability within the ice. These variations can be explained by differences in chemical composition in the ice, and is closely related to the acid and salt concentrations of the ice.
+
+Previously, it has not been possible to observe these variations of concentrations without melting the ice, but a method was developed to characterize the chemical content of ice without melting it, the Electrical Conductivity Method (ECM), Hammer (1980). ECM is a powerful stratigraphic technique which has been used to identify deposition of acids following volcanic eruptions and the annual oscillations in chemical concentrations through Greenlandic precipitation changes.
+
+For ECM, a freshly cut ice surface is needed on which two electrodes are drawn with a high (~kV) voltage applied. Then the current flowing between the two electrodes will be related to the acid content and thermal history of the ice, as these affect the dielectric properties of the ice, but is independent on the salt concentration. A drawback of this method is that a fresh piece of ice needs to be prepared for each measurement and the variation in pressure of the electrodes onto the ice causes great uncertainties. 
+
+Dielectric Profiling (DEP) technique has the advantage over the ECM that no direct contact between ice and electrodes is needed, and the ice can stay in its protective polythene (plastic) sleeve. The method is easily repeated with a low voltage of only about 1 V. The dielectric response is measured by a sweeping of the AF-LF frequency range for the ice-polythene system. The thin plastic sleeves acts as an electrical blocking layer but at LF the conductivity of the composite system is within a few percentage of the intrinsic behavior of the ice, and at HF-VHF frequencies it also approximates well enough. The conductivity of ice at the HF-VHF range is assigned the symbol $\sigma_{\infty}$, where $\infty$ denotes a frequency much higher than the relaxation frequency, $\text{f}_{\text{r}}$, of the dominant dispersion of the system. Both $\text{f}_{\text{r}}$ and $\sigma_{\infty}$ display a clear chemical signal, despite a varying contact between electrodes, polythene and ice.
+
+For further analysis the core has also been chemically analyzed for $\text{Na}^+$, $\text{Mg}^{2+}$, $\text{Cl}^-$, $\text{SO}_4^{2-}$ and $\text{NO}_3^-$. From this analysis a number of parameters that can be used to evaluate the response of the dielectric parameters measured.
+\begin{itemize}
+	\item The salt parameter, which represents the total marine cation concentration, is calculated with the assumed marine ratios as:
+	\begin{equation}
+		[\text{salt}] = 1.05 ([\text{Na}^+] + [\text{Mg}^{2+}])
+	\end{equation}
+	\item $\text{XSO}_4$ is the excess sulphate, which represents the sulphate concentration above which is expected if the salt and sulphate ions were in normal sea salt ratios. Excess sulphate is essentially sulphuric acid, which is the main acidic component of the ice.
+	\item The strong acid content of the ice has been calculated as(assuming no other ions present in significant quantities):
+	\begin{equation}
+		[\text{acid}] = [\text{Cl}^-] + [\text{SO}_4^{2-}] + [\text{NO}_3^-] - 1.05 ([\text{Na}^+] + [\text{Mg}^{2+}])
+	\end{equation}
+\end{itemize}
+From data, it can be seen that acid and salt concentration peaks clearly affect $\sigma_{\infty}$ and $\text{f}_{\text{r}}$. The relationship between salt and acid and the two dielectric parameters have been derived through non-linear regression analysis. In this paper the linear responses for the DEP at -22\degree C were:
+\begin{equation}
+	\sigma_{\infty} = (0.39\pm 0.01)[\text{salt}] + (1.43\pm 0.05)[\text{acid}] + (12.7\pm 0.3)
+\end{equation}
+with 76.6 \% variance
+\begin{equation}
+	\text{f}_{\text{r}} = (440\pm 11)[\text{salt}] + (612\pm 65)[\text{acid}] + (8200\pm 400)
+\end{equation}
+with 68.4 \% variance. $\sigma_{\infty}$ is measured in $\mu\text{S}/\text{m}$, $\text{f}_{\text{r}}$ in Hz and [acid] and [salt] in $\mu\text{Eq}/l$.
+The total ionic concentration of the ice core is strongly linked to the dielectric parameters, and a regression between the total anion concentration and the dielectric parameters gives:
+\begin{equation}
+	[\text{anions}] = [\text{salt}] + [\text{acid}] = 0.022\sigma_{\infty}^{1.89} + 10^{-6}\text{f}_{\text{r}}^{1.61} - 0.2
+\end{equation}
+with 86.7 \% variance.
+
+The DEP complements the ECM technique by not only reacting to acids alone, as ECM does, but responds to both neutral salts and acids.
+The acid term is here associated with the DC conductivity, as acids are also detected by ECM. The dielectric dependence on salts is consistent with one Bjerrum L defect\footnotemark affecting every one or two salt ions in the ice, indicating that a large fraction of the neutral salt is incorporated into the ice lattice.
+\footnote[3]{A Bjerrum defect is a crystallographic defect specific to ice, partly responsible for the electrical properties of ice. Usually a hydrogen bond will normally have one proton, but with a Bjerrum defect it will have either two protons (D) or no proton (L).}
+
+The article concludes that DEP techniques are sensitive to salt concentrations and allows for identification of periods of major storms and open seas. This is important for paleo climate research along with identification of volcanic eruptions which is made possible through ECM, which reacts with acids.
+
+\section{CHEMICAL EVIDENCE IN POLAR ICE CORES FROM DIELECTRIC PROFILING\\ J. C. Moore (1990)}
+Same as the above.
+
+States a relation between ECM current I and acidity at -22\degree C approximately as:
+\begin{equation}
+	[\text{H}^+] = 0.084\, I^{1.73}
+\end{equation}
+and gives two equations which relates salt concentration with electrical parameters, thus allowing for rapid analysis of ice using only electrical techniques like ECM and DEP:
+\begin{equation}
+	[\text{salt}] = 0.02\sigma_{\infty}^{1.89} + 10^{-6}\, \text{f}_{\text{r}}^{1.61} - 0.084\, I^{1.73}
+\end{equation}
+\begin{equation}
+	[\text{salt}] = \frac{\sigma_{\infty} - 0.120\, I^{1.73} - 12.7}{0.39}
+\end{equation}
+\section{Master Thesis: DIELECTRIC PROFILING OF ALPINE ICE CORES AS ASSISTANCE FOR GROUND PENETRATING RADAR \\ M. Hackel (2013)}
+
+
+
+
+
+
+\end{document}

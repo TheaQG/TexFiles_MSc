@@ -1,0 +1,385 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper, hmargin={2cm, 2.5cm}, vmargin={2.5cm, 2.5cm}]{geometry}  
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsfonts,amssymb,wasysym}
+\usepackage{graphicx, wrapfig}
+\usepackage{caption}
+\usepackage{tabularx}
+\usepackage{subcaption}
+\usepackage{mathrsfs}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{appendix}
+\usepackage{etoolbox}
+\usepackage{gensymb}
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+\BeforeBeginEnvironment{appendices}{\clearpage}
+% Custom colors
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+\usepackage{listings}
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+		language=Python,
+		basicstyle=\small\ttm,
+		otherkeywords={self},             % Add keywords here
+		keywordstyle=\ttb\color{deepblue}\emph\small,
+		emph={MyClass,__init__},          % Custom highlighting
+		emphstyle=\ttb\color{deepred},    % Custom highlighting style
+		stringstyle=\color{deepgreen},
+		frame=tb,                         % Any extra options here
+		showstringspaces=false            % 
+}}
+
+% Python environment
+\lstnewenvironment{python}[1][]
+{
+	\pythonstyle
+	\lstset{#1}
+}
+{}
+
+\newcommand\pythonexternal[2][]{{
+		\pythonstyle
+		\lstinputlisting[#1]{#2}}}
+
+% Python for inline
+\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}
+
+
+\title{NOTES: Community Firn Model Notes}
+\author{Thea Quistgaard}
+\date{Master Thesis 2020/2021}
+
+\begin{document}
+\maketitle
+
+\section{diffusivity\_vas.py}
+File containing a number of classes, to compute and calculate different diffusion parameters.
+\begin{itemize}
+	\item \pythoninline{class Porosity()}\\
+	Computes porosity, closed and open, for a given rho-array. 
+	Includes constants $\rho_{\text{cl}} = 830$ and $\rho_{\text{ice}} = 917$. \\
+	Contains four methods and an \pythoninline{__init__}:
+	\begin{itemize}
+		\item \pythoninline{def s(self, rho)}\\
+		Computes porosity as
+		\begin{equation}
+			s = 1 - \frac{\rho}{\rho_{\text{ice}}}
+		\end{equation}
+		
+		\item \pythoninline{def s_cl(self, rho)}\\
+		Computes the closed porosity (not close-off), but porosity at which fluid flow is no longer possible.
+		\begin{equation}
+			s_{\text{closed	}} = \rho \, e^{75 \cdot\left(\frac{\rho}{\rho_{\text{cl}}} - 1\right)}
+		\end{equation}
+		(Schwander 1989)
+		
+		\item \pythoninline{def s_op(self, rho)}\\
+		Calculates the open porosity, i.e. the difference between $s$ and $s_{\text{cl}}$.
+		\begin{equation}
+			s_{\text{op}} = s - s_{\text{cl}}
+		\end{equation}
+		\item \pythoninline{def show_all(self, rho)}\\
+		Function that plots all porosities versus density
+	\end{itemize}
+	
+	\item \pythoninline{class TortuosityInv()}
+	Computes the inverted tortuosity $\frac{1}{\tau}$ as an array on the basis of porosity and density, through different methods, presented in various articles.\\
+	Resulting array is clipped (values higher than $a=0$ is set equal to $a$)
+	Defines closed density $\rho_{\text{cl}} = 830$ and ice density $\rho_{\text{ice}} = 917$. Contains four methods and an \pythoninline{__init__}:
+	\begin{itemize}
+		\item \pythoninline{def schwander1989(self, rho)}\\
+		Computes inverse of tortuosity(J. Schwander 1989, "\textit{The transformation of snow to ice and the occlusion of gases}", equation 5) as:
+		\begin{equation}
+			\frac{1}{\tau} = 1.7\cdot s_{\text{op}} - 0.2
+		\end{equation}
+		
+		\item \pythoninline{def johnsen2000(self, rho, rho_co = 804.3)}\\
+		Computes inverse of tortuosity(S. J. Johnsen, 2000, "\textit{Diffusion of stable isotopes in polar firnand ice: The isotope effect in firn diffusion}", equation 18) as:
+		\begin{equation}
+			\frac{1}{tau} = 1 - b \cdot \left(\frac{\rho}{\rho_{\text{ice}}}\right)^2
+		\end{equation}
+		where $b = \left(\frac{\rho_{\text{ice}}}{\rho_{\text{co}}}\right)^2$.
+		
+		\item \pythoninline{def witrant2012(self, rho, temp, p)}
+		Computes inverse of tortuosity(E. Witrant, 2012, "\textit{A new multi-gas constrained model of trace gas non-homogeneous transport in firn: evaluation and behaviorat eleven polar sites}", equation 20) as:
+		\begin{equation}
+			\frac{1}{\tau} \approxeq (2.5 \cdot s_{\text{op}} - 0.31)\cdot \left(\frac{T}{T_0}\right)^{1.8}\cdot\frac{P_0}{P_{\text{atm}}}
+		\end{equation}
+		where $T_0 = 273.15$ K and $P_atm = 101325$.
+		
+		\item \pythoninline{def show_all(self, rho)}\\
+		Plot all inverse tortuosities versus porosity, separate plots.
+	\end{itemize}
+	\item \pythoninline{class FractionationFactor()}\\
+	Class containing different methods to compute fractionation factor for deuterium, $\delta^{18}\text{O}$ and $\delta^{17}\text{O}$, given different methods presented in various articles. Contains an \pythoninline{__init__} and five methods(D, $\delta^{18}\text{O}$, $\delta^{17}\text{O}$ and liquid fractionation for D and $\delta^{18}\text{O}$), each containing a number of functions.
+	\begin{itemize}
+		\item \pythoninline{def deuterium(self)}\\
+		Computes fractionation factor for deuterium between water and ice given a temperature for
+		\begin{itemize}
+			\item L. Merlivat, 1967, "\textit{Fractionnement isotopique lors des changements d‘état solide‐vapeur et liquide‐vapeur de l'eau à des températures inférieures à $0\degree$C}":
+			\begin{equation}
+				\alpha_{D\_Merlivat} = e^{-4.10\cdot 10^{-2}}\cdot e^{\frac{16288}{T^2}}
+			\end{equation}
+			
+			\item M. D. Ellehøj, 2011, "\textit{Ice-vapor equilibrium fractionation factor}, PhD thesis":
+			\begin{equation}
+				\alpha_{D\_Ellehoj} = e^{0.2133-\frac{203.10}{T} + \frac{48888}{T^2}}
+			\end{equation}
+			
+			\item K. D. Lamb, 2017, "\textit{Laboratory measurements of HDO/H2O isotopic fractionation during ice deposition in simulated cirrus clouds}":
+			\begin{equation}
+				\alpha_{D\_Lamb} = e^{\frac{12525}{T^2} - 5.59\cdot 10^{-2}}
+			\end{equation}
+		\end{itemize}
+
+		\item \pythoninline{def o18(self)}\\
+		Computes fractionation factor for $\delta^{18}\text{O}$ between water and ice given a temperature as:		
+		\begin{itemize}
+			\item M. Majoube, 1970, "\textit{Fractionation factor of 18o between water vapour and ice}":
+			\begin{equation}
+				\alpha_{O18\_Majoube} = 0.9722 \cdot e^{\frac{11.839}{T}}
+			\end{equation}
+			
+			\item M. D. Ellehøj, 2011, "\textit{Ice-vapor equilibrium fractionation factor}, PhD thesis":
+			\begin{equation}
+				\alpha_{O18\_Ellehoj} = e^{0.0831 - \frac{49.192}{T} + \frac{8312.5}{T^2}}
+			\end{equation}
+		\end{itemize}
+
+		\item \pythoninline{def o17(self)}\\
+		Computes fractionation factor for $\delta^{17}\text{O}$ in ice given a temperature. Both are based on E. Barkan, 2005, "\textit{High precision measurements of 17o/16o and 18o/16o ratios in h2o}".
+		\begin{itemize}
+			\item M. Majoube, 1970, "\textit{Fractionation factor of 18o between water vapour and ice}":
+			\begin{equation}
+				\alpha_{O17\_Majoube} = (\alpha_{O18\_Majoube})^{0.529}
+			\end{equation}
+			
+			\item M. D. Ellehøj, 2011, "\textit{Ice-vapor equilibrium fractionation factor}, PhD thesis":
+			\begin{equation}
+				\alpha_{O17\_Ellehoj} = (\alpha_{O18\_Ellehoj})^{0.529}
+			\end{equation}
+		\end{itemize}
+		
+		\item \pythoninline{def deuterium_liquid(self)}\\
+		Computes fractionation factor for deuterium between water and steam given a temperature.
+		M. Majoube, 1971, "\textit{Oxygen-18 and deuterium fractionation between water and steam}".
+		\begin{equation}
+			\alpha_{D\_liq} = e^{\frac{52.612 - 76.248\cdot\frac{1000}{T} + 24.844\cdot\frac{10^6}{T^2}}{1000}}
+		\end{equation}
+
+		\item \pythoninline{def o18_liquid(self)}\\
+		Computes fractionation factor for $\delta^{18}\text{O}$ between water and steam given a temperature.
+		M. Majoube, 1971, "\textit{Oxygen-18 and deuterium fractionation between water and steam}".
+		\begin{equation}
+			\alpha_{o18\_liq} = e^{\frac{-2.0667 - 0.4156\cdot\frac{1000}{T} + 1.137\cdot\frac{10^6}{T^2}}{1000}}
+		\end{equation}
+	\end{itemize}
+
+	\item \pythoninline{class P_Ice()}\\
+	Various evaluations for saturation vapor pressure over ice. D. M. Murphy and T. Koop, 2005, "\textit{Review of the vapour pressures of ice and supercooled water for atmospheric applications}". Contains four methods and an \pythoninline{__init__}. Temperature in K and pressure in Pa. 
+	\begin{itemize}
+		\item \pythoninline{def clausius_clapeyron_simple(self, T)}\\
+		Simple evaluation using Clausius Clapeyron equation(used to characterize a discontinuous phase transition) with constant latent heat of sublimation. 
+		\begin{equation}
+			P_{\text{ice}} = e^{28.9074 - \frac{6143.7}{T}}
+		\end{equation}
+		
+		\item \pythoninline{def clausius_clapeyron_Lt(self, T)}\\
+		Evaluation using temperature dependence of latent heat plus a numerical fit to experimental data:
+		\begin{equation}
+			P_{\text{ice}} = e^{9.550426 - \frac{5723.265}{T} + 3.53068\cdot \ln(T) - 0.00728332\cdot T}
+		\end{equation}
+		
+		\item \pythoninline{def sigfus_2000(self, T)}\\
+		Expression used in S. J. Johnsen, 2000, "\textit{Diffusion of stable isotopes in polar firn and ice: the isotope effect in firn diffusion}".
+		\begin{equation}
+			P_{\text{ice}} = 3.454\cdot 10^{12}1\cdot e^{\frac{-6133}{T}}
+		\end{equation}
+		
+		\item \pythoninline{def p_ice_dict(self, T)}\\
+		Dictionary containing all calculated values of pressure over ice.
+	\end{itemize}
+
+	\item \pythoninline{P_Water()}\\
+	Various evaluations for saturation vapour pressure over water. Contains only one method and an \pythoninline{__init__}.
+	\begin{itemize}
+		\item \pythoninline{def goff(self, T)}\\
+		Goff-Gratch equation, 1946, "\textit{Low-pressure properties of water from -160 to 212 \degree F}", pressure in Pa, temperature in Kelvin.
+		\begin{align}
+			T_{steam} &= 373.15\\
+			p_{steam} &= 101325 \\
+			p_{water} &= -7.90298\cdot\left(\frac{T_{steam}}{T} - 1\right) + 5.02808\cdot \log_{10}\left(\frac{T_{steam}}{T}\right)
+			- 1.3816\cdot 10^{-7}\\&\cdot\left(10^{11.344*(1 - \frac{T}{T_steam})} - 1\right) + 
+			8.1328\cdot 10^{-3}\cdot(10^{\left(-3.49149*(T_st/T - 1)\right)} - 1) \\&+ \log_{10}(p_{steam})
+		\end{align}
+	\end{itemize}
+
+	\item \pythoninline{class FirnDiffusivity()}\\
+	Contains three methods - firn diffusivity for deuterium, $\delta^{18}\text{O}$ and $\delta^{17}\text{O}$ - and an \pythoninline{__init__}.
+	\begin{itemize}
+		\item \pythoninline{def __init__(self, rho, rho_co = 804.3, T = 218.5, P = 1,}\\
+		\pythoninline{p_ice_version = "sigfus_2000", tortuosity_version = "johnsen2000")}\\
+		Sets the given method to compute the vapor pressure over ice and the inverse tortuosity. Computes fractionation factors and air diffusivity with parameters given. Here, $\rho$ is an array, and the only thing that needs to be feeded to the class.
+		
+		\item \pythoninline{def deuterium(self, f_factor_version = "Merlivat")}\\
+		Computes the firn diffusivity for deuterium in $[\frac{m^2}{s}]$. Defines a number of constants, $m = 18\cdot 10^{-3}[\text{kg}]$, $R = 8.314$, $\rho_{\text{ice}} = 917 [\frac{\text{kg}}{\text{m}^3}]$, $D_{\text{air, HDO}}$(computed via \pythoninline{AirDiffusivity(T,P).deuterium()}) and the fractionation factor computed via \pythoninline{FractionationFactor(T).deuterium()['Merlivat']}. The diffusivity for HDO is then finally computed as:
+		\begin{equation}
+			D_{\text{firn, HDO}} = \frac{m \cdot P_{\text{ice}} \cdot D_{\text{air, HDO}} \cdot \frac{1}{\tau}}{R T\cdot \alpha_D\cdot (\frac{1}{\rho} - \frac{1}{\rho_{\text{ice}}})}
+		\end{equation}
+		
+		\item \pythoninline{def o18(self, f_factor_version = "Majoube")}\\
+		Return Diffusivity in firn for $\text{H}_2^{18}\text{O}$ $[\frac{m^2}{s}]$. Computed as for deuterium, so:
+		\begin{equation}
+			D_{\text{firn, O18}} = \frac{m \cdot P_{\text{ice}} \cdot D_{\text{air, O18}} \cdot \frac{1}{\tau}}{R T \cdot\alpha_{\text{O18}}\cdot (\frac{1}{\rho} - \frac{1}{\rho_{\text{ice}}})}
+		\end{equation}
+		
+		\item \pythoninline{def o18(self, f_factor_version = "Majoube")}\\
+		Return Diffusivity in firn for $\text{H}_2^{17}\text{O}$ $[\frac{m^2}{s}]$. Computed as for other two isotopes:
+		\begin{equation}
+			D_{\text{firn, O17}} = \frac{m \cdot P_{\text{ice}} \cdot D_{\text{air, O17}} \cdot \frac{1}{\tau}}{R T \cdot\alpha_{\text{O17}}\cdot (\frac{1}{\rho} - \frac{1}{\rho_{\text{ice}}})}
+		\end{equation}
+	\end{itemize}
+
+	\item \pythoninline{class FirnDiffusivityFast()}\\
+	Computes diffusivity of firn, but faster?? Contains three methods, diffusivity of deuterium, $\delta^{18}\text{O}$ and $\delta^{17}\text{O}$ and an \pythoninline{__init__}.\\
+	\pythoninline{__init__} contains definitions of $\rho_{\text{co}} = 804.3$, $T=218.5$, $P=1$(not dependent on \pythoninline{p_ice_version}), fractionation factor computed from \pythoninline{FractionationFactor(T)}, air diffusivity computed from \pythoninline{AirDiffusivity(T,P)}, saturated vapor pressure $3.454\cdot 10^{12}\cdot e^{\frac{-6133}{T}}$ and air diffusivity computed as $D_{\text{air}} = 10^{-4}\cdot0.211\cdot\left(\frac{T}{273.15}\right)^{1.94}\cdot\left(\frac{1}{P}\right)$
+	\begin{itemize}
+		\item \pythoninline{def deuterium(self, f_factor_version = "Merlivat")}\\
+		Returns diffusivity in firn for deuterium in $[\frac{m^2}{s}]$. Computes as above, except the \pythoninline{f_factor_version} is taken out of the picture. The diffusivity is computed through:
+		\begin{equation}
+			D_{\text{air, HDO}} = D_{\text{air}}\cdot 0.9755
+		\end{equation}
+		$\alpha_{D}$ is not dependent on \pythoninline{f_factor_version} and is computed as:
+		\begin{equation}
+			\alpha_{D} = 0.9098\cdot e^{\frac{16288}{T^2}}
+		\end{equation}
+		$1/ \tau$ is not dependent on \pythoninline{toruosity} and is computed as:
+		\begin{equation}
+			\tau = \frac{1}{(1 - 1.3\cdot\left(\frac{\rho}{\rho_ice}\right)^2)}
+		\end{equation}
+		and finally $D_{\text{firn, HDO}}$ is computed as in \pythoninline{deuterium()} in \pythoninline{class FirnDiffusivity()}.
+		
+		\item \pythoninline{    def o18(self, f_factor_version = "Majoube")}\\
+		Same as for deuterium with adjusted calculations:
+		\begin{equation}
+			D_{\text{air, O18}} = D_{\text{air}}\cdot 0.9723
+		\end{equation}
+		\begin{equation}
+			\alpha_{D} = 0.9722\cdot e^{\frac{11.839}{T^2}}
+		\end{equation}
+		\begin{equation}
+			\tau = \frac{1}{(1 - 1.3\cdot\left(\frac{\rho}{\rho_ice}\right)^2)}
+		\end{equation}
+		and finally $D_{\text{firn, O18}}$ is computed as in \pythoninline{o18()} in \pythoninline{class FirnDiffusivity()}.
+		
+		\item \pythoninline{    def o18(self, f_factor_version = "Majoube")}\\
+		Same as for O18 with adjusted calculations:
+		\begin{equation}
+			D_{\text{air, O18}} = D_{\text{air}}\cdot 0.98555
+		\end{equation}
+		\begin{equation}
+			\alpha_{D} = 0.9722\cdot \left(e^{\frac{11.839}{T^2}}\right)^{0.529}
+		\end{equation}
+		\begin{equation}
+			\tau = \frac{1}{(1 - 1.3\cdot\left(\frac{\rho}{\rho_ice}\right)^2)}
+		\end{equation}
+		and finally $D_{\text{firn, O17}}$ is computed as in \pythoninline{o17()} in \pythoninline{class FirnDiffusivity()}.
+	\end{itemize}
+
+	\item \pythoninline{class IceDiffusivity()}\\
+	Computes the ice diffusivity through five different methods, given in five different articles. Contains five methods and one \pythoninline{__init__} initializing the temperature as $T = 218.15$.
+	\begin{itemize}
+		\item \pythoninline{def sigfus(self)}\\
+		Uses parametrization from S. J. Johnsen, 2000, "\textit{Diffusion of stable isotopes in polar firn and ice: the isotope effect in firn diffusion}":
+		\begin{equation}
+			D_{\text{ice}} = 1.255\cdot 10^{-3} \cdot e^{\frac{-7273}{T}}
+		\end{equation}
+		
+		\item \pythoninline{def ramseier(self)}\\
+		Uses parameterization from R. O. Ramseier, 1967, "\textit{Self-diffusion of tritium in natural and synthetic ice monocrystals}":
+		\begin{equation}
+			D_{\text{ice}} = 9.2\cdot 10^{-4}\cdot e^{\frac{-7186}{T}}
+		\end{equation}
+		
+		\item \pythoninline{def blicks(self)}\\
+		Uses parameterization from H. Blicks, 1966, "\textit{Diffusion von Protonen (Tritonen) in reinen und dotierten Eis-Einkristallen}":
+		\begin{equation}
+			D_{\text{ice}} = 2.5\cdot 10^{-3}\cdot e^{\frac{-7302}{T}}
+		\end{equation}
+		
+		\item \pythoninline{def delibaltas(self)}\\
+		Uses parameterization from P. Delibaltas, 1966, "\textit{Diffusion von 18O in Eis-Einkristallen}":
+		\begin{equation}
+			D_{\text{ice}} = 0.0264\cdot e^{\frac{-7881}{T}}
+		\end{equation}
+		
+		\item \pythoninline{def itagaki100(self)}\\
+		Uses parameterization from K. Itagaki, 1964, "\textit{Self-Diffusion in Single Crystals of Ice}":
+		\begin{equation}
+			D_{\text{ice}} = 0.014\cdot e^{\frac{-7650}{T}}
+		\end{equation}
+	\end{itemize}
+	
+	\item \pythoninline{class AirDiffusivity()}\\
+	Calculation of air diffusivity for deuterium, $\text{O}^{18}$ and $\text{O}^{17}$. Contains four methods and an \pythoninline{__init__} which initializes the temperature to $T = 218.5$, the pressure to $P=1$ and the air diffusivity for $\text{H}_2^{16}\text{O}$ from H. Pruppacher and W.D. Hall, 1976, "\textit{The survival if ice particles falling from cirrus clouds in subsaturated air}" asz 
+	\begin{equation}
+		D_{\text{air}} = 10^{-4}\cdot 0.211\cdot\left(\frac{T}{273.15}\right)^{1.94}\cdot \left(\frac{1}{P}\right)
+	\end{equation}
+	The following calculations are based on L. Merlivat, 1978, "\textit{The dependence of bulk evaporation coefficients on air‐water interfacial conditions as determined by the isotopic method}".
+	\begin{itemize}
+		\item \pythoninline{def deuterium(self)}\\
+		Returns diffusivity in air for HDO:
+		\begin{equation}
+			D_{\text{air, HDO}} = D_{\text{air}}\cdot 0.9755
+		\end{equation}
+
+		\item \pythoninline{def o18(self)}\\
+		Returns diffusivity in air for $\text{H}_2^{18}\text{O}$:
+		\begin{equation}
+			D_{\text{air, O18}} = D_{\text{air}}\cdot 0.9723
+		\end{equation}
+		
+		\item \pythoninline{def o17(self)}\\
+		Returns diffusivity in air for $\text{H}_2^{17}\text{O}$:
+		\begin{equation}
+		D_{\text{air, O17}} = D_{\text{air}}\cdot 0.98555
+		\end{equation}
+		
+	\end{itemize}
+\end{itemize}
+
+\section{solver.py}
+\textcolor{red}{Need to understand and describe the algorithm. Essential for the CFM.}\\
+Function to compute transient one-dimensional diffusion through the finite volume method. Contains two functions, one that solves the 1D diffusion problem and one that solves the inhibiting matrix problem.
+\begin{itemize}
+	\item \pythoninline{def transient_solve_TR(z_edges_vec, z_P_vec, nt, dt, Gamma_P, phi_0, nz_P, }\\
+	\pythoninline{nz_fv, phi_s)}\\
+	The actual 1D diffusion solver. Takes a number of parameters as input:
+	\begin{itemize}
+		\item \pythoninline{z_edges_vec}[array of floats]: uniform edge spacing of volume elements
+		\item \pythoninline{z_P_vec}[array of floats]: depth profile (edge locations of boxes)
+		\item \pythoninline{nt}[float]: Number of time steps
+		\item \pythoninline{dt}[float]: size of time step
+		\item \pythoninline{Gamma_P}[array of floats]: diffusivity profile, for heat diffusion: $K_{firn} / (c_{firn} * \rho)$. Different for iso diffusion.
+		\item \pythoninline{phi_0}[array of floats]:Initial profile of conserved quantity to be diffused (i.e. temperature or isotope values)
+		\item \pythoninline{nz_P}[int]: number of nodes in depth profile z 
+		\item \pythoninline{nz_fv}[int]: number of finite volumes in model z 
+		\item \pythoninline{phi_s}[float]: value of conserved quantity (temp/iso) at surface 
+	\end{itemize}
+	and returns a single ouptut \pythoninline{phi_t}[array of floats], the diffused and final distribution of the 1D conserved quantity.\\
+	The algorithm builds on a finite volume method for solving the discrete diffusion equation. 
+	
+	\item \pythoninline{def solver(a_U, a_D, a_P, b)}\\
+	Function to solve the matrix problem created in the finite volume method above. Uses a sparse diagonal matrix to solve the linear system.
+	
+
+\end{itemize} 
+
+\end{document}

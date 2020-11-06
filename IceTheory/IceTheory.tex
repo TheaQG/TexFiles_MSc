@@ -1,0 +1,386 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper, hmargin={2cm, 2.5cm}, vmargin={2.5cm, 2.5cm}]{geometry}  
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsfonts,amssymb,wasysym}
+\usepackage{graphicx, wrapfig}
+\usepackage{caption}
+\usepackage{tabularx}
+\usepackage{subcaption}
+\usepackage{mathrsfs}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{appendix}
+\usepackage{etoolbox}
+\usepackage{booktabs}
+\usepackage{gensymb}
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+\BeforeBeginEnvironment{appendices}{\clearpage}
+% Custom colors
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+\usepackage{listings}
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+		language=Python,
+		basicstyle=\ttm,
+		otherkeywords={self},             % Add keywords here
+		keywordstyle=\ttb\color{deepblue},
+		emph={MyClass,__init__},          % Custom highlighting
+		emphstyle=\ttb\color{deepred},    % Custom highlighting style
+		stringstyle=\color{deepgreen},
+		frame=tb,                         % Any extra options here
+		showstringspaces=false            % 
+}}
+
+% Python environment
+\lstnewenvironment{python}[1][]
+{
+	\pythonstyle
+	\lstset{#1}
+}
+{}
+
+\newcommand\pythonexternal[2][]{{
+		\pythonstyle
+		\lstinputlisting[#1]{#2}}}
+
+% Python for inline
+\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}
+
+
+\title{Ice Theory}
+\author{Thea Quistgaard}
+\date{Master Thesis 2020/2021}
+
+\begin{document}
+\maketitle
+
+\section{Densification and diffusion in firn and ice}
+Throughout the firn column the important processes of diffusion and densification takes places. Both processes need to be well understood and examined when analyzing ice core data, as diffusion and densification play a large role in thinning of annual layers due to compression of snow to ice and in washing out the measured signals through diffusion in the firn.
+
+\subsection{Diffusion}
+\subsubsection{In Firn}
+Diffusion describes the attenuation of a given signal, e.g. a water isotopic signal, due to vapor phase diffusion in the porous firn column. To develop accurate knowledge of paleo climate and temperatures it is of great importance to understand this process, as a reconstruction of the part of the signal lost will reveal finer details in the signal and thus a more detailed knowledge of past times. 
+Diffusion can be described through Fick's $2^{\text{nd}}$ law, which describes the change in concentration of a substance with time, due to diffusion:
+\begin{equation}
+	\frac{\partial \phi}{\partial t} = D(t) \frac{\partial^2 \phi}{\partial z^2} - \dot{\epsilon}_z(t) z \frac{\partial \phi}{\partial z}
+	\label{eq:Fick2_concentration}
+\end{equation}
+If we say the diffusion is focused on water isotopes, then we can approximate the water isotopic signal with the concentration, $\phi \approx \delta$, so:
+\begin{equation}
+	\frac{\partial \delta}{\partial t} = D(t) \frac{\partial^2 \delta}{\partial z^2} - \dot{\epsilon}_z(t) z \frac{\partial \delta}{\partial z}
+	\label{eq:Fick2_WIS}
+\end{equation}
+Through attanuation with depth and time due to diffusion there is a loss of information. But the diffusion constant and the vertical strain rate $\dot{\epsilon}_z(t)$ in Fick's $2^{\text{nd}}$ law are dependent on temperature and accumulation on site, this information loss process can be used to infer temperature of firn and accumulation on site. 
+The solution of Eq. \ref{eq:Fick2_WIS} can be found by deconvolution. The attenuated, directly measured, isotopic signal, $\delta(z)$, can be described as the convolution between the initial isotopic signal, $\delta '(z)$, and a Gaussian filter, $\mathcal{G}(z)$, multiplied by the thinning function, $S(z)$, which describes the total thinning of a given layer at depth $z$ due to the vertical strain from the above firn column.:
+\begin{equation}
+	\delta(z) = S(z)[\delta'(z)*\mathcal{G}(z)]
+	\label{eq:diff_solution_conv}
+\end{equation}
+where
+\begin{equation}
+	S(z) = e^{\int_{0}^{z}\dot{\epsilon}_z(z')\, dz'}
+	\label{eq:Thinning_fct}
+\end{equation}
+and
+\begin{equation}
+	\mathcal{G}(z) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{z^2}{2\sigma^2}}
+	\label{eq:Gauss_filter}
+\end{equation}
+In the gaussian filter, the variance $\sigma^2$ is referred to commonly as the diffusion length: the distance a water molecule is displaced along the z-axis. This quantity is directly related to both $D(t)$ and $\dot{\epsilon}_z(t)$(the strain rate being approximately proportional to the densification rate in the column). Thus an accurate estimate of the diffusion length is crucial for describing the diffusion process.
+The change of diffusion length over time is given as 
+\begin{equation}
+	\frac{d\sigma^2}{dt} - 2\dot{\epsilon}_z (t)\sigma^2 = 2 D(t)
+	\label{eq:Evolution_DiffLen}
+\end{equation}
+given by JOHNSEN1977, which also states that for the strain rate, the following approximation can be made:
+\begin{equation}
+	\dot{\epsilon}_z(t) \approx - \frac{d\rho}{dt}\frac{1}{\rho}
+	\label{eq:strain_rate_approx}
+\end{equation}
+where $\rho$ is the density and $\frac{d\rho}{dt}$ is the densification rate. With this approximation, the solution to the equation for evolution of the diffusion length in the firn column can be found, defined only through density and densification rate, as(\textcolor{red}{DESCRIBE HOW TO SOLVE FOR SIGMA}):
+\begin{equation}
+	\sigma^2(\rho) =\frac{1}{\rho^2} \int_{\rho_0}^{\rho}2\rho'^2\left(\frac{d\rho'}{dt}\right)^{-1} D(\rho') \, d\rho'
+	\label{eq:Diff_Len_Firn}
+\end{equation}
+Certain densities and corresponding depths are of special interest as they indicate a specific stage of the firn and ice column. At top and bottom, we find the two extremum densities of settled snow, $\rho_{\text{snow}} = 330 \frac{\text{kg}}{\text{m}^3}$, and ice, $\rho_{\text{ice}} = 917 \frac{\text{kg}}{\text{m}^3}$. In between these two there are two more densities of importance: the critical density, $\rho_{\text{Cr}} = 550 \frac{\text{kg}}{\text{m}^3}$, describing the transition between the two firn stages (see Section \ref{Sec:Densification}), and the pore close off density, $\rho_{\text{CO}} = 330 \frac{\text{kg}}{\text{m}^3}$, describing the density at which air pockets in firn will seal of from each other to form single bubbles. From the close off density, further densification will be due to compression of these closed off air bubbles until the density reaches $\rho_{\text{ice}}$.
+If we assume that the diffusion constant, $D(\rho)$, and the densification rate, $\frac{d\rho}{dt}$ are known, then it is possible to give an estimate of the diffusion length profile by integrating from top, at density $\rho_0$, to pore close-off depth, $\rho_{co}$.
+
+\subsubsection{In Solid Phase}
+When firn reaches solid state, below close-off depth, the isotope diffusion is driven not as much by densification any more, but by isotopic gradients within the ice crystal lattice structure. This diffusion process is much slower than the diffusion in vapor phase taking place in firn, and thus does not contribute as much to the information loss and attenuation of the signal. For solid ice, at $\rho \leq \rho_{\text{ice}}$, the diffusion constant is only dependent on temperature, and can be described through an Arrhenius type equation as(ref: RAMSEIER1967, JOHNSENetal2000):
+\begin{equation}
+	D_{ice} = 9.2 \cdot 10^{-4} e^{-\frac{7186}{T}} 	\left[\frac{\text{m}^2}{\text{s}}\right]
+	\label{eq:Ice_Diff_const}
+\end{equation}
+The diffusion length in ice ice given from the diffusion constant in ice and the thinning function as:
+\begin{equation}
+	\sigma^2_{\text{ice}}(t) = S(t)^2 \int_{0}^{t}2 D_{\text{ice}}(t') S(t')^{-2} \, dt'
+	\label{eq:Diff_Len_Ice}
+\end{equation}
+(\textcolor{red}{DESCRIBE HOW TO SOLVE FOR SIGMA and a discussion of the ice diffusion constant.})
+
+\subsubsection{Reconstruction of temperatures}
+Reconstruction of paleotemperatures can be attempted through a number of various techniques (REFERENCES). For precise and accurate results, the single isotopelogue diffusion methods have proven useful(REFERENCES).\\
+As is known, convolution in time domain is equal to multiplication in the frequency domain. According to equation (\ref{eq:diff_solution_conv}), the transfer function to the frequency domain, will be the Fourier transform of the Gaussian filter:
+\begin{equation}
+	\mathcal{F}[\mathcal{G}(z)] = \hat{\mathcal{G}} = e^{-\frac{k^2\sigma^2}{2}}, \qquad k = 2\pi f = \frac{2\pi}{\Delta}
+	\label{eq:Transer_Fct}
+\end{equation} 
+where $\Delta$ is the discrete sampling size. This filter keeps larger wavelength frequencies (> 50 cm) unaltered but attenuates short wavelengths (< 20 cm) heavily, which is exactly the effect of diffusion on the isotopic signal. An estimate of the diffusion length $\sigma^2$ can be made from the power spectral density(PSD) of an isotopic time series. In the frequency domain a PSD composed of an initial signal, a filter function and a noise term is given by:
+\begin{equation}
+	P_s = P_0(k) e^{-k^2\sigma^2} + |\hat{\eta}(k)|^2, \qquad f \in [0, f_{Nq}]
+	\label{eq:PSD_general}
+\end{equation} 
+where the diffused and noise-affected signal, $P_s$, is equal to the original signal, $P_0(k)$, times a filter, $e^{-k^2\sigma^2}$ (our previously inspected Gaussian filter), plus a noise term, $|\hat{\eta}(k)|^2$, over a frequency space ranging from zero to the Nyquist frequency, $f_{Nq}$. The Nyquist frequency is dependent on the sampling resolution by $f_{Nq} = \frac{1}{2\Delta}$.
+The noise term, often categorized as white noise, but red noise is also seen in isotopic signals(REFERENCES), is given as
+\begin{equation}
+	|\hat{\eta}(k)|^2 = \frac{\sigma_n^2 \Delta}{|1 - a_1 \, e^{ik\Delta}|^2}
+	\label{eq:PSD_Noise_Term}
+\end{equation}
+Equation \ref{eq:PSD_Noise_Term} describes an autoregressive process of the first order, with $a_1$ being an AR-1 coefficient. \textcolor{red}{WHAT IS THIS? DESCRIBE.}.\\
+The spectral estimate of the time series, $\mathbb{P}_s$, can be computed via a number of different numerical schemes, here Burg's method will be used, REFERENCES. To determine the diffusion length a fit to these estimated spectral data, $P_s$, is found through for example a least square optimization, from which the parameters $P_0, \; \sigma, \; a_1, \; \sigma_{\eta}^2$ can be estimated.\\
+The diffusion length $\sigma^2$ can be calculated by least-square minimization of the misfit between $\mathbb{P}_s$ and $P_s$.\\
+This estimated diffusion length needs to be corrected: the obtained $\hat{\sigma}^2$ is affected by two further diffusion processes, taking place respectively in the ice and in the experimental sampling:
+\begin{itemize}
+	\item \textbf{Sampling diffusion}: This diffusion is due to the sampling method. Sampling at a certain discrete resolution - be it discrete sections or resolution in CFA system due to step or impulse response - gives an additional diffusion length of
+	\begin{equation}
+		\sigma_{dis} = \frac{2 \Delta^2}{\pi^2}\ln\left(\frac{\pi}{2}\right)
+		\label{eq:Diff_Len_corr_Discrete}
+	\end{equation}
+	\item \textbf{Ice diffusion} When below the close-off depth, a correction for the ice diffusion must also be made.
+\end{itemize} 
+
+So to obtain the actual diffusion length from the raw data, both the sampling and the ice diffusion need to be subtracted from $\sigma^2$, and a scaling factor due to thinning from the strain must be introduced:
+\begin{equation}
+	\sigma_{\text{firn}}^2 = \frac{1}{S(z)^2}\hat{\sigma}_{\text{firn}}^2 = \frac{\hat{\sigma}^2 - \sigma_{\text{dis}}^2 - \sigma_{\text{ice}}^2}{S(z)^2}
+	\label{eq:Diff_Len_Firn_Corrected}
+\end{equation}
+
+Now, from the obtained estimate of the firn diffusion length, a temperature estimate can be made by numerically finding the root of:
+\begin{equation}
+	\left(\frac{\rho_{co}}{\rho_i}\right)^2\;\sigma^2(\rho=\rho_{co}, T(z),A(z)) - \sigma_{\text{firn}}^2 = 0
+	\label{eq:Firn_Temp_est_Roots}
+\end{equation}
+\textbf{NOTE:} Annual spectral signals appearing as peaks in the PSD, can influence the  estimate of diffusion lengths. This can be taken into account by introducing a weight function omitting the annual signal from the PSD:
+\begin{equation}
+	w(f) = \begin{cases}
+		0, & f_{\lambda} - d f_{\lambda} \leq f \leq f_{\lambda} + d f_{\lambda} \\
+		1, & f < f_{\lambda} - d f_{\lambda}, f > f_{\lambda} + d f_{\lambda}
+	\end{cases}
+\end{equation}
+
+\subsection{Densification}
+\label{Sec:Densification}
+Densification is the process of compression of snow to ice. It plays an important role in the annual layer thickness in the data as snow will be compressed to a smaller volume under pressure from the firn column above until it reaches a solid ice state with a, almost, constant density. \\
+Commonly three stages of densification are described in the firn column. The first stage is between the initial precipitated snow density and the 'critical density' at $0.55 \frac{\text{Mg}}{\text{m}^3}$, the second stage is between critical density and the close-off density at $0.82-0.84 \frac{\text{Mg}}{\text{m}^3}$, and the third stage is from close-off and all the way through the ice.\\
+At the first stage the densification is mostly due to grain settling and packing and the densification rate is very rapid. At the second stage, the snow is close to isolating air bubbles. At the third stage, the dominating densification taking place is by the compression of air bubbles.\\
+For these three stages it is of interest to develop a depth-density profile, which is dependent on snow accumulation rate and temperature. The focus is on developing an empirical model for the first and second stages of densification, as they are the most dramatic sections of the firn column considering densification and diffusion.\\
+A number of different densification models have been developed(REFERENCES), and in this thesis will be presented the ones used for the analysis.
+\subsubsection{Herron-Langway}
+Sorge's law(REFERENCES) assumes that the relation between snow density $\rho$ and depth $h$ is invariant with time, given a constant snow accumulation and temperature. Furthermore, annual layer thinning by plastic flow is ignored.\\
+Densification of firn, which can be described as the proportional change in air space, is linearly related to change in stress due to the weight of the overlying snow(REFERENCES):
+\begin{equation}
+	\frac{d\rho}{\rho_i - \rho} = \text{const.} \, \rho \, dh
+	\label{eq:Dens_Prop_Stress}
+\end{equation}
+By integration, this implies a linear relation between $\ln\left[\frac{\rho}{\rho_i - \rho}\right]$ and $h$.\\
+When considering real data, analysis shows that $\ln\left[\frac{\rho}{\rho_i - \rho}\right]$ vs $h$. plots have two linear segments(EXAMPLE), corresponding to the first and second stages of densification, with separation of segments at $\rho = 0.55$ and $\rho = 0.8$. These segments on the plots will yield two different slopes with slope constants:
+\begin{subequations}
+	\begin{center}
+		
+		\begin{tabularx}{\textwidth}{Xp{2cm}X}
+			\begin{equation}
+				C = \frac{d\ln\left[\frac{\rho}{\rho_i - \rho}\right]}{dh}, \rho < 0.55
+				\label{eq:Dens_Const_1}
+			\end{equation}
+			&&
+			\begin{equation}
+				C' = \frac{d\ln\left[\frac{\rho}{\rho_i - \rho}\right]}{dh}, 0.55 < \rho < 0.8
+				\label{eq:Dens_Const_2}
+			\end{equation}
+		\end{tabularx}
+	\end{center}
+\end{subequations}
+To find the densification rate, $\frac{d\rho}{dt}$, substitute $\frac{dh}{dt} = \frac{A}{\rho} \rightarrow dt = \frac{\rho}{A} dh$ and use the differentiation $\frac{\partial}{\partial t}\left[\ln\left[\frac{x(t)}{k - x(t)}\right]\right] = \frac{k \frac{dx}{dt}}{(k - x(t))x(t)}$
+\begin{align*}
+	C & = \frac{\rho}{A}\frac{d\ln\left[\frac{\rho}{\rho_i - \rho}\right]}{dt}\\
+	& = \frac{\rho}{A} \frac{\rho_i}{\rho(\rho_i - \rho)}\frac{d\rho}{dt}\\
+	& = \frac{1}{A}\frac{\rho_i}{\rho_i - \rho}\frac{d\rho}{dt}
+\end{align*}
+leading to 
+\begin{subequations}
+	\begin{equation}
+		\frac{d\rho}{dt} = \frac{C A}{\rho_i}(\rho_i - \rho)
+		\label{eq:Dens_Rate_1}
+	\end{equation}
+	\begin{equation}
+		\frac{d\rho}{dt} = \frac{C' A}{\rho_i}(\rho_i - \rho)
+		\label{eq:Dens_Rate_2}
+	\end{equation}
+\end{subequations}
+To continue from here two assumptions are made. The first is that the temperature and the accumulation rate dependencies may be separated, and that they thereby have no inter-correlation. The second is that the rate equations may be written as:
+\begin{subequations}
+	\begin{equation}
+		\frac{d\rho}{dt} = k_0 A^a (\rho_i - \rho), \rho < 0.55
+		\label{eq:Dens_Rate_1_Arrh}
+	\end{equation}
+	\begin{equation}
+		\frac{d\rho}{dt} = k_1 A^b (\rho_i - \rho), 0.55 < \rho < 0.8
+		\label{eq:Dens_Rate_2_Arrh}
+	\end{equation}
+\end{subequations}
+where $k_0$ and $k_1$ are Arrhenius type rate constants which are only temperature dependent, and $a$ and $b$ are constants determining the significance of the accumulation rate and are dependent on the densification mechanisms.\\
+$a$ and $b$ may be determined by comparing slopes for densification at different sites of nearly equivalent conditions as:
+\begin{equation}
+	a = \frac{\ln\left(\frac{C_1}{C_2}\right)}{\ln\left(\frac{A_1}{A_2}\right)} + 1
+	\label{eq:Determ_const_a}
+\end{equation}
+and equivalently for b, with $C_1'$ and $C_2'$.\\
+$k_0$ and $k_1$ can be estimated by observing values of k at different temperatures and plotting $\ln(k)$ versus temperature - a so-called Arrhenius plot(REFERENCES) - to find $A$ and $E_a$ in equations:
+\begin{equation}
+	k = A e^{-\frac{E_a}{k_B T}} = A e^{-\frac{E_a}{RT}}
+\end{equation}
+\begin{equation*}
+	\ln(k) = \ln(A) - \frac{E_a}{R}\frac{1}{T}
+\end{equation*}
+leading to values of $k_0$ and $k_1$ of:
+\begin{subequations}
+	\begin{center}
+		
+		\begin{tabularx}{\textwidth}{Xp{2cm}X}
+			\begin{equation}
+				k_0 = 11 e^{-\frac{10160}{RT}}
+				\label{eq:k0}
+			\end{equation}
+			&&
+			\begin{equation}
+				k_1 = 575 e^{-\frac{21400}{RT}}
+				\label{eq:k1}
+			\end{equation}
+		\end{tabularx}
+	\end{center}
+\end{subequations}
+\textbf{DEPTH-DENSITY AND DEPTH-AGE CALCULATIONS}\\
+Assuming that temperature, annual accumulation rate and initial snow density are known, the following calculations can be made:
+\begin{itemize}
+	\item Density at depth $h$, $\rho(h)$
+	\item Depth at pore close-off, $\rho=0.55$
+	\item Depth-age relationship from surface to pore close-off (stage 1 and 2).
+\end{itemize}
+\textbf{1. stage of densification:}
+Depth-density profile:
+\begin{equation}
+	\rho(h) = \frac{\rho_i Z_0}{1 + Z_0}
+\end{equation}
+where $Z_0 = e^{\rho_i k_0 h + \ln\left[\frac{\rho_0}{\rho_i - \rho_0}\right]}$. In this segment, the depth-density is independent of accumulation rate. The critical density depth can be calculated as:
+\begin{equation}
+	h_{0.55} = \frac{1}{\rho_i k_0}\left[\ln\left[\frac{0.55}{\rho_i - 0.55}\right] - \ln\left[\frac{\rho_0}{\rho_i - \rho_0}\right]\right]
+\end{equation}
+and the age at close-off depth as:
+\begin{equation}
+	t_{0.55} = \frac{1}{k_0 A}\ln\left[\frac{\rho_i - \rho_0}{\rho_i - 0.55}\right]
+\end{equation}
+\textcolor{red}{WHERE DOES THIS COME FROM?}
+\textbf{2. stage of densificaion:} The depth-density profile
+\begin{equation}
+	\rho(h) = \frac{\rho_i Z_1}{1 + Z_1}
+\end{equation}
+where $Z_1 = e^{\rho_i k_1 (h - h_{0.55})\frac{1}{A^{0.5}} + \ln\left[\frac{0.55}{\rho_i - 0.55}\right]}$. The age of firn at a given density $\rho$:
+\begin{equation}
+	t_{\rho} = \frac{1}{k_1 A^{0.5}}\ln\left[\frac{\rho_1 - 0.55}{\rho_1 - \rho}\right]
+\end{equation}
+An estimate of the mean annual accumulation rate can be made from the slope $C'$ and the mean annual temperature:
+\begin{equation}
+	A = \left(\frac{\rho_i k_1}{C'}\right)^2
+\end{equation}
+
+
+\section{Ice core analysis}
+Electrical conductivity measurements(ECM), dielectric profiling(DEP) and isotopic composition analysis are three distinct ways of analyzing an ice core to examine past temperatures, climate and atmospheric composition. Some of these methods are sensitive to violent volcanic eruptions, which makes it possible to use known eruptions visible in the ice cores as volcanic horizons, and thus making dating of the ice core more precise and absolute.
+
+\subsection{Electrical conductivity measurements}
+The conductivity of ice arises from the current emerging due to the build-up of space charges in the ice structure. This conductivity can be analyzed by measuring the electrical current(DC) - induced by the electric potential and the acid balance - between two electrodes which are moved along the ice cores length. This current will be connected to the acid impurity concentration (pH), in the form of $\text{H}_3\text{O}^+$ concentration, of the ice core. Higher levels of acid impurity concentration are due to volcanic eruptions. Large amounts of volcanic gases, i.e. $\text{SO}_2$, in the atmosphere oxidizes and combines with water to form acid, i.e. sulphuric acid, which is the washed out of the air due to precipitation. Thus it is made possible to recognize volcanic horizons in ice cores, and - if the location of the eruption is known - from the amount of acid, the magnitude of the eruption can also be estimated.\\
+High acidity of layers containing volcanic fall-out influence the dielectric constant of ice, so that these layers may be a possible explanation to the internal reflection horizons found in radio-echo sounding. \\
+The measured current can then be transformed into acidity by a calibration curve relating the current, in $\mu$A, to the acidity, in $\mu$equivalents $\text{H}_3\text{O}^+$ per kilogram. To find the calibration parameters, the current and the acidity must be measured - the current through the above mentioned method, and the acidity through pH measurements of melted ice core samples. The pH measurements must further be corrected for any $\text{CO}_2$ induced $\text{H}^+$ ions (REFERENCES).The relation between acidity [$\text{H}^+$] (corrected for $\text{CO}_2$ induced $\text{H}^+$) and current $I$ can be expressed in two ways:
+\begin{itemize}
+	\item $[H^+] = (0.017\, I^2 + 1.2) \mu \text{equiv. H}^+ /\text{kg}$\\
+	without a 50\% correction for $\text{CO}_2$ surplus.
+	\item $[H^+] = (0.045\, I^{1.73}) \mu \text{equiv. H}^+ /\text{kg}$\\
+	with a 50\% correction for $\text{CO}_2$ surplus.
+\end{itemize}
+The salt concentration in the ice can be estimated from measurements of the specific conductivity $\sigma$ of the melted samples. The salt contribution hereto can be expressed as:
+\begin{equation}
+	\sigma_s = \sigma - \sigma(\text{H}^+) - \sigma(X^-) - \sigma(\text{HCO}_3^-)
+\end{equation}
+where the three later terms correspond to the contributions from $\text{H}^+$(through pH measurements) and its anions\footnotemark, $\text{HCO}_3^-$ and any other anions $X^-$. The anion concentration will be equal to the cation concentration, which in this case is only $\text{H}^+$ concentration. Disregarding low acidity samples, the concentration of $\text{HCO}_3^-$ is negligible and thus  $\text{concentration}(X^-) \approx \text{concentration}(\text{H}^+)$. 
+The current is thus heavily influenced on/determined by the $\text{H}^+$ concentration, and thus it is approximated that the salt concentration has no influence on the current readings, which is fortunate, since the ECM method only responds to acidity, and not to salt and ammonia concentrations. This is one of the methods limitations, which the later dielectric profiling method took into account.
+
+\footnotetext[2]{Anions are molecules losing a number of electrons to become negatively charged. Cations are molecules that gain a number of electrons to become positively charged.}
+
+\subsection{Dielectric Profiling}
+A method was later developed to demonstrate how both acids and salts play a decisive role in the determination of the electrical behavior of ice. The dielectric response of an ice core can be used to determine the total ionic concentration of the core. For ECM the measurements are sensitive to the fluctuating distance between ice core and electrodes, and after each measurement a fresh piece of ice needs to be prepared to repeat a measurement.\\
+A new dielectric profiling technique (DEP) was developed (REFERENCES) with the advantages over the ECM that no direct contact is needed between the electrodes and the ice, so that the ice can stay in a protective polythene sleeve and the experiment easily can be repeated on the same piece of ice. Together the ice core and the polythene sleeve creates a complete system, where the plastic acts as an electrical blocking layer.\\
+The dielectric response is measured by a sweeping of the AF-LF frequency range for the entire ice-polythene system. At LF the conductivity of the composite system is within a few percentages of the intrinsic behavior of the ice itself. At HF-VHF frequencies it also approximates well enough (REFERENCES).\\
+The measured dielectric parameters are the conductivity of ice at HF-VHF range, denoted $\sigma_{\infty}$ where $\infty$ signifies a frequency much higher than the relaxation frequency, $\text{f}_{\text{r}}$, of the dominant dispersion in the system. Both of these parameters display clear chemical response signals which can be used either alone or in combination with other ice core analysis measurements like ECM and isotope analysis.\\
+If the core under analysis is chemically analyzed for $\text{Na}^+$, $\text{Mg}^{2+}$, $\text{Cl}^-$, $\text{SO}_4^{2-}$ and $\text{NO}_3^-$, a number of important parameters, which can be used to evaluate the response of the dielectric parameters, can be calculated(REFERENCES):
+\begin{itemize}
+	\item The salt parameter, which represents the total marine cation concentration calculated with the assumed marine ratios as:
+	\begin{equation}
+		[\text{salt}] = 1.05 ([\text{Na}^+] + [\text{Mg}^{2+}])
+	\end{equation}
+	\item $\text{XSO}_4$, the excess sulphate, which represents the amount the sulphate concentration is above the expected if the salt and sulphate ions were in normal sea salt ratios. Excess sulphate is essentially sulphuric acid, which is the main acidic component of the ice.
+	\item The strong acid content of the ice has been calculated as(assuming no other ions present in significant quantities):
+	\begin{equation}
+		[\text{acid}] = [\text{Cl}^-] + [\text{SO}_4^{2-}] + [\text{NO}_3^-] - 1.05 ([\text{Na}^+] + [\text{Mg}^{2+}])
+	\end{equation}
+\end{itemize}
+
+From data, it can be seen that acid and salt concentration peaks clearly affect $\sigma_{\infty}$ and $\text{f}_{\text{r}}$(EXAMPLES, REFERENCES). The relationship between salt and acid, and the two dielectric parameters have been derived through non-linear regression analysis. In PAPER(REFERENCES) the linear responses for the DEP at -22\degree C were:
+\begin{equation}
+	\sigma_{\infty} = (0.39\pm 0.01)[\text{salt}] + (1.43\pm 0.05)[\text{acid}] + (12.7\pm 0.3)
+\end{equation}
+with 76.6 \% variance
+\begin{equation}
+	\text{f}_{\text{r}} = (440\pm 11)[\text{salt}] + (612\pm 65)[\text{acid}] + (8200\pm 400)
+\end{equation}
+with 68.4 \% variance. $\sigma_{\infty}$ is measured in $\mu\text{S}/\text{m}$, $\text{f}_{\text{r}}$ in Hz and [acid] and [salt] in $\mu\text{Eq}/l$.
+The total ionic concentration of the ice core is strongly linked to the dielectric parameters, and a regression between the total anion concentration and the dielectric parameters gives:
+\begin{equation}
+	[\text{anions}] = [\text{salt}] + [\text{acid}] = 0.022\sigma_{\infty}^{1.89} + 10^{-6}\text{f}_{\text{r}}^{1.61} - 0.2
+\end{equation}
+with 86.7 \% variance.
+
+The DEP complements the ECM technique by not only reacting to acids alone, as ECM does, but responds to both neutral salts and acids.
+The acid term is here associated with the DC conductivity, the same way it is also detected by ECM. The dielectric dependence on salts is consistent with the Bjerrum L defect\footnotemark affecting every one or two salt ions in the ice, indicating that a large fraction of the neutral salt is incorporated into the ice lattice.
+\footnote[3]{A Bjerrum defect is a crystallographic defect specific to ice, partly responsible for the electrical properties of ice. Usually a hydrogen bond will normally have one proton, but with a Bjerrum defect it will have either two protons (D defect) or no proton (L defect).(REFERENCES)}\\
+The sensitivity to salt concentrations allows for identifications of periods with major storms and open seas which are also important identifiers for paleo climate research, along with the volcanic eruption detection made possible through the ECM.
+
+
+\subsection{Water isotope analysis}
+A third way of analyzing ice cores and thus laying the basis for paleo climate research is through measurements of the isotopic composition of the water which makes up the ice cores. Water isotopes are sensitive to temperature changes and can thus be used as a proxy for paleo temperature along with being used as dating parameters, since the annual cycles often are detectable in water isotope data.
+\subsubsection{$\delta$ notation and water isotopes}
+Water isotopic ratios, i.e. the ratio of the minority isotope, ${\text{H}_2^{18}\text{O}}$ or ${\text{H}_2^{17}\text{O}}$($^2\text{H}_2\text{O}$), compared to the majority isotope, ${\text{H}_2^{16}\text{O}}$ ($^1\text{H}_2\text{O}$), are used to report the quantities of isotopes in a sample relative to the ratio of a given reference water sample. This is commonly expressed in the $\delta$-notation as:
+\begin{equation}
+	\delta^i = \frac{^iR_{sample}}{^iR_{reference}} - 1		
+\end{equation}
+where $^{18}R = \frac{n_{^{18}\text{O}}}{n_{^{16}\text{O}}}$, $^{2}R = \frac{n_{^{2}\text{H}}}{n_{^{1}\text{H}}}$  and $^{17}R = \frac{n_{^{17}\text{O}}}{n_{^{16}\text{O}}}$. Here n is the abundance of the given isotope.\\
+Besides the isotopic quantities $\delta^{17}\text{O}$, $\delta^{18}\text{O}$ and $\delta^2\text{H} = \delta\text{D}$, both deuterium excess and $\Delta^{17}\text{O}$, known as $^{17}\text{O}$ excess, can be of interest. Deuterium excess is usually used as a measure of the kinetic fractionation processes, taking place in the water vapor formation of polar precipitation, giving an indicator of the conditions during precipitation formation, and thus giving a pointer to the source of the water vapor.
+Like deuterium excess $^{17}\text{O}$ is sensitive to kinetic fractionation, but much less sensitive to equilibrium fractionation than both $\delta$D and $\delta^{18}$O. Along with being nearly insensitive to temperature(REFERENCES), these robustness factors leads to $^{17}$O being usable as an independent parameter to be used to reveal the ways of the complicated mixing effects of fractionation due to evaporation, transportation, formation and deposition.
+\textbf{Fractionation}\\
+\subsubsection{Measuring water isotopes}
+\textbf{Cavity Ring-Down Spectroscopy}\\
+\textit{Calibration}\\
+\textbf{Spectral Analysis}\\
+\textit{Power Spectral Densities (PSD)}\\
+\textit{Maximum Entropy Method}\\
+\textit{Noise of PSD and variance of depth series}\\
+
+
+
+
+\end{document}

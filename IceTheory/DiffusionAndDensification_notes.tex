@@ -1,0 +1,316 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper, hmargin={2cm, 2.5cm}, vmargin={2.5cm, 2.5cm}]{geometry}  
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsfonts,amssymb,wasysym}
+\usepackage{graphicx, wrapfig}
+\usepackage{caption}
+\usepackage{tabularx}
+\usepackage{subcaption}
+\usepackage{mathrsfs}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{appendix}
+\usepackage{etoolbox}
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+\BeforeBeginEnvironment{appendices}{\clearpage}
+% Custom colors
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+\usepackage{listings}
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+		language=Python,
+		basicstyle=\ttm,
+		otherkeywords={self},             % Add keywords here
+		keywordstyle=\ttb\color{deepblue},
+		emph={MyClass,__init__},          % Custom highlighting
+		emphstyle=\ttb\color{deepred},    % Custom highlighting style
+		stringstyle=\color{deepgreen},
+		frame=tb,                         % Any extra options here
+		showstringspaces=false            % 
+}}
+
+% Python environment
+\lstnewenvironment{python}[1][]
+{
+	\pythonstyle
+	\lstset{#1}
+}
+{}
+
+\newcommand\pythonexternal[2][]{{
+		\pythonstyle
+		\lstinputlisting[#1]{#2}}}
+
+% Python for inline
+\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}
+
+
+\title{NOTES: Diffusion and densification}
+\author{Thea Quistgaard}
+\date{Master Thesis 2020/2021}
+
+\begin{document}
+\maketitle
+
+\section{MOLECULAR DIFFUSION OF STABLE WATER ISOTOPES IN POLAR FIRN AS A PROXY FOR PAST TEMPERATURES - C.Holme et al}
+Isotopic composition alone as a tool for dating ice has its limitations. The spatial isotope slope is inaccurate when extrapolated to past climatic conditions. \textcolor{red}{WHY?}
+The diffusion process of the water isotopic signal in porous firn layers, from deposition to pore close-off/lock-in depth, can yield diffusive rates which may be used as proxies for past firn temperatures. What makes this method difficult to implement in many studies is the requirement of high resolution data for the firn diffusion temperature reconstruction, as this builds on power spectral analysis where the Nyquist frequency often is the bottleneck for thorough analysis.
+The isotopic diffusion is not an isolated variable, and it can be necessary to use shallow cores to minimize uncertainties from different affecting parameters such as flow models.
+\subsection{THEORY}
+\subsubsection{DIFFUSION IN FIRN}
+The diffusion process, taking place in the vapor phase, attenuates the water isotopic signal throughout the firn column. This process is described through Fick's $2^{\text{nd}}$ law, which describes the change in concentration with time due to diffusion:
+\begin{equation}
+	\frac{\partial \phi}{\partial t} = D(t) \frac{\partial^2 \phi}{\partial z^2} - \dot{\epsilon}_z(t) z \frac{\partial \phi}{\partial z}
+	\label{eq:Fick2_concentration}
+\end{equation}
+Here, we assume that the water isotopic signal approcimates the concentration, so $\phi \approx \delta$ and thus:
+\begin{equation}
+	\frac{\partial \delta}{\partial t} = D(t) \frac{\partial^2 \delta}{\partial z^2} - \dot{\epsilon}_z(t) z \frac{\partial \delta}{\partial z}
+	\label{eq:Fick2_WIS}
+\end{equation}
+The attenuation with depth and time is a loss of information, but the process with which the information is lost can be used to infer temperature of firn and accumulation on site. This is due to the diffusion constant $D(t)$ and the vertical strain rate $\dot{\epsilon}_z(t)$ depend on temperature and accumulation.
+The solution to \ref{eq:Fick2_WIS} can be retrieved by convolution. The attenuated(measured) isotopic signal, $\delta(z)$, can be described as the convolution between the initial isotopic signal, $\delta'(z)$ and a Gaussian filter, $\mathcal{G}(z)$, multiplied by the thinning function, $S(z)$, describing the total thinning of a given layer at depth z due to the vertical strain applied from the above snow column:
+\begin{equation}
+	\delta(z) = S(z)[\delta'(z)*\mathcal{G}(z)]
+	\label{eq:diff_solution_conv}
+\end{equation}
+where
+\begin{equation}
+	S(z) = e^{\int_{0}^{z}\dot{\epsilon}_z(z')\, dz'}
+	\label{eq:Thinning_fct}
+\end{equation}
+and
+\begin{equation}
+	\mathcal{G}(z) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{z^2}{2\sigma^2}}
+	\label{eq:Gauss_filter}
+\end{equation}
+In the gaussian filter, the variance $\sigma^2$ describes the average displacement of a water molecule along the z-axis. This value is commonly referred to as the \textit{diffusion length} and it is directly related to both $D(t)$ and $\dot{\epsilon}_z(t)$(the strain rate being approximately proportional to the densification rate in the column). Therefore it is crucial to provide an accurate estimate of $\sigma^2$.
+The change of diffusion length over time is given as 
+\begin{equation}
+	\frac{d\sigma^2}{dt} - 2\dot{\epsilon}_z (t)\sigma^2 = 2 D(t)
+	\label{eq:Evolution_DiffLen}
+\end{equation}
+given by \ref{label}, which also states that for the strain rate, the following approximation can be made:
+\begin{equation}
+	\dot{\epsilon}_z(t) \approx - \frac{d\rho}{dt}\frac{1}{\rho}
+	\label{eq:strain_rate_approx}
+\end{equation}
+where $\rho$ is the density and $\frac{d\rho}{dt}$ is the densification rate. With this approximation, the solution to the equation for the evolution of diffusion length in the firn column can be found as:
+\begin{equation}
+	\sigma^2(\rho) =\frac{1}{\rho^2} \int_{\rho_0}^{\rho}2\rho'^2\left(\frac{d\rho'}{dt}\right)^{-1} D(\rho') \, d\rho'
+	\label{eq:Diff_Len_Firn}
+\end{equation}
+If we assume that the diffusion constant, $D(\rho)$, and the densification rate, $\frac{d\rho}{dt}$ are known, then it is possible to give an estimate of the diffusion length profile by integrating from top, at density $\rho_0$, to pore colse-off depth, $\rho_{co}$.
+
+\subsubsection{DIFFUSION IN SOLID PHASE}
+Below close-off depth, when the snow has reached a state of solid ice, the isotope diffusion is driven by isotopic gradients within the lattice structure of the ice crystals themselves. This diffusion process is much slower than the one occurring in firn, and thus does not contribute with the same order of magnitude attenuation and information loss. The diffusion constant for ice is defined as only depending on the temperature. It can be determined by looking at borehole temperature profiles and assuming steady state, i.e. Herron-Langway steady state densification model:
+\begin{equation}
+	\frac{d\rho(z)}{dt} = K(T) A^{\nu}(\rho_{\text{ice}} -\rho(z))
+	\label{eq:HL_Steady_State_Dens_Model}
+\end{equation}
+where $K(T)$ is the densification rate coefficient, $A$ is the annual accumulation rate and $\nu$ is a factor that determines the effect of $A$ in different states of densification.
+The temperature of the ice increases when nearing the bedrock, and due to the diffusion's exponential dependency on temperature, the calculations will depend more on the ice diffusion as it becomes a dominant factor at these depths. When in more shallow ice, the diffusion constant and length can be determined as(assuming thinning function and depth-age scale is known):
+\begin{equation}
+	D_{ice} = 9.2 \cdot 10^{-4} e^{-\frac{7186}{T}} 	\left[\frac{\text{m}^2}{\text{s}}\right]
+	\label{eq:Ice_Diff_const}
+\end{equation}
+
+\begin{equation}
+	\sigma^2_{\text{ice}}(t) = S(t)^2 \int_{0}^{t}2 D_{\text{ice}}(t') S(t')^{-2} \, dt'
+	\label{eq:Diff_Len_Ice}
+\end{equation}
+\subsection{RECONSTRUCTING FIRN TEMPERATURES FROM ICE CORE DATA}
+Reconstruction of paleotemperatures can be attempted through a number of various techniques. For now, the single isotopelogue diffusion methods are the only ones presented here as they yield the most precise and accurate results. 
+\\
+As is known, convolution in time domain is equal to multiplication in the frequency domain. According to equation (\ref{eq:diff_solution_conv}), the transfer function to the frequency domain, will be the Fourier transform of the Gaussian filter:
+\begin{equation}
+	\mathcal{F}[\mathcal{G}(z)] = \hat{\mathcal{G}} = e^{-\frac{k^2\sigma^2}{2}}, \qquad k = 2\pi f
+	\label{eq:Transer_Fct}
+\end{equation} 
+This filter keeps larger wavelength frequencies (> 50 cm) unaltered but attenuates short wavelengths (< 20 cm) heavily, which is exactly the effect of diffusion on the isotopic signal. An estimate of the diffusion length $\sigma^2$ can be made from the power spectral density(PSD) of an isotopic time series. In the frequency domain a PSD composed of an initial signal, a filter function and a noise term is given by:
+\begin{equation}
+	P_s = P_0(k) e^{-k^2\sigma^2} + |\hat{\eta}(k)|^2, \qquad f \in [0, f_{Nq}]
+	\label{eq:PSD_general}
+\end{equation} 
+where the diffused and noise-affected signal, $P_s$, is equal to the original signal, $P_0(k)$, times a filter, $e^{-k^2\sigma^2}$, plus a noise term, $|\hat{\eta}(k)|^2$, over a frequency space ranging from zero to the Nyquist frequency, $f_{Nq}$. The Nyquist frequency is dependent on the sampling resolution by $f_{Nq} = \frac{1}{2\Delta}$, where $\Delta$ is the discrete sampling size.
+The noise term, often categorized as white noise but red noise is also seen in isotopic signals, is given as
+\begin{equation}
+	|\hat{\eta}(k)|^2 = \frac{\sigma_n^2 \Delta}{|1 - a_1 \, e^{ik\Delta}|^2}
+	\label{eq:PSD_Noise_Term}
+\end{equation}
+Equation \ref{eq:PSD_Noise_Term} describes an autoregressive process of the first order, with $a_1$ being an AR-1 coefficient. \textcolor{red}{WHAT IS THIS? DESCRIBE.}.\\
+The spectral estimate of the time series, $\mathbb{P}_s$, can be computed via a number of different numerical schemes, here Burg's method will be used, REFERENCE. To determine the diffusion length a fit to these estimated spectral data, $P_s$, is found through for example a least square optimization, from which the parameters $P_0, \; \sigma, \; a_1, \; \sigma_{\eta}^2$ can be estimated.\\
+Thus the obtained diffusion length $\hat{\sigma}_i^2$ for the depth $z_i$ can be found by minimizing $|P_s - \mathbb{P}_s|^2$, but this diffusion length needs to be corrected. The obtained $\hat{\sigma}_i^2$ is affected by two further diffusion processes that, luckily, can be somewhat corrected for. Corrections must be made due to 
+\begin{itemize}
+	\item \textbf{Sampling diffusion}: Diffusion process due to the sampling method. Sampling at a certain discrete resolution - be it discrete sections or resolution in CFA system due to step or impulse response - gives and additional diffusion length of
+	\begin{equation}
+		\sigma_{dis} = \frac{2 \Delta^2}{\pi^2}\ln\left(\frac{\pi}{2}\right)
+		\label{eq:Diff_Len_corr_Discrete}
+	\end{equation}
+	\item \textbf{Ice diffusion} When below the close-off depth, a correction for the ice diffusion must also be made.
+\end{itemize} 
+So to obtain the actual diffusion length from the raw data, both the sampling and the ice diffusion need to be subtracted from $\hat{\sigma}_i^2$, and a scaling factor due to thinning from the strain must be introduced:
+\begin{equation}
+	\sigma_{\text{firn}}^2 = \frac{1}{S(z)^2}\hat{\sigma}_{\text{firn}}^2 = \frac{\hat{\sigma}_i^2 - \sigma_{dis}^2 - \sigma_{\text{ice}}^2}{S(z)^2}
+	\label{eq:Diff_Len_Firn_Corrected}
+\end{equation}
+Now, from the obtained estimate of the firn diffusion length, a temperature estimate can be made by numerically finding the root of:
+\begin{equation}
+	\left(\frac{\rho_{co}}{\rho_i}\right)^2\;\sigma^2(\rho=\rho_{co}, T(z),A(z)) - \sigma_{\text{firn}}^2 = 0
+	\label{eq:Firn_Temp_est_Roots}
+\end{equation}
+\textbf{NOTE:} Annual spectral signals appearing as peaks in the PSD, can influence the  estimate of diffusion lengths. This can be taken into account by introducing a weight function omitting the annual signal from the PSD:
+\begin{equation}
+	w(f) = \begin{cases}
+			0, & f_{\lambda} - d f_{\lambda} \leq f \leq f_{\lambda} + d f_{\lambda} \\
+			1, & f < f_{\lambda} - d f_{\lambda}, f > f_{\lambda} + d f_{\lambda}
+	\end{cases}
+\end{equation}
+
+\newpage
+\section{WATER ISOTOPE DIFFUSION RATES FROM THE NGRIP ICE COREFOR THE LAST 16000 YEARS \\ - V. Gkinis et al}
+Isotopic signatures of ice cores have been used as a proxy for temperature, by using a linear relationship between the water isotopic signals and the temperature, inferred by a number of data analysis studies
+\begin{equation}
+	\delta^{18}O = 0.67 \; T - 13.7
+	\label{eq:Iso_Temp_spatial_relation}
+\end{equation}
+This relationship has been used over a number of decades but studies has proposed some significant problems with this method. The isotopic slope is not constant with time and the spatial slope has high isotopic sensitivity during glacial conditions, pointing to this relationship being sensitive to climatic conditions.
+This all points to an assessment of the use of this relationship and points to another way of using the water isotopic signals as proxies for paleotemperatures. This new method should be aware of the sensitivity of $\delta^{18}O$  to temperature, and instead of a spatial slope infer a temporal slope. \\
+
+If the HL-model is used, remember to consider wind effects and daily temperature changes, to be able to assume a steady state.
+
+\newpage
+\section{FIRN DENSIFICATION: AN EMPIRICAL MODEL \\ - M. Herron \& C. Langway}
+This article present an in-depth analysis of three stages of densification in the firn column. The first stage is between the initial precipitated snow density and the 'critical density' at $0.55 \frac{\text{Mg}}{\text{m}^3}$, the second stage is between critical density and the close-off density at $0.82-0.84 \frac{\text{Mg}}{\text{m}^3}$, and the third stage is from close-off and all the way through the ice.\\
+At the first stage the densification is mostly due to grain settling and packing and the densification rate is very rapid. At the second stage, the snow is close to isolating air bubbles. At the third stage, the dominating densification taking place is by the compression of air bubbles.\\
+For these three stages it is of interest to develop a depth-density profile, which is dependent on snow accumulation rate and temperature. The focus is on developing an empirical model for the first and second stages of densification, as they are the most dramatic sections of the firn column considering densification and diffusion.
+\subsection{THE MODEL}
+Sorge's law assumes that the relation between snow density $\rho$ and depth $h$ is invariant with time, given a constant snow accumulation and temperature. Furthermore, annual layer thinning by plastic flow is ignored.\\
+Densification of firn, which can be described as the proportional change in air space, is linearly related to change in stress due to the weight of the overlying snow:
+\begin{equation}
+	\frac{d\rho}{\rho_i - \rho} = \text{const.} \, \rho \, dh
+	\label{eq:Dens_Prop_Stress}
+\end{equation}
+By integration, this implies a linear relation between $\ln\left[\frac{\rho}{\rho_i - \rho}\right]$ and $h$.\\
+When considering real data, analysis shows that $\ln\left[\frac{\rho}{\rho_i - \rho}\right]$ vs $h$. plots have two linear segments, corresponding to the first and second stages of densification, with separation of segments at $\rho = 0.55$ and $\rho = 0.8$. These segments on the plots will yield two different slopes with slope constants:
+\begin{subequations}
+\begin{center}
+
+	\begin{tabularx}{\textwidth}{Xp{2cm}X}
+		\begin{equation}
+			C = \frac{d\ln\left[\frac{\rho}{\rho_i - \rho}\right]}{dh}, \rho < 0.55
+			\label{eq:Dens_Const_1}
+		\end{equation}
+		&&
+		\begin{equation}
+			C' = \frac{d\ln\left[\frac{\rho}{\rho_i - \rho}\right]}{dh}, 0.55 < \rho < 0.8
+			\label{eq:Dens_Const_2}
+		\end{equation}
+	\end{tabularx}
+\end{center}
+\end{subequations}
+
+To find the densification rate, $\frac{d\rho}{dt}$, substitute $\frac{dh}{dt} = \frac{A}{\rho} \rightarrow dt = \frac{\rho}{A} dh$ and use the differentiation $\frac{\partial}{\partial t}\left[\ln\left[\frac{x(t)}{k - x(t)}\right]\right] = \frac{k \frac{dx}{dt}}{(k - x(t))x(t)}$
+\begin{align*}
+	C & = \frac{\rho}{A}\frac{d\ln\left[\frac{\rho}{\rho_i - \rho}\right]}{dt}\\
+	& = \frac{\rho}{A} \frac{\rho_i}{\rho(\rho_i - \rho)}\frac{d\rho}{dt}\\
+	& = \frac{1}{A}\frac{\rho_i}{\rho_i - \rho}\frac{d\rho}{dt}
+\end{align*}
+leading to 
+\begin{subequations}
+	\begin{equation}
+		\frac{d\rho}{dt} = \frac{C A}{\rho_i}(\rho_i - \rho)
+		\label{eq:Dens_Rate_1}
+	\end{equation}
+	\begin{equation}
+		\frac{d\rho}{dt} = \frac{C' A}{\rho_i}(\rho_i - \rho)
+		\label{eq:Dens_Rate_2}
+	\end{equation}
+\end{subequations}
+To continue from here two assumptions are made. The first is that the temperature and the accumulation rate dependencies may be separated, and that they thereby have no inter-correlation. The second is that the rate equations may be written as:
+\begin{subequations}
+	\begin{equation}
+		\frac{d\rho}{dt} = k_0 A^a (\rho_i - \rho), \rho < 0.55
+		\label{eq:Dens_Rate_1_Arrh}
+	\end{equation}
+	\begin{equation}
+		\frac{d\rho}{dt} = k_1 A^b (\rho_i - \rho), 0.55 < \rho < 0.8
+		\label{eq:Dens_Rate_2_Arrh}
+	\end{equation}
+\end{subequations}
+where $k_0$ and $k_1$ are Arrhenius type rate constants which are only temperature dependent, and $a$ and $b$ are constants determining the significance of the accumulation rate and are dependent on the densification mechanisms.\\
+$a$ and $b$ may be determined by comparing slopes for densification at different sites of nearly equivalent conditions as:
+\begin{equation}
+	a = \frac{\ln\left(\frac{C_1}{C_2}\right)}{\ln\left(\frac{A_1}{A_2}\right)} + 1
+	\label{eq:Determ_const_a}
+\end{equation}
+and equivalently for b, with $C_1'$ and $C_2'$.\\
+$k_0$ and $k_1$ can be estimated by observing values of k at different temperatures and plotting $\ln(k)$ versus temperature - a so-called Arrhenius plot - to find $A$ and $E_a$ in equations:
+\begin{equation}
+	k = A e^{-\frac{E_a}{k_B T}} = A e^{-\frac{E_a}{RT}}
+\end{equation}
+\begin{equation*}
+	\ln(k) = \ln(A) - \frac{E_a}{R}\frac{1}{T}
+\end{equation*}
+leading to values of $k_0$ and $k_1$ of:
+\begin{subequations}
+	\begin{center}
+		
+		\begin{tabularx}{\textwidth}{Xp{2cm}X}
+			\begin{equation}
+			k_0 = 11 e^{-\frac{10160}{RT}}
+			\label{eq:k0}
+			\end{equation}
+			&&
+			\begin{equation}
+			k_1 = 575 e^{-\frac{21400}{RT}}
+			\label{eq:k1}
+			\end{equation}
+		\end{tabularx}
+	\end{center}
+\end{subequations}
+\subsubsection{DEPTH-DENSITY AND DEPTH-AGE CALCULATIONS}
+Assuming that temperature, annual accumulation rate and initial snow density are known, the following calculations can be made:
+\begin{itemize}
+	\item Density at depth $h$, $\rho(h)$
+	\item Depth at pore close-off, $\rho=0.55$
+	\item Depth-age relationship from surface to pore close-off (stage 1 and 2).
+\end{itemize}
+\textbf{1. stage of densification:}
+Depth-density profile:
+\begin{equation}
+	\rho(h) = \frac{\rho_i Z_0}{1 + Z_0}
+\end{equation}
+where $Z_0 = e^{\rho_i k_0 h + \ln\left[\frac{\rho_0}{\rho_i - \rho_0}\right]}$. In this segment, the depth-density is independent of accumulation rate. The critical density depth can be calculated as:
+\begin{equation}
+	h_{0.55} = \frac{1}{\rho_i k_0}\left[\ln\left[\frac{0.55}{\rho_i - 0.55}\right] - \ln\left[\frac{\rho_0}{\rho_i - \rho_0}\right]\right]
+\end{equation}
+and the age at close-off depth as:
+\begin{equation}
+	t_{0.55} = \frac{1}{k_0 A}\ln\left[\frac{\rho_i - \rho_0}{\rho_i - 0.55}\right]
+\end{equation}
+\textcolor{red}{WHERE DOES THIS COME FROM?}
+\textbf{2. stage of densificaion:} The depth-density profile
+\begin{equation}
+	\rho(h) = \frac{\rho_i Z_1}{1 + Z_1}
+\end{equation}
+where $Z_1 = e^{\rho_i k_1 (h - h_{0.55})\frac{1}{A^{0.5}} + \ln\left[\frac{0.55}{\rho_i - 0.55}\right]}$. The age of firn at a given density $\rho$:
+\begin{equation}
+t_{\rho} = \frac{1}{k_1 A^{0.5}}\ln\left[\frac{\rho_1 - 0.55}{\rho_1 - \rho}\right]
+\end{equation}
+An estimate of the mean annual accumulation rate can be made from the slope $C'$ and the mean annual temperature:
+\begin{equation}
+	A = \left(\frac{\rho_i k_1}{C'}\right)^2
+\end{equation}
+
+
+\begin{appendices}
+\end{appendices}
+	
+\end{document}

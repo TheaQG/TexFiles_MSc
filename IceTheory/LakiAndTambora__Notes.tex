@@ -1,0 +1,128 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper, hmargin={2cm, 2.5cm}, vmargin={2.5cm, 2.5cm}]{geometry}  
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsfonts,amssymb,wasysym}
+\usepackage{graphicx, wrapfig}
+\usepackage{caption}
+\usepackage{tabularx}
+\usepackage{subcaption}
+\usepackage{mathrsfs}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{appendix}
+\usepackage{etoolbox}
+\usepackage{booktabs}
+\usepackage{gensymb}
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+\BeforeBeginEnvironment{appendices}{\clearpage}
+% Custom colors
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+\usepackage{listings}
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+		language=Python,
+		basicstyle=\ttm,
+		otherkeywords={self},             % Add keywords here
+		keywordstyle=\ttb\color{deepblue},
+		emph={MyClass,__init__},          % Custom highlighting
+		emphstyle=\ttb\color{deepred},    % Custom highlighting style
+		stringstyle=\color{deepgreen},
+		frame=tb,                         % Any extra options here
+		showstringspaces=false            % 
+}}
+
+% Python environment
+\lstnewenvironment{python}[1][]
+{
+	\pythonstyle
+	\lstset{#1}
+}
+{}
+
+\newcommand\pythonexternal[2][]{{
+		\pythonstyle
+		\lstinputlisting[#1]{#2}}}
+
+% Python for inline
+\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}
+
+
+\title{Laki and Tambore Seen in Ice Cores}
+\author{Thea Quistgaard}
+\date{Master Thesis 2020/2021}
+
+\begin{document}
+\maketitle
+
+
+
+
+
+\section{SPATIAL AND TEMPORAL OXYGEN ISOTOPE VARIABILITY IN NORTHERN GREENLAND\\ S. Weissbach (2016) (SPECS)}
+Between 1993 and 1995 twelve ice cores were drilled as a part of the North Greenland Traverse(NGT). The ice cores were named B16 to B30, with B21, B23 and B26 to B30 located on ice divides and B16 to B20 located east of the main Greenlandic ice divide. A stack of these 12 $\delta^{18}\text{O}$ records thus represent a collective mean of the isotope signal for northern Greenland, which can be interpreted as a proxy for temperatures. \\
+A low resolution density profile was measured by weighing single ice segments of about 1 m, which was then used to calculate the water equivalent(w.e.) depth of the measured ice. \\
+From the density-corrected (w.e.) high-resolution electrical conductivity profiles and $\text{SO}_4^{2-}$-concentration profiles for the cores B16, B18, B20, B21 and B30 a number of volcanic horizons can be detected and used to synchronize the cores.
+
+\begin{table}
+	\centering
+	\begin{tabular}{c c c c c}
+		\toprule
+		Core & Core length & Elevation & \multicolumn{2}{c}{Geographic position} \\ \cmidrule{4-5}
+		ID & [m] & [m a.s.l.] & Latitude & Longitude\\
+		& & & (\degree N) &  (\degree W) \\
+		\midrule
+		B16 & 102.4 & 3040 & 73.94 & 37.63\\
+		B17 & 100.8 & 2820 & 75.25 & 37.63\\
+		B18 & 150.2 & 2508 & 76.62 & 36.40\\
+		B19 & 150.4 & 2234 & 78.00 & 36.40\\
+		B20 & 150.4 & 2147 & 78.83 & 36.50\\
+		B21 & 100.6 & 2185 & 80.00 & 41.14\\
+		B22 & 120.6 & 2242 & 79.34 & 45.91\\
+		B23 & 150.8 & 2543 & 78.00 & 44.00\\
+		B26 & 119.7 & 2598 & 77.25 & 49.22\\
+		B27 & 175.0 & 2733 & 76.66 & 46.82\\
+		B28 & 70.7 & 2733 & 76.66 & 46.82\\
+		B29 & 110.5 & 2874 & 76.00 & 43.50\\
+		B30 & 160.8 & 2947 & 75.00 & 42.00\\	
+		\bottomrule
+	\end{tabular}
+	\label{Tab:NGT_Bcores}
+	\caption{Overview of the twelve North Greenland Traverse cores drilled between 1993 and 1995.}
+\end{table}
+
+\begin{table}
+	\centering
+	\resizebox{1.05\textwidth}{!}{%
+		\begin{tabular}{c l *{16}{c}}
+			\toprule 
+			Year [AD] & Event & B16 & B17 & B18 & B19 & B20 & B21 & B22 & B23 & B26 & B27 & B28 & B29 & B30 & VEI & Sulfate \\
+			\midrule
+			\textbf{1912} & Katmai * & 11.60 & 9.31 & 8.48 & 7.38 & 7.86 & 8.62 & 11.56 & 9.49 & 14.27 & 13.69 & 14.44 & 11.41 & 13.12 & 6 & 11.0 \\
+			\textbf{1816} & Tambora* & 24.49 & 20.27 & 18.91 & 16.77 & 17.27 & 19.46 & 26.17 & 21.54 & 31.50 & 31.13 & 31.91 & 25.97 & 29.91 & 7 & 58.7 \\
+			
+			\textbf{1783} & Laki* 			& 29.36 & 24.19 & 22.45 & 19.94 & 20.32 & 23.10 & 31.25 & 25.93 & 37.77 & 37.19 & 38.07 & 31.38 & 35.80 & 4 & 93.0 \\
+			\textbf{1739} & Tarumai* 		& 35.52 & - & 26.90 & 24.10 & 24.62 & - & - & - & - & - & & - & 43.07 & 5 & 0 \\
+			\textbf{1694} & Hekla**			& - 	& 34.47 & 31.84 & 28.54 & 29.16 & 32.87 & 44.06 & - & - & - & & 44.22 & 50.45 & 4 & 0\\
+			\textbf{1666} & Unknown** 		& 46.22 & - & 34.75 & 31.20 & 32.10 & 35.93 & 48.13 & - & - & - & & 48.50 & - & & 0\\
+			\textbf{1640} & Komagatake** 	& 49.90 & - & 37.48 & 33.69 & 34.80 & - & - & - & - & - & & 52.36 & - & 4 & 33.8 \\
+			\textbf{1601} & Huaynaputina** 	&		& 44.97 & 41.62 & - & 38.70 & 42.95 & - & 48.31 & 69.22 & 68.39 & & 58.25 & 65.94 & 4 & 46.1 \\
+			\textbf{1479} & Mt. St. Helens** &		& 58.84 & 54.42 & - & 51.31 & 56.04 & 75.09 & - & & 89.42 & & 76.81 & 86.60 & & 7.4 \\
+			\textbf{1259} & Samalas* 		&		& & 76.60 & 68.03 & 72.86 & & & 89.35 & & 126.10 & & & 122.10 & & 145.8\\
+			\textbf{1179} & Katla* 			&		& & - & - & 80.04 & & & 98.60 & & & & & & & 0\\
+			\textbf{934} & Eldgjá 			&		& & 109.20 & 99.20 & & & & & & & & & & & 0\\
+			\addlinespace
+			\multicolumn{2}{c}{Max. age of core [AD]} & 1470 & 1363 & 874 & 753 & 775 & 1372 & 1372 & 1023 & 1505 & 1195 & 163 & 1471 & 1242 & &\\ 
+			
+			\multicolumn{2}{c}{Max. difference [a]} & 7 & & 3 & & 8 & 6 & & & 4 & & & 3 & &&\\ 
+			\bottomrule
+		\end{tabular}
+	}
+\end{table}
+
+\end{document}

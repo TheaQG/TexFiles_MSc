@@ -1,0 +1,60 @@
+\ifglsentryexists{dens}{}%
+{%
+\gls@defglossaryentry{dens}%
+{%
+name={Densification},%
+sort={Densification},%
+type={main},%
+first={Densification},%
+firstplural={Densifications},%
+text={Densification},%
+plural={Densifications},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{diff}{}%
+{%
+\gls@defglossaryentry{diff}%
+{%
+name={Diffusion},%
+sort={Diffusion},%
+type={main},%
+first={Diffusion},%
+firstplural={Diffusions},%
+text={Diffusion},%
+plural={Diffusions},%
+description={Diffusion is something else},%
+descriptionplural={Diffusion is something else},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
