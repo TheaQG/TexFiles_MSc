@@ -1,0 +1,12 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{So Far...}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Water Isotopes}{2}{0}{1}
+\beamer@subsectionintoc {1}{2}{Diffusion and Densification}{12}{0}{1}
+\beamer@subsectionintoc {1}{3}{Back Diffusion}{14}{0}{1}
+\beamer@subsectionintoc {1}{4}{Volcanic Horizons}{30}{0}{1}
+\beamer@sectionintoc {2}{And now?}{34}{0}{2}
+\beamer@subsectionintoc {2}{1}{Detrend and Standardize}{34}{0}{2}
+\beamer@subsectionintoc {2}{2}{Peak Detection}{38}{0}{2}
+\beamer@subsectionintoc {2}{3}{Layer Counting Algorithm}{41}{0}{2}
+\beamer@sectionintoc {3}{Outlook}{43}{0}{3}
+\beamer@subsectionintoc {3}{1}{Layer Counting Algorithm, Cont.}{43}{0}{3}
