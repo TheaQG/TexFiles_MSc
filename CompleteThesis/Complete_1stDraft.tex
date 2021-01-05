@@ -1,0 +1,136 @@
+\documentclass[11pt]{memoir}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsfonts,amssymb,wasysym}
+\usepackage{media9, graphicx, wrapfig}
+\usepackage{caption}
+\usepackage{graphics,epsfig}
+\usepackage{tabularx}	
+\usepackage{subcaption}
+\usepackage{mathrsfs}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{pgf}
+\usepackage{appendix}
+\usepackage{etoolbox}
+\usepackage{booktabs}
+\usepackage{gensymb}
+\usepackage{verse}
+
+\newcommand{\attrib}[1]{%
+\nopagebreak{\raggedleft\footnotesize #1\par}}
+\renewcommand{\poemtitlefont}{\normalfont\large\itshape\centering}
+		
+
+
+\setsecnumdepth{subsection}
+\settocdepth{subsubsection}
+\graphicspath{{../../Figures/}{../Figures/}}
+
+
+
+\BeforeBeginEnvironment{appendices}{\clearpage}
+
+\usepackage{subfiles}
+
+
+
+
+
+\title{\textbf{Laki To Tambora} \\ A study of ice cores}
+\author{Thea Quistgaard}
+\date{Master Thesis 2020/2021}
+
+\begin{document}
+\frontmatter
+
+\maketitle
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{TurnerEruptionofSoufriere-Mountains.jpg}
+	\caption{J. M. W. Turner: \textit{The Eruption of the Soufriere Mountains}}
+	\label{Fig:Turner}
+\end{figure}
+
+
+\newpage
+
+
+\poemtitle{Darkness}
+\settowidth{\versewidth}{Rayless, and pathless, and the icy earth}
+\begin{verse}[\versewidth]
+I had a dream, which was not all a dream.\\
+The bright sun was extinguish'd, and the stars\\
+Did wander darkling in the eternal space,\\
+Rayless, and pathless, and the icy earth\\
+Swung blind and blackening in the moonless air;\\
+Morn came and went—and came, and brought no day.
+\end{verse}
+\attrib{Lord Byron (1788--1824)}
+
+
+\section{Acknowledgments}
+I would like to thank potatoes. They are great.
+
+
+\newpage
+\section{Abstract}
+
+\newpage
+ 
+
+\tableofcontents*{}
+
+
+\newpage
+\listoffigures
+
+\listoftables
+
+
+
+
+\mainmatter
+
+\chapter[Introduction][Introduction]{Introduction}
+
+\subfile{../Chapters/Introduction/Chapter_Introduction}
+
+
+\chapter[Ice Theory][Ice Theory]{The theory of ice cores}
+
+\subfile{../Chapters/IceTheory/Chapter_IceTheory}
+
+
+
+\chapter[Data][Data]{Isotopic Data: Laki to Tambora as seen in N Ice Cores.}
+
+\subfile{../Chapters/Data/Chapter_Data}
+
+
+\chapter[Signal Analysis][Signal Analysis]{Signal Restoration and Peak Detection}
+
+\subfile{../Chapters/SignalAnalysis/Chapter_SignalAnalysis}
+
+
+
+\chapter[Temperature Reconstruction]{Community Firn Model and Temperature Reconstruction}
+
+\subfile{../Chapters/TemperatureReconstruction/Chapter_TemperatureReconstruction}
+
+
+\chapter[Layer Counting][Layer Counting]{Layer Counting and Annual Layer Thickness Estimation}
+
+\subfile{../Chapters/LayerCounting/Chapter_LayerCounting}
+
+\chapter[Method][Method]{General Method and Algorithm Walk-Throughs}
+
+\subfile{../Chapters/Method/Chapter_Method}
+
+\backmatter
+
+\bibliographystyle{plain} 
+\bibliography{/home/thea/Documents/Bibliographies/MasterThesis.bib}
+
+	
+\end{document}

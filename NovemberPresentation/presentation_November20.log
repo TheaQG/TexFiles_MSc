@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  19 NOV 2020 15:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  25 NOV 2020 08:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1512,11 +1512,11 @@ l.84 \subsection{Water Isotopes}
 
 ]
 Package epstopdf Info: Source file: <d17d18dD_ExamplesEGRIP.eps>
-(epstopdf)                    date: 2020-11-19 11:08:39
+(epstopdf)                    date: 2020-11-25 07:35:50
 (epstopdf)                    size: 221342 bytes
 (epstopdf)             Output file: <d17d18dD_ExamplesEGRIP-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2020-11-19 11:16:34
+(epstopdf)                    date: 2020-11-25 07:40:14
 (epstopdf)                    size: 21710 bytes
 (epstopdf)             Command: <repstopdf --outfile=d17d18dD_ExamplesEGRIP-eps
 -converted-to.pdf d17d18dD_ExamplesEGRIP.eps>
@@ -1527,7 +1527,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./d17d18dD_ExamplesEGRIP-eps-converted-
 to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
 wed
-<d17d18dD_ExamplesEGRIP-eps-converted-to.pdf, id=389, 867.24pt x 505.89pt>
+<d17d18dD_ExamplesEGRIP-eps-converted-to.pdf, id=356, 867.24pt x 505.89pt>
 File: d17d18dD_ExamplesEGRIP-eps-converted-to.pdf Graphic file (type pdf)
 <use d17d18dD_ExamplesEGRIP-eps-converted-to.pdf>
 Package pdftex.def Info: d17d18dD_ExamplesEGRIP-eps-converted-to.pdf  used on i
@@ -1653,135 +1653,55 @@ Overfull \hbox (45.0pt too wide) detected at line 123
 [9
 
 ]
-Overfull \hbox (45.0pt too wide) detected at line 131
+Overfull \hbox (45.0pt too wide) detected at line 142
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 131
+Overfull \hbox (45.0pt too wide) detected at line 142
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 131
+Overfull \hbox (45.0pt too wide) detected at line 142
  [] 
  []
 
 [10
 
 ]
-Overfull \hbox (45.0pt too wide) detected at line 144
+Overfull \hbox (45.0pt too wide) detected at line 142
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 144
+Overfull \hbox (45.0pt too wide) detected at line 142
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 144
+Overfull \hbox (45.0pt too wide) detected at line 142
  [] 
  []
 
 [11
 
 ] (./presentation_November20.toc)
-Overfull \hbox (45.0pt too wide) detected at line 149
+Overfull \hbox (45.0pt too wide) detected at line 144
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 149
+Overfull \hbox (45.0pt too wide) detected at line 144
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 149
+Overfull \hbox (45.0pt too wide) detected at line 144
  [] 
  []
 
 [12
-
-]
-Package epstopdf Info: Source file: <SiteA_HLdensity.eps>
-(epstopdf)                    date: 2020-11-19 11:08:43
-(epstopdf)                    size: 199173 bytes
-(epstopdf)             Output file: <SiteA_HLdensity-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-11-19 11:16:36
-(epstopdf)                    size: 12736 bytes
-(epstopdf)             Command: <repstopdf --outfile=SiteA_HLdensity-eps-conver
-ted-to.pdf SiteA_HLdensity.eps>
-(epstopdf)             \includegraphics on input line 172.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: /usr/bin/pdflatex (file ./SiteA_HLdensity-eps-converted-to.pdf)
-: PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<SiteA_HLdensity-eps-converted-to.pdf, id=1180, 433.62pt x 505.89pt>
-File: SiteA_HLdensity-eps-converted-to.pdf Graphic file (type pdf)
-<use SiteA_HLdensity-eps-converted-to.pdf>
-Package pdftex.def Info: SiteA_HLdensity-eps-converted-to.pdf  used on input li
-ne 172.
-(pdftex.def)             Requested size: 130.83328pt x 152.64044pt.
-Package epstopdf Info: Source file: <SiteA_DiffLen.eps>
-(epstopdf)                    date: 2020-11-19 11:17:12
-(epstopdf)                    size: 187207 bytes
-(epstopdf)             Output file: <SiteA_DiffLen-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-11-19 12:03:18
-(epstopdf)                    size: 8980 bytes
-(epstopdf)             Command: <repstopdf --outfile=SiteA_DiffLen-eps-converte
-d-to.pdf SiteA_DiffLen.eps>
-(epstopdf)             \includegraphics on input line 172.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: /usr/bin/pdflatex (file ./SiteA_DiffLen-eps-converted-to.pdf): 
-PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<SiteA_DiffLen-eps-converted-to.pdf, id=1181, 433.62pt x 505.89pt>
-File: SiteA_DiffLen-eps-converted-to.pdf Graphic file (type pdf)
-<use SiteA_DiffLen-eps-converted-to.pdf>
-Package pdftex.def Info: SiteA_DiffLen-eps-converted-to.pdf  used on input line
- 172.
-(pdftex.def)             Requested size: 130.83328pt x 152.64044pt.
-
-Overfull \hbox (45.0pt too wide) detected at line 172
- [] 
- []
-
-
-Overfull \hbox (45.0pt too wide) detected at line 172
- [] 
- []
-
-
-Overfull \hbox (45.0pt too wide) detected at line 172
- [] 
- []
-
-
-Overfull \vbox (2.63725pt too high) detected at line 172
- []
-
-[13
-
- <./SiteA_HLdensity-eps-converted-to.pdf> <./SiteA_DiffLen-eps-converted-to.pdf
->] (./presentation_November20.toc)
-Overfull \hbox (45.0pt too wide) detected at line 177
- [] 
- []
-
-
-Overfull \hbox (45.0pt too wide) detected at line 177
- [] 
- []
-
-
-Overfull \hbox (45.0pt too wide) detected at line 177
- [] 
- []
-
-[14
 
 ]
 Package epstopdf Info: Source file: <SiteA_FullIso.eps>
@@ -1792,38 +1712,38 @@ Package epstopdf Info: Source file: <SiteA_FullIso.eps>
 (epstopdf)                    size: 24018 bytes
 (epstopdf)             Command: <repstopdf --outfile=SiteA_FullIso-eps-converte
 d-to.pdf SiteA_FullIso.eps>
-(epstopdf)             \includegraphics on input line 190.
+(epstopdf)             \includegraphics on input line 157.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./SiteA_FullIso-eps-converted-to.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<SiteA_FullIso-eps-converted-to.pdf, id=1358, 722.7pt x 505.89pt>
+<SiteA_FullIso-eps-converted-to.pdf, id=1095, 722.7pt x 505.89pt>
 File: SiteA_FullIso-eps-converted-to.pdf Graphic file (type pdf)
 <use SiteA_FullIso-eps-converted-to.pdf>
 Package pdftex.def Info: SiteA_FullIso-eps-converted-to.pdf  used on input line
- 190.
+ 157.
 (pdftex.def)             Requested size: 261.66658pt x 183.16235pt.
 
-Overfull \hbox (45.0pt too wide) detected at line 190
+Overfull \hbox (45.0pt too wide) detected at line 157
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 190
+Overfull \hbox (45.0pt too wide) detected at line 157
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 190
+Overfull \hbox (45.0pt too wide) detected at line 157
  [] 
  []
 
 
-Overfull \vbox (9.65918pt too high) detected at line 190
+Overfull \vbox (9.65918pt too high) detected at line 157
  []
 
-[15
+[13
 
  <./SiteA_FullIso-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <SiteA_Iso_int_Inset.eps>
@@ -1834,134 +1754,170 @@ Package epstopdf Info: Source file: <SiteA_Iso_int_Inset.eps>
 (epstopdf)                    size: 27530 bytes
 (epstopdf)             Command: <repstopdf --outfile=SiteA_Iso_int_Inset-eps-co
 nverted-to.pdf SiteA_Iso_int_Inset.eps>
-(epstopdf)             \includegraphics on input line 201.
+(epstopdf)             \includegraphics on input line 168.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./SiteA_Iso_int_Inset-eps-converted-to.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<SiteA_Iso_int_Inset-eps-converted-to.pdf, id=1445, 783.92876pt x 399.4925pt>
+<SiteA_Iso_int_Inset-eps-converted-to.pdf, id=1178, 783.92876pt x 399.4925pt>
 File: SiteA_Iso_int_Inset-eps-converted-to.pdf Graphic file (type pdf)
 <use SiteA_Iso_int_Inset-eps-converted-to.pdf>
 Package pdftex.def Info: SiteA_Iso_int_Inset-eps-converted-to.pdf  used on inpu
-t line 201.
+t line 168.
 (pdftex.def)             Requested size: 290.74263pt x 148.16345pt.
 
-Overfull \hbox (45.0pt too wide) detected at line 201
+Overfull \hbox (45.0pt too wide) detected at line 168
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 201
+Overfull \hbox (45.0pt too wide) detected at line 168
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 201
+Overfull \hbox (45.0pt too wide) detected at line 168
+ [] 
+ []
+
+[14
+
+ <./SiteA_Iso_int_Inset-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <SiteA_HLdensity.eps>
+(epstopdf)                    date: 2020-11-19 11:08:43
+(epstopdf)                    size: 199173 bytes
+(epstopdf)             Output file: <SiteA_HLdensity-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-11-19 11:16:36
+(epstopdf)                    size: 12736 bytes
+(epstopdf)             Command: <repstopdf --outfile=SiteA_HLdensity-eps-conver
+ted-to.pdf SiteA_HLdensity.eps>
+(epstopdf)             \includegraphics on input line 193.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./SiteA_HLdensity-eps-converted-to.pdf)
+: PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<SiteA_HLdensity-eps-converted-to.pdf, id=1261, 433.62pt x 505.89pt>
+File: SiteA_HLdensity-eps-converted-to.pdf Graphic file (type pdf)
+<use SiteA_HLdensity-eps-converted-to.pdf>
+Package pdftex.def Info: SiteA_HLdensity-eps-converted-to.pdf  used on input li
+ne 193.
+(pdftex.def)             Requested size: 130.83328pt x 152.64044pt.
+Package epstopdf Info: Source file: <SiteA_DiffLen.eps>
+(epstopdf)                    date: 2020-11-19 11:17:12
+(epstopdf)                    size: 187207 bytes
+(epstopdf)             Output file: <SiteA_DiffLen-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-11-19 12:03:18
+(epstopdf)                    size: 8980 bytes
+(epstopdf)             Command: <repstopdf --outfile=SiteA_DiffLen-eps-converte
+d-to.pdf SiteA_DiffLen.eps>
+(epstopdf)             \includegraphics on input line 193.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./SiteA_DiffLen-eps-converted-to.pdf): 
+PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<SiteA_DiffLen-eps-converted-to.pdf, id=1262, 433.62pt x 505.89pt>
+File: SiteA_DiffLen-eps-converted-to.pdf Graphic file (type pdf)
+<use SiteA_DiffLen-eps-converted-to.pdf>
+Package pdftex.def Info: SiteA_DiffLen-eps-converted-to.pdf  used on input line
+ 193.
+(pdftex.def)             Requested size: 130.83328pt x 152.64044pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 193
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 193
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 193
+ [] 
+ []
+
+
+Overfull \vbox (2.63725pt too high) detected at line 193
+ []
+
+[15
+
+ <./SiteA_HLdensity-eps-converted-to.pdf> <./SiteA_DiffLen-eps-converted-to.pdf
+>] (./presentation_November20.toc)
+Overfull \hbox (45.0pt too wide) detected at line 199
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 199
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 199
  [] 
  []
 
 [16
 
- <./SiteA_Iso_int_Inset-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <SiteA_PSD.eps>
-(epstopdf)                    date: 2020-11-19 11:18:44
-(epstopdf)                    size: 235042 bytes
-(epstopdf)             Output file: <SiteA_PSD-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-11-19 12:03:21
-(epstopdf)                    size: 27721 bytes
-(epstopdf)             Command: <repstopdf --outfile=SiteA_PSD-eps-converted-to
-.pdf SiteA_PSD.eps>
-(epstopdf)             \includegraphics on input line 232.
+]
+Package epstopdf Info: Source file: <B22_DEPexample.eps>
+(epstopdf)                    date: 2020-11-24 16:42:33
+(epstopdf)                    size: 240118 bytes
+(epstopdf)             Output file: <B22_DEPexample-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-11-24 16:42:45
+(epstopdf)                    size: 23716 bytes
+(epstopdf)             Command: <repstopdf --outfile=B22_DEPexample-eps-convert
+ed-to.pdf B22_DEPexample.eps>
+(epstopdf)             \includegraphics on input line 213.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: /usr/bin/pdflatex (file ./SiteA_PSD-eps-converted-to.pdf): PDF 
-inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<SiteA_PSD-eps-converted-to.pdf, id=1533, 722.7pt x 578.16pt>
-File: SiteA_PSD-eps-converted-to.pdf Graphic file (type pdf)
-<use SiteA_PSD-eps-converted-to.pdf>
-Package pdftex.def Info: SiteA_PSD-eps-converted-to.pdf  used on input line 232
-.
-(pdftex.def)             Requested size: 159.33633pt x 128.03368pt.
+pdfTeX warning: /usr/bin/pdflatex (file ./B22_DEPexample-eps-converted-to.pdf):
+ PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<B22_DEPexample-eps-converted-to.pdf, id=1427, 722.7pt x 433.62pt>
+File: B22_DEPexample-eps-converted-to.pdf Graphic file (type pdf)
+<use B22_DEPexample-eps-converted-to.pdf>
+Package pdftex.def Info: B22_DEPexample-eps-converted-to.pdf  used on input lin
+e 213.
+(pdftex.def)             Requested size: 290.74263pt x 174.44402pt.
 
-Overfull \hbox (63.07704pt too wide) detected at line 232
-\OML/cmm/m/it/8 P[] \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 P[] \OT1/cmr/m/n/8 + \OMS/
-cmsy/m/n/8 j[]j[]
- []
-
-
-Overfull \hbox (79.46304pt too wide) detected at line 232
-\OMS/cmsy/m/n/8 j[]j[] \OT1/cmr/m/n/8 = []
- []
-
-
-Overfull \hbox (74.3028pt too wide) detected at line 232
-\OML/cmm/m/it/10 P[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 P[]e[]
- []
-
-
-Overfull \hbox (45.0pt too wide) detected at line 232
+Overfull \hbox (45.0pt too wide) detected at line 213
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 232
+Overfull \hbox (45.0pt too wide) detected at line 213
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 232
+Overfull \hbox (45.0pt too wide) detected at line 213
  [] 
+ []
+
+
+Overfull \vbox (35.87834pt too high) detected at line 213
  []
 
 [17
 
- <./SiteA_PSD-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <SiteA_PSD.eps>
-(epstopdf)                    date: 2020-11-19 11:18:44
-(epstopdf)                    size: 235042 bytes
-(epstopdf)             Output file: <SiteA_PSD-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-11-19 12:03:21
-(epstopdf)                    size: 27721 bytes
-(epstopdf)             Command: <repstopdf --outfile=SiteA_PSD-eps-converted-to
-.pdf SiteA_PSD.eps>
-(epstopdf)             \includegraphics on input line 232.
-Package epstopdf Info: Output file is already uptodate.
-File: SiteA_PSD-eps-converted-to.pdf Graphic file (type pdf)
-<use SiteA_PSD-eps-converted-to.pdf>
-Package pdftex.def Info: SiteA_PSD-eps-converted-to.pdf  used on input line 232
-.
-(pdftex.def)             Requested size: 159.33633pt x 128.03368pt.
-
-Overfull \hbox (63.07704pt too wide) detected at line 232
-\OML/cmm/m/it/8 P[] \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 P[] \OT1/cmr/m/n/8 + \OMS/
-cmsy/m/n/8 j[]j[]
- []
-
-
-Overfull \hbox (79.46304pt too wide) detected at line 232
-\OMS/cmsy/m/n/8 j[]j[] \OT1/cmr/m/n/8 = []
- []
-
-
-Overfull \hbox (74.3028pt too wide) detected at line 232
-\OML/cmm/m/it/10 P[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 P[]e[]
- []
-
-
-Overfull \hbox (45.0pt too wide) detected at line 232
+ <./B22_DEPexample-eps-converted-to.pdf>] (./presentation_November20.toc)
+Overfull \hbox (45.0pt too wide) detected at line 215
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 232
+Overfull \hbox (45.0pt too wide) detected at line 215
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 232
+Overfull \hbox (45.0pt too wide) detected at line 215
  [] 
  []
 
@@ -1976,47 +1932,52 @@ Package epstopdf Info: Source file: <SiteA_PSD.eps>
 (epstopdf)                    size: 27721 bytes
 (epstopdf)             Command: <repstopdf --outfile=SiteA_PSD-eps-converted-to
 .pdf SiteA_PSD.eps>
-(epstopdf)             \includegraphics on input line 232.
+(epstopdf)             \includegraphics on input line 246.
 Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./SiteA_PSD-eps-converted-to.pdf): PDF 
+inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<SiteA_PSD-eps-converted-to.pdf, id=1590, 722.7pt x 578.16pt>
 File: SiteA_PSD-eps-converted-to.pdf Graphic file (type pdf)
 <use SiteA_PSD-eps-converted-to.pdf>
-Package pdftex.def Info: SiteA_PSD-eps-converted-to.pdf  used on input line 232
+Package pdftex.def Info: SiteA_PSD-eps-converted-to.pdf  used on input line 246
 .
 (pdftex.def)             Requested size: 159.33633pt x 128.03368pt.
 
-Overfull \hbox (63.07704pt too wide) detected at line 232
+Overfull \hbox (63.07704pt too wide) detected at line 246
 \OML/cmm/m/it/8 P[] \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 P[] \OT1/cmr/m/n/8 + \OMS/
 cmsy/m/n/8 j[]j[]
  []
 
 
-Overfull \hbox (79.46304pt too wide) detected at line 232
+Overfull \hbox (79.46304pt too wide) detected at line 246
 \OMS/cmsy/m/n/8 j[]j[] \OT1/cmr/m/n/8 = []
  []
 
 
-Overfull \hbox (74.3028pt too wide) detected at line 232
+Overfull \hbox (74.3028pt too wide) detected at line 246
 \OML/cmm/m/it/10 P[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 P[]e[]
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 232
+Overfull \hbox (45.0pt too wide) detected at line 246
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 232
+Overfull \hbox (45.0pt too wide) detected at line 246
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 232
+Overfull \hbox (45.0pt too wide) detected at line 246
  [] 
  []
 
 [19
 
-]
+ <./SiteA_PSD-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <SiteA_PSD.eps>
 (epstopdf)                    date: 2020-11-19 11:18:44
 (epstopdf)                    size: 235042 bytes
@@ -2025,41 +1986,41 @@ Package epstopdf Info: Source file: <SiteA_PSD.eps>
 (epstopdf)                    size: 27721 bytes
 (epstopdf)             Command: <repstopdf --outfile=SiteA_PSD-eps-converted-to
 .pdf SiteA_PSD.eps>
-(epstopdf)             \includegraphics on input line 232.
+(epstopdf)             \includegraphics on input line 246.
 Package epstopdf Info: Output file is already uptodate.
 File: SiteA_PSD-eps-converted-to.pdf Graphic file (type pdf)
 <use SiteA_PSD-eps-converted-to.pdf>
-Package pdftex.def Info: SiteA_PSD-eps-converted-to.pdf  used on input line 232
+Package pdftex.def Info: SiteA_PSD-eps-converted-to.pdf  used on input line 246
 .
 (pdftex.def)             Requested size: 159.33633pt x 128.03368pt.
 
-Overfull \hbox (63.07704pt too wide) detected at line 232
+Overfull \hbox (63.07704pt too wide) detected at line 246
 \OML/cmm/m/it/8 P[] \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 P[] \OT1/cmr/m/n/8 + \OMS/
 cmsy/m/n/8 j[]j[]
  []
 
 
-Overfull \hbox (79.46304pt too wide) detected at line 232
+Overfull \hbox (79.46304pt too wide) detected at line 246
 \OMS/cmsy/m/n/8 j[]j[] \OT1/cmr/m/n/8 = []
  []
 
 
-Overfull \hbox (74.3028pt too wide) detected at line 232
+Overfull \hbox (74.3028pt too wide) detected at line 246
 \OML/cmm/m/it/10 P[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 P[]e[]
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 232
+Overfull \hbox (45.0pt too wide) detected at line 246
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 232
+Overfull \hbox (45.0pt too wide) detected at line 246
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 232
+Overfull \hbox (45.0pt too wide) detected at line 246
  [] 
  []
 
@@ -2074,193 +2035,295 @@ Package epstopdf Info: Source file: <SiteA_PSD.eps>
 (epstopdf)                    size: 27721 bytes
 (epstopdf)             Command: <repstopdf --outfile=SiteA_PSD-eps-converted-to
 .pdf SiteA_PSD.eps>
-(epstopdf)             \includegraphics on input line 232.
+(epstopdf)             \includegraphics on input line 246.
 Package epstopdf Info: Output file is already uptodate.
 File: SiteA_PSD-eps-converted-to.pdf Graphic file (type pdf)
 <use SiteA_PSD-eps-converted-to.pdf>
-Package pdftex.def Info: SiteA_PSD-eps-converted-to.pdf  used on input line 232
+Package pdftex.def Info: SiteA_PSD-eps-converted-to.pdf  used on input line 246
 .
 (pdftex.def)             Requested size: 159.33633pt x 128.03368pt.
 
-Overfull \hbox (63.07704pt too wide) detected at line 232
+Overfull \hbox (63.07704pt too wide) detected at line 246
 \OML/cmm/m/it/8 P[] \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 P[] \OT1/cmr/m/n/8 + \OMS/
 cmsy/m/n/8 j[]j[]
  []
 
 
-Overfull \hbox (79.46304pt too wide) detected at line 232
+Overfull \hbox (79.46304pt too wide) detected at line 246
 \OMS/cmsy/m/n/8 j[]j[] \OT1/cmr/m/n/8 = []
  []
 
 
-Overfull \hbox (74.3028pt too wide) detected at line 232
+Overfull \hbox (74.3028pt too wide) detected at line 246
 \OML/cmm/m/it/10 P[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 P[]e[]
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 232
+Overfull \hbox (45.0pt too wide) detected at line 246
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 232
+Overfull \hbox (45.0pt too wide) detected at line 246
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 232
+Overfull \hbox (45.0pt too wide) detected at line 246
  [] 
  []
 
 [21
 
 ]
-Overfull \hbox (45.0pt too wide) detected at line 267
+Package epstopdf Info: Source file: <SiteA_PSD.eps>
+(epstopdf)                    date: 2020-11-19 11:18:44
+(epstopdf)                    size: 235042 bytes
+(epstopdf)             Output file: <SiteA_PSD-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-11-19 12:03:21
+(epstopdf)                    size: 27721 bytes
+(epstopdf)             Command: <repstopdf --outfile=SiteA_PSD-eps-converted-to
+.pdf SiteA_PSD.eps>
+(epstopdf)             \includegraphics on input line 246.
+Package epstopdf Info: Output file is already uptodate.
+File: SiteA_PSD-eps-converted-to.pdf Graphic file (type pdf)
+<use SiteA_PSD-eps-converted-to.pdf>
+Package pdftex.def Info: SiteA_PSD-eps-converted-to.pdf  used on input line 246
+.
+(pdftex.def)             Requested size: 159.33633pt x 128.03368pt.
+
+Overfull \hbox (63.07704pt too wide) detected at line 246
+\OML/cmm/m/it/8 P[] \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 P[] \OT1/cmr/m/n/8 + \OMS/
+cmsy/m/n/8 j[]j[]
+ []
+
+
+Overfull \hbox (79.46304pt too wide) detected at line 246
+\OMS/cmsy/m/n/8 j[]j[] \OT1/cmr/m/n/8 = []
+ []
+
+
+Overfull \hbox (74.3028pt too wide) detected at line 246
+\OML/cmm/m/it/10 P[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 P[]e[]
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 246
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 267
+Overfull \hbox (45.0pt too wide) detected at line 246
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 267
+Overfull \hbox (45.0pt too wide) detected at line 246
  [] 
  []
 
 [22
 
 ]
-Overfull \hbox (45.0pt too wide) detected at line 267
+Package epstopdf Info: Source file: <SiteA_PSD.eps>
+(epstopdf)                    date: 2020-11-19 11:18:44
+(epstopdf)                    size: 235042 bytes
+(epstopdf)             Output file: <SiteA_PSD-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-11-19 12:03:21
+(epstopdf)                    size: 27721 bytes
+(epstopdf)             Command: <repstopdf --outfile=SiteA_PSD-eps-converted-to
+.pdf SiteA_PSD.eps>
+(epstopdf)             \includegraphics on input line 246.
+Package epstopdf Info: Output file is already uptodate.
+File: SiteA_PSD-eps-converted-to.pdf Graphic file (type pdf)
+<use SiteA_PSD-eps-converted-to.pdf>
+Package pdftex.def Info: SiteA_PSD-eps-converted-to.pdf  used on input line 246
+.
+(pdftex.def)             Requested size: 159.33633pt x 128.03368pt.
+
+Overfull \hbox (63.07704pt too wide) detected at line 246
+\OML/cmm/m/it/8 P[] \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 P[] \OT1/cmr/m/n/8 + \OMS/
+cmsy/m/n/8 j[]j[]
+ []
+
+
+Overfull \hbox (79.46304pt too wide) detected at line 246
+\OMS/cmsy/m/n/8 j[]j[] \OT1/cmr/m/n/8 = []
+ []
+
+
+Overfull \hbox (74.3028pt too wide) detected at line 246
+\OML/cmm/m/it/10 P[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 P[]e[]
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 246
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 267
+Overfull \hbox (45.0pt too wide) detected at line 246
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 267
+Overfull \hbox (45.0pt too wide) detected at line 246
  [] 
  []
 
 [23
 
 ]
-Overfull \hbox (45.0pt too wide) detected at line 267
+Overfull \hbox (45.0pt too wide) detected at line 281
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 267
+Overfull \hbox (45.0pt too wide) detected at line 281
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 267
+Overfull \hbox (45.0pt too wide) detected at line 281
  [] 
  []
 
 [24
 
 ]
-Overfull \hbox (45.0pt too wide) detected at line 267
+Overfull \hbox (45.0pt too wide) detected at line 281
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 267
+Overfull \hbox (45.0pt too wide) detected at line 281
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 267
+Overfull \hbox (45.0pt too wide) detected at line 281
  [] 
  []
 
 [25
 
 ]
+Overfull \hbox (45.0pt too wide) detected at line 281
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 281
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 281
+ [] 
+ []
+
+[26
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 281
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 281
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 281
+ [] 
+ []
+
+[27
+
+]
 Package epstopdf Info: Source file: <SiteA_Filters.eps>
-(epstopdf)                    date: 2020-11-19 11:18:49
-(epstopdf)                    size: 299163 bytes
+(epstopdf)                    date: 2020-11-25 07:49:12
+(epstopdf)                    size: 259303 bytes
 (epstopdf)             Output file: <SiteA_Filters-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-11-19 12:03:23
-(epstopdf)                    size: 26394 bytes
+(epstopdf)                    date: 2020-11-25 07:49:26
+(epstopdf)                    size: 21816 bytes
 (epstopdf)             Command: <repstopdf --outfile=SiteA_Filters-eps-converte
 d-to.pdf SiteA_Filters.eps>
-(epstopdf)             \includegraphics on input line 278.
+(epstopdf)             \includegraphics on input line 292.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./SiteA_Filters-eps-converted-to.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<SiteA_Filters-eps-converted-to.pdf, id=2223, 867.24pt x 578.16pt>
+<SiteA_Filters-eps-converted-to.pdf, id=2233, 867.24pt x 578.16pt>
 File: SiteA_Filters-eps-converted-to.pdf Graphic file (type pdf)
 <use SiteA_Filters-eps-converted-to.pdf>
 Package pdftex.def Info: SiteA_Filters-eps-converted-to.pdf  used on input line
- 278.
+ 292.
 (pdftex.def)             Requested size: 261.66658pt x 174.44621pt.
 
-Overfull \hbox (45.0pt too wide) detected at line 278
+Overfull \hbox (45.0pt too wide) detected at line 292
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 278
+Overfull \hbox (45.0pt too wide) detected at line 292
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 278
+Overfull \hbox (45.0pt too wide) detected at line 292
  [] 
  []
 
 
-Overfull \vbox (7.94304pt too high) detected at line 278
+Overfull \vbox (7.94304pt too high) detected at line 292
  []
 
-[26
+[28
 
  <./SiteA_Filters-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <SiteA_Decons.eps>
-(epstopdf)                    date: 2020-11-19 11:18:55
-(epstopdf)                    size: 293457 bytes
+(epstopdf)                    date: 2020-11-25 07:50:55
+(epstopdf)                    size: 257624 bytes
 (epstopdf)             Output file: <SiteA_Decons-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-11-19 12:03:24
-(epstopdf)                    size: 41763 bytes
+(epstopdf)                    date: 2020-11-25 07:51:09
+(epstopdf)                    size: 31557 bytes
 (epstopdf)             Command: <repstopdf --outfile=SiteA_Decons-eps-converted
 -to.pdf SiteA_Decons.eps>
-(epstopdf)             \includegraphics on input line 289.
+(epstopdf)             \includegraphics on input line 303.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./SiteA_Decons-eps-converted-to.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<SiteA_Decons-eps-converted-to.pdf, id=2311, 1084.05pt x 505.89pt>
+<SiteA_Decons-eps-converted-to.pdf, id=2316, 867.24pt x 505.89pt>
 File: SiteA_Decons-eps-converted-to.pdf Graphic file (type pdf)
 <use SiteA_Decons-eps-converted-to.pdf>
 Package pdftex.def Info: SiteA_Decons-eps-converted-to.pdf  used on input line 
-289.
-(pdftex.def)             Requested size: 290.74263pt x 135.68124pt.
+303.
+(pdftex.def)             Requested size: 290.74263pt x 169.59962pt.
 
-Overfull \hbox (45.0pt too wide) detected at line 289
+Overfull \hbox (45.0pt too wide) detected at line 303
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 289
+Overfull \hbox (45.0pt too wide) detected at line 303
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 289
+Overfull \hbox (45.0pt too wide) detected at line 303
  [] 
  []
 
-[27
+
+Overfull \vbox (3.09645pt too high) detected at line 303
+ []
+
+[29
 
  <./SiteA_Decons-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <SiteA_DeconComboAll.eps>
@@ -2271,7 +2334,7 @@ Package epstopdf Info: Source file: <SiteA_DeconComboAll.eps>
 (epstopdf)                    size: 26712 bytes
 (epstopdf)             Command: <repstopdf --outfile=SiteA_DeconComboAll-eps-co
 nverted-to.pdf SiteA_DeconComboAll.eps>
-(epstopdf)             \includegraphics on input line 300.
+(epstopdf)             \includegraphics on input line 314.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2282,24 +2345,24 @@ pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 File: SiteA_DeconComboAll-eps-converted-to.pdf Graphic file (type pdf)
 <use SiteA_DeconComboAll-eps-converted-to.pdf>
 Package pdftex.def Info: SiteA_DeconComboAll-eps-converted-to.pdf  used on inpu
-t line 300.
+t line 314.
 (pdftex.def)             Requested size: 290.74263pt x 96.91406pt.
 
-Overfull \hbox (45.0pt too wide) detected at line 300
+Overfull \hbox (45.0pt too wide) detected at line 314
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 300
+Overfull \hbox (45.0pt too wide) detected at line 314
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 300
+Overfull \hbox (45.0pt too wide) detected at line 314
  [] 
  []
 
-[28
+[30
 
  <./SiteA_DeconComboAll-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <SiteA_DeconComboFilt.eps>
@@ -2311,327 +2374,352 @@ Package epstopdf Info: Source file: <SiteA_DeconComboFilt.eps>
 (epstopdf)                    size: 19513 bytes
 (epstopdf)             Command: <repstopdf --outfile=SiteA_DeconComboFilt-eps-c
 onverted-to.pdf SiteA_DeconComboFilt.eps>
-(epstopdf)             \includegraphics on input line 311.
+(epstopdf)             \includegraphics on input line 325.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./SiteA_DeconComboFilt-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<SiteA_DeconComboFilt-eps-converted-to.pdf, id=2487, 867.24pt x 289.08pt>
+<SiteA_DeconComboFilt-eps-converted-to.pdf, id=2483, 867.24pt x 289.08pt>
 File: SiteA_DeconComboFilt-eps-converted-to.pdf Graphic file (type pdf)
 <use SiteA_DeconComboFilt-eps-converted-to.pdf>
 Package pdftex.def Info: SiteA_DeconComboFilt-eps-converted-to.pdf  used on inp
-ut line 311.
+ut line 325.
 (pdftex.def)             Requested size: 290.74263pt x 96.91406pt.
 
-Overfull \hbox (45.0pt too wide) detected at line 311
+Overfull \hbox (45.0pt too wide) detected at line 325
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 311
+Overfull \hbox (45.0pt too wide) detected at line 325
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 311
- [] 
- []
-
-[29
-
- <./SiteA_DeconComboFilt-eps-converted-to.pdf>]
-(./presentation_November20.toc)
-Overfull \hbox (45.0pt too wide) detected at line 329
- [] 
- []
-
-
-Overfull \hbox (45.0pt too wide) detected at line 329
- [] 
- []
-
-
-Overfull \hbox (45.0pt too wide) detected at line 329
- [] 
- []
-
-[30
-
-]
-Overfull \hbox (45.0pt too wide) detected at line 337
- [] 
- []
-
-
-Overfull \hbox (45.0pt too wide) detected at line 337
- [] 
- []
-
-
-Overfull \hbox (45.0pt too wide) detected at line 337
+Overfull \hbox (45.0pt too wide) detected at line 325
  [] 
  []
 
 [31
 
-]
-Overfull \hbox (45.0pt too wide) detected at line 337
+ <./SiteA_DeconComboFilt-eps-converted-to.pdf>]
+(./presentation_November20.toc)
+Overfull \hbox (45.0pt too wide) detected at line 375
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 337
+Overfull \hbox (45.0pt too wide) detected at line 375
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 337
+Overfull \hbox (45.0pt too wide) detected at line 375
  [] 
  []
 
 [32
 
 ]
-Package epstopdf Info: Source file: <B22_DEPexample.eps>
-(epstopdf)                    date: 2020-11-19 14:42:02
-(epstopdf)                    size: 259104 bytes
-(epstopdf)             Output file: <B22_DEPexample-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-11-19 12:03:27
-(epstopdf)                    size: 30769 bytes
-(epstopdf)             Command: <repstopdf --outfile=B22_DEPexample-eps-convert
-ed-to.pdf B22_DEPexample.eps>
-(epstopdf)             \includegraphics on input line 347.
-runsystem(repstopdf --outfile=B22_DEPexample-eps-converted-to.pdf B22_DEPexampl
-e.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <B22_DEPexample-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-11-19 15:49:21
-(epstopdf)                    size: 31413 bytes.
+Package epstopdf Info: Source file: <figACF.eps>
+(epstopdf)                    date: 2020-11-24 15:28:47
+(epstopdf)                    size: 197578 bytes
+(epstopdf)             Output file: <figACF-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-11-24 15:47:57
+(epstopdf)                    size: 10083 bytes
+(epstopdf)             Command: <repstopdf --outfile=figACF-eps-converted-to.pd
+f figACF.eps>
+(epstopdf)             \includegraphics on input line 390.
+Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: /usr/bin/pdflatex (file ./B22_DEPexample-eps-converted-to.pdf):
- PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<B22_DEPexample-eps-converted-to.pdf, id=2809, 722.7pt x 433.62pt>
-File: B22_DEPexample-eps-converted-to.pdf Graphic file (type pdf)
-<use B22_DEPexample-eps-converted-to.pdf>
-Package pdftex.def Info: B22_DEPexample-eps-converted-to.pdf  used on input lin
-e 347.
-(pdftex.def)             Requested size: 290.74263pt x 174.44402pt.
+pdfTeX warning: /usr/bin/pdflatex (file ./figACF-eps-converted-to.pdf): PDF inc
+lusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figACF-eps-converted-to.pdf, id=2645, 578.16pt x 289.08pt>
+File: figACF-eps-converted-to.pdf Graphic file (type pdf)
+<use figACF-eps-converted-to.pdf>
+Package pdftex.def Info: figACF-eps-converted-to.pdf  used on input line 390.
+(pdftex.def)             Requested size: 203.51895pt x 101.75735pt.
 
-Overfull \hbox (45.0pt too wide) detected at line 347
+Overfull \hbox (45.0pt too wide) detected at line 390
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 347
+Overfull \hbox (45.0pt too wide) detected at line 390
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 347
+Overfull \hbox (45.0pt too wide) detected at line 390
  [] 
  []
 
 
-Overfull \vbox (0.94084pt too high) detected at line 347
+Overfull \vbox (1.42355pt too high) detected at line 390
  []
 
 [33
 
- <./B22_DEPexample-eps-converted-to.pdf>] (./presentation_November20.toc)
-Overfull \hbox (45.0pt too wide) detected at line 379
+ <./figACF-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figCycleEst.eps>
+(epstopdf)                    date: 2020-11-24 15:49:26
+(epstopdf)                    size: 193838 bytes
+(epstopdf)             Output file: <figCycleEst-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-11-24 15:49:46
+(epstopdf)                    size: 11698 bytes
+(epstopdf)             Command: <repstopdf --outfile=figCycleEst-eps-converted-
+to.pdf figCycleEst.eps>
+(epstopdf)             \includegraphics on input line 409.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figCycleEst-eps-converted-to.pdf): PD
+F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figCycleEst-eps-converted-to.pdf, id=2726, 722.7pt x 433.62pt>
+File: figCycleEst-eps-converted-to.pdf Graphic file (type pdf)
+<use figCycleEst-eps-converted-to.pdf>
+Package pdftex.def Info: figCycleEst-eps-converted-to.pdf  used on input line 4
+09.
+(pdftex.def)             Requested size: 290.74263pt x 174.44402pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 409
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 379
+Overfull \hbox (45.0pt too wide) detected at line 409
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 379
+Overfull \hbox (45.0pt too wide) detected at line 409
  [] 
+ []
+
+
+Overfull \vbox (0.94084pt too high) detected at line 409
  []
 
 [34
 
-]
-Overfull \hbox (45.0pt too wide) detected at line 384
+ <./figCycleEst-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figCycleEstFin.eps>
+(epstopdf)                    date: 2020-11-24 15:49:23
+(epstopdf)                    size: 194316 bytes
+(epstopdf)             Output file: <figCycleEstFin-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-11-24 15:49:47
+(epstopdf)                    size: 11770 bytes
+(epstopdf)             Command: <repstopdf --outfile=figCycleEstFin-eps-convert
+ed-to.pdf figCycleEstFin.eps>
+(epstopdf)             \includegraphics on input line 409.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figCycleEstFin-eps-converted-to.pdf):
+ PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figCycleEstFin-eps-converted-to.pdf, id=2808, 722.7pt x 433.62pt>
+File: figCycleEstFin-eps-converted-to.pdf Graphic file (type pdf)
+<use figCycleEstFin-eps-converted-to.pdf>
+Package pdftex.def Info: figCycleEstFin-eps-converted-to.pdf  used on input lin
+e 409.
+(pdftex.def)             Requested size: 290.74263pt x 174.44402pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 409
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 384
+Overfull \hbox (45.0pt too wide) detected at line 409
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 384
+Overfull \hbox (45.0pt too wide) detected at line 409
  [] 
+ []
+
+
+Overfull \vbox (0.94084pt too high) detected at line 409
  []
 
 [35
 
-]
-Overfull \hbox (45.0pt too wide) detected at line 389
+ <./figCycleEstFin-eps-converted-to.pdf>]
+Overfull \hbox (45.0pt too wide) detected at line 424
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 389
+Overfull \hbox (45.0pt too wide) detected at line 424
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 389
+Overfull \hbox (45.0pt too wide) detected at line 424
  [] 
  []
 
 [36
 
 ]
-Overfull \hbox (45.0pt too wide) detected at line 394
+Package epstopdf Info: Source file: <figStandardized.eps>
+(epstopdf)                    date: 2020-11-24 15:41:14
+(epstopdf)                    size: 212018 bytes
+(epstopdf)             Output file: <figStandardized-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-11-24 15:47:59
+(epstopdf)                    size: 17542 bytes
+(epstopdf)             Command: <repstopdf --outfile=figStandardized-eps-conver
+ted-to.pdf figStandardized.eps>
+(epstopdf)             \includegraphics on input line 433.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figStandardized-eps-converted-to.pdf)
+: PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figStandardized-eps-converted-to.pdf, id=2957, 867.24pt x 505.89pt>
+File: figStandardized-eps-converted-to.pdf Graphic file (type pdf)
+<use figStandardized-eps-converted-to.pdf>
+Package pdftex.def Info: figStandardized-eps-converted-to.pdf  used on input li
+ne 433.
+(pdftex.def)             Requested size: 290.74263pt x 169.59962pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 433
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 394
+Overfull \hbox (45.0pt too wide) detected at line 433
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 394
+Overfull \hbox (45.0pt too wide) detected at line 433
  [] 
  []
 
 [37
 
-] (./presentation_November20.toc)
-Overfull \hbox (45.0pt too wide) detected at line 399
+ <./figStandardized-eps-converted-to.pdf>] (./presentation_November20.toc)
+Overfull \hbox (45.0pt too wide) detected at line 440
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 399
+Overfull \hbox (45.0pt too wide) detected at line 440
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 399
+Overfull \hbox (45.0pt too wide) detected at line 440
  [] 
  []
 
 [38
 
 ]
-Overfull \hbox (45.0pt too wide) detected at line 404
+Overfull \hbox (45.0pt too wide) detected at line 450
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 404
+Overfull \hbox (45.0pt too wide) detected at line 450
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 404
+Overfull \hbox (45.0pt too wide) detected at line 450
  [] 
  []
 
 [39
 
 ]
-Overfull \hbox (45.0pt too wide) detected at line 409
+Overfull \hbox (45.0pt too wide) detected at line 465
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 409
+Overfull \hbox (45.0pt too wide) detected at line 465
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 409
+Overfull \hbox (45.0pt too wide) detected at line 465
  [] 
  []
 
 [40
 
-] (./presentation_November20.toc)
-Overfull \hbox (45.0pt too wide) detected at line 413
+]
+Overfull \hbox (45.0pt too wide) detected at line 465
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 413
+Overfull \hbox (45.0pt too wide) detected at line 465
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 413
+Overfull \hbox (45.0pt too wide) detected at line 465
  [] 
  []
 
 [41
 
-] [42
-
 ] (./presentation_November20.toc)
-Overfull \hbox (45.0pt too wide) detected at line 427
+Overfull \hbox (45.0pt too wide) detected at line 471
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 427
+Overfull \hbox (45.0pt too wide) detected at line 471
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 427
+Overfull \hbox (45.0pt too wide) detected at line 471
+ [] 
+ []
+
+[42
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 482
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 482
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 482
  [] 
  []
 
 [43
 
 ]
-Overfull \hbox (45.0pt too wide) detected at line 438
+Overfull \hbox (45.0pt too wide) detected at line 488
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 438
+Overfull \hbox (45.0pt too wide) detected at line 488
  [] 
  []
 
 
-Overfull \hbox (45.0pt too wide) detected at line 438
+Overfull \hbox (45.0pt too wide) detected at line 488
  [] 
  []
 
 [44
-
-]
-
-Package natbib Warning: Empty `thebibliography' environment on input line 453.
-
-
-Overfull \hbox (45.0pt too wide) detected at line 453
- [] 
- []
-
-
-Overfull \hbox (45.0pt too wide) detected at line 453
- [] 
- []
-
-
-Overfull \hbox (45.0pt too wide) detected at line 453
- [] 
- []
-
-[45
 
 ]
 \tf@nav=\write6
@@ -2643,21 +2731,21 @@ Overfull \hbox (45.0pt too wide) detected at line 453
 \tf@snm=\write8
 \openout8 = `presentation_November20.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 468.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 468.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 515.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 515.
  (./presentation_November20.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 468.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 468.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 515.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 515.
 Package rerunfilecheck Info: File `presentation_November20.out' has not changed
 .
-(rerunfilecheck)             Checksum: 8410A3D718D08E74454A48BFB7CB5510;790.
+(rerunfilecheck)             Checksum: DC8664077977A18C72948A0F937E178B;606.
  ) 
 Here is how much of TeX's memory you used:
- 29654 strings out of 492982
- 582777 string characters out of 6134897
- 664265 words of memory out of 5000000
- 32562 multiletter control sequences out of 15000+600000
- 540568 words of font info for 61 fonts, out of 8000000 for 9000
+ 29657 strings out of 492982
+ 583055 string characters out of 6134897
+ 661430 words of memory out of 5000000
+ 32559 multiletter control sequences out of 15000+600000
+ 543019 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,20n,67p,10386b,828s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
@@ -2667,26 +2755,29 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/wasy2-ps/wasy10.pf
-b>
-Output written on presentation_November20.pdf (46 pages, 603634 bytes).
+pe1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/wasy2-ps/wasy10.pfb>
+Output written on presentation_November20.pdf (45 pages, 633632 bytes).
 PDF statistics:
- 3881 PDF objects out of 4296 (max. 8388607)
- 3714 compressed objects within 38 object streams
- 118 named destinations out of 1000 (max. 500000)
- 238 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3646 PDF objects out of 4296 (max. 8388607)
+ 3477 compressed objects within 35 object streams
+ 116 named destinations out of 1000 (max. 500000)
+ 234 words of extra memory for PDF output out of 10000 (max. 10000000)
 

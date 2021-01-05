@@ -1,0 +1,34 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Ice Theory}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Water Isotopes}{chapter.2}% 3
+\BOOKMARK [2][-]{section*.1}{ notation and water isotopes}{section.2.1}% 4
+\BOOKMARK [1][-]{section.2.2}{Diffusion and Densification}{chapter.2}% 5
+\BOOKMARK [2][-]{subsection.2.2.1}{Densification}{section.2.2}% 6
+\BOOKMARK [3][-]{section*.2}{Herron Langway Empirical Model}{subsection.2.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.2.2}{Diffusion}{section.2.2}% 8
+\BOOKMARK [3][-]{section*.3}{In Firn}{subsection.2.2.2}% 9
+\BOOKMARK [3][-]{section*.4}{In Solid Phase}{subsection.2.2.2}% 10
+\BOOKMARK [3][-]{section*.5}{Reconstruction of temperatures}{subsection.2.2.2}% 11
+\BOOKMARK [1][-]{section.2.3}{ECM and DEP}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.3.1}{ECM}{section.2.3}% 13
+\BOOKMARK [2][-]{subsection.2.3.2}{DEP}{section.2.3}% 14
+\BOOKMARK [1][-]{section.2.4}{Volcanic Horizons}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.4.1}{Laki and Tambora}{section.2.4}% 16
+\BOOKMARK [0][-]{chapter.3}{Data}{}% 17
+\BOOKMARK [1][-]{section.3.1}{Selection}{chapter.3}% 18
+\BOOKMARK [2][-]{subsection.3.1.1}{AWI B-cores}{section.3.1}% 19
+\BOOKMARK [2][-]{subsection.3.1.2}{Crete Area}{section.3.1}% 20
+\BOOKMARK [1][-]{section.3.2}{Interpolation}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.3}{Data Specifications}{chapter.3}% 22
+\BOOKMARK [0][-]{chapter.4}{Signal Analysis}{}% 23
+\BOOKMARK [1][-]{section.4.1}{Back Diffusion}{chapter.4}% 24
+\BOOKMARK [2][-]{subsection.4.1.1}{Spectral Analysis}{section.4.1}% 25
+\BOOKMARK [2][-]{subsection.4.1.2}{Spectral Filtering}{section.4.1}% 26
+\BOOKMARK [2][-]{subsection.4.1.3}{Signal Restoration}{section.4.1}% 27
+\BOOKMARK [1][-]{section.4.2}{Peak Detection}{chapter.4}% 28
+\BOOKMARK [2][-]{subsection.4.2.1}{Interpolation}{section.4.2}% 29
+\BOOKMARK [2][-]{subsection.4.2.2}{Standardisation}{section.4.2}% 30
+\BOOKMARK [2][-]{subsection.4.2.3}{Cycle Length Estimation}{section.4.2}% 31
+\BOOKMARK [0][-]{chapter.5}{Temperature Reconstruction}{}% 32
+\BOOKMARK [0][-]{chapter.6}{Layer Counting}{}% 33
+\BOOKMARK [0][-]{section*.8}{Bibliography}{}% 34

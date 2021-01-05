@@ -1,0 +1,46 @@
+\changetocdepth {3}
+\contentsline {section}{Darkness}{ii}
+\contentsline {section}{Acknowledgments}{ii}
+\contentsline {section}{Abstract}{iii}
+\contentsline {chapter}{List of Figures}{vi}
+\contentsline {chapter}{List of Tables}{vi}
+\contentsline {chapter}{\chapternumberline {1}Introduction}{1}
+\contentsline {chapter}{\chapternumberline {2}Ice Theory}{3}
+\contentsline {section}{\numberline {2.1}Water Isotopes}{3}
+\contentsline {subsubsection}{$\delta $ notation and water isotopes}{3}
+\contentsline {section}{\numberline {2.2}Diffusion and Densification}{4}
+\contentsline {subsection}{\numberline {2.2.1}Densification}{4}
+\contentsline {subsubsection}{Herron Langway Empirical Model}{5}
+\contentsline {subsection}{\numberline {2.2.2}Diffusion}{7}
+\contentsline {subsubsection}{In Firn}{7}
+\contentsline {subsubsection}{In Solid Phase}{9}
+\contentsline {subsubsection}{Reconstruction of temperatures}{10}
+\contentsline {section}{\numberline {2.3}ECM and DEP}{11}
+\contentsline {subsection}{\numberline {2.3.1}ECM}{12}
+\contentsline {subsection}{\numberline {2.3.2}DEP}{13}
+\contentsline {section}{\numberline {2.4}Volcanic Horizons}{15}
+\contentsline {subsection}{\numberline {2.4.1}Laki and Tambora}{16}
+\contentsline {chapter}{\chapternumberline {3}Data}{19}
+\contentsline {section}{\numberline {3.1}Selection}{19}
+\contentsline {subsection}{\numberline {3.1.1}AWI B-cores}{19}
+\contentsline {subsection}{\numberline {3.1.2}Crete Area}{19}
+\contentsline {section}{\numberline {3.2}Interpolation}{19}
+\contentsline {section}{\numberline {3.3}Data Specifications}{19}
+\contentsline {chapter}{\chapternumberline {4}Signal Analysis}{21}
+\contentsline {section}{\numberline {4.1}Back Diffusion}{21}
+\contentsline {subsection}{\numberline {4.1.1}Spectral Analysis}{21}
+\contentsline {subsubsection}{PSD}{21}
+\contentsline {subsubsection}{DFT \& FFT}{23}
+\contentsline {subsubsection}{DCT}{25}
+\contentsline {subsection}{\numberline {4.1.2}Spectral Filtering}{26}
+\contentsline {subsubsection}{Wiener Filtering}{26}
+\contentsline {subsection}{\numberline {4.1.3}Signal Restoration}{26}
+\contentsline {subsubsection}{Kernel Estimation}{26}
+\contentsline {section}{\numberline {4.2}Peak Detection}{28}
+\contentsline {subsection}{\numberline {4.2.1}Interpolation}{28}
+\contentsline {subsection}{\numberline {4.2.2}Standardisation}{28}
+\contentsline {subsection}{\numberline {4.2.3}Cycle Length Estimation}{28}
+\contentsline {chapter}{\chapternumberline {5}Temperature Reconstruction}{29}
+\contentsline {chapter}{\chapternumberline {6}Layer Counting}{31}
+\contentsline {chapter}{\chapternumberline {7}Method}{33}
+\contentsline {chapter}{Bibliography}{43}

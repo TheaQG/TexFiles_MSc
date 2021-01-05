@@ -123,31 +123,51 @@
 }
 
 \frame{
-	\frametitle{Diffusion in Firn and Ice}
-With a total diffusion given as
+	\frametitle{Actual Total Diffusion}
+\onslide<1->{
+Total diffusion in ice and firn
 \begin{equation}
 	\sigma^2_{\text{tot}} = [S(z)\sigma_{\text{firn}}]^2 + \sigma^2_{\text{ice}}(z)
-\end{equation}
-	
-}
+\end{equation}}
 
-
-\frame{
-	\frametitle{Diffusion During Measurements}
-	Measured diffusion length is actually
+\onslide<2->{Giving an actual measured diffusion length of
 	\begin{equation}
 		\hat{\sigma}_i^2 = \sigma_{\text{firn}}^2\,S(z) + \sigma_{\text{ice}}^2 + \sigma_{\text{dis}}^2
 	\end{equation}
 	with
 	\begin{equation}
 		\sigma_{\text{dis}}^2 = \frac{2\Delta^2}{\pi^2}\ln\left(\frac{\pi}{2}\right)
-	\end{equation}
+\end{equation}}
+	
+}
+
+\subsection{Data}
+
+\frame{
+	\frametitle{Example Data: Site A}
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.9\textwidth]{SiteA_FullIso.eps}
+		\caption[Site A isotopes]{Example data from Alphabet Core drilled at site A near Crête.}
+		\label{fig:SiteA_FullIso}
+	\end{figure}
+	
+	
+}
+
+\frame{
+	\frametitle{Unevenly Sampled Data: Spline Interpolation}
+	\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{SiteA_Iso_int_Inset.eps}
+		\caption[Site A Laki to Tambora isotopes, w. inset]{Example data from Alphabet Core drilled at site A near Crête. Shows zoom in of data from Laki to Tambora along with spline interpolated data.}
+		\label{fig:SiteA_Iso_int_Inset}
+	\end{figure}	
+	
 }
 
 
-
-
-\subsection{Diffusion and Densification}
 
 \frame{
 	\frametitle{Community Firn Model}
@@ -175,31 +195,24 @@ With a total diffusion given as
 
 
 
-\subsection{Back Diffusion}
+
+\subsection{Volcanic Horizons}
 
 \frame{
-	\frametitle{Example Data: Site A}
-	
-\begin{figure}
-	\centering
-	\includegraphics[width=0.9\textwidth]{SiteA_FullIso.eps}
-	\caption[Site A isotopes]{Example data from Alphabet Core drilled at site A near Crête.}
-	\label{fig:SiteA_FullIso}
-\end{figure}
-
-
-}
-
-\frame{
-	\frametitle{Unevenly Sampled Data: Spline Interpolation}
+	\frametitle{Laki and Tambora}
+	\begin{itemize}
+		\item \textbf{Electrical Conductivity Measurements (ECM)}
+		\item \textbf{Dielectric Profiling (DEP)}
+	\end{itemize}
 	\begin{figure}
 		\centering
-		\includegraphics[width=\textwidth]{SiteA_Iso_int_Inset.eps}
-		\caption[Site A Laki to Tambora isotopes, w. inset]{Example data from Alphabet Core drilled at site A near Crête. Shows zoom in of data from Laki to Tambora along with spline interpolated data.}
-		\label{fig:SiteA_Iso_int_Inset}
+		\includegraphics[width=\textwidth]{B22_DEPexample.eps}
+		\caption[DEP Laki to Tambora, Core B22]{Example of volcanic horizons used for dating of cores, core B22.}
+		\label{fig:B22_DEPexample}
 	\end{figure}	
-
 }
+
+\subsection{Back Diffusion}
 
 \begin{frame}  
 	\frametitle{Spectral Analysis with DCT}
@@ -295,7 +308,7 @@ With a total diffusion given as
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{SiteA_DeconComboAll.eps}
-	\caption[Combined restored data, Site A.]{The original data plotted along with each estimate of the restored data, given diffusion length.}
+	\caption[Combined restored data, Site A.]{The original data plotted along with each estimate of the restored data with diffusion lengths ranging from 0.057 to 0.085.}
 	\label{fig:SiteA_DeconComboFull}
 \end{figure}
 }
@@ -306,7 +319,7 @@ With a total diffusion given as
 	\begin{figure}
 		\centering
 		\includegraphics[width=\textwidth]{SiteA_DeconComboFilt.eps}
-		\caption[Combined restored data, Site A.]{The original data plotted along with each estimate of the restored data, given diffusion length.}
+		\caption[Combined restored data, Site A.]{The original data plotted along with each estimate of the restored data with diffusion length $\sigma^2 < 0.07$.}
 		\label{fig:SiteA_DeconComboFilt}
 	\end{figure}
 }
@@ -327,25 +340,7 @@ With a total diffusion given as
 
 
 
-\subsection{Volcanic Horizons}
 
-\frame{
-	\frametitle{DEP and ECM}
-	\begin{itemize}
-		\item<1-> \textbf{Electrical Conductivity Measurements (ECM)}
-		\item<2-> \textbf{Dielectric Profiling (DEP)}
-	\end{itemize}
-}
-
-\frame{
-	\frametitle{Laki and Tambora}
-	\begin{figure}
-		\centering
-		\includegraphics[width=\textwidth]{B22_DEPexample.eps}
-		\caption[DEP Laki to Tambora, Core B22]{Example of volcanic horizons used for dating of cores, core B22.}
-		\label{fig:B22_DEPexample}
-	\end{figure}	
-}
 
 
 
@@ -380,47 +375,95 @@ With a total diffusion given as
 \subsection{Detrend and Standardize}
 
 \frame{
-	\frametitle{Estimating Cycle Length}
+	\frametitle{Estimating Cycle Length - ACF}
+	\begin{equation}
+		R_k = \frac{1}{(n-k)\sigma^2}\sum_{i=1}^{n-k}(x_i - \mu)(x_{i+k} - \mu)
+	\end{equation}
+	\footnotesize{The estimated cycle length, $l$, will be the first $k$ such that $R_{k-1} > R_{k-2}$ and $R_k < R(k-1)$}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\textwidth]{figACF.eps}
+		\caption{Autocorrelation as a function of (pointwise-) depth lag.}
+		\label{fig:ACF}
+	\end{figure}
 	
 }
 
+\frame{
+	\frametitle{Estimating Cycle Length - Adjustment}
+	\only<1>{
+	\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{figCycleEst.eps}
+		\caption{First estimate of sections.}
+		\label{fig:CycleEst}
+	\end{figure}}
+	\only<2>{
+	\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{figCycleEstFin.eps}
+			\caption{Final estimate of sections.}
+			\label{fig:CycleEstFin}
+	\end{figure}}
+	
+}
 \frame{
 	\frametitle{Detrending with Moving Average}
-	
+	Moving average:
+	\begin{equation}
+		\mu_i = \sum_{j=i-l_i/2}^{i+l_i/2}\frac{x_i}{l_i + 1}
+	\end{equation}
+	Moving standard deviation
+	\begin{equation}
+		\sigma_i^2 = \sum_{j=i-l_i/2}^{i+l_i/2} \frac{(x_i - \mu_i)^2}{l_i + 1}
+	\end{equation}
+	New standardized signal $\bar{s}$:
+	\begin{equation}
+		s_i = \frac{x_i - \mu_i}{\sqrt{2}\sigma_i}
+	\end{equation}
 }
-
 \frame{
-	\frametitle{Standardize Amplitude}
-	
+	\frametitle{Detrending and standardize}
+	\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{figStandardized.eps}
+		\caption{Standardization through moving average, $\bar{\mu}$, and standard deviation, $\bar{\sigma}^2$}
+		\label{fig:Standardized}
+	\end{figure}
 }
 
 
 
-
-\subsection{Peak Detection}
-
-\frame{
-	\frametitle{MLP Neural Networks}
-	
-}
-
-\frame{
-	\frametitle{Kalman Filtering}
-	
-}
 
 
 
 \subsection{Layer Counting Algorithm}
 
 \frame{
-	\frametitle{}
+	\frametitle{Peak Detection by Pattern Recognition}
 	\begin{itemize}
-		\item Counting by Peaks (Given diff. len. and est. cycle length)
-		\item Counting by Layer Thickness
+		\item Prior information: Typical annual cycle (noisy sine)
+		\item Convolutional Neural Networks 
+		\item Kalman Filtering, MCMC or something else entirely
 	\end{itemize}
 	
 }
+
+\frame{
+	\frametitle{Layer Counting Algorithm}
+	\onslide<1->{Prior to estimation:
+	\begin{itemize}
+		\item Diffusion and densification models
+		\item Noisy sine signal
+	\end{itemize}}
+	\onslide<2->{Outcome:
+	\begin{itemize}
+		\item Peak counting
+		\item Dating by years
+		\item Layer thickness approximation
+	\end{itemize}}
+}
+
 
 
 \section{Outlook}
@@ -439,20 +482,23 @@ With a total diffusion given as
 }
 
 
+\frame{
+	\frametitle{Thank you!}
+	\LARGE \textbf{Any questions?}
+}
 
 
-
-\appendix
-\begingroup
-\begin{frame}[allowframebreaks]
-\frametitle{References}
-\begin{multicols}{2}
-	
-	\begin{thebibliography}{9}	
-	\end{thebibliography}
-\end{multicols}
-\end{frame}
-\endgroup
+%\appendix
+%\begingroup
+%\begin{frame}[allowframebreaks]
+%\frametitle{References}
+%\begin{multicols}{2}
+%	
+%	\begin{thebibliography}{9}	
+%	\end{thebibliography}
+%\end{multicols}
+%\end{frame}
+%\endgroup
 %    \begin{itemize}[<+->]
 %        \item Something
 %        \item Something more
