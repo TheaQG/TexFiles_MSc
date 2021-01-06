@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  5 JAN 2021 17:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  6 JAN 2021 15:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1270,39 +1270,108 @@ Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
 (/usr/share/texlive/texmf-dist/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen306
+\pgffor@skip=\dimen307
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count342
+\pgfplotmarksize=\dimen308
+)
+\tikz@lastx=\dimen309
+\tikz@lasty=\dimen310
+\tikz@lastxsaved=\dimen311
+\tikz@lastysaved=\dimen312
+\tikzleveldistance=\dimen313
+\tikzsiblingdistance=\dimen314
+\tikz@figbox=\box59
+\tikz@figbox@bg=\box60
+\tikz@tempbox=\box61
+\tikz@tempbox@bg=\box62
+\tikztreelevel=\count343
+\tikznumberofchildren=\count344
+\tikznumberofcurrentchild=\count345
+\tikz@fig@count=\count346
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count347
+\pgfmatrixcurrentcolumn=\count348
+\pgf@matrix@numberofcolumns=\count349
+)
+\tikz@expandcount=\count350
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
+tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen315
+)) (/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2012/05/23 Federico Garcia
 )
 (./Complete_1stDraft.aux)
 \openout1 = `Complete_1stDraft.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-\AtBeginShipoutBox=\box59
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+\AtBeginShipoutBox=\box63
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count342
-\scratchdimen=\dimen306
-\scratchbox=\box60
-\nofMPsegments=\count343
-\nofMParguments=\count344
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count345
-\MPscratchDim=\dimen307
-\MPnumerator=\count346
-\makeMPintoPDFobject=\count347
-\everyMPtoPDFconversion=\toks43
+\scratchcounter=\count351
+\scratchdimen=\dimen316
+\scratchbox=\box64
+\nofMPsegments=\count352
+\nofMParguments=\count353
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count354
+\MPscratchDim=\dimen317
+\MPnumerator=\count355
+\makeMPintoPDFobject=\count356
+\everyMPtoPDFconversion=\toks45
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1347,36 +1416,36 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count348
+\c@lstlisting=\count357
 
 ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \celsius on input line 43.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 43.
+LaTeX Info: Redefining \celsius on input line 54.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 54.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 43.
-Package gensymb Info: Using \Omega for \ohm on input line 43.
+LaTeX Info: Redefining \ohm on input line 54.
+Package gensymb Info: Using \Omega for \ohm on input line 54.
 
 Package gensymb Warning: Not defining \micro.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 46.
+LaTeX Font Info:    Try loading font information for U+msa on input line 57.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 46.
+LaTeX Font Info:    Try loading font information for U+msb on input line 57.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 46.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 57.
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 46.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 57.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1387,7 +1456,7 @@ File: ../Figures/TurnerEruptionofSoufriere-Mountains.jpg Graphic file (type jpg
 )
 <use ../Figures/TurnerEruptionofSoufriere-Mountains.jpg>
 Package pdftex.def Info: ../Figures/TurnerEruptionofSoufriere-Mountains.jpg  us
-ed on input line 50.
+ed on input line 61.
 (pdftex.def)             Requested size: 295.20113pt x 215.14186pt.
  [1
 
@@ -1483,125 +1552,166 @@ Underfull \vbox (badness 1028) has occurred while \output is active []
 
 ]
 (../Chapters/Method/Chapter_Method.tex
-<../Figures/SiteA_DensProfile_wHL.jpg, id=149, 433.62pt x 505.89pt>
-File: ../Figures/SiteA_DensProfile_wHL.jpg Graphic file (type jpg)
-<use ../Figures/SiteA_DensProfile_wHL.jpg>
-Package pdftex.def Info: ../Figures/SiteA_DensProfile_wHL.jpg  used on input li
-ne 7.
-(pdftex.def)             Requested size: 258.29887pt x 301.3595pt.
-<../Figures/SiteA_DiffProfile.jpg, id=150, 433.62pt x 505.89pt>
-File: ../Figures/SiteA_DiffProfile.jpg Graphic file (type jpg)
-<use ../Figures/SiteA_DiffProfile.jpg>
-Package pdftex.def Info: ../Figures/SiteA_DiffProfile.jpg  used on input line 1
-4.
-(pdftex.def)             Requested size: 258.29887pt x 301.3595pt.
-<../Figures/SiteA_ECMd18O_combo.jpg, id=151, 722.7pt x 433.62pt>
-File: ../Figures/SiteA_ECMd18O_combo.jpg Graphic file (type jpg)
-<use ../Figures/SiteA_ECMd18O_combo.jpg>
-Package pdftex.def Info: ../Figures/SiteA_ECMd18O_combo.jpg  used on input line
- 21.
-(pdftex.def)             Requested size: 332.09775pt x 199.25589pt.
+Overfull \hbox (35.53377pt too wide) in paragraph at lines 77--78
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 37.42834pt on input line 80.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33]
 <../Figures/SiteA_d18OInsert.jpg, id=152, 782.925pt x 398.48875pt>
 File: ../Figures/SiteA_d18OInsert.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_d18OInsert.jpg>
-Package pdftex.def Info: ../Figures/SiteA_d18OInsert.jpg  used on input line 28
+Package pdftex.def Info: ../Figures/SiteA_d18OInsert.jpg  used on input line 89
 .
 (pdftex.def)             Requested size: 332.09775pt x 169.03017pt.
-<../Figures/SiteA_d18OLT_Interp.jpg, id=153, 722.7pt x 505.89pt>
+
+
+LaTeX Warning: Reference `Sec:??' on page 34 undefined on input line 99.
+
+<../Figures/SiteA_ECMd18O_combo.jpg, id=153, 722.7pt x 433.62pt>
+File: ../Figures/SiteA_ECMd18O_combo.jpg Graphic file (type jpg)
+<use ../Figures/SiteA_ECMd18O_combo.jpg>
+Package pdftex.def Info: ../Figures/SiteA_ECMd18O_combo.jpg  used on input line
+ 105.
+(pdftex.def)             Requested size: 332.09775pt x 199.25589pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[34] [35]
+<../Figures/SiteA_d18OLT_Interp.jpg, id=160, 722.7pt x 505.89pt>
 File: ../Figures/SiteA_d18OLT_Interp.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_d18OLT_Interp.jpg>
 Package pdftex.def Info: ../Figures/SiteA_d18OLT_Interp.jpg  used on input line
- 35.
+ 117.
 (pdftex.def)             Requested size: 332.09775pt x 232.4652pt.
-<../Figures/SiteA_DCT_PSD_raw.jpg, id=154, 722.7pt x 578.16pt>
-File: ../Figures/SiteA_DCT_PSD_raw.jpg Graphic file (type jpg)
-<use ../Figures/SiteA_DCT_PSD_raw.jpg>
-Package pdftex.def Info: ../Figures/SiteA_DCT_PSD_raw.jpg  used on input line 4
-2.
-(pdftex.def)             Requested size: 332.09775pt x 265.67451pt.
-<../Figures/SiteA_PSD_sig.jpg, id=155, 722.7pt x 578.16pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[36 <../Figures/SiteA_d18OInsert.jpg>] [37 <../Figures/SiteA_ECMd18O_combo.jpg>
+ <../Figures/SiteA_d18OLT_Interp.jpg>]
+<../Figures/SiteA_PSD_sig.jpg, id=168, 722.7pt x 578.16pt>
 File: ../Figures/SiteA_PSD_sig.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_PSD_sig.jpg>
-Package pdftex.def Info: ../Figures/SiteA_PSD_sig.jpg  used on input line 52.
-(pdftex.def)             Requested size: 129.15225pt x 103.32326pt.
-
-Underfull \hbox (badness 6592) in paragraph at lines 53--53
-[]\OT1/cmr/m/n/10 (a) |Sig-nal es-ti-mate given
- []
-
-
-Underfull \hbox (badness 1325) in paragraph at lines 53--53
-\OT1/cmr/m/n/10 through fit-ting to all data
- []
-
-<../Figures/SiteA_PSD_noise.jpg, id=156, 722.7pt x 578.16pt>
+Package pdftex.def Info: ../Figures/SiteA_PSD_sig.jpg  used on input line 127.
+(pdftex.def)             Requested size: 111.0pt x 88.79343pt.
+<../Figures/SiteA_PSD_noise.jpg, id=169, 722.7pt x 578.16pt>
 File: ../Figures/SiteA_PSD_noise.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_PSD_noise.jpg>
-Package pdftex.def Info: ../Figures/SiteA_PSD_noise.jpg  used on input line 59.
+Package pdftex.def Info: ../Figures/SiteA_PSD_noise.jpg  used on input line 134
+.
+(pdftex.def)             Requested size: 111.0pt x 88.79343pt.
 
-(pdftex.def)             Requested size: 129.15225pt x 103.32326pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
-[]\OT1/cmr/m/n/10 (b) |Noise es-ti-mate given
- []
-
-
-Underfull \hbox (badness 1325) in paragraph at lines 60--60
-\OT1/cmr/m/n/10 through fit-ting to all data
+Underfull \hbox (badness 1565) in paragraph at lines 135--135
+[]\OT1/cmss/bx/n/9 (b) |\OT1/cmr/m/n/9 Noise es-ti-mate given
  []
 
 File: ../Figures/SiteA_PSD_fit.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_PSD_fit.jpg>
-Package pdftex.def Info: ../Figures/SiteA_PSD_fit.jpg  used on input line 66.
-(pdftex.def)             Requested size: 129.15225pt x 103.32326pt.
+Package pdftex.def Info: ../Figures/SiteA_PSD_fit.jpg  used on input line 141.
+(pdftex.def)             Requested size: 111.0pt x 88.79343pt.
 
-Overfull \hbox (42.7901pt too wide) in paragraph at lines 50--69
- []$[]$     $[]$     $[]$ 
+Underfull \hbox (badness 2165) in paragraph at lines 145--145
+[]\OT1/cmr/m/n/10.95 Figure 7.5: |Spec-tral
  []
 
-<../Figures/SiteA_PSD_all.jpg, id=157, 722.7pt x 578.16pt>
+
+LaTeX Warning: Marginpar on page 38 moved by 216.41347pt.
+
+<../Figures/SiteA_DCT_PSD_raw.jpg, id=170, 722.7pt x 578.16pt>
+File: ../Figures/SiteA_DCT_PSD_raw.jpg Graphic file (type jpg)
+<use ../Figures/SiteA_DCT_PSD_raw.jpg>
+Package pdftex.def Info: ../Figures/SiteA_DCT_PSD_raw.jpg  used on input line 1
+56.
+(pdftex.def)             Requested size: 166.04887pt x 132.83284pt.
+
+Underfull \hbox (badness 1389) in paragraph at lines 157--157
+\OT1/cmr/m/n/9 in Fig-ure 7.4[]. The PSD was com-
+ []
+
+<../Figures/SiteA_PSD_all.jpg, id=171, 722.7pt x 578.16pt>
 File: ../Figures/SiteA_PSD_all.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_PSD_all.jpg>
-Package pdftex.def Info: ../Figures/SiteA_PSD_all.jpg  used on input line 72.
-(pdftex.def)             Requested size: 332.09775pt x 265.67451pt.
+Package pdftex.def Info: ../Figures/SiteA_PSD_all.jpg  used on input line 162.
+(pdftex.def)             Requested size: 166.04887pt x 132.83284pt.
 
-LaTeX Warning: Reference `sec:??' on page 33 undefined on input line 76.
+LaTeX Warning: Reference `sec:??' on page 38 undefined on input line 163.
 
 
-LaTeX Warning: Reference `sec:??' on page 33 undefined on input line 76.
+LaTeX Warning: Reference `sec:??' on page 38 undefined on input line 163.
 
-<../Figures/SiteA_filtersEx.jpg, id=158, 867.24pt x 578.16pt>
+<../Figures/SiteA_filtersEx.jpg, id=172, 867.24pt x 578.16pt>
 File: ../Figures/SiteA_filtersEx.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_filtersEx.jpg>
-Package pdftex.def Info: ../Figures/SiteA_filtersEx.jpg  used on input line 85.
+Package pdftex.def Info: ../Figures/SiteA_filtersEx.jpg  used on input line 171
+.
+(pdftex.def)             Requested size: 369.0pt x 246.00146pt.
 
-(pdftex.def)             Requested size: 332.09775pt x 221.3969pt.
-<../Figures/SiteA_BackDiffused_Y32.jpg, id=159, 722.7pt x 505.89pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[38
+
+ <../Figures/SiteA_PSD_sig.jpg> <../Figures/SiteA_PSD_noise.jpg> <../Figures/Si
+teA_DCT_PSD_raw.jpg> <../Figures/SiteA_PSD_all.jpg>]
+<../Figures/SiteA_DensProfile_wHL.jpg, id=178, 433.62pt x 505.89pt>
+File: ../Figures/SiteA_DensProfile_wHL.jpg Graphic file (type jpg)
+<use ../Figures/SiteA_DensProfile_wHL.jpg>
+Package pdftex.def Info: ../Figures/SiteA_DensProfile_wHL.jpg  used on input li
+ne 179.
+(pdftex.def)             Requested size: 111.0pt x 129.49812pt.
+
+Underfull \hbox (badness 7379) in paragraph at lines 180--180
+\OT1/cmr/m/n/9 sity pro-file at Site A.
+ []
+
+
+LaTeX Warning: Marginpar on page 39 moved by 131.56783pt.
+
+<../Figures/SiteA_DiffProfile.jpg, id=179, 433.62pt x 505.89pt>
+File: ../Figures/SiteA_DiffProfile.jpg Graphic file (type jpg)
+<use ../Figures/SiteA_DiffProfile.jpg>
+Package pdftex.def Info: ../Figures/SiteA_DiffProfile.jpg  used on input line 1
+88.
+(pdftex.def)             Requested size: 111.0pt x 129.49812pt.
+
+Underfull \hbox (badness 1412) in paragraph at lines 189--189
+[]\OT1/cmr/m/n/10.95 Figure 7.9: |\OT1/cmr/m/n/9 Es-ti-mated
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 189--189
+\OT1/cmr/m/n/9 given a Her-ron Lang-way
+ []
+
+
+LaTeX Warning: Marginpar on page 39 moved by 308.73428pt.
+
+<../Figures/SiteA_BackDiffused_Y32.jpg, id=180, 722.7pt x 505.89pt>
 File: ../Figures/SiteA_BackDiffused_Y32.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_BackDiffused_Y32.jpg>
 Package pdftex.def Info: ../Figures/SiteA_BackDiffused_Y32.jpg  used on input l
-ine 92.
+ine 206.
 (pdftex.def)             Requested size: 332.09775pt x 232.4652pt.
-<../Figures/SiteA_BackDiffused_AllSigmaEst.jpg, id=160, 1011.78pt x 433.62pt>
+<../Figures/SiteA_BackDiffused_AllSigmaEst.jpg, id=181, 1011.78pt x 433.62pt>
 File: ../Figures/SiteA_BackDiffused_AllSigmaEst.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_BackDiffused_AllSigmaEst.jpg>
 Package pdftex.def Info: ../Figures/SiteA_BackDiffused_AllSigmaEst.jpg  used on
- input line 99.
+ input line 213.
 (pdftex.def)             Requested size: 369.0pt x 158.14096pt.
-) [33] [34 <../Figures/SiteA_DensProfile_wHL.jpg>] [35 <../Figures/SiteA_DiffPr
-ofile.jpg>] [36 <../Figures/SiteA_ECMd18O_combo.jpg> <../Figures/SiteA_d18OInse
-rt.jpg>] [37 <../Figures/SiteA_d18OLT_Interp.jpg>] [38 <../Figures/SiteA_DCT_PS
-D_raw.jpg>] [39 <../Figures/SiteA_PSD_sig.jpg> <../Figures/SiteA_PSD_noise.jpg>
- <../Figures/SiteA_PSD_all.jpg>] [40 <../Figures/SiteA_filtersEx.jpg>] [41 <../
-Figures/SiteA_BackDiffused_Y32.jpg> <../Figures/SiteA_BackDiffused_AllSigmaEst.
-jpg>] [42
-
-] (./Complete_1stDraft.bbl
+) [39 <../Figures/SiteA_filtersEx.jpg> <../Figures/SiteA_DensProfile_wHL.jpg> <
+../Figures/SiteA_DiffProfile.jpg>] [40 <../Figures/SiteA_BackDiffused_Y32.jpg> 
+<../Figures/SiteA_BackDiffused_AllSigmaEst.jpg>] (./Complete_1stDraft.bbl
 bibitemlist
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [43
+) [41
+
 
 ]
 \tf@toc=\write5
@@ -1619,37 +1729,39 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 26104 strings out of 492982
- 484561 string characters out of 6134897
- 538289 words of memory out of 5000000
- 29277 multiletter control sequences out of 15000+600000
- 548446 words of font info for 96 fonts, out of 8000000 for 9000
+ 29758 strings out of 492982
+ 572570 string characters out of 6134897
+ 621083 words of memory out of 5000000
+ 32880 multiletter control sequences out of 15000+600000
+ 549048 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,12n,45p,10379b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,12n,56p,10379b,748s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/symbols/msbm10.pfb>
-Output written on Complete_1stDraft.pdf (49 pages, 1503790 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+symbols/msbm10.pfb>
+Output written on Complete_1stDraft.pdf (47 pages, 1528855 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 177 compressed objects within 2 object streams
+ 266 PDF objects out of 1000 (max. 8388607)
+ 178 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  83 words of extra memory for PDF output out of 10000 (max. 10000000)
 
