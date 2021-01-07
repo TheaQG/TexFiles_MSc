@@ -91,10 +91,35 @@ To compute the final diffusion length and depth series, two inputs are needed: t
 	\label{fig:SiteA_d18OInsert}
 \end{figure}
 
-CORE SPECIFICATIONS TABLE 
-Along with coordinates, height above sea, etc.
+	
+\begin{table}[ht]
+\centering
+\begin{adjustbox}{width=1.4\textwidth,center=\textwidth}
+	
+\begin{tabular}{l*{10}{c}}
 
-
+	\toprule
+	Core &  Drilled &  Core length &    \multicolumn{2}{c}{Geographic position}		&  Elevation &   Laki &  Tambora &  Mean accum. rate &  Temp. at 10m &   Temp at 20m \\ \cmidrule{4-5}
+	&&&   Latitude &  Longitude &&&&&&\\
+	ID & [Yr] & [m] & [\degree N] & [\degree E] & [m a.s.l.] & [m] & [m] & [m ice/Yr] &[\degree C]&[\degree C]\\
+	\midrule
+	Crete &     1974 &       404.0 &  71.12 &  322.68 &  3172 &  74.75 &  64.70 &   0.280 & -30.40 & -30.16 \\
+	Milcent &     1973 &       398.0 &  70.30 &  315.00 &  2410 &        &        &   0.530 & -22.30 &  -0.00 \\
+	Camp C &     1977 &       100.1 &  77.18 &  298.89 &  1880 &  91.50 &  78.50 &   0.380 & -24.29 & -24.35 \\
+	SiteA &     1985 &       128.6 &  70.63 &  324.18 &  3092 &  80.85 &  70.90 &   0.307 & -29.41 & -29.41 \\
+	SiteB &     1984 &       105.6 &  70.65 &  322.52 &  3138 &  83.70 &  73.00 &   0.327 & -29.77 & -29.48 \\
+	SiteC &     1984 &        24.9 &  70.68 &  321.21 &  3072 &        &        &   0.340 & -29.10 & -28.54 \\
+	SiteD &     1984 &       100.1 &  70.64 &  320.38 &  3018 &  93.80 &  81.50 &   0.365 & -28.30 & -27.89 \\
+	SiteE &     1985 &        77.8 &  71.76 &  324.15 &  3087 &  62.95 &  53.40 &   0.225 & -30.37 & -30.41 \\
+	SiteF &     1985 &        25.7 &  71.49 &  324.12 &  3092 &        &        &   0.237 & -30.42 & -30.36 \\
+	SiteG &     1985 &        70.8 &  71.15 &  324.16 &  3098 &  69.40 &  60.50 &   0.251 & -30.10 & -30.01 \\
+	SiteH &     1985 &        26.2 &  70.87 &  324.16 &  3102 &        &        &   0.277 & -29.59 & -29.53 \\
+	\bottomrule
+\end{tabular}
+\end{adjustbox}
+\label{tab:CoreSpecs}
+\caption[Ice core Specs]{Overview of specifications of all examined Greenlandic ice cores.}
+\end{table}
 
 In Figure \ref{fig:SiteA_d18OInsert} the depth series between the eruptions Laki and Tambora can be seen along with the entire ice core in the background. This is the diffused, measured raw data from Site A. Dating of the ice cores has been carried out by matching Electrical Conductivity Measurements (ECM, Section \ref{Sec:??}) with water isotopic - in this case $\delta^{18}$O - data measured at the same depths. By doing so it is possible to identify known volcanic horizons in the ECM data and thus getting a sharp marker of when the precipitation of that given depth fell. In Figure \ref{fig:SiteA_ECMd18O_combo} the matched ECM and $\delta^{18}$O profiles can be seen with Tambora marked at depth \_\_\_\_ and Laki at depth \_\_\_\_.
 
@@ -102,70 +127,106 @@ In Figure \ref{fig:SiteA_d18OInsert} the depth series between the eruptions Laki
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\textwidth]{SiteA_ECMd18O_combo.jpg}
+	\includegraphics[width=0.7\textwidth]{SiteA_ECMd18O_combo.jpg}
 	\caption[ECM and d18O data at LT, Site A.]{Two depth profiles from the core drilled at Site A showing accordingly the measured $\delta^{18}$O isotopic values and the conductivity measurements in the depth ranging from the estimated Tambora eruption to the Laki eruption.}	
 	\label{fig:SiteA_ECMd18O_combo}
 \end{figure}
 
 \subsection[Preliminary Computations]{Preliminary Computations}
 From the inputs a number of preliminary computations need to be carried out before the optimization of the diffusion length can be performed. For the depth series this consists of first interolating the data to make sure that the depth series is evenly sampled, then an analysis of signal and noise in the frequency spectrum needs to be carried out, and from this spectral analysis a Wiener filter can be constructed to find the optimal high frequency cut off, where as much noise as possible is filtered away while losing as little of the signal as possible. These computations are all based on the depth series data and use only signal analysis theory.\\
-The input of core specifications on the other hand is used to give a more theoretical view of the situation. From these preliminary inputs, containing accumulation rate, borehole temperatures, altitudes and other conditions, it is possible to use ice core and ice flow theory to compute initial estimates of density and diffusion profiles at the given site. From these profiles along with the volcanic horizons indicating the series of interest, an initial estimate of the diffusion length at the depth of Laki to Tambora.
+The input of core specifications on the other hand is used to give a more theoretical view of the situation. From these preliminary inputs, containing accumulation rate, borehole temperatures, altitudes and other conditions, it is possible to use ice core and ice flow theory to compute initial estimates of density and diffusion profiles at the given site. From these profiles along with the volcanic horizons indicating the series of interest, an initial estimate of the diffusion length at the depth of Laki to Tambora.\\
+Firstly, the computations associated with inputted depth series are considered and later the ones associated with the core specifications are described. 
  
 \subsubsection[Spline Interpolation]{Depth Series: Spline Interpolation}
+When working with ice core data, it is not always a certainty that the data you get from the field are as continuous or as evenly sampled as one could have hoped. A lot of factors are at play when drilling, transporting, dividing and cutting an ice core for laboratory studies. Some parts of an ice core contain brittle zones where the ice is likely to break, leaving a section almost impossible to analyze. When transporting the drilled ice cores they are susceptible to both melting and contamination and evaporation of the outermost ice layer of the core. And finally of course there is a number of uncertainties that occur when cutting an ice core into discrete bits to be measured. The quality of data varies rather greatly from site to site, from drill team to drill team and of course from laboratory to laboratory. \\
+When looking at the depth series only it might not be an issue to have various spacing between the discrete measurements, but when it comes to spectral analysis, it is of necessity to obtain a depth series signal with an even distribution. To accommodate this need interpolation of the signal can be of use. In the case of the ice core drilled at Site A, it can be seen from Figure \ref{fig:SiteA_d18OLT_Interp} that the raw measured signal has a minimum sampling size of $\Delta_{\text{min}}=0.038$ and a maximum sampling size of $\Delta_{\text{max}}=0.040$. To be able to analyze this signal in the spectral domain the signal can be numerically resampled with an even sampling rate. This is done by choosing the minimum sampling size available, $\Delta_{\text{min}}=0.038$, and redistributing the depth data points to be evenly spaced with this sampling size. The redistribution is carried out as follows.
+
+Assuming the original depth array $\text{\textbf{d}}$ is distributed as $d_{i-1} < d_i < d_{i+1}$ with $i = 0, ..., n-1$ has a minimum sampling distance as $\Delta_{\text{min}}$ we define the new sampling distance for the new depth array $\hat{\text{\textbf{d}}}$ as $\Delta =\Delta_{\text{min}}$ - again assuming that $\hat{\text{\textbf{d}}}_{j-1} < \hat{\text{\textbf{d}}}_j < \hat{\text{\textbf{d}}}_{j+1}$ with $j = 0, ..., \hat{n}-1$. This makes it possible to define the first and last value of the new array as
+\begin{equation}
+	\hat{\text{d}}_0 = \Delta \lceil \frac{\text{d}_0}{\Delta}, \rceil 
+	\label{Eq:InterpDepthMin}
+\end{equation}
+\begin{equation}
+	\hat{\text{d}}_{\hat{n}-1} = \Delta \lfloor \frac{\text{d}_{n-1}}{\Delta} \rfloor.
+	\label{Eq:InterpDepthMax}
+\end{equation}
+From this the number of values in the new array, $\hat{n}$, can be determined as
+\begin{equation}
+	\hat{n} = 1 +  \frac{\hat{\text{d}}_{\hat{n}-1} - \hat{\text{d}}_0}{\Delta},\;\;\;\;\; \hat{n} \in\mathbb{Z}.
+\end{equation}
+Thus our new depth array will be given as
+\begin{equation}
+	\hat{\text{\textbf{d}}} = \hat{\text{d}}_0 + j\cdot\Delta,\;\;\;\;\; j = 0, ..., \hat{n}-1.
+\end{equation}
+The original data are then used to define a cubic spline interpolation function to which the redistributed depth data points can be matched. For this part of the data analysis the \lstinline[columns=fixed]|SciPy.interpolate| Python (REFERENCE) package with \lstinline[columns=fixed]|SciPy.interpolate.CubicSpline| for the cubic spline interpolation. This gives a new distribution of data points as seen in Figure \ref{fig:SiteA_d18OLT_Interp}.
+
+
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\textwidth]{SiteA_d18OLT_Interp.jpg}
+	\includegraphics[width=0.7\textwidth]{SiteA_d18OLT_Interp.jpg}
 	\caption[Measured and interpolated $\delta^{18}$O data, Site A]{The unevenly measured data from Site A in the depth ranging from Tambora to Laki along with the now evenly sampled cubic spline interpolated data. Sampled with an interval of $\Delta = 0.038$.}
 	\label{fig:SiteA_d18OLT_Interp}
 \end{figure}
 
 \subsubsection[Spectral Analysis]{Depth Series: Spectral Analysis}
+Now with evenly spaced depth series data it is possible to transform the data to the frequency domain and perform spectral analysis on the signal. The basic theory concerning Fast Fourier Transform(FFT), Discrete Cosine Transform(DCT) and Power Spectral Densities(PSD) is discussed in Section \ref{Sec:????}. In this section the theory is merely put to use. Since the data under examination is completely real with no imaginary parts, pointing towards the sensibility of working only with cosines to enhance computational speed. Furthermore the DCT implies different boundary conditions than the FFT, meaning that some of the odd spectral behaviour, like aliasing can be avoided by using a different transform.\todo{Make a comment on Nyquist frequncy.}\\
+For the depth series between Laki and Tambora at Site A, the PSD computed through the DCT as $\text{PSD} = |\text{DCT}|^2$ can be seen in Figure \ref{fig:SiteA_DCT_PSD_raw}. This spectrum shows a higher intensity in the low frequency area and a lower intensity at high frequencies indicating a low frequency signal and some high frequency noise.
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{SiteA_DCT_PSD_raw.jpg}
+		\caption[PSD of LT data, Site A]{}
+		\label{fig:SiteA_DCT_PSD_raw}
+	\end{subfigure}
+	~
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{SiteA_PSD_all}
+		\caption[Spectral fit, Site A]{}%Signal(blue), noise(green) and fit(black).}
+		\label{fig:SiteA_SpectralFitsAll}
+	\end{subfigure}
+	\caption[Spectral Analysis]{Spectral Analysis. \textbf{(a)} The power spectral density(PSD) of the interpolated data from Site A shown in Figure \ref{fig:SiteA_d18OLT_Interp}. The PSD was computed through a Discrete Cosine Transform(DCT). \textbf{(b)} Spectral estimate of the depth series from Tambora to Laki along with fit to entire spectral data set and the separated estimates of the noise and signal functions, as described in section \ref{sec:??}}
+	\label{fig:SiteA_SpectralAnalysis}
+\end{figure}
+
 \begin{marginfigure}
 	\centering
 	\begin{subfigure}{\marginparwidth}
 		\centering
 		\includegraphics[width=\textwidth]{SiteA_PSD_sig.jpg}
-		\caption{\footnotesize{Signal estimate given through fitting to all data (noise and signal).}}
+		\caption{\footnotesize}
 		\label{fig:SiteA_PSD_sig}
 	\end{subfigure}\\[1ex]
 	
 	\begin{subfigure}{\marginparwidth}
 		\centering
 		\includegraphics[width=\textwidth]{SiteA_PSD_noise.jpg}
-		\caption{\footnotesize{Noise estimate given through fitting to all data (noise and signal).}}
+		\caption{\footnotesize}
 		\label{fig:SiteA_PSD_noise}
 	\end{subfigure}\\[1ex]
 	
 	\begin{subfigure}{\marginparwidth}
 		\centering
 		\includegraphics[width=\textwidth]{SiteA_PSD_fit.jpg}
-		\caption{\footnotesize{Complete spectral fit to all data (blue), both noise and signal.}}
+		\caption{\footnotesize}
 		\label{fig:SiteA_PSD_fit}
 	\end{subfigure}
-	\caption[Isolated spectral fits, Site A]{Spectral fits.}
+	\caption[Isolated spectral fits, Site A]{\footnotesize\textbf{(a)} Signal estimate given through fitting to all data (noise and signal). \textbf{(b)} Noise estimate given through fitting to all data (noise and signal). \textbf{(c)} Complete spectral fit to all data (blue), both noise and signal.}
 	\label{fig:SpectralFitsIsolated}
 \end{marginfigure}
+Since the signal is that of a real physical phenomena, and even one that we do have some acquaintance with, it is relevant to use some of this knowledge to describe the apparent spectrum, which has also been done in section \ref{Sec:???}. Recalling the definitions of the noise and the signal as we assume them to be as:
+\begin{equation}
+	|\eta(\omega)|^2 = \frac{\sigma_{\eta}^2\Delta z}{|1+a_1\exp(-2\pi i \omega\Delta z)|^2}
+	\label{Eq:MethodNoiseFit}
+\end{equation}
+\begin{equation}
+	P_{\text{signal}} = P_0 \cdot e^{-k^2\sigma_{tot}^2}
+	\label{Eq:MethodSignalFit}
+\end{equation}
+\todo{Write how the fitting routine is carried out. }The signal, noise and combined fit can be seen separately in Figure \ref{fig:SiteA_PSD_sig}, \ref{fig:SiteA_PSD_noise} and \ref{fig:SiteA_PSD_fit}, respectively, and plotted together in Figure \ref{fig:SiteA_SpectralAnalysis}.
 
 
-
-
-\begin{figure}[h]
-	\centering
-	\begin{subfigure}{.45\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{SiteA_DCT_PSD_raw.jpg}
-		\caption[PSD of LT data, Site A]{The power spectral density(PSD) of the interpolated data from Site A shown in Figure \ref{fig:SiteA_d18OLT_Interp}. The PSD was computed through a Discrete Cosine Transform(DCT).}
-		\label{fig:SiteA_DCT_PSD_raw}
-	\end{subfigure}
-	~
-	\begin{subfigure}{0.45\textwidth}
-		\includegraphics[width=\textwidth]{SiteA_PSD_all}
-		\caption[Spectral fit, Site A]{Spectral estimate of the depth series from Tambora to Laki along with fit to entire spectral data set and the separated estimates of the noise and signal functions, as described in section \ref{sec:??}. }%Signal(blue), noise(green) and fit(black).}
-		\label{fig:SpectralFitsAll}
-	\end{subfigure}
-\end{figure}
-
-\subsubsection[Frequency Filters]{Depth Series: Frequency Filters}
+\subsubsection[Wiener Filter]{Depth Series: Wiener Filter}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{SiteA_filtersEx.jpg}
@@ -203,7 +264,7 @@ The input of core specifications on the other hand is used to give a more theore
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.9\textwidth]{SiteA_BackDiffused_Y32.jpg}
+	\includegraphics[width=0.7\textwidth]{SiteA_BackDiffused_Y32.jpg}
 	\caption[Best estimate of deconvoluted depth series, Site A]{Best estimate of deconvoluted depth series given an annual count of 32 years - marked as orange dots. The best estimate is taken as the largest diffusion length that still yields 32 years in the depth span from Tambora to Laki.}
 	\label{fig:SiteA_BackDiffused_Y32}
 \end{figure}

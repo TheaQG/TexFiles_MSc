@@ -44,15 +44,15 @@
 \contentsline {chapter}{\chapternumberline {6}Layer Counting}{31}
 \contentsline {chapter}{\chapternumberline {7}Method}{33}
 \contentsline {subsection}{\numberline {7.0.1}Input}{34}
-\contentsline {subsection}{\numberline {7.0.2}Preliminary Computations}{34}
-\contentsline {subsubsection}{Spline Interpolation}{36}
-\contentsline {subsubsection}{Spectral Analysis}{36}
-\contentsline {subsubsection}{Frequency Filters}{38}
-\contentsline {subsubsection}{Density Profile}{38}
-\contentsline {subsubsection}{Diffusion Profile}{39}
-\contentsline {subsubsection}{$\sigma _0$ estimate}{39}
-\contentsline {subsection}{\numberline {7.0.3}Back Diffusion}{39}
-\contentsline {subsection}{\numberline {7.0.4}Peak Counting}{39}
-\contentsline {subsection}{\numberline {7.0.5}Decision algorithm}{39}
-\contentsline {subsection}{\numberline {7.0.6}Output}{39}
-\contentsline {chapter}{Bibliography}{41}
+\contentsline {subsection}{\numberline {7.0.2}Preliminary Computations}{36}
+\contentsline {subsubsection}{Spline Interpolation}{37}
+\contentsline {subsubsection}{Spectral Analysis}{38}
+\contentsline {subsubsection}{Frequency Filters}{39}
+\contentsline {subsubsection}{Density Profile}{39}
+\contentsline {subsubsection}{Diffusion Profile}{40}
+\contentsline {subsubsection}{$\sigma _0$ estimate}{40}
+\contentsline {subsection}{\numberline {7.0.3}Back Diffusion}{40}
+\contentsline {subsection}{\numberline {7.0.4}Peak Counting}{40}
+\contentsline {subsection}{\numberline {7.0.5}Decision algorithm}{40}
+\contentsline {subsection}{\numberline {7.0.6}Output}{40}
+\contentsline {chapter}{Bibliography}{43}
