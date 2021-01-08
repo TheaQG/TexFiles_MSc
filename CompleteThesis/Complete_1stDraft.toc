@@ -3,7 +3,8 @@
 \contentsline {section}{Acknowledgments}{ii}
 \contentsline {section}{Abstract}{iii}
 \contentsline {chapter}{List of Figures}{vi}
-\contentsline {chapter}{List of Tables}{vi}
+\contentsline {chapter}{List of Tables}{vii}
+\contentsline {chapter}{Listings}{vii}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}
 \contentsline {chapter}{\chapternumberline {2}Ice Theory}{3}
 \contentsline {section}{\numberline {2.1}Water Isotopes}{3}
@@ -46,13 +47,13 @@
 \contentsline {subsection}{\numberline {7.0.1}Input}{34}
 \contentsline {subsection}{\numberline {7.0.2}Preliminary Computations}{36}
 \contentsline {subsubsection}{Spline Interpolation}{37}
-\contentsline {subsubsection}{Spectral Analysis}{38}
-\contentsline {subsubsection}{Frequency Filters}{39}
-\contentsline {subsubsection}{Density Profile}{39}
-\contentsline {subsubsection}{Diffusion Profile}{40}
-\contentsline {subsubsection}{$\sigma _0$ estimate}{40}
-\contentsline {subsection}{\numberline {7.0.3}Back Diffusion}{40}
-\contentsline {subsection}{\numberline {7.0.4}Peak Counting}{40}
-\contentsline {subsection}{\numberline {7.0.5}Decision algorithm}{40}
-\contentsline {subsection}{\numberline {7.0.6}Output}{40}
-\contentsline {chapter}{Bibliography}{43}
+\contentsline {subsubsection}{Spectral Analysis}{39}
+\contentsline {subsubsection}{Wiener Filter}{42}
+\contentsline {subsubsection}{Density Profile}{42}
+\contentsline {subsubsection}{Diffusion Profile}{42}
+\contentsline {subsubsection}{$\sigma _0$ estimate}{42}
+\contentsline {subsection}{\numberline {7.0.3}Back Diffusion}{42}
+\contentsline {subsection}{\numberline {7.0.4}Peak Counting}{42}
+\contentsline {subsection}{\numberline {7.0.5}Decision algorithm}{42}
+\contentsline {subsection}{\numberline {7.0.6}Output}{42}
+\contentsline {chapter}{Bibliography}{45}

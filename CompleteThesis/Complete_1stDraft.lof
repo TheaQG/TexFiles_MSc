@@ -10,10 +10,12 @@
 \contentsline {figure}{\numberline {7.1}{\ignorespaces Flowchart}}{35}
 \contentsline {figure}{\numberline {7.2}{\ignorespaces Full $\delta ^{18}$O record with insert, Site A}}{36}
 \contentsline {figure}{\numberline {7.3}{\ignorespaces ECM and d18O data at LT, Site A.}}{36}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Measured and interpolated $\delta ^{18}$O data, Site A}}{39}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Isolated spectral fits, Site A}}{39}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Frequency filters example, Site A}}{40}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Density profile Site A}}{40}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Diffusion profile, Site A.}}{40}
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Best estimate of deconvoluted depth series, Site A}}{41}
-\contentsline {figure}{\numberline {7.10}{\ignorespaces All diffusion length estimate deconvolutions, Site A}}{41}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Measured and interpolated $\delta ^{18}$O data, Site A}}{38}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Spectral Analysis}}{40}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Isolated spectral fits, Site A}}{40}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Wiener filter}}{42}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Herron Langway density profile Site A}}{42}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Diffusion profile, Site A.}}{42}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Frequency filters example, Site A}}{43}
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Best estimate of deconvoluted depth series, Site A}}{43}
+\contentsline {figure}{\numberline {7.12}{\ignorespaces All diffusion length estimate deconvolutions, Site A}}{44}

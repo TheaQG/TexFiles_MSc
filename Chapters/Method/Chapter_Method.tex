@@ -123,15 +123,12 @@ To compute the final diffusion length and depth series, two inputs are needed: t
 
 In Figure \ref{fig:SiteA_d18OInsert} the depth series between the eruptions Laki and Tambora can be seen along with the entire ice core in the background. This is the diffused, measured raw data from Site A. Dating of the ice cores has been carried out by matching Electrical Conductivity Measurements (ECM, Section \ref{Sec:??}) with water isotopic - in this case $\delta^{18}$O - data measured at the same depths. By doing so it is possible to identify known volcanic horizons in the ECM data and thus getting a sharp marker of when the precipitation of that given depth fell. In Figure \ref{fig:SiteA_ECMd18O_combo} the matched ECM and $\delta^{18}$O profiles can be seen with Tambora marked at depth \_\_\_\_ and Laki at depth \_\_\_\_.
 
-
-
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{SiteA_ECMd18O_combo.jpg}
 	\caption[ECM and d18O data at LT, Site A.]{Two depth profiles from the core drilled at Site A showing accordingly the measured $\delta^{18}$O isotopic values and the conductivity measurements in the depth ranging from the estimated Tambora eruption to the Laki eruption.}	
 	\label{fig:SiteA_ECMd18O_combo}
 \end{figure}
-
 \subsection[Preliminary Computations]{Preliminary Computations}
 From the inputs a number of preliminary computations need to be carried out before the optimization of the diffusion length can be performed. For the depth series this consists of first interolating the data to make sure that the depth series is evenly sampled, then an analysis of signal and noise in the frequency spectrum needs to be carried out, and from this spectral analysis a Wiener filter can be constructed to find the optimal high frequency cut off, where as much noise as possible is filtered away while losing as little of the signal as possible. These computations are all based on the depth series data and use only signal analysis theory.\\
 The input of core specifications on the other hand is used to give a more theoretical view of the situation. From these preliminary inputs, containing accumulation rate, borehole temperatures, altitudes and other conditions, it is possible to use ice core and ice flow theory to compute initial estimates of density and diffusion profiles at the given site. From these profiles along with the volcanic horizons indicating the series of interest, an initial estimate of the diffusion length at the depth of Laki to Tambora.\\
@@ -139,6 +136,12 @@ Firstly, the computations associated with inputted depth series are considered a
  
 \subsubsection[Spline Interpolation]{Depth Series: Spline Interpolation}
 When working with ice core data, it is not always a certainty that the data you get from the field are as continuous or as evenly sampled as one could have hoped. A lot of factors are at play when drilling, transporting, dividing and cutting an ice core for laboratory studies. Some parts of an ice core contain brittle zones where the ice is likely to break, leaving a section almost impossible to analyze. When transporting the drilled ice cores they are susceptible to both melting and contamination and evaporation of the outermost ice layer of the core. And finally of course there is a number of uncertainties that occur when cutting an ice core into discrete bits to be measured. The quality of data varies rather greatly from site to site, from drill team to drill team and of course from laboratory to laboratory. \\
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{SiteA_d18OLT_Interp.jpg}
+	\caption[Measured and interpolated $\delta^{18}$O data, Site A]{The unevenly measured data from Site A in the depth ranging from Tambora to Laki along with the now evenly sampled cubic spline interpolated data. Sampled with an interval of $\Delta = 0.038$.}
+	\label{fig:SiteA_d18OLT_Interp}
+\end{figure}
 When looking at the depth series only it might not be an issue to have various spacing between the discrete measurements, but when it comes to spectral analysis, it is of necessity to obtain a depth series signal with an even distribution. To accommodate this need interpolation of the signal can be of use. In the case of the ice core drilled at Site A, it can be seen from Figure \ref{fig:SiteA_d18OLT_Interp} that the raw measured signal has a minimum sampling size of $\Delta_{\text{min}}=0.038$ and a maximum sampling size of $\Delta_{\text{max}}=0.040$. To be able to analyze this signal in the spectral domain the signal can be numerically resampled with an even sampling rate. This is done by choosing the minimum sampling size available, $\Delta_{\text{min}}=0.038$, and redistributing the depth data points to be evenly spaced with this sampling size. The redistribution is carried out as follows.
 
 Assuming the original depth array $\text{\textbf{d}}$ is distributed as $d_{i-1} < d_i < d_{i+1}$ with $i = 0, ..., n-1$ has a minimum sampling distance as $\Delta_{\text{min}}$ we define the new sampling distance for the new depth array $\hat{\text{\textbf{d}}}$ as $\Delta =\Delta_{\text{min}}$ - again assuming that $\hat{\text{\textbf{d}}}_{j-1} < \hat{\text{\textbf{d}}}_j < \hat{\text{\textbf{d}}}_{j+1}$ with $j = 0, ..., \hat{n}-1$. This makes it possible to define the first and last value of the new array as
@@ -160,17 +163,12 @@ Thus our new depth array will be given as
 \end{equation}
 The original data are then used to define a cubic spline interpolation function to which the redistributed depth data points can be matched. For this part of the data analysis the \lstinline[columns=fixed]|SciPy.interpolate| Python (REFERENCE) package with \lstinline[columns=fixed]|SciPy.interpolate.CubicSpline| for the cubic spline interpolation. This gives a new distribution of data points as seen in Figure \ref{fig:SiteA_d18OLT_Interp}.
 
+\lstinputlisting[language=Python, caption={[Spline interpolation of $\delta^{18}O$ data.]Spline interpolation of $\delta^{18}O$ data.}, label=lst:interpCores]{/home/thea/Documents/KUFysik/MesterTesen/WrittenWork/CodeForListings/interpCores.py}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.7\textwidth]{SiteA_d18OLT_Interp.jpg}
-	\caption[Measured and interpolated $\delta^{18}$O data, Site A]{The unevenly measured data from Site A in the depth ranging from Tambora to Laki along with the now evenly sampled cubic spline interpolated data. Sampled with an interval of $\Delta = 0.038$.}
-	\label{fig:SiteA_d18OLT_Interp}
-\end{figure}
+
+
 
 \subsubsection[Spectral Analysis]{Depth Series: Spectral Analysis}
-Now with evenly spaced depth series data it is possible to transform the data to the frequency domain and perform spectral analysis on the signal. The basic theory concerning Fast Fourier Transform(FFT), Discrete Cosine Transform(DCT) and Power Spectral Densities(PSD) is discussed in Section \ref{Sec:????}. In this section the theory is merely put to use. Since the data under examination is completely real with no imaginary parts, pointing towards the sensibility of working only with cosines to enhance computational speed. Furthermore the DCT implies different boundary conditions than the FFT, meaning that some of the odd spectral behaviour, like aliasing can be avoided by using a different transform.\todo{Make a comment on Nyquist frequncy.}\\
-For the depth series between Laki and Tambora at Site A, the PSD computed through the DCT as $\text{PSD} = |\text{DCT}|^2$ can be seen in Figure \ref{fig:SiteA_DCT_PSD_raw}. This spectrum shows a higher intensity in the low frequency area and a lower intensity at high frequencies indicating a low frequency signal and some high frequency noise.
 \begin{figure}[h]
 	\centering
 	\begin{subfigure}{.45\textwidth}
@@ -188,6 +186,11 @@ For the depth series between Laki and Tambora at Site A, the PSD computed throug
 	\caption[Spectral Analysis]{Spectral Analysis. \textbf{(a)} The power spectral density(PSD) of the interpolated data from Site A shown in Figure \ref{fig:SiteA_d18OLT_Interp}. The PSD was computed through a Discrete Cosine Transform(DCT). \textbf{(b)} Spectral estimate of the depth series from Tambora to Laki along with fit to entire spectral data set and the separated estimates of the noise and signal functions, as described in section \ref{sec:??}}
 	\label{fig:SiteA_SpectralAnalysis}
 \end{figure}
+Now with evenly spaced depth series data it is possible to transform the data to the frequency domain and perform spectral analysis on the signal. The basic theory concerning Fast Fourier Transform(FFT), Discrete Cosine Transform(DCT) and Power Spectral Densities(PSD) is discussed in Section \ref{Sec:????}. In this section the theory is merely put to use. Since the data under examination is completely real with no imaginary parts, pointing towards the sensibility of working only with cosines to enhance computational speed. Furthermore the DCT implies different boundary conditions than the FFT, meaning that some of the odd spectral behaviour, like aliasing can be avoided by using a different transform.\todo{Make a comment on Nyquist frequncy.}\\
+For the depth series between Laki and Tambora at Site A, the PSD computed through the DCT as $\text{PSD} = |\text{DCT}|^2$ can be seen in Figure \ref{fig:SiteA_DCT_PSD_raw}. This spectrum shows a higher intensity in the low frequency area and a lower intensity at high frequencies indicating a low frequency signal and some high frequency noise.
+
+
+
 
 \begin{marginfigure}
 	\centering
@@ -214,33 +217,80 @@ For the depth series between Laki and Tambora at Site A, the PSD computed throug
 	\caption[Isolated spectral fits, Site A]{\footnotesize\textbf{(a)} Signal estimate given through fitting to all data (noise and signal). \textbf{(b)} Noise estimate given through fitting to all data (noise and signal). \textbf{(c)} Complete spectral fit to all data (blue), both noise and signal.}
 	\label{fig:SpectralFitsIsolated}
 \end{marginfigure}
-Since the signal is that of a real physical phenomena, and even one that we do have some acquaintance with, it is relevant to use some of this knowledge to describe the apparent spectrum, which has also been done in section \ref{Sec:???}. Recalling the definitions of the noise and the signal as we assume them to be as:
-\begin{equation}
-	|\eta(\omega)|^2 = \frac{\sigma_{\eta}^2\Delta z}{|1+a_1\exp(-2\pi i \omega\Delta z)|^2}
-	\label{Eq:MethodNoiseFit}
-\end{equation}
-\begin{equation}
-	P_{\text{signal}} = P_0 \cdot e^{-k^2\sigma_{tot}^2}
-	\label{Eq:MethodSignalFit}
-\end{equation}
-\todo{Write how the fitting routine is carried out. }The signal, noise and combined fit can be seen separately in Figure \ref{fig:SiteA_PSD_sig}, \ref{fig:SiteA_PSD_noise} and \ref{fig:SiteA_PSD_fit}, respectively, and plotted together in Figure \ref{fig:SiteA_SpectralAnalysis}.
+Since the signal is that of a real physical phenomena, and even one that we do have some acquaintance with, it is relevant to use some knowledge of the theory to describe the apparent spectrum, which has also been done in section \ref{Sec:???}. Recalling the definitions of the noise and the signal as they are assumed to be based on the physical theory, it is possible to carry out a fitting routine to determine the parameters of the noise, signal and combined model function. This routine is performed in the following steps:
+\begin{itemize}
+	\item Define the noise, signal and model functions to fit:
+	\begin{equation}
+		|\eta(\omega)|^2 = \frac{\sigma_{\eta}^2\Delta z}{|1+a_1\exp(-2\pi i \omega\Delta z)|^2}
+		\label{Eq:MethodNoiseFit}
+	\end{equation}
+	\begin{equation}
+		P_{\text{signal}}(k) = P_0 \cdot e^{-k^2\sigma_{tot}^2}
+		\label{Eq:MethodSignalFit}
+	\end{equation}
+	\begin{equation}
+		P_{\text{model}} = |\eta(\omega)|^2 + P_[\text{signal}](\omega)
+		\label{Eq:MethodModelFit}
+	\end{equation}	 
+
+	\item Define two methods to calculate residuals between the measured data, $\boldsymbol{y}$, and the modelled estimate  $\boldsymbol{m}$ . The listings of these methods can be seen in Listings \ref{lst:calc_res} and \ref{lst:sum2_res}.
+	
+	\lstinputlisting[language=Python, caption={[Residual calculation, spectral fit.]Residual calculations for spectral fit.}, label=lst:calc_res]{/home/thea/Documents/KUFysik/MesterTesen/WrittenWork/CodeForListings/calc_res.py}
+	
+	\lstinputlisting[language=Python, caption={[Sum of squared residuals.]Calculation of the sum of squared residuals.}, label=lst:sum2_res]{/home/thea/Documents/KUFysik/MesterTesen/WrittenWork/CodeForListings/sum2_res.py}
+	
+	
+	\item Define boundaries for the parameters examined\todo{Write boundaries used - explain why.}: $P_0$, $\sigma_{\eta}$, $\sigma_{tot}$, $a_1$.
+	
+	\item Make initial parameter guess \todo{Write initial guesses}:
+	
+	\item Otimization routine to minimize residuals. This routine is carried out by using the Python package \lstinline[language=Python]|sp.optimize.fmin_l_bfgs_b|, an optimization through the limited-memory BFGS bound constraint algorithm \todo{REFERENCE!!! Maybe write more? No...}. 
+\end{itemize}
+
+
+
+The signal, noise and combined fit can be seen separately in Figure \ref{fig:SiteA_PSD_sig}, \ref{fig:SiteA_PSD_noise} and \ref{fig:SiteA_PSD_fit}, respectively, and plotted together in Figure \ref{fig:SiteA_SpectralAnalysis}.
 
 
 \subsubsection[Wiener Filter]{Depth Series: Wiener Filter}
-\begin{figure}[h]
+\begin{marginfigure}
 	\centering
-	\includegraphics[width=\textwidth]{SiteA_filtersEx.jpg}
-	\caption[Frequency filters example, Site A]{Frequency filter examples ranging from diffusion length 0.04 m to 0.085 m.}
-	\label{fig:SiteA_filtersEx}
-\end{figure}
+	\begin{subfigure}{\marginparwidth}
+		\centering
+		\includegraphics[width=\textwidth]{SiteA_WienerFilter.jpg}
+		\caption{\footnotesize}
+		\label{fig:SiteA_WienerFilter}
+	\end{subfigure}\\[1ex]
+	
+	\begin{subfigure}{\marginparwidth}
+		\centering
+		\includegraphics[width=\textwidth]{SiteA_WienerFilter_loglog.jpg}
+		\caption{\footnotesize}
+		\label{fig:SiteA_WienerFilter_loglog}
+	\end{subfigure}
+	\caption[Wiener filter]{\footnotesize\textbf{(a)} Wiener filter on linear scale. \textbf{(b)} Wiener filter on double logarithmic scale.}
+	\label{fig:SiteA_WienerFilters}
+\end{marginfigure}
+When the optimal fit to the spectral data has been found, it is possible to construct an optimal filter to cut off as much high frequency noise as possible while still maintaining the most signal. This is commonly called a Wiener filter \todo{REFERENCE!!!}. Recalling from Section \ref{Sec:????} this filter is described as the ratio between the signal alone and the signal plus noise model:
+\begin{equation}
+	\tilde{F}(k) = \frac{P_{\text{signal}}(k)}{P_{\text{signal}}(k) + |\tilde{\eta}(k)|^2}.
+	\label{Eq:MethodWienerFilter}
+\end{equation}
+
+This yields a filter that annihilates high frequencies above a certain cut but at the same time leaves room around this cut for both dampening low frequencies and not completely killing high frequencies  in that area. 
+This logistic curve can be seen plotted on a linear and a double logarithmic scale in Figures \ref{fig:SiteA_WienerFilter} and \ref{fig:SiteA_WienerFilter_loglog} respectively.
+
+
 
 \subsubsection[Density Profile]{Core Specifications: Density Profile}
+Right here is something very imortant.
 \begin{marginfigure}
 	\centering
 	\includegraphics[width=\marginparwidth]{SiteA_DensProfile_wHL.jpg}
-	\caption[Density profile Site A]{\footnotesize{Depth density profile at Site A. Black is the measured densities during drilling, blue is the modelled density profile given a Herron Langway model, and orange is a Herron Langway model with a criterion to minimize the distance to the actual measurements.}}
+	\caption[Herron Langway density profile Site A]{\footnotesize{Depth density profile at Site A.}}% Black is the measured densities during drilling, blue is the modelled density profile given a Herron Langway model, and orange is a Herron Langway model with a criterion to minimize the distance to the actual measurements.}}
 	\label{Fig:SiteA_DensProfile_wHL}
 \end{marginfigure}
+As well as here.
 
 
 \subsubsection[Diffusion Profile]{Core Specifications: Diffusion Profile}
@@ -254,13 +304,14 @@ Since the signal is that of a real physical phenomena, and even one that we do h
 \subsubsection[$\sigma_0$ estimate]{Core Specifications: $\sigma_0$ estimate}
 
 \subsection[Back Diffusion]{Back Diffusion/Deconvolution}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{SiteA_filtersEx.jpg}
+	\caption[Frequency filters example, Site A]{Frequency filter examples ranging from diffusion length 0.04 m to 0.085 m.}
+	\label{fig:SiteA_filtersEx}
+\end{figure}
 
 \subsection[Peak Counting]{Peak Counting}
-
-\subsection[Decision algorithm]{Decision Algorithm}
-
-\subsection[Output]{Output}
-
 
 \begin{figure}
 	\centering
@@ -269,23 +320,18 @@ Since the signal is that of a real physical phenomena, and even one that we do h
 	\label{fig:SiteA_BackDiffused_Y32}
 \end{figure}
 
+\subsection[Decision algorithm]{Decision Algorithm}
+
+\subsection[Output]{Output}
+
+
+
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{SiteA_BackDiffused_AllSigmaEst.jpg}
 	\caption[All diffusion length estimate deconvolutions, Site A]{Estimated back diffused data series with different diffusion length estimates: diffusion length estimate from spectral fit ($\sigma_{fit}$), maximum ($\sigma_{Max}^{Theo}$) and minimum ($\sigma_{Min}^{Theo}$) theoretically estimated diffusion lengths and final estimated diffusion length.}
 	\label{fig:SiteA_BackDiffused_AllSigmaEst}
 \end{figure}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
