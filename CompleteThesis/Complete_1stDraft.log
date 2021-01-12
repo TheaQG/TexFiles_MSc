@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  8 JAN 2021 11:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  12 JAN 2021 15:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1543,15 +1543,18 @@ ed on input line 92.
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../Figures/TurnerEruptiono
-fSoufriere-Mountains.jpg>] [2] [3] (./Complete_1stDraft.toc [4]) [5] (./Complet
-e_1stDraft.lof)
-(./Complete_1stDraft.lot) (./Complete_1stDraft.lol
+fSoufriere-Mountains.jpg>] [2] [3] (./Complete_1stDraft.toc
+Overfull \hbox (0.16711pt too wide) detected at line 7
+ \OT1/cmr/bx/n/10.95 viii
+ []
+
+[4]) [5] [6] (./Complete_1stDraft.lof) (./Complete_1stDraft.lot)
+(./Complete_1stDraft.lol
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6])
-[7] [8
+ [7])
+[8] (../Chapters/Introduction/Chapter_Introduction.tex) [1
 
-] (../Chapters/Introduction/Chapter_Introduction.tex) [1
 
 ] [2
 
@@ -1604,16 +1607,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [15]
 [16 <../Figures/SiteA_PSD_fit.jpg>]) [17] [18
 
-]
-(../Chapters/Data/Chapter_Data.tex) [19] [20
+] [19] [20
 
 ]
-(../Chapters/SignalAnalysis/Chapter_SignalAnalysis.tex [21]
+(../Chapters/Data/Chapter_Data.tex) [21] [22
+
+]
+(../Chapters/SignalAnalysis/Chapter_SignalAnalysis.tex [23]
 Underfull \hbox (badness 10000) in paragraph at lines 49--53
 
  []
 
-[22]
+[24]
 Overfull \hbox (4.20497pt too wide) in paragraph at lines 55--56
 \OT1/cmr/bx/n/10.95 THE CAL-CU-LA-TIONS. WRITE THE GEN-ERAL IDEAS
  []
@@ -1623,20 +1628,53 @@ Overfull \hbox (4.49254pt too wide) in paragraph at lines 55--56
 \OT1/cmr/bx/n/10.95 LATE/-COM-PUTE. SMALL CODE SNIP TO GIVE GEN-
  []
 
-[23]
+[25]
 Underfull \vbox (badness 1028) has occurred while \output is active []
 
- [24]
-[25] [26]) [27] [28]
-(../Chapters/TemperatureReconstruction/Chapter_TemperatureReconstruction.tex)
-[29
+ [26]
+[27] [28]
+Underfull \hbox (badness 10000) in paragraph at lines 172--174
 
-] [30
+ []
 
-] (../Chapters/LayerCounting/Chapter_LayerCounting.tex) [31] [32
+[29]
 
-]
-(../Chapters/Method/Chapter_Method.tex
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 187.
+
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 187.
+
+[30]
+Overfull \hbox (3.05711pt too wide) in paragraph at lines 188--192
+\OT1/cmr/m/n/10.95 So the ex-is-tence and unique-ness of an in-ter-polant is gi
+ven by the non-singularity
+ []
+
+[31]
+Underfull \hbox (badness 3009) in paragraph at lines 235--235
+\OT1/cmr/m/n/9 con-tin-u-ously dif-fer-en-tiable
+ []
+
+
+LaTeX Warning: Reference `fig:Interp' on page 32 undefined on input line 238.
+
+
+LaTeX Warning: Reference `sec:???' on page 32 undefined on input line 239.
+
+
+LaTeX Warning: Reference `fig:InterpFinal' on page 32 undefined on input line 2
+39.
+
+
+Overfull \hbox (22.14932pt too wide) in paragraph at lines 231--240
+\OT1/cmr/m/n/10.95 When turn-ing to piece-wise poly-no-mial in-ter-po-la-tion o
+f the data points $(\OML/cmm/m/it/10.95 t[]; y[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/
+it/10.95 ;  i \OT1/cmr/m/n/10.95 =
+ []
+
+[32] [33]) [34] (../Chapters/Method/Chapter_Method.tex
 Overfull \hbox (35.53377pt too wide) in paragraph at lines 77--78
 [][] 
  []
@@ -1647,8 +1685,10 @@ LaTeX Warning: Float too large for page by 37.42834pt on input line 80.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33]
-<../Figures/SiteA_d18OInsert.jpg, id=158, 782.925pt x 398.48875pt>
+ [35
+
+]
+<../Figures/SiteA_d18OInsert.jpg, id=169, 782.925pt x 398.48875pt>
 File: ../Figures/SiteA_d18OInsert.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_d18OInsert.jpg>
 Package pdftex.def Info: ../Figures/SiteA_d18OInsert.jpg  used on input line 89
@@ -1656,9 +1696,9 @@ Package pdftex.def Info: ../Figures/SiteA_d18OInsert.jpg  used on input line 89
 (pdftex.def)             Requested size: 332.09775pt x 169.03017pt.
 
 
-LaTeX Warning: Reference `Sec:??' on page 34 undefined on input line 124.
+LaTeX Warning: Reference `Sec:??' on page 36 undefined on input line 124.
 
-<../Figures/SiteA_ECMd18O_combo.jpg, id=159, 722.7pt x 433.62pt>
+<../Figures/SiteA_ECMd18O_combo.jpg, id=170, 722.7pt x 433.62pt>
 File: ../Figures/SiteA_ECMd18O_combo.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_ECMd18O_combo.jpg>
 Package pdftex.def Info: ../Figures/SiteA_ECMd18O_combo.jpg  used on input line
@@ -1670,12 +1710,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34]
-[35]
+ [36]
+[37]
 Underfull \vbox (badness 1199) has occurred while \output is active []
 
- [36 <../Figures/SiteA_d18OInsert.jpg> <../Figures/SiteA_ECMd18O_combo.jpg>]
-<../Figures/SiteA_d18OLT_Interp.jpg, id=170, 722.7pt x 505.89pt>
+ [38 <../Figures/SiteA_d18OInsert.jpg> <../Figures/SiteA_ECMd18O_combo.jpg>]
+<../Figures/SiteA_d18OLT_Interp.jpg, id=180, 722.7pt x 505.89pt>
 File: ../Figures/SiteA_d18OLT_Interp.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_d18OLT_Interp.jpg>
 Package pdftex.def Info: ../Figures/SiteA_d18OLT_Interp.jpg  used on input line
@@ -1685,40 +1725,40 @@ Package pdftex.def Info: ../Figures/SiteA_d18OLT_Interp.jpg  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[37]
+[39]
 (/home/thea/Documents/KUFysik/MesterTesen/WrittenWork/CodeForListings/interpCor
-es.py [38 <../Figures/SiteA_d18OLT_Interp.jpg>])
-<../Figures/SiteA_DCT_PSD_raw.jpg, id=178, 722.7pt x 578.16pt>
+es.py [40 <../Figures/SiteA_d18OLT_Interp.jpg>])
+<../Figures/SiteA_DCT_PSD_raw.jpg, id=187, 722.7pt x 578.16pt>
 File: ../Figures/SiteA_DCT_PSD_raw.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_DCT_PSD_raw.jpg>
 Package pdftex.def Info: ../Figures/SiteA_DCT_PSD_raw.jpg  used on input line 1
 76.
 (pdftex.def)             Requested size: 166.04887pt x 132.83284pt.
-<../Figures/SiteA_PSD_all.jpg, id=179, 722.7pt x 578.16pt>
+<../Figures/SiteA_PSD_all.jpg, id=188, 722.7pt x 578.16pt>
 File: ../Figures/SiteA_PSD_all.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_PSD_all.jpg>
 Package pdftex.def Info: ../Figures/SiteA_PSD_all.jpg  used on input line 182.
 (pdftex.def)             Requested size: 166.04887pt x 132.83284pt.
 
 
-LaTeX Warning: Reference `sec:??' on page 39 undefined on input line 186.
+LaTeX Warning: Reference `sec:??' on page 41 undefined on input line 186.
 
 
-LaTeX Warning: Reference `sec:??' on page 39 undefined on input line 186.
+LaTeX Warning: Reference `sec:??' on page 41 undefined on input line 186.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `Sec:????' on page 39 undefined on input line 189.
+LaTeX Warning: Reference `Sec:????' on page 41 undefined on input line 189.
 
-[39]
-<../Figures/SiteA_PSD_sig.jpg, id=184, 722.7pt x 578.16pt>
+[41]
+<../Figures/SiteA_PSD_sig.jpg, id=194, 722.7pt x 578.16pt>
 File: ../Figures/SiteA_PSD_sig.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_PSD_sig.jpg>
 Package pdftex.def Info: ../Figures/SiteA_PSD_sig.jpg  used on input line 199.
 (pdftex.def)             Requested size: 111.0pt x 88.79343pt.
-<../Figures/SiteA_PSD_noise.jpg, id=185, 722.7pt x 578.16pt>
+<../Figures/SiteA_PSD_noise.jpg, id=195, 722.7pt x 578.16pt>
 File: ../Figures/SiteA_PSD_noise.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_PSD_noise.jpg>
 Package pdftex.def Info: ../Figures/SiteA_PSD_noise.jpg  used on input line 206
@@ -1730,58 +1770,49 @@ Package pdftex.def Info: ../Figures/SiteA_PSD_fit.jpg  used on input line 213.
 (pdftex.def)             Requested size: 111.0pt x 88.79343pt.
 
 
-LaTeX Warning: Marginpar on page 40 moved by 177.26799pt.
+LaTeX Warning: Marginpar on page 42 moved by 177.26799pt.
 
 
-LaTeX Warning: Reference `Sec:???' on page 40 undefined on input line 220.
+LaTeX Warning: Reference `Sec:???' on page 42 undefined on input line 220.
 
 
 Underfull \vbox (badness 4366) has occurred while \output is active []
 
- [40 <../Figures/SiteA_DCT_PSD_raw.jpg> <../Figures/SiteA_PSD_all.jpg> <../Figu
+ [42 <../Figures/SiteA_DCT_PSD_raw.jpg> <../Figures/SiteA_PSD_all.jpg> <../Figu
 res/SiteA_PSD_sig.jpg> <../Figures/SiteA_PSD_noise.jpg>]
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 236.
-
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 236.
-
-
 (/home/thea/Documents/KUFysik/MesterTesen/WrittenWork/CodeForListings/calc_res.
 py)
 (/home/thea/Documents/KUFysik/MesterTesen/WrittenWork/CodeForListings/sum2_res.
 py)
 
-LaTeX Warning: Marginpar on page 41 moved by 13.71097pt.
+LaTeX Warning: Marginpar on page 43 moved by 13.71097pt.
 
-<../Figures/SiteA_WienerFilter.jpg, id=191, 361.35pt x 289.08pt>
+<../Figures/SiteA_WienerFilter.jpg, id=201, 361.35pt x 289.08pt>
 File: ../Figures/SiteA_WienerFilter.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_WienerFilter.jpg>
 Package pdftex.def Info: ../Figures/SiteA_WienerFilter.jpg  used on input line 
 260.
 (pdftex.def)             Requested size: 111.0pt x 88.79784pt.
-<../Figures/SiteA_WienerFilter_loglog.jpg, id=192, 361.35pt x 289.08pt>
+<../Figures/SiteA_WienerFilter_loglog.jpg, id=202, 361.35pt x 289.08pt>
 File: ../Figures/SiteA_WienerFilter_loglog.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_WienerFilter_loglog.jpg>
 Package pdftex.def Info: ../Figures/SiteA_WienerFilter_loglog.jpg  used on inpu
 t line 267.
 (pdftex.def)             Requested size: 111.0pt x 88.79784pt.
 
-LaTeX Warning: Marginpar on page 41 moved by 99.09875pt.
+LaTeX Warning: Marginpar on page 43 moved by 99.09875pt.
 
 
-LaTeX Warning: Reference `Sec:????' on page 41 undefined on input line 274.
+LaTeX Warning: Reference `Sec:????' on page 43 undefined on input line 274.
 
-[41]
-<../Figures/SiteA_DensProfile_wHL.jpg, id=198, 433.62pt x 505.89pt>
+[43]
+<../Figures/SiteA_DensProfile_wHL.jpg, id=207, 433.62pt x 505.89pt>
 File: ../Figures/SiteA_DensProfile_wHL.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_DensProfile_wHL.jpg>
 Package pdftex.def Info: ../Figures/SiteA_DensProfile_wHL.jpg  used on input li
 ne 289.
 (pdftex.def)             Requested size: 111.0pt x 129.49812pt.
-<../Figures/SiteA_DiffProfile.jpg, id=199, 433.62pt x 505.89pt>
+<../Figures/SiteA_DiffProfile.jpg, id=208, 433.62pt x 505.89pt>
 File: ../Figures/SiteA_DiffProfile.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_DiffProfile.jpg>
 Package pdftex.def Info: ../Figures/SiteA_DiffProfile.jpg  used on input line 2
@@ -1789,7 +1820,7 @@ Package pdftex.def Info: ../Figures/SiteA_DiffProfile.jpg  used on input line 2
 (pdftex.def)             Requested size: 111.0pt x 129.49812pt.
 
 Underfull \hbox (badness 1412) in paragraph at lines 300--300
-[]\OT1/cmr/m/n/10.95 Figure 7.9: |\OT1/cmr/m/n/9 Es-ti-mated
+[]\OT1/cmr/m/n/10.95 Figure 6.9: |\OT1/cmr/m/n/9 Es-ti-mated
  []
 
 
@@ -1798,9 +1829,9 @@ Underfull \hbox (badness 1810) in paragraph at lines 300--300
  []
 
 
-LaTeX Warning: Marginpar on page 42 moved by 122.93729pt.
+LaTeX Warning: Marginpar on page 44 moved by 122.93729pt.
 
-<../Figures/SiteA_filtersEx.jpg, id=200, 867.24pt x 578.16pt>
+<../Figures/SiteA_filtersEx.jpg, id=209, 867.24pt x 578.16pt>
 File: ../Figures/SiteA_filtersEx.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_filtersEx.jpg>
 Package pdftex.def Info: ../Figures/SiteA_filtersEx.jpg  used on input line 309
@@ -1809,28 +1840,36 @@ Package pdftex.def Info: ../Figures/SiteA_filtersEx.jpg  used on input line 309
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../Figures/SiteA_BackDiffused_Y32.jpg, id=201, 722.7pt x 505.89pt>
+<../Figures/SiteA_BackDiffused_Y32.jpg, id=210, 722.7pt x 505.89pt>
 File: ../Figures/SiteA_BackDiffused_Y32.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_BackDiffused_Y32.jpg>
 Package pdftex.def Info: ../Figures/SiteA_BackDiffused_Y32.jpg  used on input l
 ine 318.
 (pdftex.def)             Requested size: 258.29887pt x 180.80798pt.
-<../Figures/SiteA_BackDiffused_AllSigmaEst.jpg, id=202, 1011.78pt x 433.62pt>
+<../Figures/SiteA_BackDiffused_AllSigmaEst.jpg, id=211, 1011.78pt x 433.62pt>
 File: ../Figures/SiteA_BackDiffused_AllSigmaEst.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_BackDiffused_AllSigmaEst.jpg>
 Package pdftex.def Info: ../Figures/SiteA_BackDiffused_AllSigmaEst.jpg  used on
  input line 331.
 (pdftex.def)             Requested size: 369.0pt x 158.14096pt.
-) [42 <../Figures/SiteA_WienerFilter.jpg> <../Figures/SiteA_WienerFilter_loglog
+) [44 <../Figures/SiteA_WienerFilter.jpg> <../Figures/SiteA_WienerFilter_loglog
 .jpg> <../Figures/SiteA_DensProfile_wHL.jpg> <../Figures/SiteA_DiffProfile.jpg>
-] [43 <../Figures/SiteA_filtersEx.jpg> <../Figures/SiteA_BackDiffused_Y32.jpg>]
-[44 <../Figures/SiteA_BackDiffused_AllSigmaEst.jpg>] (./Complete_1stDraft.bbl
+] [45 <../Figures/SiteA_filtersEx.jpg> <../Figures/SiteA_BackDiffused_Y32.jpg>]
+[46 <../Figures/SiteA_BackDiffused_AllSigmaEst.jpg>]
+(../Chapters/TemperatureReconstruction/Chapter_TemperatureReconstruction.tex)
+[47
+
+] [48
+
+] (../Chapters/LayerCounting/Chapter_LayerCounting.tex) [49] [50
+
+]
+(./Complete_1stDraft.bbl
 bibitemlist
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [45
-
+) [51
 
 ]
 \tf@toc=\write5
@@ -1851,10 +1890,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 31517 strings out of 492982
- 601356 string characters out of 6134897
- 759631 words of memory out of 5000000
- 34560 multiletter control sequences out of 15000+600000
+ 31559 strings out of 492982
+ 602227 string characters out of 6134897
+ 760223 words of memory out of 5000000
+ 34602 multiletter control sequences out of 15000+600000
  552059 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  52i,12n,81p,10379b,1947s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1867,25 +1906,27 @@ mf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf
 fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
-12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Complete_1stDraft.pdf (53 pages, 1640898 bytes).
+msfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Complete_1stDraft.pdf (59 pages, 1672093 bytes).
 PDF statistics:
- 299 PDF objects out of 1000 (max. 8388607)
- 200 compressed objects within 2 object streams
+ 327 PDF objects out of 1000 (max. 8388607)
+ 219 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  93 words of extra memory for PDF output out of 10000 (max. 10000000)
 
