@@ -44,6 +44,7 @@
 \contentsline {subsubsection}{Piecewise Polynomial}{32}
 \contentsline {subsection}{\numberline {5.2.2}Standardisation}{34}
 \contentsline {subsection}{\numberline {5.2.3}Cycle Length Estimation}{34}
+\contentsline {section}{\numberline {5.3}Stability Tests}{34}
 \contentsline {chapter}{\chapternumberline {6}Method}{35}
 \contentsline {subsection}{\numberline {6.0.1}Input}{36}
 \contentsline {subsection}{\numberline {6.0.2}Preliminary Computations}{38}
