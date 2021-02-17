@@ -1,6 +1,8 @@
 %!TeX root = Chapter_Method
 \documentclass[../../CompleteThesis/Complete_1stDraft.tex]{subfiles}
 \begin{document}
+
+\section[Optimization routine]{Optimization routine}
 This section contains a walk through of the method to back diffuse a given ice core depth series to attempt to restore as much of the original signal as possible. For now, the method has been developed for sections that has been dated to be between the two volcanic eruptions Laki and Tambora, as these are very well dated, and thus it is possible to find the optimal diffusion length to back diffuse with as the actual number of annual layers is exactly known for this data series. The method is easily modified for any other dated depth series, as what is needed is just the number of annual layers in the given data series.\\
 Figure \ref{Fig:FlowchartDiffLen} shows a flowchart of the method used to estimate the diffusion length of a depth series with a preliminary guess of number of annual layers. In the following sections each of the steps in the method will be discussed more thoroughly and examples will be given, all based on the Greenlandic ice core drilled at Site A near Crete(REFERENCES!!!).
 The method is built such that it takes two inputs - the isotopic depth series, and the specifications for the particular ice core - and uses these for the first preliminary computations needed to make a first, naïve guess of the diffusion length, $\sigma_0$.
@@ -280,18 +282,116 @@ When the optimal fit to the spectral data has been found, it is possible to cons
 This yields a filter that annihilates high frequencies above a certain cut but at the same time leaves room around this cut for both dampening low frequencies and not completely killing high frequencies  in that area. 
 This logistic curve can be seen plotted on a linear and a double logarithmic scale in Figures \ref{fig:SiteA_WienerFilter} and \ref{fig:SiteA_WienerFilter_loglog} respectively.
 
+Now, the one branch of the preliminary work considering the raw depth series, has been dealt with and the remaining work before back diffusion can be carried out consisting of using the specifications of the core at the given drill site to give a qualified first guess on diffusion length.
 
 
 \subsubsection[Density Profile]{Core Specifications: Density Profile}
-Right here is something very imortant.
+\marginnote{%
+	\footnotesize
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Variable & Default\\
+		\midrule
+		$T_0$ & (218.15 K)  \\
+		$\dot{b}_0$ & (0.027 $\frac{\text{m}}{\text{yr}}$) \\
+		$\rho_{\text{surf}}$ & (330 $\frac{\text{kg}}{\text{m}^3}$) \\
+		$\rho_{\text{ice}}$ & 917 $\frac{\text{kg}}{\text{m}^3}$ \\
+		$\rho_{\text{Cr}}$ & 550 $\frac{\text{kg}}{\text{m}^3}$ \\
+		$\rho_{\text{CO}}$ & 804 $\frac{\text{kg}}{\text{m}^3}$ \\
+		$f_0^{\text{init}}$ & 1 \\
+		$f_1^{\text{init}}$ & 1 \\
+		$z_{\text{meas}}$ & - \\
+		$\rho_{\text{meas}}$ & - \\
+		\bottomrule
+	\end{tabular}
+	\captionof{table}{\footnotesize Input variables and their default values.}
+	\label{tab:DensInputVar}
+}[0.5cm]%
+From the input core specifications, specifically the surface temperature, $T_0$ and accumulation rate, $\dot{b}_0$, it is possible to estimate a density/depth profile through the Herron-Langway model described in section \ref{sec:Theory}. This section will contain a brief walk through of the algorithm used to estimate this profile.
+The Herron-Langway density profile program needs an estimate of surface temperature and annual accumulation rate, but does also take depth-density measurements into the calculations, if they exist and a surface density can also be specified to be taken into account. The adjustable input values and their default values can be seen in Table \ref{tab:DensInputVar}. The parameters describe surface temperature, $T_0$, annual accumulation rate, $\dot{b}_0$, surface density, $\rho_0$, density of ice, $\rho_{\text{ice}}$, critical density, $\rho_{\text{Cr}}$, close off density, $\rho_{\text{CO}}$, fit fudge parameters for upper and lower densification zones, $f_0$ and $f_1$, and depth and density measurements, $z_{\text{meas}}$ and $\rho_{\text{meas}}$. 
+
+The program is built to estimate a semi-analytical estimate of the depth-density profile given certain surface conditions. Furthermore it returns not only the density profile but computes the derivatives $\frac{d\rho}{dz}$ and $\frac{d\rho}{dt}$, and a timescale estimate for the profile. Two calculations repeats themselves, the computation of the values $k_0$ and $k_1$ and will just be mentioned this once:
+\begin{equation}
+	k_0 = f_0\cdot 11\cdot e^{-\frac{10160}{T_0\cdot R}}
+	\label{Eq:k0}
+\end{equation}
+\begin{equation}
+	k_1 = f_1\cdot 575\cdot e^{-\frac{21400}{T_0\cdot R}}
+	\label{Eq:k1}
+\end{equation}
+
+The program consists of the following different modules:
+\begin{itemize}
+	\item \lstinline[columns=fixed]|calc_dens0|:  Calculate surface density. Use default surface value, $\rho_{\text{surf}} = 330 \frac{\text{kg}}{\text{m}^3}$, if no measurements available. Otherwise calculate surface density by using $z_{\text{init}} = z_{\text{meas}}$[0] and $\rho_{\text{init}} = \rho_{\text{meas}}$[0] as:
+	\begin{equation}
+		\rho_{\text{surf}} = \frac{\rho_{\text{ice}}}{1 + \frac{\rho_{\text{ice}} - \rho_{\text{init}}}{\rho_{\text{init}}}\cdot e^{z_{\text{init}}\cdot \rho_{\text{ice}}\cdot k_0}}
+		\label{Eq:rhoSurf}
+	\end{equation}
+
+	\item \lstinline[columns=fixed]|calc_zCr|: Calculate ice depth of critical density (i. e. depth of boundary between first and second stage of densification), $\rho_{\text{Cr}}=550\frac{\text{kg}}{\text{m}^3}$:
+	\begin{equation}
+		z_{\text{Cr}} = \frac{1}{\rho_{\text{ice}}\cdot k_0}\cdot\left(\ln \left[\frac{\rho_{\text{Cr}}}{\rho_{\text{ice}} - \rho_{\text{Cr}}}\right]-\ln\left[\frac{\rho_{\text{surf}}}{\rho_{\text{ice}} - \rho_{\text{surf}}}\right]\right)
+		\label{Eq:zCr}
+	\end{equation}
+	
+	\item \lstinline[columns=fixed]|model_0|, \lstinline[columns=fixed]|model_1|: Models describing the two first stages of densification. Computed as:
+	\begin{equation}
+		\rho_0(z) = \rho_{\text{ice}}\cdot \left(\frac{Z_0(z)}{1+Z_0(z)}\right), \qquad Z_0(z) = e^{\rho_{\text{ice}}\cdot k_0 \cdot z + \ln(\frac{\rho_{\text{surf}}}{\rho_{\text{ice}} - \rho_{\text{surf}}})}
+		\label{Eq:rhoModel0}
+	\end{equation}
+	\begin{equation}
+		\rho_1(z) = \rho_{\text{ice}}\cdot \left(\frac{Z_1(z)}{1+Z_1(z)}\right), \qquad Z_1(z) = e^{\rho_{\text{ice}}\cdot k_1 \cdot \frac{z - z_{Cr}}{\sqrt{\dot{b}_0}} + \ln(\frac{\rho_{\text{Cr}}}{\rho_{\text{ice}} - \rho_{\text{Cr}}})}
+		\label{Eq:rhoModel1}
+	\end{equation}
+	where $\rho_0(z)$ corresponds to all $z \leq z_{\text{Cr}}$ and $\rho_1(z)$ to all $z > z_{\text{Cr}}$.
+	\item \lstinline[columns=fixed]|fit_f0|,  \lstinline[columns=fixed]|fit_f1|: Both modules are only used if any measured data is available. If depth and density data exists then these routines will compute the optimal (least-squares) fudge parameters $f_0$ and $f_1$, see Equations \ref{Eq:k0} and \ref{Eq:k1}, by fitting the data with the models for $\rho_0$ and $\rho_1$ described above. These updated fudge parameters are then henceforth used in the programs computations.
+	
+	\item \lstinline[columns=fixed]|dens_to_depth|: From a given density, calculate the corresponding depth. Same as \lstinline[columns=fixed]|calc_zCr|, but for any density, in both stages of densification.
+	\begin{equation}
+		z_0(\rho) = \frac{1}{\rho_{\text{ice}}\cdot k_0}\left(\ln\left[\frac{\rho}{\rho_{\text{ice}} - \rho}\right] - \ln\left[\frac{\rho_{\text{surf}}}{\rho_{\text{ice}} - \rho_{\text{surf}}}\right]\right), \qquad \rho \leq \rho_{\text{Cr}}
+		\label{Eq:rhoToDepth_0}
+	\end{equation}	
+	\begin{equation}
+		z_1(\rho) = \frac{\dot{b}_0}{\rho_{\text{ice}}\cdot k_1}\left(\ln\left[\frac{\rho}{\rho_{\text{ice}} - \rho}\right] - \ln\left[\frac{\rho_{\text{Cr}}}{\rho_{\text{ice}} - \rho_{\text{Cr}}}\right]\right) + z_{\text{Cr}}, \qquad \rho > \rho_{\text{Cr}}
+		\label{Eq:rhoToDepth_1}
+	\end{equation}		
+
+	\item \lstinline[columns=fixed]|drho_dz_0|, \lstinline[columns=fixed]|drho_dz_1|: Compute the first derivative with respect to $z$, both stages of densification:
+	\begin{equation}
+		\frac{d\rho_0}{dz} = \rho_{\text{ice}}^2\cdot k_0 \cdot Z_0\cdot \left[\frac{1 + 2\cdot Z_0}{(1 + Z_0)^2}\right], \qquad \rho_0 \leq \rho_{\text{Cr}}
+		\label{Eq:drho_dt_0}
+	\end{equation}
+	\begin{equation}
+		\frac{d\rho_1}{dz} = \rho_{\text{ice}}^2\cdot k_1 \cdot Z_1\cdot \frac{1}{\sqrt{\dot{b}_0}}\cdot \left[\frac{1 + 2\cdot Z_1}{(1 + Z_1)^2}\right], \qquad \rho_0 > \rho_{\text{Cr}}
+		\label{Eq:drho_dt_1}
+	\end{equation}
+	with $Z_0$ and $Z_1$ as described in Equations \ref{Eq:rhoModel0} and \ref{Eq:rhoModel1}.
+	
+	\item \lstinline[columns=fixed]|drho_dt|: Compute the time evolution of the density profile as the derivative of $\rho$:
+	\begin{equation}
+		\frac{d\rho_0}{dt} = k_0 \cdot\dot{b}_0\cdot (\rho_{\text{ice}} - \rho_{\text{surf}}), \qquad \rho_0 \leq \rho_{\text{Cr}}
+	\end{equation}
+	\begin{equation}
+		\frac{d\rho_1}{dt} = k_1 \sqrt{\cdot\dot{b}_0}, \qquad \rho_1 > \rho_{\text{Cr}}
+	\end{equation}	
+	\item \lstinline[columns=fixed]|time_scale_HL|: From the best optimized Herron-Langway depth-density profile estimate it is possible to compute a age-density profile estimate for the firn column. For the first stage of densification this is computed as:
+	\begin{equation}
+		t_0(\rho) = \frac{1}{k_0 \dot{b}_0} \cdot \ln\left[\frac{\rho_{\text{ice}} - \rho_{\text{surf}}}{\rho_{\text{ice}} - \rho}\right], \qquad \rho_0 \leq \rho_{\text{Cr}}
+	\end{equation}
+	The age of the second stage of densification is computed in the same fashion, and then adding the age at the boundary between the two stages, that is, the critical density, $t_{\text{Cr}}$:
+	\begin{equation}
+		t_1(\rho) = \frac{1}{k_1 \sqrt{\dot{b}_0}}\cdot\ln\left[\frac{\rho_{\text{ice}} - \rho_{\text{Cr}}}{\rho_{\text{ice}} - \rho}\right] + t_{\text{Cr}}, \qquad \rho_{\text{Cr}} < \rho < \rho_{\text{ice}}
+	\end{equation}
+\end{itemize}
+
 \begin{marginfigure}
 	\centering
 	\includegraphics[width=\marginparwidth]{SiteA_DensProfile_wHL.jpg}
 	\caption[Herron Langway density profile Site A]{\footnotesize{Depth density profile at Site A.}}% Black is the measured densities during drilling, blue is the modelled density profile given a Herron Langway model, and orange is a Herron Langway model with a criterion to minimize the distance to the actual measurements.}}
-	\label{Fig:SiteA_DensProfile_wHL}
+	\label{fig:SiteA_DensProfile_wHL}
 \end{marginfigure}
-As well as here.
-
+In Figure \ref{fig:SiteA_DensProfile_wHL} an example of the semi-analytical depth-density modelling can be seen for the core drilled at Site A. It shows the measured depth and density data(black), the purely analytical model(blue) and the semi-analytical fit-to-data-model(orange). The first and second stages of densification can clearly be seen in both data and model as a kink in a depth just shy of 20 m.
 
 \subsubsection[Diffusion Profile]{Core Specifications: Diffusion Profile}
 \begin{marginfigure}
@@ -324,8 +424,6 @@ As well as here.
 
 \subsection[Output]{Output}
 
-
-
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{SiteA_BackDiffused_AllSigmaEst.jpg}
@@ -333,6 +431,17 @@ As well as here.
 	\label{fig:SiteA_BackDiffused_AllSigmaEst}
 \end{figure}
 
+\section[Stability Tests]{Method Testing and Stability}
+\subsection[Maximal $N_{\text{peaks}}$]{Diffusion Length Estimate Versus Number of Counted Peaks}
+\subsection[Interpolation 1]{Interpolation of Data Before Deconvolution}
+\subsection[Interpolation 2]{Interpolation of Data After Deconvolution}
+
+
+\section[Missing Data]{Reconstruction of Missing Data}
+\subsection[Interpolation Method]{Interpolation Method}
+\subsection[MEM]{Maximum Entropy Method}
+
+\section[Linear Timescale]{Linear Timescale}
 
 
 
