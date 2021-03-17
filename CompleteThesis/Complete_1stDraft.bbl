@@ -1,3 +1,38 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{Gkinis2019}
+Vasileios Gkinis, Christian Holme, Emma~C Kahle, C~Max Stevens, Eric~J Steig,
+  and Bo~M Vinther.
+\newblock {Numerical experiments on firn isotope diffusion using the Community
+  Firn Model}.
+\newblock {\em Journal of Glaciology}, in review(x):1--54, 2019.
+
+\bibitem{HerronLangway1980}
+M.~M. Herron and C.~C.~Jr. Langway.
+\newblock {Firn densification: an Empirical Model}.
+\newblock {\em Journal of Glaciology}, 25(93), 1980.
+
+\bibitem{Johnsen1977}
+S.~J. Johnsen.
+\newblock {Stable isotope homogenization of polar firn and ice}.
+\newblock {\em Isotopes and impurities in snow and ice}, (1):210--219, 1977.
+
+\bibitem{Johnsen2000}
+Sigf{\'{u}}s~J. Johnsen, Henrik~B. Clausen, Kurt~M. Cuffey, Georg Hoffmann,
+  Jakob Schwander, and Creyts Timothy.
+\newblock {Diffusion of stable isotopes in polar firn and ice: the isotope
+  effect in firn diffusion}.
+\newblock {\em Physics of Ice Records}, pages 121--140, 2000.
+
+\bibitem{Patankar1980}
+S.V. Patankar.
+\newblock {\em {Numerical Heat Transfer and Fluid Flow}}.
+\newblock Boca Raton, 1st edition, 1980.
+
+\bibitem{Stevens2020}
+C.~Max Stevens, Vincent Verjans, Jessica M.~D. Lundin, Emma~C. Kahle, Annika~N.
+  Horlings, Brita~I. Horlings, and Edwin~D. Waddington.
+\newblock {The Community Firn Model (CFM) v1.0}.
+\newblock {\em Geoscientific Model Development}, 13(9):4355--4377, 2020.
 
 \end{thebibliography}

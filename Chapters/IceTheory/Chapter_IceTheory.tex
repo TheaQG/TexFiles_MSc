@@ -128,7 +128,8 @@ and the age at close-off depth as:
 \begin{equation}
 	t_{0.55} = \frac{1}{k_0 A}\ln\left[\frac{\rho_i - \rho_0}{\rho_i - 0.55}\right]
 \end{equation}
-\textcolor{red}{WHERE DOES THIS COME FROM?}
+
+\todo{ICE-DENS: Figure out where this comes from.}
 \textbf{2. stage of densificaion:} The depth-density profile
 \begin{equation}
 	\rho(h) = \frac{\rho_i Z_1}{1 + Z_1}
@@ -144,7 +145,8 @@ An estimate of the mean annual accumulation rate can be made from the slope $C'$
 
 \subsection{Diffusion}
 \subsubsection{In Firn}
-Diffusion describes the attenuation of a given signal, e.g. a water isotopic signal, due to vapor phase diffusion in the porous firn column. To develop accurate knowledge of paleo climate and temperatures it is of great importance to understand this process, as a reconstruction of the part of the signal lost will reveal finer details in the signal and thus a more detailed knowledge of past times. 
+Diffusion describes the attenuation of a given signal, e.g. a water isotopic signal, due to vapor phase diffusion in the porous firn column. This process takes place in the air pockets of the material from time of deposition to pore close-off. Commonly, firn is divided into three densification zones based on the dominant densification physics in the given zone \cite[Herron and Langway, 1980]{HerronLangway1980}, see section \ref{Sec:Densification}.
+To develop accurate knowledge of paleo climate and temperatures it is of great importance to understand this process, as a reconstruction of the part of the signal lost will reveal finer details in the signal and thus a more detailed knowledge of past times. 
 Diffusion can be described through Fick's $2^{\text{nd}}$ law, which describes the change in concentration of a substance with time, due to diffusion:
 \begin{equation}
 	\frac{\partial \phi}{\partial t} = D(t) \frac{\partial^2 \phi}{\partial z^2} - \dot{\epsilon}_z(t) z \frac{\partial \phi}{\partial z}
@@ -177,12 +179,12 @@ The change of diffusion length over time is given as
 	\frac{d\sigma^2}{dt} - 2\dot{\epsilon}_z (t)\sigma^2 = 2 D(t)
 	\label{eq:Evolution_DiffLen}
 \end{equation}
-given by JOHNSEN1977, which also states that for the strain rate, the following approximation can be made:
+given by \cite[Johnsen, 1977]{Johnsen1977}, which also states that in the case of firn and assuming a site with little ice flow, the vertical strain rate, can be approximated with a simple strain rate, only dependent on the density and its time evolution:
 \begin{equation}
 	\dot{\epsilon}_z(t) \approx - \frac{d\rho}{dt}\frac{1}{\rho}
 	\label{eq:strain_rate_approx}
 \end{equation}
-where $\rho$ is the density and $\frac{d\rho}{dt}$ is the densification rate. With this approximation, the solution to the equation for evolution of the diffusion length in the firn column can be found, defined only through density and densification rate, as(\textcolor{red}{DESCRIBE HOW TO SOLVE FOR SIGMA}):
+where $\rho$ is the density and $\frac{d\rho}{dt}$ is the densification rate. With this approximation, the solution to the equation for evolution of the diffusion length in the firn column can be found, defined only through density and densification rate, as\todo{ICE-DIFF: Describe how to solve for sigma.}:
 \begin{equation}
 	\sigma^2(\rho) =\frac{1}{\rho^2} \int_{\rho_0}^{\rho}2\rho'^2\left(\frac{d\rho'}{dt}\right)^{-1} D(\rho') \, d\rho'
 	\label{eq:Diff_Len_Firn}
@@ -201,7 +203,8 @@ The diffusion length in ice ice given from the diffusion constant in ice and the
 	\sigma^2_{\text{ice}}(t) = S(t)^2 \int_{0}^{t}2 D_{\text{ice}}(t') S(t')^{-2} \, dt'
 	\label{eq:Diff_Len_Ice}
 \end{equation}
-(\textcolor{red}{DESCRIBE HOW TO SOLVE FOR SIGMA and a discussion of the ice diffusion constant.})
+\todo{ICE-DIFF: DESCRIBE HOW TO SOLVE FOR SIGMA and a discussion of the ice diffusion constant(ice diffusivity?).}
+
 
 \subsubsection{Reconstruction of temperatures}
 Reconstruction of paleotemperatures can be attempted through a number of various techniques (REFERENCES). For precise and accurate results, the single isotopelogue diffusion methods have proven useful(REFERENCES).\\
@@ -221,7 +224,7 @@ The noise term, often categorized as white noise, but red noise is also seen in 
 	|\hat{\eta}(k)|^2 = \frac{\sigma_n^2 \Delta}{|1 - a_1 \, e^{ik\Delta}|^2}
 	\label{eq:PSD_Noise_Term}
 \end{equation}
-Equation \ref{eq:PSD_Noise_Term} describes an autoregressive process of the first order, with $a_1$ being an AR-1 coefficient. \textcolor{red}{WHAT IS THIS? DESCRIBE.}.\\
+Equation \ref{eq:PSD_Noise_Term} describes an autoregressive process of the first order, with $a_1$ being an AR-1 coefficient \todo{ICE-TEMP: Describe an autoregressive process}.\\
 The spectral estimate of the time series, $\mathbb{P}_s$, can be computed via a number of different numerical schemes, here Burg's method will be used, REFERENCES. To determine the diffusion length a fit to these estimated spectral data, $P_s$, is found through for example a least square optimization, from which the parameters $P_0, \; \sigma, \; a_1, \; \sigma_{\eta}^2$ can be estimated.\\
 The diffusion length $\sigma^2$ can be calculated by least-square minimization of the misfit between $\mathbb{P}_s$ and $P_s$.\\
 This estimated diffusion length needs to be corrected: the obtained $\hat{\sigma}^2$ is affected by two further diffusion processes, taking place respectively in the ice and in the experimental sampling:
@@ -252,6 +255,53 @@ Now, from the obtained estimate of the firn diffusion length, a temperature esti
 		1, & f < f_{\lambda} - d f_{\lambda}, f > f_{\lambda} + d f_{\lambda}
 	\end{cases}
 \end{equation}
+
+\section[CFM]{The Community Firn Model}
+\label{Sec:CFM}
+The Community Firn Model (CFM) is an open-source modular Python framework for firn-modelling. It was first developed  by \cite[Stevens et al, 2020]{Stevens2020} and later adapted to a different version with a focus on water isotopic diffusion by \cite[Gkinis et al, 2019]{Gkinis2019} under the name Iso-CFM, the latter version used in this thesis. 
+The original CFM is modular, meaning that, firstly, it is easy to choose which physical processes should be included in the modelling, and, secondly, it allows for the user to develop new modules that can easily be integrated in the framework, which is what \cite{Gkinis2019} utilized in their work on the Iso-CFM. The main focus of the CFM is on modelling the evolution of firn density and temperature using a Lagrangian (firn parcel-following) grid, where each pracel (model volume) represents a layer of firn with uniform properties. This is carried out by first assuming that the accumulation rate at the site under consideration is constant and that the firn-density profile is in a steady state (Sorge's law). The densification rate is computed at each step in the model, using any of the given previously published firn-densification models, provided in the modules, and the firn density is updated in each time step. Following, the firn temperature evolution is computed through a coupled heat-diffusion model, by the use of a finite-volume method, \cite[Patankar, 1980]{Patankar1980}. The model then proceeds by adding a new layer on top of the simulated firn column, described by the provided input parameters (temperature, accumulation rate, density), and the bottom volume of the grid is removed. 
+The user starts by specifying input parameters(firn-densification physics, time-step size, surface boundary conditions and more) in a .json file. A model run is then started by a "spin-up" which determines a steady state model used as the initial condition for the main model run. Thus, for the initial model, a steady state analytic firn-densification Herron-Langway model \cite{HerronLangway1980} is used to calculate depth-density and depth-age profiles, using the forced steady state parameters temperature, $T_0$ and accumulation, $\dot{b}_0$. Then stepping forward one time step, it uses the specified densification model to evolve the firn in time. An in depth description of the entire CFM can be found in \cite[Stevens et al.]{Stevens2020}.
+
+\subsection[Iso-CFM]{Iso-CFM}
+\label{Sec:IsoCFM}
+The Iso-CFM, building on the Community Firn Model, is a tool for estimating firn diffusion rates of water isotopes, $\delta^{18}$O, $\delta^{17}$O and $\delta$D. It requires two main inputs, temperature and accumulation rate, and no prior knowledge of the isotopic signal is required. The model provides computation of the diffusion lengths for the mentioned water isotopes. As previously discussed, the diffusion lengths are a metric for the smoothing a signal has undergone and can, along with deconvolution techniques also discussed in this thesis, be used to reconstruct some of the signal that has been otherwise attenuated.
+\subsubsection[Diffusivity]{Firn Diffusivity}
+\label{Sec:IsoCFM_FirnDiffusivity}
+The Iso-CFM framework contains a number of different new modules added to the CFM. A specific module for calculation of the firn diffusivity, $D(\rho(z))$, is provided, containing several different methods for the calculations of the individual parameters contained in the calculation of the diffusivity constant, using the formulation in \cite[Johnsen et al., 2000]{Johnsen2000}:
+\begin{equation}
+	D_i(z) = \frac{m\, p \, D_{\text{air}}}{R \, T(z) \, \alpha^{i}_{s/v}\, \tau(z)}\left(\frac{1}{\rho(z)} - \frac{1}{\rho_{\text{ice}}}\right)
+	\label{Eq:DiffusivityConstant}
+\end{equation}
+For a more extensive description of the terms and their parameterizations, see Appendix \ref{App:FirnDiffusivity} and \cite[Gkinis et al., 2019]{Gkinis2019}. Here will only be given a short walk-through of the terms:
+
+$m$: molecular weight in [kg],
+
+$p$: saturation vapor pressure over ice in [Pa]with three different calculation methods, see Appendix \ref{App:FirnDiffusivity}, 
+
+$D_{\text{air}}$: diffusivity of water vapor in air,
+
+$R = 8.314478 \left[\frac{\text{m}^3\text{Pa}}{\text{K mol}}\right]$: molar gas constant
+
+$\alpha_{s/v}^i$: solid-to-vapour fractionation factor. $i = {^{18}\text{O},\; \text{D}},\; ^{17}\text{O}$,
+
+$\tau$: firn tortuosity
+
+
+\subsubsection[Diffusion Length Profiles]{Diffusion Length Profiles}
+\label{Sec:IsoCFM_DiffLenProfile}
+The Iso-CFM contains three different routines for computing diffusion length profiles, one that is based on a fully analytical solution to Fick's second law, one based on a semi-analytical solution, and on that finds a fully numerical solution. 
+
+\begin{itemize}
+	\item \lstinline[columns=fixed]|analytical_hl|:
+	\item \lstinline[columns=fixed]|semi_analytical_hl|:
+	\item \lstinline[columns=fixed]|numerical_hl|:
+\end{itemize}
+
+
+
+\section[Temperature Estimation]{Temperature Estimation}
+\todo{ICE-TEMP.EST:This entire section needs to be written}
+
 
 
 
@@ -328,9 +378,7 @@ For this thesis the volcanic horizons are especially important for developing
 	\caption{This is a great figure.}
 	\label{Fig:d18O_ECM_Example}
 \end{figure}
-\subsection[Laki and Tambora][Laki and Tambora]{Laki and Tambora in Data and History}
-In the not-so-distant past two volcanic horizons have been of great importance for this thesis, namely the Laki eruption in 1783 and the Tambora eruption of 1815. Interestingly, these eruptions have not only impacted the geophysical world, but has left their footprints on the history of Man in politics[REFERENCE], sociology[REFERENCE], arts[REFERENCE] and philosophy[REFERENCE]. On the eighth day of June in 1783 a volcanic fissure located in the southern part of Iceland was central for a global climatic change. The fissure Lakagígar or more commonly known as Laki refering to the central mountain, erupted with violent phreagomagmatic explosions due to the basalt magma being exposed to ground water. The eruption was given a Volcanic Explosivity Index(VEI) of 4, corresponding to the magnitude of the much later 2010 Eyjafjallajökull Icelandic eruption. For the next eight months the fissure continued to emit great amounts of sulfuric aerosols into the atmosphere, resulting locally in Iceland in catastrophic mass famine, due to loss of livestock to poisoning, with up to 25 \% of the population dying from starvation and poisoning from the volcanic gasses. Globally, the eruption caused a huge amount of sulfur dioxide to be spewed into the northern hemisphere which led to a global drop in temperatures and a generally more extreme climate. In the European regions the following summer was much warmer than usual with many thunderstorms to follow. The winter of 1783-84 was subsequently extreme, with long periods of continuous frost. In France the late 1780's were marked by several years with droughts in the summer and frost in the winter, which contributed greatly to a rise in poverty and famine, and creating a greater division between the people and the rulers. Along with a growing dismay and distrust in the ruling forces the climatic changes due to Laki and a number of other climatic disruptions the French political situation finally climaxed in the French revolution of 1789. [REFERENCES!!!!]\\
-32 years later on April 5 in 1815 an even more powerful eruption ensued: the eruption of Mount Tambora on the, now, Indonesian island Sumbawa. This eruption had a Volcanic Explosivity Index of 7, which makes it the most powerful in the recorded history of humankind. Considering that the VEI is defined as a logarithmic scale - at least for indices larger than VEI-3 - the Tambora eruption, though located just south of the Equator, impacted the entire globe as well as the European continent in at least the same magnitude as the 32 years prior Laki eruption. Locally, it was estimated to cause at least 10,000 direct deaths and many tens of thousands more due to sulfur dioxid poisoning, famine and disease. In many contexts the year of 1816 following the event became known as "\textit{The Year Without a Summer}", as the ashes from the eruption column dispersed across the world and lowered global temperatures. This significant climate change though was not just a consequence of the Tambora eruption, but was pushed by a number of climatic forcings, some due to several previous volcanic activities around the globe. Combined, these effects coincided in a drop in global temperature by about 0.4 to 0.7 $^{\circ}$C. This climatic change affected the entire globe by disrupting the Indian monsoons, causing a number of failed harvests, laying ground to severe typhus epidemics in southeast Europe and destroying crops and causing potato, oat and what harvest failure, especially in Ireland. Since the eruption had so severe consequences for the day to day lives of many people, the aftermath all around the world has been one of the greatest documented in recorded time, with a clear impact on the works of many artists, among them Lord Byron and J. M. W Turner[REFERENCES!!!!]. Although both eruptions caused many a tragedy, there is beauty in using these events as volcanic horizons in ice core records. Given the severity of both eruptions, they have been so well documented in historical records that they make up solid and certain pillars in developing a temporal map of the past life of our ever so active earth. For that and for their brutal beauty they will remain in human history for a great while to come.
+\subsection[Laki and Tambora][Laki and Tambora]{Laki and Tambora in Data}
 
 
 

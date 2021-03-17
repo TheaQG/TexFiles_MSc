@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  16 FEB 2021 13:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  17 MAR 2021 12:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1408,6 +1408,10 @@ LaTeX Info: Redefining \addtolength on input line 81.
 )
 \c@@todonotes@numberoftodonotes=\count357
 )
+(/usr/share/texlive/texmf-dist/tex/latex/marginnote/marginnote.sty
+Package: marginnote 2017/04/22 v1.2b non floating margin notes for LaTeX
+\c@mn@abspage=\count358
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
@@ -1448,16 +1452,16 @@ LaTeX Font Info:    ... okay on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count358
+\scratchcounter=\count359
 \scratchdimen=\dimen328
 \scratchbox=\box66
-\nofMPsegments=\count359
-\nofMParguments=\count360
+\nofMPsegments=\count360
+\nofMParguments=\count361
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count361
+\MPscratchCnt=\count362
 \MPscratchDim=\dimen329
-\MPnumerator=\count362
-\makeMPintoPDFobject=\count363
+\MPnumerator=\count363
+\makeMPintoPDFobject=\count364
 \everyMPtoPDFconversion=\toks49
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1503,7 +1507,7 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count364
+\c@lstlisting=\count365
 
 ABD: EveryShipout initializing macros
 LaTeX Info: Redefining \celsius on input line 3.
@@ -1517,6 +1521,9 @@ Package gensymb Info: Using \Omega for \ohm on input line 3.
 
 Package gensymb Warning: Not defining \micro.
 
+Package marginnote Info: \pdfoutput not 0 or unimportant and
+(marginnote)             \pdflastxpos or \lastxpos available.
+(marginnote)             Extended position detection mode activated.
 LaTeX Font Info:    Try loading font information for U+msa on input line 5.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1570,52 +1577,94 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 114.
- [4] [5] [6]
-[7] [8] [9] [10] [11] [12]
-<../../Figures/SiteA_PSD_fit.jpg, id=60, 722.7pt x 578.16pt>
+ [4]
+
+LaTeX Warning: Citation `HerronLangway1980' on page 5 undefined on input line 1
+48.
+
+[5]
+
+LaTeX Warning: Citation `Johnsen1977' on page 6 undefined on input line 182.
+
+[6] [7] [8]
+
+LaTeX Warning: Citation `Stevens2020' on page 9 undefined on input line 261.
+
+
+LaTeX Warning: Citation `Gkinis2019' on page 9 undefined on input line 261.
+
+
+LaTeX Warning: Citation `Gkinis2019' on page 9 undefined on input line 262.
+
+
+LaTeX Warning: Citation `Patankar1980' on page 9 undefined on input line 262.
+
+
+LaTeX Warning: Citation `HerronLangway1980' on page 9 undefined on input line 2
+63.
+
+
+LaTeX Warning: Citation `Stevens2020' on page 9 undefined on input line 263.
+
+[9]
+
+LaTeX Warning: Citation `Johnsen2000' on page 10 undefined on input line 270.
+
+
+LaTeX Warning: Reference `App:FirnDiffusivity' on page 10 undefined on input li
+ne 275.
+
+
+LaTeX Warning: Citation `Gkinis2019' on page 10 undefined on input line 275.
+
+
+LaTeX Warning: Reference `App:FirnDiffusivity' on page 10 undefined on input li
+ne 279.
+
+[10] [11] [12] [13] [14]
+<../../Figures/SiteA_PSD_fit.jpg, id=68, 722.7pt x 578.16pt>
 File: ../../Figures/SiteA_PSD_fit.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_PSD_fit.jpg>
-Package pdftex.def Info: ../../Figures/SiteA_PSD_fit.jpg  used on input line 32
+Package pdftex.def Info: ../../Figures/SiteA_PSD_fit.jpg  used on input line 37
 7.
 (pdftex.def)             Requested size: 258.29887pt x 206.6377pt.
 
 Underfull \vbox (badness 6792) has occurred while \output is active []
 
- [13 <../../Figures/SiteA_PSD_fit.jpg>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [15 <../../Figures/SiteA_PSD_fit.jpg>] [16] (./Chapter_IceTheory.aux)
 
- [14]
-[15] (./Chapter_IceTheory.aux) ) 
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 30430 strings out of 492982
- 582807 string characters out of 6134897
- 638411 words of memory out of 5000000
- 33555 multiletter control sequences out of 15000+600000
- 544656 words of font info for 82 fonts, out of 8000000 for 9000
+ 30861 strings out of 492982
+ 588379 string characters out of 6134897
+ 642275 words of memory out of 5000000
+ 33981 multiletter control sequences out of 15000+600000
+ 544645 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,12n,77p,10419b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextr
-a/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
->
-Output written on Chapter_IceTheory.pdf (15 pages, 344750 bytes).
+ 61i,12n,77p,10419b,1120s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Chapter_IceTheory.pdf (16 pages, 349536 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 132 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

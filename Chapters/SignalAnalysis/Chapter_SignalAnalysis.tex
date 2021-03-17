@@ -50,7 +50,7 @@ From Equation \ref{Eq:ParsevalsTheorem} we can interpret the integrand on the ri
 This entity ensures that the total power is found just by integrating over $P_X(f)$ from 0 to $\infty$. When the function is purely real, the PSD reduces to $P_X(f) = 2|\tilde{X}(f)|^2$.\\
 In the above the transform used to define the PSD was presented as the Fourier transform. When working with discrete data, as is very common when analyzing real world data, there are a number of different ways of estimating the PSD. In the following three different methods will be presented, all used in this thesis.
 \newline
-
+\todo{SIGNAL-BACKDIFF: RETHINK THIS PART. DO NOT USE TIME ON ALL THE CALCULATIONS. WRITE THE GENERAL IDEAS OF THE METHODS AND STATE HOW TO CALCULATE/COMPUTE. SMALL CODE SNIP TO GIVE GENERAL IDEA.}
 \begin{quote}
 	\textcolor{red}{\textbf{RETHINK THIS PART. DO NOT USE TIME ON ALL THE CALCULATIONS. WRITE THE GENERAL IDEAS OF THE METHODS AND STATE HOW TO CALCULATE/COMPUTE. SMALL CODE SNIP TO GIVE GENERAL IDEA.}}
 \end{quote}
@@ -97,11 +97,18 @@ The inverse DFT is given as:
 	\label{Eq:inverseDFT}
 \end{equation}
 Computation of the DFT can be very slow and tiresome, since it involves complex multiplication between a number of vectors and matrices. If we write Equation \ref{Eq:DFT} as $\tilde{X}_n = \sum_{k=0}{N-1}W^{nk}X_k,$ where  $W$ is a complex number $W\equiv e^{2\pi i /N}$. This shows that the vector $X_k$ must be multiplied with a complex matrix which (n,k)th component consists of the constant $W$ to the power of $nk$. This matrix multiplication evidently leads to a process of $O(N^2)$. Fortunately, a number of different algorithms(REFERENCES) have been developed for fast and efficient computation of the discrete Fourier transform. One of these is called the Fast Fourier Transform (FFT), which can reduce the computations to just $O(N\log_2 N)$! In this thesis the FFT used is the one implemented in the numpy.fft Python package(REFERENCES) which is based on the works of (REFERENCES). See said article for implementation details. One important thing about this specific algorithm is that for the algorithm to function most efficiently, the number of points computed in the frequency space must be of a power of 2, following the use of base $\log_2$
+
+\subsubsection[NUFT][NUFT]{Nonuniform Discrete Fourier Transform}
+\todo{SIGNAL-NUFT: Write this entire section}
 \subsubsection[DCT][DCT]{Discrete Cosine Transform}
+\todo{SIGNAL-DCT: Write more in depth about mathematical definition.}
 The DFT is generally defined for complex inputs and outputs, where the sine components of the transform describe the complex part and the cosine describes the real part. \\
 Since the data analyzed in this thesis is purely real, it makes sense, for computational speed, to only work with the cosine parts of the transform. This leads to the Discrete Cosine Transform (DCT) which transforms real inputs to real outputs.
-\subsubsection[MEM][MEM]{Maximum Entropy Method (Burg's Method)}
 
+\subsubsection[NDCT][NDCT]{Nonuniform Discrete Cosine Transform}
+\todo{SIGNAL-NDCT: Write this entire section}
+\subsubsection[MEM][MEM]{Maximum Entropy Method (Burg's Method)}
+\todo{SIGNAL-MEM: Write this entire section - maybe not necessary? Maybe use in reconstruction of missing data...}
 
 \subsection[Spectral Filtering][Spectral Filtering]{Spectral Filtering}
 \subsubsection[Wiener Filtering][Wiener Filtering]{Wiener Filtering}
@@ -166,80 +173,16 @@ where $\sigma_{\eta}^2$ is the variance of the red noise, $a_1$ is the AR1 coeff
 It is then possible to estimate the parameters $P_0$, $\sigma_{\text{tot}}^2$, $\sigma_{\eta}^2$ and $a_1$ by curve fitting, separately, the two expressions in Eq. \ref{eq:SignalPSD} and \ref{eq:NoisePSD} to the data. The estimated parameters are varied to find the optimal guess to use for the filter.
 
 
-\section[Peak Detection][Peak Detection]{Enhanced Resolution and Peak Detection}
+\section[Restoration][Restoration]{Enhanced Resolution and Restoration of Signal}
 
-\subsection[Interpolation][Interpolation]{Interpolation}
-Interpolation is a tool that can be used - and misused - to extract more information out of a given set of data. Used correctly, interpolation can reveal more information than is initially available and disclose connections not apparent at first, but used incorrectly, it can be manipulated to infer misleading correlations and lead to inaccurate conclusions. Thus it is a tool that must be used with care. Aiming to avoid incorrect deductions and inferences one should at first gain as much knowledge about the data at hand as possible. By understanding how the data have come about and gaining knowledge about the underlying physical theories a somewhat deficient data set can robustly and securely be interpolated to accommodate the needs of the analysis. In the case of this thesis, both knowledge about data gathering and the physics at play have been gained and thus some of the common fallacies may be avoided. The limits of the data available is due to the discrete sampling, leading to a minimum sampling of about 26 samples per meter of ice.
-When considering that the depth series of 32 years between Tambora and Laki is just above 10 meters, this means that each meter of ice needs to contain at least three years on average. 26 samples per three years might not sound as a bad sampling interval, but if the goal is to show seasonality and give a best estimate of annual layer thickness, interpolation could be put to good use to be able to give better estimates of the exact placement of peaks and valleys.\\
 
-\textbf{Existence, Uniqueness and Conditioning}\\
-Considering any attempt to create an interpolant to fit a number of data points, the questions of uniqueness and existence is a matter of matching the data points with the number of parameters in the interpolant. If there are too few parameters, the interpolant does not exist, as it will not pass through all data points. If there are too many, the interpolant will not be unique. Formally this can be described through a system of linear equations.\\
-For any data set consisting of $(t_i, y_i),\; i=1,...,m$ points, an interpolant can be chosen from a function space spanned by some suitable set of basis functions, $\phi_1(t),...,\phi_n(t)$. The interpolant can then be described as a linear combination of these basis functions:
-\begin{equation}
-	f(t) = \sum_{j=1}^{n} x_j\phi_j(t)
-\end{equation}
-The interpolant can then be found by determining the parameters $x_j$ by requiring that the interpolant $f$ must pass through the $M$ data points $(t_i,y_i)$:
-\begin{equation}
-	f(t_i) = \sum_{j=1}^{n} x_j\phi_j(t_i) = y_i, \quad i=1,...,m
-\end{equation}
-This can of course also be written compactly in matrix form as a system of linear equations:
-\begin{equation}
-	\boldsymbol{A}\boldsymbol{x}=\boldsymbol{y}
-\end{equation}
-In this equation $\boldsymbol{A}$ is the $m\times n$ basis matrix, which entries consists of the value of the $n$ basis functions evaluated at the $m$ data points, $a_{ij}=\phi_j(t_i)$, the $m$ vector $\boldsymbol{y}$ consists of the known data values $y_i$, and the $n$ vector $\boldsymbol{x}$ consists of the unknown, to be determined, parameters $x_j$.\\
-From linear algebra we know, that if we choose the number of basis function ot be equal to the number of data points, $n=m$, the basis matrix will be square, and thus - given the matrix is nonsingular - the system will be determined, and the data points can be fit exactly. Though in some problems it is beneficial to choose the system to be either overdetermined(less parameters than data points, the data cannot be fit exactly) or underdetermined(more parameters than data points, giving freedom to allow satisfaction of additional properties or conditions).\\ 
-So the existence and uniqueness of an interpolant is given by the non-singularity of the basis matrix, be it square or not and the conditioning of the matrix points to the parameters' sensitivity to perturbations. An ill-conditioned basis matrix will lead to high sensitivity in the parameters, but this problem can still be approximately solvable through Gaussian elimination with partial pivoting, but this solution will mean that the coefficients may be poorly determined.
-
-\subsubsection[Polynomial]{Polynomial Interpolation}
-The most common way to determine an interpolant is through polynomials. Denoting a set of all polynomials of degree at most $k,\quad k\geq 0$ as $\mathbb{P}_k$, it can be seen that this set forms a vector space of dimension $k+1$. The basis functions that span this vector space can be chosen to be composed of a number of different functions and this choice has a great influence on both the cost of computation and manipulation of the interpolant, and the sensitivity of the parameters, i.e. the conditioning of the basis matrix. \\
-Considering $n$ data points it is obvious to choose $k=n-1$ so that the dimension of the vector space matches the number of data points. The maybe most natural choice of basis for $\mathbb{P}_{n-1}$ is one that consists of the first $n$ monomials\footnote{Roughly speaking, a polynomial with only one term.},
-\begin{equation}
-	\phi_j(t) = t^{j-1},\quad j=1,...,n.
-\end{equation}
-Thus any given polynoial $p_{n-1}\in\mathbb{P}_{n-1}$ will be of the form 
-\begin{equation}
-	p_{n-1}(t)=x_1 + x_2t + \cdots+x_n t^{n-1}.
-\end{equation}
-In this basis the system of $n\times n$ linear equations will be of the form 
-\begin{equation}
-	\boldsymbol{A}\boldsymbol{x} = 
-	\begin{bmatrix}
-		1 & t_1 & \cdots & t_1^{n-1}\\
-		1 & t_1 & \cdots & t_1^{n-1}\\
-		\vdots & \vdots & \ddots & \vdots \\
-		1 & t_1 & \cdots & t_1^{n-1}\\
-		
-	\end{bmatrix}
-	\begin{bmatrix}
-		x_1\\
-		x_2\\
-		\vdots\\
-		x_n
-	\end{bmatrix}
-	=
-	\begin{bmatrix}
-		y_1\\
-		y_2\\
-		\vdots\\
-		y_n
-	\end{bmatrix}
-	= \boldsymbol{y}.
-\end{equation}
-This type of matrix with geometric progression, i.e. the columns are successive powers of some independent variable $t$ is called a \todo{REFERENCE!!!}Vandermonde matrix. \\
-When using the monomial basis and using a standard linear equation solver to determining the interpolants coefficients requires $\mathcal{O}(n^3)$ work and often results in ill-conditioned Vandermonde matrices $\boldsymbol{A}$, especially for high-degree polynomials. This ill-conditioning is due to the monomials of higher and higher degree being more and more indistinguishable \todo{Maybe an illustration here? See pp. 314 in Scientific Computing.} from each other. This makes the columns of $\boldsymbol{A}$ nearly linearly dependent, resulting in almost singular matrices, and thus highly sensitive coefficients. For high enough $n$, the Vandermonde matrix becomes efficiently singular, to computational precision at least, though, as mentioned, this can be worked around, but requires some additional computational work. 
-\subsubsection[Piecewise Polynomial]{Piecewise Polynomial Interpolation and Splines}
-The amount of work needed to solve the system as well as the conditioning of the system can be improved by using a different basis all together. Some different bases superior to the monomial that are worth mentioning are the Lagrange basis functions, the Newton basis functions and the orthogonal polynomials\todo{REFERENCES!!}. But for this thesis we take a step further into the interpolation theory, as the choice of basis functions might not be enough to work around some of the problems connected with fitting a single polynomial to a large number of data points(i.e. oscillatory behaviour in the interpolant, nonconvergence or issues around the boundaries).\\
-These practical and theoretical issues can be avoided through the use of piecewise polynomial interpolation, with the advantage that a large number of data points can be fitted with low-degree polynomials. \\
-When turning to piecewise polynomial interpolation of the data points $(t_i,y_i),\quad i=1,...,n$, $t_1 < t_2 < \cdots < t_n$, a different polynomial is chosen for each subinterval $[t_i,t{i+1}]$. Each point $t_i$, where the interpolant changes is called knots or control points. The simplest piecewise interpolation is piecewise linear interpolation, where each knot is connected with a straight line. If we consider this simple example it appears that by eliminating the problems of nonconvergence and unwanted oscillatory behaviour, the smoothness of the interpolant is sacrificed. This might be true for this simplistic example but since there are a number of degrees of freedom in choosing each piecewise polynomial interpolant, the smoothness can be reintroduced by explotiting a number of these measures. One way of doing this is by demanding knowledge of both the values and the derivatives of the interpolant at each data pint. This just adds more equations to the system, and thus to have a well-defined solution, the number of equations must match the number of parameters. This type of interpolation is known as Hermite interpolation. The most common choice for this interpolation, to still maintain simplicity and computational efficiency, is cubic Hermite interpolation. This introduces a piecewise cubic polynomial with $n$ knots, and thus $n-1$ interpolants each with 4 parameters to fit, leading to $4(n-1)$ parameters to be determined. Since each of the $n-1$ cubics must match the data points at each end of the subinterval, it results in $2(n-1)$ equations, and requiring the derivative to be continuous, i.e. match at the end points, an additional of $n-2$ equations are taken in. This leads to a system consisting of $2(n-1) + (n-2) = 3n - 4$ equations to fit to the $4n - 4$ parameters. This leaves $n$ free parameters, meaning that a cubic Hermite interpolant is not unique and the remaining free parameters can be used to accommodate further or additional constraints that might be around the problem at hand. \\
-\indent \textbf{Cubic Spline Interpolation}\\
-One way of using the remaining free parameters is by introducing \textit{splines}\marginpar{\footnotesize A spline is a piecewise polynomial of degree $k$ that is continuously differentiable $k-1$ times.}. A cubic spline is, given the spline definition, a piecewise cubic polynomial, a polynomial of degree $k=3$, and must then be $k-1 = 2$ times differentiable. Thinking back on the Hermite cubic, we were left with $n$ free parameters. By demanding continuity of also the second derivative, we introduce $n-2$ new parameters, leaving only 2 final parameters to be free. These 2 remaining parameters can be fixed through a number of different requirements, e.g. by forcing the second derivative at the endpoints to be zero, which leads to the \textit{natural} spline.\\
-The Hermite and spline interpolations are useful for different cases. The Hermite cubic might be more appropriate for preserving monotonicity if it is known that the data are monotonic. On the contrary, the cubic spline may enforce a higher degree of smoothness as it takes the second derivative into account as well.\\
-\indent \textbf{On Data}\\
+\subsection{Interpolation of Data}
 For the purpose of this thesis, interpolation of data needs to be fast, efficient and result in a function as smooth as possible. The last criterion is due to the knowledge of the nature of the data. The measurements are not continuous but should indeed in theory be so. Thus a good choice for interpolation of the data examined in this thesis would be the cubic spline interpolation. An instance of a such interpolation can be seen in Figure \ref{fig:Interp}.\\
-Cubic spline interpolation has been used in two instances during this analysis, both times through the \lstinline[language=Python]|Python SciPy| package \lstinline[language=Python]|scipy.interpolate.CubicSpline|\todo{REFERENCE!!}. Firstly, to assure equally spaced data points, so as to be able to perform a useful frequency analysis through spectral transformation, see Section, \ref{sec:???}. Secondly cubic spline interpolation was used to improve on peak detection in the final back diffused data. The final data have a rather low resolution, leading to an initial guess of peak positioning that might be shifted due to the discretization. Through cubic spline interpolation it is possible to construct a smooth estimate of a signal of higher resolution, leading to a peak positioning estimate that might be less shifted, see Figure \ref{fig:InterpFinal}.
+Cubic spline interpolation has been used in two instances during this analysis, both times through the \lstinline[language=Python]|Python SciPy| package \lstinline[language=Python]|scipy.interpolate.CubicSpline|\todo{SIGNAL-INTERP: REFERENCE!!}. Firstly, to assure equally spaced data points, so as to be able to perform a useful frequency analysis through spectral transformation, see Section, \ref{sec:???}. Secondly cubic spline interpolation was used to improve on peak detection in the final back diffused data. The final data have a rather low resolution, leading to an initial guess of peak positioning that might be shifted due to the discretization. Through cubic spline interpolation it is possible to construct a smooth estimate of a signal of higher resolution, leading to a peak positioning estimate that might be less shifted, see Figure \ref{fig:InterpFinal}.
 
 \subsection[Standardisation]{Detrending and Standardising}
+\todo{SIGNAL-STANDARD: Think about if this is necessary. Maybe work into recursivity and constraints in Method?}
 \subsection[Cycle Length Estimation][Cycle Length Estimation]{Cycle Length Estimation of Detrended Signal}
-
+\todo{SIGNAL-CYCLE: Think about if this is necessary. Maybe work into recursivity and constraints in Method?}
 	
 \end{document}

@@ -2,7 +2,7 @@
 \documentclass[../../CompleteThesis/Complete_1stDraft.tex]{subfiles}
 \begin{document}
 
-\section[Optimization routine]{Optimization routine}
+\section[First $\sigma$ estimate]{Estimating $\sigma$ from Data: First Estimate}
 This section contains a walk through of the method to back diffuse a given ice core depth series to attempt to restore as much of the original signal as possible. For now, the method has been developed for sections that has been dated to be between the two volcanic eruptions Laki and Tambora, as these are very well dated, and thus it is possible to find the optimal diffusion length to back diffuse with as the actual number of annual layers is exactly known for this data series. The method is easily modified for any other dated depth series, as what is needed is just the number of annual layers in the given data series.\\
 Figure \ref{Fig:FlowchartDiffLen} shows a flowchart of the method used to estimate the diffusion length of a depth series with a preliminary guess of number of annual layers. In the following sections each of the steps in the method will be discussed more thoroughly and examples will be given, all based on the Greenlandic ice core drilled at Site A near Crete(REFERENCES!!!).
 The method is built such that it takes two inputs - the isotopic depth series, and the specifications for the particular ice core - and uses these for the first preliminary computations needed to make a first, naïve guess of the diffusion length, $\sigma_0$.
@@ -188,7 +188,7 @@ The original data are then used to define a cubic spline interpolation function 
 	\caption[Spectral Analysis]{Spectral Analysis. \textbf{(a)} The power spectral density(PSD) of the interpolated data from Site A shown in Figure \ref{fig:SiteA_d18OLT_Interp}. The PSD was computed through a Discrete Cosine Transform(DCT). \textbf{(b)} Spectral estimate of the depth series from Tambora to Laki along with fit to entire spectral data set and the separated estimates of the noise and signal functions, as described in section \ref{sec:??}}
 	\label{fig:SiteA_SpectralAnalysis}
 \end{figure}
-Now with evenly spaced depth series data it is possible to transform the data to the frequency domain and perform spectral analysis on the signal. The basic theory concerning Fast Fourier Transform(FFT), Discrete Cosine Transform(DCT) and Power Spectral Densities(PSD) is discussed in Section \ref{Sec:????}. In this section the theory is merely put to use. Since the data under examination is completely real with no imaginary parts, pointing towards the sensibility of working only with cosines to enhance computational speed. Furthermore the DCT implies different boundary conditions than the FFT, meaning that some of the odd spectral behaviour, like aliasing can be avoided by using a different transform.\todo{Make a comment on Nyquist frequncy.}\\
+Now with evenly spaced depth series data it is possible to transform the data to the frequency domain and perform spectral analysis on the signal. The basic theory concerning Fast Fourier Transform(FFT), Discrete Cosine Transform(DCT) and Power Spectral Densities(PSD) is discussed in Section \ref{Sec:????}. In this section the theory is merely put to use. Since the data under examination is completely real with no imaginary parts, pointing towards the sensibility of working only with cosines to enhance computational speed. Furthermore the DCT implies different boundary conditions than the FFT, meaning that some of the odd spectral behaviour, like aliasing can be avoided by using a different transform.\todo{METH-SPECT: Make a comment on Nyquist frequncy.}\\
 For the depth series between Laki and Tambora at Site A, the PSD computed through the DCT as $\text{PSD} = |\text{DCT}|^2$ can be seen in Figure \ref{fig:SiteA_DCT_PSD_raw}. This spectrum shows a higher intensity in the low frequency area and a lower intensity at high frequencies indicating a low frequency signal and some high frequency noise.
 
 
@@ -242,11 +242,11 @@ Since the signal is that of a real physical phenomena, and even one that we do h
 	\lstinputlisting[language=Python, caption={[Sum of squared residuals.]Calculation of the sum of squared residuals.}, label=lst:sum2_res]{/home/thea/Documents/KUFysik/MesterTesen/WrittenWork/CodeForListings/sum2_res.py}
 	
 	
-	\item Define boundaries for the parameters examined\todo{Write boundaries used - explain why.}: $P_0$, $\sigma_{\eta}$, $\sigma_{tot}$, $a_1$.
+	\item Define boundaries for the parameters examined\todo{METH-SPECTFIT: Write boundaries used - explain why.}: $P_0$, $\sigma_{\eta}$, $\sigma_{tot}$, $a_1$.
 	
-	\item Make initial parameter guess \todo{Write initial guesses}:
+	\item Make initial parameter guess \todo{METH-SPECTFIT: Write initial guesses}:
 	
-	\item Otimization routine to minimize residuals. This routine is carried out by using the Python package \lstinline[language=Python]|sp.optimize.fmin_l_bfgs_b|, an optimization through the limited-memory BFGS bound constraint algorithm \todo{REFERENCE!!! Maybe write more? No...}. 
+	\item Otimization routine to minimize residuals. This routine is carried out by using the Python package \lstinline[language=Python]|sp.optimize.fmin_l_bfgs_b|, an optimization through the limited-memory BFGS bound constraint algorithm \todo{METH-SPECTFIT: REFERENCE!!! Maybe write more? No...}. 
 \end{itemize}
 
 
@@ -273,7 +273,7 @@ The signal, noise and combined fit can be seen separately in Figure \ref{fig:Sit
 	\caption[Wiener filter]{\footnotesize\textbf{(a)} Wiener filter on linear scale. \textbf{(b)} Wiener filter on double logarithmic scale.}
 	\label{fig:SiteA_WienerFilters}
 \end{marginfigure}
-When the optimal fit to the spectral data has been found, it is possible to construct an optimal filter to cut off as much high frequency noise as possible while still maintaining the most signal. This is commonly called a Wiener filter \todo{REFERENCE!!!}. Recalling from Section \ref{Sec:????} this filter is described as the ratio between the signal alone and the signal plus noise model:
+When the optimal fit to the spectral data has been found, it is possible to construct an optimal filter to cut off as much high frequency noise as possible while still maintaining the most signal. This is commonly called a Wiener filter \todo{METH-WIENER: REFERENCE!!!}. Recalling from Section \ref{Sec:????} this filter is described as the ratio between the signal alone and the signal plus noise model:
 \begin{equation}
 	\tilde{F}(k) = \frac{P_{\text{signal}}(k)}{P_{\text{signal}}(k) + |\tilde{\eta}(k)|^2}.
 	\label{Eq:MethodWienerFilter}
@@ -420,9 +420,12 @@ In Figure \ref{fig:SiteA_DensProfile_wHL} an example of the semi-analytical dept
 	\label{fig:SiteA_BackDiffused_Y32}
 \end{figure}
 
+\section[Maximal $\sigma$ Estimate]{Estimating $\sigma$ from Data: Maximal Diffusion Length}
+
 \subsection[Decision algorithm]{Decision Algorithm}
 
 \subsection[Output]{Output}
+\todo{METH-OUT: Remember: write about sampling sigma}
 
 \begin{figure}
 	\centering
@@ -432,17 +435,41 @@ In Figure \ref{fig:SiteA_DensProfile_wHL} an example of the semi-analytical dept
 \end{figure}
 
 \section[Stability Tests]{Method Testing and Stability}
+\todo{METH-TESTS: Write entire section.}
+
 \subsection[Maximal $N_{\text{peaks}}$]{Diffusion Length Estimate Versus Number of Counted Peaks}
+\todo{METH-TESTMAX: Write entire section.}
+
 \subsection[Interpolation 1]{Interpolation of Data Before Deconvolution}
+\todo{METH-TESTINT1: Write entire section.}
+
 \subsection[Interpolation 2]{Interpolation of Data After Deconvolution}
+\todo{METH-TESTINT2: Write entire section.}
+
+
+\section[Upgrading the Algorithms]{Upgrading the Algorithms}
+\todo{METH-UPGRADE: Write entire section.}
+\subsection[Peak Detection: ML]{Peak Detection through Machine Learning}
+\todo{METH-UPGRADEPEAK: Do the ML Peak Detection, then Write entire section.}
+\subsection[Linear Timescale]{Linear Timescale}
+\todo{METH-UPGRADETIME: Incorporate Linear Timescale in Recursivity - then Write entire section.}
+\subsection[Standardization]{Standardization and Detrending}
+\todo{METH-UPGRADESTAND: Maybe not necessary?Write entire section.}
+\subsection[Recursivity and Constraints]{Recursivity and New Constraints}
+\todo{METH-UPGRADERECURS: Develop recursive algorithm with new constraints for peak finding - then write entire section.}
+
+
+
+
+
 
 
 \section[Missing Data]{Reconstruction of Missing Data}
+\todo{METH-MISSDATA: Write entire section. Maybe not necessary...}
 \subsection[Interpolation Method]{Interpolation Method}
+\todo{METH-MISSDATAINTERP: Write entire section. Show baddddd figures.}
 \subsection[MEM]{Maximum Entropy Method}
-
-\section[Linear Timescale]{Linear Timescale}
-
+\todo{METH-MISSDATAMEM: Write entire section. Refer to Bo Vinther's MEM reconstruction method.}
 
 
 \end{document}

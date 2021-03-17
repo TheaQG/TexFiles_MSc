@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  14 JAN 2021 10:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  17 MAR 2021 12:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1408,6 +1408,10 @@ LaTeX Info: Redefining \addtolength on input line 81.
 )
 \c@@todonotes@numberoftodonotes=\count357
 )
+(/usr/share/texlive/texmf-dist/tex/latex/marginnote/marginnote.sty
+Package: marginnote 2017/04/22 v1.2b non floating margin notes for LaTeX
+\c@mn@abspage=\count358
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
@@ -1448,16 +1452,16 @@ LaTeX Font Info:    ... okay on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count358
+\scratchcounter=\count359
 \scratchdimen=\dimen328
 \scratchbox=\box66
-\nofMPsegments=\count359
-\nofMParguments=\count360
+\nofMPsegments=\count360
+\nofMParguments=\count361
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count361
+\MPscratchCnt=\count362
 \MPscratchDim=\dimen329
-\MPnumerator=\count362
-\makeMPintoPDFobject=\count363
+\MPnumerator=\count363
+\makeMPintoPDFobject=\count364
 \everyMPtoPDFconversion=\toks49
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1503,7 +1507,7 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count364
+\c@lstlisting=\count365
 
 ABD: EveryShipout initializing macros
 LaTeX Info: Redefining \celsius on input line 4.
@@ -1517,6 +1521,9 @@ Package gensymb Info: Using \Omega for \ohm on input line 4.
 
 Package gensymb Warning: Not defining \micro.
 
+Package marginnote Info: \pdfoutput not 0 or unimportant and
+(marginnote)             \pdflastxpos or \lastxpos available.
+(marginnote)             Extended position detection mode activated.
 LaTeX Font Info:    Try loading font information for U+msa on input line 16.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1553,61 +1560,30 @@ Overfull \hbox (4.49254pt too wide) in paragraph at lines 55--56
  []
 
 [2] [3] [4] [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 172--174
 
- []
-
-[7]
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 187.
-
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 187.
-
-
-Overfull \hbox (3.05711pt too wide) in paragraph at lines 188--192
-\OT1/cmr/m/n/10.95 So the ex-is-tence and unique-ness of an in-ter-polant is gi
-ven by the non-singularity
- []
-
-[8] [9]
-Underfull \hbox (badness 3009) in paragraph at lines 235--235
-\OT1/cmr/m/n/9 con-tin-u-ously dif-fer-en-tiable
- []
-
-
-LaTeX Warning: Reference `fig:Interp' on page 10 undefined on input line 238.
+LaTeX Warning: Reference `fig:Interp' on page 7 undefined on input line 179.
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 
-LaTeX Warning: Reference `sec:???' on page 10 undefined on input line 239.
+LaTeX Warning: Reference `sec:???' on page 7 undefined on input line 180.
 
 
-LaTeX Warning: Reference `fig:InterpFinal' on page 10 undefined on input line 2
-39.
+LaTeX Warning: Reference `fig:InterpFinal' on page 7 undefined on input line 18
+0.
 
-
-Overfull \hbox (22.14932pt too wide) in paragraph at lines 231--240
-\OT1/cmr/m/n/10.95 When turn-ing to piece-wise poly-no-mial in-ter-po-la-tion o
-f the data points $(\OML/cmm/m/it/10.95 t[]; y[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/
-it/10.95 ;  i \OT1/cmr/m/n/10.95 =
- []
-
-[10] [11] [12] (./Chapter_SignalAnalysis.aux)
+[7] [8] (./Chapter_SignalAnalysis.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 30944 strings out of 492982
- 588605 string characters out of 6134897
- 670326 words of memory out of 5000000
- 34063 multiletter control sequences out of 15000+600000
- 544230 words of font info for 77 fonts, out of 8000000 for 9000
+ 30932 strings out of 492982
+ 588588 string characters out of 6134897
+ 654817 words of memory out of 5000000
+ 34064 multiletter control sequences out of 15000+600000
+ 538560 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  61i,12n,76p,10408b,1269s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
@@ -1616,22 +1592,16 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Chapter_SignalAnalysis.pdf (12 pages, 231037 bytes).
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on Chapter_SignalAnalysis.pdf (8 pages, 166845 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
+ 86 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
