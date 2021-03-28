@@ -1,4 +1,20 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Ahmed1974_DCT}
+N.~Ahmed, T.~Natarajan, and K.~R. Rao.
+\newblock {Discrete Cosine Transform}.
+\newblock {\em IEEE Transactions on Computers}, C-23(1):90--93, 1974.
+
+\bibitem{Bruun1978__BruunsFFT}
+G~Bruun.
+\newblock {z-Transform DFT filters and FFTs}.
+\newblock {\em IEEE Transactions on Acoustics, Speech and Signal Processing
+  (ASSP)}, 26(1):56--63, 1078.
+
+\bibitem{Cooley1965}
+J.~W. Cooley and J.~W. Tukey.
+\newblock {An Algorithm for the Machine Calculation of Complex Fourier Series}.
+\newblock {\em AMS: Mathematics of Computation}, 19:297--301, 1965.
 
 \bibitem{Gkinis2019}
 Vasileios Gkinis, Christian Holme, Emma~C Kahle, C~Max Stevens, Eric~J Steig,
@@ -6,6 +22,12 @@ Vasileios Gkinis, Christian Holme, Emma~C Kahle, C~Max Stevens, Eric~J Steig,
 \newblock {Numerical experiments on firn isotope diffusion using the Community
   Firn Model}.
 \newblock {\em Journal of Glaciology}, in review(x):1--54, 2019.
+
+\bibitem{Good1958_PrimeFFT}
+I.~J. Good.
+\newblock {The Interaction Algorithm and Practical Fourier Analysis}.
+\newblock {\em Journal of the Royal Statistical Society. Series B
+  (Methodological)}, 20(2):361--372, 1958.
 
 \bibitem{HerronLangway1980}
 M.~M. Herron and C.~C.~Jr. Langway.
@@ -24,15 +46,88 @@ Sigf{\'{u}}s~J. Johnsen, Henrik~B. Clausen, Kurt~M. Cuffey, Georg Hoffmann,
   effect in firn diffusion}.
 \newblock {\em Physics of Ice Records}, pages 121--140, 2000.
 
+\bibitem{Lee2005}
+June~Yub Lee and Leslie Greengard.
+\newblock {The type 3 nonuniform FFT and its applications}.
+\newblock {\em Journal of Computational Physics}, 206(1):1--5, 2005.
+
+\bibitem{Makhoul1980}
+J.~Makhoul.
+\newblock {A Fast Cosine Transform In One And Two Dimensions}.
+\newblock {\em IEEE Transactions on Signal Processing}, ASSP-28(1):27--34,
+  1980.
+
+\bibitem{Marvasti1993}
+Farokh Marvasti.
+\newblock {\em {Nonuniform Sampling}}.
+\newblock 1993.
+
 \bibitem{Patankar1980}
 S.V. Patankar.
 \newblock {\em {Numerical Heat Transfer and Fluid Flow}}.
 \newblock Boca Raton, 1st edition, 1980.
+
+\bibitem{Ruiz-Antolin2018}
+Diego Ruiz-Antolin and Alex Townsend.
+\newblock {A nonuniform fast fourier transform based on low rank
+  approximation}.
+\newblock {\em SIAM Journal on Scientific Computing}, 40(1):A529--A547, 2018.
+
+\bibitem{Potts2001}
+Gabriele Steidl, Daniel Potts, and Manfred Tasche.
+\newblock {Fast Fourier Transform For Nonequispaced Data: A Tutorial}.
+\newblock In {\em Modern Sampling Theory}, volume~2, chapter Chapter 1, pages
+  1--23. 2001.
 
 \bibitem{Stevens2020}
 C.~Max Stevens, Vincent Verjans, Jessica M.~D. Lundin, Emma~C. Kahle, Annika~N.
   Horlings, Brita~I. Horlings, and Edwin~D. Waddington.
 \newblock {The Community Firn Model (CFM) v1.0}.
 \newblock {\em Geoscientific Model Development}, 13(9):4355--4377, 2020.
+
+\bibitem{Tian2000}
+B.~Tian and Q.~H. Liu.
+\newblock {Nonuniform fast cosine transform and chebyshev PSTD algorithms}.
+\newblock {\em Progress in Electromagnetics Research}, 28:253--273, 2000.
+
+\bibitem{Virtanen2020_SciPy}
+Pauli Virtanen, Ralf Gommers, Travis~E. Oliphant, Matt Haberland, Tyler Reddy,
+  David Cournapeau, Evgeni Burovski, Pearu Peterson, Warren Weckesser, Jonathan
+  Bright, St{\'{e}}fan~J. van~der Walt, Matthew Brett, Joshua Wilson, K.~Jarrod
+  Millman, Nikolay Mayorov, Andrew~R.J. Nelson, Eric Jones, Robert Kern, Eric
+  Larson, C.~J. Carey, İlhan Polat, Yu~Feng, Eric~W. Moore, Jake VanderPlas,
+  Denis Laxalde, Josef Perktold, Robert Cimrman, Ian Henriksen, E.~A. Quintero,
+  Charles~R. Harris, Anne~M. Archibald, Ant{\^{o}}nio~H. Ribeiro, Fabian
+  Pedregosa, Paul van Mulbregt, Aditya Vijaykumar, Alessandro~Pietro Bardelli,
+  Alex Rothberg, Andreas Hilboll, Andreas Kloeckner, Anthony Scopatz, Antony
+  Lee, Ariel Rokem, C.~Nathan Woods, Chad Fulton, Charles Masson, Christian
+  H{\"{a}}ggstr{\"{o}}m, Clark Fitzgerald, David~A. Nicholson, David~R. Hagen,
+  Dmitrii~V. Pasechnik, Emanuele Olivetti, Eric Martin, Eric Wieser, Fabrice
+  Silva, Felix Lenders, Florian Wilhelm, G.~Young, Gavin~A. Price, Gert~Ludwig
+  Ingold, Gregory~E. Allen, Gregory~R. Lee, Herv{\'{e}} Audren, Irvin Probst,
+  J{\"{o}}rg~P. Dietrich, Jacob Silterra, James~T. Webber, Janko Slavi{\v{c}},
+  Joel Nothman, Johannes Buchner, Johannes Kulick, Johannes~L.
+  Sch{\"{o}}nberger, Jos{\'{e}}~Vin{\'{i}}cius {de Miranda Cardoso}, Joscha
+  Reimer, Joseph Harrington, Juan Luis~Cano Rodr{\'{i}}guez, Juan
+  Nunez-Iglesias, Justin Kuczynski, Kevin Tritz, Martin Thoma, Matthew
+  Newville, Matthias K{\"{u}}mmerer, Maximilian Bolingbroke, Michael Tartre,
+  Mikhail Pak, Nathaniel~J. Smith, Nikolai Nowaczyk, Nikolay Shebanov,
+  Oleksandr Pavlyk, Per~A. Brodtkorb, Perry Lee, Robert~T. McGibbon, Roman
+  Feldbauer, Sam Lewis, Sam Tygier, Scott Sievert, Sebastiano Vigna, Stefan
+  Peterson, Surhud More, Tadeusz Pudlik, Takuya Oshima, Thomas~J. Pingel,
+  Thomas~P. Robitaille, Thomas Spura, Thouis~R. Jones, Tim Cera, Tim Leslie,
+  Tiziano Zito, Tom Krauss, Utkarsh Upadhyay, Yaroslav~O. Halchenko, and
+  Yoshiki V{\'{a}}zquez-Baeza.
+\newblock {SciPy 1.0: fundamental algorithms for scientific computing in
+  Python}.
+\newblock {\em Nature Methods}, 17(3):261--272, 2020.
+
+\bibitem{Zhao2008}
+Xianfeng Zhao, Bingbing Xia, and Yi~Deng.
+\newblock {Strengthening QIM-based watermarking by non-uniform discrete cosine
+  transform}.
+\newblock {\em Lecture Notes in Computer Science (including subseries Lecture
+  Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}, 5284
+  LNCS:309--324, 2008.
 
 \end{thebibliography}

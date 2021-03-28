@@ -1,11 +1,21 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  28 MAR 2021 19:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  27 MAR 2021 18:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Complete_1stDraft.tex
-(./Complete_1stDraft.tex
+**Chapter_Results.tex
+(./Chapter_Results.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.cls
+Document Class: subfiles 2012/05/23 Federico Garcia
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks14
+\verbatim@line=\toks15
+\verbatim@in@stream=\read1
+)
+Preamble taken from file `../../CompleteThesis/Complete_1stDraft'
+(../../CompleteThesis/Complete_1stDraft.tex
 (/usr/share/texlive/texmf-dist/tex/latex/memoir/memoir.cls
 Document Class: memoir 2016/05/16 v3.7f configurable book, report, article docu
 ment class
@@ -97,7 +107,7 @@ File: mem11.clo 2008/01/30 v0.3 memoir class 11pt size option
 \partopsepiii=\skip92
 \m@msavetopsep=\skip93
 \m@msavepartopsep=\skip94
-\@enLab=\toks14
+\@enLab=\toks16
 \abstitleskip=\skip95
 \absleftindent=\skip96
 \abs@leftindent=\dimen105
@@ -125,7 +135,7 @@ File: mem11.clo 2008/01/30 v0.3 memoir class 11pt size option
 \afterPoemTitleskip=\skip110
 \col@sep=\dimen107
 \extrarowheight=\dimen108
-\NC@list=\toks15
+\NC@list=\toks17
 \extratabsurround=\skip111
 \backup@length=\skip112
 \TX@col@width=\dimen109
@@ -134,7 +144,7 @@ File: mem11.clo 2008/01/30 v0.3 memoir class 11pt size option
 \TX@target=\dimen112
 \TX@delta=\dimen113
 \TX@cols=\count99
-\TX@ftn=\toks16
+\TX@ftn=\toks18
 \heavyrulewidth=\dimen114
 \lightrulewidth=\dimen115
 \cmidrulewidth=\dimen116
@@ -158,7 +168,7 @@ File: mem11.clo 2008/01/30 v0.3 memoir class 11pt size option
 \@linestogo=\count105
 \@cellstogo=\count106
 \@cellsincolumn=\count107
-\crtok=\toks17
+\crtok=\toks19
 \@mincolumnwidth=\dimen127
 \c@newflo@tctr=\count108
 \mem@margin@floatbox=\box26
@@ -221,7 +231,7 @@ LaTeX Info: Redefining \emph on input line 7559.
 \bibitemsep=\skip153
 \indexcolsep=\skip154
 \indexrule=\skip155
-\indexmarkstyle=\toks18
+\indexmarkstyle=\toks20
 \@indexbox=\insert199
 \glossarycolsep=\dimen140
 \glossaryrule=\dimen141
@@ -254,11 +264,11 @@ LaTeX Info: Redefining \emph on input line 7559.
 \c@pagenote=\count113
 \c@pagenoteshadow=\count114
 \mem@pn@lastkern=\skip175
-\every@verbatim=\toks19
-\afterevery@verbatim=\toks20
-\verbatim@line=\toks21
+\every@verbatim=\toks21
+\afterevery@verbatim=\toks22
+\verbatim@line=\toks23
 \tab@position=\count115
-\verbatim@in@stream=\read1
+\verbatim@in@stream=\read2
 \verbatimindent=\skip176
 \verbatim@out=\write3
 \bvboxsep=\skip177
@@ -337,8 +347,8 @@ Package: mempatch 2009/07/24 v6.0f Patches for memoir class v1.6180339
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks22
-\inpenc@posthook=\toks23
+\inpenc@prehook=\toks24
+\inpenc@posthook=\toks25
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
@@ -663,7 +673,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks24
+\@emptytoks=\toks26
 \ex@=\dimen147
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -693,21 +703,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \dotsspace@=\muskip10
 \c@parentequation=\count144
 \dspbrk@lvl=\count145
-\tag@help=\toks25
+\tag@help=\toks27
 \row@=\count146
 \column@=\count147
 \maxfields@=\count148
-\andhelp@=\toks26
+\andhelp@=\toks28
 \eqnshift@=\dimen150
 \alignsep@=\dimen151
 \tagshift@=\dimen152
 \tagwidth@=\dimen153
 \totwidth@=\dimen154
 \lineht@=\dimen155
-\@envbody=\toks27
+\@envbody=\toks29
 \multlinegap=\skip186
 \multlinetaggap=\skip187
-\mathdisplay@stack=\toks28
+\mathdisplay@stack=\toks30
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
@@ -946,7 +956,7 @@ Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks29
+\KV@toks@=\toks31
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
@@ -970,7 +980,7 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \WF@size=\dimen194
 \c@WF@wrappedlines=\count319
 \WF@box=\box49
-\WF@everypar=\toks30
+\WF@everypar=\toks32
 Package: wrapfig 2003/01/31  v 3.6
 )
 
@@ -1014,7 +1024,7 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count323
 \lst@gtempboxa=\box50
-\lst@token=\toks31
+\lst@token=\toks33
 \lst@length=\count324
 \lst@currlwidth=\dimen265
 \lst@column=\count325
@@ -1056,7 +1066,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks32
+\pgfutil@everybye=\toks34
 \pgfutil@tempdima=\dimen269
 \pgfutil@tempdimb=\dimen270
 
@@ -1077,12 +1087,12 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks33
-\pgfkeys@temptoks=\toks34
+\pgfkeys@pathtoks=\toks35
+\pgfkeys@temptoks=\toks36
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
 ex
-\pgfkeys@tmptoks=\toks35
+\pgfkeys@tmptoks=\toks37
 ))
 \pgf@x=\dimen271
 \pgf@y=\dimen272
@@ -1093,14 +1103,14 @@ ex
 \pgf@xc=\dimen277
 \pgf@yc=\dimen278
 \w@pgf@writea=\write4
-\r@pgf@reada=\read2
+\r@pgf@reada=\read3
 \c@pgf@counta=\count331
 \c@pgf@countb=\count332
 \c@pgf@countc=\count333
 \c@pgf@countd=\count334
-\t@pgf@toka=\toks36
-\t@pgf@tokb=\toks37
-\t@pgf@tokc=\toks38
+\t@pgf@toka=\toks38
+\t@pgf@tokb=\toks39
+\t@pgf@tokc=\toks40
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
@@ -1133,9 +1143,9 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 \pgfmath@dimen=\dimen279
 \pgfmath@count=\count337
 \pgfmath@box=\box53
-\pgfmath@toks=\toks39
-\pgfmath@stack@operand=\toks40
-\pgfmath@stack@operation=\toks41
+\pgfmath@toks=\toks41
+\pgfmath@stack@operand=\toks42
+\pgfmath@stack@operation=\toks43
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
@@ -1278,8 +1288,8 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks42
-\XKV@tempa@toks=\toks43
+\XKV@toks=\toks44
+\XKV@tempa@toks=\toks45
 )
 \XKV@depth=\count342
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
@@ -1340,8 +1350,8 @@ Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen316
 \pgffor@skip=\dimen317
-\pgffor@stack=\toks44
-\pgffor@toks=\toks45
+\pgffor@stack=\toks46
+\pgffor@toks=\toks47
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
@@ -1422,22 +1432,22 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 \arrowsize=\dimen327
 )) (/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2012/05/23 Federico Garcia
-)
-(./Complete_1stDraft.aux)
-\openout1 = `Complete_1stDraft.aux'.
+)))
+(./Chapter_Results.aux)
+\openout1 = `Chapter_Results.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
 \AtBeginShipoutBox=\box65
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1447,12 +1457,12 @@ LaTeX Font Info:    ... okay on input line 85.
 \scratchbox=\box66
 \nofMPsegments=\count360
 \nofMParguments=\count361
-\everyMPshowfont=\toks46
+\everyMPshowfont=\toks48
 \MPscratchCnt=\count362
 \MPscratchDim=\dimen329
 \MPnumerator=\count363
 \makeMPintoPDFobject=\count364
-\everyMPtoPDFconversion=\toks47
+\everyMPtoPDFconversion=\toks49
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1500,472 +1510,39 @@ Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count365
 
 ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \celsius on input line 85.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 85.
-
+LaTeX Info: Redefining \celsius on input line 4.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 4.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 85.
-Package gensymb Info: Using \Omega for \ohm on input line 85.
+LaTeX Info: Redefining \ohm on input line 4.
+Package gensymb Info: Using \Omega for \ohm on input line 4.
 
 Package gensymb Warning: Not defining \micro.
 
 Package marginnote Info: \pdfoutput not 0 or unimportant and
 (marginnote)             \pdflastxpos or \lastxpos available.
 (marginnote)             Extended position detection mode activated.
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-LaTeX Font Info:    Try loading font information for U+msa on input line 89.
-
+LaTeX Font Info:    Try loading font information for U+msa on input line 9.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 89.
+LaTeX Font Info:    Try loading font information for U+msb on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 89.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 89.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<../Figures/TurnerEruptionofSoufriere-Mountains.jpg, id=4, 947.54pt x 690.58pt>
-
-File: ../Figures/TurnerEruptionofSoufriere-Mountains.jpg Graphic file (type jpg
-)
-<use ../Figures/TurnerEruptionofSoufriere-Mountains.jpg>
-Package pdftex.def Info: ../Figures/TurnerEruptionofSoufriere-Mountains.jpg  us
-ed on input line 93.
-(pdftex.def)             Requested size: 295.20113pt x 215.14186pt.
- [1
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../Figures/TurnerEruptiono
-fSoufriere-Mountains.jpg>] [2] [3] [4
-
-] (./Complete_1stDraft.tdo
-Overfull \hbox (5.37685pt too wide) in paragraph at lines 9--9
- \OT1/cmr/m/n/10.95 ON ALL THE CAL-CU-LA-TIONS. WRITE THE GEN-ERAL IDEAS 
- []
-
-[5]
-Overfull \hbox (2.70735pt too wide) in paragraph at lines 33--33
- [][] \OT1/cmr/m/n/10.95 METH-UPGRADERECURS: De-velop re-cur-sive al-go-rithm w
-ith new con- 
- []
-
-) (./Complete_1stDraft.toc [6] [7] [8]) [9] (./Complete_1stDraft.lof)
-(./Complete_1stDraft.lot) (./Complete_1stDraft.lol
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10])
-[11] [12
-
-] (../Chapters/Introduction/Chapter_Introduction.tex [1
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2])
-[3] [4
-
-] (../Chapters/IceTheory/Chapter_IceTheory.tex
-Overfull \hbox (10.8374pt too wide) in paragraph at lines 8--9
-\OT1/cmr/m/n/10.95 Water iso-topic ra-tios, i.e. the ra-tio of the mi-nor-ity i
-so-tope, $[]$ or $[]$($[][][][]$),
- []
-
-[5]
-Overfull \hbox (13.97546pt too wide) in paragraph at lines 22--27
-\OT1/cmr/m/n/10.95 A num-ber of dif-fer-ent den-si-fi-ca-tion mod-els have been
- de-vel-oped(REFERENCES),
- []
-
-
-Underfull \vbox (badness 2368) has occurred while \output is active []
-
- [6]
-Overfull \hbox (13.26022pt too wide) detected at line 49
-\OML/cmm/m/it/10.95 C[] \OT1/cmr/m/n/10.95 = []\OML/cmm/m/it/10.95 ; \OT1/cmr/m
-/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 55 \OML/cmm/m/it/10.95 < ^^Z 
-< \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 8
- []
-
-[7]
-Overfull \hbox (19.93082pt too wide) in paragraph at lines 85--88
-\OT1/cmr/m/n/10.95 and plot-ting $[](\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 )$
- ver-sus tem-per-a-ture - a so-called Ar-rhe-nius plot(REFERENCES)
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 114.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 114.
- [8] [9] [10] [11]
-[12] [13] [14]
-
-LaTeX Warning: Reference `App:FirnDiffusivity' on page 15 undefined on input li
-ne 275.
-
-
-LaTeX Warning: Reference `App:FirnDiffusivity' on page 15 undefined on input li
-ne 279.
-
-[15] [16] [17] [18] [19]
-<../Figures/SiteA_PSD_fit.jpg, id=127, 722.7pt x 578.16pt>
-File: ../Figures/SiteA_PSD_fit.jpg Graphic file (type jpg)
-<use ../Figures/SiteA_PSD_fit.jpg>
-Package pdftex.def Info: ../Figures/SiteA_PSD_fit.jpg  used on input line 377.
-(pdftex.def)             Requested size: 258.29887pt x 206.6377pt.
-) [20 <../Figures/SiteA_PSD_fit.jpg>]
-(../Chapters/Data/Chapter_Data.tex) [21
-
-] [22
-
-]
-(../Chapters/SignalAnalysis/Chapter_SignalAnalysis.tex [23] [24]
-Overfull \hbox (4.20497pt too wide) in paragraph at lines 55--56
-\OT1/cmr/bx/n/10.95 THE CAL-CU-LA-TIONS. WRITE THE GEN-ERAL IDEAS
- []
-
-
-Overfull \hbox (4.49254pt too wide) in paragraph at lines 55--56
-\OT1/cmr/bx/n/10.95 LATE/-COM-PUTE. SMALL CODE SNIP TO GIVE GEN-
- []
-
-[25]
-Underfull \vbox (badness 1028) has occurred while \output is active []
-
- [26]
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 103.
-
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 103.
-
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 107--109
-
- []
-
-[28] [29]
-
-LaTeX Warning: Reference `Sec:Method' on page 30 undefined on input line 161.
-
-
-Overfull \hbox (12.37985pt too wide) in paragraph at lines 160--162
-[]\OT1/cmr/m/n/10.95 It is pos-si-ble to de-velop al-go-rithms with the com-pu-
-ta-tional cost of $\OMS/cmsy/m/n/10.95 O\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95
- N [] N\OT1/cmr/m/n/10.95 )$
- []
-
-[30] [31]
-
-LaTeX Warning: Reference `fig:Interp' on page 32 undefined on input line 235.
-
-
-LaTeX Warning: Reference `sec:???' on page 32 undefined on input line 236.
-
-
-LaTeX Warning: Reference `fig:InterpFinal' on page 32 undefined on input line 2
-36.
-
-[32]
-
-LaTeX Warning: Marginpar on page 33 moved by 51.63165pt.
-
-) [33] [34
-
-] (../Chapters/ComputationalMethods/Chapter_ComputationalMethods.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-
- []
-
-[35]
-Overfull \hbox (3.05711pt too wide) in paragraph at lines 24--28
-\OT1/cmr/m/n/10.95 So the ex-is-tence and unique-ness of an in-ter-polant is gi
-ven by the non-singularity
- []
-
-[36]
-Underfull \hbox (badness 3009) in paragraph at lines 71--71
-\OT1/cmr/m/n/9 con-tin-u-ously dif-fer-en-tiable
- []
-
-
-Overfull \hbox (22.14932pt too wide) in paragraph at lines 67--73
-\OT1/cmr/m/n/10.95 When turn-ing to piece-wise poly-no-mial in-ter-po-la-tion o
-f the data points $(\OML/cmm/m/it/10.95 t[]; y[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/
-it/10.95 ;  i \OT1/cmr/m/n/10.95 =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--73
-
- []
-
-[37]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38])
-[39] [40
-
-] (../Chapters/Method/Chapter_Method.tex
-Overfull \hbox (35.53377pt too wide) in paragraph at lines 79--80
-[][] 
- []
-
-
-LaTeX Warning: Float too large for page by 37.42834pt on input line 82.
-
-
-Underfull \vbox (badness 5417) has occurred while \output is active []
-
- [41]
-<../Figures/SiteA_d18OInsert.jpg, id=201, 782.925pt x 398.48875pt>
-File: ../Figures/SiteA_d18OInsert.jpg Graphic file (type jpg)
-<use ../Figures/SiteA_d18OInsert.jpg>
-Package pdftex.def Info: ../Figures/SiteA_d18OInsert.jpg  used on input line 91
-.
-(pdftex.def)             Requested size: 332.09775pt x 169.03017pt.
-
-
-LaTeX Warning: Reference `Sec:??' on page 42 undefined on input line 126.
-
-<../Figures/SiteA_ECMd18O_combo.jpg, id=202, 722.7pt x 433.62pt>
-File: ../Figures/SiteA_ECMd18O_combo.jpg Graphic file (type jpg)
-<use ../Figures/SiteA_ECMd18O_combo.jpg>
-Package pdftex.def Info: ../Figures/SiteA_ECMd18O_combo.jpg  used on input line
- 130.
-(pdftex.def)             Requested size: 258.29887pt x 154.97827pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 2050) has occurred while \output is active []
-
- [42]
-[43]
-Underfull \vbox (badness 1199) has occurred while \output is active []
-
- [44 <../Figures/SiteA_d18OInsert.jpg> <../Figures/SiteA_ECMd18O_combo.jpg>]
-<../Figures/SiteA_d18OLT_Interp.jpg, id=213, 722.7pt x 505.89pt>
-File: ../Figures/SiteA_d18OLT_Interp.jpg Graphic file (type jpg)
-<use ../Figures/SiteA_d18OLT_Interp.jpg>
-Package pdftex.def Info: ../Figures/SiteA_d18OLT_Interp.jpg  used on input line
- 143.
-(pdftex.def)             Requested size: 258.29887pt x 180.80798pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[45]
-(/home/thea/Documents/KUFysik/MesterTesen/WrittenWork/CodeForListings/interpCor
-es.py [46 <../Figures/SiteA_d18OLT_Interp.jpg>])
-<../Figures/SiteA_DCT_PSD_raw.jpg, id=220, 722.7pt x 578.16pt>
-File: ../Figures/SiteA_DCT_PSD_raw.jpg Graphic file (type jpg)
-<use ../Figures/SiteA_DCT_PSD_raw.jpg>
-Package pdftex.def Info: ../Figures/SiteA_DCT_PSD_raw.jpg  used on input line 1
-81.
-(pdftex.def)             Requested size: 166.04887pt x 132.83284pt.
-<../Figures/SiteA_PSD_all.jpg, id=221, 722.7pt x 578.16pt>
-File: ../Figures/SiteA_PSD_all.jpg Graphic file (type jpg)
-<use ../Figures/SiteA_PSD_all.jpg>
-Package pdftex.def Info: ../Figures/SiteA_PSD_all.jpg  used on input line 187.
-(pdftex.def)             Requested size: 166.04887pt x 132.83284pt.
-
-
-LaTeX Warning: Reference `sec:??' on page 47 undefined on input line 191.
-
-
-LaTeX Warning: Reference `sec:??' on page 47 undefined on input line 191.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `Sec:????' on page 47 undefined on input line 194.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [47]
-<../Figures/SiteA_PSD_sig.jpg, id=226, 722.7pt x 578.16pt>
-File: ../Figures/SiteA_PSD_sig.jpg Graphic file (type jpg)
-<use ../Figures/SiteA_PSD_sig.jpg>
-Package pdftex.def Info: ../Figures/SiteA_PSD_sig.jpg  used on input line 204.
-(pdftex.def)             Requested size: 111.0pt x 88.79343pt.
-<../Figures/SiteA_PSD_noise.jpg, id=227, 722.7pt x 578.16pt>
-File: ../Figures/SiteA_PSD_noise.jpg Graphic file (type jpg)
-<use ../Figures/SiteA_PSD_noise.jpg>
-Package pdftex.def Info: ../Figures/SiteA_PSD_noise.jpg  used on input line 211
-.
-(pdftex.def)             Requested size: 111.0pt x 88.79343pt.
-File: ../Figures/SiteA_PSD_fit.jpg Graphic file (type jpg)
-<use ../Figures/SiteA_PSD_fit.jpg>
-Package pdftex.def Info: ../Figures/SiteA_PSD_fit.jpg  used on input line 218.
-(pdftex.def)             Requested size: 111.0pt x 88.79343pt.
-
-
-LaTeX Warning: Marginpar on page 48 moved by 190.74632pt.
-
-
-LaTeX Warning: Reference `Sec:???' on page 48 undefined on input line 225.
-
-[48 <../Figures/SiteA_DCT_PSD_raw.jpg> <../Figures/SiteA_PSD_all.jpg> <../Figur
-es/SiteA_PSD_sig.jpg> <../Figures/SiteA_PSD_noise.jpg>]
-(/home/thea/Documents/KUFysik/MesterTesen/WrittenWork/CodeForListings/calc_res.
-py)
-(/home/thea/Documents/KUFysik/MesterTesen/WrittenWork/CodeForListings/sum2_res.
-py)
-
-LaTeX Warning: Marginpar on page 49 moved by 27.1893pt.
-
-[49]
-<../Figures/SiteA_WienerFilter.jpg, id=237, 361.35pt x 289.08pt>
-File: ../Figures/SiteA_WienerFilter.jpg Graphic file (type jpg)
-<use ../Figures/SiteA_WienerFilter.jpg>
-Package pdftex.def Info: ../Figures/SiteA_WienerFilter.jpg  used on input line 
-265.
-(pdftex.def)             Requested size: 111.0pt x 88.79784pt.
-<../Figures/SiteA_WienerFilter_loglog.jpg, id=238, 361.35pt x 289.08pt>
-File: ../Figures/SiteA_WienerFilter_loglog.jpg Graphic file (type jpg)
-<use ../Figures/SiteA_WienerFilter_loglog.jpg>
-Package pdftex.def Info: ../Figures/SiteA_WienerFilter_loglog.jpg  used on inpu
-t line 272.
-(pdftex.def)             Requested size: 111.0pt x 88.79784pt.
-
-
-LaTeX Warning: Marginpar on page 50 moved by 112.57709pt.
-
-
-LaTeX Warning: Reference `Sec:????' on page 50 undefined on input line 279.
-
-
-LaTeX Warning: Marginpar on page 50 moved by 208.13722pt.
-
-Package marginnote Info: Margin note 62.1 is on absolute page 62
-(marginnote)              on input line 313.
-Package marginnote Info: xpos seems to be 147.26999pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 313.
-
-LaTeX Warning: Reference `sec:Theory' on page 50 undefined on input line 314.
-
-[50 <../Figures/SiteA_WienerFilter.jpg> <../Figures/SiteA_WienerFilter_loglog.j
-pg>]
-Overfull \hbox (2.79349pt too wide) in paragraph at lines 353--354
-[][][][][]\OT1/cmr/m/n/10.95 : From a given den-sity, cal-cu-late the cor-re-sp
-ond-ing depth.
- []
-
-[51]
-Overfull \hbox (3.00641pt too wide) in paragraph at lines 381--382
-[][][][][]\OT1/cmr/m/n/10.95 : From the best op-ti-mized Herron-Langway depth-d
-ensity
- []
-
-<../Figures/SiteA_DensProfile_wHL.jpg, id=246, 433.62pt x 505.89pt>
-File: ../Figures/SiteA_DensProfile_wHL.jpg Graphic file (type jpg)
-<use ../Figures/SiteA_DensProfile_wHL.jpg>
-Package pdftex.def Info: ../Figures/SiteA_DensProfile_wHL.jpg  used on input li
-ne 393.
-(pdftex.def)             Requested size: 111.0pt x 129.49812pt.
-[52]
-<../Figures/SiteA_DiffProfile.jpg, id=250, 433.62pt x 505.89pt>
-File: ../Figures/SiteA_DiffProfile.jpg Graphic file (type jpg)
-<use ../Figures/SiteA_DiffProfile.jpg>
-Package pdftex.def Info: ../Figures/SiteA_DiffProfile.jpg  used on input line 4
-02.
-(pdftex.def)             Requested size: 111.0pt x 129.49812pt.
-
-Underfull \hbox (badness 1412) in paragraph at lines 403--403
-[]\OT1/cmr/m/n/10.95 Figure 6.9: |\OT1/cmr/m/n/9 Es-ti-mated
- []
-
-
-Underfull \hbox (badness 1810) in paragraph at lines 403--403
-\OT1/cmr/m/n/9 given a Her-ron Lang-way
- []
-
-<../Figures/SiteA_filtersEx.jpg, id=251, 867.24pt x 578.16pt>
-File: ../Figures/SiteA_filtersEx.jpg Graphic file (type jpg)
-<use ../Figures/SiteA_filtersEx.jpg>
-Package pdftex.def Info: ../Figures/SiteA_filtersEx.jpg  used on input line 412
-.
-(pdftex.def)             Requested size: 369.0pt x 246.00146pt.
-<../Figures/SiteA_BackDiffused_Y32.jpg, id=252, 722.7pt x 505.89pt>
-File: ../Figures/SiteA_BackDiffused_Y32.jpg Graphic file (type jpg)
-<use ../Figures/SiteA_BackDiffused_Y32.jpg>
-Package pdftex.def Info: ../Figures/SiteA_BackDiffused_Y32.jpg  used on input l
-ine 421.
-(pdftex.def)             Requested size: 258.29887pt x 180.80798pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [53 <../Figures/SiteA_DensProfile_wHL.jpg> <../Figures/SiteA_DiffProfile.jpg> 
-<../Figures/SiteA_filtersEx.jpg>]
-<../Figures/SiteA_BackDiffused_AllSigmaEst.jpg, id=256, 1011.78pt x 433.62pt>
-File: ../Figures/SiteA_BackDiffused_AllSigmaEst.jpg Graphic file (type jpg)
-<use ../Figures/SiteA_BackDiffused_AllSigmaEst.jpg>
-Package pdftex.def Info: ../Figures/SiteA_BackDiffused_AllSigmaEst.jpg  used on
- input line 435.
-(pdftex.def)             Requested size: 369.0pt x 158.14096pt.
-
-
-LaTeX Warning: Marginpar on page 54 moved by 4.51047pt.
-
-[54 <../Figures/SiteA_BackDiffused_Y32.jpg>]
-
-LaTeX Warning: Marginpar on page 55 moved by 24.43164pt.
-
-
-LaTeX Warning: Marginpar on page 55 moved by 62.46329pt.
-
-
-Overfull \hbox (2.70908pt too wide) in paragraph at lines 462--462
-\OT1/cmr/m/n/10.95 UPGRADERECURS: 
- []
-
-
-Overfull \hbox (2.70908pt too wide) in paragraph at lines 462--462
-\OT1/cmr/m/n/10.95 UPGRADERECURS: 
- []
-
-
-Overfull \hbox (2.70908pt too wide) in paragraph at lines 462--462
-\OT1/cmr/m/n/10.95 UPGRADERECURS: 
- []
-
-
-Overfull \hbox (2.70908pt too wide) in paragraph at lines 462--462
-\OT1/cmr/m/n/10.95 UPGRADERECURS: 
- []
-
-[55 <../Figures/SiteA_BackDiffused_AllSigmaEst.jpg>]
-
-LaTeX Warning: Marginpar on page 56 moved by 43.18134pt.
-
-
-LaTeX Warning: Marginpar on page 56 moved by 56.14212pt.
-
-
-LaTeX Warning: Marginpar on page 56 moved by 82.70291pt.
-
-) [56] (../Chapters/Results/Chapter_Results.tex
 Overfull \hbox (75.27841pt too wide) in paragraph at lines 9--21
  [][] 
  []
@@ -1980,84 +1557,25 @@ Overfull \hbox (109.7962pt too wide) in paragraph at lines 41--52
  [][] 
  []
 
-) [57
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] [58
-
-]
-(../Chapters/TemperatureReconstruction/Chapter_TemperatureReconstruction.tex)
-[59] [60
-
-] (../Chapters/LayerCounting/Chapter_LayerCounting.tex) [61] [62
-
-]
-(../Chapters/Conclusion/Chapter_Conclusion.tex) [63] [64
-
-]
-(./Complete_1stDraft.bbl
-bibitemlist
-[65
-
-] [66]) [67]
-\tf@tdo=\write5
-\openout5 = `Complete_1stDraft.tdo'.
-
-\tf@toc=\write6
-\openout6 = `Complete_1stDraft.toc'.
-
-\tf@lof=\write7
-\openout7 = `Complete_1stDraft.lof'.
-
-\tf@lot=\write8
-\openout8 = `Complete_1stDraft.lot'.
-
-\tf@lol=\write9
-\openout9 = `Complete_1stDraft.lol'.
-
- (./Complete_1stDraft.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+] (./Chapter_Results.aux) ) 
 Here is how much of TeX's memory you used:
- 32007 strings out of 492982
- 611714 string characters out of 6134897
- 806865 words of memory out of 5000000
- 35031 multiletter control sequences out of 15000+600000
- 556934 words of font info for 130 fonts, out of 8000000 for 9000
+ 30369 strings out of 492982
+ 581945 string characters out of 6134897
+ 638368 words of memory out of 5000000
+ 33510 multiletter control sequences out of 15000+600000
+ 536707 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,16n,86p,10379b,1954s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Complete_1stDraft.pdf (79 pages, 1750931 bytes).
+ 61i,13n,58p,10401b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb>
+Output written on Chapter_Results.pdf (1 page, 34620 bytes).
 PDF statistics:
- 396 PDF objects out of 1000 (max. 8388607)
- 267 compressed objects within 3 object streams
+ 23 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

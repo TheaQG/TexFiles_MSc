@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  17 MAR 2021 12:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  28 MAR 2021 19:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1596,200 +1596,221 @@ es.py [6])
 File: ../../Figures/SiteA_DCT_PSD_raw.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_DCT_PSD_raw.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_DCT_PSD_raw.jpg  used on input lin
-e 178.
+e 181.
 (pdftex.def)             Requested size: 166.04887pt x 132.83284pt.
 <../../Figures/SiteA_PSD_all.jpg, id=42, 722.7pt x 578.16pt>
 File: ../../Figures/SiteA_PSD_all.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_PSD_all.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_PSD_all.jpg  used on input line 18
-4.
+7.
 (pdftex.def)             Requested size: 166.04887pt x 132.83284pt.
 
 
-LaTeX Warning: Reference `sec:??' on page 7 undefined on input line 188.
+LaTeX Warning: Reference `sec:??' on page 7 undefined on input line 191.
 
 
-LaTeX Warning: Reference `sec:??' on page 7 undefined on input line 188.
+LaTeX Warning: Reference `sec:??' on page 7 undefined on input line 191.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `Sec:????' on page 7 undefined on input line 191.
+LaTeX Warning: Reference `Sec:????' on page 7 undefined on input line 194.
 
-[7]
-<../../Figures/SiteA_PSD_sig.jpg, id=47, 722.7pt x 578.16pt>
+[7] [8 <../../Figures/SiteA_DCT_PSD_raw.jpg> <../../Figures/SiteA_PSD_all.jpg>]
+<../../Figures/SiteA_PSD_sig.jpg, id=51, 722.7pt x 578.16pt>
 File: ../../Figures/SiteA_PSD_sig.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_PSD_sig.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_PSD_sig.jpg  used on input line 20
-1.
+4.
 (pdftex.def)             Requested size: 111.0pt x 88.79343pt.
-<../../Figures/SiteA_PSD_noise.jpg, id=48, 722.7pt x 578.16pt>
+<../../Figures/SiteA_PSD_noise.jpg, id=52, 722.7pt x 578.16pt>
 File: ../../Figures/SiteA_PSD_noise.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_PSD_noise.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_PSD_noise.jpg  used on input line 
-208.
+211.
 (pdftex.def)             Requested size: 111.0pt x 88.79343pt.
-<../../Figures/SiteA_PSD_fit.jpg, id=49, 722.7pt x 578.16pt>
+<../../Figures/SiteA_PSD_fit.jpg, id=53, 722.7pt x 578.16pt>
 File: ../../Figures/SiteA_PSD_fit.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_PSD_fit.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_PSD_fit.jpg  used on input line 21
-5.
+8.
 (pdftex.def)             Requested size: 111.0pt x 88.79343pt.
 
+LaTeX Warning: Marginpar on page 9 moved by 220.22346pt.
 
-LaTeX Warning: Marginpar on page 8 moved by 220.22346pt.
 
+LaTeX Warning: Reference `Sec:???' on page 9 undefined on input line 225.
 
-LaTeX Warning: Reference `Sec:???' on page 8 undefined on input line 222.
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 224.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 227.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 224.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 227.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 238.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 241.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 238.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 241.
 
 
 (/home/thea/Documents/KUFysik/MesterTesen/WrittenWork/CodeForListings/calc_res.
-py [8 <../../Figures/SiteA_DCT_PSD_raw.jpg> <../../Figures/SiteA_PSD_all.jpg> <
-../../Figures/SiteA_PSD_sig.jpg> <../../Figures/SiteA_PSD_noise.jpg> <../../Fig
-ures/SiteA_PSD_fit.jpg>])
+py)
 (/home/thea/Documents/KUFysik/MesterTesen/WrittenWork/CodeForListings/sum2_res.
 py)
 
-LaTeX Warning: Marginpar on page 9 moved by 13.71097pt.
+LaTeX Warning: Marginpar on page 9 moved by 27.1893pt.
 
-<../../Figures/SiteA_WienerFilter.jpg, id=58, 361.35pt x 289.08pt>
+[9 <../../Figures/SiteA_PSD_sig.jpg> <../../Figures/SiteA_PSD_noise.jpg> <../..
+/Figures/SiteA_PSD_fit.jpg>]
+<../../Figures/SiteA_WienerFilter.jpg, id=61, 361.35pt x 289.08pt>
 File: ../../Figures/SiteA_WienerFilter.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_WienerFilter.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_WienerFilter.jpg  used on input li
-ne 262.
+ne 265.
 (pdftex.def)             Requested size: 111.0pt x 88.79784pt.
-<../../Figures/SiteA_WienerFilter_loglog.jpg, id=59, 361.35pt x 289.08pt>
+<../../Figures/SiteA_WienerFilter_loglog.jpg, id=62, 361.35pt x 289.08pt>
 File: ../../Figures/SiteA_WienerFilter_loglog.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_WienerFilter_loglog.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_WienerFilter_loglog.jpg  used on i
-nput line 269.
+nput line 272.
 (pdftex.def)             Requested size: 111.0pt x 88.79784pt.
 
-LaTeX Warning: Marginpar on page 9 moved by 99.09875pt.
+
+LaTeX Warning: Marginpar on page 10 moved by 112.57709pt.
 
 
-LaTeX Warning: Reference `Sec:????' on page 9 undefined on input line 276.
+LaTeX Warning: Reference `Sec:????' on page 10 undefined on input line 279.
 
 
-LaTeX Warning: Marginpar on page 9 moved by 194.65889pt.
+LaTeX Warning: Marginpar on page 10 moved by 208.13722pt.
 
-[9 <../../Figures/SiteA_WienerFilter.jpg> <../../Figures/SiteA_WienerFilter_log
-log.jpg>]
+
+LaTeX Warning: Marginpar on page 10 moved by 9.86244pt.
+
 Package marginnote Info: Margin note 10.1 is on absolute page 10
-(marginnote)              on input line 310.
+(marginnote)              on input line 316.
 Package marginnote Info: xpos seems to be 147.26999pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 310.
+(marginnote)             \marginnoteleftadjust ignored on input line 316.
 
+LaTeX Warning: Reference `sec:Theory' on page 10 undefined on input line 317.
 
-LaTeX Warning: Reference `sec:Theory' on page 10 undefined on input line 311.
-
-[10]
-Overfull \hbox (2.79349pt too wide) in paragraph at lines 350--351
+[10 <../../Figures/SiteA_WienerFilter.jpg> <../../Figures/SiteA_WienerFilter_lo
+glog.jpg>] [11]
+Overfull \hbox (2.79349pt too wide) in paragraph at lines 356--357
 [][][][][]\OT1/cmr/m/n/10.95 : From a given den-sity, cal-cu-late the cor-re-sp
 ond-ing depth.
  []
 
-[11]
-Overfull \hbox (3.00641pt too wide) in paragraph at lines 378--379
+
+Overfull \hbox (3.00641pt too wide) in paragraph at lines 384--385
 [][][][][]\OT1/cmr/m/n/10.95 : From the best op-ti-mized Herron-Langway depth-d
 ensity
  []
 
-<../../Figures/SiteA_DensProfile_wHL.jpg, id=73, 433.62pt x 505.89pt>
+[12]
+<../../Figures/SiteA_DensProfile_wHL.jpg, id=76, 433.62pt x 505.89pt>
 File: ../../Figures/SiteA_DensProfile_wHL.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_DensProfile_wHL.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_DensProfile_wHL.jpg  used on input
- line 390.
+ line 396.
 (pdftex.def)             Requested size: 111.0pt x 129.49812pt.
-<../../Figures/SiteA_DiffProfile.jpg, id=74, 433.62pt x 505.89pt>
+<../../Figures/SiteA_DiffProfile.jpg, id=77, 433.62pt x 505.89pt>
 File: ../../Figures/SiteA_DiffProfile.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_DiffProfile.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_DiffProfile.jpg  used on input lin
-e 399.
+e 405.
 (pdftex.def)             Requested size: 111.0pt x 129.49812pt.
 
-Underfull \hbox (badness 1412) in paragraph at lines 400--400
+Underfull \hbox (badness 1412) in paragraph at lines 406--406
 []\OT1/cmr/m/n/10.95 Figure 0.9: |\OT1/cmr/m/n/9 Es-ti-mated
  []
 
 
-Underfull \hbox (badness 1810) in paragraph at lines 400--400
+Underfull \hbox (badness 1810) in paragraph at lines 406--406
 \OT1/cmr/m/n/9 given a Her-ron Lang-way
  []
 
 
-LaTeX Warning: Marginpar on page 12 moved by 73.53311pt.
+LaTeX Warning: Marginpar on page 13 moved by 73.53311pt.
 
-<../../Figures/SiteA_filtersEx.jpg, id=75, 867.24pt x 578.16pt>
+<../../Figures/SiteA_filtersEx.jpg, id=78, 867.24pt x 578.16pt>
 File: ../../Figures/SiteA_filtersEx.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_filtersEx.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_filtersEx.jpg  used on input line 
-409.
+415.
 (pdftex.def)             Requested size: 369.0pt x 246.00146pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../../Figures/SiteA_BackDiffused_Y32.jpg, id=76, 722.7pt x 505.89pt>
+<../../Figures/SiteA_BackDiffused_Y32.jpg, id=79, 722.7pt x 505.89pt>
 File: ../../Figures/SiteA_BackDiffused_Y32.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_BackDiffused_Y32.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_BackDiffused_Y32.jpg  used on inpu
-t line 418.
+t line 424.
 (pdftex.def)             Requested size: 258.29887pt x 180.80798pt.
-
-LaTeX Warning: Marginpar on page 12 moved by 12.1844pt.
-
-<../../Figures/SiteA_BackDiffused_AllSigmaEst.jpg, id=77, 1011.78pt x 433.62pt>
+[13 <../../Figures/SiteA_DensProfile_wHL.jpg> <../../Figures/SiteA_DiffProfile.
+jpg> <../../Figures/SiteA_filtersEx.jpg>]
+<../../Figures/SiteA_BackDiffused_AllSigmaEst.jpg, id=84, 1011.78pt x 433.62pt>
 
 File: ../../Figures/SiteA_BackDiffused_AllSigmaEst.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_BackDiffused_AllSigmaEst.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_BackDiffused_AllSigmaEst.jpg  used
- on input line 432.
+ on input line 438.
 (pdftex.def)             Requested size: 369.0pt x 158.14096pt.
-[12 <../../Figures/SiteA_DensProfile_wHL.jpg> <../../Figures/SiteA_DiffProfile.
-jpg>] [13 <../../Figures/SiteA_filtersEx.jpg>] [14 <../../Figures/SiteA_BackDif
-fused_Y32.jpg> <../../Figures/SiteA_BackDiffused_AllSigmaEst.jpg>]
-
-LaTeX Warning: Marginpar on page 15 moved by 10.83163pt.
 
 
-LaTeX Warning: Marginpar on page 15 moved by 8.18494pt.
+LaTeX Warning: Marginpar on page 14 moved by 4.51047pt.
+
+[14 <../../Figures/SiteA_BackDiffused_Y32.jpg>]
+
+LaTeX Warning: Marginpar on page 15 moved by 24.43164pt.
 
 
-LaTeX Warning: Marginpar on page 15 moved by 24.28793pt.
+LaTeX Warning: Marginpar on page 15 moved by 62.46329pt.
 
 
-LaTeX Warning: Marginpar on page 15 moved by 23.64871pt.
+Overfull \hbox (2.70908pt too wide) in paragraph at lines 465--465
+\OT1/cmr/m/n/10.95 UPGRADERECURS: 
+ []
 
 
-LaTeX Warning: Marginpar on page 15 moved by 20.88034pt.
+Overfull \hbox (2.70908pt too wide) in paragraph at lines 465--465
+\OT1/cmr/m/n/10.95 UPGRADERECURS: 
+ []
 
-[15] (./Chapter_Method.aux)
+
+Overfull \hbox (2.70908pt too wide) in paragraph at lines 465--465
+\OT1/cmr/m/n/10.95 UPGRADERECURS: 
+ []
+
+
+Overfull \hbox (2.70908pt too wide) in paragraph at lines 465--465
+\OT1/cmr/m/n/10.95 UPGRADERECURS: 
+ []
+
+[15 <../../Figures/SiteA_BackDiffused_AllSigmaEst.jpg>]
+
+LaTeX Warning: Marginpar on page 16 moved by 43.18134pt.
+
+
+LaTeX Warning: Marginpar on page 16 moved by 56.14212pt.
+
+
+LaTeX Warning: Marginpar on page 16 moved by 82.70291pt.
+
+[16] (./Chapter_Method.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 31584 strings out of 492982
- 602292 string characters out of 6134897
- 744765 words of memory out of 5000000
- 34662 multiletter control sequences out of 15000+600000
+ 31593 strings out of 492982
+ 602490 string characters out of 6134897
+ 736685 words of memory out of 5000000
+ 34671 multiletter control sequences out of 15000+600000
  547923 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  61i,16n,85p,10416b,1953s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1815,10 +1836,10 @@ blic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
 /msbm10.pfb>
-Output written on Chapter_Method.pdf (15 pages, 1471415 bytes).
+Output written on Chapter_Method.pdf (16 pages, 1473622 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
+ 167 PDF objects out of 1000 (max. 8388607)
+ 109 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  88 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -82,7 +82,7 @@ Now the integral from Equation \ref{Eq:FourierTransform} needs to be estimated a
 	\tilde{X}(f_n) = \int_{-\infty}^{\infty} X(\tau) e^{2\pi i f_n \tau} dt \approx  \sum_{k=0}^{N-1}X_k e^{2\pi i f_n t_k} \Delta = \Delta \sum_{k=0}^{N-1}X_k e^{2\pi i k \frac{n}{N}}
 	\label{Eq:DFTestimation}
 \end{equation}
-The Discrete Fourier Transform is thsu defined as:
+The Discrete Fourier Transform is thus defined as:
 \begin{equation}
 	\tilde{X}_n \equiv  \sum_{k=0}^{N-1}X_k e^{2\pi i k \frac{n}{N}}
 	\label{Eq:DFT}
@@ -94,19 +94,74 @@ This gives the approximate relation between the DFT estimate and the continuous 
 The inverse DFT is given as:
 \begin{equation}
 	X_n \equiv \frac{1}{N} \sum_{n=0}^{N-1}X\tilde{X}_n e^{-2\pi i k \frac{n}{N}}
-	\label{Eq:inverseDFT}
+	\label{Eq:InverseDFT}
 \end{equation}
-Computation of the DFT can be very slow and tiresome, since it involves complex multiplication between a number of vectors and matrices. If we write Equation \ref{Eq:DFT} as $\tilde{X}_n = \sum_{k=0}{N-1}W^{nk}X_k,$ where  $W$ is a complex number $W\equiv e^{2\pi i /N}$. This shows that the vector $X_k$ must be multiplied with a complex matrix which (n,k)th component consists of the constant $W$ to the power of $nk$. This matrix multiplication evidently leads to a process of $O(N^2)$. Fortunately, a number of different algorithms(REFERENCES) have been developed for fast and efficient computation of the discrete Fourier transform. One of these is called the Fast Fourier Transform (FFT), which can reduce the computations to just $O(N\log_2 N)$! In this thesis the FFT used is the one implemented in the numpy.fft Python package(REFERENCES) which is based on the works of (REFERENCES). See said article for implementation details. One important thing about this specific algorithm is that for the algorithm to function most efficiently, the number of points computed in the frequency space must be of a power of 2, following the use of base $\log_2$
+Computation of the DFT can be very slow and tiresome, since it involves complex multiplication between a number of vectors and matrices. If we write Equation \ref{Eq:DFT} as $\tilde{X}_n = \sum_{k=0}{N-1}W^{nk}X_k,$ where  $W$ is a complex number $W\equiv e^{2\pi i /N}$. This shows that the vector $X_k$ must be multiplied with a complex matrix which (n,k)th component consists of the constant $W$ to the power of $nk$. This matrix multiplication evidently leads to a process of $O(N^2)$. Fortunately, a number of different algorithms implementing a wide range of different theories from complex number arithmetic and prime-factoring to group and number theory (\cite{Cooley1965},\cite{Good1958_PrimeFFT}, \cite{Bruun1978__BruunsFFT} and others) have been developed for fast and efficient computation of the discrete Fourier transform. One of these is called the Fast Fourier Transform (FFT), which can reduce the computations to just $\mathcal{O}(N\log_2 N)$. In this thesis the FFT used is the one implemented in the \lstinline[language=Python]|scipy.fft| Python package \cite{Virtanen2020_SciPy}, which is based on the works of \cite{Cooley1965}. See said article for implementation details. One important thing about this specific algorithm is that for the algorithm to function most efficiently, the number of points computed in the frequency space must be of a power of 2, following the use of base $\log_2$
 
 \subsubsection[NUFT][NUFT]{Nonuniform Discrete Fourier Transform}
-\todo{SIGNAL-NUFT: Write this entire section}
+All FFT algorithms evaluates the DFT definitions from Eqs. \ref{Eq:DFT} to \ref{Eq:InverseDFT} in fast and efficient ways. But one key assumption for these methods is that the data under examination are equispaced, i.e. uniformly distributed, based on the summation in Eq. \ref{Eq:DFT}. The computations thus expect uniform data as input and returns uniform data as output. Unfortunately this is not always the case for data collected in physical experiments. In this case the basic assumptions for the calculations of both DFT and FFT are flawed. \\
+The most general form of a nonuniform transform would be the one that takes non-equispaced data as input and also returns non-equispaced transforms as output. Firstly we wish to create a nonuniform discrete Fourier transform (NUDFT) that transforms a sequence of $N$ complex numbers $X_0,...,X_{N-1}$ to a different sequence of $M$ complex numbers, $\tilde{X}_0,...,\tilde{X}_{M-1}$. The one-dimensional NUDFT the computes the transformed vector $\tilde{\boldsymbol{X}} = (\tilde{X}_0,...,\tilde{X}_{M-1})^{\text{T}}$, with entries computed as the sum
+\begin{equation}
+	\tilde{X}_k = \sum_{n=0}^{N-1} X_n e^{-2\pi i p_n f_k},\qquad 0 \leq k \leq M-1.
+	\label{Eq:NDFT} 
+\end{equation}
+The values $X_0, ...,X_{N-1}$ are sample values, $p_0,...,p_{N-1}$ are sample positions and $f_0,...,f_{M-1}$ are frequencies. The NUDFT vector $\tilde{\boldsymbol{X}}$ is found by computing $M$ sums with each $N$ terms. This meaning that the computational cost will be of order $\mathcal{O}(M\cdot N)$, and if $M=N$ then of $\mathcal{O}(N^2)$. The NUDFT reduces to the DFT if the points are equispaced, $p_n = \frac{n}{N}$, and the frequencies are integers, $f_k = k$, and can be computed at the cost of the FFT, $\mathcal{O}(N\log_2 N)$. In the literature there are many who have presented different ways to develop a fast NUDFT (\cite{Potts2001}, \cite{Marvasti1993}, \cite{Ruiz-Antolin2018}, \cite{Lee2005} among others), generally referred to as NUFFT or NFFT. In this work though, the main focus is on the discrete cosine transform, and the NFFT methods will not be described in depth\\
+
+
 \subsubsection[DCT][DCT]{Discrete Cosine Transform}
-\todo{SIGNAL-DCT: Write more in depth about mathematical definition.}
-The DFT is generally defined for complex inputs and outputs, where the sine components of the transform describe the complex part and the cosine describes the real part. \\
-Since the data analyzed in this thesis is purely real, it makes sense, for computational speed, to only work with the cosine parts of the transform. This leads to the Discrete Cosine Transform (DCT) which transforms real inputs to real outputs.
+The Fourier transform in any of its many forms is designed to process complex-valued signals, always producing a complex-valued spectrum, even for signals that were strictly real-valued. The real-valued or complex-valued part of the Fourier spectrum is on their own not enough to represent the full information of the signal, since neither the cosine nor he sine functions (corresponding to the real and the complex parts of the spectrum respectively), constitute a complete set of basis functions. Nonetheless, a purely real-valued signal has a symmetric Fourier spectrum, meaning that it is only necessary to compute half the number of spectral coefficients, without losing any signal information. Since the signals analyzed in this thesis are strictly real, one way to use this knowledge to improve on the works of this project is to consider a different, less expensive, purely real spectral transform. The cosine transform \cite{Ahmed1974_DCT} seems to do the trick: it uses only cosine functions as basis functions and operates with only real-valued signal and spectral coefficients, and have properties similar to the Fourier transform.\\
+For the discrete version of the cosine transform, DCT, and its inverse, IDCT, a number of different definitions have been proposed, but for this work, the originally formulations by \cite{Ahmed1974_DCT} are used. These are often referred to as "The DCT" and "The IDCT", and other times as DCT-II and DCT-III. The entries of the computed discrete cosine transform vector,$\tilde{X}_0,...,\tilde{X}_{M-1}$ , of a real-valued signal of $N$ data points, $X_0,...X_{N-1}$, is computed as
+\begin{equation}
+	\tilde{X}_k = 2\sum_{n=0}^{N-1} X_n \cos\left(\frac{\pi(2n+1)k}{2N}\right),\qquad 0\leq k < M.
+	\label{Eq:DCT}
+\end{equation}
+
+To orthonormalize the base functions,$\phi_k(n)$ , the coefficients are multiplied by a scaling factor $f$:
+\begin{equation}
+	f = \begin{cases}
+		\frac{1}{\sqrt{2N}}, & \text{if} k = 0 \\
+		\frac{1}{\sqrt{4N}}, & \text{otherwise}
+	\end{cases}
+	\label{Eq:DCT_OrthoScalingFactor}
+\end{equation}
+so that the base functions, $\phi_k[n] = 2f\cos\left(\frac{\pi(2n+1)k}{2N}\right)$, meet the condition:
+\begin{equation}
+	\sum_{n=0}^{N-1} \phi_k[n]\phi_l[n] = \delta_{lk}.
+	\label{Eq:DCT_Orthonormalization}
+\end{equation}
+
+The inverse of the DCT, the so called DCT-III, is defined, unnormalized, as: 
+\begin{equation}
+	X_k = \tilde{X}_0 + 2\sum_{n=1}^{N-1} \tilde{X}_n\cos\left(\frac{\pi n(2k+1)}{2N}\right), \qquad 0 \leq k < N 
+	\label{Eq:IDCT}
+\end{equation}
+and orthonormalized:
+\begin{equation}
+	X_k = \frac{\tilde{X}_0}{\sqrt{N}} + \sqrt{\frac{2}{N}}\sum_{n=1}^{N-1} \tilde{X}_n\cos\left(\frac{\pi n(2k+1)}{2N}\right), \qquad 0 \leq k < N 
+	\label{Eq:IDCT_ortho}
+\end{equation}
+
+Only when the DCT-III is orthonormalized is it exactly the inverse of the orthonormalized DCT-II. If they are both unnormalized, the DCT-III is the inverse of the DCT-II up to a factor $2N$.
+As with the DFT, the DCT can directly be computed at a cost of $\mathcal{O}(N\cdot M)$, and can also reduced to $\mathcal{O}(N \log N)$. The fast DCT algorithm(FCT) used here is based on \cite{Makhoul1980} as it is implemented in the \lstinline[language=Python]|scipy.fft.dct| package\cite{Virtanen2020_SciPy}.
 
 \subsubsection[NDCT][NDCT]{Nonuniform Discrete Cosine Transform}
-\todo{SIGNAL-NDCT: Write this entire section}
+Again, as with the FFT, the FCT works under the key assumption that data is equispaced. Though when data is nonuniform, the DCT is described as:
+\begin{equation}
+	\tilde{X}_k = 2\sum_{n=0}^{N-1}X_n \cos\left(2\pi f_k\left(p_n + \frac{1}{2N}\right)\right), \qquad 0 \leq k < M-1
+	\label{Eq:NDCT}
+\end{equation}
+with, in the most general case, nonuniformly spaced signal, $p_o,...,p_{N-1}$, data and frequency data, $f_0,...,f_{M-1}$.
+The inverse of NDCT, the INDCT, is computed as:
+\begin{equation}
+	X_k = \frac{\tilde{X}_0}{\sqrt{N}} + \sqrt{\frac{2}{N}}\sum_{n=1}^{N-1} \tilde{X}_n \cos\left(\left(p_n + \frac{1}{2N}\right)2\pi f_k\right), \qquad 0 \leq k < N -1
+	\label{Eq:INDCT}
+\end{equation}
+
+It is possible to develop algorithms with the computational cost of $\mathcal{O}(N\log N)$ for NDCT and INDCT as it is for 
+the NDFT (\cite{Tian2000}, \cite{Zhao2008}) but it has showed to be out of the scope of this project and has not been implemented. This of course slows down the final optimization algorithm, as it requires a number of spectral transformations. In Section \ref{Sec:Method} it is described how the final algorithm has been designed to minimize the use of NDCT, and thus speeding up the final computations.
+
+
+
 \subsubsection[MEM][MEM]{Maximum Entropy Method (Burg's Method)}
 \todo{SIGNAL-MEM: Write this entire section - maybe not necessary? Maybe use in reconstruction of missing data...}
 
