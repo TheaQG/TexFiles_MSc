@@ -5,37 +5,40 @@
 \contentsline {todo}{ICE-DIFF: Describe how to solve for sigma.}{11}
 \contentsline {todo}{ICE-DIFF: DESCRIBE HOW TO SOLVE FOR SIGMA and a discussion of the ice diffusion constant(ice diffusivity?).}{12}
 \contentsline {todo}{ICE-TEMP: Describe an autoregressive process}{12}
-\contentsline {todo}{ICE-TEMP.EST:This entire section needs to be written}{15}
-\contentsline {todo}{SIGNAL-BACKDIFF: RETHINK THIS PART. DO NOT USE TIME ON ALL THE CALCULATIONS. WRITE THE GENERAL IDEAS OF THE METHODS AND STATE HOW TO CALCULATE/COMPUTE. SMALL CODE SNIP TO GIVE GENERAL IDEA.}{25}
-\contentsline {todo}{SIGNAL-MEM: Write this entire section - maybe not necessary? Maybe use in reconstruction of missing data...}{30}
-\contentsline {todo}{SIGNAL-INTERP: REFERENCE!!}{32}
-\contentsline {todo}{SIGNAL-STANDARD: Think about if this is necessary. Maybe work into recursivity and constraints in Method?}{33}
-\contentsline {todo}{SIGNAL-CYCLE: Think about if this is necessary. Maybe work into recursivity and constraints in Method?}{33}
-\contentsline {todo}{COMP-INTERP: REFERENCE!!!}{37}
-\contentsline {todo}{COMP-INTERP: Maybe an illustration here? See pp. 314 in Scientific Computing.}{37}
-\contentsline {todo}{COMP-INTERP: REFERENCES!!}{38}
-\contentsline {todo}{COMP-PEAKDET: Write this entire section}{39}
-\contentsline {todo}{COMP-PARAL: Do some actual parallelization! And write this entire section}{39}
-\contentsline {todo}{METH-SPECT: Make a comment on Nyquist frequncy.}{48}
-\contentsline {todo}{METH-SPECTFIT: Write boundaries used - explain why.}{49}
-\contentsline {todo}{METH-SPECTFIT: Write initial guesses}{49}
-\contentsline {todo}{METH-SPECTFIT: REFERENCE!!! Maybe write more? No...}{50}
-\contentsline {todo}{METH-WIENER: REFERENCE!!!}{50}
-\contentsline {todo}{METH-OUT: Remember: write about sampling sigma}{54}
-\contentsline {todo}{METH-TESTS: Write entire section.}{54}
-\contentsline {todo}{METH-TESTMAX: Write entire section.}{54}
-\contentsline {todo}{METH-TESTINT1: Write entire section.}{55}
-\contentsline {todo}{METH-TESTINT2: Write entire section.}{55}
-\contentsline {todo}{METH-UPGRADE: Write entire section.}{55}
-\contentsline {todo}{METH-UPGRADEPEAK: Do the ML Peak Detection, then Write entire section.}{55}
-\contentsline {todo}{METH-UPGRADETIME: Incorporate Linear Timescale in Recursivity - then Write entire section.}{55}
-\contentsline {todo}{METH-UPGRADESTAND: Maybe not necessary?Write entire section.}{55}
-\contentsline {todo}{METH-UPGRADERECURS: Develop recursive algorithm with new constraints for peak finding - then write entire section.}{56}
-\contentsline {todo}{METH-MISSDATA: Write entire section. Maybe not necessary...}{56}
-\contentsline {todo}{METH-MISSDATAINTERP: Write entire section. Show baddddd figures.}{56}
-\contentsline {todo}{METH-MISSDATAMEM: Write entire section. Refer to Bo Vinther's MEM reconstruction method.}{56}
-\contentsline {todo}{TEMP-DATAEST: Write entire section.}{59}
-\contentsline {todo}{TEMP-DATAESTSTST: Write entire section.}{59}
-\contentsline {todo}{TEMP-DATAESTACCUM: Write entire section.}{59}
-\contentsline {todo}{TEMP-DATAESTCFM: Write entire section.}{59}
-\contentsline {todo}{CONC: Write a better conclusion. Please..}{63}
+\contentsline {todo}{Diffusion/densification terms figure. See V. Gkinis 2021.}{17}
+\contentsline {todo}{Create contour plot as in Gkinis2021}{18}
+\contentsline {todo}{ICE-TEMP.EST:This entire section needs to be written}{19}
+\contentsline {todo}{SIGNAL-BACKDIFF: RETHINK THIS PART. DO NOT USE TIME ON ALL THE CALCULATIONS. WRITE THE GENERAL IDEAS OF THE METHODS AND STATE HOW TO CALCULATE/COMPUTE. SMALL CODE SNIP TO GIVE GENERAL IDEA.}{29}
+\contentsline {todo}{SIGNAL-MEM: Write this entire section - maybe not necessary? Maybe use in reconstruction of missing data...}{34}
+\contentsline {todo}{SIGNAL-INTERP: REFERENCE!!}{36}
+\contentsline {todo}{SIGNAL-STANDARD: Think about if this is necessary. Maybe work into recursivity and constraints in Method?}{37}
+\contentsline {todo}{SIGNAL-CYCLE: Think about if this is necessary. Maybe work into recursivity and constraints in Method?}{37}
+\contentsline {todo}{COMP-INTERP: REFERENCE!!!}{41}
+\contentsline {todo}{COMP-INTERP: Maybe an illustration here? See pp. 314 in Scientific Computing.}{41}
+\contentsline {todo}{COMP-INTERP: REFERENCES!!}{42}
+\contentsline {todo}{COMP-PEAKDET: Write this entire section}{43}
+\contentsline {todo}{COMP-PARAL: Do some actual parallelization! And write this entire section}{43}
+\contentsline {todo}{$\sigma (z)$ vs $\sigma _C$}{51}
+\contentsline {todo}{METH-SPECT: Make a comment on Nyquist frequncy.}{55}
+\contentsline {todo}{METH-SPECTFIT: Write boundaries used - explain why.}{57}
+\contentsline {todo}{METH-SPECTFIT: Write initial guesses}{57}
+\contentsline {todo}{METH-SPECTFIT: REFERENCE!!! Maybe write more? No...}{57}
+\contentsline {todo}{METH-WIENER: REFERENCE!!!}{57}
+\contentsline {todo}{METH-OUT: Remember: write about sampling sigma}{57}
+\contentsline {todo}{METH-TESTS: Write entire section.}{59}
+\contentsline {todo}{METH-TESTMAX: Write entire section.}{59}
+\contentsline {todo}{METH-TESTINT1: Write entire section.}{59}
+\contentsline {todo}{METH-TESTINT2: Write entire section.}{59}
+\contentsline {todo}{METH-UPGRADE: Write entire section.}{59}
+\contentsline {todo}{METH-UPGRADEPEAK: Do the ML Peak Detection, then Write entire section.}{59}
+\contentsline {todo}{METH-UPGRADETIME: Incorporate Linear Timescale in Recursivity - then Write entire section.}{59}
+\contentsline {todo}{METH-UPGRADESTAND: Maybe not necessary?Write entire section.}{59}
+\contentsline {todo}{METH-UPGRADERECURS: Develop recursive algorithm with new constraints for peak finding - then write entire section.}{59}
+\contentsline {todo}{METH-MISSDATA: Write entire section. Maybe not necessary...}{59}
+\contentsline {todo}{METH-MISSDATAINTERP: Write entire section. Show baddddd figures.}{60}
+\contentsline {todo}{METH-MISSDATAMEM: Write entire section. Refer to Bo Vinther's MEM reconstruction method.}{60}
+\contentsline {todo}{TEMP-DATAEST: Write entire section.}{63}
+\contentsline {todo}{TEMP-DATAESTSTST: Write entire section.}{63}
+\contentsline {todo}{TEMP-DATAESTACCUM: Write entire section.}{63}
+\contentsline {todo}{TEMP-DATAESTCFM: Write entire section.}{63}
+\contentsline {todo}{CONC: Write a better conclusion. Please..}{67}

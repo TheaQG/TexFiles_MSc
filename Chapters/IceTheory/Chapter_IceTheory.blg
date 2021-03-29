@@ -3,9 +3,9 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Chapter_IceTheory.aux
 I found no \bibdata command---while reading file Chapter_IceTheory.aux
 I found no \bibstyle command---while reading file Chapter_IceTheory.aux
-You've used 6 entries,
+You've used 17 entries,
             0 wiz_defined-function locations,
-            95 strings with 652 characters,
+            117 strings with 924 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0

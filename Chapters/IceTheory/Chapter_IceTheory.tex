@@ -264,7 +264,7 @@ The user starts by specifying input parameters(firn-densification physics, time-
 
 \subsection[Iso-CFM]{Iso-CFM}
 \label{Sec:IsoCFM}
-The Iso-CFM, building on the Community Firn Model, is a tool for estimating firn diffusion rates of water isotopes, $\delta^{18}$O, $\delta^{17}$O and $\delta$D. It requires two main inputs, temperature and accumulation rate, and no prior knowledge of the isotopic signal is required. The model provides computation of the diffusion lengths for the mentioned water isotopes. As previously discussed, the diffusion lengths are a metric for the smoothing a signal has undergone and can, along with deconvolution techniques also discussed in this thesis, be used to reconstruct some of the signal that has been otherwise attenuated.
+The Iso-CFM building on the Community Firn Model, is a tool for estimating firn diffusion rates of water isotopes, $\delta^{18}$O, $\delta^{17}$O and $\delta$D, developed by \cite[Gkinis et al., 2021]{Gkinis_2021} for use in \cite{Gkinis_2021}. It requires two main inputs, temperature and accumulation rate, and no prior knowledge of the isotopic signal is required. The model provides computation of the diffusion lengths for the mentioned water isotopes. As previously discussed, the diffusion lengths are a metric for the smoothing a signal has undergone and can, along with deconvolution techniques also discussed in this thesis, be used to reconstruct some of the signal that has been otherwise attenuated.
 \subsubsection[Diffusivity]{Firn Diffusivity}
 \label{Sec:IsoCFM_FirnDiffusivity}
 The Iso-CFM framework contains a number of different new modules added to the CFM. A specific module for calculation of the firn diffusivity, $D(\rho(z))$, is provided, containing several different methods for the calculations of the individual parameters contained in the calculation of the diffusivity constant, using the formulation in \cite[Johnsen et al., 2000]{Johnsen2000}:
@@ -272,32 +272,150 @@ The Iso-CFM framework contains a number of different new modules added to the CF
 	D_i(z) = \frac{m\, p \, D_{\text{air}}}{R \, T(z) \, \alpha^{i}_{s/v}\, \tau(z)}\left(\frac{1}{\rho(z)} - \frac{1}{\rho_{\text{ice}}}\right)
 	\label{Eq:DiffusivityConstant}
 \end{equation}
-For a more extensive description of the terms and their parameterizations, see Appendix \ref{App:FirnDiffusivity} and \cite[Gkinis et al., 2019]{Gkinis2019}. Here will only be given a short walk-through of the terms:
+with $i \in {\text{O}^{18}, \text{O}^{17}, \text{D}}$ representing the three different types of water isotopic ratios generally examined. The different terms in \ref{Eq:DiffusivityConstant} each describes the following:
 
-$m$: molecular weight in [kg],
-
-$p$: saturation vapor pressure over ice in [Pa]with three different calculation methods, see Appendix \ref{App:FirnDiffusivity}, 
-
-$D_{\text{air}}$: diffusivity of water vapor in air,
+$m$: molecular weight in [kg]
 
 $R = 8.314478 \left[\frac{\text{m}^3\text{Pa}}{\text{K mol}}\right]$: molar gas constant
 
+$T$ Temperature [K]
+
+$p$: saturation vapor pressure over ice in [Pa]
+
+The saturation vapor pressure over ice can be calculated in two different ways, as in \cite[Murphy \& Koop 2005]{MurphyKoop_2005}:
+
+\begin{equation}
+	p = \exp\left(28.9074 - \frac{6143.7}{T}\right)
+	\label{Eq:SatVapPres1}
+\end{equation}
+\begin{equation}
+	p = \exp\left(9.5504 - \frac{5723.265}{T} + 3.530\, \ln(T) - 0.0073 \, T\right)
+	\label{Eq:SatVapPres2}
+\end{equation}
+where Eq. \ref{Eq:SatVapPres2} takes the temperature dependence of the latent heat of sublimation of ice into account when integrating the Clausius-Clapeyron equation.
+A third expression is presented in \cite[Johnsen et al., 2000]{Johnsen2000a} as:
+\begin{equation}
+	p = 3.454 \cdot 10^{12} \exp\left(\frac{-6133}{T}\right)
+	\label{Eq:SatVapPres3}
+\end{equation}
+which will be the one used for analytical calculations of diffusion length in this project.
+
+
+$D_{\text{air}}$: diffusivity of water vapor in air,
+
+calculated from $P_0 = 1 \text{Atm}$, $T_0 = 273.15 \text{K}$, $T$ temperature in [K] and $P$ ambient pressure in [Atm], as in \cite[Hall and Prupacher, 1976]{HallPrupacher1976}:
+\begin{equation}
+	D_{\text{air}} = 2.1 \cdot 10^{-5} \left(\frac{T}{T_0}\right)^{1.94}\left(\frac{P_0}{P}\right)
+	\label{Eq:DiffusivAir}
+\end{equation}
+
+From \cite[Merlivat, 1978]{Merlivat1978} the additional diffusivity of water isotopes ratios for $^{18}$O and $^2$H vapor were defined as 
+\begin{align}
+	D_{\text{air}^2\text{H}} &= \frac{D_{\text{air}}}{1.0251} \\
+	D_{\text{air}^{18}\text{O}} &= \frac{D_{\text{air}}}{1.0285} 	
+\end{align}
+
 $\alpha_{s/v}^i$: solid-to-vapour fractionation factor. $i = {^{18}\text{O},\; \text{D}},\; ^{17}\text{O}$,
+
+For both $\alpha_{s/v}^{18}$ and $\alpha_{s/v}^{2}$ there are multiple options for parameterisation of the fractionation factor. Considering $\alpha_{s/v}^{18}$, one can choose between \cite[Majoube 1971]{Majoube1970} and \cite[Elleh\o j et al., 2013]{Ellehoj2013}, respectively as:
+\begin{equation}
+	\ln(\alpha_{s/v}^{18}) = \frac{11.839}{T} - 28.224\cdot 10^{-3}
+	\label{Eq:FractFact18_Majoube}
+\end{equation}
+and
+\begin{equation}
+	\ln(\alpha_{s/v}^{18}) = 0.0831 - \frac{49.192}{T} + \frac{8312.5}{T^2}
+	\label{Eq:FractFact18_Ellehoj}
+\end{equation}
+For $\alpha_{s/v}^{2}$ the parameterisation from \cite[Merlivat and Nief, 1967]{MerlivatNief1967}, \cite[Elleh\o j et al., 2013]{Ellehoj2013} or \cite[Lamb et al., 2017]{Lamb2017}, respectively as:
+
+\begin{equation}
+	\ln(\alpha_{s/v}^{2}) = \frac{16288}{T^2} - 9.45\cdot 10^{-2},
+	\label{Eq:FractFact2_Merlivat}
+\end{equation}
+\begin{equation}
+	\ln(\alpha_{s/v}^{2}) = 0.2133 - \frac{203.1}{T} + \frac{48888}{T^2}
+	\label{Eq:FractFact2_Ellehoj}
+\end{equation}
+or
+\begin{equation}
+	\ln(\alpha_{s/v}^{2}) =  \frac{13525}{T^2} - 5.59\cdot 10^{-2}.
+	\label{Eq:FractFact2_Lamb}
+\end{equation}
+
+The parameterisation of the fractionation factor related to the $^{17}$O water isotopic ratios is based on \cite[Barkan and Luz, 2005]{BarkanLuz2005} as $\alpha_{s/v}^{17} = 0.529 \alpha_{s/v}^{18}$. For a comparison of the different parameterisations see \cite[Gkinis et al., 2021]{Gkinis2021}. The default choices in the iso-CFM modules is \cite[Majoube 1971]{Majoube1970} for $\alpha_{s/v}^{18}$ and \cite[Merlivat and Nief, 1967]{MerlivatNief1967} for $\alpha_{s/v}^{2}$
 
 $\tau$: firn tortuosity
 
+In \cite[Johnsen et al., 2000]{Johnsen2000} a parameterisation of the firn tortuosity was presented as:
+\begin{equation}
+	\frac{1}{\tau} = \begin{cases}
+		1 - b_{\tau}\left(\frac{\rho}{\rho_{\text{ice}}}\right)^2,  & \rho \leq \frac{\rho_{\text{ice}}}{\sqrt{b_{\tau}}} \\
+		0, & \rho > \frac{\rho_{\text{ice}}}{\sqrt{b_{\tau}}}
+	\end{cases}
+	\label{Eq:FirnTortu_Johnsen}
+\end{equation}
+where $b_{\tau} = 1.3$ and $\rho_{\text{ice}} = 917 \frac{\text{kg}}{\text{m}^3}$, implying for $\frac{1}{\tau}=0$ a close-off density of $\rho_{\text{CO}} = 804.3 \frac{\text{kg}}{\text{m}^3}$. This close-off density refers to the density at the depth where diffusive fluxes stop and $\frac{D_{\text{air}}}{D_{\text{eff}}}\rightarrow \infty$. Different parameterisations have been suggested, some defined from the total porosity, but for this project, the expression used is the one given in Eq. \ref{Eq:FirnTortu_Johnsen}.
 
 \subsubsection[Diffusion Length Profiles]{Diffusion Length Profiles}
 \label{Sec:IsoCFM_DiffLenProfile}
-The Iso-CFM contains three different routines for computing diffusion length profiles, one that is based on a fully analytical solution to Fick's second law, one based on a semi-analytical solution, and on that finds a fully numerical solution. 
+The iso-CFM computes a numerical solution for $\sigma$ using a time-stepping scheme, as is the case for the original CFM, to estimate the most likely diffusion length profile at a given site. From each time step the CFM computes $\frac{\text{d}\rho}{\text{d}t}$ and $T$, and the iso-CFM uses these results to calculate the quantity $\frac{\text{d}\sigma^2}{\text{d}t}$:
+\begin{equation}
+	\frac{\text{d}\sigma^2}{\text{d}t} = 2\left(D(t) - \frac{\sigma^2}{\rho}\frac{\text{d}\rho}{\text{d}t}\right)
+	\label{Eq:dsigma2_dt}
+\end{equation}
+Eq. \ref{Eq:dsigma2_dt} shows that the diffusion length signal throughout the ice is a result of two processes, opposing each other: the always positive diffusivity term $D(t)$, and the densification process contributing negatively to the change over time, $-\frac{\sigma^2}{\rho}\frac{\text{d}\rho}{\text{d}t}$. \todo{Diffusion/densification terms figure. See V. Gkinis 2021.} After a certain depth, the densification term comes to dominate and thus the entire equation becomes negative and the value of the diffusion length is decreasing.
 
-\begin{itemize}
-	\item \lstinline[columns=fixed]|analytical_hl|:
-	\item \lstinline[columns=fixed]|semi_analytical_hl|:
-	\item \lstinline[columns=fixed]|numerical_hl|:
-\end{itemize}
+To simplify the work of this thesis, the numerical module of the CFM and the iso-CFM has not been implemented in the final computations, and the diffusion length profiles referred to in the rest of the project are calculated through an analytical method, using equations derived from Eq. \ref{Eq:dsigma2_dt} analytically. A short walk-through of the derivations will be presented here as they are described in \cite[Gkinis et al., 2021]{Gkinis2021}.
+By substitution of variables rearrangement Eq. \ref{Eq:dsigma2_dt} becomes:
+\begin{equation}
+	\frac{\text{d}\sigma^2}{\text{d}\rho} + \frac{2\sigma^2}{\rho} = 2\left(\frac{\text{d}\rho}{\text{d}t}\right)^{-1}D(\rho)
+	\label{Eq:dsigma_dt_rearrange}
+\end{equation}
+which can be converted to integral form:
+\begin{equation}
+	\sigma^2(\rho) = \frac{1}{\rho^2}\int_{\rho_0}^{\rho}2\rho'^2\left(\frac{\text{d}\rho'}{\text{d}t}\right)^{-1}D(\rho')\text{d}\rho'
+	\label{Eq:sigma2_rho_integral}
+\end{equation}
+Then, by using the densification rate parameterisation given in \cite[Herron and Langway, 1980]{HerronLangway1980}, the expression becomes:
+\begin{equation}
+	\frac{\text{d}\rho(z)}{\text{d}t} = k(T)\, A^{\nu}\, (\rho_{\text{ice}} - \rho(z)),
+	\label{Eq:drho_dt}
+\end{equation}
+where $k(T)$ is an Arrhenius-type densification rate constant, dependent on temperature and densification zone described by:
+\begin{equation}
+	k_0(T) = 0.011\, \exp\left(-\frac{10160}{RT}\right), \qquad \nu_0 = 1
+	\label{Eq:ArrCoeff_Zone1}
+\end{equation}
+in the upper densification zone, $\rho < 550 \rho_{\text{CO}}$. In the lower densification zone, $\rho \geq \rho_{\text{CO}}$, it is described as:
+\begin{equation}
+	k_1(T) = 0.575\, \exp\left(-\frac{21400}{RT}\right), \qquad \nu_1 = 0.5.
+	\label{Eq:ArrCoeff_Zone2}
+\end{equation}
+Using the parameterization of the diffusivity coefficient from Eq. \ref{Eq:DiffusivityConstant} and expressing the term $1/\tau = 1-b_{tau}\left(\frac{\rho}{\rho_{\text{ice}}}\right)^2$ in densities, the diffusivity coefficient can be described as a function of density:
+\begin{equation}
+	D_i(\rho) = \frac{m \, p \, D_{\text{air}}}{R \, T \, \alpha_{s/v}^i}\left(1-b_{\tau}\left(\frac{\rho}{\rho_{\text{ice}}}\right)^2\right)\left(\frac{1}{\rho} - \frac{1}{\rho_{\text{ice}}}\right).
+	\label{Eq:DiffusivityConstant_2}
+\end{equation}
+
+By then inserting in Eq. \ref{Eq:sigma2_rho_integral}, defining $\frac{m \, p \, D_{\text{air}}}{R \, T \, \alpha_{s/v}^i} = \zeta$, and integrating the final analytical equations for the diffusion length in upper and lower densification zones can be obtained:
+\begin{equation}
+	\sigma^2(\rho < \rho_{\text{CO}}) = \frac{\zeta}{\rho^2 \, k_0 \, A^{\nu_0} \rho_{\text{ice}}}	\left[\rho^2 - \rho_0 - \frac{b_{\tau}}{2\rho_{\text{ice}}^2}(\rho^4 - \rho_0^4)\right]
+	\label{Eq:sigma2_Final_Zone1}
+\end{equation}
+
+\begin{equation}
+	\begin{split}
+		\sigma^2(\rho \geq \rho_{\text{CO}}) = &\frac{\zeta}{\rho^2 \, k_1 \, A^{\nu_1} \rho_{\text{ice}}}	\left[\rho^2 - \rho_{\text{Cr}} - \frac{b_{\tau}}{2\rho_{\text{ice}}^2}(\rho^4 - \rho_{\text{Cr}}^4)\right] \\
+		&+ \frac{\zeta}{\rho^2 \, k_0 \, A^{\nu_0} \rho_{\text{ice}}} \left[\rho_ {\text{Cr}}^2 - \rho_0 - \frac{b_{\tau}}{2\rho_{\text{ice}}^2}(\rho_{\text{Cr}}^4 - \rho_0^4)\right]
+	\end{split}
+	\label{Eq:sigma2_Final_Zone2}
+\end{equation}
+
+The analytical equations have been used for creating a contour plot of the analytical solutions for $\sigma_{18}$ at the close-off density, $\rho_{\text{CO}}$. \todo{Create contour plot as in Gkinis2021}
 
 
+These analytical equations are used to compute diffusion lengths to compare with the optimal diffusion length estimates computed from the raw data. One could advantageously spend some time and energy on using the iso-CFM to numerically compute the comparison diffusion lengths with different temperature and accumulation forcing to recreate a diffusion length profile corresponding to the largest likelihood at a given drill site. Since the iso-CFM do consist of many different modules all with different possibilities for parameterisation, it is outside the scope of this project to develop a iso-CFM diffusion length estimate. In depth methodology and results from the iso-CFM can be found in \cite[Gkinis et al., 2021]{Gkinis2021}.
 
 \section[Temperature Estimation]{Temperature Estimation}
 \todo{ICE-TEMP.EST:This entire section needs to be written}

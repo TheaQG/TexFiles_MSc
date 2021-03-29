@@ -9,7 +9,7 @@ N.~Ahmed, T.~Natarajan, and K.~R. Rao.
 G~Bruun.
 \newblock {z-Transform DFT filters and FFTs}.
 \newblock {\em IEEE Transactions on Acoustics, Speech and Signal Processing
-  (ASSP)}, 26(1):56--63, 1078.
+  (ASSP)}, 26(1):56--63, 1978.
 
 \bibitem{Cooley1965}
 J.~W. Cooley and J.~W. Tukey.
@@ -22,6 +22,13 @@ Vasileios Gkinis, Christian Holme, Emma~C Kahle, C~Max Stevens, Eric~J Steig,
 \newblock {Numerical experiments on firn isotope diffusion using the Community
   Firn Model}.
 \newblock {\em Journal of Glaciology}, in review(x):1--54, 2019.
+
+\bibitem{Gkinis_2021}
+Vasileios Gkinis, Christian Holme, Emma~C Kahle, Max~C Stevens, Bo~M Vinther,
+  and Eric~J Steig.
+\newblock {Numerical experiments on firn isotope diffusion with the Community
+  Firn Model}.
+\newblock 2021.
 
 \bibitem{Good1958_PrimeFFT}
 I.~J. Good.
@@ -38,6 +45,13 @@ M.~M. Herron and C.~C.~Jr. Langway.
 S.~J. Johnsen.
 \newblock {Stable isotope homogenization of polar firn and ice}.
 \newblock {\em Isotopes and impurities in snow and ice}, (1):210--219, 1977.
+
+\bibitem{Johnsen2000a}
+Sigfus Johnsen, Henrik Clausen, Kurt~M Cuffey, Georg Hoffmann, Jakob Schwander,
+  and Timothy Creyts.
+\newblock {Diffusion of stable isotopes in polar firn and ice: the isotope
+  effect in firn diffusion}.
+\newblock {\em Physics of Ice Core Records, 121-140}, pages 121--140, 2000.
 
 \bibitem{Johnsen2000}
 Sigf{\'{u}}s~J. Johnsen, Henrik~B. Clausen, Kurt~M. Cuffey, Georg Hoffmann,
@@ -63,9 +77,8 @@ Farokh Marvasti.
 \newblock 1993.
 
 \bibitem{Patankar1980}
-S.V. Patankar.
-\newblock {\em {Numerical Heat Transfer and Fluid Flow}}.
-\newblock Boca Raton, 1st edition, 1980.
+S~V Patankar.
+\newblock {PatankarNumericalHeatTransferandFluidFlow}, 1980.
 
 \bibitem{Ruiz-Antolin2018}
 Diego Ruiz-Antolin and Alex Townsend.
