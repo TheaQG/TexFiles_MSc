@@ -3,8 +3,8 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Complete_1stDraft.aux
 The style file: plain.bst
 Database file #1: /home/thea/Documents/Bibliographies/MasterThesis.bib.bib
-Repeated entry---line 782 of file /home/thea/Documents/Bibliographies/MasterThesis.bib.bib
- : @book{Patankar1980
+Repeated entry---line 920 of file /home/thea/Documents/Bibliographies/MasterThesis.bib.bib
+ : @misc{Patankar1980
  :                   ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "MurphyKoop_2005"
@@ -14,49 +14,53 @@ Warning--I didn't find a database entry for "Majoube1970"
 Warning--I didn't find a database entry for "Ellehoj2013"
 Warning--I didn't find a database entry for "MerlivatNief1967"
 Warning--I didn't find a database entry for "Lamb2017"
+Warning--I didn't find a database entry for "BarkanLuz2005"
+Warning--I didn't find a database entry for "Gkinis2021"
+Warning--I didn't find a database entry for "Press2007"
 Warning--empty journal in Gkinis_2021
 Warning--there's a number but no volume in Johnsen1977
 Warning--empty publisher in Marvasti1993
+Warning--empty publisher in Patankar1980
 Warning--empty publisher in Potts2001
 You've used 20 entries,
             2118 wiz_defined-function locations,
-            653 strings with 10038 characters,
-and the built_in function-call counts, 10409 in all, are:
-= -- 918
+            661 strings with 10113 characters,
+and the built_in function-call counts, 10440 in all, are:
+= -- 922
 > -- 889
 < -- 5
 + -- 354
 - -- 334
-* -- 969
-:= -- 1832
-add.period$ -- 60
+* -- 976
+:= -- 1839
+add.period$ -- 61
 call.type$ -- 20
 change.case$ -- 226
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 243
+cite$ -- 25
+duplicate$ -- 248
 empty$ -- 521
 format.name$ -- 334
-if$ -- 1977
+if$ -- 1982
 int.to.chr$ -- 0
 int.to.str$ -- 20
-missing$ -- 20
-newline$ -- 102
+missing$ -- 22
+newline$ -- 103
 num.names$ -- 40
-pop$ -- 215
+pop$ -- 213
 preamble$ -- 1
 purify$ -- 207
 quote$ -- 0
-skip$ -- 173
+skip$ -- 171
 stack$ -- 0
 substring$ -- 481
 swap$ -- 44
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 78
-warning$ -- 4
+type$ -- 76
+warning$ -- 5
 while$ -- 75
 width$ -- 22
-write$ -- 216
+write$ -- 219
 (There was 1 error message)

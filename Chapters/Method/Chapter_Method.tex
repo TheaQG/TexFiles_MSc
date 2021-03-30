@@ -3,6 +3,7 @@
 \begin{document}
 
 \section[First $\sigma$ estimate]{Estimating $\sigma$ from Data: First Estimate}
+\label{Sec:Method_FirstSigmaEstimate}
 This section contains a walk through of the method to back diffuse a given ice core depth series to attempt to restore as much of the original signal as possible. For now, the method has been developed for sections that has been dated to be between the two volcanic eruptions Laki and Tambora, as these are very well dated, and thus it is possible to find the optimal diffusion length to back diffuse with as the actual number of annual layers is exactly known for this data series. The method is easily modified for any other dated depth series, as what is needed is just the number of annual layers in the given data series.\\
 Figure \ref{Fig:FlowchartDiffLen} shows a flowchart of the method used to estimate the diffusion length of a depth series with a preliminary guess of number of annual layers. In the following sections each of the steps in the method will be discussed more thoroughly and examples will be given, all based on the Greenlandic ice core drilled at Site A near Crete(REFERENCES!!!).
 The method is built such that it takes two inputs - the isotopic depth series, and the specifications for the particular ice core - and uses these for the first preliminary computations needed to make a first, naïve guess of the diffusion length, $\sigma_0$.
@@ -85,6 +86,7 @@ On the other hand, if the counted number is equal to the actual number, then the
 
 
 \subsection[Input]{Input}
+\label{Subsec:Method_FirstSigmaEstimate_Input}
 To compute the final diffusion length and depth series, two inputs are needed: the measured isotopic depth series and the specifications of the examined core. Through this section all examples have been carried out using the core Site A.\\
 \begin{figure}
 	\centering
@@ -132,6 +134,7 @@ In Figure \ref{fig:SiteA_d18OInsert} the depth series between the eruptions Laki
 	\label{fig:SiteA_ECMd18O_combo}
 \end{figure}
 \subsection[Preliminary Computations]{Preliminary Computations}
+\label{Subsec:Method_FirstSigmaEstimate_PrelimComputations}
 From the inputs a number of preliminary computations need to be carried out before the optimization of the diffusion length can be performed. For the depth series this consists of first interolating the data to make sure that the depth series is evenly sampled, then an analysis of signal and noise in the frequency spectrum needs to be carried out, and from this spectral analysis a Wiener filter can be constructed to find the optimal high frequency cut off, where as much noise as possible is filtered away while losing as little of the signal as possible. These computations are all based on the depth series data and use only signal analysis theory.\\
 The input of core specifications on the other hand is used to give a more theoretical view of the situation. From these preliminary inputs, containing accumulation rate, borehole temperatures, altitudes and other conditions, it is possible to use ice core and ice flow theory to compute initial estimates of density and diffusion profiles at the given site. From these profiles along with the volcanic horizons indicating the series of interest, an initial estimate of the diffusion length at the depth of Laki to Tambora.\\
 Firstly, the computations associated with the core site specifications are considered and later the ones associated with inputted depth series are described. 
@@ -140,6 +143,7 @@ Firstly, the computations associated with the core site specifications are consi
  
 
 \subsubsection[Density Profile]{Core Specifications: Density Profile}
+\label{Subsubsec:Method_FirstSigmaEstimate_PrelimComputations_DensProfile}
 \marginnote{%
 	\footnotesize
 	\centering
@@ -248,6 +252,8 @@ The program consists of the following different modules:
 In Figure \ref{fig:SiteA_DensProfile_wHL} an example of the semi-analytical depth-density modelling can be seen for the core drilled at Site A. It shows the measured depth and density data(black), the purely analytical model(blue) and the semi-analytical fit-to-data-model(orange). The first and second stages of densification can clearly be seen in both data and model as a kink in a depth just shy of 20 m.
 
 \subsubsection[Diffusion Profile]{Core Specifications: Diffusion Profile}
+\label{Subsubsec:Method_FirstSigmaEstimate_PrelimComputations_DiffProfile}
+
 \begin{marginfigure}
 	\centering
 	\includegraphics[width=\marginparwidth]{SiteA_DiffProfile.jpg}
@@ -256,11 +262,14 @@ In Figure \ref{fig:SiteA_DensProfile_wHL} an example of the semi-analytical dept
 \end{marginfigure}
 
 \subsubsection[$\sigma_0$ estimate]{Core Specifications: $\sigma_0$ estimate}
+\label{Subsubsec:Method_FirstSigmaEstimate_PrelimComputations_Sigma0Estimate}
+
 \todo{$\sigma(z)$ vs $\sigma_C$}
 
 
 
 \subsection[Back Diffusion]{Back Diffusion/Deconvolution}
+\label{Subsec:Method_FirstSigmaEstimate_BackDiffusion}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{SiteA_filtersEx.jpg}
@@ -274,6 +283,7 @@ In Figure \ref{fig:SiteA_DensProfile_wHL} an example of the semi-analytical dept
  
 
 \subsubsection[Spline Interpolation]{Depth Series: Spline Interpolation}
+\label{Subsubsec:Method_FirstSigmaEstimate_BackDiffusion_SplineInterp}
 When working with ice core data, it is not always a certainty that the data you get from the field are as continuous or as evenly sampled as one could have hoped. A lot of factors are at play when drilling, transporting, dividing and cutting an ice core for laboratory studies. Some parts of an ice core contain brittle zones where the ice is likely to break, leaving a section almost impossible to analyze. When transporting the drilled ice cores they are susceptible to both melting and contamination and evaporation of the outermost ice layer of the core. And finally of course there is a number of uncertainties that occur when cutting an ice core into discrete bits to be measured. The quality of data varies rather greatly from site to site, from drill team to drill team and of course from laboratory to laboratory. \\
 \begin{figure}[h]
 	\centering
@@ -308,9 +318,11 @@ The original data are then used to define a cubic spline interpolation function 
 
 
 \subsubsection[Transforms Implementation]{Implementation of Spectral Transforms}
-
+\label{Subsubsec:Method_FirstSigmaEstimate_BackDiffusion_SpectralTransforms}
 
 \subsubsection[Spectral Analysis]{Depth Series: Spectral Analysis}
+\label{Subsubsec:Method_FirstSigmaEstimate_BackDiffusion_SpectralAnalysis}
+
 \begin{figure}[h]
 	\centering
 	\begin{subfigure}{.45\textwidth}
@@ -395,6 +407,8 @@ The signal, noise and combined fit can be seen separately in Figure \ref{fig:Sit
 
 
 \subsubsection[Wiener Filter]{Depth Series: Wiener Filter}
+\label{Subsubsec:Method_FirstSigmaEstimate_BackDiffusion_WienerFilter}
+
 \begin{marginfigure}
 	\centering
 	\begin{subfigure}{\marginparwidth}
@@ -424,11 +438,27 @@ This logistic curve can be seen plotted on a linear and a double logarithmic sca
 
 Now, the one branch of the preliminary work considering the raw depth series, has been dealt with and the remaining work before back diffusion can be carried out consisting of using the specifications of the core at the given drill site to give a qualified first guess on diffusion length.
 
+\subsection{Measured $\sigma$ Estimate Corrections}
+\label{Subsec:Method_FirstSigmaEstimate_Correction}
 
+\todo{METH-CORRECTIONS: Write about this}
+
+\subsubsection[Ice diffusion]{Ice Diffusion, $\sigma_{\text{ice}}$}
+\label{Subsubsec:Method_FirstSigmaEstimate_Correction_IceDiffusion}
+
+\subsubsection[Sampling diffusion]{Sampling Diffusion, $\sigma_{\text{dis}}$}
+\label{Subsubsec:Method_FirstSigmaEstimate_Correction_SamplingDiffusion}
+
+\todo{Sampling diffusion and correction: Make table of mean and std of sample sizes.}
+
+\subsubsection[Thinning Function]{Thinning Function S(z)}
+\label{Subsubsec:Method_FirstSigmaEstimate_Correction_ThinningFunction}
 
 \subsection[Peak Counting]{Peak Counting}
+\label{Subsec:Method_FirstSigmaEstimate_PeakCounting}
 
 \subsubsection[Interpolation]{Spline Interpolation for Optimal Peak Detection}
+\label{Subsubsec:Method_FirstSigmaEstimate_PeakCounting_SplineInterp}
 
 \begin{figure}
 	\centering
@@ -438,10 +468,13 @@ Now, the one branch of the preliminary work considering the raw depth series, ha
 \end{figure}
 
 \section[Optimal $\sigma$ Estimate]{Estimating $\sigma$ from Data: Optimal Diffusion Length}
+\label{Sec:Method_OptimalSigmaEstimate}
 
 \subsection[Decision algorithm]{Decision Algorithm}
+\label{Subsec:Method_OptimalSigmaEstimate_DecisionAlgorithm}
 
 \subsection[Output]{Output}
+\label{Subsec:Method_OptimalSigmaEstimate_Output}
 \todo{METH-OUT: Remember: write about sampling sigma}
 
 \begin{figure}
@@ -452,27 +485,43 @@ Now, the one branch of the preliminary work considering the raw depth series, ha
 \end{figure}
 
 \section[Stability Tests]{Method Testing and Stability}
+\label{Sec:Method_StabilityTests}
 \todo{METH-TESTS: Write entire section.}
 
 \subsection[Maximal $N_{\text{peaks}}$]{Diffusion Length Estimate Versus Number of Counted Peaks}
+\label{Subsec:Method_StabilityTests_MaxNPeaks}
 \todo{METH-TESTMAX: Write entire section.}
 
 \subsection[Interpolation 1]{Interpolation of Data Before Deconvolution}
+\label{Subsec:Method_StabilityTests_Interpolation1}
 \todo{METH-TESTINT1: Write entire section.}
 
 \subsection[Interpolation 2]{Interpolation of Data After Deconvolution}
+\label{Subsec:Method_StabilityTests_Interpolation2}
 \todo{METH-TESTINT2: Write entire section.}
 
 
 \section[Upgrading the Algorithms]{Upgrading the Algorithms}
+\label{Sec:Method_UpgradingAlgorithms}
 \todo{METH-UPGRADE: Write entire section.}
 \subsection[Peak Detection: ML]{Peak Detection through Machine Learning}
+\label{Subsec:Method_UpgradingAlgorithms_PeakDetectionML}
+
 \todo{METH-UPGRADEPEAK: Do the ML Peak Detection, then Write entire section.}
+
 \subsection[Linear Timescale]{Linear Timescale}
+\label{Subsec:Method_UpgradingAlgorithms_LinearTimescale}
+
 \todo{METH-UPGRADETIME: Incorporate Linear Timescale in Recursivity - then Write entire section.}
+
 \subsection[Standardization]{Standardization and Detrending}
+\label{Subsec:Method_UpgradingAlgorithms_Standardization}
+
 \todo{METH-UPGRADESTAND: Maybe not necessary?Write entire section.}
+
 \subsection[Recursivity and Constraints]{Recursivity and New Constraints}
+\label{Subsec:Method_UpgradingAlgorithms_RecurseAndConstraints}
+
 \todo{METH-UPGRADERECURS: Develop recursive algorithm with new constraints for peak finding - then write entire section.}
 
 
@@ -482,10 +531,17 @@ Now, the one branch of the preliminary work considering the raw depth series, ha
 
 
 \section[Missing Data]{Reconstruction of Missing Data}
+\label{Sec:Method_MissingData}
+
 \todo{METH-MISSDATA: Write entire section. Maybe not necessary...}
+
 \subsection[Interpolation Method]{Interpolation Method}
+\label{Subsec:Method_MissingData_InterpMethod}
+
 \todo{METH-MISSDATAINTERP: Write entire section. Show baddddd figures.}
+
 \subsection[MEM]{Maximum Entropy Method}
+\label{Subsec:Method_MissingData_MEM}
 \todo{METH-MISSDATAMEM: Write entire section. Refer to Bo Vinther's MEM reconstruction method.}
 
 

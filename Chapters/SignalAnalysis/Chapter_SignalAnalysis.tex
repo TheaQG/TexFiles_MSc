@@ -5,12 +5,13 @@
 The data obtained through various experimental measurements are easily compared with a time series, as they typically show some quantity measured all along the depth of an ice core. This depth is often, at short intervals, treated as a regular linear time series thus making it possible to use some of the known signal analysis methods. Of course, when considering the entirety of an ice core, the linearity disappears as thinning and compression makes the depth series non linear. But when considering short lengths of core it is possible to estimate a linearity, assuming conformity in this specific layer. 
 
 \section[Back Diffusion][Back Diffusion]{Back Diffusion}
-
+\label{Sec:SignalAnalysis_BackDiffusion}
 Due to diffusion in firn and ice, some of the water isotopic signal is lost. Some of this signal can be restored by investigating the diffusion process, and through filtering and deconvolution techniques(REFERENCES).
 For the data of this thesis two different restoration techniques are presented: a spectral method, determining the effect of mixing and diffusion as a spectral filter(REFERENCES), and a kernel restoration method much like the ones used to restore pixel resolution in images (REFERENCES). 
 \subsection[Spectral Analysis][Spectral Analysis]{Spectral Analysis}
-
+\label{Subsec:SignalAnalysis_BackDiffusion_SpectralAnalysis}
 \subsubsection[PSD][PSD]{Power Spectral Densities}
+\label{Subsubsec:SignalAnalysis_BackDiffusion_SpectralAnalysis_PSD}
 A very useful tool for analyzing signals exhibiting oscillatory effects is analysis of the signals power spectrum. Instead of considering the signal in time, it is transformed to the spectral domain, where it is possible to obtain an estimate of both the signal and the underlying noise. This is crucial for enhancing the signal and filtering away noise. But to be able to examine these effects, first the data must be transformed. A range of different methods may be used to compute the frequency transform of the depth series, here I present the three I have been working with. Since the data are discrete and experimental, I will be presenting the discrete and applicable mathematical models.\\
 When considering a signal, it may be of interest to investigate how the energy of said signal is distributed with frequency. The total power is defined as:
 \begin{equation}
@@ -56,6 +57,7 @@ In the above the transform used to define the PSD was presented as the Fourier t
 \end{quote}
 
 \subsubsection[DFT \& FFT][DFT \& FFT]{Discrete and Fast Fourier Transform}
+\label{Subsubsec:SignalAnalysis_BackDiffusion_SpectralAnalysis_DFTFFT}
 The definition of the continuous Fourier transform and its inverse was presented in the above. The Fourier transform is as seen a way of representing the function under consideration as an infinite sum of periodic components. When the function is discrete, so will the Fourier transform be, and the integral is replaced with a sum. This gives us the Discrete Fourier Transform (DFT) which transforms the signal into a sum of separate components contributing at different frequencies. The DFT is dependent on the sampling interval, $\Delta$, and we can describe our discrete signal $X$ as a function of N discrete time steps $t_k = k\cdot\Delta$, where $k = 0, \, 1,\, ..., \, N-1$:
 \begin{equation}
 	X_k \equiv X(t_k)
@@ -99,6 +101,7 @@ The inverse DFT is given as:
 Computation of the DFT can be very slow and tiresome, since it involves complex multiplication between a number of vectors and matrices. If we write Equation \ref{Eq:DFT} as $\tilde{X}_n = \sum_{k=0}{N-1}W^{nk}X_k,$ where  $W$ is a complex number $W\equiv e^{2\pi i /N}$. This shows that the vector $X_k$ must be multiplied with a complex matrix which (n,k)th component consists of the constant $W$ to the power of $nk$. This matrix multiplication evidently leads to a process of $O(N^2)$. Fortunately, a number of different algorithms implementing a wide range of different theories from complex number arithmetic and prime-factoring to group and number theory (\cite{Cooley1965},\cite{Good1958_PrimeFFT}, \cite{Bruun1978__BruunsFFT} and others) have been developed for fast and efficient computation of the discrete Fourier transform. One of these is called the Fast Fourier Transform (FFT), which can reduce the computations to just $\mathcal{O}(N\log_2 N)$. In this thesis the FFT used is the one implemented in the \lstinline[language=Python]|scipy.fft| Python package \cite{Virtanen2020_SciPy}, which is based on the works of \cite{Cooley1965}. See said article for implementation details. One important thing about this specific algorithm is that for the algorithm to function most efficiently, the number of points computed in the frequency space must be of a power of 2, following the use of base $\log_2$
 
 \subsubsection[NUFT][NUFT]{Nonuniform Discrete Fourier Transform}
+\label{Subsubsec:SignalAnalysis_BackDiffusion_SpectralAnalysis_NUFT}
 All FFT algorithms evaluates the DFT definitions from Eqs. \ref{Eq:DFT} to \ref{Eq:InverseDFT} in fast and efficient ways. But one key assumption for these methods is that the data under examination are equispaced, i.e. uniformly distributed, based on the summation in Eq. \ref{Eq:DFT}. The computations thus expect uniform data as input and returns uniform data as output. Unfortunately this is not always the case for data collected in physical experiments. In this case the basic assumptions for the calculations of both DFT and FFT are flawed. \\
 The most general form of a nonuniform transform would be the one that takes non-equispaced data as input and also returns non-equispaced transforms as output. Firstly we wish to create a nonuniform discrete Fourier transform (NUDFT) that transforms a sequence of $N$ complex numbers $X_0,...,X_{N-1}$ to a different sequence of $M$ complex numbers, $\tilde{X}_0,...,\tilde{X}_{M-1}$. The one-dimensional NUDFT the computes the transformed vector $\tilde{\boldsymbol{X}} = (\tilde{X}_0,...,\tilde{X}_{M-1})^{\text{T}}$, with entries computed as the sum
 \begin{equation}
@@ -109,6 +112,7 @@ The values $X_0, ...,X_{N-1}$ are sample values, $p_0,...,p_{N-1}$ are sample po
 
 
 \subsubsection[DCT][DCT]{Discrete Cosine Transform}
+\label{Subsubsec:SignalAnalysis_BackDiffusion_SpectralAnalysis_DCT}
 The Fourier transform in any of its many forms is designed to process complex-valued signals, always producing a complex-valued spectrum, even for signals that were strictly real-valued. The real-valued or complex-valued part of the Fourier spectrum is on their own not enough to represent the full information of the signal, since neither the cosine nor he sine functions (corresponding to the real and the complex parts of the spectrum respectively), constitute a complete set of basis functions. Nonetheless, a purely real-valued signal has a symmetric Fourier spectrum, meaning that it is only necessary to compute half the number of spectral coefficients, without losing any signal information. Since the signals analyzed in this thesis are strictly real, one way to use this knowledge to improve on the works of this project is to consider a different, less expensive, purely real spectral transform. The cosine transform \cite{Ahmed1974_DCT} seems to do the trick: it uses only cosine functions as basis functions and operates with only real-valued signal and spectral coefficients, and have properties similar to the Fourier transform.\\
 For the discrete version of the cosine transform, DCT, and its inverse, IDCT, a number of different definitions have been proposed, but for this work, the originally formulations by \cite{Ahmed1974_DCT} are used. These are often referred to as "The DCT" and "The IDCT", and other times as DCT-II and DCT-III. The entries of the computed discrete cosine transform vector,$\tilde{X}_0,...,\tilde{X}_{M-1}$ , of a real-valued signal of $N$ data points, $X_0,...X_{N-1}$, is computed as
 \begin{equation}
@@ -145,6 +149,7 @@ Only when the DCT-III is orthonormalized is it exactly the inverse of the orthon
 As with the DFT, the DCT can directly be computed at a cost of $\mathcal{O}(N\cdot M)$, and can also reduced to $\mathcal{O}(N \log N)$. The fast DCT algorithm(FCT) used here is based on \cite{Makhoul1980} as it is implemented in the \lstinline[language=Python]|scipy.fft.dct| package\cite{Virtanen2020_SciPy}.
 
 \subsubsection[NDCT][NDCT]{Nonuniform Discrete Cosine Transform}
+\label{Subsubsec:SignalAnalysis_BackDiffusion_SpectralAnalysis_NDCT}
 Again, as with the FFT, the FCT works under the key assumption that data is equispaced. Though when data is nonuniform, the DCT is described as:
 \begin{equation}
 	\tilde{X}_k = 2\sum_{n=0}^{N-1}X_n \cos\left(2\pi f_k\left(p_n + \frac{1}{2N}\right)\right), \qquad 0 \leq k < M-1
@@ -163,10 +168,13 @@ the NDFT (\cite{Tian2000}, \cite{Zhao2008}) but it has showed to be out of the s
 
 
 \subsubsection[MEM][MEM]{Maximum Entropy Method (Burg's Method)}
+\label{Subsubsec:SignalAnalysis_BackDiffusion_SpectralAnalysis_MEM}
 \todo{SIGNAL-MEM: Write this entire section - maybe not necessary? Maybe use in reconstruction of missing data...}
 
 \subsection[Spectral Filtering][Spectral Filtering]{Spectral Filtering}
+\label{Subsec:SignalAnalysis_BackDiffusion_SpectralFiltering}
 \subsubsection[Wiener Filtering][Wiener Filtering]{Wiener Filtering}
+\label{Subsubsec:SignalAnalysis_BackDiffusion_SpectralFiltering_Wiener}
 Through spectral analysis it is possible to treat the noise of the signal consistently. The goal is to create spectral filters which enhances the signal while minimizing the effect of the noise, thus increasing the signal-to-noise ratio (SNR).\\
 Theoretically, without any diffusion, the change in isotopic concentration would be described through a step function, going from one constant concentration to another. This step function can be described by the Heaviside function:
 \begin{equation}
@@ -182,7 +190,9 @@ In reality, a number of different mixing processes change this step function, an
 
 
 \subsection[Signal Restoration][Signal Restoration]{Signal Restoration by Optimal Diffusion Length}
+\label{Subsec:SignalAnalysis_BackDiffusion_SignalRestoration}
 \subsubsection{Kernel Estimation}
+\label{Subsubsec:SignalAnalysis_BackDiffusion_SignalRestoration_KernelEstimation}
 As is well known, in the spectral domain, convolution is multiplication and the mixing is described as the multiplication between the Fourier transform of $S$ and $M$:
 \begin{equation}
 	\tilde{d} = \tilde{D} \cdot \tilde{M}
@@ -229,15 +239,19 @@ It is then possible to estimate the parameters $P_0$, $\sigma_{\text{tot}}^2$, $
 
 
 \section[Restoration][Restoration]{Enhanced Resolution and Restoration of Signal}
+\label{Sec:SignalAnalysis_Restoration}
 
-
-\subsection{Interpolation of Data}
+\subsection[Interpolation]{Interpolation of Data}
+\label{Subsec:SignalAnalysis_Restoration_Interpolation}
 For the purpose of this thesis, interpolation of data needs to be fast, efficient and result in a function as smooth as possible. The last criterion is due to the knowledge of the nature of the data. The measurements are not continuous but should indeed in theory be so. Thus a good choice for interpolation of the data examined in this thesis would be the cubic spline interpolation. An instance of a such interpolation can be seen in Figure \ref{fig:Interp}.\\
 Cubic spline interpolation has been used in two instances during this analysis, both times through the \lstinline[language=Python]|Python SciPy| package \lstinline[language=Python]|scipy.interpolate.CubicSpline|\todo{SIGNAL-INTERP: REFERENCE!!}. Firstly, to assure equally spaced data points, so as to be able to perform a useful frequency analysis through spectral transformation, see Section, \ref{sec:???}. Secondly cubic spline interpolation was used to improve on peak detection in the final back diffused data. The final data have a rather low resolution, leading to an initial guess of peak positioning that might be shifted due to the discretization. Through cubic spline interpolation it is possible to construct a smooth estimate of a signal of higher resolution, leading to a peak positioning estimate that might be less shifted, see Figure \ref{fig:InterpFinal}.
 
 \subsection[Standardisation]{Detrending and Standardising}
+\label{Subsec:SignalAnalysis_Restoration_Standardisation}
+
 \todo{SIGNAL-STANDARD: Think about if this is necessary. Maybe work into recursivity and constraints in Method?}
 \subsection[Cycle Length Estimation][Cycle Length Estimation]{Cycle Length Estimation of Detrended Signal}
+\label{Subsec:SignalAnalysis_Restoration_CycleLengthEst}
 \todo{SIGNAL-CYCLE: Think about if this is necessary. Maybe work into recursivity and constraints in Method?}
 	
 \end{document}
