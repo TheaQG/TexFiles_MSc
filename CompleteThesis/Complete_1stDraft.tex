@@ -8,7 +8,8 @@
 \usepackage{subcaption}
 \usepackage{mathrsfs}
 \usepackage{listings}
-\usepackage{xcolor}
+%\usepackage{xcolor}
+\usepackage[usenames, dvipsnames]{color}
 \usepackage{pgf}
 \usepackage{appendix}
 \usepackage{etoolbox}
@@ -19,6 +20,11 @@
 \usepackage{array}	 
 \usepackage{todonotes}
 \usepackage{marginnote}
+\usepackage{lscape}
+
+\newenvironment{rotatepage}%
+{\clearpage\pagebreak[4]\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 90}}%
+{\clearpage\pagebreak[4]\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 0}}%
 
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
