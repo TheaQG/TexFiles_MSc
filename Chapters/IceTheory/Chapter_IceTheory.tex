@@ -384,7 +384,14 @@ The iso-CFM computes a numerical solution for $\sigma$ using a time-stepping sch
 	\frac{\text{d}\sigma^2}{\text{d}t} = 2\left(D(t) - \frac{\sigma^2}{\rho}\frac{\text{d}\rho}{\text{d}t}\right)
 	\label{Eq:dsigma2_dt}
 \end{equation}
-Eq. \ref{Eq:dsigma2_dt} shows that the diffusion length signal throughout the ice is a result of two processes, opposing each other: the always positive diffusivity term $D(t)$, and the densification process contributing negatively to the change over time, $-\frac{\sigma^2}{\rho}\frac{\text{d}\rho}{\text{d}t}$. \todo{Diffusion/densification terms figure. See V. Gkinis 2021.} After a certain depth, the densification term comes to dominate and thus the entire equation becomes negative and the value of the diffusion length is decreasing.
+Eq. \ref{Eq:dsigma2_dt} shows that the diffusion length signal throughout the ice is a result of two processes, opposing each other: the always positive diffusivity term $D(t)$, and the densification process contributing negatively to the change over time, $-\frac{\sigma^2}{\rho}\frac{\text{d}\rho}{\text{d}t}$. After a certain depth, the densification term comes to dominate and thus the entire equation becomes negative and the value of the diffusion length is decreasing, see Figure \ref{Fig:ICE_DiffDensTerms}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth]{Analytical_DiffLenEq_terms_SiteA.png}
+	\caption{Contribution of the diffusion(dashed) and densification(dot-dashed) terms from Eq. \ref{Eq:dsigma2_dt} to the final analytical diffusion length solution (blue).}
+	\label{Fig:ICE_DiffDensTerms}
+\end{figure}
 
 To simplify the work of this thesis, the numerical module of the CFM and the iso-CFM has not been implemented in the final computations, and the diffusion length profiles referred to in the rest of the project are calculated through an analytical method, using equations derived from Eq. \ref{Eq:dsigma2_dt} analytically. A short walk-through of the derivations will be presented here as they are described in \cite[Gkinis et al., 2021]{Gkinis2021}.
 By substitution of variables rearrangement Eq. \ref{Eq:dsigma2_dt} becomes:
@@ -432,7 +439,14 @@ By then inserting in Eq. \ref{Eq:sigma2_rho_integral}, defining $\frac{m \, p \,
 	\label{Eq:sigma2_Final_Zone2}
 \end{equation}
 
-The analytical equations have been used for creating a contour plot of the analytical solutions for $\sigma_{18}$ at the close-off density, $\rho_{\text{co}}$. \todo{Create contour plot as in Gkinis2021}
+The analytical equations have been used for creating a contour plot of the analytical solutions for $\sigma_{18}$ at the close-off density, $\rho_{\text{co}}$. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth]{ContourPlot_Alphabet.png}
+	\caption{Crete and surrounding Alphabet cores, as their analytical solutions place them according to observed temperature and accumulation rate.}
+	\label{Fig:ICE_ContourPlot}
+\end{figure}
 
 
 These analytical equations are used to compute diffusion lengths to compare with the optimal diffusion length estimates computed from the raw data. One could advantageously spend some time and energy on using the iso-CFM to numerically compute the comparison diffusion lengths with different temperature and accumulation forcing to recreate a diffusion length profile corresponding to the largest likelihood at a given drill site. Since the iso-CFM do consist of many different modules all with different possibilities for parameterisation, it is outside the scope of this project to develop a iso-CFM diffusion length estimate. In depth methodology and results from the iso-CFM can be found in \cite[Gkinis et al., 2021]{Gkinis2021}.

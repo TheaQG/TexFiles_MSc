@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  30 MAR 2021 17:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  7 APR 2021 14:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1036,23 +1036,17 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
+Package color Info: Driver file: pdftex.def on input line 147.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
@@ -1122,7 +1116,24 @@ File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-))
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 
@@ -1402,6 +1413,9 @@ LaTeX Info: Redefining \addtolength on input line 81.
 Package: marginnote 2017/04/22 v1.2b non floating margin notes for LaTeX
 \c@mn@abspage=\count358
 )
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
@@ -1433,18 +1447,18 @@ LaTeX Warning: Label `Eq:k1' multiply defined.
 )
 \openout1 = `Complete_1stDraft.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
 \AtBeginShipoutBox=\box65
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1506,15 +1520,15 @@ Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count365
 
 ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \celsius on input line 85.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 85.
+LaTeX Info: Redefining \celsius on input line 91.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 91.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 85.
-Package gensymb Info: Using \Omega for \ohm on input line 85.
+LaTeX Info: Redefining \ohm on input line 91.
+Package gensymb Info: Using \Omega for \ohm on input line 91.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -1524,22 +1538,22 @@ Package marginnote Info: \pdfoutput not 0 or unimportant and
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 89.
+LaTeX Font Info:    Try loading font information for U+msa on input line 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 89.
+LaTeX Font Info:    Try loading font information for U+msb on input line 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 89.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 89.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1550,7 +1564,7 @@ File: ../Figures/TurnerEruptionofSoufriere-Mountains.jpg Graphic file (type jpg
 )
 <use ../Figures/TurnerEruptionofSoufriere-Mountains.jpg>
 Package pdftex.def Info: ../Figures/TurnerEruptionofSoufriere-Mountains.jpg  us
-ed on input line 93.
+ed on input line 99.
 (pdftex.def)             Requested size: 295.20113pt x 215.14186pt.
  [1
 
@@ -1574,11 +1588,11 @@ Underfull \vbox (badness 1596) has occurred while \output is active []
 
  [6]
 [7] [8] [9]) [10] (./Complete_1stDraft.lof) (./Complete_1stDraft.lot)
-(./Complete_1stDraft.lol
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3690) has occurred while \output is active []
 
- [11])
-[12] (../Chapters/Introduction/Chapter_Introduction.tex [1
+ [11]
+(./Complete_1stDraft.lol) [12]
+(../Chapters/Introduction/Chapter_Introduction.tex [1
 
 
 ]
@@ -1682,51 +1696,374 @@ LaTeX Warning: Citation `MerlivatNief1967' on page 17 undefined on input line 3
 65.
 
 
-Overfull \hbox (5.49223pt too wide) in paragraph at lines 387--387
-[][][][]\OT1/cmr/m/n/10.95 Diffusion/densification 
- []
+LaTeX Warning: Reference `Fig:ICE_DiffDensTerms' on page 17 undefined on input 
+line 387.
+
+<../Figures/Analytical_DiffLenEq_terms_SiteA.png, id=116, 484.81125pt x 557.081
+25pt>
+File: ../Figures/Analytical_DiffLenEq_terms_SiteA.png Graphic file (type png)
+<use ../Figures/Analytical_DiffLenEq_terms_SiteA.png>
+Package pdftex.def Info: ../Figures/Analytical_DiffLenEq_terms_SiteA.png  used 
+on input line 391.
+(pdftex.def)             Requested size: 221.40225pt x 254.40741pt.
+
+LaTeX Warning: Citation `Gkinis2021' on page 17 undefined on input line 396.
+
+[17] [18 <../Figures/Analytical_DiffLenEq_terms_SiteA.png>]
+<../Figures/ContourPlot_Alphabet.png, id=125, 532.99126pt x 399.4925pt>
+File: ../Figures/ContourPlot_Alphabet.png Graphic file (type png)
+<use ../Figures/ContourPlot_Alphabet.png>
+Package pdftex.def Info: ../Figures/ContourPlot_Alphabet.png  used on input lin
+e 446.
+(pdftex.def)             Requested size: 258.29887pt x 193.60733pt.
 
 
-Overfull \hbox (5.49223pt too wide) in paragraph at lines 387--387
-[][][][]\OT1/cmr/m/n/10.95 Diffusion/densification 
- []
+LaTeX Warning: Citation `Gkinis2021' on page 19 undefined on input line 452.
+
+[19]
+
+LaTeX Warning: Citation `Press2007' on page 20 undefined on input line 460.
 
 
-Overfull \hbox (5.49223pt too wide) in paragraph at lines 387--387
-[][][][]\OT1/cmr/m/n/10.95 Diffusion/densification 
- []
+LaTeX Warning: Citation `Press2007' on page 20 undefined on input line 460.
 
-
-Overfull \hbox (5.49223pt too wide) in paragraph at lines 387--387
-[][][][]\OT1/cmr/m/n/10.95 Diffusion/densification 
- []
-
-
-LaTeX Warning: Citation `Gkinis2021' on page 17 undefined on input line 389.
-
-[17] [18]
-
-LaTeX Warning: Citation `Gkinis2021' on page 19 undefined on input line 438.
-
-
-LaTeX Warning: Citation `Press2007' on page 19 undefined on input line 446.
-
-
-LaTeX Warning: Citation `Press2007' on page 19 undefined on input line 446.
-
-[19] [20] [21] [22] [23]
-<../Figures/SiteA_PSD_fit.jpg, id=139, 722.7pt x 578.16pt>
+[20 <../Figures/ContourPlot_Alphabet.png>] [21] [22] [23] [24]
+<../Figures/SiteA_PSD_fit.jpg, id=147, 722.7pt x 578.16pt>
 File: ../Figures/SiteA_PSD_fit.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_PSD_fit.jpg>
-Package pdftex.def Info: ../Figures/SiteA_PSD_fit.jpg  used on input line 527.
+Package pdftex.def Info: ../Figures/SiteA_PSD_fit.jpg  used on input line 541.
 (pdftex.def)             Requested size: 258.29887pt x 206.6377pt.
-) [24 <../Figures/SiteA_PSD_fit.jpg>]
-(../Chapters/Data/Chapter_Data.tex) [25
+) [25 <../Figures/SiteA_PSD_fit.jpg>] [26
 
-] [26
+] (../Chapters/Data/Chapter_Data.tex [27]
+
+Package xcolor Warning: Incompatible color definition on input line 17.
+
+
+Package xcolor Warning: Incompatible color definition on input line 17.
+
+
+Package xcolor Warning: Incompatible color definition on input line 17.
+
+Package epstopdf Info: Source file: <../Figures/Core_LT_B16.eps>
+(epstopdf)                    date: 2020-09-21 13:46:12
+(epstopdf)                    size: 54193 bytes
+(epstopdf)             Output file: <../Figures/Core_LT_B16-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-09-21 13:47:12
+(epstopdf)                    size: 25202 bytes
+(epstopdf)             Command: <repstopdf --outfile=../Figures/Core_LT_B16-eps
+-converted-to.pdf ../Figures/Core_LT_B16.eps>
+(epstopdf)             \includegraphics on input line 19.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ../Figures/Core_LT_B16-eps-converted-to
+.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
+d
+<../Figures/Core_LT_B16-eps-converted-to.pdf, id=158, 867.24pt x 650.43pt>
+File: ../Figures/Core_LT_B16-eps-converted-to.pdf Graphic file (type pdf)
+<use ../Figures/Core_LT_B16-eps-converted-to.pdf>
+Package pdftex.def Info: ../Figures/Core_LT_B16-eps-converted-to.pdf  used on i
+nput line 19.
+(pdftex.def)             Requested size: 162.42172pt x 121.81638pt.
+Package epstopdf Info: Source file: <../Figures/Core_LT_B18.eps>
+(epstopdf)                    date: 2020-09-21 13:46:12
+(epstopdf)                    size: 88789 bytes
+(epstopdf)             Output file: <../Figures/Core_LT_B18-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-09-21 13:47:12
+(epstopdf)                    size: 33355 bytes
+(epstopdf)             Command: <repstopdf --outfile=../Figures/Core_LT_B18-eps
+-converted-to.pdf ../Figures/Core_LT_B18.eps>
+(epstopdf)             \includegraphics on input line 19.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ../Figures/Core_LT_B18-eps-converted-to
+.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
+d
+<../Figures/Core_LT_B18-eps-converted-to.pdf, id=159, 867.24pt x 650.43pt>
+File: ../Figures/Core_LT_B18-eps-converted-to.pdf Graphic file (type pdf)
+<use ../Figures/Core_LT_B18-eps-converted-to.pdf>
+Package pdftex.def Info: ../Figures/Core_LT_B18-eps-converted-to.pdf  used on i
+nput line 19.
+(pdftex.def)             Requested size: 162.42172pt x 121.81638pt.
+Package epstopdf Info: Source file: <../Figures/Core_LT_B19.eps>
+(epstopdf)                    date: 2020-09-21 13:46:13
+(epstopdf)                    size: 70522 bytes
+(epstopdf)             Output file: <../Figures/Core_LT_B19-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-09-21 13:47:13
+(epstopdf)                    size: 25657 bytes
+(epstopdf)             Command: <repstopdf --outfile=../Figures/Core_LT_B19-eps
+-converted-to.pdf ../Figures/Core_LT_B19.eps>
+(epstopdf)             \includegraphics on input line 19.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ../Figures/Core_LT_B19-eps-converted-to
+.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
+d
+<../Figures/Core_LT_B19-eps-converted-to.pdf, id=160, 867.24pt x 650.43pt>
+File: ../Figures/Core_LT_B19-eps-converted-to.pdf Graphic file (type pdf)
+<use ../Figures/Core_LT_B19-eps-converted-to.pdf>
+Package pdftex.def Info: ../Figures/Core_LT_B19-eps-converted-to.pdf  used on i
+nput line 19.
+(pdftex.def)             Requested size: 162.42172pt x 121.81638pt.
+Package epstopdf Info: Source file: <../Figures/Core_LT_B20.eps>
+(epstopdf)                    date: 2020-09-21 13:46:13
+(epstopdf)                    size: 59288 bytes
+(epstopdf)             Output file: <../Figures/Core_LT_B20-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-09-21 13:47:13
+(epstopdf)                    size: 24219 bytes
+(epstopdf)             Command: <repstopdf --outfile=../Figures/Core_LT_B20-eps
+-converted-to.pdf ../Figures/Core_LT_B20.eps>
+(epstopdf)             \includegraphics on input line 20.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ../Figures/Core_LT_B20-eps-converted-to
+.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
+d
+<../Figures/Core_LT_B20-eps-converted-to.pdf, id=161, 867.24pt x 650.43pt>
+File: ../Figures/Core_LT_B20-eps-converted-to.pdf Graphic file (type pdf)
+<use ../Figures/Core_LT_B20-eps-converted-to.pdf>
+Package pdftex.def Info: ../Figures/Core_LT_B20-eps-converted-to.pdf  used on i
+nput line 20.
+(pdftex.def)             Requested size: 162.42172pt x 121.81638pt.
+Package epstopdf Info: Source file: <../Figures/Core_LT_B21.eps>
+(epstopdf)                    date: 2020-09-21 13:46:13
+(epstopdf)                    size: 51941 bytes
+(epstopdf)             Output file: <../Figures/Core_LT_B21-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-09-21 13:47:14
+(epstopdf)                    size: 24466 bytes
+(epstopdf)             Command: <repstopdf --outfile=../Figures/Core_LT_B21-eps
+-converted-to.pdf ../Figures/Core_LT_B21.eps>
+(epstopdf)             \includegraphics on input line 20.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ../Figures/Core_LT_B21-eps-converted-to
+.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
+d
+<../Figures/Core_LT_B21-eps-converted-to.pdf, id=162, 867.24pt x 650.43pt>
+File: ../Figures/Core_LT_B21-eps-converted-to.pdf Graphic file (type pdf)
+<use ../Figures/Core_LT_B21-eps-converted-to.pdf>
+Package pdftex.def Info: ../Figures/Core_LT_B21-eps-converted-to.pdf  used on i
+nput line 20.
+(pdftex.def)             Requested size: 162.42172pt x 121.81638pt.
+Package epstopdf Info: Source file: <../Figures/Core_LT_B22.eps>
+(epstopdf)                    date: 2020-09-21 13:46:14
+(epstopdf)                    size: 73382 bytes
+(epstopdf)             Output file: <../Figures/Core_LT_B22-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-09-21 13:47:14
+(epstopdf)                    size: 28549 bytes
+(epstopdf)             Command: <repstopdf --outfile=../Figures/Core_LT_B22-eps
+-converted-to.pdf ../Figures/Core_LT_B22.eps>
+(epstopdf)             \includegraphics on input line 20.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ../Figures/Core_LT_B22-eps-converted-to
+.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
+d
+<../Figures/Core_LT_B22-eps-converted-to.pdf, id=163, 867.24pt x 650.43pt>
+File: ../Figures/Core_LT_B22-eps-converted-to.pdf Graphic file (type pdf)
+<use ../Figures/Core_LT_B22-eps-converted-to.pdf>
+Package pdftex.def Info: ../Figures/Core_LT_B22-eps-converted-to.pdf  used on i
+nput line 20.
+(pdftex.def)             Requested size: 162.42172pt x 121.81638pt.
+Package epstopdf Info: Source file: <../Figures/Core_LT_B23.eps>
+(epstopdf)                    date: 2020-09-21 13:46:14
+(epstopdf)                    size: 68301 bytes
+(epstopdf)             Output file: <../Figures/Core_LT_B23-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-09-21 13:47:15
+(epstopdf)                    size: 27544 bytes
+(epstopdf)             Command: <repstopdf --outfile=../Figures/Core_LT_B23-eps
+-converted-to.pdf ../Figures/Core_LT_B23.eps>
+(epstopdf)             \includegraphics on input line 21.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ../Figures/Core_LT_B23-eps-converted-to
+.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
+d
+<../Figures/Core_LT_B23-eps-converted-to.pdf, id=164, 867.24pt x 650.43pt>
+File: ../Figures/Core_LT_B23-eps-converted-to.pdf Graphic file (type pdf)
+<use ../Figures/Core_LT_B23-eps-converted-to.pdf>
+Package pdftex.def Info: ../Figures/Core_LT_B23-eps-converted-to.pdf  used on i
+nput line 21.
+(pdftex.def)             Requested size: 162.42172pt x 121.81638pt.
+
+LaTeX Warning: Float too large for page by 22.68921pt on input line 23.
+
+[28 <../Figures/Core_LT_B16-eps-converted-to.pdf> <../Figures/Core_LT_B18-eps-c
+onverted-to.pdf> <../Figures/Core_LT_B19-eps-converted-to.pdf> <../Figures/Core
+_LT_B20-eps-converted-to.pdf> <../Figures/Core_LT_B21-eps-converted-to.pdf> <..
+/Figures/Core_LT_B22-eps-converted-to.pdf> <../Figures/Core_LT_B23-eps-converte
+d-to.pdf>]
+Package epstopdf Info: Source file: <../Figures/fig_dens_B16B18B19B20B21B22B23.
+eps>
+(epstopdf)                    date: 2020-09-25 10:48:49
+(epstopdf)                    size: 216895 bytes
+(epstopdf)             Output file: <../Figures/fig_dens_B16B18B19B20B21B22B23-
+eps-converted-to.pdf>
+(epstopdf)                    date: 2020-09-25 10:49:24
+(epstopdf)                    size: 706644 bytes
+(epstopdf)             Command: <repstopdf --outfile=../Figures/fig_dens_B16B18
+B19B20B21B22B23-eps-converted-to.pdf ../Figures/fig_dens_B16B18B19B20B21B22B23.
+eps>
+(epstopdf)             \includegraphics on input line 32.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ../Figures/fig_dens_B16B18B19B20B21B22B
+23-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most v
+ersion <1.5> allowed
+<../Figures/fig_dens_B16B18B19B20B21B22B23-eps-converted-to.pdf, id=405, 1084.0
+5pt x 722.7pt>
+File: ../Figures/fig_dens_B16B18B19B20B21B22B23-eps-converted-to.pdf Graphic fi
+le (type pdf)
+<use ../Figures/fig_dens_B16B18B19B20B21B22B23-eps-converted-to.pdf>
+Package pdftex.def Info: ../Figures/fig_dens_B16B18B19B20B21B22B23-eps-converte
+d-to.pdf  used on input line 32.
+(pdftex.def)             Requested size: 553.5pt x 369.01321pt.
+
+Overfull \hbox (12.09976pt too wide) in paragraph at lines 32--34
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 37.21321pt on input line 35.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[29 <../Figures/fig_dens_B16B18B19B20B21B22B23-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <../Figures/fig_densAve_B16B18B19B20B21B22B
+23.eps>
+(epstopdf)                    date: 2020-09-25 10:44:37
+(epstopdf)                    size: 139555 bytes
+(epstopdf)             Output file: <../Figures/fig_densAve_B16B18B19B20B21B22B
+23-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-09-25 10:44:57
+(epstopdf)                    size: 113267 bytes
+(epstopdf)             Command: <repstopdf --outfile=../Figures/fig_densAve_B16
+B18B19B20B21B22B23-eps-converted-to.pdf ../Figures/fig_densAve_B16B18B19B20B21B
+22B23.eps>
+(epstopdf)             \includegraphics on input line 43.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ../Figures/fig_densAve_B16B18B19B20B21B
+22B23-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at mos
+t version <1.5> allowed
+<../Figures/fig_densAve_B16B18B19B20B21B22B23-eps-converted-to.pdf, id=447, 108
+4.05pt x 722.7pt>
+File: ../Figures/fig_densAve_B16B18B19B20B21B22B23-eps-converted-to.pdf Graphic
+ file (type pdf)
+<use ../Figures/fig_densAve_B16B18B19B20B21B22B23-eps-converted-to.pdf>
+Package pdftex.def Info: ../Figures/fig_densAve_B16B18B19B20B21B22B23-eps-conve
+rted-to.pdf  used on input line 43.
+(pdftex.def)             Requested size: 553.5pt x 369.01321pt.
+
+Overfull \hbox (12.09976pt too wide) in paragraph at lines 43--45
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 37.21321pt on input line 46.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30 <../Figures/fig_densAve_B16B18B19B20B21B22B23-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <../Figures/Core_LT_B23.eps>
+(epstopdf)                    date: 2020-09-21 13:46:14
+(epstopdf)                    size: 68301 bytes
+(epstopdf)             Output file: <../Figures/Core_LT_B23-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-09-21 13:47:15
+(epstopdf)                    size: 27544 bytes
+(epstopdf)             Command: <repstopdf --outfile=../Figures/Core_LT_B23-eps
+-converted-to.pdf ../Figures/Core_LT_B23.eps>
+(epstopdf)             \includegraphics on input line 55.
+Package epstopdf Info: Output file is already uptodate.
+File: ../Figures/Core_LT_B23-eps-converted-to.pdf Graphic file (type pdf)
+<use ../Figures/Core_LT_B23-eps-converted-to.pdf>
+Package pdftex.def Info: ../Figures/Core_LT_B23-eps-converted-to.pdf  used on i
+nput line 55.
+(pdftex.def)             Requested size: 369.0pt x 276.75165pt.
+<../Figures/B23_TheoDiffLens33Theo.png, id=494, 996.72375pt x 464.73625pt>
+File: ../Figures/B23_TheoDiffLens33Theo.png Graphic file (type png)
+<use ../Figures/B23_TheoDiffLens33Theo.png>
+Package pdftex.def Info: ../Figures/B23_TheoDiffLens33Theo.png  used on input l
+ine 62.
+(pdftex.def)             Requested size: 369.0pt x 172.049pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../Figures/B23_TheoDiffLens33Opt_only.png, id=495, 996.72375pt x 487.8225pt>
+File: ../Figures/B23_TheoDiffLens33Opt_only.png Graphic file (type png)
+<use ../Figures/B23_TheoDiffLens33Opt_only.png>
+Package pdftex.def Info: ../Figures/B23_TheoDiffLens33Opt_only.png  used on inp
+ut line 69.
+(pdftex.def)             Requested size: 369.0pt x 180.5957pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../Figures/B23_TheoDiffLens33OptBig.png, id=496, 996.72375pt x 459.7175pt>
+File: ../Figures/B23_TheoDiffLens33OptBig.png Graphic file (type png)
+<use ../Figures/B23_TheoDiffLens33OptBig.png>
+Package pdftex.def Info: ../Figures/B23_TheoDiffLens33OptBig.png  used on input
+ line 76.
+(pdftex.def)             Requested size: 369.0pt x 170.19101pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../Figures/AllAlphabetCores.png, id=497, 842.14626pt x 1058.95625pt>
+File: ../Figures/AllAlphabetCores.png Graphic file (type png)
+<use ../Figures/AllAlphabetCores.png>
+Package pdftex.def Info: ../Figures/AllAlphabetCores.png  used on input line 87
+.
+(pdftex.def)             Requested size: 369.0pt x 464.00319pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../Figures/AllAlphabetCores_LT.png, id=498, 842.14626pt x 1058.95625pt>
+File: ../Figures/AllAlphabetCores_LT.png Graphic file (type png)
+<use ../Figures/AllAlphabetCores_LT.png>
+Package pdftex.def Info: ../Figures/AllAlphabetCores_LT.png  used on input line
+ 94.
+(pdftex.def)             Requested size: 369.0pt x 464.00319pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [31
+
+
+
+
+
+
+
+
+
+
+
+
+] [32 <../Figures/B23_TheoDiffLens33Theo.png> <../Figures/B23_TheoDiffLens33Opt
+_only.png>] [33 <../Figures/B23_TheoDiffLens33OptBig.png>] [34 <../Figures/AllA
+lphabetCores.png>] [35 <../Figures/AllAlphabetCores_LT.png>] [36
 
 ]
-(../Chapters/SignalAnalysis/Chapter_SignalAnalysis.tex [27] [28]
+(../Chapters/SignalAnalysis/Chapter_SignalAnalysis.tex [37] [38]
 Overfull \hbox (4.20497pt too wide) in paragraph at lines 56--57
 \OT1/cmr/bx/n/10.95 THE CAL-CU-LA-TIONS. WRITE THE GEN-ERAL IDEAS
  []
@@ -1736,10 +2073,10 @@ Overfull \hbox (4.49254pt too wide) in paragraph at lines 56--57
 \OT1/cmr/bx/n/10.95 LATE/-COM-PUTE. SMALL CODE SNIP TO GIVE GEN-
  []
 
-[29]
+[39]
 Underfull \vbox (badness 1028) has occurred while \output is active []
 
- [30]
+ [40]
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
 (Font)              Font shape `U/wasy/m/n' tried instead on input line 106.
@@ -1748,14 +2085,14 @@ LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
 (Font)              Font shape `U/wasy/m/n' tried instead on input line 106.
 
-[31]
+[41]
 Underfull \hbox (badness 10000) in paragraph at lines 110--112
 
  []
 
-[32] [33]
+[42] [43]
 
-LaTeX Warning: Reference `Sec:Method' on page 34 undefined on input line 166.
+LaTeX Warning: Reference `Sec:Method' on page 44 undefined on input line 166.
 
 
 Overfull \hbox (12.37985pt too wide) in paragraph at lines 165--167
@@ -1764,35 +2101,35 @@ ta-tional cost of $\OMS/cmsy/m/n/10.95 O\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95
  N [] N\OT1/cmr/m/n/10.95 )$
  []
 
-[34] [35]
+[44] [45]
 
-LaTeX Warning: Reference `fig:Interp' on page 36 undefined on input line 246.
-
-
-LaTeX Warning: Reference `sec:???' on page 36 undefined on input line 247.
+LaTeX Warning: Reference `fig:Interp' on page 46 undefined on input line 246.
 
 
-LaTeX Warning: Reference `fig:InterpFinal' on page 36 undefined on input line 2
+LaTeX Warning: Reference `sec:???' on page 46 undefined on input line 247.
+
+
+LaTeX Warning: Reference `fig:InterpFinal' on page 46 undefined on input line 2
 47.
 
-[36]
+[46]
 
-LaTeX Warning: Marginpar on page 37 moved by 51.63165pt.
+LaTeX Warning: Marginpar on page 47 moved by 51.63165pt.
 
-) [37] [38
+) [47] [48
 
 ] (../Chapters/ComputationalMethods/Chapter_ComputationalMethods.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
 
-[39]
+[49]
 Overfull \hbox (3.05711pt too wide) in paragraph at lines 26--30
 \OT1/cmr/m/n/10.95 So the ex-is-tence and unique-ness of an in-ter-polant is gi
 ven by the non-singularity
  []
 
-[40]
+[50]
 Underfull \hbox (badness 3009) in paragraph at lines 75--75
 \OT1/cmr/m/n/9 con-tin-u-ously dif-fer-en-tiable
  []
@@ -1809,11 +2146,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--77
 
  []
 
-[41]
+[51]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42])
-[43] [44
+ [52])
+[53] [54
 
 ] (../Chapters/Method/Chapter_Method.tex
 Overfull \hbox (35.53377pt too wide) in paragraph at lines 80--81
@@ -1826,8 +2163,8 @@ LaTeX Warning: Float too large for page by 37.42834pt on input line 83.
 
 Underfull \vbox (badness 5417) has occurred while \output is active []
 
- [45]
-<../Figures/SiteA_d18OInsert.jpg, id=214, 782.925pt x 398.48875pt>
+ [55]
+<../Figures/SiteA_d18OInsert.jpg, id=587, 782.925pt x 398.48875pt>
 File: ../Figures/SiteA_d18OInsert.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_d18OInsert.jpg>
 Package pdftex.def Info: ../Figures/SiteA_d18OInsert.jpg  used on input line 93
@@ -1835,9 +2172,9 @@ Package pdftex.def Info: ../Figures/SiteA_d18OInsert.jpg  used on input line 93
 (pdftex.def)             Requested size: 332.09775pt x 169.03017pt.
 
 
-LaTeX Warning: Reference `Sec:??' on page 46 undefined on input line 128.
+LaTeX Warning: Reference `Sec:??' on page 56 undefined on input line 128.
 
-<../Figures/SiteA_ECMd18O_combo.jpg, id=215, 722.7pt x 433.62pt>
+<../Figures/SiteA_ECMd18O_combo.jpg, id=588, 722.7pt x 433.62pt>
 File: ../Figures/SiteA_ECMd18O_combo.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_ECMd18O_combo.jpg>
 Package pdftex.def Info: ../Figures/SiteA_ECMd18O_combo.jpg  used on input line
@@ -1849,38 +2186,39 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Underfull \vbox (badness 2050) has occurred while \output is active []
 
- [46]
-[47]
+ [56]
+[57]
 Underfull \vbox (badness 1199) has occurred while \output is active []
 
- [48 <../Figures/SiteA_d18OInsert.jpg> <../Figures/SiteA_ECMd18O_combo.jpg>]
-Package marginnote Info: Margin note 61.1 is on absolute page 61
-(marginnote)              on input line 168.
-Package marginnote Info: xpos seems to be 97.26999pt,
-(marginnote)             \marginnoterightadjust ignored on input line 168.
+ [58 <../Figures/SiteA_d18OInsert.jpg> <../Figures/SiteA_ECMd18O_combo.jpg>]
+Package marginnote Info: Suggest that margin note 71.1 will be on
+(marginnote)             absolute page 71.
+(marginnote)             This may be wrong on input line 168.
+Package marginnote Info: xpos not known,
+(marginnote)             using \marginnoterightadjust on input line 168.
 
 
-LaTeX Warning: Reference `sec:Theory' on page 49 undefined on input line 169.
+LaTeX Warning: Reference `sec:Theory' on page 59 undefined on input line 169.
 
-[49]
+[59]
 Overfull \hbox (2.79349pt too wide) in paragraph at lines 208--209
 [][][][][]\OT1/cmr/m/n/10.95 : From a given den-sity, cal-cu-late the cor-re-sp
 ond-ing depth.
  []
 
-[50]
+[60]
 Overfull \hbox (3.00641pt too wide) in paragraph at lines 236--237
 [][][][][]\OT1/cmr/m/n/10.95 : From the best op-ti-mized Herron-Langway depth-d
 ensity
  []
 
-<../Figures/SiteA_DensProfile_wHL.jpg, id=233, 433.62pt x 505.89pt>
+<../Figures/SiteA_DensProfile_wHL.jpg, id=605, 433.62pt x 505.89pt>
 File: ../Figures/SiteA_DensProfile_wHL.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_DensProfile_wHL.jpg>
 Package pdftex.def Info: ../Figures/SiteA_DensProfile_wHL.jpg  used on input li
 ne 248.
 (pdftex.def)             Requested size: 111.0pt x 129.49812pt.
-<../Figures/SiteA_DiffProfile.jpg, id=234, 433.62pt x 505.89pt>
+<../Figures/SiteA_DiffProfile.jpg, id=606, 433.62pt x 505.89pt>
 File: ../Figures/SiteA_DiffProfile.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_DiffProfile.jpg>
 Package pdftex.def Info: ../Figures/SiteA_DiffProfile.jpg  used on input line 2
@@ -1897,12 +2235,12 @@ Underfull \hbox (badness 1810) in paragraph at lines 260--260
  []
 
 
-LaTeX Warning: Marginpar on page 51 moved by 73.53311pt.
+LaTeX Warning: Marginpar on page 61 moved by 73.53311pt.
 
 
-LaTeX Warning: Marginpar on page 51 moved by 145.31534pt.
+LaTeX Warning: Marginpar on page 61 moved by 145.31534pt.
 
-<../Figures/SiteA_filtersEx.jpg, id=235, 867.24pt x 578.16pt>
+<../Figures/SiteA_filtersEx.jpg, id=607, 867.24pt x 578.16pt>
 File: ../Figures/SiteA_filtersEx.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_filtersEx.jpg>
 Package pdftex.def Info: ../Figures/SiteA_filtersEx.jpg  used on input line 275
@@ -1911,51 +2249,51 @@ Package pdftex.def Info: ../Figures/SiteA_filtersEx.jpg  used on input line 275
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../Figures/SiteA_d18OLT_Interp.jpg, id=236, 722.7pt x 505.89pt>
+<../Figures/SiteA_d18OLT_Interp.jpg, id=608, 722.7pt x 505.89pt>
 File: ../Figures/SiteA_d18OLT_Interp.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_d18OLT_Interp.jpg>
 Package pdftex.def Info: ../Figures/SiteA_d18OLT_Interp.jpg  used on input line
  290.
 (pdftex.def)             Requested size: 258.29887pt x 180.80798pt.
-[51 <../Figures/SiteA_DensProfile_wHL.jpg> <../Figures/SiteA_DiffProfile.jpg>]
+[61 <../Figures/SiteA_DensProfile_wHL.jpg> <../Figures/SiteA_DiffProfile.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Underfull \vbox (badness 1264) has occurred while \output is active []
 
- [52 <../Figures/SiteA_filtersEx.jpg>] [53 <../Figures/SiteA_d18OLT_Interp.jpg>
+ [62 <../Figures/SiteA_filtersEx.jpg>] [63 <../Figures/SiteA_d18OLT_Interp.jpg>
 ]
 (/home/thea/Documents/KUFysik/MesterTesen/WrittenWork/CodeForListings/interpCor
-es.py [54])
-<../Figures/SiteA_DCT_PSD_raw.jpg, id=250, 722.7pt x 578.16pt>
+es.py [64])
+<../Figures/SiteA_DCT_PSD_raw.jpg, id=623, 722.7pt x 578.16pt>
 File: ../Figures/SiteA_DCT_PSD_raw.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_DCT_PSD_raw.jpg>
 Package pdftex.def Info: ../Figures/SiteA_DCT_PSD_raw.jpg  used on input line 3
 30.
 (pdftex.def)             Requested size: 166.04887pt x 132.83284pt.
-<../Figures/SiteA_PSD_all.jpg, id=251, 722.7pt x 578.16pt>
+<../Figures/SiteA_PSD_all.jpg, id=624, 722.7pt x 578.16pt>
 File: ../Figures/SiteA_PSD_all.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_PSD_all.jpg>
 Package pdftex.def Info: ../Figures/SiteA_PSD_all.jpg  used on input line 336.
 (pdftex.def)             Requested size: 166.04887pt x 132.83284pt.
 
 
-LaTeX Warning: Reference `sec:??' on page 55 undefined on input line 340.
+LaTeX Warning: Reference `sec:??' on page 65 undefined on input line 340.
 
 
-LaTeX Warning: Reference `sec:??' on page 55 undefined on input line 340.
+LaTeX Warning: Reference `sec:??' on page 65 undefined on input line 340.
 
 
-LaTeX Warning: Reference `Sec:????' on page 55 undefined on input line 343.
+LaTeX Warning: Reference `Sec:????' on page 65 undefined on input line 343.
 
-[55 <../Figures/SiteA_DCT_PSD_raw.jpg> <../Figures/SiteA_PSD_all.jpg>]
-<../Figures/SiteA_PSD_sig.jpg, id=257, 722.7pt x 578.16pt>
+[65 <../Figures/SiteA_DCT_PSD_raw.jpg> <../Figures/SiteA_PSD_all.jpg>]
+<../Figures/SiteA_PSD_sig.jpg, id=629, 722.7pt x 578.16pt>
 File: ../Figures/SiteA_PSD_sig.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_PSD_sig.jpg>
 Package pdftex.def Info: ../Figures/SiteA_PSD_sig.jpg  used on input line 353.
 (pdftex.def)             Requested size: 111.0pt x 88.79343pt.
-<../Figures/SiteA_PSD_noise.jpg, id=258, 722.7pt x 578.16pt>
+<../Figures/SiteA_PSD_noise.jpg, id=630, 722.7pt x 578.16pt>
 File: ../Figures/SiteA_PSD_noise.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_PSD_noise.jpg>
 Package pdftex.def Info: ../Figures/SiteA_PSD_noise.jpg  used on input line 360
@@ -1967,23 +2305,23 @@ Package pdftex.def Info: ../Figures/SiteA_PSD_fit.jpg  used on input line 367.
 (pdftex.def)             Requested size: 111.0pt x 88.79343pt.
 
 
-LaTeX Warning: Marginpar on page 56 moved by 195.62346pt.
+LaTeX Warning: Marginpar on page 66 moved by 195.62346pt.
 
 
-LaTeX Warning: Reference `Sec:???' on page 56 undefined on input line 374.
+LaTeX Warning: Reference `Sec:???' on page 66 undefined on input line 374.
 
 
 (/home/thea/Documents/KUFysik/MesterTesen/WrittenWork/CodeForListings/calc_res.
 py)
 (/home/thea/Documents/KUFysik/MesterTesen/WrittenWork/CodeForListings/sum2_res.
-py) [56 <../Figures/SiteA_PSD_sig.jpg> <../Figures/SiteA_PSD_noise.jpg>]
-<../Figures/SiteA_WienerFilter.jpg, id=263, 361.35pt x 289.08pt>
+py) [66 <../Figures/SiteA_PSD_sig.jpg> <../Figures/SiteA_PSD_noise.jpg>]
+<../Figures/SiteA_WienerFilter.jpg, id=635, 361.35pt x 289.08pt>
 File: ../Figures/SiteA_WienerFilter.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_WienerFilter.jpg>
 Package pdftex.def Info: ../Figures/SiteA_WienerFilter.jpg  used on input line 
 416.
 (pdftex.def)             Requested size: 111.0pt x 88.79784pt.
-<../Figures/SiteA_WienerFilter_loglog.jpg, id=264, 361.35pt x 289.08pt>
+<../Figures/SiteA_WienerFilter_loglog.jpg, id=636, 361.35pt x 289.08pt>
 File: ../Figures/SiteA_WienerFilter_loglog.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_WienerFilter_loglog.jpg>
 Package pdftex.def Info: ../Figures/SiteA_WienerFilter_loglog.jpg  used on inpu
@@ -1991,26 +2329,26 @@ t line 423.
 (pdftex.def)             Requested size: 111.0pt x 88.79784pt.
 
 
-LaTeX Warning: Marginpar on page 57 moved by 112.57709pt.
+LaTeX Warning: Marginpar on page 67 moved by 112.57709pt.
 
 
-LaTeX Warning: Reference `Sec:????' on page 57 undefined on input line 430.
+LaTeX Warning: Reference `Sec:????' on page 67 undefined on input line 430.
 
 
-LaTeX Warning: Marginpar on page 57 moved by 208.13722pt.
+LaTeX Warning: Marginpar on page 67 moved by 208.13722pt.
 
 
-LaTeX Warning: Marginpar on page 57 moved by 8.96245pt.
+LaTeX Warning: Marginpar on page 67 moved by 8.96245pt.
 
-<../Figures/SiteA_BackDiffused_Y32.jpg, id=265, 722.7pt x 505.89pt>
+<../Figures/SiteA_BackDiffused_Y32.jpg, id=637, 722.7pt x 505.89pt>
 File: ../Figures/SiteA_BackDiffused_Y32.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_BackDiffused_Y32.jpg>
 Package pdftex.def Info: ../Figures/SiteA_BackDiffused_Y32.jpg  used on input l
 ine 465.
 (pdftex.def)             Requested size: 258.29887pt x 180.80798pt.
-[57 <../Figures/SiteA_WienerFilter.jpg> <../Figures/SiteA_WienerFilter_loglog.j
+[67 <../Figures/SiteA_WienerFilter.jpg> <../Figures/SiteA_WienerFilter_loglog.j
 pg>]
-<../Figures/SiteA_BackDiffused_AllSigmaEst.jpg, id=270, 1011.78pt x 433.62pt>
+<../Figures/SiteA_BackDiffused_AllSigmaEst.jpg, id=643, 1011.78pt x 433.62pt>
 File: ../Figures/SiteA_BackDiffused_AllSigmaEst.jpg Graphic file (type jpg)
 <use ../Figures/SiteA_BackDiffused_AllSigmaEst.jpg>
 Package pdftex.def Info: ../Figures/SiteA_BackDiffused_AllSigmaEst.jpg  used on
@@ -2018,15 +2356,15 @@ Package pdftex.def Info: ../Figures/SiteA_BackDiffused_AllSigmaEst.jpg  used on
 (pdftex.def)             Requested size: 369.0pt x 158.14096pt.
 
 
-LaTeX Warning: Marginpar on page 58 moved by 4.51047pt.
+LaTeX Warning: Marginpar on page 68 moved by 4.51047pt.
 
 
 Underfull \vbox (badness 5161) has occurred while \output is active []
 
- [58 <../Figures/SiteA_BackDiffused_Y32.jpg>] [59 <../Figures/SiteA_BackDiffuse
+ [68 <../Figures/SiteA_BackDiffused_Y32.jpg>] [69 <../Figures/SiteA_BackDiffuse
 d_AllSigmaEst.jpg>]
 
-LaTeX Warning: Marginpar on page 60 moved by 38.03165pt.
+LaTeX Warning: Marginpar on page 70 moved by 38.03165pt.
 
 
 Overfull \hbox (2.70908pt too wide) in paragraph at lines 525--525
@@ -2049,18 +2387,18 @@ Overfull \hbox (2.70908pt too wide) in paragraph at lines 525--525
  []
 
 
-LaTeX Warning: Marginpar on page 60 moved by 62.46329pt.
+LaTeX Warning: Marginpar on page 70 moved by 62.46329pt.
 
 
-LaTeX Warning: Marginpar on page 60 moved by 105.64462pt.
+LaTeX Warning: Marginpar on page 70 moved by 105.64462pt.
 
 
-LaTeX Warning: Marginpar on page 60 moved by 118.60541pt.
+LaTeX Warning: Marginpar on page 70 moved by 118.60541pt.
 
 
-LaTeX Warning: Marginpar on page 60 moved by 145.1662pt.
+LaTeX Warning: Marginpar on page 70 moved by 145.1662pt.
 
-) [60] (../Chapters/Results/Chapter_Results.tex
+) [70] (../Chapters/Results/Chapter_Results.tex
 Overfull \hbox (75.27841pt too wide) in paragraph at lines 9--21
  [][] 
  []
@@ -2075,25 +2413,25 @@ Overfull \hbox (109.7962pt too wide) in paragraph at lines 41--52
  [][] 
  []
 
-) [61
+) [71
 
-] [62
+] [72
 
 ]
 (../Chapters/TemperatureReconstruction/Chapter_TemperatureReconstruction.tex)
-[63] [64
+[73] [74
 
-] (../Chapters/LayerCounting/Chapter_LayerCounting.tex) [65] [66
+] (../Chapters/LayerCounting/Chapter_LayerCounting.tex) [75] [76
 
 ]
-(../Chapters/Conclusion/Chapter_Conclusion.tex) [67] [68
+(../Chapters/Conclusion/Chapter_Conclusion.tex) [77] [78
 
 ]
 (./Complete_1stDraft.bbl
 bibitemlist
-[69
+[79
 
-] [70]) [71]
+] [80]) [81]
 \tf@tdo=\write5
 \openout5 = `Complete_1stDraft.tdo'.
 
@@ -2109,7 +2447,13 @@ bibitemlist
 \tf@lol=\write9
 \openout9 = `Complete_1stDraft.lol'.
 
- (./Complete_1stDraft.aux)
+ (./Complete_1stDraft.aux
+*************************************************
+* pdfbase warning: "rerun"
+* 
+* Rerun to get internal references right!
+*************************************************
+)
 
 LaTeX Warning: There were undefined references.
 
@@ -2118,10 +2462,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 32193 strings out of 492982
- 617857 string characters out of 6134897
- 806078 words of memory out of 5000000
- 35217 multiletter control sequences out of 15000+600000
+ 32529 strings out of 492982
+ 625825 string characters out of 6134897
+ 805796 words of memory out of 5000000
+ 35526 multiletter control sequences out of 15000+600000
  556934 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  52i,20n,86p,10379b,2047s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2153,10 +2497,10 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Complete_1stDraft.pdf (83 pages, 1781733 bytes).
+Output written on Complete_1stDraft.pdf (93 pages, 3414307 bytes).
 PDF statistics:
- 412 PDF objects out of 1000 (max. 8388607)
- 278 compressed objects within 3 object streams
+ 786 PDF objects out of 1000 (max. 8388607)
+ 337 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 173 words of extra memory for PDF output out of 10000 (max. 10000000)
 

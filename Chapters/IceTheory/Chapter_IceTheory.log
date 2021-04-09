@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  30 MAR 2021 11:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  7 APR 2021 14:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1046,23 +1046,17 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
+Package color Info: Driver file: pdftex.def on input line 147.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
@@ -1132,7 +1126,24 @@ File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-))
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 
@@ -1411,6 +1422,9 @@ LaTeX Info: Redefining \addtolength on input line 81.
 (/usr/share/texlive/texmf-dist/tex/latex/marginnote/marginnote.sty
 Package: marginnote 2017/04/22 v1.2b non floating margin notes for LaTeX
 \c@mn@abspage=\count358
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryshapes.geometric.code.tex
@@ -1697,47 +1711,62 @@ Overfull \hbox (5.49223pt too wide) in paragraph at lines 387--387
 [][][][]\OT1/cmr/m/n/10.95 Diffusion/densification 
  []
 
+<../../Figures/Analytical_DiffLenEq_terms_SiteA.png, id=59, 484.81125pt x 557.0
+8125pt>
+File: ../../Figures/Analytical_DiffLenEq_terms_SiteA.png Graphic file (type png
+)
+<use ../../Figures/Analytical_DiffLenEq_terms_SiteA.png>
+Package pdftex.def Info: ../../Figures/Analytical_DiffLenEq_terms_SiteA.png  us
+ed on input line 391.
+(pdftex.def)             Requested size: 221.40225pt x 254.40741pt.
 
-LaTeX Warning: Citation `Gkinis2021' on page 13 undefined on input line 389.
+LaTeX Warning: Citation `Gkinis2021' on page 13 undefined on input line 396.
 
 
 LaTeX Warning: Citation `HerronLangway1980' on page 13 undefined on input line 
-400.
+407.
 
-[13]
+[13] [14 <../../Figures/Analytical_DiffLenEq_terms_SiteA.png>]
+<../../Figures/ContourPlot_Alphabet.png, id=69, 532.99126pt x 399.4925pt>
+File: ../../Figures/ContourPlot_Alphabet.png Graphic file (type png)
+<use ../../Figures/ContourPlot_Alphabet.png>
+Package pdftex.def Info: ../../Figures/ContourPlot_Alphabet.png  used on input 
+line 446.
+(pdftex.def)             Requested size: 258.29887pt x 193.60733pt.
 
-LaTeX Warning: Citation `Gkinis2021' on page 14 undefined on input line 438.
 
-[14]
+LaTeX Warning: Citation `Gkinis2021' on page 15 undefined on input line 452.
 
-LaTeX Warning: Citation `Press2007' on page 15 undefined on input line 446.
+[15 <../../Figures/ContourPlot_Alphabet.png>]
+
+LaTeX Warning: Citation `Press2007' on page 16 undefined on input line 460.
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 
-LaTeX Warning: Citation `Press2007' on page 15 undefined on input line 446.
+LaTeX Warning: Citation `Press2007' on page 16 undefined on input line 460.
 
-[15] [16] [17] [18]
-<../../Figures/SiteA_PSD_fit.jpg, id=80, 722.7pt x 578.16pt>
+[16] [17] [18] [19]
+<../../Figures/SiteA_PSD_fit.jpg, id=89, 722.7pt x 578.16pt>
 File: ../../Figures/SiteA_PSD_fit.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_PSD_fit.jpg>
-Package pdftex.def Info: ../../Figures/SiteA_PSD_fit.jpg  used on input line 52
-7.
+Package pdftex.def Info: ../../Figures/SiteA_PSD_fit.jpg  used on input line 54
+1.
 (pdftex.def)             Requested size: 258.29887pt x 206.6377pt.
 
 Underfull \vbox (badness 6792) has occurred while \output is active []
 
- [19 <../../Figures/SiteA_PSD_fit.jpg>] [20] (./Chapter_IceTheory.aux)
+ [20 <../../Figures/SiteA_PSD_fit.jpg>] [21] (./Chapter_IceTheory.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 31157 strings out of 492982
- 593123 string characters out of 6134897
- 673258 words of memory out of 5000000
- 34273 multiletter control sequences out of 15000+600000
+ 31400 strings out of 492982
+ 597484 string characters out of 6134897
+ 677331 words of memory out of 5000000
+ 34503 multiletter control sequences out of 15000+600000
  546270 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  61i,20n,77p,10419b,1267s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1758,10 +1787,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Chapter_IceTheory.pdf (20 pages, 371006 bytes).
+Output written on Chapter_IceTheory.pdf (21 pages, 434054 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
+ 154 PDF objects out of 1000 (max. 8388607)
+ 106 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
