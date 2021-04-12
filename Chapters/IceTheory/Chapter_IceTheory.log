@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  7 APR 2021 14:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  12 APR 2021 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1557,216 +1557,214 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 5.
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Overfull \hbox (10.8374pt too wide) in paragraph at lines 11--13
+<../../Figures/Crete_10m_dated.png, id=4, 1250.6725pt x 327.2225pt>
+File: ../../Figures/Crete_10m_dated.png Graphic file (type png)
+<use ../../Figures/Crete_10m_dated.png>
+Package pdftex.def Info: ../../Figures/Crete_10m_dated.png  used on input line 
+11.
+(pdftex.def)             Requested size: 369.0pt x 96.54477pt.
+
+Overfull \hbox (10.8374pt too wide) in paragraph at lines 19--21
 []\OT1/cmr/m/n/10.95 Water iso-topic ra-tios, i.e. the ra-tio of the mi-nor-ity
  iso-tope, $[]$ or $[]$($[][][][]$),
  []
 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-Overfull \hbox (13.97546pt too wide) in paragraph at lines 27--32
+ <../../Figures/Crete_10m_dated.png>]
+Overfull \hbox (13.97546pt too wide) in paragraph at lines 35--40
 \OT1/cmr/m/n/10.95 A num-ber of dif-fer-ent den-si-fi-ca-tion mod-els have been
  de-vel-oped(REFERENCES),
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-]
-Overfull \hbox (13.26022pt too wide) detected at line 55
+[2]
+Overfull \hbox (13.26022pt too wide) detected at line 63
 \OML/cmm/m/it/10.95 C[] \OT1/cmr/m/n/10.95 = []\OML/cmm/m/it/10.95 ; \OT1/cmr/m
 /n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 55 \OML/cmm/m/it/10.95 < ^^Z 
 < \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 8
  []
 
-[2]
-Overfull \hbox (19.93082pt too wide) in paragraph at lines 91--94
+[3]
+Overfull \hbox (19.93082pt too wide) in paragraph at lines 99--102
 \OT1/cmr/m/n/10.95 and plot-ting $[](\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 )$
  ver-sus tem-per-a-ture - a so-called Ar-rhe-nius plot(REFERENCES)
  []
 
-[3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 120.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 128.
 
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 120.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 128.
  [4]
+<../../Figures/DensProf_Examples.png, id=34, 416.55624pt x 506.89375pt>
+File: ../../Figures/DensProf_Examples.png Graphic file (type png)
+<use ../../Figures/DensProf_Examples.png>
+Package pdftex.def Info: ../../Figures/DensProf_Examples.png  used on input lin
+e 163.
+(pdftex.def)             Requested size: 221.40225pt x 269.41814pt.
+
 
 LaTeX Warning: Citation `HerronLangway1980' on page 5 undefined on input line 1
-57.
+75.
 
 
 LaTeX Warning: Reference `Sec:Densification' on page 5 undefined on input line 
-157.
+175.
 
-[5]
+[5] [6 <../../Figures/DensProf_Examples.png>]
 
-LaTeX Warning: Citation `Johnsen1977' on page 6 undefined on input line 191.
-
-
-LaTeX Warning: Reference `Sec:Densification' on page 6 undefined on input line 
-201.
-
-[6] [7] [8]
-
-LaTeX Warning: Reference `Sec:Method_Sampling' on page 9 undefined on input lin
-e 257.
+LaTeX Warning: Citation `Johnsen1977' on page 7 undefined on input line 209.
 
 
-LaTeX Warning: Citation `Stevens2020' on page 9 undefined on input line 279.
+LaTeX Warning: Reference `Sec:Densification' on page 7 undefined on input line 
+219.
 
+[7] [8] [9]
 
-LaTeX Warning: Citation `Gkinis2019' on page 9 undefined on input line 279.
-
-
-LaTeX Warning: Citation `Gkinis2019' on page 9 undefined on input line 280.
-
-
-LaTeX Warning: Citation `Patankar1980' on page 9 undefined on input line 280.
-
-
-LaTeX Warning: Citation `HerronLangway1980' on page 9 undefined on input line 2
-81.
-
-
-LaTeX Warning: Citation `Stevens2020' on page 9 undefined on input line 281.
-
-[9]
-
-LaTeX Warning: Citation `Gkinis_2021' on page 10 undefined on input line 286.
-
-
-LaTeX Warning: Citation `Gkinis_2021' on page 10 undefined on input line 286.
-
-
-LaTeX Warning: Citation `Johnsen2000' on page 10 undefined on input line 289.
+LaTeX Warning: Reference `Sec:Method_Sampling' on page 10 undefined on input li
+ne 288.
 
 [10]
 
-LaTeX Warning: Citation `MurphyKoop_2005' on page 11 undefined on input line 30
-4.
+LaTeX Warning: Citation `Stevens2020' on page 11 undefined on input line 310.
 
 
-LaTeX Warning: Citation `Johnsen2000a' on page 11 undefined on input line 315.
+LaTeX Warning: Citation `Gkinis2019' on page 11 undefined on input line 310.
 
 
-LaTeX Warning: Citation `HallPrupacher1976' on page 11 undefined on input line 
-325.
+LaTeX Warning: Citation `Gkinis2019' on page 11 undefined on input line 311.
 
 
-LaTeX Warning: Citation `Merlivat1978' on page 11 undefined on input line 331.
-
-[11]
-
-LaTeX Warning: Citation `Majoube1970' on page 12 undefined on input line 339.
+LaTeX Warning: Citation `Patankar1980' on page 11 undefined on input line 311.
 
 
-LaTeX Warning: Citation `Ellehoj2013' on page 12 undefined on input line 339.
+LaTeX Warning: Citation `HerronLangway1980' on page 11 undefined on input line 
+312.
 
 
-LaTeX Warning: Citation `MerlivatNief1967' on page 12 undefined on input line 3
-49.
+LaTeX Warning: Citation `Stevens2020' on page 11 undefined on input line 312.
 
 
-LaTeX Warning: Citation `Ellehoj2013' on page 12 undefined on input line 349.
+LaTeX Warning: Citation `Gkinis_2021' on page 11 undefined on input line 317.
 
 
-LaTeX Warning: Citation `Lamb2017' on page 12 undefined on input line 349.
+LaTeX Warning: Citation `Gkinis_2021' on page 11 undefined on input line 317.
 
 
-LaTeX Warning: Citation `BarkanLuz2005' on page 12 undefined on input line 365.
+Underfull \vbox (badness 5652) has occurred while \output is active []
+
+ [11]
+
+LaTeX Warning: Citation `Johnsen2000' on page 12 undefined on input line 320.
 
 
-
-LaTeX Warning: Citation `Gkinis2021' on page 12 undefined on input line 365.
-
-
-LaTeX Warning: Citation `Majoube1970' on page 12 undefined on input line 365.
+LaTeX Warning: Citation `MurphyKoop_2005' on page 12 undefined on input line 33
+5.
 
 
-LaTeX Warning: Citation `MerlivatNief1967' on page 12 undefined on input line 3
-65.
-
-
-LaTeX Warning: Citation `Johnsen2000' on page 12 undefined on input line 369.
+LaTeX Warning: Citation `Johnsen2000a' on page 12 undefined on input line 346.
 
 [12]
-Overfull \hbox (5.49223pt too wide) in paragraph at lines 387--387
-[][][][]\OT1/cmr/m/n/10.95 Diffusion/densification 
- []
+
+LaTeX Warning: Citation `HallPrupacher1976' on page 13 undefined on input line 
+356.
 
 
-Overfull \hbox (5.49223pt too wide) in paragraph at lines 387--387
-[][][][]\OT1/cmr/m/n/10.95 Diffusion/densification 
- []
+LaTeX Warning: Citation `Merlivat1978' on page 13 undefined on input line 362.
 
 
-Overfull \hbox (5.49223pt too wide) in paragraph at lines 387--387
-[][][][]\OT1/cmr/m/n/10.95 Diffusion/densification 
- []
+LaTeX Warning: Citation `Majoube1970' on page 13 undefined on input line 370.
 
 
-Overfull \hbox (5.49223pt too wide) in paragraph at lines 387--387
-[][][][]\OT1/cmr/m/n/10.95 Diffusion/densification 
- []
+LaTeX Warning: Citation `Ellehoj2013' on page 13 undefined on input line 370.
 
-<../../Figures/Analytical_DiffLenEq_terms_SiteA.png, id=59, 484.81125pt x 557.0
+
+LaTeX Warning: Citation `MerlivatNief1967' on page 13 undefined on input line 3
+80.
+
+
+LaTeX Warning: Citation `Ellehoj2013' on page 13 undefined on input line 380.
+
+
+LaTeX Warning: Citation `Lamb2017' on page 13 undefined on input line 380.
+
+
+LaTeX Warning: Citation `BarkanLuz2005' on page 13 undefined on input line 396.
+
+
+
+LaTeX Warning: Citation `Gkinis2021' on page 13 undefined on input line 396.
+
+
+LaTeX Warning: Citation `Majoube1970' on page 13 undefined on input line 396.
+
+
+LaTeX Warning: Citation `MerlivatNief1967' on page 13 undefined on input line 3
+96.
+
+[13]
+
+LaTeX Warning: Citation `Johnsen2000' on page 14 undefined on input line 400.
+
+<../../Figures/Analytical_DiffLenEq_terms_SiteA.png, id=68, 484.81125pt x 557.0
 8125pt>
 File: ../../Figures/Analytical_DiffLenEq_terms_SiteA.png Graphic file (type png
 )
 <use ../../Figures/Analytical_DiffLenEq_terms_SiteA.png>
 Package pdftex.def Info: ../../Figures/Analytical_DiffLenEq_terms_SiteA.png  us
-ed on input line 391.
+ed on input line 422.
 (pdftex.def)             Requested size: 221.40225pt x 254.40741pt.
 
-LaTeX Warning: Citation `Gkinis2021' on page 13 undefined on input line 396.
+LaTeX Warning: Citation `Gkinis2021' on page 14 undefined on input line 427.
 
+[14]
 
-LaTeX Warning: Citation `HerronLangway1980' on page 13 undefined on input line 
-407.
+LaTeX Warning: Citation `HerronLangway1980' on page 15 undefined on input line 
+438.
 
-[13] [14 <../../Figures/Analytical_DiffLenEq_terms_SiteA.png>]
-<../../Figures/ContourPlot_Alphabet.png, id=69, 532.99126pt x 399.4925pt>
+[15 <../../Figures/Analytical_DiffLenEq_terms_SiteA.png>]
+<../../Figures/ContourPlot_Alphabet.png, id=76, 532.99126pt x 399.4925pt>
 File: ../../Figures/ContourPlot_Alphabet.png Graphic file (type png)
 <use ../../Figures/ContourPlot_Alphabet.png>
 Package pdftex.def Info: ../../Figures/ContourPlot_Alphabet.png  used on input 
-line 446.
+line 477.
 (pdftex.def)             Requested size: 258.29887pt x 193.60733pt.
 
 
-LaTeX Warning: Citation `Gkinis2021' on page 15 undefined on input line 452.
+LaTeX Warning: Citation `Gkinis2021' on page 16 undefined on input line 483.
 
-[15 <../../Figures/ContourPlot_Alphabet.png>]
+[16]
 
-LaTeX Warning: Citation `Press2007' on page 16 undefined on input line 460.
+LaTeX Warning: Citation `Press2007' on page 17 undefined on input line 491.
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 
-LaTeX Warning: Citation `Press2007' on page 16 undefined on input line 460.
+LaTeX Warning: Citation `Press2007' on page 17 undefined on input line 491.
 
-[16] [17] [18] [19]
-<../../Figures/SiteA_PSD_fit.jpg, id=89, 722.7pt x 578.16pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17 <../../Figures/ContourPlot_Alphabet.png>] [18] [19] [20] [21]
+<../../Figures/SiteA_PSD_fit.jpg, id=99, 722.7pt x 578.16pt>
 File: ../../Figures/SiteA_PSD_fit.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_PSD_fit.jpg>
-Package pdftex.def Info: ../../Figures/SiteA_PSD_fit.jpg  used on input line 54
-1.
+Package pdftex.def Info: ../../Figures/SiteA_PSD_fit.jpg  used on input line 57
+2.
 (pdftex.def)             Requested size: 258.29887pt x 206.6377pt.
-
-Underfull \vbox (badness 6792) has occurred while \output is active []
-
- [20 <../../Figures/SiteA_PSD_fit.jpg>] [21] (./Chapter_IceTheory.aux)
+ [22 <../../Figures/SiteA_PSD_fit.jpg>] (./Chapter_IceTheory.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 31400 strings out of 492982
- 597484 string characters out of 6134897
- 677331 words of memory out of 5000000
- 34503 multiletter control sequences out of 15000+600000
+ 31406 strings out of 492982
+ 597707 string characters out of 6134897
+ 670227 words of memory out of 5000000
+ 34507 multiletter control sequences out of 15000+600000
  546270 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  61i,20n,77p,10419b,1267s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1787,10 +1785,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Chapter_IceTheory.pdf (21 pages, 434054 bytes).
+Output written on Chapter_IceTheory.pdf (22 pages, 480602 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
+ 161 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

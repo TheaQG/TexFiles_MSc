@@ -5,6 +5,14 @@
 \section[Water Isotopes][Water Isotopes]{Water Isotopes and $\delta$-notation}
 \label{Sec:Ice_WaterIsotopes}
 A corner stone in ice core analysis, which helps lay the basis for paleo climate research, is through measurements of the isotopic composition of the water - or that of the encapsulated air in bubbles - which makes up the ice cores. Water isotopes are sensitive to temperature changes and can thus be used as a proxy for paleo temperature along with being used as dating parameters, since the annual cycles often are detectable in water isotope data.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{Crete_10m_dated.png}
+	\caption{Ten meters of the top of Cretê ice core, with identification and dating of 19 annual layers.}
+	\label{Fig:ICE_Crete_10m_dated}
+\end{figure}
+
 \subsection[$\delta$ notation]{$\delta$ notation and water isotopes}
 \label{Subsec:Ice_WaterIsotopes_deltaNotation}
 
@@ -149,6 +157,16 @@ An estimate of the mean annual accumulation rate can be made from the slope $C'$
 	A = \left(\frac{\rho_i k_1}{C'}\right)^2
 \end{equation}
 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth]{DensProf_Examples.png}
+	\caption{Density profile examples given five different initial conditions representing present day conditions at the five different ice core locations. Temperature, $T_0$, is in $^{\text{o}}$C and accumulation, $A_0$, is in meter of water equivalent per year.}
+	\label{Fig:DensProf_Examples}
+\end{figure}
+
+
+
 \subsection[Diffusion]{Diffusion}
 \label{Subsec:Ice_DiffusionAndDensification_Diffusion}
 
@@ -235,7 +253,20 @@ The noise term, often categorized as white noise, but red noise is also seen in 
 	|\hat{\eta}(k)|^2 = \frac{\sigma_n^2 \Delta}{|1 - a_1 \, e^{ik\Delta}|^2}
 	\label{Eq:PSD_Noise_Term}
 \end{equation}
-Equation \ref{Eq:PSD_Noise_Term} describes an autoregressive process of the first order, with $a_1$ being an AR-1 coefficient \todo{ICE-TEMP: Describe an autoregressive process}.\\
+Equation \ref{Eq:PSD_Noise_Term} describes an autoregressive process of the first order, with $a_1$ being an AR-1 coefficient \todo{ICE-TEMP: Describe an autoregressive process}. An AR-n process describes the evolution of a stochastic time series $\mathbb{X}$ where the next time step, $X_t$ is dependent on the last $n$ points, $\{X_{t-n},...,X_{t-1}\}$, and is mathematically defined as:
+\begin{equation}
+	X_t^{(n)} = C + \sum_{i=1}^{n}\phi_i X_{t-i} + \epsilon_t
+	\label{Eq:AR-n}
+\end{equation}
+where $C$ is a constant, $\bar{\phi} = \{\phi_1,...,\phi_{n}\}$ are the model parameters and $\epsilon_t$ is the noise added to the given time step. The AR-1 process thus describes a series where each new point is only dependent on the last point before:
+\begin{equation}
+	X_t^{(1)} = C + \phi_{1}\, X_{t-1} + \epsilon_t.
+	\label{Eq:AR-1}
+\end{equation} 
+and the power spectral density of the AR-1 process is, corresponding to Eq. \ref{Eq:PSD_Noise_Term}:
+\begin{equation}
+	S^{(1)}(f) = \frac{\sigma_z^2}{|1 - \phi_{1}e^{-2\phi i f}|^2}
+\end{equation}\\
 The spectral estimate of the time series, $\mathbb{P}_s$, can be computed via a number of different numerical schemes, here Burg's method will be used, REFERENCES. To determine the diffusion length a fit to these estimated spectral data, $P_s$, is found through for example a least square optimization, from which the parameters $P_0, \; \sigma, \; a_1, \; \sigma_{\eta}^2$ can be estimated.\\
 The diffusion length $\sigma^2$ can be calculated by least-square minimization of the misfit between $\mathbb{P}_s$ and $P_s$.\\
 This estimated diffusion length needs to be corrected: the obtained $\hat{\sigma}^2$ is affected by two further diffusion processes, taking place respectively in the ice and in the experimental sampling:
