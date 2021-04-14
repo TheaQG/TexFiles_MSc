@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  31 MAR 2021 11:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.2)  14 APR 2021 10:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1046,23 +1046,17 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
+Package color Info: Driver file: pdftex.def on input line 147.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
@@ -1132,7 +1126,24 @@ File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-))
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 
@@ -1412,6 +1423,9 @@ LaTeX Info: Redefining \addtolength on input line 81.
 Package: marginnote 2017/04/22 v1.2b non floating margin notes for LaTeX
 \c@mn@abspage=\count358
 )
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
@@ -1650,81 +1664,81 @@ Package pdftex.def Info: ../../Figures/SiteA_d18OLT_Interp.jpg  used on input l
 ine 290.
 (pdftex.def)             Requested size: 258.29887pt x 180.80798pt.
 
+LaTeX Warning: Reference `Sec:CompMeths_SplinesAndInterpolation_Interpolation_P
+iecewisePolynomial' on page 7 undefined on input line 294.
+
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7 <../../Figures/SiteA_DensProfile_wHL.jpg> <../../Figures/SiteA_DiffProfile.j
-pg>] [8 <../../Figures/SiteA_filtersEx.jpg>]
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+pg>] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (/home/thea/Documents/KUFysik/MesterTesen/WrittenWork/CodeForListings/interpCor
-es.py [9 <../../Figures/SiteA_d18OLT_Interp.jpg>])
-<../../Figures/SiteA_DCT_PSD_raw.jpg, id=60, 722.7pt x 578.16pt>
+es.py [8 <../../Figures/SiteA_filtersEx.jpg>] [9 <../../Figures/SiteA_d18OLT_In
+terp.jpg>])
+<../../Figures/SiteA_DCT_PSD_raw.jpg, id=59, 722.7pt x 578.16pt>
 File: ../../Figures/SiteA_DCT_PSD_raw.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_DCT_PSD_raw.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_DCT_PSD_raw.jpg  used on input lin
-e 330.
+e 312.
 (pdftex.def)             Requested size: 166.04887pt x 132.83284pt.
-<../../Figures/SiteA_PSD_all.jpg, id=61, 722.7pt x 578.16pt>
+<../../Figures/SiteA_PSD_all.jpg, id=60, 722.7pt x 578.16pt>
 File: ../../Figures/SiteA_PSD_all.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_PSD_all.jpg>
-Package pdftex.def Info: ../../Figures/SiteA_PSD_all.jpg  used on input line 33
-6.
+Package pdftex.def Info: ../../Figures/SiteA_PSD_all.jpg  used on input line 31
+8.
 (pdftex.def)             Requested size: 166.04887pt x 132.83284pt.
 
 
-LaTeX Warning: Reference `sec:??' on page 10 undefined on input line 340.
+LaTeX Warning: Reference `sec:??' on page 10 undefined on input line 322.
 
 
-LaTeX Warning: Reference `sec:??' on page 10 undefined on input line 340.
+LaTeX Warning: Reference `sec:??' on page 10 undefined on input line 322.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `Sec:????' on page 10 undefined on input line 325.
 
-
-LaTeX Warning: Reference `Sec:????' on page 10 undefined on input line 343.
-
-[10]
+[10 <../../Figures/SiteA_DCT_PSD_raw.jpg> <../../Figures/SiteA_PSD_all.jpg>]
 <../../Figures/SiteA_PSD_sig.jpg, id=65, 722.7pt x 578.16pt>
 File: ../../Figures/SiteA_PSD_sig.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_PSD_sig.jpg>
-Package pdftex.def Info: ../../Figures/SiteA_PSD_sig.jpg  used on input line 35
-3.
+Package pdftex.def Info: ../../Figures/SiteA_PSD_sig.jpg  used on input line 33
+5.
 (pdftex.def)             Requested size: 111.0pt x 88.79343pt.
 <../../Figures/SiteA_PSD_noise.jpg, id=66, 722.7pt x 578.16pt>
 File: ../../Figures/SiteA_PSD_noise.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_PSD_noise.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_PSD_noise.jpg  used on input line 
-360.
+342.
 (pdftex.def)             Requested size: 111.0pt x 88.79343pt.
 <../../Figures/SiteA_PSD_fit.jpg, id=67, 722.7pt x 578.16pt>
 File: ../../Figures/SiteA_PSD_fit.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_PSD_fit.jpg>
-Package pdftex.def Info: ../../Figures/SiteA_PSD_fit.jpg  used on input line 36
-7.
+Package pdftex.def Info: ../../Figures/SiteA_PSD_fit.jpg  used on input line 34
+9.
 (pdftex.def)             Requested size: 111.0pt x 88.79343pt.
 
 
-LaTeX Warning: Marginpar on page 11 moved by 190.74632pt.
+LaTeX Warning: Marginpar on page 11 moved by 141.22343pt.
 
 
-LaTeX Warning: Reference `Sec:???' on page 11 undefined on input line 374.
+LaTeX Warning: Reference `Sec:???' on page 11 undefined on input line 356.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 390.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 372.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 390.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 372.
 
-[11 <../../Figures/SiteA_DCT_PSD_raw.jpg> <../../Figures/SiteA_PSD_all.jpg> <..
-/../Figures/SiteA_PSD_sig.jpg> <../../Figures/SiteA_PSD_noise.jpg> <../../Figur
-es/SiteA_PSD_fit.jpg>]
+
 (/home/thea/Documents/KUFysik/MesterTesen/WrittenWork/CodeForListings/calc_res.
 py)
 (/home/thea/Documents/KUFysik/MesterTesen/WrittenWork/CodeForListings/sum2_res.
-py)
+py) [11 <../../Figures/SiteA_PSD_sig.jpg> <../../Figures/SiteA_PSD_noise.jpg> <
+../../Figures/SiteA_PSD_fit.jpg>]
 
 LaTeX Warning: Marginpar on page 12 moved by 27.1893pt.
 
@@ -1735,44 +1749,46 @@ LaTeX Warning: Marginpar on page 12 moved by 13.57858pt.
 File: ../../Figures/SiteA_WienerFilter.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_WienerFilter.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_WienerFilter.jpg  used on input li
-ne 416.
+ne 398.
 (pdftex.def)             Requested size: 111.0pt x 88.79784pt.
 <../../Figures/SiteA_WienerFilter_loglog.jpg, id=74, 361.35pt x 289.08pt>
 File: ../../Figures/SiteA_WienerFilter_loglog.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_WienerFilter_loglog.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_WienerFilter_loglog.jpg  used on i
-nput line 423.
+nput line 405.
 (pdftex.def)             Requested size: 111.0pt x 88.79784pt.
 
 LaTeX Warning: Marginpar on page 12 moved by 126.15567pt.
 
 
-LaTeX Warning: Reference `Sec:????' on page 12 undefined on input line 430.
+LaTeX Warning: Reference `Sec:????' on page 12 undefined on input line 412.
 
 
 LaTeX Warning: Marginpar on page 12 moved by 221.7158pt.
 
+
+LaTeX Warning: Marginpar on page 12 moved by 22.54103pt.
+
 [12 <../../Figures/SiteA_WienerFilter.jpg> <../../Figures/SiteA_WienerFilter_lo
 glog.jpg>]
-<../../Figures/SiteA_BackDiffused_Y32.jpg, id=79, 722.7pt x 505.89pt>
+<../../Figures/SiteA_BackDiffused_Y32.jpg, id=78, 722.7pt x 505.89pt>
 File: ../../Figures/SiteA_BackDiffused_Y32.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_BackDiffused_Y32.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_BackDiffused_Y32.jpg  used on inpu
-t line 465.
+t line 447.
 (pdftex.def)             Requested size: 258.29887pt x 180.80798pt.
-<../../Figures/SiteA_BackDiffused_AllSigmaEst.jpg, id=80, 1011.78pt x 433.62pt>
+<../../Figures/SiteA_BackDiffused_AllSigmaEst.jpg, id=79, 1011.78pt x 433.62pt>
 
 File: ../../Figures/SiteA_BackDiffused_AllSigmaEst.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_BackDiffused_AllSigmaEst.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_BackDiffused_AllSigmaEst.jpg  used
- on input line 482.
+ on input line 464.
 (pdftex.def)             Requested size: 369.0pt x 158.14096pt.
 
+Underfull \vbox (badness 2088) has occurred while \output is active []
 
-LaTeX Warning: Marginpar on page 13 moved by 4.51047pt.
-
-[13] [14 <../../Figures/SiteA_BackDiffused_Y32.jpg> <../../Figures/SiteA_BackDi
-ffused_AllSigmaEst.jpg>]
+ [13 <../../Figures/SiteA_BackDiffused_Y32.jpg>] [14 <../../Figures/SiteA_BackD
+iffused_AllSigmaEst.jpg>]
 
 LaTeX Warning: Marginpar on page 15 moved by 24.43164pt.
 
@@ -1780,22 +1796,22 @@ LaTeX Warning: Marginpar on page 15 moved by 24.43164pt.
 LaTeX Warning: Marginpar on page 15 moved by 62.46329pt.
 
 
-Overfull \hbox (2.70908pt too wide) in paragraph at lines 525--525
+Overfull \hbox (2.70908pt too wide) in paragraph at lines 507--507
 \OT1/cmr/m/n/10.95 UPGRADERECURS: 
  []
 
 
-Overfull \hbox (2.70908pt too wide) in paragraph at lines 525--525
+Overfull \hbox (2.70908pt too wide) in paragraph at lines 507--507
 \OT1/cmr/m/n/10.95 UPGRADERECURS: 
  []
 
 
-Overfull \hbox (2.70908pt too wide) in paragraph at lines 525--525
+Overfull \hbox (2.70908pt too wide) in paragraph at lines 507--507
 \OT1/cmr/m/n/10.95 UPGRADERECURS: 
  []
 
 
-Overfull \hbox (2.70908pt too wide) in paragraph at lines 525--525
+Overfull \hbox (2.70908pt too wide) in paragraph at lines 507--507
 \OT1/cmr/m/n/10.95 UPGRADERECURS: 
  []
 
@@ -1808,16 +1824,19 @@ LaTeX Warning: Marginpar on page 15 moved by 130.07626pt.
 
 LaTeX Warning: Marginpar on page 15 moved by 143.03705pt.
 
-[15] [16] (./Chapter_Method.aux)
+
+LaTeX Warning: Marginpar on page 15 moved by 169.59784pt.
+
+[15] (./Chapter_Method.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 31639 strings out of 492982
- 604464 string characters out of 6134897
- 772093 words of memory out of 5000000
- 34717 multiletter control sequences out of 15000+600000
+ 31877 strings out of 492982
+ 608562 string characters out of 6134897
+ 748965 words of memory out of 5000000
+ 34945 multiletter control sequences out of 15000+600000
  549548 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  61i,16n,85p,10416b,1990s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1842,12 +1861,11 @@ st/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts
 lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
-9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
-.pfb>
-Output written on Chapter_Method.pdf (16 pages, 1482740 bytes).
+9.pfb>
+Output written on Chapter_Method.pdf (15 pages, 1476847 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
+ 164 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  88 words of extra memory for PDF output out of 10000 (max. 10000000)
 

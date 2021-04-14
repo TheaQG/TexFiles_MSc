@@ -1,8 +1,40 @@
-%!TeX root = Chapter_SignalAnalysis
+ %!TeX root = Chapter_SignalAnalysis
 \documentclass[../../CompleteThesis/Complete_1stDraft]{subfiles}
 
 \begin{document}
 The data obtained through various experimental measurements are easily compared with a time series, as they typically show some quantity measured all along the depth of an ice core. This depth is often, at short intervals, treated as a regular linear time series thus making it possible to use some of the known signal analysis methods. Of course, when considering the entirety of an ice core, the linearity disappears as thinning and compression makes the depth series non linear. But when considering short lengths of core it is possible to estimate a linearity, assuming conformity in this specific layer. 
+
+\section[Synthetic Data]{Diffusion Illustrated through Synthetic Data}
+\label{Sec:SignalAnalysis_SyntheticData}
+\todo{SIGNAL-SYNTHDATA: Write about synthetic data generation.}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{AR1_process.png}
+	\caption[]{}
+	\label{fig:AR1_process}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{AR1_process_W_backDiff.png}
+	\caption[]{}
+	\label{fig:AR1_process_W_backDiff}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{AR1_process_W_backDiff_PSD.png}
+	\caption[]{}
+	\label{fig:AR1_process_W_backDiff_PSD}
+\end{figure}
+
+
+
+
+
+
+
 
 \section[Back Diffusion][Back Diffusion]{Back Diffusion}
 \label{Sec:SignalAnalysis_BackDiffusion}
@@ -165,6 +197,20 @@ The inverse of NDCT, the INDCT, is computed as:
 It is possible to develop algorithms with the computational cost of $\mathcal{O}(N\log N)$ for NDCT and INDCT as it is for 
 the NDFT (\cite{Tian2000}, \cite{Zhao2008}) but it has showed to be out of the scope of this project and has not been implemented. This of course slows down the final optimization algorithm, as it requires a number of spectral transformations. In Section \ref{Sec:Method} it is described how the final algorithm has been designed to minimize the use of NDCT, and thus speeding up the final computations.
 
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{SpectralTransforms_3.png}
+	\caption[FFT, DCT, NDCT, Site A]{Examples of three different spectral transforms, FFT, DCT, NDCT, performed on the depth series between Tambora and Laki eruptions from Site A.}
+	\label{fig:SpectralTransforms_3}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{SpectralTransforms_PSD.png}
+	\caption[FFT, DCT, NDCT PSDs, Site A]{Examples of power spectral densities related to the three different spectral transforms, FFT, DCT, NDCT, seen in Figure \ref{fig:SpectralTransforms_3}.}
+	\label{fig:SpectralTransforms_PSD}
+\end{figure}
+
 
 
 \subsubsection[MEM][MEM]{Maximum Entropy Method (Burg's Method)}
@@ -236,6 +282,13 @@ The noise is assumed to be red noise, described by an autoregressive process of 
 \end{equation}
 where $\sigma_{\eta}^2$ is the variance of the red noise, $a_1$ is the AR1 coefficient and $\Delta z$ is the resolution of the time/depth data.
 It is then possible to estimate the parameters $P_0$, $\sigma_{\text{tot}}^2$, $\sigma_{\eta}^2$ and $a_1$ by curve fitting, separately, the two expressions in Eq. \ref{eq:SignalPSD} and \ref{eq:NoisePSD} to the data. The estimated parameters are varied to find the optimal guess to use for the filter.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{SpectralTransforms_PSDwFits.png}
+	\caption[FFT, DCT, NDCT PSDs with Fit, Site A]{Noise, signal and total fit to PSD, illustrating the construction of the Wiener Filter, see Sec. \ref{Sec:SignalAnalysis_Restoration}.}
+	\label{fig:SpectralTransforms_PSDwFits}
+\end{figure}
 
 
 \section[Restoration][Restoration]{Enhanced Resolution and Restoration of Signal}

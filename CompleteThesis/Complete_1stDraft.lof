@@ -3,25 +3,35 @@
 \addvspace {10pt}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Ten meters of the top of Cret\IeC {\^e} ice core, with identification and dating of 19 annual layers.\relax }}{5}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Density profile examples given five different initial conditions representing present day conditions at the five different ice core locations. Temperature, $T_0$, is in $^{\text {o}}$C and accumulation, $A_0$, is in meter of water equivalent per year.\relax }}{10}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Contribution of the diffusion(dashed) and densification(dot-dashed) terms from Eq. 2.45\hbox {} to the final analytical diffusion length solution (blue).\relax }}{19}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Contribution of the diffusion(dashed) and densification(dot-dashed) terms from Eq. 2.48\hbox {} to the final analytical diffusion length solution (blue).\relax }}{19}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Crete and surrounding Alphabet cores, as their analytical solutions place them according to observed temperature and accumulation rate.\relax }}{21}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces This is a great figure.\relax }}{26}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Analytically calculated diffusion length profile examples given five different initial conditions representing present day conditions at the five different ice core locations. Temperature, $T_0$, is in $^{\text {o}}$C and accumulation, $A_0$, is in meter of water equivalent per year.\relax }}{22}
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces FFT, DCT, NDCT, Site A}}{44}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces FFT, DCT, NDCT PSDs, Site A}}{44}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces FFT, DCT, NDCT PSDs with Fit, Site A}}{47}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Monomials}}{51}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Unevenly sampled signal from Site A resampled using cubic spline interpolation to an even signal with a new sample size equal to the minimum sample size found in the raw signal.\relax }}{55}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Four different resampled signals of Site A data, showing loss of information when resampling resolution is low.\relax }}{56}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces \relax }}{57}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces \relax }}{58}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces \relax }}{59}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Ten meters of the top of Cret\IeC {\^e} ice core, with identification and dating of 19 annual layers, with peaks(blue) corresponding to summers and troughs(orange) corresponding to winters.\relax }}{59}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Flowchart}}{55}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Full $\delta ^{18}$O record with insert, Site A}}{56}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces ECM and d18O data at LT, Site A.}}{56}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Herron Langway density profile Site A}}{59}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Diffusion profile, Site A.}}{59}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Frequency filters example, Site A}}{60}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Measured and interpolated $\delta ^{18}$O data, Site A}}{61}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Spectral Analysis}}{63}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Isolated spectral fits, Site A}}{64}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Wiener filter}}{65}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Best estimate of deconvoluted depth series, Site A}}{66}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces All diffusion length estimate deconvolutions, Site A}}{67}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Flowchart}}{63}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Full $\delta ^{18}$O record with insert, Site A}}{64}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces ECM and d18O data at LT, Site A.}}{64}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Herron Langway density profile Site A}}{67}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Diffusion profile, Site A.}}{67}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Frequency filters example, Site A}}{68}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Measured and interpolated $\delta ^{18}$O data, Site A}}{69}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Spectral Analysis}}{71}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Isolated spectral fits, Site A}}{71}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Wiener filter}}{72}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Best estimate of deconvoluted depth series, Site A}}{74}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces All diffusion length estimate deconvolutions, Site A}}{74}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

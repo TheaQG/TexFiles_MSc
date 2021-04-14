@@ -291,26 +291,8 @@ When working with ice core data, it is not always a certainty that the data you 
 	\caption[Measured and interpolated $\delta^{18}$O data, Site A]{The unevenly measured data from Site A in the depth ranging from Tambora to Laki along with the now evenly sampled cubic spline interpolated data. Sampled with an interval of $\Delta = 0.038$.}
 	\label{fig:SiteA_d18OLT_Interp}
 \end{figure}
-When looking at the depth series only it might not be an issue to have various spacing between the discrete measurements, but when it comes to spectral analysis, it is of necessity to obtain a depth series signal with an even distribution. To accommodate this need interpolation of the signal can be of use. In the case of the ice core drilled at Site A, it can be seen from Figure \ref{fig:SiteA_d18OLT_Interp} that the raw measured signal has a minimum sampling size of $\Delta_{\text{min}}=0.038$ and a maximum sampling size of $\Delta_{\text{max}}=0.040$. To be able to analyze this signal in the spectral domain the signal can be numerically resampled with an even sampling rate. This is done by choosing the minimum sampling size available, $\Delta_{\text{min}}=0.038$, and redistributing the depth data points to be evenly spaced with this sampling size. The redistribution is carried out as follows.
-
-Assuming the original depth array $\text{\textbf{d}}$ is distributed as $d_{i-1} < d_i < d_{i+1}$ with $i = 0, ..., n-1$ has a minimum sampling distance as $\Delta_{\text{min}}$ we define the new sampling distance for the new depth array $\hat{\text{\textbf{d}}}$ as $\Delta =\Delta_{\text{min}}$ - again assuming that $\hat{\text{\textbf{d}}}_{j-1} < \hat{\text{\textbf{d}}}_j < \hat{\text{\textbf{d}}}_{j+1}$ with $j = 0, ..., \hat{n}-1$. This makes it possible to define the first and last value of the new array as
-\begin{equation}
-	\hat{\text{d}}_0 = \Delta \lceil \frac{\text{d}_0}{\Delta}, \rceil 
-	\label{Eq:InterpDepthMin}
-\end{equation}
-\begin{equation}
-	\hat{\text{d}}_{\hat{n}-1} = \Delta \lfloor \frac{\text{d}_{n-1}}{\Delta} \rfloor.
-	\label{Eq:InterpDepthMax}
-\end{equation}
-From this the number of values in the new array, $\hat{n}$, can be determined as
-\begin{equation}
-	\hat{n} = 1 +  \frac{\hat{\text{d}}_{\hat{n}-1} - \hat{\text{d}}_0}{\Delta},\;\;\;\;\; \hat{n} \in\mathbb{Z}.
-\end{equation}
-Thus our new depth array will be given as
-\begin{equation}
-	\hat{\text{\textbf{d}}} = \hat{\text{d}}_0 + j\cdot\Delta,\;\;\;\;\; j = 0, ..., \hat{n}-1.
-\end{equation}
-The original data are then used to define a cubic spline interpolation function to which the redistributed depth data points can be matched. For this part of the data analysis the \lstinline[columns=fixed]|SciPy.interpolate| Python (REFERENCE) package with \lstinline[columns=fixed]|SciPy.interpolate.CubicSpline| for the cubic spline interpolation. This gives a new distribution of data points as seen in Figure \ref{fig:SiteA_d18OLT_Interp}.
+When looking at the depth series only it might not be an issue to have various spacing between the discrete measurements, but when it comes to spectral analysis, it is of necessity to obtain a depth series signal with an even distribution. To accommodate this need interpolation of the signal can be of use. In the case of the ice core drilled at Site A, it can be seen from Figure \ref{fig:SiteA_d18OLT_Interp} that the raw measured signal has a minimum sampling size of $\Delta_{\text{min}}=0.038$ and a maximum sampling size of $\Delta_{\text{max}}=0.040$. To be able to analyze this signal in the spectral domain the signal can be numerically resampled with an even sampling rate. This is done by choosing the minimum sampling size available, $\Delta_{\text{min}}=0.038$, and redistributing the depth data points to be evenly spaced with this sampling size. The redistribution is carried out as described in Sec. \ref{Sec:CompMeths_SplinesAndInterpolation_Interpolation_PiecewisePolynomial}.
+This gives a new distribution of data points as seen in Figure \ref{fig:SiteA_d18OLT_Interp}. The Python implementation of the method can be seen below.
 
 \lstinputlisting[language=Python, caption={[Spline interpolation of $\delta^{18}O$ data.]Spline interpolation of $\delta^{18}O$ data.}, label=lst:interpCores]{/home/thea/Documents/KUFysik/MesterTesen/WrittenWork/CodeForListings/interpCores.py}
 
@@ -492,13 +474,6 @@ Now, the one branch of the preliminary work considering the raw depth series, ha
 \label{Subsec:Method_StabilityTests_MaxNPeaks}
 \todo{METH-TESTMAX: Write entire section.}
 
-\subsection[Interpolation 1]{Interpolation of Data Before Deconvolution}
-\label{Subsec:Method_StabilityTests_Interpolation1}
-\todo{METH-TESTINT1: Write entire section.}
-
-\subsection[Interpolation 2]{Interpolation of Data After Deconvolution}
-\label{Subsec:Method_StabilityTests_Interpolation2}
-\todo{METH-TESTINT2: Write entire section.}
 
 
 \section[Upgrading the Algorithms]{Upgrading the Algorithms}

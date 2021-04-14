@@ -6,7 +6,7 @@
 \label{Sec:Ice_WaterIsotopes}
 A corner stone in ice core analysis, which helps lay the basis for paleo climate research, is through measurements of the isotopic composition of the water - or that of the encapsulated air in bubbles - which makes up the ice cores. Water isotopes are sensitive to temperature changes and can thus be used as a proxy for paleo temperature along with being used as dating parameters, since the annual cycles often are detectable in water isotope data.
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{Crete_10m_dated.png}
 	\caption{Ten meters of the top of Cretê ice core, with identification and dating of 19 annual layers.}
@@ -218,6 +218,8 @@ where $\rho$ is the density and $\frac{d\rho}{dt}$ is the densification rate. Wi
 \end{equation}
 Certain densities and corresponding depths are of special interest as they indicate a specific stage of the firn and ice column. At top and bottom, we find the two extremum densities of settled snow, $\rho_{\text{snow}} = 330 \frac{\text{kg}}{\text{m}^3}$, and ice, $\rho_{\text{ice}} = 917 \frac{\text{kg}}{\text{m}^3}$. In between these two there are two more densities of importance: the critical density, $\rho_{\text{Cr}} = 550 \frac{\text{kg}}{\text{m}^3}$, describing the transition between the two firn stages (see Section \ref{Sec:Densification}), and the pore close off density, $\rho_{\text{co}} = 330 \frac{\text{kg}}{\text{m}^3}$, describing the density at which air pockets in firn will seal of from each other to form single bubbles. From the close off density, further densification will be due to compression of these closed off air bubbles until the density reaches $\rho_{\text{ice}}$.
 If we assume that the diffusion constant, $D(\rho)$, and the densification rate, $\frac{d\rho}{dt}$ are known, then it is possible to give an estimate of the diffusion length profile by integrating from top, at density $\rho_0$, to pore close-off depth, $\rho_{co}$.
+
+
 
 \subsubsection{In Solid Phase}
 \label{Subsubsec:Ice_DiffusionAndDensification_Diffusion_Ice}
@@ -480,7 +482,15 @@ The analytical equations have been used for creating a contour plot of the analy
 \end{figure}
 
 
-These analytical equations are used to compute diffusion lengths to compare with the optimal diffusion length estimates computed from the raw data. One could advantageously spend some time and energy on using the iso-CFM to numerically compute the comparison diffusion lengths with different temperature and accumulation forcing to recreate a diffusion length profile corresponding to the largest likelihood at a given drill site. Since the iso-CFM do consist of many different modules all with different possibilities for parameterisation, it is outside the scope of this project to develop a iso-CFM diffusion length estimate. In depth methodology and results from the iso-CFM can be found in \cite[Gkinis et al., 2021]{Gkinis2021}.
+These analytical equations are used to compute diffusion lengths to compare with the optimal diffusion length estimates computed from the raw data. One could advantageously spend some time and energy on using the iso-CFM to numerically compute the comparison diffusion lengths with different temperature and accumulation forcing to recreate a diffusion length profile corresponding to the largest likelihood at a given drill site. Since the iso-CFM do consist of many different modules all with different possibilities for parameterisation, it is outside the scope of this project to develop a iso-CFM diffusion length estimate. In-depth methodology and results from the iso-CFM can be found in \cite[Gkinis et al., 2021]{Gkinis2021}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth]{DiffProf_Examples.png}
+	\caption{Analytically calculated diffusion length profile examples given five different initial conditions representing present day conditions at the five different ice core locations. Temperature, $T_0$, is in $^{\text{o}}$C and accumulation, $A_0$, is in meter of water equivalent per year.}
+	\label{Fig:DiffProf_Examples}
+\end{figure}
+
 
 \section[Temperature Estimation]{Temperature Estimation}
 \label{Sec:Ice_TempEstimation}
@@ -566,15 +576,6 @@ The sensitivity to salt concentrations allows for identifications of periods wit
 Throughout the history of the earth a number of different geophysicals events have left their mark on the geological and glaciological records we use to steal a glance into the past. When considering ice core records, there are few as visible - both to the eye and in measured data - than volcanic eruptions. It is widely known [REFERENCE] that eruptions above a certain scale have the possibility to change not only the atmospheric composition, due to the heavy amount of volcanic material slung into the air, but also the ability to impact the climate in the years following an enormous eruption. 
 Through electrical conductivity measurements it is possible to observe the very clear effects of some volcanic events in ice cores. Particles from the eruption are quickly transported from the source, since the atmospheric airflow will scatter the particles all over the atmosphere at a relatively high speed. Thus the dust(particle) and ECM signals pick up the volcanic signal faster than for example the isotopic signals. The isotopic signal reacts much slower, as it must be subjected to a change in global - and then following local - temperature, which might first show after a number of years. Thus ECM, DEP and dust measurements are good records to use for dating ice cores. Some eruptions are only great enough to show in ice cores located close to the volcanic source [REFERENCE], while others are of a magnitude impacting the entire globe, thus showing in almost all ice core records. These volcanic horizons are specifically good for synchronizing records, which is essential for developing knowledge about the geographically varying climate, temperatures and hemispherical dependency of the past. 
 For this thesis the volcanic horizons are especially important for developing
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.7\textwidth]{SiteA_PSD_fit.jpg}
-	\caption{This is a great figure.}
-	\label{Fig:d18O_ECM_Example}
-\end{figure}
-\subsection[Laki and Tambora][Laki and Tambora]{Laki and Tambora in Data}
-\label{Subsec:Ice_VolcanicHorizons_LakiTambora}
 
 
 \end{document}
