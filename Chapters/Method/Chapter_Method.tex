@@ -5,7 +5,7 @@
 \section[First $\sigma$ estimate]{Estimating $\sigma$ from Data: First Estimate}
 \label{Sec:Method_FirstSigmaEstimate}
 This section contains a walk through of the method to back diffuse a given ice core depth series to attempt to restore as much of the original signal as possible. For now, the method has been developed for sections that has been dated to be between the two volcanic eruptions Laki and Tambora, as these are very well dated, and thus it is possible to find the optimal diffusion length to back diffuse with as the actual number of annual layers is exactly known for this data series. The method is easily modified for any other dated depth series, as what is needed is just the number of annual layers in the given data series.\\
-Figure \ref{Fig:FlowchartDiffLen} shows a flowchart of the method used to estimate the diffusion length of a depth series with a preliminary guess of number of annual layers. In the following sections each of the steps in the method will be discussed more thoroughly and examples will be given, all based on the Greenlandic ice core drilled at Site A near Crete(REFERENCES!!!).
+Figures \ref{Fig:FlowchartOptimalDiffLen} and \ref{Fig:FlowchartBackDiffusion} show a flowchart of the method used to estimate the diffusion length of a depth series with a preliminary guess of number of annual layers. In the following sections each of the steps in the method will be discussed more thoroughly and examples will be given, all based on the Greenlandic ice core drilled at Site A near Crete(REFERENCES!!!).
 The method is built such that it takes two inputs - the isotopic depth series, and the specifications for the particular ice core - and uses these for the first preliminary computations needed to make a first, naïve guess of the diffusion length, $\sigma_0$.
 This diffusion length is then used to deconvolute the data and give a first estimate of the number of peaks in the data series. If this number is different from the already specified number of annual layers - in this case 32 - then the diffusion length will be updated accordingly: If the counted number is higher(lower) than the actual number, the diffusion length is adjusted downwards(upwards) with $\Delta\sigma_2$ and the deconvolution and peak counting is performed again.
 On the other hand, if the counted number is equal to the actual number, then the diffusion length is optimized to find the largest diffusion length which still gives the actual number of counted peaks. When this $\sigma_{\text{final}}$ is reached, the algorithm stops and returns the final diffusion length estimate along with the associated back diffused depth series.
@@ -13,56 +13,101 @@ On the other hand, if the counted number is equal to the actual number, then the
 	\begin{tikzpicture}[node distance=1.5cm, auto]
 		\node(start) [startstop] {START};
 		%----------------------------------------------------%
-		\node(in1) [io, left of=start, xshift=-3.5cm] {Depth series};
-		\node(in1pro1) [process, below of=in1, yshift=-0.5cm] {Spline interpolation};
-		\node(in1pro2) [process, below of=in1pro1] {Spectral analysis};
-		\node(in1pro3) [process, below of=in1pro2] {Wiener filter};
-		%	\node(in1pro4) [process, below of=in1pro3] {\textbf{Frequency filters}};	
+		\node(in1) [io, left of=start, xshift=-2.5cm] {Depth series};
+		\node(empty1) [below of=in1, yshift=0.12cm] {};
+		\node(empty2) [below of=in1, xshift=-0.15cm] {};
+		%		\node(in1pro1) [process, below of=in1, yshift=-0.5cm] {Spline interpolation};
+		\node(in1pro2) [process, below of=in1, yshift=-2cm] {Spectral analysis};
+		\node(decSpec1) [decision, below of=in1pro2, scale = 0.8, align=center] {DCT ?\\(Interpolation)};
+		\node(decSpec2) [decision, left of=decSpec1, scale=0.8, xshift = -1.2cm, align=center] {FFT ?\\(Interpolation)};
+		\node(decSpec3) [decision, right of=decSpec1, scale=0.8, xshift = 0.8cm] {NDCT ?};
+		
+		\node(in1pro3) [process, below of=decSpec1] {Wiener filter};
 		
 		\draw[arrow] (in1) -- (start);
-		\draw[arrow] (start) |- (in1pro1);
-		\draw[arrow] (in1pro1) -- (in1pro2);
-		\draw[arrow] (in1pro2) -- (in1pro3);
+		\draw[-] (start) |- (empty2);
+		\draw[arrow] (empty1) -- (in1pro2);
+		%		\draw[arrow] (in1pro1) -- (in1pro2);
+		\draw[arrow] (in1pro2) -- (decSpec1);
+		\draw[arrow] (in1pro2) -- (decSpec2);
+		\draw[arrow] (in1pro2) -- (decSpec3);
+		\draw[arrow] (decSpec1) -- (in1pro3);
+		\draw[arrow] (decSpec2) -- (in1pro3);
+		\draw[arrow] (decSpec3) -- (in1pro3);
 		%	\draw[arrow] (in1pro3) -- (in1pro4);
 		
 		%----------------------------------------------------%
-		\node(in2) [io, right of=start, xshift=3.5cm] {Core specs};
+		
+		\node(in2) [io, right of=start, xshift=2.5cm] {Core specs};
 		\node(in2pro1) [process, below of=in2, yshift=-0.5cm] {Density profile};
 		\node(in2pro2) [process, below of=in2pro1] {Diffusion profile};
 		\node(in2pro3) [process, below of=in2pro2] {$\sigma_0$\textbf{ estimate}};
+		\node(decSigma1) [decision, below of=in2pro3, scale = 0.8] {$\sigma_0 = \sigma_{\text{const}}$?};
+		\node(decSigma2) [decision, right of=decSigma1, scale = 0.8, xshift=0.8cm] {$\sigma_0 = \sigma(z)$?};
+		\node(decSigma3) [decision, left of=decSigma1, scale = 0.8, xshift=-0.8cm] {$\sigma_0 = \sigma_{\text{input}}$?};
+		
 		
 		\draw[arrow] (in2) -- (start);
 		\draw[arrow] (start) |- (in2pro1);
 		\draw[arrow] (in2pro1) -- (in2pro2);
 		\draw[arrow] (in2pro2) -- (in2pro3);
+		\draw[arrow] (in2pro3) -- (decSigma1);
+		\draw[arrow] (in2pro3) -- (decSigma2);
+		\draw[arrow] (in2pro3) -- (decSigma3);
 		
 		%----------------------------------------------------%
-		\node(pro0) [process, below of=start, yshift=-4.5cm] {\textbf{Frequency Filters}};
-		\node(pro1) [process, below of=pro0] {\large{\textbf{BACK DIFFUSE}}};
-		\node(pro2) [process, below of=pro1] {Count N Peaks};
-		\node(dec1) [decision, below of=pro2, yshift=-.5cm] {$N = 32$ ? };
+		\node(pro0) [process, below of=start, yshift=-6.5cm] {Frequency Filters};
+		\node(pro1) [process, below of=pro0,align=center] {\textbf{Deconvolution}\\(Uniform resampling)};
+		\node(stop) [startstop, below of=pro1] {\textbf{STOP}};
+		\node(out1) [io, right of=stop, align=center, xshift=2.2cm, text width=2.5cm] {\footnotesize{Back diffused depth series}};
+		\node(out2) [io, below of=out1, align=center] {\footnotesize{$\sigma_{\text{out}}$}};
+		\draw[arrow] (in1pro3) |- (pro0);
+		\draw[arrow] (decSigma1) |- (pro0);
+		\draw[arrow] (decSigma2) |- (pro0);
+		\draw[arrow] (decSigma3) |- (pro0);
+		\draw[arrow] (pro0) -- (pro1);
+		\draw[arrow] (pro1) -- (stop);
+		\draw[arrow] (stop) -- (out1);
+		\draw[arrow] (stop) |- (out2);
 		
-		\draw[arrow] (in1pro3) -| (pro0);
-		\draw[arrow] (in2pro3) -| (pro0);
+		%		\draw[arrow] (in2pro3) -| (pro0);
+		
+	\end{tikzpicture}
+	\caption[Flowchart]{Flowchart of initialization method for back diffusion of a depth series given a diffusion length estimate.}
+	\label{Fig:FlowchartBackDiffusion}
+\end{figure}	
+
+
+\begin{figure}
+	\begin{tikzpicture}[node distance=1.5cm, auto]
+		
+		\node(pro0) [process] {Frequency Filters};
+		\node(pro1) [process, below of=pro0,align=center] {\textbf{Deconvolution}\\(Uniform resampling)};
+		\node(pro2) [process, below of=pro1] {Count N Peaks};
+		\node(dec1) [decision, below of=pro2, yshift=-.5cm] {$N = N_{\text{yrs}}$ ? };
+		
+		%		\draw[arrow] (in1pro3) -| (pro0);
+		%		\draw[arrow] (in2pro3) -| (pro0);
 		\draw[arrow] (pro0) -- (pro1);
 		\draw[arrow] (pro1) -- (pro2);
 		\draw[arrow] (pro2) -- (dec1);
-		
+		\draw[arrow] (-4,0) to (pro0);
+		\draw[arrow] (4,0) to (pro0);
 		%----------------------------------------------------%	
 		\node(pro3a) [process, below of=dec1, xshift=-3cm] {$\sigma = \sigma + \Delta \sigma_1 $};
-		\node(pro3apro1) [process, below of=pro3a] {Back diffuse};
+		\node(pro3apro1) [process, below of=pro3a,align=center] {\textbf{Deconvolution}\\(Uniform resampling)};
 		\node(pro3apro2) [process, below of=pro3apro1]  {Count N peaks};
 		\node(pro3apro3) [process, below of=pro3apro2, xshift=-2cm] {$\sigma_{\text{final}} = \sigma - 2\cdot\Delta\sigma_1$};
 		\node(stop) [startstop, right of=pro3apro3, xshift=2.5cm] {STOP};
-		\node(out1) [io, right of=stop, xshift=2.5cm, text width=2.5cm] {\footnotesize{back diffused depth series}};
+		\node(out1) [io, right of=stop, xshift=2.5cm, text width=2.5cm] {\footnotesize{Back diffused depth series}};
 		\node(out2) [io, below of=out1, text width=1.1cm] {$\sigma_{\text{final}}$};
 		
 		
 		\draw [arrow] (dec1) -| node[anchor=east] {yes} (pro3a);
 		\draw [arrow] (pro3a) -- (pro3apro1);
 		\draw [arrow] (pro3apro1) -- (pro3apro2);
-		\draw [arrow] (pro3apro2) --++ (2,0) node [anchor=west] {If $N$ = 32} |- (pro3a);		
-		\draw[arrow] (pro3apro2) --++ (-2,0) node [anchor=east] {If $N > $  32} -| (pro3apro3);
+		\draw [arrow] (pro3apro2) --++ (2,0) node [anchor=west] {If $N = N_{\text{yrs}}$} |- (pro3a);		
+		\draw[arrow] (pro3apro2) --++ (-2,0) node [anchor=east] {If $N > N_{\text{yrs}}$} -| (pro3apro3);
 		\draw[arrow] (pro3apro3) -- (stop);
 		\draw[arrow] (stop) -- (out1);
 		\draw[arrow] (stop) |- (out2);
@@ -72,15 +117,88 @@ On the other hand, if the counted number is equal to the actual number, then the
 		\node(pro3b2) [process, below of=dec1, xshift=4.7cm] {$\sigma=\sigma+\Delta\sigma_2$};
 		
 		
-		\draw [arrow] (dec1) --(2.45,-11) node[anchor=south] {$N > 32$} -- (pro3b1);
-		\draw[arrow] (dec1) -- (0,-12.5) node[anchor=north] {$N < 32$} -- (pro3b2);
+		\draw [arrow] (dec1) --(2.2,-5) node[anchor=south] {$N > N_{\text{yrs}}$} -- (pro3b1);
+		\draw[arrow] (dec1) -- (0,-6.5) node[anchor=north] {$N < N_{\text{yrs}}$} -- (pro3b2);
 		\draw[arrow] (pro3b1) |- (pro1);
-		\draw [arrow] (pro3b2) --++ (2,0) |- (pro1);		
+		\draw[arrow] (pro3b2) --++ (2,0) |- (pro1);		
 		
 	\end{tikzpicture}
-	\caption[Flowchart]{Flowchart of method for diffusion length computation.}
-	\label{Fig:FlowchartDiffLen}
-\end{figure}	
+	\caption[Flowchart]{Flowchart of method for optimal diffusion length computation.}
+	\label{Fig:FlowchartOptimalDiffLen}
+\end{figure}
+
+%\begin{figure}
+%	\begin{tikzpicture}[node distance=1.5cm, auto]
+%		\node(start) [startstop] {START};
+%		%----------------------------------------------------%
+%		\node(in1) [io, left of=start, xshift=-3.5cm] {Depth series};
+%		\node(in1pro1) [process, below of=in1, yshift=-0.5cm] {Spline interpolation};
+%		\node(in1pro2) [process, below of=in1pro1] {Spectral analysis};
+%		\node(in1pro3) [process, below of=in1pro2] {Wiener filter};
+%		%	\node(in1pro4) [process, below of=in1pro3] {\textbf{Frequency filters}};	
+%		
+%		\draw[arrow] (in1) -- (start);
+%		\draw[arrow] (start) |- (in1pro1);
+%		\draw[arrow] (in1pro1) -- (in1pro2);
+%		\draw[arrow] (in1pro2) -- (in1pro3);
+%		%	\draw[arrow] (in1pro3) -- (in1pro4);
+%		
+%		%----------------------------------------------------%
+%		\node(in2) [io, right of=start, xshift=3.5cm] {Core specs};
+%		\node(in2pro1) [process, below of=in2, yshift=-0.5cm] {Density profile};
+%		\node(in2pro2) [process, below of=in2pro1] {Diffusion profile};
+%		\node(in2pro3) [process, below of=in2pro2] {$\sigma_0$\textbf{ estimate}};
+%		
+%		\draw[arrow] (in2) -- (start);
+%		\draw[arrow] (start) |- (in2pro1);
+%		\draw[arrow] (in2pro1) -- (in2pro2);
+%		\draw[arrow] (in2pro2) -- (in2pro3);
+%		
+%		%----------------------------------------------------%
+%		\node(pro0) [process, below of=start, yshift=-4.5cm] {\textbf{Frequency Filters}};
+%		\node(pro1) [process, below of=pro0] {\large{\textbf{BACK DIFFUSE}}};
+%		\node(pro2) [process, below of=pro1] {Count N Peaks};
+%		\node(dec1) [decision, below of=pro2, yshift=-.5cm] {$N = 32$ ? };
+%		
+%		\draw[arrow] (in1pro3) -| (pro0);
+%		\draw[arrow] (in2pro3) -| (pro0);
+%		\draw[arrow] (pro0) -- (pro1);
+%		\draw[arrow] (pro1) -- (pro2);
+%		\draw[arrow] (pro2) -- (dec1);
+%		
+%		%----------------------------------------------------%	
+%		\node(pro3a) [process, below of=dec1, xshift=-3cm] {$\sigma = \sigma + \Delta \sigma_1 $};
+%		\node(pro3apro1) [process, below of=pro3a] {Back diffuse};
+%		\node(pro3apro2) [process, below of=pro3apro1]  {Count N peaks};
+%		\node(pro3apro3) [process, below of=pro3apro2, xshift=-2cm] {$\sigma_{\text{final}} = \sigma - 2\cdot\Delta\sigma_1$};
+%		\node(stop) [startstop, right of=pro3apro3, xshift=2.5cm] {STOP};
+%		\node(out1) [io, right of=stop, xshift=2.5cm, text width=2.5cm] {\footnotesize{back diffused depth series}};
+%		\node(out2) [io, below of=out1, text width=1.1cm] {$\sigma_{\text{final}}$};
+%		
+%		
+%		\draw [arrow] (dec1) -| node[anchor=east] {yes} (pro3a);
+%		\draw [arrow] (pro3a) -- (pro3apro1);
+%		\draw [arrow] (pro3apro1) -- (pro3apro2);
+%		\draw [arrow] (pro3apro2) --++ (2,0) node [anchor=west] {If $N$ = 32} |- (pro3a);		
+%		\draw[arrow] (pro3apro2) --++ (-2,0) node [anchor=east] {If $N > $  32} -| (pro3apro3);
+%		\draw[arrow] (pro3apro3) -- (stop);
+%		\draw[arrow] (stop) -- (out1);
+%		\draw[arrow] (stop) |- (out2);
+%		
+%		%----------------------------------------------------%	
+%		\node(pro3b1) [process, right of=dec1, xshift=3.2cm] {$\sigma = \sigma - \Delta\sigma_2$};
+%		\node(pro3b2) [process, below of=dec1, xshift=4.7cm] {$\sigma=\sigma+\Delta\sigma_2$};
+%		
+%		
+%		\draw [arrow] (dec1) --(2.45,-11) node[anchor=south] {$N > 32$} -- (pro3b1);
+%		\draw[arrow] (dec1) -- (0,-12.5) node[anchor=north] {$N < 32$} -- (pro3b2);
+%		\draw[arrow] (pro3b1) |- (pro1);
+%		\draw [arrow] (pro3b2) --++ (2,0) |- (pro1);		
+%		
+%	\end{tikzpicture}
+%	\caption[Flowchart]{Flowchart of method for diffusion length computation.}
+%	\label{Fig:FlowchartDiffLen}
+%\end{figure}	
 
 
 
@@ -264,18 +382,11 @@ In Figure \ref{fig:SiteA_DensProfile_wHL} an example of the semi-analytical dept
 \subsubsection[$\sigma_0$ estimate]{Core Specifications: $\sigma_0$ estimate}
 \label{Subsubsec:Method_FirstSigmaEstimate_PrelimComputations_Sigma0Estimate}
 
-\todo{$\sigma(z)$ vs $\sigma_C$}
+\todo{$\sigma(z)$ vs $\sigma_C$. Make figure w. Gauss examples. Make figure w. }
 
 
 
-\subsection[Back Diffusion]{Back Diffusion/Deconvolution}
-\label{Subsec:Method_FirstSigmaEstimate_BackDiffusion}
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth]{SiteA_filtersEx.jpg}
-	\caption[Frequency filters example, Site A]{Frequency filter examples ranging from diffusion length 0.04 m to 0.085 m.}
-	\label{fig:SiteA_filtersEx}
-\end{figure}
+
 
 
 
@@ -301,7 +412,7 @@ This gives a new distribution of data points as seen in Figure \ref{fig:SiteA_d1
 
 \subsubsection[Transforms Implementation]{Implementation of Spectral Transforms}
 \label{Subsubsec:Method_FirstSigmaEstimate_BackDiffusion_SpectralTransforms}
-
+FFT, DCT, NFFT, NDCT
 \subsubsection[Spectral Analysis]{Depth Series: Spectral Analysis}
 \label{Subsubsec:Method_FirstSigmaEstimate_BackDiffusion_SpectralAnalysis}
 
@@ -420,6 +531,18 @@ This logistic curve can be seen plotted on a linear and a double logarithmic sca
 
 Now, the one branch of the preliminary work considering the raw depth series, has been dealt with and the remaining work before back diffusion can be carried out consisting of using the specifications of the core at the given drill site to give a qualified first guess on diffusion length.
 
+\subsubsection[Frequency Filters]{Frequency Filtering}
+\label{Subsubsec:Method_FirstSigmaEstimate_BackDiffusion_FrequencyFilters}
+
+\subsection[Back Diffusion]{Back Diffusion/Deconvolution}
+\label{Subsec:Method_FirstSigmaEstimate_BackDiffusion}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{SiteA_filtersEx.jpg}
+	\caption[Frequency filters example, Site A]{Frequency filter examples ranging from diffusion length 0.04 m to 0.085 m.}
+	\label{fig:SiteA_filtersEx}
+\end{figure}
+
 \subsection{Measured $\sigma$ Estimate Corrections}
 \label{Subsec:Method_FirstSigmaEstimate_Correction}
 
@@ -435,6 +558,11 @@ Now, the one branch of the preliminary work considering the raw depth series, ha
 
 \subsubsection[Thinning Function]{Thinning Function S(z)}
 \label{Subsubsec:Method_FirstSigmaEstimate_Correction_ThinningFunction}
+
+
+
+
+
 
 \subsection[Peak Counting]{Peak Counting}
 \label{Subsec:Method_FirstSigmaEstimate_PeakCounting}
@@ -457,14 +585,8 @@ Now, the one branch of the preliminary work considering the raw depth series, ha
 
 \subsection[Output]{Output}
 \label{Subsec:Method_OptimalSigmaEstimate_Output}
-\todo{METH-OUT: Remember: write about sampling sigma}
 
-\begin{figure}
-	\centering
-	\includegraphics[width=\textwidth]{SiteA_BackDiffused_AllSigmaEst.jpg}
-	\caption[All diffusion length estimate deconvolutions, Site A]{Estimated back diffused data series with different diffusion length estimates: diffusion length estimate from spectral fit ($\sigma_{fit}$), maximum ($\sigma_{Max}^{Theo}$) and minimum ($\sigma_{Min}^{Theo}$) theoretically estimated diffusion lengths and final estimated diffusion length.}
-	\label{fig:SiteA_BackDiffused_AllSigmaEst}
-\end{figure}
+
 
 \section[Stability Tests]{Method Testing and Stability}
 \label{Sec:Method_StabilityTests}
@@ -503,7 +625,7 @@ Now, the one branch of the preliminary work considering the raw depth series, ha
 
 
 
-
+\newpage
 
 \section[Missing Data]{Reconstruction of Missing Data}
 \label{Sec:Method_MissingData}

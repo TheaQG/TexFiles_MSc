@@ -4,7 +4,7 @@
 \contentsline {section}{Abstract}{iii}
 \contentsline {chapter}{List of Figures}{xi}
 \contentsline {chapter}{List of Tables}{xii}
-\contentsline {chapter}{Listings}{xii}
+\contentsline {chapter}{Listings}{xiii}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Laki and Tambora}{1}
 \contentsline {section}{\numberline {1.2}A Rare Gem}{2}

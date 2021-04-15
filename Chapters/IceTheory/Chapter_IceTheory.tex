@@ -255,7 +255,7 @@ The noise term, often categorized as white noise, but red noise is also seen in 
 	|\hat{\eta}(k)|^2 = \frac{\sigma_n^2 \Delta}{|1 - a_1 \, e^{ik\Delta}|^2}
 	\label{Eq:PSD_Noise_Term}
 \end{equation}
-Equation \ref{Eq:PSD_Noise_Term} describes an autoregressive process of the first order, with $a_1$ being an AR-1 coefficient \todo{ICE-TEMP: Describe an autoregressive process}. An AR-n process describes the evolution of a stochastic time series $\mathbb{X}$ where the next time step, $X_t$ is dependent on the last $n$ points, $\{X_{t-n},...,X_{t-1}\}$, and is mathematically defined as:
+Equation \ref{Eq:PSD_Noise_Term} describes an autoregressive process of the first order, with $a_1$ being an AR-1 coefficient. An AR-n process describes the evolution of a stochastic time series $\mathbb{X}$ where the next time step, $X_t$ is dependent on the last $n$ points, $\{X_{t-n},...,X_{t-1}\}$, and is mathematically defined as:
 \begin{equation}
 	X_t^{(n)} = C + \sum_{i=1}^{n}\phi_i X_{t-i} + \epsilon_t
 	\label{Eq:AR-n}
