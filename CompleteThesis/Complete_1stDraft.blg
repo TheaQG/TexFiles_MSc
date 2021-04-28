@@ -3,7 +3,7 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Complete_1stDraft.aux
 The style file: plain.bst
 Database file #1: /home/thea/Documents/Bibliographies/MasterThesis.bib.bib
-Repeated entry---line 920 of file /home/thea/Documents/Bibliographies/MasterThesis.bib.bib
+Repeated entry---line 444 of file /home/thea/Documents/Bibliographies/MasterThesis.bib.bib
  : @misc{Patankar1980
  :                   ,
 I'm skipping whatever remains of this entry
@@ -17,50 +17,52 @@ Warning--I didn't find a database entry for "Lamb2017"
 Warning--I didn't find a database entry for "BarkanLuz2005"
 Warning--I didn't find a database entry for "Gkinis2021"
 Warning--I didn't find a database entry for "Press2007"
+Warning--I didn't find a database entry for "bibid"
+Warning--I didn't find a database entry for "ClausenHammer1988"
 Warning--empty journal in Gkinis_2021
 Warning--there's a number but no volume in Johnsen1977
 Warning--empty publisher in Marvasti1993
 Warning--empty publisher in Patankar1980
 Warning--empty publisher in Potts2001
-You've used 20 entries,
+You've used 22 entries,
             2118 wiz_defined-function locations,
-            661 strings with 10113 characters,
-and the built_in function-call counts, 10440 in all, are:
-= -- 922
-> -- 889
+            680 strings with 10607 characters,
+and the built_in function-call counts, 11207 in all, are:
+= -- 998
+> -- 935
 < -- 5
-+ -- 354
-- -- 334
-* -- 976
-:= -- 1839
-add.period$ -- 61
-call.type$ -- 20
-change.case$ -- 226
++ -- 372
+- -- 350
+* -- 1040
+:= -- 1971
+add.period$ -- 67
+call.type$ -- 22
+change.case$ -- 240
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 248
-empty$ -- 521
-format.name$ -- 334
-if$ -- 1982
+cite$ -- 27
+duplicate$ -- 270
+empty$ -- 572
+format.name$ -- 350
+if$ -- 2133
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 22
-newline$ -- 103
-num.names$ -- 40
-pop$ -- 213
+int.to.str$ -- 22
+missing$ -- 24
+newline$ -- 113
+num.names$ -- 44
+pop$ -- 223
 preamble$ -- 1
-purify$ -- 207
+purify$ -- 219
 quote$ -- 0
-skip$ -- 171
+skip$ -- 186
 stack$ -- 0
-substring$ -- 481
-swap$ -- 44
+substring$ -- 535
+swap$ -- 46
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 76
+type$ -- 84
 warning$ -- 5
-while$ -- 75
-width$ -- 22
-write$ -- 219
+while$ -- 83
+width$ -- 24
+write$ -- 241
 (There was 1 error message)

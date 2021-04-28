@@ -11,6 +11,12 @@ G~Bruun.
 \newblock {\em IEEE Transactions on Acoustics, Speech and Signal Processing
   (ASSP)}, 26(1):56--63, 1978.
 
+\bibitem{Clausen1988}
+H.B. Clausen and C.U. Hammer.
+\newblock {The Laki and Tambora Eruptions as Revealed in Greenland Ice Cores
+  from 11 Locations}.
+\newblock {\em Annals of Glaciology}, 10:16--22, 1988.
+
 \bibitem{Cooley1965}
 J.~W. Cooley and J.~W. Tukey.
 \newblock {An Algorithm for the Machine Calculation of Complex Fourier Series}.
@@ -135,6 +141,12 @@ Pauli Virtanen, Ralf Gommers, Travis~E. Oliphant, Matt Haberland, Tyler Reddy,
 \newblock {SciPy 1.0: fundamental algorithms for scientific computing in
   Python}.
 \newblock {\em Nature Methods}, 17(3):261--272, 2020.
+
+\bibitem{Weissbach2016}
+S.~Weissbach, A.~Wegner, T.~Opel, H.~Oerter, B.~M. Vinther, and S.~Kipfstuhl.
+\newblock {Spatial and temporal oxygen isotope variability in northern
+  Greenland-implications for a new climate record over the past millennium}.
+\newblock {\em Climate of the Past}, 12(2):171--188, 2016.
 
 \bibitem{Zhao2008}
 Xianfeng Zhao, Bingbing Xia, and Yi~Deng.
