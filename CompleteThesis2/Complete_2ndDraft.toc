@@ -1,0 +1,117 @@
+\changetocdepth {3}
+\contentsline {section}{Darkness}{ii}%
+\contentsline {section}{Acknowledgments}{ii}%
+\contentsline {section}{Abstract}{iii}%
+\contentsline {chapter}{List of Figures}{xi}%
+\contentsline {chapter}{List of Tables}{xii}%
+\contentsline {chapter}{Listings}{xiii}%
+\contentsline {chapter}{\chapternumberline {1}Introduction}{1}%
+\contentsline {section}{\numberline {1.1}Paleotemperature and -climate}{1}%
+\contentsline {section}{\numberline {1.2}Laki and Tambora}{1}%
+\contentsline {section}{\numberline {1.3}A Rare Gem}{3}%
+\contentsline {chapter}{\chapternumberline {2}Ice Theory}{5}%
+\contentsline {section}{\numberline {2.1}Water Isotopes}{5}%
+\contentsline {subsection}{\numberline {2.1.1}$\delta $ notation}{5}%
+\contentsline {section}{\numberline {2.2}Diffusion and Densification}{6}%
+\contentsline {subsection}{\numberline {2.2.1}Densification}{6}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}Herron Langway Empirical Model}{7}%
+\contentsline {subsection}{\numberline {2.2.2}Diffusion}{10}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}In Firn}{10}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}In Solid Phase}{12}%
+\contentsline {subsubsection}{\numberline {2.2.2.3}Reconstruction of temperatures}{13}%
+\contentsline {section}{\numberline {2.3}CFM}{15}%
+\contentsline {subsection}{\numberline {2.3.1}Iso-CFM}{16}%
+\contentsline {subsubsection}{\numberline {2.3.1.1}Diffusivity}{16}%
+\contentsline {subsubsection}{\numberline {2.3.1.2}Diffusion Length Profiles}{19}%
+\contentsline {section}{\numberline {2.4}Temperature Estimation}{22}%
+\contentsline {section}{\numberline {2.5}ECM and DEP}{23}%
+\contentsline {subsection}{\numberline {2.5.1}ECM}{23}%
+\contentsline {subsection}{\numberline {2.5.2}DEP}{24}%
+\contentsline {section}{\numberline {2.6}Volcanic Horizons}{26}%
+\contentsline {chapter}{\chapternumberline {3}Data}{29}%
+\contentsline {section}{\numberline {3.1}Selection}{29}%
+\contentsline {subsection}{\numberline {3.1.1}AWI B-cores}{29}%
+\contentsline {subsection}{\numberline {3.1.2}Crete Area}{30}%
+\contentsline {section}{\numberline {3.2}Data Specifications}{31}%
+\contentsline {chapter}{\chapternumberline {4}Signal Analysis}{33}%
+\contentsline {section}{\numberline {4.1}Synthetic Data}{33}%
+\contentsline {section}{\numberline {4.2}Back Diffusion}{33}%
+\contentsline {subsection}{\numberline {4.2.1}Spectral Analysis}{34}%
+\contentsline {subsubsection}{\numberline {4.2.1.1}PSD}{34}%
+\contentsline {subsubsection}{\numberline {4.2.1.2}Spectral Transforms}{36}%
+\contentsline {subsection}{\numberline {4.2.2}Spectral Filtering}{37}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}Wiener Filtering}{37}%
+\contentsline {subsection}{\numberline {4.2.3}Signal Restoration}{38}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}Kernel Estimation}{38}%
+\contentsline {section}{\numberline {4.3}Restoration}{39}%
+\contentsline {subsection}{\numberline {4.3.1}Interpolation}{39}%
+\contentsline {subsection}{\numberline {4.3.2}Standardisation}{40}%
+\contentsline {subsection}{\numberline {4.3.3}Cycle Length Estimation}{40}%
+\contentsline {chapter}{\chapternumberline {5}Computational Methods}{41}%
+\contentsline {section}{\numberline {5.1}Splines and Interpolation}{41}%
+\contentsline {subsection}{\numberline {5.1.1}Interpolation}{41}%
+\contentsline {subsubsection}{\numberline {5.1.1.1}Basic Idea}{42}%
+\contentsline {subsection}{\numberline {5.1.2}Interpolation in this Project}{42}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}Interpolation 1}{42}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}Interpolation 2}{43}%
+\contentsline {section}{\numberline {5.2}Peak Detection}{44}%
+\contentsline {chapter}{\chapternumberline {6}Method}{49}%
+\contentsline {section}{\numberline {6.1}First $\sigma $ estimate}{49}%
+\contentsline {subsection}{\numberline {6.1.1}Input}{52}%
+\contentsline {subsection}{\numberline {6.1.2}Preliminary Computations}{53}%
+\contentsline {subsubsection}{\numberline {6.1.2.1}Density Profile}{54}%
+\contentsline {subsubsection}{\numberline {6.1.2.2}Diffusion Profile}{56}%
+\contentsline {subsubsection}{\numberline {6.1.2.3}$\sigma _0$ estimate}{56}%
+\contentsline {subsubsection}{\numberline {6.1.2.4}Spline Interpolation}{56}%
+\contentsline {subsubsection}{\numberline {6.1.2.5}Transforms Implementation}{58}%
+\contentsline {subsubsection}{\numberline {6.1.2.6}Spectral Analysis}{58}%
+\contentsline {subsubsection}{\numberline {6.1.2.7}Wiener Filter}{61}%
+\contentsline {subsubsection}{\numberline {6.1.2.8}Frequency Filters}{61}%
+\contentsline {subsection}{\numberline {6.1.3}Back Diffusion}{61}%
+\contentsline {subsection}{\numberline {6.1.4}Measured $\sigma $ Estimate Corrections}{61}%
+\contentsline {subsubsection}{\numberline {6.1.4.1}Ice diffusion}{61}%
+\contentsline {subsubsection}{\numberline {6.1.4.2}Sampling diffusion}{61}%
+\contentsline {subsubsection}{\numberline {6.1.4.3}Thinning Function}{62}%
+\contentsline {subsection}{\numberline {6.1.5}Peak Counting}{62}%
+\contentsline {subsubsection}{\numberline {6.1.5.1}Interpolation}{62}%
+\contentsline {section}{\numberline {6.2}Optimal $\sigma $ Estimate}{62}%
+\contentsline {subsection}{\numberline {6.2.1}Decision algorithm}{62}%
+\contentsline {subsection}{\numberline {6.2.2}Output}{62}%
+\contentsline {section}{\numberline {6.3}Stability Tests}{62}%
+\contentsline {subsection}{\numberline {6.3.1}Maximal $N_{\text {peaks}}$}{62}%
+\contentsline {section}{\numberline {6.4}Upgrading the Algorithms}{63}%
+\contentsline {subsection}{\numberline {6.4.1}Peak Detection: ML}{63}%
+\contentsline {subsection}{\numberline {6.4.2}Linear Timescale}{63}%
+\contentsline {subsection}{\numberline {6.4.3}Standardization}{63}%
+\contentsline {subsection}{\numberline {6.4.4}Recursivity and Constraints}{63}%
+\contentsline {section}{\numberline {6.5}Missing Data}{64}%
+\contentsline {subsection}{\numberline {6.5.1}Interpolation Method}{64}%
+\contentsline {subsection}{\numberline {6.5.2}MEM}{64}%
+\contentsline {chapter}{\chapternumberline {7}Results}{65}%
+\contentsline {section}{\numberline {7.1}AWI B-cores}{65}%
+\contentsline {section}{\numberline {7.2}Alphabet Cores}{65}%
+\contentsline {chapter}{\chapternumberline {8}Temperature Reconstruction}{69}%
+\contentsline {section}{\numberline {8.1}Temperature Estimate from Data}{69}%
+\contentsline {subsection}{\numberline {8.1.1}Steady State Solution}{69}%
+\contentsline {subsubsection}{\numberline {8.1.1.1}Accumulation Distributions}{69}%
+\contentsline {subsection}{\numberline {8.1.2}Iso-CFM Possibilities}{69}%
+\contentsline {chapter}{\chapternumberline {9}Layer Counting}{71}%
+\contentsline {chapter}{\chapternumberline {10}Conclusion}{73}%
+\contentsline {chapter}{Bibliography}{75}%
+\contentsline {chapter}{APPENDICES}{77}%
+\contentsline {chapter}{Appendices}{79}%
+\contentsline {section}{Appendix I}{79}%
+\contentsline {section}{Appendix II}{80}%
+\contentsline {section}{Appendix III}{84}%
+\contentsline {section}{Appendix IV}{86}%
+\contentsline {subsubsection}{DFT \& FFT}{86}%
+\contentsline {subsubsection}{NUFT}{88}%
+\contentsline {subsubsection}{DCT}{89}%
+\contentsline {subsubsection}{NDCT}{90}%
+\contentsline {subsubsection}{MEM}{90}%
+\contentsline {section}{Appendix V}{91}%
+\contentsline {subsubsection}{Existence and Uniqueness}{91}%
+\contentsline {subsubsection}{Polynomial}{92}%
+\contentsline {subsubsection}{Piecewise Polynomial}{93}%
+\contentsline {section}{Appendix VI}{96}%
+\contentsline {section}{Appendix V}{97}%

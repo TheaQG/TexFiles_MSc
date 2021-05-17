@@ -1,0 +1,100 @@
+%!TeX root = Chapter_Results
+\documentclass[../../CompleteThesis/Complete_1stDraft]{subfiles}
+
+\begin{document}
+	
+	\section[AWI B-cores]{AWI B-cores}
+	\label{Sec:Results_AWIBcores}
+	
+	
+	
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{B23_TheoDiffLens33Theo.png}
+		\caption[]{}
+		\label{fig:B23_BD_Theo}
+	\end{figure}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{B23_TheoDiffLens33Opt_only.png}
+		\caption[]{}
+		\label{fig:B23_BD_OptOnly}
+	\end{figure}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{B23_TheoDiffLens33OptBig.png}
+		\caption[]{}
+		\label{fig:B23_BD_OptBig}
+	\end{figure}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\section[Alphabet Cores]{Crete and Surrounding Alphabet Cores}
+	\label{Sec:Results_AlphabetCores}
+	
+	\begin{table}[ht]
+		\centering
+		\begin{tabular}{l||*{6}{c | c||}}
+			&
+			\multicolumn{2}{c}{Crete} & \multicolumn{2}{c}{Site A} & \multicolumn{2}{c}{Site B} & \multicolumn{2}{c}{Site D} & \multicolumn{2}{c}{Site E} & \multicolumn{2}{c||}{Site G} \\
+			%\hline
+			&
+			$\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ \\
+			
+			\hline
+			FFT & & & & & & & & & & & & \\ 
+			DCT & 6.08 & 6.02 & 5.97 & 5.85 & 5.71 & 5.83 & 4.55 & 4.41 & 6.37 & 6.24 & 8.81 & 8.72 \\
+			NDCT & 5.98 & 5.93 & 6.27 & 6.16 & 6.25 & 6.36 & 4.57 & 4.43 & 6.55 & 6.43 & 8.84 & 8.75 \\
+		\end{tabular}
+	\end{table}
+	
+	\begin{table}[ht]
+		\centering
+		\begin{tabular}{l||*{6}{c | c||}}
+			&
+			\multicolumn{2}{c}{Crete} & \multicolumn{2}{c}{Site A} & \multicolumn{2}{c}{Site B} & \multicolumn{2}{c}{Site D} & \multicolumn{2}{c}{Site E} & \multicolumn{2}{c||}{Site G} \\
+			%\hline
+			&
+			$\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ \\
+			
+			\hline
+			$\sigma_{\text{constant}}$ & & & & & & & & & & & & \\ 
+			$\sigma(z)$ & & & & & & & & & & & & \\ 
+		\end{tabular}
+	\end{table}
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{SiteA_BackDiffused_AllSigmaEst.jpg}
+		\caption[All diffusion length estimate deconvolutions, Site A]{Estimated back diffused data series with different diffusion length estimates: diffusion length estimate from spectral fit ($\sigma_{fit}$), maximum ($\sigma_{Max}^{Theo}$) and minimum ($\sigma_{Min}^{Theo}$) theoretically estimated diffusion lengths and final estimated diffusion length.}
+		\label{fig:SiteA_BackDiffused_AllSigmaEst}
+	\end{figure}
+	
+	\begin{table}[ht]
+		\centering
+		\begin{tabular}{l||*{6}{c | c||}}
+			&
+			\multicolumn{2}{c}{Crete} & \multicolumn{2}{c}{Site A} & \multicolumn{2}{c}{Site B} & \multicolumn{2}{c}{Site D} & \multicolumn{2}{c}{Site E} & \multicolumn{2}{c||}{Site G} \\
+			%\hline
+			&
+			$\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ \\
+			
+			\hline
+			No constraints & & & & & & & & & & & & \\ 
+			Constraints & & & & & & & & & & & & \\ 
+		\end{tabular}
+	\end{table}
+	
+	
+\end{document}
