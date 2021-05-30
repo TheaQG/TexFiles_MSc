@@ -1,42 +1,28 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces J. M. W. Turner: \textit {The Eruption of the Soufriere Mountains}\relax }}{i}%
 \addvspace {10pt}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Summers and Winters between Laki and Tambora}}{2}%
 \addvspace {10pt}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Ten meters of the top of Cretê ice core, with identification and dating of 19 annual layers.\relax }}{5}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Density profile examples given five different initial conditions representing present day conditions at the five different ice core locations. Temperature, $T_0$, is in $^{\text {o}}$C and accumulation, $A_0$, is in meter of water equivalent per year.\relax }}{10}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Contribution of the diffusion(dashed) and densification(dot-dashed) terms from Eq. 2.48\hbox {} to the final analytical diffusion length solution (blue).\relax }}{19}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Crete and surrounding Alphabet cores, as their analytical solutions place them according to observed temperature and accumulation rate.\relax }}{21}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Analytically calculated diffusion length profile examples given five different initial conditions representing present day conditions at the five different ice core locations. Temperature, $T_0$, is in $^{\text {o}}$C and accumulation, $A_0$, is in meter of water equivalent per year.\relax }}{22}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Density profile examples given five different initial conditions representing present day conditions at the five different ice core locations. Temperature, $T_0$, is in $^{\text {o}}$C and accumulation, $A_0$, is in meter of water equivalent per year.\relax }}{11}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Contribution of the diffusion(dashed) and densification(dot-dashed) terms from Eq. 2.48\hbox {} to the final analytical diffusion length solution (blue).\relax }}{20}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Crete and surrounding Alphabet cores, as their analytical solutions place them according to observed temperature and accumulation rate.\relax }}{22}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Analytically calculated diffusion length profile examples given five different initial conditions representing present day conditions at the five different ice core locations. Temperature, $T_0$, is in $^{\text {o}}$C and accumulation, $A_0$, is in meter of water equivalent per year.\relax }}{23}%
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces FFT, DCT, NDCT, Site A}}{37}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces FFT, DCT, NDCT PSDs, Site A}}{37}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces FFT, DCT, NDCT PSDs with Fit, Site A}}{40}%
-\addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Unevenly sampled signal from Site A resampled using cubic spline interpolation to an even signal with a new sample size equal to the minimum sample size found in the raw signal.\relax }}{43}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Four different resampled signals of Site A data, showing loss of information when resampling resolution is low.\relax }}{44}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces \relax }}{45}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces \relax }}{46}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces \relax }}{47}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Ten meters of the top of Cretê ice core, with identification and dating of 19 annual layers, with peaks(blue) corresponding to summers and troughs(orange) corresponding to winters.\relax }}{47}%
-\addvspace {10pt}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Flowchart}}{50}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Flowchart}}{51}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Full $\delta ^{18}$O record with insert, Site A}}{52}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces ECM and d18O data at LT, Site A.}}{53}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Herron Langway density profile Site A}}{56}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Diffusion profile, Site A.}}{56}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Measured and interpolated $\delta ^{18}$O data, Site A}}{57}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Spectral Analysis}}{59}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Isolated spectral fits, Site A}}{59}%
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Wiener filter}}{61}%
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Frequency filters example, Site A}}{62}%
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Best estimate of deconvoluted depth series, Site A}}{63}%
-\addvspace {10pt}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces All diffusion length estimate deconvolutions, Site A}}{67}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces FFT, DCT, NDCT, Site A}}{39}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces FFT, DCT, NDCT PSDs, Site A}}{39}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces FFT, DCT, NDCT PSDs with Fit, Site A}}{42}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Ten meters of the top of Cretê ice core, with identification and dating of 19 annual layers, with peaks(blue) corresponding to summers and troughs(orange) corresponding to winters.\relax }}{42}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Unevenly sampled signal from Site A resampled using cubic spline interpolation to an even signal with a new sample size equal to the minimum sample size found in the raw signal.\relax }}{45}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Four different resampled signals of Site A data, showing loss of information when resampling resolution is low.\relax }}{46}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces \relax }}{47}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces \relax }}{48}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces \relax }}{49}%
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces All diffusion length estimate deconvolutions, Site A}}{55}%
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {1}{\ignorespaces AWI B-cores density measurements and HL-modeled densities.\relax }}{82}%
-\contentsline {figure}{\numberline {2}{\ignorespaces AWI B-cores averaged density measurements and related HL-modeled densities.\relax }}{83}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Monomials}}{93}%
+\contentsline {figure}{\numberline {1}{\ignorespaces AWI B-cores density measurements and HL-modeled densities.\relax }}{66}%
+\contentsline {figure}{\numberline {2}{\ignorespaces AWI B-cores averaged density measurements and related HL-modeled densities.\relax }}{67}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Monomials}}{78}%

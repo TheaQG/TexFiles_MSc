@@ -1,0 +1,319 @@
+%!TeX root = Chapter_SignalAnalysisAndCompMeth
+\documentclass[../../CompleteThesis2/Complete_2ndDraft]{subfiles}
+%\graphicspath{{../../Figures/}}
+\begin{document}
+The data obtained through various experimental measurements are easily compared with a time series, as they typically show some quantity measured all along the depth of an ice core. This depth is often, at short intervals, treated as a regular linear time series thus making it possible to use some of the known signal analysis methods. Of course, when considering the entirety of an ice core, the linearity disappears as thinning and compression makes the depth series non linear. But when considering short lengths of core it is possible to estimate a linearity, assuming conformity in this specific layer. 
+
+
+\section[Synthetic Data]{Diffusion Illustrated through Synthetic Data}
+\label{Sec:SignalAnalysis_SyntheticData}
+\todo{SIGNAL-SYNTHDATA: Write about synthetic data generation.}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{AR1_process.png}
+	\caption[]{}
+	\label{fig:AR1_process}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{AR1_process_W_backDiff.png}
+	\caption[]{}
+	\label{fig:AR1_process_W_backDiff}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{AR1_process_W_backDiff_PSD.png}
+	\caption[]{}
+	\label{fig:AR1_process_W_backDiff_PSD}
+\end{figure}
+
+
+
+
+
+\section[Back Diffusion][Back Diffusion]{Back Diffusion Through Spectral Analysis}
+\label{Sec:SignalAnalysis_BackDiffusion}
+Due to diffusion in firn and ice, some of the water isotopic signal is lost. Some of this signal can be restored by investigating the diffusion process, and through filtering and deconvolution techniques(REFERENCES).
+For the data of this thesis two different restoration techniques are presented: a spectral method, determining the effect of mixing and diffusion as a spectral filter(REFERENCES), and a kernel restoration method much like the ones used to restore pixel resolution in images (REFERENCES). 
+	
+	
+	
+\subsection[Spectral Analysis][Spectral Analysis]{Spectral Analysis}
+\label{Subsec:SignalAnalysis_BackDiffusion_SpectralAnalysis}
+\subsubsection[PSD][PSD]{Power Spectral Densities}
+\label{Subsubsec:SignalAnalysis_BackDiffusion_SpectralAnalysis_PSD}
+A very useful tool for analyzing signals exhibiting oscillatory effects is analysis of the signals power spectrum. Instead of considering the signal in time, it is transformed to the spectral domain, where it is possible to obtain an estimate of both the signal and the underlying noise. This is crucial for enhancing the signal and filtering away noise. But to be able to examine these effects, first the data must be transformed. A range of different methods may be used to compute the frequency transform of the depth series, here I present the three I have been working with. Since the data are discrete and experimental, I will be presenting the discrete and applicable mathematical models.\\
+When considering a signal, it may be of interest to investigate how the energy of said signal is distributed with frequency. The total power is defined as:
+\begin{equation}
+	\text{Total Power} = \int_{-\infty}^{\infty} |X(\tau)|^2 \, d\tau.
+	\label{Eq:SignalEnergy}
+\end{equation}
+Using Parseval's theorem (REFERENCE) (assuming that the signal has a finite total energy), the power of the signal can alternatively be written as
+
+\begin{equation}
+	\int_{-\infty}^{\infty} |X(\tau)|^2 \, d\tau = \int_{-\infty}^{\infty} |\tilde{X}(\tau)|^2\, df
+	\label{Eq:ParsevalsTheorem}
+\end{equation}
+where $\tilde{X}(f)$ is the spectral (Fourier) transform of the signal, from time to frequency domain, defined as:
+\begin{equation}
+	\tilde{X}(f) = \int_{-\infty}^{\infty} X(\tau) e^{2\pi i f \tau} \, d\tau
+	\label{Eq:FourierTransform}
+\end{equation}
+and the inverse spectral (Fourier) transform, from frequency to time domain, defined as:
+\begin{equation}
+	X(t) = \int_{-\infty}^{\infty} \tilde{X}(f) e^{-2\pi i f \tau}\, df.
+	\label{Eq:InverseFourierTransform}
+\end{equation}
+Both $X(t)$ and $\tilde{X}(f)$ represent the same function, just in different variable domains. Often, the angular frequency $\omega$ is used instead, with the relation between $\omega$ and $f$ being $\omega \equiv 2\pi f $, giving the Fourier and inverse Fourier transforms as:
+
+\begin{equation}
+	\begin{aligned}
+		\tilde{X}(\omega) &= \int_{-\infty}^{\infty} X(t) e^{i\omega\tau}\, d\tau \\
+		X(\tau) &= \int_{-\infty}^{\infty} \tilde{X}(\omega) e^{-i\omega\tau}\, d\omega
+		\label{Eq:FourierTransformAngular}
+	\end{aligned} 
+\end{equation}
+
+From Equation \ref{Eq:ParsevalsTheorem} we can interpret the integrand on the right hand side $|\tilde{X}(f)|^2$ as a density function, describing the energy per unit frequency. This is a property which is able to reveal much information about the considered signal, and it is useful to define this as the (one-sided) Power Spectral Density: 
+\begin{equation}
+	P_X(f) \equiv |\tilde{X}(f)|^2 + |\tilde{X}(-f)|^2 \qquad 0 \leq f < \infty
+\end{equation}
+This entity ensures that the total power is found just by integrating over $P_X(f)$ from 0 to $\infty$. When the function is purely real, the PSD reduces to $P_X(f) = 2|\tilde{X}(f)|^2$.\\
+In the above the transform used to define the PSD was presented as the Fourier transform. When working with discrete data, as is very common when analyzing real world data, there are a number of different ways of estimating the PSD. In the following three different methods will be presented, all used in this thesis.
+\newline
+\todo{SIGNAL-BACKDIFF: RETHINK THIS PART. DO NOT USE TIME ON ALL THE CALCULATIONS. WRITE THE GENERAL IDEAS OF THE METHODS AND STATE HOW TO CALCULATE/COMPUTE. SMALL CODE SNIP TO GIVE GENERAL IDEA.}
+\begin{quote}
+	\textcolor{red}{\textbf{RETHINK THIS PART. DO NOT USE TIME ON ALL THE CALCULATIONS. WRITE THE GENERAL IDEAS OF THE METHODS AND STATE HOW TO CALCULATE/COMPUTE. SMALL CODE SNIP TO GIVE GENERAL IDEA.}}
+\end{quote}
+
+
+\subsubsection[Spectral Transforms][Spectral Transforms]{Spectral Transforms}
+\label{Subsubsec:SignalAnalysis_BackDiffusion_SpectralAnalysis_SpectralTransforms}
+
+\begin{itemize}
+	\item DFT/FFT
+	\item NUDFT
+	\item DCT
+	\item NDCT
+	\item (MEM)
+\end{itemize}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{SpectralTransforms_3.png}
+	\caption[FFT, DCT, NDCT, Site A]{Examples of three different spectral transforms, FFT, DCT, NDCT, performed on the depth series between Tambora and Laki eruptions from Site A.}
+	\label{fig:SpectralTransforms_3}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{SpectralTransforms_PSD.png}
+	\caption[FFT, DCT, NDCT PSDs, Site A]{Examples of power spectral densities related to the three different spectral transforms, FFT, DCT, NDCT, seen in Figure \ref{fig:SpectralTransforms_3}.}
+	\label{fig:SpectralTransforms_PSD}
+\end{figure}
+
+
+
+\subsection[Spectral Filtering][Spectral Filtering]{Spectral Filtering}
+\label{Subsec:SignalAnalysis_BackDiffusion_SpectralFiltering}
+\subsubsection[Wiener Filtering][Wiener Filtering]{Wiener Filtering}
+\label{Subsubsec:SignalAnalysis_BackDiffusion_SpectralFiltering_Wiener}
+Through spectral analysis it is possible to treat the noise of the signal consistently. The goal is to create spectral filters which enhances the signal while minimizing the effect of the noise, thus increasing the signal-to-noise ratio (SNR).\\
+Theoretically, without any diffusion, the change in isotopic concentration would be described through a step function, going from one constant concentration to another. This step function can be described by the Heaviside function:
+\begin{equation}
+	D(t) = \begin{cases}
+		0, & t < 0 \\
+		1, & t \geq
+	\end{cases}
+\end{equation}
+In reality, a number of different mixing processes change this step function, and the measured signal will be a smooth curve, $s(t)$, which corresponds to the convolution of $S(t)$ with the mixing response function $M(\tau)$
+\begin{equation}
+	d(t) = \int_{- \infty}^{\infty} D(\tau) \cdot M(t - \tau)d\tau
+\end{equation}
+
+
+\subsection[Signal Restoration][Signal Restoration]{Signal Restoration by Optimal Diffusion Length}
+\label{Subsec:SignalAnalysis_BackDiffusion_SignalRestoration}
+\subsubsection{Kernel Estimation}
+\label{Subsubsec:SignalAnalysis_BackDiffusion_SignalRestoration_KernelEstimation}
+As is well known, in the spectral domain, convolution is multiplication and the mixing is described as the multiplication between the Fourier transform of $S$ and $M$:
+\begin{equation}
+	\tilde{d} = \tilde{D} \cdot \tilde{M}
+\end{equation}
+
+
+By differentiation with respect to time, the mixing filter $M$ is unaffected, and differentiation of the measured system response, the Heaviside function, $S'$ is a delta function, which Fourier transformed is unity, leading to:
+\begin{equation}
+	\tilde{d'} = \tilde{D'} \cdot \tilde{M} = \tilde{M}
+\end{equation}
+The mixing filter can thus be determined by measuring the system response to a step function, differentiating performing Fourier transform of the result $d'$.
+
+After determination of the mixing filter $\tilde{M}$, the unmixed signal $D$ can be estimated in theory by inverse Fourier transform of
+
+
+\begin{equation}
+	\tilde{D} = \tilde{d}\cdot\tilde{M}^{-1}
+	\label{eq:Restoration}
+\end{equation}
+
+During the mixing, cycles with short wavelengths are heavily washed out, and through the restoration in Eq. \ref{eq:Restoration}, the amplitudes corresponding to these wavelengths are heavily amplified by the filter. This method though has a drawback, which is that when the measurements contain noise, the restored signal will be dominated by high-frequency noise, greatly amplified by the mixing filter. Thus it is a problem of retaining as much (short wavelength) signal as possible while simultaneously attempting to amplify the high-frequency noise as little as possible. This optimal trade-off can be found by creating an optimum filter for the considered measured isotopic signal:
+\begin{equation}
+	\delta_M(z) = \delta_m (z) + \eta(z)
+\end{equation} 
+This optimal (Wiener) filter $\tilde{F}$, defined for each wave number $k = 2\pi \omega$, is presented as the ratio between pure signal and pure signal plus noise described in Power Spectral Densities as:
+\begin{equation}
+	\tilde{F}(k) =\frac{|\tilde{\delta_m}(\omega)|^2}{|\tilde{\delta_m}(\omega)|^2 + |\tilde{\eta}(\omega)|^2}
+	\label{eq:WienerFilter}
+\end{equation}
+In this work, the power spectral densities of the signal and the noise, respectively, are determined through analysis of the power spectral density of the combined signal/noise PSD.\\
+The PSD of the noise free measured signal, $|\tilde{\delta_m}(\omega)|^2$, is assumed describe as 
+\begin{equation}
+	|\tilde{\delta}_m(\omega)|^2 = P_0 e^{-k^2 \sigma_{\text{tot}}^2}
+	\label{eq:SignalPSD}
+\end{equation}
+where $\sigma_{\text{tot}}^2$ describes the total estimated diffusion length of the mixing.\\
+The noise is assumed to be red noise, described by an autoregressive process of first order, AR1:
+\begin{equation}
+	|\tilde{\eta}(\omega)|^2 = \frac{\sigma_{\eta}^2 \Delta z}{|1 + a_1 \exp(-2\pi i \omega \Delta z)|^2}
+	\label{eq:NoisePSD}
+\end{equation}
+where $\sigma_{\eta}^2$ is the variance of the red noise, $a_1$ is the AR1 coefficient and $\Delta z$ is the resolution of the time/depth data.
+It is then possible to estimate the parameters $P_0$, $\sigma_{\text{tot}}^2$, $\sigma_{\eta}^2$ and $a_1$ by curve fitting, separately, the two expressions in Eq. \ref{eq:SignalPSD} and \ref{eq:NoisePSD} to the data. The estimated parameters are varied to find the optimal guess to use for the filter.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{SpectralTransforms_PSDwFits.png}
+	\caption[FFT, DCT, NDCT PSDs with Fit, Site A]{Noise, signal and total fit to PSD, illustrating the construction of the Wiener Filter, see Sec. \ref{Sec:SignalAnalysis_Restoration}.}
+	\label{fig:SpectralTransforms_PSDwFits}
+\end{figure}
+
+
+
+
+
+
+
+
+
+\section[Peak Detection]{Peak Detection}
+\label{Sec:CompMeths_PeakDetection}
+
+Knowing that water isotopic data are a proxy for temperature, the most obvious way to determine annual layers in the signals is by detecting peaks and troughs. During colder periods, e.g. winter, the air masses arriving at the ice core sites have formed more precipitation before reaching the sites, and the vapor that results in this final precipitation is then more depleted of heavy isotopes, resulting in lower isotopic values, troughs in Figure \ref{Fig:ICE_Crete_10m_dated}. The precipitation falling during warmer conditions, e.g. summer, is correspondingly less depleted of the heavy isotopes, and results in higher isotopic values, peaks in Figure \ref{Fig:COMPMETH_Crete_10m_PeaksTroughs}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{Crete_10m_PeaksTroughs.png}
+	\caption{Ten meters of the top of Cretê ice core, with identification and dating of 19 annual layers, with peaks(blue) corresponding to summers and troughs(orange) corresponding to winters.}
+	\label{Fig:COMPMETH_Crete_10m_PeaksTroughs}
+\end{figure}
+Peak detection and layer counting has previously been carried out by visual inspection of the ice core depth signals, but as computers and algorithms have become more integrated in data analysis, it is now more common to use different computational methods. Developing and implementing layer counting and peak detection algorithms can be done in a number of different ways, but for this project, at first a very simple method has been initially implemented and later the method has been improved and optimized through a number of different constraints. One could also use different pattern recognition techniques[REFERENCE]\todo{References here.} to achieve more intelligent detection, and later some of these methods will be presented.\\
+The most naïve approach, and the one first implemented in this project, to peak detection is to simply find local maxima by comparing neighbouring values. When examining point $d_i$, the point is deemed a local maxima, if $d_{i\pm1} < d_i$. Local minima, troughs, can be found in exactly the same manner by finding minima as $d_{i\pm1} > d_i$. A very simple constraint for this method is to keep a required minimal distance between peaks, so that two peaks cannot be detected within a point distance of $\Delta d_{\text{min}}$. For example at a depth of 12 m in Figure \ref{Fig:COMPMETH_Crete_10m_PeaksTroughs} two troughs can be seen, but only one is chosen, as they are within the threshold distance to each other, which here is set to $\Delta d_{\text{min}} = 7$ points. Here, the lowest of the two troughs is chosen. The threshold distance can be chosen in different ways, for this short section it has been chosen through visual inspection, but more generally it can be chosen by examining some of the intrinsic properties of the signal, more about this in Section \ref{}.
+
+\todo{COMPMETH-PEAKDET: Write about better peak detection with cubic spline interpolation (enhanced resolution)}
+
+
+
+\section[Splines and Interpolation]{Splines and Interpolation}	
+\label{Sec:CompMeths_SplinesAndInterpolation}
+For the purpose of this thesis, interpolation of data needs to be fast, efficient and result in a function as smooth as possible. The last criterion is due to the knowledge of the nature of the data. The measurements are not continuous but should indeed in theory be so. Thus a good choice for interpolation of the data examined in this thesis would be the cubic spline interpolation. An instance of a such interpolation can be seen in Figure \ref{fig:Interp}.\\
+Cubic spline interpolation has been used in two instances during this analysis, both times through the \lstinline[language=Python]|Python SciPy| package \lstinline[language=Python]|scipy.interpolate.CubicSpline|\todo{SIGNAL-INTERP: REFERENCE!!}. Firstly, to assure equally spaced data points, so as to be able to perform a useful frequency analysis through spectral transformation, see Section, \ref{sec:???}. Secondly cubic spline interpolation was used to improve on peak detection in the final back diffused data. The final data have a rather low resolution, leading to an initial guess of peak positioning that might be shifted due to the discretization. Through cubic spline interpolation it is possible to construct a smooth estimate of a signal of higher resolution, leading to a peak positioning estimate that might be less shifted, see Figure \ref{fig:InterpFinal}.
+\subsection[Interpolation][Interpolation]{Interpolation}
+\label{Subsec:CompMeths_SplinesAndInterpolation_Interpolation}
+Interpolation is a tool that can be used - and misused - to extract more information out of a given set of data. Used correctly, interpolation can reveal more information than is initially available and disclose connections not apparent at first, but used incorrectly, it can be manipulated to infer misleading correlations and lead to inaccurate conclusions. Thus it is a tool that must be used with care. Aiming to avoid incorrect deductions and inferences one should at first gain as much knowledge about the data at hand as possible. By understanding how the data have come about and gaining knowledge about the underlying physical theories a somewhat deficient data set can robustly and securely be interpolated to accommodate the needs of the analysis. In the case of this thesis, both knowledge about data gathering and the physics at play have been gained and thus some of the common fallacies may be avoided. The limits of the data available is due to the discrete sampling, leading to a minimum sampling of about 26 samples per meter of ice.
+When considering that the depth series of 32 years between Tambora and Laki is just above 10 meters, this means that each meter of ice needs to contain at least three years on average. 26 samples per three years might not sound as a bad sampling interval, but if the goal is to show seasonality and give a best estimate of annual layer thickness, interpolation could be put to good use to be able to give better estimates of the exact placement of peaks and valleys.\\	
+
+
+\subsubsection[Basic Idea][Basic Idea]{Basic Idea}
+\label{Subsubsec:CompMeths_SplinesAndInterpolation_Interpolation_BasicIdea}
+\todo{Write short introduction to interpolation here. Reference Appendix.}
+
+\subsection[Interpolation in this Project][Interpolation in this Project]{Cubic Spline Interpolation in this Project}
+\label{Subsec:CompMeths_SplinesAndInterpolation_InterpolationInThisProj}
+For this project cubic spline interpolation has been implemented and examined in two particular sections of the analysis: 
+\begin{enumerate}
+	\item Cubic spline interpolation of raw, uneven data to represent even data, that can be analyzed through fast spectral transforms.
+	\item Cubic spline interpolation of the final back-diffused signal estimate to enhance resolution for more efficient peak detection.
+\end{enumerate}
+
+\subsubsection[Interpolation 1]{Interpolation of Data Before Deconvolution}
+\label{Subsubsec:CompMethod_StabilityTests_Interpolation1}
+
+The first interpolation is needed, if the fast spectral transforms FFT or FCT are used, as one of the conditions of the algorithms is that the data are evenly spaced. At first, this was implemented in the analysis, but this had the risk of excluding some information that might lie in the unevenly sampled data. Later, the method was abandoned in favor of implementing a nonuniform spectral transform (NUFT or NDCT), which is slower than the FFT and FCT, but carries all information from the unevenly sampled signal into the spectral domain. Luckily, this nonuniform transform needs only be carried out once, as the inverse transform, i.e. resampling in time domain, can be done uniformly without loss of information and any future spectral transforms can then be performed through FFT or FCT.
+Even though the first interpolation method was later abandoned, some analysis was carried out with it to examine the effect of the size of the resampled, interpolated data on the final diffusion length estimate. Examples of a resampled signal can be seen in Figure \ref{Fig:COMPMETH_SiteA_DataSplineInterp} and Figure \ref{Fig:COMPMETH_SiteA_MultiSplineInterp}. Figure \ref{Fig:COMPMETH_SiteA_MultiSplineInterp} shows how sample resolution affects information from the signal. The higher sampling resolution, the more information is retained. But higher sampling resolution also means more data to be analyzed, which might slow down any analysis algorithms developed. This might create some headache if an entire ice core length of a couple thousand meters should be examined, but for this study only af few meters are of interest, and thus it should not create delays in the computation time.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{SiteA_DataSplineInterp.png}
+	\caption{Unevenly sampled signal from Site A resampled using cubic spline interpolation to an even signal with a new sample size equal to the minimum sample size found in the raw signal.}
+	\label{Fig:COMPMETH_SiteA_DataSplineInterp}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{SiteA_MultiSplineInterp.png}
+	\caption{Four different resampled signals of Site A data, showing loss of information when resampling resolution is low.}
+	\label{Fig:COMPMETH_SiteA_MultiSplineInterp}
+\end{figure}
+
+To examine the effect of the resampling resolution on the final diffusion length estimate when conducting a spline interpolation before carrying out the back-diffusion, the full diffusion length analysis has been performed with 100 new interpolation resampling sizes in the range $[\Delta_{\text{min}};\Delta_{\text{max}}]$. This gives an idea of the stability of the method considering both sample size of the raw data and resampling by interpolation. The minimum and maximum interpolation samplings are presented in Table \ref{tab:InterpSamples} and an illustration of the test results can be seen in Figure \ref{Fig:COMPMETH_SamplingVsDiffLen_interpBF}.
+
+\marginnote{%
+	\footnotesize
+	\centering
+	\begin{tabular}{lcc}
+		\toprule
+		\textbf{Site} & $\Delta_{\text{min}}$& $\Delta_{\text{max}}$\\
+		& [m] & [m] \\
+		\midrule
+		Crete & 0.02 & 0.13 \\
+		Site A & 0.022 & 0.12 \\
+		Site B & 0.01 & 0.14 \\
+		Site D & & \\
+		Site E & 0.02 & 0.12 \\
+		Site G & 0.02 & 0.11 \\
+		\bottomrule
+	\end{tabular}
+	\captionof{table}{\footnotesize Minimal and maximal new sample resolution used for testing interpolation before back-diffusion. Each test is run with 100 different new sample resolutions between $\Delta_{\text{min}}$ and $\Delta_{\text{max}}$.}
+	\label{tab:InterpSamples}
+}[0.5cm]%
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{SamplingVsDiffLen_interpBF.jpg}
+	\caption{}
+	\label{Fig:COMPMETH_SamplingVsDiffLen_interpBF}
+\end{figure}
+
+\todo{COMPMETH: Write figure captions to all figures.}
+
+
+\subsubsection[Interpolation 2]{Interpolation of Data After Deconvolution}
+\label{Subsubsec:CompMethod_StabilityTests_Interpolation2}
+The second interpolation is carried out after deconvoluting and back-diffusing the signal, but before detecting peaks. Splines are especially effective when trying to find features like peaks in data which underlying signal is continuous, smooth and differentiable, but the sampling is discrete and thus the data are discrete and non-smooth. The isotopic signal under examination here is assumed to be truly smooth and continuous throughout the core - unless any gaps are present. Thus the cubic spline interpolation is a good tool for estimating a higher resolution version of the final back-diffused data series to use for peak detection. This makes the detection of peaks and troughs more precise, as there might not be a discrete data point exactly at the top of a peak, but the spline interpolation then estimates where the most likely top of the peak must be, on the basis of the existing data. Examples of three different interpolation samplings are presented in Figure \ref{Fig:COMPMETH_SiteA_InterpAF_4samplings}. The effect of resampling after deconvolution on the final diffusion length estimate is illustrated in Figure \ref{Fig:COMPMETH_SamlingVsDiffLen}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{SiteA_InterpAF_4samplings.png}
+	\caption{}
+	\label{Fig:COMPMETH_SiteA_InterpAF_4samplings}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{SamlingVsDiffLen.jpg}
+	\caption{}
+	\label{Fig:COMPMETH_SamlingVsDiffLen}
+\end{figure}
+
+
+
+
+
+
+
+
+
+\end{document}
