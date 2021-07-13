@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.30)  29 MAY 2021 16:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.30)  13 JUL 2021 09:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1013,11 +1013,7 @@ File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )) (/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2020/02/14 v1.6 Multi-file projects (package)
 )))
-(./Chapter_Appendix2.aux
-
-LaTeX Warning: Label `AppV:SplinesAndInterpolation' multiply defined.
-
-)
+(./Chapter_Appendix2.aux)
 \openout1 = `Chapter_Appendix2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -1035,7 +1031,8 @@ LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 \AtBeginShipoutBox=\box73
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count363
 \scratchdimen=\dimen333
@@ -1349,18 +1346,18 @@ LaTeX Warning: Float too large for page by 37.21321pt on input line 49.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5 <../../Figures/fig_densAve_B16B18B19B20B21B22B23-eps-converted-to.pdf>]
-<../../Figures/AllAlphabetCores.png, id=380, 842.14626pt x 1058.95625pt>
+<../../Figures/AllAlphabetCores.png, id=380, 842.14626pt x 842.14626pt>
 File: ../../Figures/AllAlphabetCores.png Graphic file (type png)
 <use ../../Figures/AllAlphabetCores.png>
 Package pdftex.def Info: ../../Figures/AllAlphabetCores.png  used on input line
  60.
-(pdftex.def)             Requested size: 332.09775pt x 417.5964pt.
-<../../Figures/AllAlphabetCores_LT.png, id=382, 842.14626pt x 1058.95625pt>
+(pdftex.def)             Requested size: 332.09775pt x 332.09799pt.
+<../../Figures/AllAlphabetCores_LT.png, id=382, 842.14626pt x 842.14626pt>
 File: ../../Figures/AllAlphabetCores_LT.png Graphic file (type png)
 <use ../../Figures/AllAlphabetCores_LT.png>
 Package pdftex.def Info: ../../Figures/AllAlphabetCores_LT.png  used on input l
 ine 67.
-(pdftex.def)             Requested size: 369.0pt x 464.00319pt.
+(pdftex.def)             Requested size: 369.0pt x 369.0035pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1379,160 +1376,304 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  <../../Figures/AllAlphabetCores.png>] [7 <../../Figures/AllAlphabetCores_LT.pn
 g>]
-[8]
+[8] [9]
 
-LaTeX Warning: Reference `Eq:FourierTransform' on page 9 undefined on input lin
-e 100.
-
-
-LaTeX Warning: Citation `Cooley1965' on page 9 undefined on input line 119.
+LaTeX Warning: Reference `Eq:FourierTransform' on page 10 undefined on input li
+ne 127.
 
 
-LaTeX Warning: Citation `Good1958_PrimeFFT' on page 9 undefined on input line 1
-19.
+LaTeX Warning: Citation `Cooley1965' on page 10 undefined on input line 146.
 
 
-LaTeX Warning: Citation `Bruun1978__BruunsFFT' on page 9 undefined on input lin
-e 119.
+LaTeX Warning: Citation `Good1958_PrimeFFT' on page 10 undefined on input line 
+146.
+
+
+LaTeX Warning: Citation `Bruun1978__BruunsFFT' on page 10 undefined on input li
+ne 146.
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
 
-LaTeX Warning: Citation `Virtanen2020_SciPy' on page 9 undefined on input line 
-119.
+LaTeX Warning: Citation `Virtanen2020_SciPy' on page 10 undefined on input line
+ 146.
 
 
-LaTeX Warning: Citation `Cooley1965' on page 9 undefined on input line 119.
-
-[9]
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 124.
-
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 124.
-
-
-LaTeX Warning: Citation `Potts2001' on page 10 undefined on input line 129.
-
-
-LaTeX Warning: Citation `Marvasti1993' on page 10 undefined on input line 129.
-
-
-LaTeX Warning: Citation `Ruiz-Antolin2018' on page 10 undefined on input line 1
-29.
-
-
-LaTeX Warning: Citation `Lee2005' on page 10 undefined on input line 129.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
-
- []
+LaTeX Warning: Citation `Cooley1965' on page 10 undefined on input line 146.
 
 [10]
 
-LaTeX Warning: Citation `Ahmed1974_DCT' on page 11 undefined on input line 134.
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 151.
 
 
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 151.
 
-LaTeX Warning: Citation `Ahmed1974_DCT' on page 11 undefined on input line 135.
 
+LaTeX Warning: Citation `Potts2001' on page 11 undefined on input line 156.
+
+
+LaTeX Warning: Citation `Marvasti1993' on page 11 undefined on input line 156.
+
+
+LaTeX Warning: Citation `Ruiz-Antolin2018' on page 11 undefined on input line 1
+56.
+
+
+LaTeX Warning: Citation `Lee2005' on page 11 undefined on input line 156.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--157
+
+ []
 
 [11]
 
-LaTeX Warning: Citation `Makhoul1980' on page 12 undefined on input line 167.
+LaTeX Warning: Citation `Ahmed1974_DCT' on page 12 undefined on input line 161.
 
 
-LaTeX Warning: Citation `Virtanen2020_SciPy' on page 12 undefined on input line
- 167.
+
+LaTeX Warning: Citation `Ahmed1974_DCT' on page 12 undefined on input line 162.
 
 
-LaTeX Warning: Citation `Tian2000' on page 12 undefined on input line 184.
+
+Underfull \vbox (badness 1895) has occurred while \output is active []
+
+ [12]
+
+LaTeX Warning: Citation `Makhoul1980' on page 13 undefined on input line 194.
 
 
-LaTeX Warning: Citation `Zhao2008' on page 12 undefined on input line 184.
+LaTeX Warning: Citation `Virtanen2020_SciPy' on page 13 undefined on input line
+ 194.
 
 
-LaTeX Warning: Reference `Sec:Method' on page 12 undefined on input line 184.
+LaTeX Warning: Citation `Tian2000' on page 13 undefined on input line 211.
 
 
-Overfull \hbox (12.37985pt too wide) in paragraph at lines 183--185
+LaTeX Warning: Citation `Zhao2008' on page 13 undefined on input line 211.
+
+
+LaTeX Warning: Reference `Sec:Method' on page 13 undefined on input line 211.
+
+
+Overfull \hbox (17.2799pt too wide) in paragraph at lines 210--212
 []\OT1/cmr/m/n/10.95 It is pos-si-ble to de-velop al-go-rithms with the com-pu-
 ta-tional cost of $\OMS/cmsy/m/n/10.95 O\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95
  N [] N\OT1/cmr/m/n/10.95 )$
  []
 
-[12]
-Overfull \hbox (3.05711pt too wide) in paragraph at lines 210--214
+[13] [14]
+Overfull \hbox (3.05711pt too wide) in paragraph at lines 237--241
 \OT1/cmr/m/n/10.95 So the ex-is-tence and unique-ness of an in-ter-polant is gi
 ven by the non-singularity
  []
 
-[13] [14]
-<../../Figures/Monomials.png, id=435, 386.44376pt x 265.99374pt>
+[15] [16]
+<../../Figures/Monomials.png, id=444, 386.44376pt x 265.99374pt>
 File: ../../Figures/Monomials.png Graphic file (type png)
 <use ../../Figures/Monomials.png>
-Package pdftex.def Info: ../../Figures/Monomials.png  used on input line 256.
+Package pdftex.def Info: ../../Figures/Monomials.png  used on input line 283.
 (pdftex.def)             Requested size: 111.0pt x 76.40157pt.
 
-Underfull \hbox (badness 3009) in paragraph at lines 266--266
+Underfull \hbox (badness 3009) in paragraph at lines 293--293
 \OT1/cmr/m/n/9 con-tin-u-ously dif-fer-en-tiable
  []
 
 
-Overfull \hbox (22.14932pt too wide) in paragraph at lines 262--269
+Overfull \hbox (22.14932pt too wide) in paragraph at lines 289--296
 \OT1/cmr/m/n/10.95 When turn-ing to piece-wise poly-no-mial in-ter-po-la-tion o
 f the data points $(\OML/cmm/m/it/10.95 t[]; y[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/
 it/10.95 ;  i \OT1/cmr/m/n/10.95 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--269
+Underfull \hbox (badness 10000) in paragraph at lines 289--296
 
  []
 
-[15 <../../Figures/Monomials.png>] [16] [17] [18] [19] (./Chapter_Appendix2.aux
+[17 <../../Figures/Monomials.png>] [18] [19]
+<../../Figures/AR1_process.png, id=462, 709.65125pt x 397.485pt>
+File: ../../Figures/AR1_process.png Graphic file (type png)
+<use ../../Figures/AR1_process.png>
+Package pdftex.def Info: ../../Figures/AR1_process.png  used on input line 329.
+
+(pdftex.def)             Requested size: 295.20113pt x 165.34743pt.
+<../../Figures/AR1_process_W_backDiff.png, id=463, 709.65125pt x 397.485pt>
+File: ../../Figures/AR1_process_W_backDiff.png Graphic file (type png)
+<use ../../Figures/AR1_process_W_backDiff.png>
+Package pdftex.def Info: ../../Figures/AR1_process_W_backDiff.png  used on inpu
+t line 336.
+(pdftex.def)             Requested size: 295.20113pt x 165.34743pt.
+<../../Figures/AR1_process_W_backDiff_PSD.png, id=464, 650.43pt x 722.7pt>
+File: ../../Figures/AR1_process_W_backDiff_PSD.png Graphic file (type png)
+<use ../../Figures/AR1_process_W_backDiff_PSD.png>
+Package pdftex.def Info: ../../Figures/AR1_process_W_backDiff_PSD.png  used on 
+input line 343.
+(pdftex.def)             Requested size: 221.40225pt x 246.00146pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20 <../../Figures/AR1_process.png> <../../Figures/AR1_process_W_backDiff.png>]
+
+Overfull \hbox (13.26022pt too wide) detected at line 378
+\OML/cmm/m/it/10.95 C[] \OT1/cmr/m/n/10.95 = []\OML/cmm/m/it/10.95 ; \OT1/cmr/m
+/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 55 \OML/cmm/m/it/10.95 < ^^Z 
+< \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 8
+ []
+
+[21 <../../Figures/AR1_process_W_backDiff_PSD.png>]
+Overfull \hbox (19.93082pt too wide) in paragraph at lines 414--417
+\OT1/cmr/m/n/10.95 and plot-ting $[](\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 )$
+ ver-sus tem-per-a-ture - a so-called Ar-rhe-nius plot(REFERENCES)
+ []
+
+[22] [23]
+<../../Figures/DensProf_Examples.png, id=487, 416.55624pt x 506.89375pt>
+File: ../../Figures/DensProf_Examples.png Graphic file (type png)
+<use ../../Figures/DensProf_Examples.png>
+Package pdftex.def Info: ../../Figures/DensProf_Examples.png  used on input lin
+e 478.
+(pdftex.def)             Requested size: 221.40225pt x 269.41814pt.
+ [24]
+
+LaTeX Warning: Citation `Johnsen2000' on page 25 undefined on input line 491.
+
+[25 <../../Figures/DensProf_Examples.png>]
+
+LaTeX Warning: Citation `MurphyKoop_2005' on page 26 undefined on input line 50
+6.
+
+
+LaTeX Warning: Citation `Johnsen2000a' on page 26 undefined on input line 517.
+
+
+LaTeX Warning: Citation `HallPrupacher1976' on page 26 undefined on input line 
+527.
+
+
+LaTeX Warning: Citation `Merlivat1978' on page 26 undefined on input line 533.
+
+
+LaTeX Warning: Citation `Majoube1970' on page 26 undefined on input line 541.
+
+
+LaTeX Warning: Citation `Ellehoj2013' on page 26 undefined on input line 541.
+
+[26]
+
+LaTeX Warning: Citation `MerlivatNief1967' on page 27 undefined on input line 5
+51.
+
+
+LaTeX Warning: Citation `Ellehoj2013' on page 27 undefined on input line 551.
+
+
+LaTeX Warning: Citation `Lamb2017' on page 27 undefined on input line 551.
+
+
+LaTeX Warning: Citation `BarkanLuz2005' on page 27 undefined on input line 567.
+
+
+
+LaTeX Warning: Citation `Gkinis2021' on page 27 undefined on input line 567.
+
+
+LaTeX Warning: Citation `Majoube1970' on page 27 undefined on input line 567.
+
+
+LaTeX Warning: Citation `MerlivatNief1967' on page 27 undefined on input line 5
+67.
+
+
+LaTeX Warning: Citation `Johnsen2000' on page 27 undefined on input line 571.
+
+[27]
+<../../Figures/Analytical_DiffLenEq_terms_SiteA.png, id=506, 484.81125pt x 557.
+08125pt>
+File: ../../Figures/Analytical_DiffLenEq_terms_SiteA.png Graphic file (type png
 )
+<use ../../Figures/Analytical_DiffLenEq_terms_SiteA.png>
+Package pdftex.def Info: ../../Figures/Analytical_DiffLenEq_terms_SiteA.png  us
+ed on input line 593.
+(pdftex.def)             Requested size: 221.40225pt x 254.40741pt.
+
+
+LaTeX Warning: Citation `Gkinis2021' on page 28 undefined on input line 598.
+
+[28 <../../Figures/Analytical_DiffLenEq_terms_SiteA.png>]
+
+LaTeX Warning: Citation `HerronLangway1980' on page 29 undefined on input line 
+609.
+
+[29]
+<../../Figures/ContourPlot_Alphabet.png, id=516, 532.99126pt x 399.4925pt>
+File: ../../Figures/ContourPlot_Alphabet.png Graphic file (type png)
+<use ../../Figures/ContourPlot_Alphabet.png>
+Package pdftex.def Info: ../../Figures/ContourPlot_Alphabet.png  used on input 
+line 648.
+(pdftex.def)             Requested size: 258.29887pt x 193.60733pt.
+
+
+LaTeX Warning: Citation `Gkinis2021' on page 30 undefined on input line 654.
+
+<../../Figures/DiffProf_Examples.png, id=517, 528.97626pt x 506.89375pt>
+File: ../../Figures/DiffProf_Examples.png Graphic file (type png)
+<use ../../Figures/DiffProf_Examples.png>
+Package pdftex.def Info: ../../Figures/DiffProf_Examples.png  used on input lin
+e 658.
+(pdftex.def)             Requested size: 258.29887pt x 247.51384pt.
+[30 <../../Figures/ContourPlot_Alphabet.png>]
+Overfull \hbox (7.9822pt too wide) in paragraph at lines 672--674
+[]\OT1/cmr/m/n/10.95 A new di-elec-tric pro-fil-ing tech-nique (DEP) was de-vel
+-oped (REF-ER-ENCES)
+ []
+
+
+Underfull \vbox (badness 2538) has occurred while \output is active []
+
+ [31 <../../Figures/DiffProf_Examples.png>] [32] [33] (./Chapter_Appendix2.aux)
+
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 24322 strings out of 481239
- 455922 string characters out of 5920377
- 891130 words of memory out of 5000000
- 39123 multiletter control sequences out of 15000+600000
- 545723 words of font info for 77 fonts, out of 8000000 for 9000
+ 24424 strings out of 481239
+ 458757 string characters out of 5920377
+ 893813 words of memory out of 5000000
+ 39217 multiletter control sequences out of 15000+600000
+ 546669 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,12n,96p,2070b,1293s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Chapter_Appendix2.pdf (19 pages, 1592844 bytes).
+ 64i,20n,96p,2070b,1293s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/
+msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on Chapter_Appendix2.pdf (33 pages, 2043537 bytes).
 PDF statistics:
- 522 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
+ 608 PDF objects out of 1000 (max. 8388607)
+ 222 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 169 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 204 words of extra memory for PDF output out of 10000 (max. 10000000)
 

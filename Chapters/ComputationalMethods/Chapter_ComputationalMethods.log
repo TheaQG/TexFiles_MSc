@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.30)  17 MAY 2021 11:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.30)  8 JUL 2021 11:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1299,11 +1299,7 @@ LaTeX Warning: Marginpar on page 12 moved by 0.33209pt.
 
 LaTeX Warning: Marginpar on page 12 moved by 59.85092pt.
 
-[12] (./Chapter_ComputationalMethods.aux
-
-Package pdfbase Warning: Rerun to get internal references right!
-
-)
+[12] (./Chapter_ComputationalMethods.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1312,10 +1308,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 24170 strings out of 481239
- 453923 string characters out of 5920377
- 716092 words of memory out of 5000000
- 38973 multiletter control sequences out of 15000+600000
+ 24174 strings out of 481239
+ 453983 string characters out of 5920377
+ 716237 words of memory out of 5000000
+ 38977 multiletter control sequences out of 15000+600000
  546636 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,16n,96p,2080b,1094s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1338,7 +1334,7 @@ dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/symbols/msbm10.pfb>
-Output written on Chapter_ComputationalMethods.pdf (12 pages, 232766 bytes).
+Output written on Chapter_ComputationalMethods.pdf (12 pages, 232744 bytes).
 PDF statistics:
  163 PDF objects out of 1000 (max. 8388607)
  111 compressed objects within 2 object streams

@@ -1,5 +1,6 @@
 %!TeX root = Chapter_Appendix2
 \documentclass[../../CompleteThesis2/Complete_2ndDraft.tex]{subfiles}
+%\graphicspath{{../../Figures/}}
 \begin{document}
 	\section[Appendix I]{APPENDIX I: Firn Diffusivity}
 	\label{AppI:FirnDiffusivity}
@@ -8,6 +9,36 @@
 	\newpage	
 	\section[Appendix II]{APPENDIX II: Data - AWI B-cores}
 	\label{AppII:Data_AWI}
+	
+	
+	\subsection[Core Specs]{AWI B-Cores: Core Specifications}
+	\todo{Make specifications for cores.}
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{l l|c}
+			\multicolumn{3}{c}{\textbf{Site A}} \\[0.1cm] 
+			\hline 
+			&& \\
+			$d_{L}^{CH}$ & [m] & 80.85 \\[0.15cm]
+			$d_{T}^{CH}$ & [m] & 70.9 \\[0.15cm]
+			$A_0$ W.E & [m] & 0.307 \\[0.15cm]
+			$A_0$ I.E. & [m] & 0.281519 \\[0.15cm]
+			$T_0$ & [$^{\text{o}}$C] & -29.41 \\[0.15cm]
+			$\rho_0$ & [$\text{kg}\,\text{m}^{-3}$] & 343.0\\[0.15cm]
+			$z_0$ & & 0.55 \\[0.15cm]
+			$s_L^{CH}$ & [cm] & 30.0 \\[0.15cm]
+			$s_T^{CH}$ & [cm] & 65.0 \\[0.15cm]
+			$\rho_L$ & [$\text{kg}\,\text{m}^{-3}$] & 836.0 \\[0.15cm]
+			$\rho_T$ & [$\text{kg}\,\text{m}^{-3}$] & 812.0 \\[0.15cm]		
+			$d_{L}^{TQ}$ & [m] & 80.87 \\[0.15cm]
+			$d_{T}^{TQ}$ & [m] & 70.90 \\[0.15cm]
+			$s_L^{TQ}$ & [cm] & 34.0 \\[0.15cm]
+			$s_T^{TQ}$ & [cm] & 40.0 \\[0.15cm]
+			
+		\end{tabular}
+		\caption{\footnotesize Core specifications for core drilled at Site A. $d$ describes depth of event, $A$ describes accumulation rate, $T$ describes temperature, $\rho$ describes density at given depth and $s$ describes the width of a given event. Subscripts $L$ and $T$ stands for volcanic events Laki and Tambora, respectively, subscript $0$ describes initial surface condition, and superscripts $CH$ and $TQ$ represents the original and corrected values for depth and width of events.}
+		\label{Tab:AWI_Bcores_CoreSpecs}
+	\end{table}
 	
 	
 	\newpage
@@ -69,7 +100,34 @@
 	\end{figure}
 	\newpage
 	
-	
+	\subsection[Core Specs]{Alphabet Cores: Core Specifications}
+	\todo{Make specifications for rest of cores.}
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{l l|c}
+			\multicolumn{3}{c}{\textbf{Site A}} \\[0.1cm] 
+			\hline 
+			&& \\
+			$d_{L}^{CH}$ & [m] & 80.85 \\[0.15cm]
+			$d_{T}^{CH}$ & [m] & 70.9 \\[0.15cm]
+			$A_0$ W.E & [m] & 0.307 \\[0.15cm]
+			$A_0$ I.E. & [m] & 0.281519 \\[0.15cm]
+			$T_0$ & [$^{\text{o}}$C] & -29.41 \\[0.15cm]
+			$\rho_0$ & [$\text{kg}\,\text{m}^{-3}$] & 343.0\\[0.15cm]
+			$z_0$ & & 0.55 \\[0.15cm]
+			$s_L^{CH}$ & [cm] & 30.0 \\[0.15cm]
+			$s_T^{CH}$ & [cm] & 65.0 \\[0.15cm]
+			$\rho_L$ & [$\text{kg}\,\text{m}^{-3}$] & 836.0 \\[0.15cm]
+			$\rho_T$ & [$\text{kg}\,\text{m}^{-3}$] & 812.0 \\[0.15cm]		
+			$d_{L}^{TQ}$ & [m] & 80.87 \\[0.15cm]
+			$d_{T}^{TQ}$ & [m] & 70.90 \\[0.15cm]
+			$s_L^{TQ}$ & [cm] & 34.0 \\[0.15cm]
+			$s_T^{TQ}$ & [cm] & 40.0 \\[0.15cm]
+			
+		\end{tabular}
+		\caption{\footnotesize Core specifications for core drilled at Site A. $d$ describes depth of event, $A$ describes accumulation rate, $T$ describes temperature, $\rho$ describes density at given depth and $s$ describes the width of a given event. Subscripts $L$ and $T$ stands for volcanic events Laki and Tambora, respectively, subscript $0$ describes initial surface condition, and superscripts $CH$ and $TQ$ represents the original and corrected values for depth and width of events.}
+		\label{Tab:SiteA_CoreSpecs}
+	\end{table}
 	\newpage
 	\section[Appendix IV]{APPENDIX IV: Spectral Transforms}
 	\label{AppIV:SpectralTransforms}		
@@ -286,14 +344,400 @@
 	The original data are then used to define a cubic spline interpolation function to which the redistributed depth data points can be matched. For this part of the data analysis the \lstinline[columns=fixed]|SciPy.interpolate| Python (REFERENCE) package with \lstinline[columns=fixed]|SciPy.interpolate.CubicSpline| for the cubic spline interpolation.
 	
 	
-	\newpage
-	\section[Appendix VI]{APPENDIX VI: Parallelization}	
-	\label{AppVI:Parallelization}
-	\todo{COMP-PARAL: Do some actual parallelization! And write this entire section}
+%	\newpage
+%	\section[Appendix VI]{APPENDIX VI: Parallelization}	
+%	\label{AppVI:Parallelization}
+%	\todo{COMP-PARAL: Do some actual parallelization! And write this entire section}
 		
-		
+	
 	\newpage
-\section[Appendix V]{APPENDIX V: Splines and Interpolations}
-\label{AppV:SplinesAndInterpolation}
+	\section[Appendix VII]{APPENDIX VII: Diffusion Illustrated Through Synthetic Data}
+	\label{AppVII:SignalAnalysis_SyntheticData}
+	\todo{SIGNAL-SYNTHDATA: Write about synthetic data generation.}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{AR1_process.png}
+		\caption[]{}
+		\label{fig:AR1_process}
+	\end{figure}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{AR1_process_W_backDiff.png}
+		\caption[]{}
+		\label{fig:AR1_process_W_backDiff}
+	\end{figure}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.6\textwidth]{AR1_process_W_backDiff_PSD.png}
+		\caption[]{}
+		\label{fig:AR1_process_W_backDiff_PSD}
+	\end{figure}
 
+
+
+
+	\newpage
+	\section[Appendix IIX]{APPENDIX IIX: Herron Langway Empirical Model}
+	\label{AppIIX:HLmodel}
+	
+	
+	Sorge's law(REFERENCES) assumes that the relation between snow density $\rho$ and depth $h$ is invariant with time, given a constant snow accumulation and temperature. Furthermore, annual layer thinning by plastic flow is ignored.
+	
+	Densification of firn, which can be described as the proportional change in air space, is linearly related to change in stress due to the weight of the overlying snow(REFERENCES):
+	\begin{equation}
+		\frac{d\rho}{\rho_i - \rho} = \text{const.} \, \rho \, dh
+		\label{Eq:Dens_Prop_Stress}
+	\end{equation}
+	By integration, this implies a linear relation between $\ln\left[\frac{\rho}{\rho_i - \rho}\right]$ and $h$.\\
+	When considering real data, analysis shows that $\ln\left[\frac{\rho}{\rho_i - \rho}\right]$ vs $h$. plots have two linear segments(EXAMPLE), corresponding to the first and second stages of densification, with separation of segments at $\rho = 0.55$ and $\rho = 0.8$. These segments on the plots will yield two different slopes with slope constants:
+	\begin{subequations}
+		\begin{center}
+			
+			\begin{tabularx}{\textwidth}{Xp{2cm}X}
+				\begin{equation}
+					C = \frac{d\ln\left[\frac{\rho}{\rho_i - \rho}\right]}{dh}, \rho < 0.55
+					\label{Eq:Dens_Const_1}
+				\end{equation}
+				&&
+				\begin{equation}
+					C' = \frac{d\ln\left[\frac{\rho}{\rho_i - \rho}\right]}{dh}, 0.55 < \rho < 0.8
+					\label{Eq:Dens_Const_2}
+				\end{equation}
+			\end{tabularx}
+		\end{center}
+	\end{subequations}
+	To find the densification rate, $\frac{d\rho}{dt}$, substitute $\frac{dh}{dt} = \frac{A}{\rho} \rightarrow dt = \frac{\rho}{A} dh$ and use the differentiation $\frac{\partial}{\partial t}\left[\ln\left[\frac{x(t)}{k - x(t)}\right]\right] = \frac{k \frac{dx}{dt}}{(k - x(t))x(t)}$
+	\begin{align*}
+		C & = \frac{\rho}{A}\frac{d\ln\left[\frac{\rho}{\rho_i - \rho}\right]}{dt}\\
+		& = \frac{\rho}{A} \frac{\rho_i}{\rho(\rho_i - \rho)}\frac{d\rho}{dt}\\
+		& = \frac{1}{A}\frac{\rho_i}{\rho_i - \rho}\frac{d\rho}{dt}
+	\end{align*}
+	leading to 
+	\begin{subequations}
+		\begin{equation}
+			\frac{d\rho}{dt} = \frac{C A}{\rho_i}(\rho_i - \rho)
+			\label{Eq:Dens_Rate_1}
+		\end{equation}
+		\begin{equation}
+			\frac{d\rho}{dt} = \frac{C' A}{\rho_i}(\rho_i - \rho)
+			\label{Eq:Dens_Rate_2}
+		\end{equation}
+	\end{subequations}
+	To continue from here two assumptions are made. The first is that the temperature and the accumulation rate dependencies may be separated, and that they thereby have no inter-correlation. The second is that the rate equations may be written as:
+	\begin{subequations}
+		\begin{equation}
+			\frac{d\rho}{dt} = k_0 A^a (\rho_i - \rho), \rho < 0.55
+			\label{Eq:Dens_Rate_1_Arrh}
+		\end{equation}
+		\begin{equation}
+			\frac{d\rho}{dt} = k_1 A^b (\rho_i - \rho), 0.55 < \rho < 0.8
+			\label{Eq:Dens_Rate_2_Arrh}
+		\end{equation}
+	\end{subequations}
+	where $k_0$ and $k_1$ are Arrhenius type rate constants which are only temperature dependent, and $a$ and $b$ are constants determining the significance of the accumulation rate and are dependent on the densification mechanisms.\\
+	$a$ and $b$ may be determined by comparing slopes for densification at different sites of nearly equivalent conditions as:
+	\begin{equation}
+		a = \frac{\ln\left(\frac{C_1}{C_2}\right)}{\ln\left(\frac{A_1}{A_2}\right)} + 1
+		\label{Eq:Determ_const_a}
+	\end{equation}
+	and equivalently for b, with $C_1'$ and $C_2'$.\\
+	$k_0$ and $k_1$ can be estimated by observing values of k at different temperatures and plotting $\ln(k)$ versus temperature - a so-called Arrhenius plot(REFERENCES) - to find $A$ and $E_a$ in equations:
+	\begin{equation}
+		k = A e^{-\frac{E_a}{k_B T}} = A e^{-\frac{E_a}{RT}}
+	\end{equation}
+	\begin{equation*}
+		\ln(k) = \ln(A) - \frac{E_a}{R}\frac{1}{T}
+	\end{equation*}
+	leading to values of $k_0$ and $k_1$ of:
+	\begin{subequations}
+		\begin{center}
+			
+			\begin{tabularx}{\textwidth}{Xp{2cm}X}
+				\begin{equation}
+					k_0 = 11 e^{-\frac{10160}{RT}}
+					\label{Eq:k0}
+				\end{equation}
+				&&
+				\begin{equation}
+					k_1 = 575 e^{-\frac{21400}{RT}}
+					\label{Eq:k1}
+				\end{equation}
+			\end{tabularx}
+		\end{center}
+	\end{subequations}
+	\textbf{Depth-density and depth-age calculations}\\
+	Assuming that temperature, annual accumulation rate and initial snow density are known, the following calculations can be made:
+	\begin{itemize}
+		\item Density at depth $h$, $\rho(h)$
+		\item Depth at pore close-off, $\rho=0.55$
+		\item Depth-age relationship from surface to pore close-off (stage 1 and 2).
+	\end{itemize}
+	\textbf{1. stage of densification:}
+	Depth-density profile:
+	\begin{equation}
+		\rho(h) = \frac{\rho_i Z_0}{1 + Z_0}
+	\end{equation}
+	where $Z_0 = e^{\rho_i k_0 h + \ln\left[\frac{\rho_0}{\rho_i - \rho_0}\right]}$. In this segment, the depth-density is independent of accumulation rate. The critical density depth can be calculated as:
+	\begin{equation}
+		h_{0.55} = \frac{1}{\rho_i k_0}\left[\ln\left[\frac{0.55}{\rho_i - 0.55}\right] - \ln\left[\frac{\rho_0}{\rho_i - \rho_0}\right]\right]
+	\end{equation}
+	and the age at close-off depth as:
+	\begin{equation}
+		t_{0.55} = \frac{1}{k_0 A}\ln\left[\frac{\rho_i - \rho_0}{\rho_i - 0.55}\right]
+	\end{equation}
+	
+	\todo{ICE-DENS: Figure out where this comes from.}
+	\textbf{2. stage of densificaion:} The depth-density profile
+	\begin{equation}
+		\rho(h) = \frac{\rho_i Z_1}{1 + Z_1}
+	\end{equation}
+	where $Z_1 = e^{\rho_i k_1 (h - h_{0.55})\frac{1}{A^{0.5}} + \ln\left[\frac{0.55}{\rho_i - 0.55}\right]}$. The age of firn at a given density $\rho$:
+	\begin{equation}
+		t_{\rho} = \frac{1}{k_1 A^{0.5}}\ln\left[\frac{\rho_1 - 0.55}{\rho_1 - \rho}\right]
+	\end{equation}
+	An estimate of the mean annual accumulation rate can be made from the slope $C'$ and the mean annual temperature:
+	\begin{equation}
+		A = \left(\frac{\rho_i k_1}{C'}\right)^2
+	\end{equation}
+	
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.6\textwidth]{DensProf_Examples.png}
+		\caption{Density profile examples given five different initial conditions representing present day conditions at the five different ice core locations. Temperature, $T_0$, is in $^{\text{o}}$C and accumulation, $A_0$, is in meter of water equivalent per year.}
+		\label{Fig:DensProf_Examples}
+	\end{figure}
+	\newpage 
+	
+	\newpage
+	\section[Appendix IX]{APPENDIX IX: Iso-Community Firn Model}
+	\label{AppIX:CFM}
+	
+	
+	\subsubsection[Diffusivity]{Firn Diffusivity}
+	\label{Subsubsec:Ice_DiffusionAndDensification_IsoCFM_FirnDiffusivity}
+	The Iso-CFM framework contains a number of different new modules added to the CFM. A specific module for calculation of the firn diffusivity, $D(\rho(z))$, is provided, containing several different methods for the calculations of the individual parameters contained in the calculation of the diffusivity constant, using the formulation in \cite[Johnsen et al., 2000]{Johnsen2000}:
+	\begin{equation}
+		D_i(z) = \frac{m\, p \, D_{\text{air}}}{R \, T(z) \, \alpha^{i}_{s/v}\, \tau(z)}\left(\frac{1}{\rho(z)} - \frac{1}{\rho_{\text{ice}}}\right)
+		\label{Eq:DiffusivityConstant}
+	\end{equation}
+	with $i \in {\text{O}^{18}, \text{O}^{17}, \text{D}}$ representing the three different types of water isotopic ratios generally examined. The different terms in \ref{Eq:DiffusivityConstant} each describes the following:
+	
+	$m$: molecular weight in [kg]
+	
+	$R = 8.314478 \left[\frac{\text{m}^3\text{Pa}}{\text{K mol}}\right]$: molar gas constant
+	
+	$T$ Temperature [K]
+	
+	$p$: saturation vapor pressure over ice in [Pa]
+	
+	The saturation vapor pressure over ice can be calculated in two different ways, as in \cite[Murphy \& Koop 2005]{MurphyKoop_2005}:
+	
+	\begin{equation}
+		p = \exp\left(28.9074 - \frac{6143.7}{T}\right)
+		\label{Eq:SatVapPres1}
+	\end{equation}
+	\begin{equation}
+		p = \exp\left(9.5504 - \frac{5723.265}{T} + 3.530\, \ln(T) - 0.0073 \, T\right)
+		\label{Eq:SatVapPres2}
+	\end{equation}
+	where Eq. \ref{Eq:SatVapPres2} takes the temperature dependence of the latent heat of sublimation of ice into account when integrating the Clausius-Clapeyron equation.
+	A third expression is presented in \cite[Johnsen et al., 2000]{Johnsen2000a} as:
+	\begin{equation}
+		p = 3.454 \cdot 10^{12} \exp\left(\frac{-6133}{T}\right)
+		\label{Eq:SatVapPres3}
+	\end{equation}
+	which will be the one used for analytical calculations of diffusion length in this project.
+	
+	
+	$D_{\text{air}}$: diffusivity of water vapor in air,
+	
+	calculated from $P_0 = 1 \text{Atm}$, $T_0 = 273.15 \text{K}$, $T$ temperature in [K] and $P$ ambient pressure in [Atm], as in \cite[Hall and Prupacher, 1976]{HallPrupacher1976}:
+	\begin{equation}
+		D_{\text{air}} = 2.1 \cdot 10^{-5} \left(\frac{T}{T_0}\right)^{1.94}\left(\frac{P_0}{P}\right)
+		\label{Eq:DiffusivAir}
+	\end{equation}
+	
+	From \cite[Merlivat, 1978]{Merlivat1978} the additional diffusivity of water isotopes ratios for $^{18}$O and $^2$H vapor were defined as 
+	\begin{align}
+		D_{\text{air}^2\text{H}} &= \frac{D_{\text{air}}}{1.0251} \\
+		D_{\text{air}^{18}\text{O}} &= \frac{D_{\text{air}}}{1.0285} 	
+	\end{align}
+	
+	$\alpha_{s/v}^i$: solid-to-vapour fractionation factor. $i = {^{18}\text{O},\; \text{D}},\; ^{17}\text{O}$,
+	
+	For both $\alpha_{s/v}^{18}$ and $\alpha_{s/v}^{2}$ there are multiple options for parameterisation of the fractionation factor. Considering $\alpha_{s/v}^{18}$, one can choose between \cite[Majoube 1971]{Majoube1970} and \cite[Elleh\o j et al., 2013]{Ellehoj2013}, respectively as:
+	\begin{equation}
+		\ln(\alpha_{s/v}^{18}) = \frac{11.839}{T} - 28.224\cdot 10^{-3}
+		\label{Eq:FractFact18_Majoube}
+	\end{equation}
+	and
+	\begin{equation}
+		\ln(\alpha_{s/v}^{18}) = 0.0831 - \frac{49.192}{T} + \frac{8312.5}{T^2}
+		\label{Eq:FractFact18_Ellehoj}
+	\end{equation}
+	For $\alpha_{s/v}^{2}$ the parameterisation from \cite[Merlivat and Nief, 1967]{MerlivatNief1967}, \cite[Elleh\o j et al., 2013]{Ellehoj2013} or \cite[Lamb et al., 2017]{Lamb2017}, respectively as:
+	
+	\begin{equation}
+		\ln(\alpha_{s/v}^{2}) = \frac{16288}{T^2} - 9.45\cdot 10^{-2},
+		\label{Eq:FractFact2_Merlivat}
+	\end{equation}
+	\begin{equation}
+		\ln(\alpha_{s/v}^{2}) = 0.2133 - \frac{203.1}{T} + \frac{48888}{T^2}
+		\label{Eq:FractFact2_Ellehoj}
+	\end{equation}
+	or
+	\begin{equation}
+		\ln(\alpha_{s/v}^{2}) =  \frac{13525}{T^2} - 5.59\cdot 10^{-2}.
+		\label{Eq:FractFact2_Lamb}
+	\end{equation}
+	
+	The parameterisation of the fractionation factor related to the $^{17}$O water isotopic ratios is based on \cite[Barkan and Luz, 2005]{BarkanLuz2005} as $\alpha_{s/v}^{17} = 0.529 \alpha_{s/v}^{18}$. For a comparison of the different parameterisations see \cite[Gkinis et al., 2021]{Gkinis2021}. The default choices in the iso-CFM modules is \cite[Majoube 1971]{Majoube1970} for $\alpha_{s/v}^{18}$ and \cite[Merlivat and Nief, 1967]{MerlivatNief1967} for $\alpha_{s/v}^{2}$
+	
+	$\tau$: firn tortuosity
+	
+	In \cite[Johnsen et al., 2000]{Johnsen2000} a parameterisation of the firn tortuosity was presented as:
+	\begin{equation}
+		\frac{1}{\tau} = \begin{cases}
+			1 - b_{\tau}\left(\frac{\rho}{\rho_{\text{ice}}}\right)^2,  & \rho \leq \frac{\rho_{\text{ice}}}{\sqrt{b_{\tau}}} \\
+			0, & \rho > \frac{\rho_{\text{ice}}}{\sqrt{b_{\tau}}}
+		\end{cases}
+		\label{Eq:FirnTortu_Johnsen}
+	\end{equation}
+	where $b_{\tau} = 1.3$ and $\rho_{\text{ice}} = 917 \frac{\text{kg}}{\text{m}^3}$, implying for $\frac{1}{\tau}=0$ a close-off density of $\rho_{\text{co}} = 804.3 \frac{\text{kg}}{\text{m}^3}$. This close-off density refers to the density at the depth where diffusive fluxes stop and $\frac{D_{\text{air}}}{D_{\text{eff}}}\rightarrow \infty$. Different parameterisations have been suggested, some defined from the total porosity, but for this project, the expression used is the one given in Eq. \ref{Eq:FirnTortu_Johnsen}.
+	
+	\subsubsection[Diffusion Length Profiles]{Diffusion Length Profiles}
+	\label{Subsubsec:Ice_DiffusionAndDensification_IsoCFM_DiffLenProfile}
+	
+	The iso-CFM computes a numerical solution for $\sigma$ using a time-stepping scheme, as is the case for the original CFM, to estimate the most likely diffusion length profile at a given site. From each time step the CFM computes $\frac{\text{d}\rho}{\text{d}t}$ and $T$, and the iso-CFM uses these results to calculate the quantity $\frac{\text{d}\sigma^2}{\text{d}t}$:
+	\begin{equation}
+		\frac{\text{d}\sigma^2}{\text{d}t} = 2\left(D(t) - \frac{\sigma^2}{\rho}\frac{\text{d}\rho}{\text{d}t}\right)
+		\label{Eq:dsigma2_dt}
+	\end{equation}
+	Eq. \ref{Eq:dsigma2_dt} shows that the diffusion length signal throughout the ice is a result of two processes, opposing each other: the always positive diffusivity term $D(t)$, and the densification process contributing negatively to the change over time, $-\frac{\sigma^2}{\rho}\frac{\text{d}\rho}{\text{d}t}$. After a certain depth, the densification term comes to dominate and thus the entire equation becomes negative and the value of the diffusion length is decreasing, see Figure \ref{Fig:ICE_DiffDensTerms}.
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.6\textwidth]{Analytical_DiffLenEq_terms_SiteA.png}
+		\caption{Contribution of the diffusion(dashed) and densification(dot-dashed) terms from Eq. \ref{Eq:dsigma2_dt} to the final analytical diffusion length solution (blue).}
+		\label{Fig:ICE_DiffDensTerms}
+	\end{figure}
+	
+	To simplify the work of this thesis, the numerical module of the CFM and the iso-CFM has not been implemented in the final computations, and the diffusion length profiles referred to in the rest of the project are calculated through an analytical method, using equations derived from Eq. \ref{Eq:dsigma2_dt} analytically. A short walk-through of the derivations will be presented here as they are described in \cite[Gkinis et al., 2021]{Gkinis2021}.
+	By substitution of variables rearrangement Eq. \ref{Eq:dsigma2_dt} becomes:
+	\begin{equation}
+		\frac{\text{d}\sigma^2}{\text{d}\rho} + \frac{2\sigma^2}{\rho} = 2\left(\frac{\text{d}\rho}{\text{d}t}\right)^{-1}D(\rho)
+		\label{Eq:dsigma_dt_rearrange}
+	\end{equation}
+	which can be converted to integral form:
+	\begin{equation}
+		\sigma^2(\rho) = \frac{1}{\rho^2}\int_{\rho_0}^{\rho}2\rho'^2\left(\frac{\text{d}\rho'}{\text{d}t}\right)^{-1}D(\rho')\text{d}\rho'
+		\label{Eq:sigma2_rho_integral}
+	\end{equation}
+	Then, by using the densification rate parameterisation given in \cite[Herron and Langway, 1980]{HerronLangway1980}, the expression becomes:
+	\begin{equation}
+		\frac{\text{d}\rho(z)}{\text{d}t} = k(T)\, A^{\nu}\, (\rho_{\text{ice}} - \rho(z)),
+		\label{Eq:drho_dt}
+	\end{equation}
+	where $k(T)$ is an Arrhenius-type densification rate constant, dependent on temperature and densification zone described by:
+	\begin{equation}
+		k_0(T) = 0.011\, \exp\left(-\frac{10160}{RT}\right), \qquad \nu_0 = 1
+		\label{Eq:ArrCoeff_Zone1}
+	\end{equation}
+	in the upper densification zone, $\rho < 550 \rho_{\text{co}}$. In the lower densification zone, $\rho \geq \rho_{\text{co}}$, it is described as:
+	\begin{equation}
+		k_1(T) = 0.575\, \exp\left(-\frac{21400}{RT}\right), \qquad \nu_1 = 0.5.
+		\label{Eq:ArrCoeff_Zone2}
+	\end{equation}
+	Using the parameterization of the diffusivity coefficient from Eq. \ref{Eq:DiffusivityConstant} and expressing the term $1/\tau = 1-b_{tau}\left(\frac{\rho}{\rho_{\text{ice}}}\right)^2$ in densities, the diffusivity coefficient can be described as a function of density:
+	\begin{equation}
+		D_i(\rho) = \frac{m \, p \, D_{\text{air}}}{R \, T \, \alpha_{s/v}^i}\left(1-b_{\tau}\left(\frac{\rho}{\rho_{\text{ice}}}\right)^2\right)\left(\frac{1}{\rho} - \frac{1}{\rho_{\text{ice}}}\right).
+		\label{Eq:DiffusivityConstant_2}
+	\end{equation}
+	
+	By then inserting in Eq. \ref{Eq:sigma2_rho_integral}, defining $\frac{m \, p \, D_{\text{air}}}{R \, T \, \alpha_{s/v}^i} = \zeta$, and integrating the final analytical equations for the diffusion length in upper and lower densification zones can be obtained:
+	\begin{equation}
+		\sigma^2(\rho < \rho_{\text{co}}) = \frac{\zeta}{\rho^2 \, k_0 \, A^{\nu_0} \rho_{\text{ice}}}	\left[\rho^2 - \rho_0 - \frac{b_{\tau}}{2\rho_{\text{ice}}^2}(\rho^4 - \rho_0^4)\right]
+		\label{Eq:sigma2_Final_Zone1}
+	\end{equation}
+	
+	\begin{equation}
+		\begin{split}
+			\sigma^2(\rho \geq \rho_{\text{co}}) = &\frac{\zeta}{\rho^2 \, k_1 \, A^{\nu_1} \rho_{\text{ice}}}	\left[\rho^2 - \rho_{\text{Cr}} - \frac{b_{\tau}}{2\rho_{\text{ice}}^2}(\rho^4 - \rho_{\text{Cr}}^4)\right] \\
+			&+ \frac{\zeta}{\rho^2 \, k_0 \, A^{\nu_0} \rho_{\text{ice}}} \left[\rho_ {\text{Cr}}^2 - \rho_0 - \frac{b_{\tau}}{2\rho_{\text{ice}}^2}(\rho_{\text{Cr}}^4 - \rho_0^4)\right]
+		\end{split}
+		\label{Eq:sigma2_Final_Zone2}
+	\end{equation}
+	
+	The analytical equations have been used for creating a contour plot of the analytical solutions for $\sigma_{18}$ at the close-off density, $\rho_{\text{co}}$. 
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\textwidth]{ContourPlot_Alphabet.png}
+		\caption{Crete and surrounding Alphabet cores, as their analytical solutions place them according to observed temperature and accumulation rate.}
+		\label{Fig:ICE_ContourPlot}
+	\end{figure}
+	
+	
+	These analytical equations are used to compute diffusion lengths to compare with the optimal diffusion length estimates computed from the raw data. One could advantageously spend some time and energy on using the iso-CFM to numerically compute the comparison diffusion lengths with different temperature and accumulation forcing to recreate a diffusion length profile corresponding to the largest likelihood at a given drill site. Since the iso-CFM do consist of many different modules all with different possibilities for parameterisation, it is outside the scope of this project to develop a iso-CFM diffusion length estimate. In-depth methodology and results from the iso-CFM can be found in \cite[Gkinis et al., 2021]{Gkinis2021}.
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\textwidth]{DiffProf_Examples.png}
+		\caption{Analytically calculated diffusion length profile examples given five different initial conditions representing present day conditions at the five different ice core locations. Temperature, $T_0$, is in $^{\text{o}}$C and accumulation, $A_0$, is in meter of water equivalent per year.}
+		\label{Fig:DiffProf_Examples}
+	\end{figure}
+
+
+	\newpage 
+
+	\newpage
+	\section[Appendix X]{APPENDIX X: Dielectric Profiling}
+	\label{AppX:DEP}
+	
+	A method was later developed to demonstrate how both acids and salts play a decisive role in the determination of the electrical behavior of ice. The dielectric response of an ice core can be used to determine the total ionic concentration of the core. For ECM the measurements are sensitive to the fluctuating distance between ice core and electrodes, and after each measurement a fresh piece of ice needs to be prepared to repeat a measurement.
+	
+	A new dielectric profiling technique (DEP) was developed (REFERENCES) with the advantages over the ECM that no direct contact is needed between the electrodes and the ice, so that the ice can stay in a protective polythene sleeve and the experiment easily can be repeated on the same piece of ice. Together the ice core and the polythene sleeve creates a complete system, where the plastic acts as an electrical blocking layer.\\
+	The dielectric response is measured by a sweeping of the AF-LF frequency range for the entire ice-polythene system. At LF the conductivity of the composite system is within a few percentages of the intrinsic behavior of the ice itself. At HF-VHF frequencies it also approximates well enough (REFERENCES).
+	
+	The measured dielectric parameters are the conductivity of ice at HF-VHF range, denoted $\sigma_{\infty}$ where $\infty$ signifies a frequency much higher than the relaxation frequency, $\text{f}_{\text{r}}$, of the dominant dispersion in the system. Both of these parameters display clear chemical response signals which can be used either alone or in combination with other ice core analysis measurements like ECM and isotope analysis.\\
+	If the core under analysis is chemically analyzed for $\text{Na}^+$, $\text{Mg}^{2+}$, $\text{Cl}^-$, $\text{SO}_4^{2-}$ and $\text{NO}_3^-$, a number of important parameters, which can be used to evaluate the response of the dielectric parameters, can be calculated(REFERENCES):
+	\begin{itemize}
+		\item The salt parameter, which represents the total marine cation concentration calculated with the assumed marine ratios as:
+		\begin{equation}
+			[\text{salt}] = 1.05 ([\text{Na}^+] + [\text{Mg}^{2+}])
+		\end{equation}
+		\item $\text{XSO}_4$, the excess sulphate, which represents the amount the sulphate concentration is above the expected if the salt and sulphate ions were in normal sea salt ratios. Excess sulphate is essentially sulphuric acid, which is the main acidic component of the ice.
+		\item The strong acid content of the ice has been calculated as(assuming no other ions present in significant quantities):
+		\begin{equation}
+			[\text{acid}] = [\text{Cl}^-] + [\text{SO}_4^{2-}] + [\text{NO}_3^-] - 1.05 ([\text{Na}^+] + [\text{Mg}^{2+}])
+		\end{equation}
+	\end{itemize}
+	
+	From data, it can be seen that acid and salt concentration peaks clearly affect $\sigma_{\infty}$ and $\text{f}_{\text{r}}$(EXAMPLES, REFERENCES). The relationship between salt and acid, and the two dielectric parameters have been derived through non-linear regression analysis. In PAPER(REFERENCES) the linear responses for the DEP at -22\degree C were:
+	\begin{equation}
+		\sigma_{\infty} = (0.39\pm 0.01)[\text{salt}] + (1.43\pm 0.05)[\text{acid}] + (12.7\pm 0.3)
+	\end{equation}
+	with 76.6 \% variance
+	\begin{equation}
+		\text{f}_{\text{r}} = (440\pm 11)[\text{salt}] + (612\pm 65)[\text{acid}] + (8200\pm 400)
+	\end{equation}
+	with 68.4 \% variance. $\sigma_{\infty}$ is measured in $\mu\text{S}/\text{m}$, $\text{f}_{\text{r}}$ in Hz and [acid] and [salt] in $\mu\text{Eq}/l$.
+	The total ionic concentration of the ice core is strongly linked to the dielectric parameters, and a regression between the total anion concentration and the dielectric parameters gives:
+	\begin{equation}
+		[\text{anions}] = [\text{salt}] + [\text{acid}] = 0.022\sigma_{\infty}^{1.89} + 10^{-6}\text{f}_{\text{r}}^{1.61} - 0.2
+	\end{equation}
+	with 86.7 \% variance.
+	
+	The DEP complements the ECM technique by not only reacting to acids alone, as ECM does, but responds to both neutral salts and acids.
+	The acid term is here associated with the DC conductivity, the same way it is also detected by ECM. The dielectric dependence on salts is consistent with the Bjerrum L defect\footnotemark affecting every one or two salt ions in the ice, indicating that a large fraction of the neutral salt is incorporated into the ice lattice.
+	\footnote[3]{A Bjerrum defect is a crystallographic defect specific to ice, partly responsible for the electrical properties of ice. Usually a hydrogen bond will normally have one proton, but with a Bjerrum defect it will have either two protons (D defect) or no proton (L defect).(REFERENCES)}
+	
+	The sensitivity to salt concentrations allows for identifications of periods with major storms and open seas which are also important identifiers for paleo climate research, along with the volcanic eruption detection made possible through the ECM.
+	\newpage 
+	
+
+	
 \end{document}
