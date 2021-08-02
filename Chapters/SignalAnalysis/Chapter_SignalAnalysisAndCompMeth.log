@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.30)  13 JUL 2021 11:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.30)  2 AUG 2021 15:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -580,6 +580,13 @@ File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
 Package: listings 2019/09/10 1.8c (Carsten Heinz)
 
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip194
+\multirow@cntb=\count332
+\multirow@dima=\skip195
+\bigstrutjot=\dimen266
+)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
 
@@ -595,8 +602,8 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks34
-\pgfutil@tempdima=\dimen266
-\pgfutil@tempdimb=\dimen267
+\pgfutil@tempdima=\dimen267
+\pgfutil@tempdimb=\dimen268
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
 ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
@@ -623,26 +630,26 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 ex
 \pgfkeys@tmptoks=\toks37
 ))
-\pgf@x=\dimen268
-\pgf@y=\dimen269
-\pgf@xa=\dimen270
-\pgf@ya=\dimen271
-\pgf@xb=\dimen272
-\pgf@yb=\dimen273
-\pgf@xc=\dimen274
-\pgf@yc=\dimen275
-\pgf@xd=\dimen276
-\pgf@yd=\dimen277
+\pgf@x=\dimen269
+\pgf@y=\dimen270
+\pgf@xa=\dimen271
+\pgf@ya=\dimen272
+\pgf@xb=\dimen273
+\pgf@yb=\dimen274
+\pgf@xc=\dimen275
+\pgf@yc=\dimen276
+\pgf@xd=\dimen277
+\pgf@yd=\dimen278
 \w@pgf@writea=\write4
 \r@pgf@reada=\read4
-\c@pgf@counta=\count332
-\c@pgf@countb=\count333
-\c@pgf@countc=\count334
-\c@pgf@countd=\count335
+\c@pgf@counta=\count333
+\c@pgf@countb=\count334
+\c@pgf@countc=\count335
+\c@pgf@countd=\count336
 \t@pgf@toka=\toks38
 \t@pgf@tokb=\toks39
 \t@pgf@tokc=\toks40
-\pgf@sys@id@count=\count336
+\pgf@sys@id@count=\count337
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
 )
@@ -658,8 +665,8 @@ File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count337
-\pgfsyssoftpath@bigbuffer@items=\count338
+\pgfsyssoftpath@smallbuffer@items=\count338
+\pgfsyssoftpath@bigbuffer@items=\count339
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -689,8 +696,8 @@ Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen278
-\pgfmath@count=\count339
+\pgfmath@dimen=\dimen279
+\pgfmath@count=\count340
 \pgfmath@box=\box59
 \pgfmath@toks=\toks41
 \pgfmath@stack@operand=\toks42
@@ -714,38 +721,38 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count340
+\c@pgfmathroundto@lastzeros=\count341
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@picminx=\dimen279
-\pgf@picmaxx=\dimen280
-\pgf@picminy=\dimen281
-\pgf@picmaxy=\dimen282
-\pgf@pathminx=\dimen283
-\pgf@pathmaxx=\dimen284
-\pgf@pathminy=\dimen285
-\pgf@pathmaxy=\dimen286
-\pgf@xx=\dimen287
-\pgf@xy=\dimen288
-\pgf@yx=\dimen289
-\pgf@yy=\dimen290
-\pgf@zx=\dimen291
-\pgf@zy=\dimen292
+\pgf@picminx=\dimen280
+\pgf@picmaxx=\dimen281
+\pgf@picminy=\dimen282
+\pgf@picmaxy=\dimen283
+\pgf@pathminx=\dimen284
+\pgf@pathmaxx=\dimen285
+\pgf@pathminy=\dimen286
+\pgf@pathmaxy=\dimen287
+\pgf@xx=\dimen288
+\pgf@xy=\dimen289
+\pgf@yx=\dimen290
+\pgf@yy=\dimen291
+\pgf@zx=\dimen292
+\pgf@zy=\dimen293
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
 code.tex
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@path@lastx=\dimen293
-\pgf@path@lasty=\dimen294
+\pgf@path@lastx=\dimen294
+\pgf@path@lasty=\dimen295
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
 .tex
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@shorten@end@additional=\dimen295
-\pgf@shorten@start@additional=\dimen296
+\pgf@shorten@end@additional=\dimen296
+\pgf@shorten@start@additional=\dimen297
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
@@ -753,19 +760,19 @@ File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfpic=\box60
 \pgf@hbox=\box61
 \pgf@layerbox@main=\box62
-\pgf@picture@serial@count=\count341
+\pgf@picture@serial@count=\count342
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgflinewidth=\dimen297
+\pgflinewidth=\dimen298
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
 s.code.tex
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@pt@x=\dimen298
-\pgf@pt@y=\dimen299
-\pgf@pt@temp=\dimen300
+\pgf@pt@x=\dimen299
+\pgf@pt@y=\dimen300
+\pgf@pt@temp=\dimen301
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
@@ -781,13 +788,13 @@ File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
 x
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowsep=\dimen301
+\pgfarrowsep=\dimen302
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@max=\dimen302
-\pgf@sys@shading@range@num=\count342
-\pgf@shadingcount=\count343
+\pgf@max=\dimen303
+\pgf@sys@shading@range@num=\count343
+\pgf@shadingcount=\count344
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
@@ -821,15 +828,15 @@ File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
 .sty
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@nodesepstart=\dimen303
-\pgf@nodesepend=\dimen304
+\pgf@nodesepstart=\dimen304
+\pgf@nodesepend=\dimen305
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
 Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
 )) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count344
+\etb@tempcnta=\count345
 )
 (/usr/share/texlive/texmf-dist/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
@@ -845,7 +852,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks44
 \XKV@tempa@toks=\toks45
 )
-\XKV@depth=\count345
+\XKV@depth=\count346
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
@@ -859,35 +866,35 @@ Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \collectedbox=\box65
 )
-\tc@llx=\dimen305
-\tc@lly=\dimen306
-\tc@urx=\dimen307
-\tc@ury=\dimen308
+\tc@llx=\dimen306
+\tc@lly=\dimen307
+\tc@urx=\dimen308
+\tc@ury=\dimen309
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
 (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen309
-\adjbox@Height=\dimen310
-\adjbox@Depth=\dimen311
-\adjbox@Totalheight=\dimen312
-\adjbox@pwidth=\dimen313
-\adjbox@pheight=\dimen314
-\adjbox@pdepth=\dimen315
-\adjbox@ptotalheight=\dimen316
+\adjbox@Width=\dimen310
+\adjbox@Height=\dimen311
+\adjbox@Depth=\dimen312
+\adjbox@Totalheight=\dimen313
+\adjbox@pwidth=\dimen314
+\adjbox@pheight=\dimen315
+\adjbox@pdepth=\dimen316
+\adjbox@ptotalheight=\dimen317
 
 (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count346
+\c@checkoddpage=\count347
 LaTeX Info: Redefining \checkoddpage on input line 45.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box66
-\sift@deathcycles=\count347
-\@vwid@loff=\dimen317
-\@vwid@roff=\dimen318
+\sift@deathcycles=\count348
+\@vwid@loff=\dimen318
+\@vwid@roff=\dimen319
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/todonotes/todonotes.sty
 Package: todonotes 2019/01/24 v1.1.2 Todonotes source and documentation.
@@ -906,8 +913,8 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen319
-\pgffor@skip=\dimen320
+\pgffor@iter=\dimen320
+\pgffor@skip=\dimen321
 \pgffor@stack=\toks46
 \pgffor@toks=\toks47
 ))
@@ -917,33 +924,33 @@ Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count348
-\pgfplotmarksize=\dimen321
+\pgf@plot@mark@count=\count349
+\pgfplotmarksize=\dimen322
 )
-\tikz@lastx=\dimen322
-\tikz@lasty=\dimen323
-\tikz@lastxsaved=\dimen324
-\tikz@lastysaved=\dimen325
-\tikz@lastmovetox=\dimen326
-\tikz@lastmovetoy=\dimen327
-\tikzleveldistance=\dimen328
-\tikzsiblingdistance=\dimen329
+\tikz@lastx=\dimen323
+\tikz@lasty=\dimen324
+\tikz@lastxsaved=\dimen325
+\tikz@lastysaved=\dimen326
+\tikz@lastmovetox=\dimen327
+\tikz@lastmovetoy=\dimen328
+\tikzleveldistance=\dimen329
+\tikzsiblingdistance=\dimen330
 \tikz@figbox=\box67
 \tikz@figbox@bg=\box68
 \tikz@tempbox=\box69
 \tikz@tempbox@bg=\box70
-\tikztreelevel=\count349
-\tikznumberofchildren=\count350
-\tikznumberofcurrentchild=\count351
-\tikz@fig@count=\count352
+\tikztreelevel=\count350
+\tikznumberofchildren=\count351
+\tikznumberofcurrentchild=\count352
+\tikz@fig@count=\count353
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count353
-\pgfmatrixcurrentcolumn=\count354
-\pgf@matrix@numberofcolumns=\count355
+\pgfmatrixcurrentrow=\count354
+\pgfmatrixcurrentcolumn=\count355
+\pgf@matrix@numberofcolumns=\count356
 )
-\tikz@expandcount=\count356
+\tikz@expandcount=\count357
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -966,29 +973,29 @@ File: tikzlibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 File: pgflibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ))) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count357
-\calc@Bcount=\count358
-\calc@Adimen=\dimen330
-\calc@Bdimen=\dimen331
-\calc@Askip=\skip194
-\calc@Bskip=\skip195
+\calc@Acount=\count358
+\calc@Bcount=\count359
+\calc@Adimen=\dimen331
+\calc@Bdimen=\dimen332
+\calc@Askip=\skip196
+\calc@Bskip=\skip197
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count359
-\calc@Cskip=\skip196
+\calc@Ccount=\count360
+\calc@Cskip=\skip198
 )
-\c@@todonotes@numberoftodonotes=\count360
+\c@@todonotes@numberoftodonotes=\count361
 )
 (/usr/share/texlive/texmf-dist/tex/latex/marginnote/marginnote.sty
 Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
-\c@mn@abspage=\count361
+\c@mn@abspage=\count362
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count362
+\c@float@type=\count363
 \float@exts=\toks48
 \float@box=\box71
 \@float@everytoks=\toks49
@@ -1009,7 +1016,7 @@ File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
 tex
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\arrowsize=\dimen332
+\arrowsize=\dimen333
 )) (/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2020/02/14 v1.6 Multi-file projects (package)
 )))
@@ -1034,16 +1041,16 @@ LaTeX Font Info:    ... okay on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count363
-\scratchdimen=\dimen333
+\scratchcounter=\count364
+\scratchdimen=\dimen334
 \scratchbox=\box74
-\nofMPsegments=\count364
-\nofMParguments=\count365
+\nofMPsegments=\count365
+\nofMParguments=\count366
 \everyMPshowfont=\toks50
-\MPscratchCnt=\count366
-\MPscratchDim=\dimen334
-\MPnumerator=\count367
-\makeMPintoPDFobject=\count368
+\MPscratchCnt=\count367
+\MPscratchDim=\dimen335
+\MPnumerator=\count368
+\makeMPintoPDFobject=\count369
 \everyMPtoPDFconversion=\toks51
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1058,7 +1065,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count369
+\c@lstlisting=\count370
 
 ABD: EveryShipout initializing macros
 LaTeX Info: Redefining \celsius on input line 4.
@@ -1111,7 +1118,7 @@ t line 93.
 (pdftex.def)             Requested size: 369.0pt x 123.00073pt.
  [3 <../../Figures/SpectralTransforms_3.png> <../../Figures/SpectralTransforms_
 PSD.png>] [4] [5]
-<../../Figures/SpectralTransforms_PSDwFits.png, id=67, 1300.86pt x 433.62pt>
+<../../Figures/SpectralTransforms_PSDwFits.png, id=66, 1300.86pt x 433.62pt>
 File: ../../Figures/SpectralTransforms_PSDwFits.png Graphic file (type png)
 <use ../../Figures/SpectralTransforms_PSDwFits.png>
 Package pdftex.def Info: ../../Figures/SpectralTransforms_PSDwFits.png  used on
@@ -1126,13 +1133,13 @@ n input line 185.
 LaTeX Warning: Reference `Sec:SignalAnalysis_Restoration' on page 6 undefined o
 n input line 185.
 
-<../../Figures/SiteA_WienerFilter.jpg, id=68, 361.35pt x 289.08pt>
+<../../Figures/SiteA_WienerFilter.jpg, id=67, 361.35pt x 289.08pt>
 File: ../../Figures/SiteA_WienerFilter.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_WienerFilter.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_WienerFilter.jpg  used on input li
 ne 196.
 (pdftex.def)             Requested size: 111.0pt x 88.79784pt.
-<../../Figures/SiteA_WienerFilter_loglog.jpg, id=69, 361.35pt x 289.08pt>
+<../../Figures/SiteA_WienerFilter_loglog.jpg, id=68, 361.35pt x 289.08pt>
 File: ../../Figures/SiteA_WienerFilter_loglog.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_WienerFilter_loglog.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_WienerFilter_loglog.jpg  used on i
@@ -1140,103 +1147,115 @@ nput line 203.
 (pdftex.def)             Requested size: 111.0pt x 88.79784pt.
 [6 <../../Figures/SpectralTransforms_PSDwFits.png> <../../Figures/SiteA_WienerF
 ilter.jpg> <../../Figures/SiteA_WienerFilter_loglog.jpg>]
-<../../Figures/SiteA_filtersEx.jpg, id=79, 867.24pt x 578.16pt>
+<../../Figures/SiteA_filtersEx.jpg, id=77, 867.24pt x 578.16pt>
 File: ../../Figures/SiteA_filtersEx.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_filtersEx.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_filtersEx.jpg  used on input line 
 241.
 (pdftex.def)             Requested size: 369.0pt x 246.00146pt.
- [7 <../../Figures/SiteA_filtersEx.jpg>]
-<../../Figures/ALTestimate_example.png, id=85, 387.4475pt x 636.3775pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <../../Figures/SiteA_filtersEx.jpg>]
+<../../Figures/ALTestimate_example.png, id=89, 387.4475pt x 636.3775pt>
 File: ../../Figures/ALTestimate_example.png Graphic file (type png)
 <use ../../Figures/ALTestimate_example.png>
 Package pdftex.def Info: ../../Figures/ALTestimate_example.png  used on input l
 ine 262.
 (pdftex.def)             Requested size: 111.0pt x 182.31137pt.
-<../../Figures/AllCores_ALT_l5_s4.png, id=86, 1122.1925pt x 688.5725pt>
+
+
+LaTeX Warning: Marginpar on page 9 moved by 18.7744pt.
+
+<../../Figures/AllCores_ALT_l5_s4.png, id=90, 1122.1925pt x 688.5725pt>
 File: ../../Figures/AllCores_ALT_l5_s4.png Graphic file (type png)
 <use ../../Figures/AllCores_ALT_l5_s4.png>
 Package pdftex.def Info: ../../Figures/AllCores_ALT_l5_s4.png  used on input li
 ne 269.
 (pdftex.def)             Requested size: 350.54887pt x 215.09431pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[8 <../../Figures/ALTestimate_example.png>]
-
 LaTeX Warning: Reference `Fig:ICE_Crete_10m_dated' on page 9 undefined on input
  line 282.
 
-<../../Figures/Crete_10m_PeaksTroughs.png, id=92, 1266.7325pt x 399.4925pt>
+<../../Figures/Crete_10m_PeaksTroughs.png, id=91, 1266.7325pt x 399.4925pt>
 File: ../../Figures/Crete_10m_PeaksTroughs.png Graphic file (type png)
 <use ../../Figures/Crete_10m_PeaksTroughs.png>
 Package pdftex.def Info: ../../Figures/Crete_10m_PeaksTroughs.png  used on inpu
 t line 285.
 (pdftex.def)             Requested size: 369.0pt x 116.368pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[9 <../../Figures/AllCores_ALT_l5_s4.png>]
+ [9 <../../Figures/ALTestimate_example.png> <../../Figures/AllCores_ALT_l5_s4.p
+ng>]
 
 LaTeX Warning: Reference `' on page 10 undefined on input line 292.
 
 
-LaTeX Warning: Reference `fig:Interp' on page 10 undefined on input line 306.
+Overfull \hbox (2.90508pt too wide) in paragraph at lines 292--293
+[]\OT1/cmr/m/n/10.95 The most na^^?^^Pve ap-proach, and the one first im-ple-me
+nted in this project,
+ []
 
 [10 <../../Figures/Crete_10m_PeaksTroughs.png>]
+
+LaTeX Warning: Reference `fig:Interp' on page 11 undefined on input line 309.
+
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
 
-LaTeX Warning: Reference `sec:???' on page 11 undefined on input line 308.
+LaTeX Warning: Reference `sec:???' on page 11 undefined on input line 311.
 
 
 LaTeX Warning: Reference `fig:InterpFinal' on page 11 undefined on input line 3
-08.
+11.
 
 
-Overfull \hbox (0.37924pt too wide) in paragraph at lines 308--309
-\OT1/cmr/m/n/10.95 y-sis, both times through the [][][][][][][][] pack-age [][]
-[][][][][][][]
+Overfull \hbox (20.45427pt too wide) in paragraph at lines 311--312
+\OT1/cmr/m/n/10.95 anal-y-sis, both times through the [][][][][][][][] pack-age
+ [][][][][][][][][]
  []
 
-[11]
-<../../Figures/SiteA_DataSplineInterp.png, id=108, 760.8425pt x 397.485pt>
+[11] [12]
+<../../Figures/SiteA_DataSplineInterp.png, id=112, 760.8425pt x 397.485pt>
 File: ../../Figures/SiteA_DataSplineInterp.png Graphic file (type png)
 <use ../../Figures/SiteA_DataSplineInterp.png>
 Package pdftex.def Info: ../../Figures/SiteA_DataSplineInterp.png  used on inpu
-t line 340.
+t line 343.
 (pdftex.def)             Requested size: 369.0pt x 192.77998pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../../Figures/SiteA_MultiSplineInterp.png, id=109, 929.4725pt x 724.7075pt>
+<../../Figures/SiteA_MultiSplineInterp.png, id=113, 929.4725pt x 724.7075pt>
 File: ../../Figures/SiteA_MultiSplineInterp.png Graphic file (type png)
 <use ../../Figures/SiteA_MultiSplineInterp.png>
 Package pdftex.def Info: ../../Figures/SiteA_MultiSplineInterp.png  used on inp
-ut line 347.
+ut line 350.
 (pdftex.def)             Requested size: 369.0pt x 287.69942pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12]
 Package marginnote Info: Margin note 13.1 is on absolute page 13 on input line 
-371.
-Package marginnote Info: xpos seems to be 97.26999pt on input line 371.
+374.
+Package marginnote Info: xpos seems to be 97.26999pt on input line 374.
 
-Overfull \hbox (31.59442pt too wide) in paragraph at lines 371--371
+Overfull \hbox (23.73602pt too wide) in paragraph at lines 374--374
  [] 
  []
 
 
-Underfull \hbox (badness 5036) in paragraph at lines 371--371
+Underfull \hbox (badness 5036) in paragraph at lines 374--374
 \OT1/cmr/m/n/9 o-lu-tion used for test-ing
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 371--371
+Underfull \hbox (badness 2600) in paragraph at lines 374--374
 \OT1/cmr/m/n/9 diffusion. Each test is
  []
 
@@ -1246,7 +1265,7 @@ File: ../../Figures/SiteA_InterpBF_SpecificResamplings.png Graphic file (type p
 ng)
 <use ../../Figures/SiteA_InterpBF_SpecificResamplings.png>
 Package pdftex.def Info: ../../Figures/SiteA_InterpBF_SpecificResamplings.png  
-used on input line 378.
+used on input line 381.
 (pdftex.def)             Requested size: 369.0pt x 444.49371pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1257,51 +1276,53 @@ File: ../../Figures/AllCores_DiffLenVdelta_InterpBF_const.png Graphic file (typ
 e png)
 <use ../../Figures/AllCores_DiffLenVdelta_InterpBF_const.png>
 Package pdftex.def Info: ../../Figures/AllCores_DiffLenVdelta_InterpBF_const.pn
-g  used on input line 385.
+g  used on input line 388.
 (pdftex.def)             Requested size: 369.0pt x 369.00032pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: Reference `Fig:COMPMETH_SamlingVsDiffLen' on page 13 undefined o
-n input line 395.
+n input line 398.
 
-<../../Figures/SiteA_InterpAF_SpecificResampling_BD.png, id=116, 1049.9225pt x 
+[13]
+<../../Figures/SiteA_InterpAF_SpecificResampling_BD.png, id=121, 1049.9225pt x 
 1264.725pt>
 File: ../../Figures/SiteA_InterpAF_SpecificResampling_BD.png Graphic file (type
  png)
 <use ../../Figures/SiteA_InterpAF_SpecificResampling_BD.png>
 Package pdftex.def Info: ../../Figures/SiteA_InterpAF_SpecificResampling_BD.png
-  used on input line 399.
+  used on input line 402.
 (pdftex.def)             Requested size: 369.0pt x 444.49371pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../../Figures/AllCores_InterpAF_deltaVSdiffLen_BD.png, id=117, 1049.9225pt x 6
+<../../Figures/AllCores_InterpAF_deltaVSdiffLen_BD.png, id=122, 1049.9225pt x 6
 93.59125pt>
 File: ../../Figures/AllCores_InterpAF_deltaVSdiffLen_BD.png Graphic file (type 
 png)
 <use ../../Figures/AllCores_InterpAF_deltaVSdiffLen_BD.png>
 Package pdftex.def Info: ../../Figures/AllCores_InterpAF_deltaVSdiffLen_BD.png 
- used on input line 406.
+ used on input line 409.
 (pdftex.def)             Requested size: 369.0pt x 243.76599pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13 <../../Figures/SiteA_DataSplineInterp.png>] [14 <../../Figures/SiteA_MultiS
-plineInterp.png>] [15 <../../Figures/SiteA_InterpBF_SpecificResamplings.png>]
-[16 <../../Figures/AllCores_DiffLenVdelta_InterpBF_const.png>] [17 <../../Figur
-es/SiteA_InterpAF_SpecificResampling_BD.png>] [18 <../../Figures/AllCores_Inter
+[14 <../../Figures/SiteA_DataSplineInterp.png>] [15 <../../Figures/SiteA_MultiS
+plineInterp.png>] [16 <../../Figures/SiteA_InterpBF_SpecificResamplings.png>]
+[17 <../../Figures/AllCores_DiffLenVdelta_InterpBF_const.png>] [18 <../../Figur
+es/SiteA_InterpAF_SpecificResampling_BD.png>] [19 <../../Figures/AllCores_Inter
 pAF_deltaVSdiffLen_BD.png>] (./Chapter_SignalAnalysisAndCompMeth.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 24362 strings out of 481239
- 457743 string characters out of 5920377
- 893020 words of memory out of 5000000
- 39168 multiletter control sequences out of 15000+600000
+ 24416 strings out of 481239
+ 458589 string characters out of 5920377
+ 897935 words of memory out of 5000000
+ 39218 multiletter control sequences out of 15000+600000
  544603 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,16n,96p,1249b,1293s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1322,11 +1343,11 @@ dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
 frm1095.pfb>
-Output written on Chapter_SignalAnalysisAndCompMeth.pdf (18 pages, 1808378 byte
+Output written on Chapter_SignalAnalysisAndCompMeth.pdf (19 pages, 1809927 byte
 s).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
- 123 compressed objects within 2 object streams
+ 210 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  184 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,6 +1,6 @@
 %!TeX root = Chapter_SignalAnalysisAndCompMeth
 \documentclass[../../CompleteThesis2/Complete_2ndDraft]{subfiles}
-%\graphicspath{{../../Figures/}}
+\graphicspath{{../../Figures/}}
 \begin{document}
 The presented data obtained through various experimental measurements (ECM, DEP, isotopic analysis) are easily compared with a time series, as they typically show some quantity measured all along the depth of an ice core. This depth is often, at short intervals, treated as a regular linear time series thus making it possible to use some of the known signal analysis methods. Of course, when considering the entirety of an ice core, the linearity disappears as thinning and compression makes the depth series non linear. But when considering short lengths of core it is possible to estimate a linearity, assuming conformity in this specific layer. 
 
@@ -239,7 +239,7 @@ An example of the final frequency restoration filter, as it changes with diffusi
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{SiteA_filtersEx.jpg}
-	\caption[Frequency filters example, Site A]{Frequency filter examples ranging from diffusion length 0.04 m to 0.085 m.}
+	\caption[Frequency filters example, Site A]{\small Frequency filter examples ranging from diffusion length 0.04 m to 0.085 m.}
 	\label{fig:SiteA_filtersEx}
 \end{figure}
 
@@ -260,14 +260,14 @@ From the spectral analysis, an estimate on the annual layer thickness can be giv
 \begin{marginfigure}
 	\centering
 	\includegraphics[width=\marginparwidth]{ALTestimate_example.png}
-	\caption[]{\small Example of annual layer thickness estimation for section of 5 meters at depth [0;5] m, Site B.}
+	\caption[$\lambda$ estimation example, Site B, in frequency domain.]{\footnotesize Example of annual layer thickness estimation for section of 5 meters at depth [0;5] m, Site B.}
 	\label{Fig:SiteB_0-5m_ALTestimate_example}
 \end{marginfigure}
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.95\textwidth]{AllCores_ALT_l5_s4.png}
-	\caption[]{\small }
+	\caption[$\lambda$ profiles for sites A, B, D and G.]{\small Annual layer thickness as estimated through spectral analysis, with a section length of 5 m and a section shift of 4 m, Sites A, B, D and G.}
 	\label{Fig:AllCores_ALT_l5_s4}
 \end{figure}
 
@@ -283,7 +283,7 @@ Knowing that water isotopic data are a proxy for temperature, the most obvious w
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{Crete_10m_PeaksTroughs.png}
-	\caption{\small Ten meters of the top of Cretê ice core, with identification and dating of 19 annual layers, with peaks(blue) corresponding to summers and troughs(orange) corresponding to winters.}
+	\caption[10 m of Crête core with peaks and troughs.]{\small Ten meters of the top of Cretê ice core, with identification and dating of 19 annual layers, with peaks(blue) corresponding to summers and troughs(orange) corresponding to winters.}
 	\label{Fig:COMPMETH_Crete_10m_PeaksTroughs}
 \end{figure}
 
@@ -341,14 +341,14 @@ Even though the first interpolation method was later abandoned, some analysis wa
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{SiteA_DataSplineInterp.png}
-	\caption{\small Unevenly sampled signal from Site A resampled using cubic spline interpolation to an even signal with a new sample size equal to the minimum sample size found in the raw signal.}
+	\caption[Even resampling of unevenly sampled data, Site A.]{\small Unevenly sampled signal from Site A resampled using cubic spline interpolation to an even signal with a new sample size equal to the minimum sample size found in the raw signal.}
 	\label{Fig:COMPMETH_SiteA_DataSplineInterp}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{SiteA_MultiSplineInterp.png}
-	\caption{\small Four different resampled signals of Site A data, showing loss of information when resampling resolution is low.}
+	\caption[Different resamplings of Site A.]{\small Four different resampled signals of Site A data, showing loss of information when resampling resolution is low.}
 	\label{Fig:COMPMETH_SiteA_MultiSplineInterp}
 \end{figure}
 
@@ -362,14 +362,14 @@ To examine the effect of the resampling resolution on the final diffusion length
 		\textbf{Site} & $\Delta_{\text{min}}$& $\Delta_{\text{max}}$ & $\Delta_{\text{OG}}$\\
 		& [cm] & [cm] & [cm] \\
 		\midrule
-		Site A & 1.0 & 10.6 & 3.8-4.0\\
-		Site B & 1.0 & 11.7 & 3.8-4.0\\
-		Site D & 1.0 & 12.0 & 3.7-3.9\\
-		Site E & 1.0 & 11.4 & 4.1-4.4\\
-		Site G & 1.0 & 10.3 & 4.0-4.2\\
+		A & 1.0 & 10.6 & 3.8-4.0\\
+		B & 1.0 & 11.7 & 3.8-4.0\\
+		D & 1.0 & 12.0 & 3.7-3.9\\
+		E & 1.0 & 11.4 & 4.1-4.4\\
+		G & 1.0 & 10.3 & 4.0-4.2\\
 		\bottomrule
 	\end{tabular}
-	\captionof{table}{\footnotesize Minimal and maximal new sample resolution used for testing interpolation before back-diffusion. Each test is run with 100 different new sample resolutions between $\Delta_{\text{min}}$ and $\Delta_{\text{max}}$.}
+	\captionof{table}[Tested sample resolutions for resampling before back-diffusion.]{\footnotesize Minimal and maximal new sample resolution used for testing interpolation before back-diffusion. Each test is run with 100 different new sample resolutions between $\Delta_{\text{min}}$ and $\Delta_{\text{max}}$.}
 	\label{tab:InterpSamples}
 }[0.5cm]%
 
@@ -379,14 +379,14 @@ To examine the effect of the resampling resolution on the final diffusion length
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{SiteA_InterpBF_SpecificResamplings.png}
-	\caption{\small Site A, illustration of the effect of five different cubic spline resamplings before deconvolution. Original sample sizes lie in the interval [3.80; 4.00] [cm]. Resampling at smaller sample sizes show a tendency to restore some signal frequencies that are not necessarily inherit in the original signal. The resample should thus not be chosen too small as this would introduce some false signal into the results.}
+	\caption[Back diffused data, Site A, different resamplings before deconvolution.]{\small Site A, illustration of the effect of five different cubic spline resamplings before deconvolution. Original sample sizes lie in the interval [3.80; 4.00] [cm]. Resampling at smaller sample sizes show a tendency to restore some signal frequencies that are not necessarily inherit in the original signal. The resample should thus not be chosen too small as this would introduce some false signal into the results.}
 	\label{Fig:COMPMETH_SiteA_interpBF_SpecificSamplings}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{AllCores_DiffLenVdelta_InterpBF_const.png}
-	\caption{\small Diffusion length estimates versus resamples through cubic spline interpolation before deconvolution for Alphabet cores from sites A, B, D, E and G.}
+	\caption[Diffusion length versus resampling size before deconvolution, all cores.]{\small Diffusion length estimates versus resamples through cubic spline interpolation before deconvolution for Alphabet cores from sites A, B, D, E and G.}
 	\label{Fig:COMPMETH_SamplingVsDiffLen_interpBF}
 \end{figure}
 
@@ -400,14 +400,14 @@ The second interpolation is carried out after deconvoluting and back-diffusing t
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{SiteA_InterpAF_SpecificResampling_BD.png}
-	\caption{\small Site A, effect of cubic spline interpolation after signal has been deconvoluted. The interpolation is introduced to make peak detection more stable.}
+	\caption[Back diffused data, Site A, different resamplings after deconvolution.]{\small Site A, effect of cubic spline interpolation after signal has been deconvoluted. The interpolation is introduced to make peak detection more stable.}
 	\label{Fig:COMPMETH_SiteA_InterpAF_4samplings}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{AllCores_InterpAF_deltaVSdiffLen_BD.png}
-	\caption{\small Final diffusion length estimate, given new resample by cubic spline interpolation after deconvolution for Alphabet cores from sites A, B, D, E and G.. The original sample size interval is illustrated as black vertical lines.}
+	\caption[Diffusion length versus resampling size after deconvolution, all cores.]{\small Final diffusion length estimate, given new resample by cubic spline interpolation after deconvolution for Alphabet cores from sites A, B, D, E and G.. The original sample size interval is illustrated as black vertical lines.}
 	\label{Fig:COMPMETH_AllCores_SamplingVsDiffLen}\textit{}
 \end{figure}
 

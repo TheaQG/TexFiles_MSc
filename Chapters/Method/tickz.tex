@@ -1,0 +1,137 @@
+%!TeX root = tickz
+\documentclass[../../CompleteThesis2/Complete_2ndDraft]{subfiles}
+%\graphicspath{{../../Figures/}}
+\begin{document}
+
+
+\begin{figure}
+	\begin{tikzpicture}[node distance=1.1cm, auto]
+		\node(in1) [io, text width=4cm, align=center] {Depth series \& core specs};
+		\node(in2) [io, right of=in1, xshift=5cm] {Constraints};
+		\node(empty1) [below of=in1, xshift=3.2cm] {Analysis};
+		\node(pro1) [process, below of=empty1, yshift=-0.3cm, text width=4cm, align=center] {Find optimal $\sigma$ that fulfills constraints};
+		\node(pro2) [process, below of=pro1, text width=4cm, yshift=-0.5cm, align=center] {Temperature estimate based on $\sigma_{\text{opt}}$};
+		
+		\draw[-] (in1) -| (empty1);
+		\draw[-] (in2) -| (empty1);
+		\draw[arrow] (empty1) -- (pro1);
+		\draw[arrow] (pro1) -- (pro2);
+	\end{tikzpicture}
+\end{figure}
+\begin{figure}
+	\begin{tikzpicture}[node distance=1.5cm, auto]
+		\node(start) [startstop] {START};
+		%----------------------------------------------------%
+		\node(in1) [io, left of=start, xshift=-3cm, text width=4cm, align=center] {Measured depth series, $d$};
+		\node(empty1) [below of=in1, yshift=0.12cm] {};
+		\node(empty2) [below of=in1, xshift=-0.15cm] {};
+		%		\node(in1pro1) [process, below of=in1, yshift=-0.5cm] {Spline interpolation};
+		\node(in1pro2) [process, below of=in1, yshift=-2cm] {Spectral analysis of $\tilde{d}$};
+		
+		\node(in1pro3) [process, below of=in1pro2, text width=4cm, align=center] {Construct Wiener filter, $\tilde{F}$};
+		
+		\draw[arrow] (in1) -- (start);
+		\draw[-] (start) |- (empty2);
+		\draw[arrow] (empty1) -- (in1pro2);
+		\draw[arrow] (in1pro2) -- (in1pro3);
+		%		\draw[arrow] (in1pro1) -- (in1pro2);
+		%	\draw[arrow] (in1pro3) -- (in1pro4);
+		
+		%----------------------------------------------------%
+		
+		\node(in2) [io, right of=start, xshift=2.5cm] {Core specs};
+		\node(in2pro1) [process, below of=in2, yshift=-0.5cm] {Density profile};
+		\node(in2pro2) [process, below of=in2pro1] {Diffusion profile};
+		\node(in2pro3) [process, below of=in2pro2] {$\sigma_0$};
+		\node(in2pro4) [process, below of=in2pro3, text width=4cm, align=center] {Construct Transfer Function filter, $\tilde{\mathcal{G}}$};
+		
+		\draw[arrow] (in2) -- (start);
+		\draw[arrow] (start) |- (in2pro1);
+		\draw[arrow] (in2pro1) -- (in2pro2);
+		\draw[arrow] (in2pro2) -- (in2pro3);
+		\draw[arrow] (in2pro3) -- (in2pro4);
+				
+		%----------------------------------------------------%
+		\node(pro0) [process, below of=start, yshift=-6.5cm, text width=4.3cm, align=center] {Frequency Filters,   $\tilde{F}\cdot\tilde{\mathcal{G}}^{-1}$};
+		\node(pro1) [process, below of=pro0,align=center, text width=4cm] {\textbf{Deconvolution}, $\mathcal{F}\left[\tilde{d}\cdot\tilde{F}\cdot\tilde{\mathcal{G}}^{-1}\right]$};
+		\node(stop) [startstop, below of=pro1] {STOP};
+		\node(out1) [io, right of=stop, align=center, xshift=2.2cm, text width=2.5cm] {\footnotesize{Back diffused depth series, $D$}};
+		\node(out2) [io, below of=out1, align=center] {\footnotesize{$\sigma_{\text{out}}$}};
+		\draw[arrow] (in1pro3) |- (pro0);
+		\draw[arrow] (in2pro4) |- (pro0);
+		\draw[arrow] (pro0) -- (pro1);
+		\draw[arrow] (pro1) -- (stop);
+		\draw[arrow] (stop) -- (out1);
+		\draw[arrow] (stop) |- (out2);
+	\end{tikzpicture}
+\end{figure}
+
+\begin{figure}
+	\begin{tikzpicture}[node distance=1.5cm, auto]
+		\node(start) [startstop] {START};
+		%----------------------------------------------------%
+		\node(in1) [io, left of=start, xshift=-2.5cm] {Depth series};
+		\node(empty1) [below of=in1, yshift=0.12cm] {};
+		\node(empty2) [below of=in1, xshift=-0.15cm] {};
+		%		\node(in1pro1) [process, below of=in1, yshift=-0.5cm] {Spline interpolation};
+		\node(in1pro2) [process, below of=in1, yshift=-2cm] {Spectral analysis};
+		\node(decSpec1) [decision, below of=in1pro2, scale = 0.8, align=center] {DCT ?\\(Interpolation)};
+		\node(decSpec2) [decision, left of=decSpec1, scale=0.8, xshift = -1.2cm, align=center] {FFT ?\\(Interpolation)};
+		\node(decSpec3) [decision, right of=decSpec1, scale=0.8, xshift = 0.8cm] {NDCT ?};
+		
+		\node(in1pro3) [process, below of=decSpec1] {Wiener filter};
+		
+		\draw[arrow] (in1) -- (start);
+		\draw[-] (start) |- (empty2);
+		\draw[arrow] (empty1) -- (in1pro2);
+		%		\draw[arrow] (in1pro1) -- (in1pro2);
+		\draw[arrow] (in1pro2) -- (decSpec1);
+		\draw[arrow] (in1pro2) -- (decSpec2);
+		\draw[arrow] (in1pro2) -- (decSpec3);
+		\draw[arrow] (decSpec1) -- (in1pro3);
+		\draw[arrow] (decSpec2) -- (in1pro3);
+		\draw[arrow] (decSpec3) -- (in1pro3);
+		%	\draw[arrow] (in1pro3) -- (in1pro4);
+		
+		%----------------------------------------------------%
+		
+		\node(in2) [io, right of=start, xshift=2.5cm] {Core specs};
+		\node(in2pro1) [process, below of=in2, yshift=-0.5cm] {Density profile};
+		\node(in2pro2) [process, below of=in2pro1] {Diffusion profile};
+		\node(in2pro3) [process, below of=in2pro2] {$\sigma_0$\textbf{ estimate}};
+		\node(decSigma1) [decision, below of=in2pro3, scale = 0.8] {$\sigma_0 = \sigma_{\text{const}}$?};
+		\node(decSigma2) [decision, right of=decSigma1, scale = 0.8, xshift=0.8cm] {$\sigma_0 = \sigma(z)$?};
+		\node(decSigma3) [decision, left of=decSigma1, scale = 0.8, xshift=-0.8cm] {$\sigma_0 = \sigma_{\text{input}}$?};
+		
+		
+		\draw[arrow] (in2) -- (start);
+		\draw[arrow] (start) |- (in2pro1);
+		\draw[arrow] (in2pro1) -- (in2pro2);
+		\draw[arrow] (in2pro2) -- (in2pro3);
+		\draw[arrow] (in2pro3) -- (decSigma1);
+		\draw[arrow] (in2pro3) -- (decSigma2);
+		\draw[arrow] (in2pro3) -- (decSigma3);
+		
+		%----------------------------------------------------%
+		\node(pro0) [process, below of=start, yshift=-6.5cm] {Frequency Filters};
+		\node(pro1) [process, below of=pro0,align=center] {\textbf{Deconvolution}\\(Uniform resampling)};
+		\node(stop) [startstop, below of=pro1] {\textbf{STOP}};
+		\node(out1) [io, right of=stop, align=center, xshift=2.2cm, text width=2.5cm] {\footnotesize{Back diffused depth series}};
+		\node(out2) [io, below of=out1, align=center] {\footnotesize{$\sigma_{\text{out}}$}};
+		\draw[arrow] (in1pro3) |- (pro0);
+		\draw[arrow] (decSigma1) |- (pro0);
+		\draw[arrow] (decSigma2) |- (pro0);
+		\draw[arrow] (decSigma3) |- (pro0);
+		\draw[arrow] (pro0) -- (pro1);
+		\draw[arrow] (pro1) -- (stop);
+		\draw[arrow] (stop) -- (out1);
+		\draw[arrow] (stop) |- (out2);
+		
+		%		\draw[arrow] (in2pro3) -| (pro0);
+		
+	\end{tikzpicture}
+	\caption[Flowchart of initialization method.]{\small Flowchart of initialization method for back diffusion of a depth series given a diffusion length estimate.}
+	\label{Fig:FlowchartBackDiffusion}
+\end{figure}
+
+\end{document}

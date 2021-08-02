@@ -1,6 +1,6 @@
 %!TeX root = Chapter_Method2
 \documentclass[../../CompleteThesis2/Complete_2ndDraft]{subfiles}
-%\graphicspath{{../../Figures/}}
+\graphicspath{{../../Figures/}}
 \begin{document}
 
 \section[$\sigma$ Estimation Method][$\sigma$ Estimation Method]{$\sigma$ Estimation Method}
@@ -77,7 +77,7 @@ The second module is responsible for the optimization. This module examines the 
 		%		\draw[arrow] (in2pro3) -| (pro0);
 		
 	\end{tikzpicture}
-	\caption[Flowchart]{Flowchart of initialization method for back diffusion of a depth series given a diffusion length estimate.}
+	\caption[Flowchart of initialization method.]{\small Flowchart of initialization method for back diffusion of a depth series given a diffusion length estimate.}
 	\label{Fig:FlowchartBackDiffusion}
 \end{figure}
 
@@ -105,7 +105,7 @@ This section will contain a walk through of the general differences between cons
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.95\textwidth]{SiteB_ConstVNoConst.png}
-	\caption[]{\footnotesize }
+	\caption[Site B Constrained vs. Unconstrained]{\small Example of how the imposed constraints effect the final diffusion length estimate for the Laki to Tamborad depth section of the core drilled at Site B. The black line shows the data, the green the back diffused data using a method with less constraints, and the blue shows the back diffused data when using the imposed constraint. The blue dots represents the peaks counted in the constrained method.}
 	\label{fig:SiteB_ConstVNoConst}
 \end{figure}
 
@@ -132,7 +132,7 @@ Throughout this section a number of different tests of the algorithm will be pre
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.95\textwidth]{AllCores_ALTs.png}
-	\caption[]{\footnotesize }
+	\caption[$\lambda$ for Full Cores]{\small Annual layer thickness estimates, $\lambda$, calculated through spectral integration of 5 m sections of the entire core lengths. The average is based on using both FFT, DCT and NDCT spectral estimations. Blank spaces, akin to the sections below 60 m depth at Site E shows problematic areas, where the spectral estimation have had trouble with determining $\lambda$. The black vertical lines show the depth sections between Laki and Tambora events.}
 	\label{fig:AllCores_ALTs}
 \end{figure}
 
@@ -142,16 +142,18 @@ Throughout this section a number of different tests of the algorithm will be pre
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.95\textwidth]{AllCores_ALTatLT_vs_lSec.png}
-	\caption[]{\footnotesize }
-	\label{fig:AllCores_ALTatLT_vs_lSec}
-\end{figure}
-\begin{figure}[h]
-	\centering
 	\includegraphics[width=0.95\textwidth]{AllCores_ALT_at_DiffLsecs.png}
-	\caption[]{\footnotesize }
+	\caption[$\lambda$ Depth Profiles, Different $l_{\text{sec}}$]{\small Examples of the $\lambda$ depth profile given different section lengths. All profiles are computed with a shift of 1 m.}
 	\label{fig:AllCores_ALT_at_DiffLsecs}
 \end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.95\textwidth]{AllCores_ALTatLT_vs_lSec.png}
+	\caption[$\lambda_{\text{LT}}$ vs. Section Length]{\small The annual layer thickness estimates in the section between Laki and Tambora as computed with different section lengths, $l_{\text{sec}}$, used in the spectral analysis. The section is shifted 1 m and then computed again. The $\lambda_{\text{LT}}$ is then calculated as a mean of th $\lambda$ estimates falling into the Laki to Tambora depth section.}
+	\label{fig:AllCores_ALTatLT_vs_lSec}
+\end{figure}
+
 
 
 
@@ -160,15 +162,17 @@ Throughout this section a number of different tests of the algorithm will be pre
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.95\textwidth]{AllCores_ALTvsShift.png}
-	\caption[]{\footnotesize }
-	\label{fig:AllCores_ALTvsShift}
+	\includegraphics[width=0.95\textwidth]{AllCores_ALT_at_DiffShifts.png}
+	\caption[$\lambda$ Depth Profiles, Different $s_{\text{sec}}$]{\small Examples of $\lambda$ depth profiles given different shift lengths. All profiles are computed with a section length for spectral analysis of $l_{\text{sec}}=5$ m.}
+	\label{fig:AllCores_ALT_at_DiffShifts}
 \end{figure}
+
+
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.95\textwidth]{AllCores_ALT_at_DiffShifts.png}
-	\caption[]{\footnotesize }
-	\label{fig:AllCores_ALT_at_DiffShifts}
+	\includegraphics[width=0.95\textwidth]{AllCores_ALTvsShift.png}
+	\caption[$\lambda_{\text{LT}}0$ vs. $s_{\text{sec}}$]{\small Annual layer thickness estimate at the depth section between Laki and Tambora, $\lambda_{\text{LT}}$ versus different shifts of the sections used in the spectral analysis.}
+	\label{fig:AllCores_ALTvsShift}
 \end{figure}
 
 
@@ -182,7 +186,7 @@ Throughout this section a number of different tests of the algorithm will be pre
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{SiteA_SpecTrans_VisInspection.png}
-	\caption[]{\footnotesize }
+	\caption[Qualitative Example of Spectral Transform's Effect on $\sigma$]{\small A visual example of the differences in final back diffused data when using different spectral transforms. }
 	\label{fig:SiteA_SpecTrans_VisInspection}
 \end{figure}
 
@@ -193,7 +197,7 @@ Throughout this section a number of different tests of the algorithm will be pre
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.95\textwidth]{SiteA_SpecTrans_Speed.png}
-	\caption[]{\footnotesize }
+	\caption[Speed and $\sigma$ Estimates, Spectral Transforms]{\small Diffusion length estimate along with speed of algorithm given the three different spectral transforms examined in this work. The volcanic event depths have been drawn from a Gaussian distribution with a width corresponding to ~1 month around the estimated mean depth of the event.}
 	\label{fig:SiteA_SpecTrans_Speed}
 \end{figure}
 
@@ -211,7 +215,7 @@ Throughout this section a number of different tests of the algorithm will be pre
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.95\textwidth]{SiteA_Vary_LandT.png}
-	\caption[]{\footnotesize }
+	\caption[Diffusion Length Variations, Varying Laki and Tambora]{\small Diffusion length estimates when varying the depth locations of the volcanic events. The locations of both Laki and Tambora events have been drawn from Gaussian distributions as the ones presented in Section \ref{Sec:Data_VolcanicHorizons}.}
 	\label{fig:SiteA_Vary_LandT}
 \end{figure}
 
@@ -222,8 +226,8 @@ Throughout this section a number of different tests of the algorithm will be pre
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.95\textwidth]{SiteA_Vary_Tonly.png}
-	\caption[]{\footnotesize }
+	\includegraphics[width=0.95\textwidth]{SiteA_Vary_Lonly.png}
+	\caption[Diffusion Length Variations, Varying only Laki]{\small Diffusion length estimates for Site A when varying only the Laki volcanic event. The locations are drawn from Gaussian distributions as the ones presented in Section \ref{Sec:Data_VolcanicHorizons}. The depth section is kept at a constant length, corresponding to the mean distance value, $\bar{d}_{\text{Laki}}-\bar{d}_{\text{Tambora}}$.}
 	\label{fig:SiteA_Vary_Tonly}
 \end{figure}
 
@@ -234,8 +238,8 @@ Throughout this section a number of different tests of the algorithm will be pre
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.95\textwidth]{SiteA_Vary_Lonly.png}
-	\caption[]{\footnotesize }
+	\includegraphics[width=0.95\textwidth]{SiteA_Vary_Tonly.png}
+	\caption[Diffusion Length Variations, Varying only Tambora]{\small Diffusion length estimates for Site A when varying only the Tambora volcanic event. The locations are drawn from Gaussian distributions as the ones presented in Section \ref{Sec:Data_VolcanicHorizons}. The depth section is kept at a constant length, corresponding to the mean distance value, $\bar{d}_{\text{Laki}}-\bar{d}_{\text{Tambora}}$.}
 	\label{fig:SiteA_Vary_Lonly}
 \end{figure}
 
@@ -247,21 +251,21 @@ Throughout this section a number of different tests of the algorithm will be pre
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.95\textwidth]{SiteA_LandT_Gauss_2Mnth.png}
-	\caption[]{\footnotesize }
+	\caption[Illustration of 2 Month Standard Deviation Variation of Volcanic Events Locations]{\small Illustration of the method implemented to manage the uncertainty of the exact depth location of the volcanic events. The method establishes a Gaussian distribution with a mean of the estimated middle of the volcanic event and a standard deviation of what corresponds to two months.}
 	\label{fig:SiteA_LandT_Gauss_2Mnth}
 \end{figure}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.95\textwidth]{SiteA_Vary_LandT_2mnth_DCT.png}
-	\caption[]{\footnotesize }
-	\label{fig:SiteA_LandT_Gauss_2mnth_DCT}
-\end{figure}
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=0.95\textwidth]{SiteA_Vary_LandT_2mnth_DCT.png}
+%	\caption[2 Month Variation of Event Locations, Site A]{\small 500 runs with locations of Laki and Tambora events drawn from a Gaussian distribution with a standard deviation of two months. Using DCT as spectral transform.}
+%	\label{fig:SiteA_LandT_Gauss_2mnth_DCT}
+%\end{figure}
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.95\textwidth]{SiteA_Vary_LandT_2mnth_NDCT.png}
-	\caption[]{\footnotesize }
+	\caption[2 Month Variation of Event Locations, Site A]{\small 500 runs with locations of Laki and Tambora events drawn from a Gaussian distribution with a standard deviation of two months. Using NDCT as spectral transform.}
 	\label{fig:SiteA_LandT_Gauss_2mnth_NDCT}
 \end{figure}
 

@@ -2,42 +2,68 @@
 \addvspace {10pt}
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Summers and Winters between Laki and Tambora}}{2}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Ten meters of the top of Cretê ice core, with identification and dating of 19 annual layers.\relax }}{5}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Illustration of the densification process of a firn column, from snow deposition to glacial ice.\relax }}{7}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Density profile examples given five different initial conditions representing present day conditions at the five different ice core locations. Temperature, $T_0$, is in $^{\text {o}}$C and accumulation, $A_0$, is in meter of water equivalent per year.\relax }}{8}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Density profiles from ice core Site A near Crête. Both purely modelled profile and profile fitted to the inputted depth-density measurements are presented.\relax }}{8}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Contribution of the diffusion(dashed) and densification(dot-dashed) terms from Eq. 52\hbox {} to the final analytical diffusion length solution (blue).\relax }}{15}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Crete and surrounding Alphabet cores, as their analytical solutions place them according to observed temperature and accumulation rate.\relax }}{16}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Analytically calculated diffusion length profile examples given five different initial conditions representing present day conditions at the five different ice core locations. Temperature, $T_0$, is in $^{\text {o}}$C and accumulation, $A_0$, is in meter of water equivalent per year.\relax }}{16}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Water isotope measurements aligned with conductivity measurements from the ice core drilled at Site A.\relax }}{17}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces 10 m of Crête ice core with dating.}}{5}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Densification process}}{7}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Five theoretical density profile examples.}}{8}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Site A density profile, data and theory.}}{8}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Rate terms in the diffusion equation.}}{16}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Analytical solutions of diffusion length, Alphabet cores.}}{16}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Five different analytical diffusion length profiles.}}{17}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Conductivity and $\delta ^{18}$O measurements from Site A.}}{18}%
 \addvspace {10pt}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Summers and Winters between Laki and Tambora}}{21}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces \relax \fontsize {9}{11}\selectfont \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Conductivity measurements aligned with water isotope measurements at the depth correspodning to the time between eruptions at Laki and Tambora.\relax }}{22}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces \relax \fontsize {9}{11}\selectfont \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Corrected depth positions durations for the volcanic signal of Laki and Tambora in the ECM data. Green shades corresponds to previously estimated depths, from \cite [Clausen \& Hammer, 1988]{ClausenHammer1988}, and blue shades corresponds to newly estimated positions and durations.\relax }}{23}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces \relax \fontsize {9}{11}\selectfont \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Example of Gaussian distribution of the volcanic event from Tambora, enerated from observations of the ECM data, Site A. $\mu _T$ for the distribution is set to be equal to the middle point, $s_T$, and the standard deviation, $\sigma _T^2$ is set to be $s_T/4$.\relax }}{24}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces \relax \fontsize {9}{11}\selectfont \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Example of Gaussian distribution of the volcanic event from Tambora, enerated from observations of the ECM data, Site A. $\mu _L$ for the distribution is set to be equal to the middle point, $s_L$, and the standard deviation, $\sigma _L^2$ is set to be $s_L/5$.\relax }}{24}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces ECM and $\delta ^{18}$O data between Laki and Tambora, Site A.}}{22}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Corrected depth positions of Laki and Tambora events.}}{23}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Corrected Tambora event, Site A.}}{24}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Corrected Laki event, Site A.}}{24}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces ECM and $\delta ^{18}$O data between Laki and Tambora, Site B23.}}{25}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces All Alphabet core $\delta ^{18}$O profiles in full.}}{26}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces All Alphabet core $\delta ^{18}$O profiles, depths from Laki to Tambora.}}{27}%
 \addvspace {10pt}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces FFT, DCT, NDCT, Site A}}{31}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces FFT, DCT, NDCT PSDs, Site A}}{32}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces FFT, DCT, NDCT PSDs with Fit, Site A}}{34}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Wiener filter}}{34}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces FFT, DCT, NDCT PSDs with Fit, Site A}}{35}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Wiener filter}}{35}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Frequency filters example, Site A}}{36}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Ten meters of the top of Cretê ice core, with identification and dating of 19 annual layers, with peaks(blue) corresponding to summers and troughs(orange) corresponding to winters.\relax }}{38}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Unevenly sampled signal from Site A resampled using cubic spline interpolation to an even signal with a new sample size equal to the minimum sample size found in the raw signal.\relax }}{41}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Four different resampled signals of Site A data, showing loss of information when resampling resolution is low.\relax }}{42}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Site A, illustration of the effect of five different cubic spline resamplings before deconvolution. Original sample sizes lie in the interval [3.80; 4.00] [cm]. Resampling at smaller sample sizes show a tendency to restore some signal frequencies that are not necessarily inherit in the original signal. The resample should thus not be chosen too small as this would introduce some false signal into the results.\relax }}{44}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Diffusion length estimates versus resamples through cubic spline interpolation before deconvolution for Alphabet cores from sites A, B, D, E and G.\relax }}{45}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Site A, effect of cubic spline interpolation after signal has been deconvoluted. The interpolation is introduced to make peak detection more stable.\relax }}{46}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Final diffusion length estimate, given new resample by cubic spline interpolation after deconvolution for Alphabet cores from sites A, B, D, E and G.. The original sample size interval is illustrated as black vertical lines.\relax }}{47}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces $\lambda $ estimation example, Site B, in frequency domain.}}{37}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces $\lambda $ profiles for sites A, B, D and G.}}{38}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces 10 m of Crête core with peaks and troughs.}}{39}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Even resampling of unevenly sampled data, Site A.}}{42}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Different resamplings of Site A.}}{43}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Back diffused data, Site A, different resamplings before deconvolution.}}{44}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Diffusion length versus resampling size before deconvolution, all cores.}}{45}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Back diffused data, Site A, different resamplings after deconvolution.}}{46}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Diffusion length versus resampling size after deconvolution, all cores.}}{47}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Flowchart}}{51}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Flowchart of initialization method.}}{51}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Site B Constrained vs. Unconstrained}}{52}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces $\lambda $ for Full Cores}}{53}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces $\lambda $ Depth Profiles, Different $l_{\text {sec}}$}}{54}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces $\lambda _{\text {LT}}$ vs. Section Length}}{55}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces $\lambda $ Depth Profiles, Different $s_{\text {sec}}$}}{56}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces $\lambda _{\text {LT}}0$ vs. $s_{\text {sec}}$}}{57}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Qualitative Example of Spectral Transform's Effect on $\sigma $}}{57}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Speed and $\sigma $ Estimates, Spectral Transforms}}{58}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Diffusion Length Variations, Varying Laki and Tambora}}{59}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Diffusion Length Variations, Varying only Laki}}{60}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Diffusion Length Variations, Varying only Tambora}}{60}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Illustration of 2 Month Standard Deviation Variation of Volcanic Events Locations}}{61}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces 2 Month Variation of Event Locations, Site A}}{62}%
+\addvspace {10pt}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces $\sigma $ vs. N Peaks}}{64}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces $\sigma $ vs. N Peaks}}{64}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Steady State Temperature Distributions}}{67}%
 \addvspace {10pt}
 \addvspace {10pt}
-\addvspace {10pt}
-\contentsline {figure}{\numberline {1}{\ignorespaces AWI B-cores density measurements and HL-modeled densities.\relax }}{76}%
-\contentsline {figure}{\numberline {2}{\ignorespaces AWI B-cores averaged density measurements and related HL-modeled densities.\relax }}{77}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Monomials}}{89}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Density profile examples given five different initial conditions representing present day conditions at the five different ice core locations. Temperature, $T_0$, is in $^{\text {o}}$C and accumulation, $A_0$, is in meter of water equivalent per year.\relax }}{97}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Contribution of the diffusion(dashed) and densification(dot-dashed) terms from Eq. 52\hbox {} to the final analytical diffusion length solution (blue).\relax }}{100}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Crete and surrounding Alphabet cores, as their analytical solutions place them according to observed temperature and accumulation rate.\relax }}{102}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Analytically calculated diffusion length profile examples given five different initial conditions representing present day conditions at the five different ice core locations. Temperature, $T_0$, is in $^{\text {o}}$C and accumulation, $A_0$, is in meter of water equivalent per year.\relax }}{103}%
+\contentsline {figure}{\numberline {1}{\ignorespaces AWI B-cores density, theory and data.}}{78}%
+\contentsline {figure}{\numberline {2}{\ignorespaces AWI B-cores, theory and averaged data.}}{79}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Alphabet cores, in full.}}{80}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Alphabet cores, Laki to Tambora depth.}}{81}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Monomials}}{91}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Illustration of AR-1 process.}}{94}%
+\contentsline {figure}{\numberline {7}{\ignorespaces AR-1 process with diffusion.}}{94}%
+\contentsline {figure}{\numberline {8}{\ignorespaces AR-1 process in the spectral domain, raw and diffused.}}{95}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Five different modelled density profiles.}}{99}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Rate terms of the diffusion equation.}}{103}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Modelled diffusion lengths of Alphabet cores.}}{104}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Five different modelled diffusion length profiles.}}{105}%

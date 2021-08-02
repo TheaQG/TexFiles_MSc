@@ -4,13 +4,26 @@
 \begin{document}
 
 \section[Annual Layer Thickness]{Layer Counting and Annual Layer Thickness}
+\label{Sec:Results_ALT}
+
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{c|c|c|c|c|c}
+		& Site A & Site B & Site D & Site E & Site G \\
+		\hline
+		\hline
+		$\lambda$ [m] & $0.311 \pm 0.006$ & $0.326 \pm 0.008$ & $0.354 \pm 0.012$ & $0.246 \pm 0.005$ & $0.264 \pm 0.006$ \\
+	\end{tabular}
+	\caption[ALT Estimate at LT]{\small Annual Layer Thickness, $\lambda$, estimation at the depth between Laki and Tambora events.}
+\end{table}
 
 
 
 \section[Diffusion Lengths]{Final Diffusion Length Estimates}
+\label{Sec:Results_DiffLenEst}
 
 \subsection[AWI B-cores]{AWI B-cores}
-\label{Sec:Results_AWIBcores}
+\label{Subsec:Results_DiffLenEst_AWIBcores}
 
 
 %
@@ -47,38 +60,110 @@
 
 
 \subsection[Alphabet Cores]{Crete and Surrounding Alphabet Cores}
-\label{Sec:Results_AlphabetCores}
+\label{Subsec:Results_DiffLenEst_AlphabetCores}
+
+\subsubsection[Diffusion Length V N Peaks]{Diffusion Length Estimates vs. Counted Peaks}
+\label{Subsubsec:Results_DiffLenEst_AlphabetCores_DiffLenVPeaks}
+\begin{marginfigure}
+	\centering
+	\includegraphics[width=\marginparwidth]{AllCores_NpeaksVDiffLen.png}
+	\caption[$\sigma$ vs. N Peaks]{\footnotesize Number of peaks estimated given diffusion length, based on diffusion length in the interval [0.01; 0.15] m.}
+	\label{fig:AllCores_NpeaksVDiffLen}
+\end{marginfigure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{AllCores_NpeaksVDiffLen_wZoom.png}
+	\caption[$\sigma$ vs. N Peaks]{\small A zoom-in of the N peaks v. diffusion length plot in Figure \ref{fig:AllCores_NpeaksVDiffLen}. Specifically in focus are the maximal diffusion lengths corresponding to $N_{\text{peaks}}=33$.}
+	\label{fig:AllCores_NpeaksVDiffLen}
+\end{figure}
+
+
+\subsubsection[$\sigma$ v. Spectral Transforms]{Diffusion Length Estimates vs. Spectral Transform Methods}
+\label{Subsubsec:Results_DiffLenEst_AlphabetCores_SpectralTransforms}
 
 \begin{table}[ht]
 	\centering
-	\begin{tabular}{l||*{6}{c | c||}}
-		&
-		\multicolumn{2}{c}{Crete} & \multicolumn{2}{c}{Site A} & \multicolumn{2}{c}{Site B} & \multicolumn{2}{c}{Site D} & \multicolumn{2}{c}{Site E} & \multicolumn{2}{c||}{Site G} \\
-		%\hline
-		&
-		$\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ \\
-		
+	\begin{tabular}{l l l | c | c | c}
+		& & & FFT & DCT & NDCT \\
 		\hline
-		FFT & & & & & & & & & & & & \\ 
-		DCT & & & & & & & & & & & & \\ 
-		NDCT & & & & & & & & & & & & \\ 
+		\hline 
+		\multirow{3}{*}{\textbf{Site A}} & $\sigma_{\text{opt}}$ & [cm] & $7.57 \pm 0.60$ & $7.80 \pm 0.68$ & $7.26 \pm 0.53$ \\
+		& $\sigma_{\text{firn}}$ & [cm] & & & \\
+		& $t$ & [s] & $8.00 \pm 0.91$ & $7.93 \pm 0.91$ & $17.46 \pm 0.98$ \\
+		\hline
+		
+		\multirow{3}{*}{\textbf{Site B}} & $\sigma_{\text{opt}}$ & [cm] & $7.11 \pm 0.40$ & $7.30 \pm 0.20$ & $7.36 \pm 0.21$ \\
+		& $\sigma_{\text{firn}}$ & [cm] & & & \\
+		& $t$ & [s] & $8.64 \pm 0.51$ & $8.41 \pm 0.82$ & $19.06 \pm 0.55$ \\
+		\hline
+		
+		\multirow{3}{*}{\textbf{Site D}} & $\sigma_{\text{opt}}$ & [cm] & $7.00 \pm 0.41$ & $6.96 \pm 0.28$ & $7.21 \pm 0.27$ \\
+		& $\sigma_{\text{firn}}$ & [cm] & & & \\
+		& $t$ & [s] & $9.24 \pm 0.73$ & $9.20 \pm 0.69$ & $19.55 \pm 1.03$ \\
+		\hline
+		
+		\multirow{3}{*}{\textbf{Site E}} & $\sigma_{\text{opt}}$ & [cm] & $8.07 \pm 0.01$ & $8.15 \pm 0.11$ & $8.21 \pm 0.14$ \\
+		& $\sigma_{\text{firn}}$ & [cm] & & & \\
+		& $t$ & [s] & $7.28 \pm 0.36$ & $7.03 \pm 0.56$ & $16.61 \pm 0.54$ \\
+		\hline
+		
+		\multirow{3}{*}{\textbf{Site G}} & $\sigma_{\text{opt}}$ & [cm] & $9.38 \pm 0.32$ & $9.35 \pm 0.25$ & $9.44 \pm 0.24$ \\
+		& $\sigma_{\text{firn}}$ & [cm] & & & \\
+		& $t$ & [s] & $7.53 \pm 0.49$ & $7.24 \pm 0.49$ & $16.45 \pm 0.34$ \\
+		\hline
 	\end{tabular}
+	\caption[$\sigma$ Estimates Given Spectral Transforms]{\small Diffusion length estimates resulting in $N_{\text{peaks}}=33$ based on different spectral transform methods, namely the FFT, DCT and NDCT presented in earlier chapters and described in Appendix \ref{AppIV:SpectralTransforms}. Along with the optimal diffusion length, the actual firn diffusion length is presented - corrected for sampling diffusion, ice diffusion and thinning. The computational time of the back diffusion process given the different spectral transforms is also presented.}
 \end{table}
+
+
+\subsubsection[$\sigma$ Constant or Variable]{Diffusion Length Estimates if Diffusion Length Constant or Variable}
+\label{Subsubsec:Results_DiffLenEst_AlphabetCores_SigConstVar}
 
 \begin{table}[ht]
 	\centering
-	\begin{tabular}{l||*{6}{c | c||}}
-		&
-		\multicolumn{2}{c}{Crete} & \multicolumn{2}{c}{Site A} & \multicolumn{2}{c}{Site B} & \multicolumn{2}{c}{Site D} & \multicolumn{2}{c}{Site E} & \multicolumn{2}{c||}{Site G} \\
-		%\hline
-		&
-		$\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ \\
+	\begin{tabular}{l l l | c | c}
+		& & & $\sigma_{\text{constant}}$ & $\sigma(z)$\\
+		\hline
+		\hline 
+		\multirow{2}{*}{\textbf{Site A}} & $\sigma_{\text{opt}}$ & [cm] & $ \pm$ & $ \pm $\\
+		& $\sigma_{\text{firn}}$ & [cm] & & \\
+		\hline
+		
+		\multirow{2}{*}{\textbf{Site B}} & $\sigma_{\text{opt}}$ & [cm] & $ \pm $ & $ \pm $ \\
+		& $\sigma_{\text{firn}}$ & [cm] & & \\
+		\hline
+		
+		\multirow{2}{*}{\textbf{Site D}} & $\sigma_{\text{opt}}$ & [cm] & $ \pm $ & $ \pm $ \\
+		& $\sigma_{\text{firn}}$ & [cm] & & \\
+		\hline
+		
+		\multirow{2}{*}{\textbf{Site E}} & $\sigma_{\text{opt}}$ & [cm] & $ \pm $ & $ \pm $ \\
+		& $\sigma_{\text{firn}}$ & [cm] & & \\
+		\hline
+		
+		\multirow{2}{*}{\textbf{Site G}} & $\sigma_{\text{opt}}$ & [cm] & $ \pm $ & $ \pm $ \\
+		& $\sigma_{\text{firn}}$ & [cm] & & \\
 		
 		\hline
-		$\sigma_{\text{constant}}$ & & & & & & & & & & & & \\ 
-		$\sigma(z)$ & & & & & & & & & & & & \\ 
 	\end{tabular}
+	\caption[$\sigma$ Given Constant or Varying]{\small Optimal and corrected firn diffusion length estimates given either a $\sigma$ estimated to be constant, $\sigma_{\text{constant}}$, or varying, $\sigma(z)$, over the Laki to Tambora depth section. }
 \end{table}
+
+%\begin{table}[ht]
+%	\centering
+%	\begin{tabular}{l||*{6}{c | c||}}
+%		&
+%		\multicolumn{2}{c}{Crete} & \multicolumn{2}{c}{Site A} & \multicolumn{2}{c}{Site B} & \multicolumn{2}{c}{Site D} & \multicolumn{2}{c}{Site E} & \multicolumn{2}{c||}{Site G} \\
+%		%\hline
+%		&
+%		$\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ \\
+%		
+%		\hline
+%		$\sigma_{\text{constant}}$ & & & & & & & & & & & & \\ 
+%		$\sigma(z)$ & & & & & & & & & & & & \\ 
+%	\end{tabular}
+%\end{table}
 
 %\begin{figure}
 %	\centering
@@ -87,28 +172,105 @@
 %	\label{fig:SiteA_BackDiffused_AllSigmaEst}
 %\end{figure}
 
+\subsubsection[$\sigma$ Constraints or No constraints]{Diffusion Length Estimates if Constrained or Not Constrained}
+\label{Subsubsec:Results_DiffLenEst_AlphabetCores_ConstraintsVNoConstraints}
 \begin{table}[ht]
 	\centering
-	\begin{tabular}{l||*{6}{c | c||}}
-		&
-		\multicolumn{2}{c}{Crete} & \multicolumn{2}{c}{Site A} & \multicolumn{2}{c}{Site B} & \multicolumn{2}{c}{Site D} & \multicolumn{2}{c}{Site E} & \multicolumn{2}{c||}{Site G} \\
-		%\hline
-		&
-		$\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ & $\sigma_{\text{opt}}$ & $\sigma_{\text{firn}}$ \\
+	\begin{tabular}{l l l | c | c}
+		& & & No Constraints & Constraints\\
+		\hline
+		\hline 
+		\multirow{2}{*}{\textbf{Site A}} & $\sigma_{\text{opt}}$ & [cm] & $5.40 \pm$ & $6.67 \pm $\\
+		& $\sigma_{\text{firn}}$ & [cm] & & \\
+		\hline
+		
+		\multirow{2}{*}{\textbf{Site B}} & $\sigma_{\text{opt}}$ & [cm] & $6.03 \pm $ & $7.42 \pm $ \\
+		& $\sigma_{\text{firn}}$ & [cm] & & \\
+		\hline
+		
+		\multirow{2}{*}{\textbf{Site D}} & $\sigma_{\text{opt}}$ & [cm] & $4.36 \pm $ & $7.27 \pm $ \\
+		& $\sigma_{\text{firn}}$ & [cm] & & \\
+		\hline
+		
+		\multirow{2}{*}{\textbf{Site E}} & $\sigma_{\text{opt}}$ & [cm] & $6.12 \pm $ & $8.04 \pm $ \\
+		& $\sigma_{\text{firn}}$ & [cm] & & \\
+		\hline
+		
+		\multirow{2}{*}{\textbf{Site G}} & $\sigma_{\text{opt}}$ & [cm] & $8.74 \pm $ & $9.71 \pm $ \\
+		& $\sigma_{\text{firn}}$ & [cm] & & \\
 		
 		\hline
-		No constraints & & & & & & & & & & & & \\ 
-		Constraints & & & & & & & & & & & & \\ 
 	\end{tabular}
+	\caption[$\sigma$ Estimates Given Unconstrained and Constrained Method]{\small Optimal and corrected firn diffusion length estimates with either the non-constrained or the constrained method.}
 \end{table}
+
+
+\subsubsection[Final $\sigma$ Estimates]{Final $\sigma$ Estimates Based on Previous Conclusions}
+\label{Subsubsec:Results_DiffLenEst_AlphabetCores_FinalEstimates}
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{l l l | c }
+		& & & $\sigma_{\text{final}}$\\
+		\hline
+		\hline 
+		\multirow{2}{*}{\textbf{Site A}} & $\sigma_{\text{opt}}$ & [cm] & $ \pm$ \\
+		& $\sigma_{\text{firn}}$ & [cm] & \\
+		\hline
+		
+		\multirow{2}{*}{\textbf{Site B}} & $\sigma_{\text{opt}}$ & [cm] & $ \pm $ \\
+		& $\sigma_{\text{firn}}$ & [cm] & \\
+		\hline
+		
+		\multirow{2}{*}{\textbf{Site D}} & $\sigma_{\text{opt}}$ & [cm] & $ \pm $ \\
+		& $\sigma_{\text{firn}}$ & [cm] & \\
+		\hline
+		
+		\multirow{2}{*}{\textbf{Site E}} & $\sigma_{\text{opt}}$ & [cm] & $ \pm $ \\
+		& $\sigma_{\text{firn}}$ & [cm] & \\
+		\hline
+		
+		\multirow{2}{*}{\textbf{Site G}} & $\sigma_{\text{opt}}$ & [cm] & $ \pm $ \\
+		& $\sigma_{\text{firn}}$ & [cm] & \\
+		
+		\hline
+	\end{tabular}
+\caption[Final $\sigma$ Estimates]{\small Final diffusion length estimates, based on conclusions made previously in different tests.}
+\end{table}
+
+
+
+
+
 
 \section[Temperature Estimates from Data]{Final Temperature Estimates from Optimal Estimated $\sigma$}
 \label{Sec:Results_TempEstData}
+
 \todo{RES-DATAEST: Write entire section.}
 
 \subsection[Steady State Solution]{Steady State Solution}
 \label{Sec:Results_TempEstData_StSt}
 \todo{RES-DATAESTSTST: Write entire section.}
+
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{l c|c|c|c|c|c}
+		& & Site A & Site B & Site D & Site E & Site G \\
+		\hline
+		\hline
+		$T_0$ & [$^{\text{o}}$C] & -29.41 & -29.77 & -28.3 & -30.37 & -30.1 \\
+		$\bar{T}_{\text{StSt}}$ & [$^{\text{o}}$C] & $-31.04 \pm 2.02$ & $-30.46 \pm 0.83$ & $-30.00 \pm 1.05$ & $-30.89 \pm 0.48$ & $-25.97 \pm 0.70$ \\
+	\end{tabular}
+	\caption[Steady State Temperature Estimates]{\small Steady state temperature estimates based on the final firn diffusion length estimates found. $T_0$ is the temperature used to generate the theoretical diffusion length and density profiles, and originates from \cite[add. text]{keylist}}
+\end{table}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{AllCores_StStTempEsts.png}
+	\caption[Steady State Temperature Distributions]{\small Steady State Temperature Distributions}
+	\label{fig:AllCores_StStTempEsts}
+\end{figure}
+
+
 
 \subsubsection[Accumulation Distributions]{Accumulation Distributions}
 \label{Sec:Results_TempEstData_StSt_AccumDists}

@@ -1,6 +1,6 @@
 \contentsline {todo}{INTRO: References missing in entire section}{1}%
 \contentsline {todo}{INTRO: REFERENCES and examples}{1}%
-\contentsline {todo}{ICE-ISO: Implement illustration of fractionation and deposition}{5}%
+\contentsline {todo}{ICE-ISO: Implement illustration of fractionation and deposition}{6}%
 \contentsline {todo}{ICE-DIFF: DESCRIBE HOW TO SOLVE FOR SIGMA and a discussion of the ice diffusion constant(ice diffusivity?).}{11}%
 \contentsline {todo}{Make illustration of ice vs. firn diffusion to see if ice diffusion can be neglected.}{13}%
 \contentsline {todo}{Implement and write about thinning function.}{13}%
@@ -10,19 +10,18 @@
 \contentsline {todo}{Make references to where values in table are from}{26}%
 \contentsline {todo}{DATA-ALPHABET-SPECS: Put rest of specifications in appendix.}{26}%
 \contentsline {todo}{SIGNAL-BACKDIFF: RETHINK THIS PART. DO NOT USE TIME ON ALL THE CALCULATIONS. WRITE THE GENERAL IDEAS OF THE METHODS AND STATE HOW TO CALCULATE/COMPUTE. SMALL CODE SNIP TO GIVE GENERAL IDEA.}{31}%
-\contentsline {todo}{References here.}{38}%
+\contentsline {todo}{References here.}{39}%
 \contentsline {todo}{COMPMETH-PEAKDET: Write about better peak detection with cubic spline interpolation (enhanced resolution)}{39}%
-\contentsline {todo}{SIGNAL-INTERP: REFERENCE!!}{39}%
-\contentsline {todo}{Write short introduction to interpolation here. Reference Appendix.}{40}%
-\contentsline {todo}{RES-DATAEST: Write entire section.}{66}%
-\contentsline {todo}{RES-DATAESTSTST: Write entire section.}{66}%
-\contentsline {todo}{RES-DATAESTACCUM: Write entire section.}{66}%
-\contentsline {todo}{RES-DATAESTCFM: Write entire section.}{66}%
-\contentsline {todo}{CONC: Write a better conclusion. Please..}{67}%
-\contentsline {todo}{Make specifications for cores.}{74}%
-\contentsline {todo}{Make specifications for rest of cores.}{80}%
-\contentsline {todo}{SIGNAL-MEM: Write this entire section - maybe not necessary? Maybe use in reconstruction of missing data...}{86}%
-\contentsline {todo}{COMP-INTERP: REFERENCE!!!}{88}%
-\contentsline {todo}{COMP-INTERP: REFERENCES!!}{89}%
-\contentsline {todo}{SIGNAL-SYNTHDATA: Write about synthetic data generation.}{92}%
-\contentsline {todo}{ICE-DENS: Figure out where this comes from.}{95}%
+\contentsline {todo}{SIGNAL-INTERP: REFERENCE!!}{40}%
+\contentsline {todo}{Write short introduction to interpolation here. Reference Appendix.}{41}%
+\contentsline {todo}{RES-DATAEST: Write entire section.}{64}%
+\contentsline {todo}{RES-DATAESTSTST: Write entire section.}{64}%
+\contentsline {todo}{RES-DATAESTACCUM: Write entire section.}{65}%
+\contentsline {todo}{RES-DATAESTCFM: Write entire section.}{65}%
+\contentsline {todo}{CONC: Write a better conclusion. Please..}{69}%
+\contentsline {todo}{Make specifications for cores.}{76}%
+\contentsline {todo}{SIGNAL-MEM: Write this entire section - maybe not necessary? Maybe use in reconstruction of missing data...}{88}%
+\contentsline {todo}{COMP-INTERP: REFERENCE!!!}{90}%
+\contentsline {todo}{COMP-INTERP: REFERENCES!!}{91}%
+\contentsline {todo}{SIGNAL-SYNTHDATA: Write about synthetic data generation.}{94}%
+\contentsline {todo}{ICE-DENS: Figure out where this comes from.}{98}%

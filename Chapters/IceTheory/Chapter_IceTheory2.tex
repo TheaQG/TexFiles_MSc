@@ -13,20 +13,19 @@ A corner stone in ice core analysis, which helps lay the basis for paleo climate
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{Crete_10m_dated.png}
-	\caption{Ten meters of the top of Cretê ice core, with identification and dating of 19 annual layers.}
+	\caption[10 m of Crête ice core with dating.]{\small Ten meters of the top of Cretê ice core, with identification and dating of 19 annual layers.}
 	\label{Fig:ICE_Crete_10m_dated}
 \end{figure}
 
 
 \subsection[$\delta$ Notation]{$\delta$ Notation}
 \label{Subsec:Ice_WaterIsotopes_deltaNotation}
-\todo{ICE-ISO: Implement illustration of fractionation and deposition}
 
 Water isotopic ratios, i.e. the ratio of the minority isotope, ${\text{H}_2^{18}\text{O}}$ or ${\text{H}_2^{17}\text{O}}$($^2\text{H}_2\text{O}$), compared to the majority isotope, ${\text{H}_2^{16}\text{O}}$ ($^1\text{H}_2\text{O}$), are used to report the quantities of isotopes in a sample relative to the ratio of a given reference water sample. This is commonly expressed in the $\delta$-notation as:
 \begin{equation}
 	\delta^i = \frac{^iR_{sample}}{^iR_{reference}} - 1		
 \end{equation}
-where $^{18}R = \frac{n_{^{18}\text{O}}}{n_{^{16}\text{O}}}$, $^{2}R = \frac{n_{^{2}\text{H}}}{n_{^{1}\text{H}}}$  and $^{17}R = \frac{n_{^{17}\text{O}}}{n_{^{16}\text{O}}}$. Here $n$ is the abundance of the given isotope.
+where $^{18}R = \frac{n_{^{18}\text{O}}}{n_{^{16}\text{O}}}$, $^{2}R = \frac{n_{^{2}\text{H}}}{n_{^{1}\text{H}}}$  and $^{17}R = \frac{n_{^{17}\text{O}}}{n_{^{16}\text{O}}}$. Here $n$ is the abundance of the given isotope.\todo{ICE-ISO: Implement illustration of fractionation and deposition}
 
 Besides the isotopic quantities $\delta^{17}\text{O}$, $\delta^{18}\text{O}$ and $\delta^2\text{H} = \delta\text{D}$, both deuterium excess and $\Delta^{17}\text{O}$, known as $^{17}\text{O}$ excess, can be of interest. Deuterium excess is usually used as a measure of the kinetic fractionation processes, taking place in the water vapor formation of polar precipitation, giving an indicator of the conditions during precipitation formation, and thus giving a pointer to the source of the water vapor.
 Like deuterium excess $^{17}\text{O}$ is sensitive to kinetic fractionation, but much less sensitive to equilibrium fractionation than both $\delta$D and $\delta^{18}$O. Along with being nearly insensitive to temperature(REFERENCES), these robustness factors leads to $^{17}$O being usable as an independent parameter to be used to reveal the ways of the complicated mixing effects of fractionation due to evaporation, transportation, formation and deposition.
@@ -34,6 +33,8 @@ Like deuterium excess $^{17}\text{O}$ is sensitive to kinetic fractionation, but
 
 \subsection[Relation to Temperature]{Water Isotopes in the Earth System}
 \label{Subsec:Ice_WaterIsotopes_EarthSystem}
+
+
 Due to H$_2^{18}$O being slightly heavier than H$_2^{16}$O, the isotopic signal is depleted of the heavier isotopes through transportation of the water vapor before it is deposited at the ice sheets. A clear annual signal in the $\delta^{18}$O measurements can be observed due to the seasonal temperature changes from summer to winter at deposition time. This is the main isotopic feature under consideration for this thesis. The greatest issue with this type of signal is that there is a loss of information over time as the snow becomes more compact and diffusion processes wash out some of the signal throughout the ice depth. Thus to be able to examine and analyze isotopic signals more accurate and precisely, the processes of densification and diffusion need to be well understood.
 
 %\begin{itemize}
@@ -50,7 +51,7 @@ Deposited snow will over time be compressed and at last be compacted completely 
 \begin{marginfigure}
 	\centering
 	\includegraphics[width=\marginparwidth]{firn_popular.jpg}
-	\caption{Illustration of the densification process of a firn column, from snow deposition to glacial ice.}
+	\caption[Densification process]{\footnotesize Illustration of the densification process of a firn column, from snow deposition to glacial ice.}
 	\label{Fig:ICE_DENS_FirnColumn}
 \end{marginfigure}
 
@@ -63,7 +64,7 @@ Commonly three stages of densification are described in the firn column. The fir
 At the first stage the densification is mostly due to grain settling and packing and the densification rate is very rapid. At the second stage, the snow is close to isolating air bubbles. At the third stage, the dominating densification taking place is by the compression of air bubbles.\\
 For these three stages it is of interest to develop a depth-density profile, which is dependent on snow accumulation rate and temperature. The focus is on developing an empirical model for the first and second stages of densification, as they are the most dramatic sections of the firn column considering densification and diffusion.
 
-A number of different densification models have been developed(REFERENCES),  but for this thesis work, only one model is used, namely the Herron-Langway empirical model, first presented by Michael M. Herron and Chester C. Langway Jr in \cite[Herron and Langway, 1980]{HerronLangway1980}. The basic idea of the model will be presented in the following. For a more thorough mathematical presentation, the reader is referred to Appendix \ref{AppIIX:HLmodel} or the original paper.
+A number of different densification models have been developed (REFERENCES),  but for this thesis work, only one model is used, namely the Herron-Langway empirical model, first presented by Michael M. Herron and Chester C. Langway Jr in \cite[Herron and Langway, 1980]{HerronLangway1980}. The basic idea of the model will be presented in the following. For a more thorough mathematical presentation, the reader is referred to Appendix \ref{AppIIX:HLmodel} or the original paper.
 
 \subsubsection[HL in This Thesis]{Herron-Langway Model in This Thesis}
 \label{Subsubsec:Ice_DiffusionAndDensification_Densification_HLmodel}
@@ -81,7 +82,7 @@ In this thesis, the HL model is used to generate an estimate of the density prof
 \begin{marginfigure}
 	\centering
 	\includegraphics[width=\marginparwidth]{DensProf_Examples.png}
-	\caption{Density profile examples given five different initial conditions representing present day conditions at the five different ice core locations. Temperature, $T_0$, is in $^{\text{o}}$C and accumulation, $A_0$, is in meter of water equivalent per year.}
+	\caption[Five theoretical density profile examples.]{\footnotesize Density profile examples given five different initial conditions representing present day conditions at the five different ice core locations. Temperature, $T_0$, is in $^{\text{o}}$C and accumulation, $A_0$, is in meter of water equivalent per year.}
 	\label{Fig:DensProf_Examples}
 \end{marginfigure}
 
@@ -93,7 +94,7 @@ An example of a density profile estimation, both using the measured data and usi
 \begin{marginfigure}
 	\centering
 	\includegraphics[width=\marginparwidth]{SiteA_DensProfile_wHL.jpg}
-	\caption{Density profiles from ice core Site A near Crête. Both purely modelled profile and profile fitted to the inputted depth-density measurements are presented.}
+	\caption[Site A density profile, data and theory.]{\footnotesize Density profiles from ice core Site A near Crête. Both purely modelled profile and profile fitted to the inputted depth-density measurements are presented.}
 	\label{Fig:DensProf_Examples_SiteA_wData}
 \end{marginfigure}
 
@@ -267,7 +268,7 @@ Eq. \ref{Eq:dsigma2_dt} shows that the diffusion length signal throughout the ic
 \begin{figure}
 	\centering
 	\includegraphics[width=0.6\textwidth]{Analytical_DiffLenEq_terms_SiteA.png}
-	\caption{Contribution of the diffusion(dashed) and densification(dot-dashed) terms from Eq. \ref{Eq:dsigma2_dt} to the final analytical diffusion length solution (blue).}
+	\caption[Rate terms in the diffusion equation.]{\small Contribution of the diffusion(dashed) and densification(dot-dashed) terms from Eq. \ref{Eq:dsigma2_dt} to the final analytical diffusion length solution (blue).}
 	\label{Fig:ICE_DiffDensTerms}
 \end{figure}
 
@@ -278,7 +279,7 @@ The analytical equations derived in Appendix \ref{AppIX:CFM} have been used for 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\textwidth]{ContourPlot_Alphabet.png}
-	\caption{Crete and surrounding Alphabet cores, as their analytical solutions place them according to observed temperature and accumulation rate.}
+	\caption[Analytical solutions of diffusion length, Alphabet cores.]{\small Crete and surrounding Alphabet cores, as their analytical solutions place them according to observed temperature and accumulation rate.}
 	\label{Fig:ICE_ContourPlot}
 \end{figure}
 
@@ -288,7 +289,7 @@ These analytical equations are used to compute diffusion lengths to compare with
 \begin{marginfigure}
 	\centering
 	\includegraphics[width=\marginparwidth]{DiffProf_Examples.png}
-	\caption{Analytically calculated diffusion length profile examples given five different initial conditions representing present day conditions at the five different ice core locations. Temperature, $T_0$, is in $^{\text{o}}$C and accumulation, $A_0$, is in meter of water equivalent per year.}
+	\caption[Five different analytical diffusion length profiles.]{\footnotesize Analytically calculated diffusion length profile examples given five different initial conditions representing present day conditions at the five different ice core locations. Temperature, $T_0$, is in $^{\text{o}}$C and accumulation, $A_0$, is in meter of water equivalent per year.}
 	\label{Fig:DiffProf_Examples}
 \end{marginfigure}
 
@@ -315,7 +316,7 @@ For the temperature estimates made in this project a secant numerical method\cit
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{SiteA_ECM_d18O_full.png}
-	\caption{Water isotope measurements aligned with conductivity measurements from the ice core drilled at Site A.}
+	\caption[Conductivity and $\delta^{18}$O measurements from Site A.]{\small Water isotope measurements aligned with conductivity measurements from the ice core drilled at Site A.}
 	\label{Fig:ICE_SiteA_ECM_d18O_full}
 \end{figure}
 
