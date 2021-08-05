@@ -3,30 +3,43 @@
 \graphicspath{{../../Figures/}}
 \begin{document}
 
-\section[$\sigma$ Estimation Method][$\sigma$ Estimation Method]{$\sigma$ Estimation Method}
+\section[$\sigma$ Estimation Method][$\sigma$ Estimation Method]{$\sigma$ Estimation Method and Discussions}
 \label{Sec:Method_SigmaMethod}
-Usually, when back-diffusing a depth series, some amplitude is regained on the signal, and some peaks and troughs, that might have been washed out from the diffusion might emerge when restoring the signal. These two properties thus makes it possible to connect the diffusion length to the years counted in that section (i.e. the number of peaks and troughs). Due to the knowledge of time passed from the Laki to the Tambora event, the data, along with the restoration techniques, permits a further investigation of the diffusion length in the given section. Thus, when back-diffusing, instead of just using the diffusion length estimate from the spectra, it is possible to examine which diffusion length that results in the correct number of years counted in that section. This property is what will be utilized in the following section, which focuses on finding the optimal diffusion length of a given section.
 
-The general idea of the method is to back diffuse a depth series defined on an interval where the time span (i.e. the number of peaks and troughs expected in that section) is known. The focus is then to find the diffusion length estimate which generates the right number of peaks and troughs in the back diffused depth series. If more than one diffusion length meet these constraints, the largest diffusion length to still fulfill the constraints is sought after. 
+%Usually, when back-diffusing a depth series, some amplitude is regained on the signal, and some peaks and troughs, that might have been washed out from the diffusion might emerge when restoring the signal. These two properties thus makes it possible to connect the diffusion length to the years counted in that section (i.e. the number of peaks and troughs). Due to the knowledge of time passed from the Laki to the Tambora event, the data, along with the restoration techniques, permits a further investigation of the diffusion length in the given section. Thus, when back-diffusing, instead of just using the diffusion length estimate from the spectra, it is possible to examine which diffusion length that results in the correct number of years counted in that section. This property is what will be utilized in the following section, which focuses on finding the optimal diffusion length of a given section.
 
-The algorithm consists of two modules, where one module describes the numerical back diffusion, given and inputted depth series, core specification and specific $\sigma_0$ estimate (which is either manually inputted or estimated from the spectral analysis). The flowchart describing the processes carried out in this module can be seen in Figure \ref{Fig:FlowchartBackDiffusion}. Many of the sections in this module are only necessary in the initialization of the algorithm as these parts do not change if the inputted diffusion length estimate is changed. In Figure \ref{Fig:FlowchartBackDiffusion} anything carried out above the \textit{Frequency Filters} block to the left is only computed once, and the same with anything to the right of it, except the $\sigma_0$ estimate. The density and diffusion profile calculations, the spectral analysis and the Wiener filter construction is inherent to the depth series alone, and these analyses are carried out as previously described in this thesis.
+The general idea of the optimal $\sigma$ estimation method is to back diffuse a depth series defined on an interval where the time span (i.e. the number of peaks and troughs expected in that section) is known. This allows us to use the diffusion length as a tuning parameter, to find the diffusion length estimate which generates the right number of peaks and troughs and fulfills the imposed constraints in the back diffused depth series. If more than one diffusion length meet these constraints, the largest diffusion length to still fulfill the constraints is sought after. This diffusion length is then assumed to be the optimal guess on the diffusion length in that interval, which allows for a temperature estimate, following the temperature dependence of the diffusion length, as described in Section \ref{Sec:IceTheory}.
 
-The second module is responsible for the optimization. This module examines the parameter space containing the diffusion length estimates, and utilizes a direct search method to find the optimal diffusion length estimate.
+The algorithm consists of two modules, where one module describes the numerical back diffusion, given an inputted depth series, core specification and specific $\sigma_0$ estimate (which is either manually inputted or estimated from the spectral analysis). The flowchart describing the processes carried out in this module can be seen in Figure \ref{Fig:FlowchartBackDiffusion}. Many of the sections in this module are only necessary in the initialization of the algorithm as these parts do not change if the inputted diffusion length estimate is changed. In Figure \ref{Fig:FlowchartBackDiffusion} anything carried out above the \textit{Frequency Filters} block to the left is only computed once, and the same with anything to the right of it, except the $\sigma_0$ estimate. The density and diffusion profile calculations, the spectral analysis and the Wiener filter construction is inherent to the depth series alone, and these analyses are carried out as previously described in this thesis.
 
-\begin{figure}
+The second module is responsible for the optimization. This module examines the parameter space containing the diffusion length estimates, and utilizes a constrained direct search method to find the optimal diffusion length estimate. This method is illustrated through a flowchart in Figure \ref{Fig:METH_Flowchart_Optimization}. 
+
+\subsection{Module 1: Initialization and Back Diffusion}
+The first module of the algorithm, containing initialization and describing the general back diffusion method, is based on many of the aspects and models presented in the previous Chapters \ref{Chap:IceTheory} and \ref{Chap:SigAnalCompMeth}. Therefore the description of this module will focus on the work flow and not so much on the specific details of each process, as these have already been presented. 
+
+The module takes an input of a measured depth series in a given interval, $d$, and the specifications concerning the drill site and the ice core in general. From here the work flow splits in two, one route(left) analyzing the depth series, and one(right) giving an estimate of $\sigma$ at that depth, based on models.
+
+The right flow describes how the $\sigma_0$ estimate is given on the basis of the core specifications passed into the algorithm. First, a HL-density profile is modelled, based on the necessary input parameters of annual accumulation rate $A_0$ and drill site surface temperature $T_0$, and the optional inputs of surface density $\rho_0$ and measured depth versus density data. Secondly, this density profile is used to compute a diffusion length profile, by the use of the Iso-CFM. 
+
+The modelled diffusion length profile is then used to find a theoretical $\sigma_0$ estimate. This then used as the standard deviation in the Gaussian transfer function filter, $\mathcal{G}$ used for deconvolution, unless a $\sigma_0$ is inputted manually. From the modelled diffusion length profile, it is also possible to choose not just a constant $\sigma_0$, but an option for a depth-varying diffusion length, $\sigma(z)$, used in the transfer function is also available. 
+
+The left flow shows the analysis carried out on the measured depth series.
+
+
+\begin{figure}[h]
 	\begin{tikzpicture}[node distance=1.5cm, auto]
 		\node(start) [startstop] {START};
 		%----------------------------------------------------%
-		\node(in1) [io, left of=start, xshift=-2.5cm] {Depth series};
+		\node(in1) [io, left of=start, xshift=-2.9cm, text width=4cm, align=center] {Measured depth series, $d$};
 		\node(empty1) [below of=in1, yshift=0.12cm] {};
 		\node(empty2) [below of=in1, xshift=-0.15cm] {};
 		%		\node(in1pro1) [process, below of=in1, yshift=-0.5cm] {Spline interpolation};
-		\node(in1pro2) [process, below of=in1, yshift=-2cm] {Spectral analysis};
+		\node(in1pro2) [process, below of=in1, yshift=-2cm] {Spectral analysis of $\tilde{d}$};
 		\node(decSpec1) [decision, below of=in1pro2, scale = 0.8, align=center] {DCT ?\\(Interpolation)};
 		\node(decSpec2) [decision, left of=decSpec1, scale=0.8, xshift = -1.2cm, align=center] {FFT ?\\(Interpolation)};
 		\node(decSpec3) [decision, right of=decSpec1, scale=0.8, xshift = 0.8cm] {NDCT ?};
 		
-		\node(in1pro3) [process, below of=decSpec1] {Wiener filter};
+		\node(in1pro3) [process, below of=decSpec1, text width=4cm, align=center] {Construct Wiener filter, $\tilde{F}$};
 		
 		\draw[arrow] (in1) -- (start);
 		\draw[-] (start) |- (empty2);
@@ -49,7 +62,7 @@ The second module is responsible for the optimization. This module examines the 
 		\node(decSigma1) [decision, below of=in2pro3, scale = 0.8] {$\sigma_0 = \sigma_{\text{const}}$?};
 		\node(decSigma2) [decision, right of=decSigma1, scale = 0.8, xshift=0.8cm] {$\sigma_0 = \sigma(z)$?};
 		\node(decSigma3) [decision, left of=decSigma1, scale = 0.8, xshift=-0.8cm] {$\sigma_0 = \sigma_{\text{input}}$?};
-		
+		\node(in2pro4) [process, below of=decSigma1, text width=4cm, align=center] {Construct Transfer Function filter, $\tilde{\mathcal{G}}$};
 		
 		\draw[arrow] (in2) -- (start);
 		\draw[arrow] (start) |- (in2pro1);
@@ -58,17 +71,20 @@ The second module is responsible for the optimization. This module examines the 
 		\draw[arrow] (in2pro3) -- (decSigma1);
 		\draw[arrow] (in2pro3) -- (decSigma2);
 		\draw[arrow] (in2pro3) -- (decSigma3);
-		
+		\draw[arrow] (decSigma1) -- (in2pro4);
+		\draw[arrow] (decSigma2) -- (in2pro4);
+		\draw[arrow] (decSigma3) -- (in2pro4);
 		%----------------------------------------------------%
-		\node(pro0) [process, below of=start, yshift=-6.5cm] {Frequency Filters};
-		\node(pro1) [process, below of=pro0,align=center] {\textbf{Deconvolution}\\(Uniform resampling)};
-		\node(stop) [startstop, below of=pro1] {\textbf{STOP}};
-		\node(out1) [io, right of=stop, align=center, xshift=2.2cm, text width=2.5cm] {\footnotesize{Back diffused depth series}};
+		\node(pro0) [process, below of=start, yshift=-8.5cm, text width=4.5cm, align=center] {Frequency Filters, $\tilde{F}\cdot\tilde{\mathcal{G}}^{-1}$};
+		\node(pro1) [process, below of=pro0, yshift=-0.4cm, ,align=center, text width=4cm, align=center] {\textbf{Deconvolution} $\mathcal{F}\left[\tilde{d}\cdot\tilde{F}\cdot\tilde{\mathcal{G}}^{-1}\right]$ \\(Uniform resampling)};
+		\node(stop) [startstop, below of=pro1, yshift=-0.4cm] {\textbf{STOP}};
+		\node(out1) [io, right of=stop, align=center, xshift=2.2cm, text width=2.5cm] {\footnotesize{Back diffused depth series, $D$}};
 		\node(out2) [io, below of=out1, align=center] {\footnotesize{$\sigma_{\text{out}}$}};
 		\draw[arrow] (in1pro3) |- (pro0);
-		\draw[arrow] (decSigma1) |- (pro0);
-		\draw[arrow] (decSigma2) |- (pro0);
-		\draw[arrow] (decSigma3) |- (pro0);
+		%		\draw[arrow] (decSigma1) |- (pro0);
+		%		\draw[arrow] (decSigma2) |- (pro0);
+		%		\draw[arrow] (decSigma3) |- (pro0);
+		\draw[arrow] (in2pro4) |- (pro0);
 		\draw[arrow] (pro0) -- (pro1);
 		\draw[arrow] (pro1) -- (stop);
 		\draw[arrow] (stop) -- (out1);
@@ -80,6 +96,193 @@ The second module is responsible for the optimization. This module examines the 
 	\caption[Flowchart of initialization method.]{\small Flowchart of initialization method for back diffusion of a depth series given a diffusion length estimate.}
 	\label{Fig:FlowchartBackDiffusion}
 \end{figure}
+
+\begin{figure}[h]
+	\begin{tikzpicture}[node distance=1.5cm, auto]
+		\node(pro1) [process, align=center] {$\sigma_0$ estimate};
+		\node(in1) [io, right of=pro1, text width=2cm, align=center, xshift=3cm] {Inputs: $\Delta$, $\epsilon$, $N_{\sigma}$}; 
+		\node(pro2) [process, text width = 4.3cm, align=center, below of=pro1, yshift=-1.8cm] {Construct $\bar{\sigma}_0$ grid, 
+			\begin{align}
+				\bar{\sigma} &= \begin{bmatrix}
+					\sigma_0 - \left(\frac{N_{\sigma}}{2}-1\right)\Delta\\
+					\vdots\\
+					\sigma_0 - \Delta\\
+					\sigma_0 \\
+					\sigma_0 + \Delta\\
+					\vdots \\
+					\sigma_0 + \left(\frac{N_{\sigma}}{2}-1\right)\Delta
+				\end{bmatrix}
+				\nonumber
+		\end{align}};%$\bar{\sigma}=$ [$\sigma_{-2}$, $\sigma_{-1}$, $\sigma_0$, $\sigma_{1}$, $\sigma_{2}$]};
+		%\node(pro3) [process, below of=pro2, text width=4.5cm, align=center, yshift=-1.5cm] {Frequency Filters, $\tilde{F}\cdot\tilde{\mathcal{G}}(\bar{\sigma})$};
+		
+		
+		\node(pro4) [process, minimum width=5cm, minimum height = 4cm, below of=pro2, yshift=-3.3cm, align=left] {};
+		\node(for1) [below of=pro4, align=left, yshift=3.cm, xshift=-1.4cm] {\textbf{for} $\sigma$ \textbf{in} $\bar{\sigma}$:};
+		\node(pro4dec1) [decision, below of=pro2, text width=5cm, scale=0.9, align=left, yshift=-3cm] {
+			\hspace{6mm} Deconvolution, \\ 
+			\hspace{6mm} $D=\mathcal{F}\left[\tilde{d}\cdot\tilde{F}\cdot\tilde{\mathcal{G}}(\sigma)^{-1}\right]$};
+		\node(empty1) [left of=pro4dec1, xshift=-2.5cm, yshift=2.8cm] {Wiener filter, $\tilde{F}$};
+		\node(pro4dec2) [decision, below of=pro4dec1, text width=4cm, scale=0.9, align=left] {Count $N_{peaks}$ in $D$,\\ under constraints};
+		\node(pro4dec3) [draw, right of=pro4dec2, fill=Gray, xshift=4cm, text width=3.5cm, scale=0.8] {\textbf{if} $N_{peaks} \leq 33$: \\ 
+			\hspace{5mm} $P_i=0$,\\ 
+			\textbf{else}:\\ 
+			\hspace{5mm} $P_i=1$};
+		\node(pro4dec4) [decision, below of=pro4dec3, yshift=-0.3cm, scale=0.9] {$\bar{P}=[P_0,\, P_1,\,...,\, P_{N-1}]$};
+		
+		\node(in2) [io, left of=pro1, xshift=-4.5cm, text width= 2cm, align=center] {\textbf{constraints}};
+		
+		\node(empty2) [process, below of=pro4dec2, yshift=-3cm, minimum width=5cm, minimum height=3cm] {};
+		\node(for2) [below of=pro4dec2, yshift=-2cm] {Construct new $\bar{\sigma}$ grid with:};
+		\node(for2dec1) [decision, below of=for2, scale=0.9, text width = 4.5cm] {$\sigma_{min}=$ \textbf{max}$(\bar{\sigma}(P_i==0))$,\\ $\sigma_{max}=$ \textbf{min}$(\bar{\sigma}(P_i==1))$,\\
+			$\Delta=\frac{\sigma_{max} - \sigma_{min}}{N_{\sigma}-1}$};
+		\node(pro5) [process, left of=empty2, text width=4cm,xshift=-4cm, yshift=2cm] {\begin{align}
+				\bar{\sigma} &= \begin{bmatrix}
+					\sigma_{min}\\
+					\sigma_{min} +\Delta\\
+					\vdots\\
+					\sigma_{max} - \Delta\\
+					\sigma_{max}
+				\end{bmatrix}
+				\nonumber
+		\end{align}};
+		\node(if2) [below of=pro5, yshift=-1cm, scale=0.9] {\textbf{if} $\sigma_{max} - \sigma_{min} > \epsilon$};
+		\node(stop) [startstop, right of=empty2, yshift=-1.5cm, xshift=3cm] {STOP};
+		\node(if3) [above of=stop, yshift=0.5cm, scale=0.9] {\textbf{if} $\sigma_{max} - \sigma_{min} \leq \epsilon$};
+		\node(out1) [io, below of=stop, xshift=0cm, text width= 3cm] {$\sigma_{\text{final}}=\sigma_{min}$, \\
+			$D_{opt}=D({\sigma_{\text{final}}})$};
+		
+		
+		\draw[arrow] (0,1) -- (pro1);
+		\draw[arrow] (pro1) -- (pro2);
+		\draw[arrow] (in1) |- (pro2);
+		\draw[arrow] (pro2) -- (pro4);
+		\draw[arrow] (-4,-5) |- (pro4dec1);
+		\draw[arrow] (pro4dec1) -- (pro4dec2);
+		\draw[arrow] (pro4dec2) -- (pro4dec3);
+		\draw[arrow] (pro4dec3) -- (pro4dec4);
+		\draw[arrow] (pro4dec4) -| (empty2);
+		\draw[arrow] (empty2) -| (pro5);
+		\draw[arrow] (empty2) -| (stop);
+		\draw[arrow] (stop) -- (out1);
+		\draw[arrow] (pro5) |- (pro4);
+		\draw[arrow] (in2) |- (pro4dec2);
+		%		\draw[arrow] (pro3) -- (pro4);
+	\end{tikzpicture}
+	\caption{For Method (optimization)}
+	\label{Fig:METH_Flowchart_Optimization}
+\end{figure}
+%\begin{figure}
+%	\begin{tikzpicture}[node distance=1.5cm, auto]
+%		\node(start) [startstop] {START};
+%		%----------------------------------------------------%
+%		\node(in1) [io, left of=start, xshift=-2.5cm] {Depth series};
+%		\node(empty1) [below of=in1, yshift=0.12cm] {};
+%		\node(empty2) [below of=in1, xshift=-0.15cm] {};
+%		%		\node(in1pro1) [process, below of=in1, yshift=-0.5cm] {Spline interpolation};
+%		\node(in1pro2) [process, below of=in1, yshift=-2cm] {Spectral analysis};
+%		\node(decSpec1) [decision, below of=in1pro2, scale = 0.8, align=center] {DCT ?\\(Interpolation)};
+%		\node(decSpec2) [decision, left of=decSpec1, scale=0.8, xshift = -1.2cm, align=center] {FFT ?\\(Interpolation)};
+%		\node(decSpec3) [decision, right of=decSpec1, scale=0.8, xshift = 0.8cm] {NDCT ?};
+%		
+%		\node(in1pro3) [process, below of=decSpec1] {Wiener filter};
+%		
+%		\draw[arrow] (in1) -- (start);
+%		\draw[-] (start) |- (empty2);
+%		\draw[arrow] (empty1) -- (in1pro2);
+%		%		\draw[arrow] (in1pro1) -- (in1pro2);
+%		\draw[arrow] (in1pro2) -- (decSpec1);
+%		\draw[arrow] (in1pro2) -- (decSpec2);
+%		\draw[arrow] (in1pro2) -- (decSpec3);
+%		\draw[arrow] (decSpec1) -- (in1pro3);
+%		\draw[arrow] (decSpec2) -- (in1pro3);
+%		\draw[arrow] (decSpec3) -- (in1pro3);
+%		%	\draw[arrow] (in1pro3) -- (in1pro4);
+%		
+%		%----------------------------------------------------%
+%		
+%		\node(in2) [io, right of=start, xshift=2.5cm] {Core specs};
+%		\node(in2pro1) [process, below of=in2, yshift=-0.5cm] {Density profile};
+%		\node(in2pro2) [process, below of=in2pro1] {Diffusion profile};
+%		\node(in2pro3) [process, below of=in2pro2] {$\sigma_0$\textbf{ estimate}};
+%		\node(decSigma1) [decision, below of=in2pro3, scale = 0.8] {$\sigma_0 = \sigma_{\text{const}}$?};
+%		\node(decSigma2) [decision, right of=decSigma1, scale = 0.8, xshift=0.8cm] {$\sigma_0 = \sigma(z)$?};
+%		\node(decSigma3) [decision, left of=decSigma1, scale = 0.8, xshift=-0.8cm] {$\sigma_0 = \sigma_{\text{input}}$?};
+%		
+%		
+%		\draw[arrow] (in2) -- (start);
+%		\draw[arrow] (start) |- (in2pro1);
+%		\draw[arrow] (in2pro1) -- (in2pro2);
+%		\draw[arrow] (in2pro2) -- (in2pro3);
+%		\draw[arrow] (in2pro3) -- (decSigma1);
+%		\draw[arrow] (in2pro3) -- (decSigma2);
+%		\draw[arrow] (in2pro3) -- (decSigma3);
+%		
+%		%----------------------------------------------------%
+%		\node(pro0) [process, below of=start, yshift=-6.5cm] {Frequency Filters};
+%		\node(pro1) [process, below of=pro0,align=center] {\textbf{Deconvolution}\\(Uniform resampling)};
+%		\node(stop) [startstop, below of=pro1] {\textbf{STOP}};
+%		\node(out1) [io, right of=stop, align=center, xshift=2.2cm, text width=2.5cm] {\footnotesize{Back diffused depth series}};
+%		\node(out2) [io, below of=out1, align=center] {\footnotesize{$\sigma_{\text{out}}$}};
+%		\draw[arrow] (in1pro3) |- (pro0);
+%		\draw[arrow] (decSigma1) |- (pro0);
+%		\draw[arrow] (decSigma2) |- (pro0);
+%		\draw[arrow] (decSigma3) |- (pro0);
+%		\draw[arrow] (pro0) -- (pro1);
+%		\draw[arrow] (pro1) -- (stop);
+%		\draw[arrow] (stop) -- (out1);
+%		\draw[arrow] (stop) |- (out2);
+%		
+%		%		\draw[arrow] (in2pro3) -| (pro0);
+%		
+%	\end{tikzpicture}
+%	\caption[Flowchart of initialization method.]{\small Flowchart of initialization method for back diffusion of a depth series given a diffusion length estimate.}
+%	\label{Fig:FlowchartBackDiffusion}
+%\end{figure}
+
+\subsection[Constrained Peak Detection]{Constrained Peak Detection}
+\label{Subsec:CompMeths_PeakDetection_Constrained}
+The main constraint when back diffusing these depth series is the number of years between the two volcanic events detected in the ice. The number of especially winters between the two events are fixed to $N_P=33$, as this number of winter is expected in the interval, even with a two month variation from the estimated event position. The counted number of summers can on the other hand vary a bit.\\
+For better peak detection, a number of other constraints have been implemented. Since the data is a proxy for a continuous physical process, the temperature, it is reasonable to set up constraints representing some of the logical expectations for this type of signals. 
+
+Firstly, restrictions may be demanded of the distance between peaks. The annual layer thickness, $\lambda_A$, may help with setting some limitations on the peak distances, as it is not likely for the average peak distance to be much smaller than $\lambda_A$. The peaks are expected to show the same annual cycle as the rest of the signal, representing summers. 
+
+Secondly, for the prominence of the peaks, i.e. the amplitude of the signal at a depth, it is assumed that individual peaks may not have a prominence of less than a certain percentage of the standard deviation of the signal at the given depth. This makes certain that smaller peaks or troughs, maybe representing a warm period in a winter or a cold period in summer, are not counted as annual peaks or troughs. 
+This is one way to constrain peak prominence, but a more efficient and accurate way might be to consider the amplitude of the entire ice core signal. As it may be assumed that the amplitude and prominence at a given depth, will be somewhat smaller than the prominence of the peaks at a shallower depth, due to the general diffusion in the firn. By analyzing the amplitude attenuation of the ice core, the average attenuation at a given depth could be used as a restriction for the peak prominence. This is something that would have been implemented, if time had allowed it.
+
+
+Thirdly, a constraint on how the general pattern of the trough and peak detection must look is imposed. As the temperature variations represent the change from summer to winter, it is assumed that the general pattern must be to detect a peak $P$, then a trough $T$, then a peak $P$, and so on, creating a pattern of $...PTPTPTP...$. Since the deposition time of volcanic material in the ice is assumed to be Gaussian, the pattern is not restricted to start with either a peak or a trough, as this may vary when drawing a location from the distribution. Thus, the number of peaks is set at $N_P=33$ and the number of troughs is accepted with a variation, as long as the general pattern is intact.
+
+Finally, the diffusion length estimate is kept at a positive value with an upper limit, that can be set manually, depending on the conditions of the site and the depth. 
+
+The optimal parameter choices for the constraints are presented in:
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{lc}
+		\toprule 	
+		$N_P$ & 33\\[0.15cm]
+		$N_T$ & $33\pm 1$\\[0.15cm]
+		Peak(trough) prominence & 50 \% of $SD_{\text{signal}}$\\[0.15cm]
+		Peak(trough) distance & 50 \% of $\lambda_A$\\[0.15cm]
+		$[\sigma_{min}, \sigma_{max}]$ [cm] & [0, 15]\\[0.15cm]
+		Pattern & $...PTPTPTPTP...$\\
+		\bottomrule
+	\end{tabular}
+	\caption[Constraint parameters]{The general constraints used in the method to optimize the diffusion length estimate.}
+	\label{Tab:ConstraintParams}
+\end{table}
+
+
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{SiteA_InterpBF_SpecificResamplings.png}
+	\caption[Back diffused data, Site A, different resamplings before deconvolution.]{\small Site A, illustration of the effect of five different cubic spline resamplings before deconvolution. Original sample sizes lie in the interval [3.80; 4.00] [cm]. Resampling at smaller sample sizes show a tendency to restore some signal frequencies that are not necessarily inherit in the original signal. The resample should thus not be chosen too small as this would introduce some false signal into the results.}
+	\label{Fig:COMPMETH_SiteA_interpBF_SpecificSamplings}
+\end{figure}
+
+
 
 
 \subsection[Corrections on $\sigma$][Corrections on $\sigma$]{Corrections on the Computed $\sigma$ estimate}
@@ -120,61 +323,73 @@ This section will contain a walk through of the general differences between cons
 \section[Testing and Stability][Testing and Stability]{Method Testing and Stability}
 \label{Sec:Method_TestStab}
 
-Throughout this section a number of different tests of the algorithm will be presented. The tests are performed to examine the stability of the method, the accuracy of the Laki and Tambora positions and how the choice of parameters(interpolation, spectral transform type, ALT estimation, peak prominence and peak distance) changes the resulting diffusion length estimate. 
+Throughout this section a number of different tests of the algorithm will be presented. The tests are performed to examine the stability of the method, the accuracy of the Laki and Tambora positions and how the choice of parameters(interpolation, spectral transform type, $\lambda_A$ estimation, peak prominence and peak distance) changes the resulting diffusion length estimate. 
 
 \subsection[Constraints or No Constraints]{No constraints versus constraints}
 \label{Subsec:Method_TestStab_ConstNoConst}
 
 
-\subsection[ALT Estimation]{Annual Layer Thickness Estimations}
-\label{Subsec:Method_TestStab_ALTest}
+\subsection[Effects of Interpolations]{Effects of Interpolations}
+\label{Subsec:METH_Interpolation}
+\subsubsection[Interpolation 1]{Interpolation of Data Before Deconvolution}
+\label{Subsubsec:METH_Interpolation_BFdecon}
 
+The first interpolation is needed, if the fast spectral transforms FFT or FCT are used, as one of the conditions of the algorithms is that the data are evenly spaced. At first, this was implemented in the analysis, but this had the risk of excluding some information that might lie in the unevenly sampled data. Later, the method was abandoned in favor of implementing a nonuniform spectral transform (NUFT or NDCT), which is slower than the FFT and FCT, but carries all information from the unevenly sampled signal into the spectral domain. Luckily, this nonuniform transform needs only be carried out once, as the inverse transform, i.e. resampling in time domain, can be done uniformly without loss of information and any future spectral transforms can then be performed through FFT or FCT.
+
+Even though the first interpolation method was later abandoned, some analysis was carried out with it to examine the effect of the size of the resampled, interpolated data on the final diffusion length estimate. Examples of a resampled signal can be seen in Figure \ref{Fig:COMPMETH_SiteA_DataSplineInterp} and Figure \ref{Fig:COMPMETH_SiteA_MultiSplineInterp}. Figure \ref{Fig:COMPMETH_SiteA_MultiSplineInterp} shows how sample resolution affects information from the signal. The higher sampling resolution, the more information is retained. But higher sampling resolution also means more data to be analyzed, which might slow down any analysis algorithms developed. This might create some headache if an entire ice core length of a couple thousand meters should be examined, but for this study only af few meters are of interest, and thus it should not create delays in the computation time.
+
+To examine the effect of the resampling resolution on the final diffusion length estimate when conducting a spline interpolation before carrying out the back-diffusion, the full diffusion length analysis has been performed with 100 new interpolation resampling sizes in the range $[\Delta_{\text{min}};\Delta_{\text{max}}]$. This gives an idea of the stability of the method considering both sample size of the raw data and resampling by interpolation. The minimum and maximum interpolation samplings are presented in Table \ref{tab:InterpSamples} and an illustration of the test results can be seen in Figure \ref{Fig:COMPMETH_SamplingVsDiffLen_interpBF}. 
+
+Figure \ref{Fig:COMPMETH_SamplingVsDiffLen_interpBF} shows that if the sampling size of the interpolation if decreased, it becomes difficult for the algorithm to determine a diffusion length that fulfills the constraints. This is due to the spectral transforms and back diffusion method being sensitive to smaller variations that the spline interpolation introduces to the signal, as can be seen in the first panel in Figure \ref{Fig:COMPMETH_SiteA_interpBF_SpecificSamplings}. Furthermore, Figure \ref{Fig:COMPMETH_SamplingVsDiffLen_interpBF} shows a less stable diffusion length estimate as the resampling size increases, and a general tendency to result in higher diffusion lengths as many features become washed out in the signal and needs more enhancement by cranking up the diffusion length estimate, see final panel in Figure \ref{Fig:COMPMETH_SiteA_interpBF_SpecificSamplings}. The interpolation before deconvolution is only necessary for running the method with the spectral transforms that are based on uniform sampling, i.e. the FFT and the DCT. For these two methods a choice of interpolation size can be made, but the general setting in the algorithm is to resample at the smallest sampling size found in the depth interval, $\Delta_{\text{min}}$.
+
+\marginnote{%
+	\footnotesize
+	\centering
+	\begin{tabular}{lccc}
+		\toprule
+		\textbf{Site} & $\Delta_{\text{min}}$& $\Delta_{\text{max}}$ & $\Delta_{\text{OG}}$\\
+		& [cm] & [cm] & [cm] \\
+		\midrule
+		A & 1.0 & 10.6 & 3.8-4.0\\
+		B & 1.0 & 11.7 & 3.8-4.0\\
+		D & 1.0 & 12.0 & 3.7-3.9\\
+		E & 1.0 & 11.4 & 4.1-4.4\\
+		G & 1.0 & 10.3 & 4.0-4.2\\
+		\bottomrule
+	\end{tabular}
+	\captionof{table}[Tested sample resolutions for resampling before back-diffusion.]{\footnotesize Minimal and maximal new sample resolution used for testing interpolation before back-diffusion. Each test is run with 100 different new sample resolutions between $\Delta_{\text{min}}$ and $\Delta_{\text{max}}$.}
+	\label{tab:InterpSamples}
+}[0.5cm]%
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.95\textwidth]{AllCores_ALTs.png}
-	\caption[$\lambda$ for Full Cores]{\small Annual layer thickness estimates, $\lambda$, calculated through spectral integration of 5 m sections of the entire core lengths. The average is based on using both FFT, DCT and NDCT spectral estimations. Blank spaces, akin to the sections below 60 m depth at Site E shows problematic areas, where the spectral estimation have had trouble with determining $\lambda$. The black vertical lines show the depth sections between Laki and Tambora events.}
-	\label{fig:AllCores_ALTs}
+	\includegraphics[width=\textwidth]{AllCores_DiffLenVdelta_InterpBF_const.png}
+	\caption[Diffusion length versus resampling size before deconvolution, all cores.]{\small Diffusion length estimates versus resamples through cubic spline interpolation before deconvolution for Alphabet cores from sites A, B, D, E and G.}
+	\label{Fig:COMPMETH_SamplingVsDiffLen_interpBF}
 \end{figure}
 
 
-\subsubsection[Change in $l_{sec}$]{Change in section length}
-\label{Subsubsec:Method_TestStab_ALTest_ChangeLsec}
 
+\subsubsection[Interpolation 2]{Interpolation of Data After Deconvolution}
+\label{Subsubsec:METH_Interpolation_AFdecon}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.95\textwidth]{AllCores_ALT_at_DiffLsecs.png}
-	\caption[$\lambda$ Depth Profiles, Different $l_{\text{sec}}$]{\small Examples of the $\lambda$ depth profile given different section lengths. All profiles are computed with a shift of 1 m.}
-	\label{fig:AllCores_ALT_at_DiffLsecs}
+	\includegraphics[width=\textwidth]{SiteA_InterpAF_SpecificResampling_BD.png}
+	\caption[Back diffused data, Site A, different resamplings after deconvolution.]{\small Site A, effect of cubic spline interpolation after signal has been deconvoluted. The interpolation is introduced to make peak detection more stable.}
+	\label{Fig:COMPMETH_SiteA_InterpAF_4samplings}
 \end{figure}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.95\textwidth]{AllCores_ALTatLT_vs_lSec.png}
-	\caption[$\lambda_{\text{LT}}$ vs. Section Length]{\small The annual layer thickness estimates in the section between Laki and Tambora as computed with different section lengths, $l_{\text{sec}}$, used in the spectral analysis. The section is shifted 1 m and then computed again. The $\lambda_{\text{LT}}$ is then calculated as a mean of th $\lambda$ estimates falling into the Laki to Tambora depth section.}
-	\label{fig:AllCores_ALTatLT_vs_lSec}
-\end{figure}
+The second interpolation is carried out after deconvoluting and back-diffusing the signal, but before detecting peaks. Splines are especially effective when trying to find features like peaks in data which underlying signal is continuous, smooth and differentiable, but the sampling is discrete and thus the data are discrete and non-smooth. The isotopic signal under examination here is assumed to be truly smooth and continuous throughout the core - unless any gaps are present. Thus the cubic spline interpolation is a good tool for estimating a higher resolution version of the final back-diffused data series to use for peak detection. This makes the detection of peaks and troughs more precise, as there might not be a discrete data point exactly at the top of a peak, but the spline interpolation then estimates where the most likely top of the peak must be, on the basis of the existing data. Examples of three different interpolation samplings are presented in Figure \ref{Fig:COMPMETH_SiteA_InterpAF_4samplings}. The effect of resampling after deconvolution on the final diffusion length estimate is illustrated in Figure \ref{Fig:COMPMETH_SamlingVsDiffLen}. 
 
+As the actual isotopic signal is continuous and that the discretization is introduced by different measurement samplings, it is assumed that the spline interpolation after deconvolution results in a more likely peak detection, when decreasing the numerical resampling size. Therefore, for the method, a resample size of $\Delta_{\text{min}}/2$ is chosen for interpolation after back diffusion and before peak detection. In Figure \ref{Fig:COMPMETH_AllCores_SamplingVsDiffLen} The diffusion length estimate versus the resampling size after deconvolution and shows a convergence towards a fixed diffusion length as sampling size is decreased, and a much noisier diffusion length estimates as sampling size is increased. Furthermore, at certain larger sampling sizes the sought after pattern of peaks and troughs is not even reached. This resampling is carried out both for the FFT, DCT and NDCT spectral analysis methods, as the inverse NDCT can be resampled uniformly without any loss of information.
 
-
-
-\subsubsection[Change in $l_{shift}$]{Change in shift length}
-\label{Subsubsec:Method_TestStab_ALTest_ChangeLshift}
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.95\textwidth]{AllCores_ALT_at_DiffShifts.png}
-	\caption[$\lambda$ Depth Profiles, Different $s_{\text{sec}}$]{\small Examples of $\lambda$ depth profiles given different shift lengths. All profiles are computed with a section length for spectral analysis of $l_{\text{sec}}=5$ m.}
-	\label{fig:AllCores_ALT_at_DiffShifts}
-\end{figure}
 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.95\textwidth]{AllCores_ALTvsShift.png}
-	\caption[$\lambda_{\text{LT}}0$ vs. $s_{\text{sec}}$]{\small Annual layer thickness estimate at the depth section between Laki and Tambora, $\lambda_{\text{LT}}$ versus different shifts of the sections used in the spectral analysis.}
-	\label{fig:AllCores_ALTvsShift}
+	\includegraphics[width=\textwidth]{AllCores_InterpAF_deltaVSdiffLen_BD.png}
+	\caption[Diffusion length versus resampling size after deconvolution, all cores.]{\small Final diffusion length estimate, given new resample by cubic spline interpolation after deconvolution for Alphabet cores from sites A, B, D, E and G.. The original sample size interval is illustrated as black vertical lines.}
+	\label{Fig:COMPMETH_AllCores_SamplingVsDiffLen}\textit{}
 \end{figure}
-
 
 
 \subsection[Spectral Transforms]{Spectral Transform's Effect on Diffusion Length}

@@ -6,18 +6,44 @@
 
 \begin{figure}
 	\begin{tikzpicture}[node distance=1.1cm, auto]
-		\node(in1) [io, text width=4cm, align=center] {Depth series \& core specs};
-		\node(in2) [io, right of=in1, xshift=5cm] {Constraints};
-		\node(empty1) [below of=in1, xshift=3.2cm] {Analysis};
-		\node(pro1) [process, below of=empty1, yshift=-0.3cm, text width=4cm, align=center] {Find optimal $\sigma$ that fulfills constraints};
-		\node(pro2) [process, below of=pro1, text width=4cm, yshift=-0.5cm, align=center] {Temperature estimate based on $\sigma_{\text{opt}}$};
+		\node(in1) [io, text width=2.5cm, align=center] {Depth series,\\ $d$};
+		\node(in2) [io, text width=3cm,align=center, left of=in1, xshift=-3.5cm] {Core \\specifications};
+		\node(in3) [io, right of=in1, text width=2cm,xshift=2.5cm] {Constraints\\for $d$};
 		
-		\draw[-] (in1) -| (empty1);
-		\draw[-] (in2) -| (empty1);
-		\draw[arrow] (empty1) -- (pro1);
-		\draw[arrow] (pro1) -- (pro2);
+		\node(pro1) [process, text width=3cm, align=center, below of=in1, yshift=-.5cm] {Signal analysis};
+		\node(pro2) [process, text width=3cm, align=center, below of=in2, yshift=-.5cm] {Models};
+		\node(pro2pro1) [process, text width=2cm, align=center, below of=pro2, xshift=-1.5cm, yshift=-.3cm, scale=0.9] {Density};
+		\node(pro2pro2) [process, text width=2cm, align=center, below of=pro2, xshift=1.5cm, yshift=-.3cm, scale=0.9] {Diffusion};
+		
+		\node(goal1) [decision, text width=5cm, below of=in1, yshift=-4cm, xshift=0cm,] {SIGNAL RESTORATION\\AND ENHANCEMENT};
+		
+		\node(goal2) [io, text width=3cm, below of=goal1, yshift=-.5cm,] {Optimal $\sigma$ estimate};
+		\node(goal3) [io, text width=3cm, below of=goal2, yshift=-.5cm] {Temperature estimate, $T$};
+		
+		\draw[arrow] (in2) -- (pro2);
+		\draw[arrow] (in1) -- (pro1);
+		\draw[arrow] (pro2) -- (pro2pro1);
+		\draw[arrow] (pro2) -- (pro2pro2);
+		\draw[arrow] (pro1) -- (goal1);
+		\draw[arrow] (in3) |- (goal1);
+		\draw[arrow] (pro2pro1) |- (goal1);
+		\draw[arrow] (pro2pro2) |- (goal1);
+		\draw[arrow] (goal1) -- (goal2);
+		\draw[arrow] (goal2) -- (goal3);
+%		\node(empty1) [below of=in1, xshift=3.2cm] {Analysis};
+%		\node(pro1) [process, below of=empty1, yshift=-0.3cm, text width=4cm, align=center] {Find optimal $\sigma$ that fulfills constraints};
+%		\node(pro2) [process, below of=pro1, text width=4cm, yshift=-0.5cm, align=center] {Temperature estimate based on $\sigma_{\text{opt}}$};
+%		
+%		\draw[-] (in1) -| (empty1);
+%		\draw[-] (in2) -| (empty1);
+%		\draw[arrow] (empty1) -- (pro1);
+%		\draw[arrow] (pro1) -- (pro2);
 	\end{tikzpicture}
+	\caption{For Introduction}
 \end{figure}
+
+
+
 \begin{figure}
 	\begin{tikzpicture}[node distance=1.5cm, auto]
 		\node(start) [startstop] {START};
@@ -64,22 +90,23 @@
 		\draw[arrow] (stop) -- (out1);
 		\draw[arrow] (stop) |- (out2);
 	\end{tikzpicture}
+	\caption{(For beginning of Signal Analysis and Comp. Methods)}
 \end{figure}
 
 \begin{figure}
 	\begin{tikzpicture}[node distance=1.5cm, auto]
 		\node(start) [startstop] {START};
 		%----------------------------------------------------%
-		\node(in1) [io, left of=start, xshift=-2.5cm] {Depth series};
+		\node(in1) [io, left of=start, xshift=-2.9cm, text width=4cm, align=center] {Measured depth series, $d$};
 		\node(empty1) [below of=in1, yshift=0.12cm] {};
 		\node(empty2) [below of=in1, xshift=-0.15cm] {};
 		%		\node(in1pro1) [process, below of=in1, yshift=-0.5cm] {Spline interpolation};
-		\node(in1pro2) [process, below of=in1, yshift=-2cm] {Spectral analysis};
+		\node(in1pro2) [process, below of=in1, yshift=-2cm] {Spectral analysis of $\tilde{d}$};
 		\node(decSpec1) [decision, below of=in1pro2, scale = 0.8, align=center] {DCT ?\\(Interpolation)};
 		\node(decSpec2) [decision, left of=decSpec1, scale=0.8, xshift = -1.2cm, align=center] {FFT ?\\(Interpolation)};
 		\node(decSpec3) [decision, right of=decSpec1, scale=0.8, xshift = 0.8cm] {NDCT ?};
 		
-		\node(in1pro3) [process, below of=decSpec1] {Wiener filter};
+		\node(in1pro3) [process, below of=decSpec1, text width=4cm, align=center] {Construct Wiener filter, $\tilde{F}$};
 		
 		\draw[arrow] (in1) -- (start);
 		\draw[-] (start) |- (empty2);
@@ -102,7 +129,7 @@
 		\node(decSigma1) [decision, below of=in2pro3, scale = 0.8] {$\sigma_0 = \sigma_{\text{const}}$?};
 		\node(decSigma2) [decision, right of=decSigma1, scale = 0.8, xshift=0.8cm] {$\sigma_0 = \sigma(z)$?};
 		\node(decSigma3) [decision, left of=decSigma1, scale = 0.8, xshift=-0.8cm] {$\sigma_0 = \sigma_{\text{input}}$?};
-		
+		\node(in2pro4) [process, below of=decSigma1, text width=4cm, align=center] {Construct Transfer Function filter, $\tilde{\mathcal{G}}$};
 		
 		\draw[arrow] (in2) -- (start);
 		\draw[arrow] (start) |- (in2pro1);
@@ -111,17 +138,20 @@
 		\draw[arrow] (in2pro3) -- (decSigma1);
 		\draw[arrow] (in2pro3) -- (decSigma2);
 		\draw[arrow] (in2pro3) -- (decSigma3);
-		
+		\draw[arrow] (decSigma1) -- (in2pro4);
+		\draw[arrow] (decSigma2) -- (in2pro4);
+		\draw[arrow] (decSigma3) -- (in2pro4);
 		%----------------------------------------------------%
-		\node(pro0) [process, below of=start, yshift=-6.5cm] {Frequency Filters};
-		\node(pro1) [process, below of=pro0,align=center] {\textbf{Deconvolution}\\(Uniform resampling)};
-		\node(stop) [startstop, below of=pro1] {\textbf{STOP}};
-		\node(out1) [io, right of=stop, align=center, xshift=2.2cm, text width=2.5cm] {\footnotesize{Back diffused depth series}};
+		\node(pro0) [process, below of=start, yshift=-8.5cm, text width=4.5cm, align=center] {Frequency Filters, $\tilde{F}\cdot\tilde{\mathcal{G}}^{-1}$};
+		\node(pro1) [process, below of=pro0, yshift=-0.4cm, ,align=center, text width=4cm, align=center] {\textbf{Deconvolution} $\mathcal{F}\left[\tilde{d}\cdot\tilde{F}\cdot\tilde{\mathcal{G}}^{-1}\right]$ \\(Uniform resampling)};
+		\node(stop) [startstop, below of=pro1, yshift=-0.4cm] {\textbf{STOP}};
+		\node(out1) [io, right of=stop, align=center, xshift=2.2cm, text width=2.5cm] {\footnotesize{Back diffused depth series, $D$}};
 		\node(out2) [io, below of=out1, align=center] {\footnotesize{$\sigma_{\text{out}}$}};
 		\draw[arrow] (in1pro3) |- (pro0);
-		\draw[arrow] (decSigma1) |- (pro0);
-		\draw[arrow] (decSigma2) |- (pro0);
-		\draw[arrow] (decSigma3) |- (pro0);
+%		\draw[arrow] (decSigma1) |- (pro0);
+%		\draw[arrow] (decSigma2) |- (pro0);
+%		\draw[arrow] (decSigma3) |- (pro0);
+		\draw[arrow] (in2pro4) |- (pro0);
 		\draw[arrow] (pro0) -- (pro1);
 		\draw[arrow] (pro1) -- (stop);
 		\draw[arrow] (stop) -- (out1);
@@ -130,8 +160,85 @@
 		%		\draw[arrow] (in2pro3) -| (pro0);
 		
 	\end{tikzpicture}
-	\caption[Flowchart of initialization method.]{\small Flowchart of initialization method for back diffusion of a depth series given a diffusion length estimate.}
+	\caption[Flowchart of initialization method.]{For Method}%\small Flowchart of initialization method for back diffusion of a depth series given a diffusion length estimate.}
 	\label{Fig:FlowchartBackDiffusion}
 \end{figure}
+
+\begin{figure}
+	\begin{tikzpicture}[node distance=1.5cm, auto]
+		\node(pro1) [process, align=center] {$\sigma_0$ estimate};
+		\node(in1) [io, right of=pro1, text width=2cm, align=center, xshift=3cm] {Inputs: $\Delta$, $\epsilon$, $N_{\sigma}$}; 
+		\node(pro2) [process, text width = 4.3cm, align=center, below of=pro1, yshift=-1.8cm] {Construct $\bar{\sigma}_0$ grid, 
+			\begin{align}
+				\bar{\sigma} &= \begin{bmatrix}
+					\sigma_0 - \left(\frac{N_{\sigma}}{2}-1\right)\Delta\\
+					\vdots\\
+					\sigma_0 - \Delta\\
+					\sigma_0 \\
+					\sigma_0 + \Delta\\
+					\vdots \\
+					\sigma_0 + \left(\frac{N_{\sigma}}{2}-1\right)\Delta
+				\end{bmatrix}
+			\nonumber
+			\end{align}};%$\bar{\sigma}=$ [$\sigma_{-2}$, $\sigma_{-1}$, $\sigma_0$, $\sigma_{1}$, $\sigma_{2}$]};
+		%\node(pro3) [process, below of=pro2, text width=4.5cm, align=center, yshift=-1.5cm] {Frequency Filters, $\tilde{F}\cdot\tilde{\mathcal{G}}(\bar{\sigma})$};
+
+		
+		\node(pro4) [process, minimum width=5cm, minimum height = 4cm, below of=pro2, yshift=-3.3cm, align=left] {};
+		\node(for1) [below of=pro4, align=left, yshift=3.cm, xshift=-1.4cm] {\textbf{for} $\sigma$ \textbf{in} $\bar{\sigma}$:};
+		\node(pro4dec1) [decision, below of=pro2, text width=5cm, scale=0.9, align=left, yshift=-3cm] {
+			\hspace{6mm} Deconvolution, \\ 
+			\hspace{6mm} $D=\mathcal{F}\left[\tilde{d}\cdot\tilde{F}\cdot\tilde{\mathcal{G}}(\sigma)^{-1}\right]$};
+		\node(empty1) [left of=pro4dec1, xshift=-2.5cm, yshift=2.8cm] {Wiener filter, $\tilde{F}$};
+		\node(pro4dec2) [decision, below of=pro4dec1, text width=4cm, scale=0.9, align=left] {Count $N_{peaks}$ in $D$,\\ under constraints};
+		\node(pro4dec3) [draw, right of=pro4dec2, fill=Gray, xshift=4cm, text width=3.5cm, scale=0.8] {\textbf{if} $N_{peaks} \leq 33$: \\ 
+			\hspace{5mm} $P_i=0$,\\ 
+			\textbf{else}:\\ 
+			\hspace{5mm} $P_i=1$};
+		\node(pro4dec4) [decision, below of=pro4dec3, yshift=-0.3cm, scale=0.9] {$\bar{P}=[P_0,\, P_1,\,...,\, P_{N-1}]$};
+		
+		\node(in2) [io, left of=pro1, xshift=-4.5cm, text width= 2cm, align=center] {\textbf{constraints}};
+		
+		\node(empty2) [process, below of=pro4dec2, yshift=-3cm, minimum width=5cm, minimum height=3cm] {};
+		\node(for2) [below of=pro4dec2, yshift=-2cm] {Construct new $\bar{\sigma}$ grid with:};
+		\node(for2dec1) [decision, below of=for2, scale=0.9, text width = 4.5cm] {$\sigma_{min}=$ \textbf{max}$(\bar{\sigma}(P_i==0))$,\\ $\sigma_{max}=$ \textbf{min}$(\bar{\sigma}(P_i==1))$,\\
+		$\Delta=\frac{\sigma_{max} - \sigma_{min}}{N_{\sigma}-1}$};
+		\node(pro5) [process, left of=empty2, text width=4cm,xshift=-4cm, yshift=2cm] {\begin{align}
+				\bar{\sigma} &= \begin{bmatrix}
+					\sigma_{min}\\
+					\sigma_{min} +\Delta\\
+					\vdots\\
+					\sigma_{max} - \Delta\\
+					\sigma_{max}
+				\end{bmatrix}
+				\nonumber
+			\end{align}};
+		\node(if2) [below of=pro5, yshift=-1cm, scale=0.9] {\textbf{if} $\sigma_{max} - \sigma_{min} > \epsilon$};
+		\node(stop) [startstop, right of=empty2, yshift=-1.5cm, xshift=3cm] {STOP};
+		\node(if3) [above of=stop, yshift=0.5cm, scale=0.9] {\textbf{if} $\sigma_{max} - \sigma_{min} \leq \epsilon$};
+		\node(out1) [io, below of=stop, xshift=0cm, text width= 3cm] {$\sigma_{\text{final}}=\sigma_{min}$, \\
+		$D_{opt}=D({\sigma_{\text{final}}})$};
+		
+		
+		\draw[arrow] (0,1) -- (pro1);
+		\draw[arrow] (pro1) -- (pro2);
+		\draw[arrow] (in1) |- (pro2);
+		\draw[arrow] (pro2) -- (pro4);
+		\draw[arrow] (-4,-5) |- (pro4dec1);
+		\draw[arrow] (pro4dec1) -- (pro4dec2);
+		\draw[arrow] (pro4dec2) -- (pro4dec3);
+		\draw[arrow] (pro4dec3) -- (pro4dec4);
+		\draw[arrow] (pro4dec4) -| (empty2);
+		\draw[arrow] (empty2) -| (pro5);
+		\draw[arrow] (empty2) -| (stop);
+		\draw[arrow] (stop) -- (out1);
+		\draw[arrow] (pro5) |- (pro4);
+		\draw[arrow] (in2) |- (pro4dec2);
+%		\draw[arrow] (pro3) -- (pro4);
+	\end{tikzpicture}
+	\caption{For Method (optimization)}
+\end{figure}
+
+
 
 \end{document}

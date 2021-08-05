@@ -1,6 +1,7 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces J. M. W. Turner: \textit {The Eruption of the Soufriere Mountains}\relax }}{i}%
 \addvspace {10pt}
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Summers and Winters between Laki and Tambora}}{2}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces For Introduction\relax }}{3}%
 \addvspace {10pt}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces 10 m of Crête ice core with dating.}}{5}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Densification process}}{7}%
@@ -20,50 +21,51 @@
 \contentsline {figure}{\numberline {3.7}{\ignorespaces All Alphabet core $\delta ^{18}$O profiles in full.}}{26}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces All Alphabet core $\delta ^{18}$O profiles, depths from Laki to Tambora.}}{27}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces FFT, DCT, NDCT, Site A}}{31}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces FFT, DCT, NDCT PSDs, Site A}}{32}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces FFT, DCT, NDCT PSDs with Fit, Site A}}{35}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Wiener filter}}{35}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Frequency filters example, Site A}}{36}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces $\lambda $ estimation example, Site B, in frequency domain.}}{37}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces $\lambda $ profiles for sites A, B, D and G.}}{38}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces 10 m of Crête core with peaks and troughs.}}{39}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Even resampling of unevenly sampled data, Site A.}}{42}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Different resamplings of Site A.}}{43}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Back diffused data, Site A, different resamplings before deconvolution.}}{44}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Diffusion length versus resampling size before deconvolution, all cores.}}{45}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Back diffused data, Site A, different resamplings after deconvolution.}}{46}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Diffusion length versus resampling size after deconvolution, all cores.}}{47}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \relax }}{30}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces FFT, DCT, NDCT, Site A}}{35}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces FFT, DCT, NDCT PSDs, Site A}}{36}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces FFT, DCT, NDCT PSDs with Fit, Site A}}{39}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Wiener filter}}{39}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Frequency filters example, Site A}}{40}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces $\lambda $ estimation example, Site B, in frequency domain.}}{41}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces $\lambda $ for Full Cores}}{42}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces $\lambda $ Depth Profiles, Different $l_{\text {sec}}$}}{44}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces $\lambda _{\text {LT}}$ vs. Section Length}}{45}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces $\lambda $ Depth Profiles, Different $s_{\text {sec}}$}}{46}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces $\lambda _{\text {LT}}0$ vs. $s_{\text {sec}}$}}{47}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces 10 m of Crête core with peaks and troughs.}}{47}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Even resampling of unevenly sampled data, Site A.}}{50}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Different resamplings of Site A.}}{51}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Back diffused data, Site A, different resamplings before deconvolution.}}{55}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Diffusion length versus resampling size before deconvolution, all cores.}}{56}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Back diffused data, Site A, different resamplings after deconvolution.}}{57}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Diffusion length versus resampling size after deconvolution, all cores.}}{58}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Flowchart of initialization method.}}{51}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Site B Constrained vs. Unconstrained}}{52}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces $\lambda $ for Full Cores}}{53}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces $\lambda $ Depth Profiles, Different $l_{\text {sec}}$}}{54}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces $\lambda _{\text {LT}}$ vs. Section Length}}{55}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces $\lambda $ Depth Profiles, Different $s_{\text {sec}}$}}{56}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces $\lambda _{\text {LT}}0$ vs. $s_{\text {sec}}$}}{57}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Qualitative Example of Spectral Transform's Effect on $\sigma $}}{57}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Speed and $\sigma $ Estimates, Spectral Transforms}}{58}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Diffusion Length Variations, Varying Laki and Tambora}}{59}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Diffusion Length Variations, Varying only Laki}}{60}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Diffusion Length Variations, Varying only Tambora}}{60}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Illustration of 2 Month Standard Deviation Variation of Volcanic Events Locations}}{61}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces 2 Month Variation of Event Locations, Site A}}{62}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Flowchart of initialization method.}}{62}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces For Method (optimization)\relax }}{63}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Site B Constrained vs. Unconstrained}}{64}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Qualitative Example of Spectral Transform's Effect on $\sigma $}}{64}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Speed and $\sigma $ Estimates, Spectral Transforms}}{65}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Diffusion Length Variations, Varying Laki and Tambora}}{66}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Diffusion Length Variations, Varying only Laki}}{67}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Diffusion Length Variations, Varying only Tambora}}{67}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Illustration of 2 Month Standard Deviation Variation of Volcanic Events Locations}}{68}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces 2 Month Variation of Event Locations, Site A}}{69}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces $\sigma $ vs. N Peaks}}{64}%
-\contentsline {figure}{\numberline {6.1}{\ignorespaces $\sigma $ vs. N Peaks}}{64}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Steady State Temperature Distributions}}{67}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces $\sigma $ vs. N Peaks}}{72}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces $\sigma $ vs. N Peaks}}{72}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Steady State Temperature Distributions}}{75}%
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {1}{\ignorespaces AWI B-cores density, theory and data.}}{78}%
-\contentsline {figure}{\numberline {2}{\ignorespaces AWI B-cores, theory and averaged data.}}{79}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Alphabet cores, in full.}}{80}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Alphabet cores, Laki to Tambora depth.}}{81}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Monomials}}{91}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Illustration of AR-1 process.}}{94}%
-\contentsline {figure}{\numberline {7}{\ignorespaces AR-1 process with diffusion.}}{94}%
-\contentsline {figure}{\numberline {8}{\ignorespaces AR-1 process in the spectral domain, raw and diffused.}}{95}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Five different modelled density profiles.}}{99}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Rate terms of the diffusion equation.}}{103}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Modelled diffusion lengths of Alphabet cores.}}{104}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Five different modelled diffusion length profiles.}}{105}%
+\contentsline {figure}{\numberline {1}{\ignorespaces AWI B-cores density, theory and data.}}{86}%
+\contentsline {figure}{\numberline {2}{\ignorespaces AWI B-cores, theory and averaged data.}}{87}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Alphabet cores, in full.}}{88}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Alphabet cores, Laki to Tambora depth.}}{89}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Monomials}}{99}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Illustration of AR-1 process.}}{102}%
+\contentsline {figure}{\numberline {7}{\ignorespaces AR-1 process with diffusion.}}{102}%
+\contentsline {figure}{\numberline {8}{\ignorespaces AR-1 process in the spectral domain, raw and diffused.}}{103}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Five different modelled density profiles.}}{107}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Rate terms of the diffusion equation.}}{111}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Modelled diffusion lengths of Alphabet cores.}}{112}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Five different modelled diffusion length profiles.}}{113}%
