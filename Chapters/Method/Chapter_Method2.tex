@@ -1,9 +1,9 @@
 %!TeX root = Chapter_Method2
 \documentclass[../../CompleteThesis2/Complete_2ndDraft]{subfiles}
-\graphicspath{{../../Figures/}}
+%\graphicspath{{../../Figures/}}
 \begin{document}
 
-\section[$\sigma$ Estimation Method][$\sigma$ Estimation Method]{$\sigma$ Estimation Method and Discussions}
+\section[$\sigma$ Estimation Method][$\sigma$ Estimation Method]{$\sigma$ Estimation Method}
 \label{Sec:Method_SigmaMethod}
 
 %Usually, when back-diffusing a depth series, some amplitude is regained on the signal, and some peaks and troughs, that might have been washed out from the diffusion might emerge when restoring the signal. These two properties thus makes it possible to connect the diffusion length to the years counted in that section (i.e. the number of peaks and troughs). Due to the knowledge of time passed from the Laki to the Tambora event, the data, along with the restoration techniques, permits a further investigation of the diffusion length in the given section. Thus, when back-diffusing, instead of just using the diffusion length estimate from the spectra, it is possible to examine which diffusion length that results in the correct number of years counted in that section. This property is what will be utilized in the following section, which focuses on finding the optimal diffusion length of a given section.
@@ -15,18 +15,10 @@ The algorithm consists of two modules, where one module describes the numerical 
 The second module is responsible for the optimization. This module examines the parameter space containing the diffusion length estimates, and utilizes a constrained direct search method to find the optimal diffusion length estimate. This method is illustrated through a flowchart in Figure \ref{Fig:METH_Flowchart_Optimization}. 
 
 \subsection{Module 1: Initialization and Back Diffusion}
+\label{Subsec:Method_SigmaMethod_Module1}
 The first module of the algorithm, containing initialization and describing the general back diffusion method, is based on many of the aspects and models presented in the previous Chapters \ref{Chap:IceTheory} and \ref{Chap:SigAnalCompMeth}. Therefore the description of this module will focus on the work flow and not so much on the specific details of each process, as these have already been presented. 
 
-The module takes an input of a measured depth series in a given interval, $d$, and the specifications concerning the drill site and the ice core in general. From here the work flow splits in two, one route(left) analyzing the depth series, and one(right) giving an estimate of $\sigma$ at that depth, based on models.
-
-The right flow describes how the $\sigma_0$ estimate is given on the basis of the core specifications passed into the algorithm. First, a HL-density profile is modelled, based on the necessary input parameters of annual accumulation rate $A_0$ and drill site surface temperature $T_0$, and the optional inputs of surface density $\rho_0$ and measured depth versus density data. Secondly, this density profile is used to compute a diffusion length profile, by the use of the Iso-CFM. 
-
-The modelled diffusion length profile is then used to find a theoretical $\sigma_0$ estimate. This then used as the standard deviation in the Gaussian transfer function filter, $\mathcal{G}$ used for deconvolution, unless a $\sigma_0$ is inputted manually. From the modelled diffusion length profile, it is also possible to choose not just a constant $\sigma_0$, but an option for a depth-varying diffusion length, $\sigma(z)$, used in the transfer function is also available. 
-
-The left flow shows the analysis carried out on the measured depth series.
-
-
-\begin{figure}[h]
+\begin{figure}[!htb]
 	\begin{tikzpicture}[node distance=1.5cm, auto]
 		\node(start) [startstop] {START};
 		%----------------------------------------------------%
@@ -96,8 +88,17 @@ The left flow shows the analysis carried out on the measured depth series.
 	\caption[Flowchart of initialization method.]{\small Flowchart of initialization method for back diffusion of a depth series given a diffusion length estimate.}
 	\label{Fig:FlowchartBackDiffusion}
 \end{figure}
+The module takes an input of a measured depth series in a given interval, $d$, and the specifications concerning the drill site and the ice core in general. From here the work flow splits in two, one route(left) analyzing the depth series, and one(right) giving an estimate of $\sigma$ at that depth, based on models.
 
-\begin{figure}[h]
+The right flow describes how the $\sigma_0$ estimate is given on the basis of the core specifications passed into the algorithm. First, a HL-density profile is modelled, based on the necessary input parameters of annual accumulation rate $A_0$ and drill site surface temperature $T_0$, and the optional inputs of surface density $\rho_0$ and measured depth versus density data. Secondly, this density profile is used to compute a diffusion length profile, by the use of the Iso-CFM. 
+
+The modelled diffusion length profile is then used to find a theoretical $\sigma_0$ estimate. This then used as the standard deviation in the Gaussian transfer function filter, $\mathcal{G}$ used for deconvolution, unless a $\sigma_0$ is inputted manually. From the modelled diffusion length profile, it is also possible to choose not just a constant $\sigma_0$, but an option for a depth-varying diffusion length, $\sigma(z)$, used in the transfer function is also available. 
+
+The left flow shows the analysis carried out on the measured depth series, $d$. First, the depth series is transformed to the frequency domain, with the users choice of spectral transformation method. If FFT or DCT is chosen, the depth series will be interpolated to resemble equispaced data. Then the frequency series is analyzed according to Section \ref{Sec:COMPMETH}, where fits to the signal and noise are made, that again are used to construct an optimal Wiener filter, $\tilde{F}$. During this process, it is optional to choose the standard deviation of the estimated noise free signal, $\sigma_{\text{tot}}$, as the diffusion length to use in the deconvolution.
+
+Finally, the right and the left flow are combined to construct the final restoration filter, $\tilde{R}=\tilde{F}\tilde{\mathcal{G}}^{-1}$, which is used for optimal enhancement and restoration when deconvoluting the signal to $D=\mathcal{F}\left[\tilde{d}\cdot\tilde{F}\cdot\tilde{\mathcal{G}}^{-1}\right]$, and the module returns the back diffused series $D$ and the diffusion length used, $\sigma_{\text{out}}$.
+
+\begin{figure}[!]
 	\begin{tikzpicture}[node distance=1.5cm, auto]
 		\node(pro1) [process, align=center] {$\sigma_0$ estimate};
 		\node(in1) [io, right of=pro1, text width=2cm, align=center, xshift=3cm] {Inputs: $\Delta$, $\epsilon$, $N_{\sigma}$}; 
@@ -172,6 +173,27 @@ The left flow shows the analysis carried out on the measured depth series.
 	\caption{For Method (optimization)}
 	\label{Fig:METH_Flowchart_Optimization}
 \end{figure}
+
+
+\subsection[Module 2]{Module 2: Estimating the Optimal $\sigma$}
+\label{Subsec:Method_SigmaMethod_Module2}
+The second module contains the optimization of $\sigma$. It is based on a constrained direct search method which examines the one dimensional $\sigma$ space. A flow chart of the module can be seen in Figure \ref{Fig:METH_Flowchart_Optimization}. The module takes three initialization parameters as input, the starting grid size $\Delta$, a small size $\epsilon$ and the number of grid points to examine $N_{\sigma}$, as well as the constraints imposed on the depth interval, described in the following section, \ref{Subsec:Meth_PeakDetection_Constrained}.
+
+
+
+The method is initialized by an input $\sigma_0$ estimate, the right flow in module 1, from either models, spectral analysis or manual input, which is used to create the first coarse $\bar{\sigma}$ grid. The method also carries out the left flow from module 1 as part of the initialization. These steps are not needed repeated again.
+
+Then the module carries out the deconvolution method on the $\bar{\sigma}$ grid and uses the imposed constraints to count number of peaks in the back diffused depth series, along with controlling that the imposed constraints are complied with. The algorithm then assigns a value of either 0($N_{peaks} \leq 33$) or 1($N_{peaks}>33$) to a new vector $\bar{P}$. These values then decide where to create the next search grid from, as it sets the new minimum diffusion length to $\sigma_{\text{min}}=$ \textbf{max}$(\bar{\sigma}(P_i=0))$ and the maximum to $\sigma_{\text{max}}=$ \textbf{min}$(\bar{\sigma}(P_i=1))$. This narrows down the search area and creates a finer grid. The test $\sigma_{\text{max}} - \sigma_{\text{min}}$ is then performed, and the deconvolution is performed once again, if $\sigma_{\text{max}} - \sigma_{\text{min}} >\epsilon$. If not, then the algorithm stops, presenting the final diffusion length as the last $\sigma_{\text{final}} = \sigma_{\text{min}}$ and the final back diffused series as $D_{\text{opt}}=D(\sigma_{\text{final}})$.
+
+The direct search method is very simple, and the main reason that this search method works is due to the investigation of the relation between number of counted peaks versus diffusion length. This relation was examined by brute force: the number of peaks given diffusion length space was computed manually from 0.01 m to 0.15 m. This showed clearly that - in the area of interest, i.e. resulting in $N_peaks=33$ - the number of counted peaks increases as the diffusion length increases, see Figure \ref{Fig:AllCores_NpeaksVDiffLen}. 
+
+\begin{marginfigure}
+	\centering
+	\includegraphics[width=\marginparwidth]{AllCores_NpeaksVDiffLen.pdf}
+	\caption[$\sigma$ vs. N Peaks]{\footnotesize Number of peaks estimated given diffusion length, based on diffusion length in the interval [0.01; 0.15] m.}
+	\label{fig:AllCores_NpeaksVDiffLen}
+\end{marginfigure}
+
 %\begin{figure}
 %	\begin{tikzpicture}[node distance=1.5cm, auto]
 %		\node(start) [startstop] {START};
@@ -241,7 +263,7 @@ The left flow shows the analysis carried out on the measured depth series.
 %\end{figure}
 
 \subsection[Constrained Peak Detection]{Constrained Peak Detection}
-\label{Subsec:CompMeths_PeakDetection_Constrained}
+\label{Subsec:Meth_PeakDetection_Constrained}
 The main constraint when back diffusing these depth series is the number of years between the two volcanic events detected in the ice. The number of especially winters between the two events are fixed to $N_P=33$, as this number of winter is expected in the interval, even with a two month variation from the estimated event position. The counted number of summers can on the other hand vary a bit.\\
 For better peak detection, a number of other constraints have been implemented. Since the data is a proxy for a continuous physical process, the temperature, it is reasonable to set up constraints representing some of the logical expectations for this type of signals. 
 
@@ -271,46 +293,29 @@ The optimal parameter choices for the constraints are presented in:
 	\caption[Constraint parameters]{The general constraints used in the method to optimize the diffusion length estimate.}
 	\label{Tab:ConstraintParams}
 \end{table}
-
-
-
-
-\begin{figure}[h]
+\begin{figure}[!]
 	\centering
-	\includegraphics[width=\textwidth]{SiteA_InterpBF_SpecificResamplings.png}
+	\includegraphics[width=\textwidth]{SiteA_InterpBF_SpecificResamplings.pdf}
 	\caption[Back diffused data, Site A, different resamplings before deconvolution.]{\small Site A, illustration of the effect of five different cubic spline resamplings before deconvolution. Original sample sizes lie in the interval [3.80; 4.00] [cm]. Resampling at smaller sample sizes show a tendency to restore some signal frequencies that are not necessarily inherit in the original signal. The resample should thus not be chosen too small as this would introduce some false signal into the results.}
 	\label{Fig:COMPMETH_SiteA_interpBF_SpecificSamplings}
 \end{figure}
 
+%\subsection[Corrections on $\sigma$][Corrections on $\sigma$]{Corrections on the Computed $\sigma$ estimate}
+%\label{Subsec:Method_SigmaMethod_SigmaCorrections}
+%As mentioned in Section \ref{Subsec:Ice_DiffusionAndDensification_Diffusion_TemperatureRecon}, the estimated diffusion length needs to be corrected for a number of different influences: the sampling diffusion, the ice diffusion at a given depth and the thinning function at a given drill site.
+%
+%This section will describe how each of these influences have been taken care of in the work.
+%
+%\subsubsection{Ice Diffusion, $\sigma_{\text{ice}}$}
+%\label{Subsubsec:Method_SigmaMethod_SigmaCorrections_IceDiffusion}
+%
+%\subsubsection{Sampling Diffusion, $\sigma_{\text{dis}}$}
+%\label{Subsubsec:Method_SigmaMethod_SigmaCorrections_SamplingDiffusion}
+%
+%\subsubsection{Thinning Function $S(z)$}
+%\label{Subsubsec:Method_SigmaMethod_SigmaCorrections_ThinningFct}
 
 
-
-\subsection[Corrections on $\sigma$][Corrections on $\sigma$]{Corrections on the Computed $\sigma$ estimate}
-\label{Subsec:Method_SigmaMethod_SigmaCorrections}
-As mentioned in Section \ref{Subsec:Ice_DiffusionAndDensification_Diffusion_TemperatureRecon}, the estimated diffusion length needs to be corrected for a number of different influences: the sampling diffusion, the ice diffusion at a given depth and the thinning function at a given drill site.
-
-This section will describe how each of these influences have been taken care of in the work.
-
-\subsubsection{Ice Diffusion, $\sigma_{\text{ice}}$}
-\label{Subsubsec:Method_SigmaMethod_SigmaCorrections_IceDiffusion}
-
-\subsubsection{Sampling Diffusion, $\sigma_{\text{dis}}$}
-\label{Subsubsec:Method_SigmaMethod_SigmaCorrections_SamplingDiffusion}
-
-\subsubsection{Thinning Function $S(z)$}
-\label{Subsubsec:Method_SigmaMethod_SigmaCorrections_ThinningFct}
-
-
-
-\subsection[Constraints][Constraints]{Constraints}
-\label{Subsec:Method_SigmaMethod_Constraints}
-This section will contain a walk through of the general differences between constrained and non-constrained optimization of the diffusion length. In Figure \ref{fig:SiteB_ConstVNoConst} an example of the results of the optimization with and without constraints can be seen.
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.95\textwidth]{SiteB_ConstVNoConst.png}
-	\caption[Site B Constrained vs. Unconstrained]{\small Example of how the imposed constraints effect the final diffusion length estimate for the Laki to Tamborad depth section of the core drilled at Site B. The black line shows the data, the green the back diffused data using a method with less constraints, and the blue shows the back diffused data when using the imposed constraint. The blue dots represents the peaks counted in the constrained method.}
-	\label{fig:SiteB_ConstVNoConst}
-\end{figure}
 
 
 %\subsection[$1^{\text{st}}\sigma$ Estimate][$1^{\text{st}}\sigma$ Estimate]{$1^{\text{st}}$ Diffusion Length Estimate}
@@ -323,14 +328,23 @@ This section will contain a walk through of the general differences between cons
 \section[Testing and Stability][Testing and Stability]{Method Testing and Stability}
 \label{Sec:Method_TestStab}
 
-Throughout this section a number of different tests of the algorithm will be presented. The tests are performed to examine the stability of the method, the accuracy of the Laki and Tambora positions and how the choice of parameters(interpolation, spectral transform type, $\lambda_A$ estimation, peak prominence and peak distance) changes the resulting diffusion length estimate. 
+Throughout this section a number of different tests of the algorithm will be presented. The tests are performed to examine the stability of the method, the accuracy of the Laki and Tambora positions and how the choice of parameters(interpolation, spectral transform type) changes the resulting diffusion length estimate. 
 
 \subsection[Constraints or No Constraints]{No constraints versus constraints}
 \label{Subsec:Method_TestStab_ConstNoConst}
+Figure \ref{fig:SiteB_ConstVNoConst} shows the depth series between Laki and Tambora events of the ice core drilled at Site B, back diffused through the algorithm described in the above. The difference between the blue and the green back diffused signals is that the blue is back diffused using the just presented constraints, and the green signal is back diffused with only the constraint $N_P=33$. It is clear that the imposed constraints, especially the ones concerning peak distance and prominence influences the final result of the optimal diffusion length. Particularly, the more constraint algorithm clearly leaves out from the count some 'shoulders' before an actual peak. These shoulders could be actual peaks but with the imposed constraints, they are omitted. This is something that could be further developed and examined. The appearance of these 'shoulders' could be peaks, but it is also liekly that they are remnants of some noise effect that is not quite filtered in the frequency filter construction. If that is the case, then it is a positive thing that the algorithm sorts them out.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=\textwidth]{SiteB_ConstVNoConst.pdf}
+	\caption[Site B Constrained vs. Unconstrained]{\small Example of how the imposed constraints effect the final diffusion length estimate for the Laki to Tamborad depth section of the core drilled at Site B. The black line shows the data, the green the back diffused data using a method with less constraints, and the blue shows the back diffused data when using the imposed constraint. The blue dots represents the peaks counted in the constrained method.}
+	\label{fig:SiteB_ConstVNoConst}
+\end{figure}
 
 
 \subsection[Effects of Interpolations]{Effects of Interpolations}
 \label{Subsec:METH_Interpolation}
+The choice of interpolation, before and after deconvolution, does affect the final result by introducing some effects not inherent in the originally measured signal. Therefore it is important to examine exactly how these interpolations influence the final $\sigma$ estimate. Here that is examined be running the algorithm with different resampling sizes. 
 \subsubsection[Interpolation 1]{Interpolation of Data Before Deconvolution}
 \label{Subsubsec:METH_Interpolation_BFdecon}
 
@@ -360,7 +374,7 @@ Figure \ref{Fig:COMPMETH_SamplingVsDiffLen_interpBF} shows that if the sampling 
 	\captionof{table}[Tested sample resolutions for resampling before back-diffusion.]{\footnotesize Minimal and maximal new sample resolution used for testing interpolation before back-diffusion. Each test is run with 100 different new sample resolutions between $\Delta_{\text{min}}$ and $\Delta_{\text{max}}$.}
 	\label{tab:InterpSamples}
 }[0.5cm]%
-\begin{figure}[h]
+\begin{figure}[!htb]
 	\centering
 	\includegraphics[width=\textwidth]{AllCores_DiffLenVdelta_InterpBF_const.png}
 	\caption[Diffusion length versus resampling size before deconvolution, all cores.]{\small Diffusion length estimates versus resamples through cubic spline interpolation before deconvolution for Alphabet cores from sites A, B, D, E and G.}
@@ -371,7 +385,7 @@ Figure \ref{Fig:COMPMETH_SamplingVsDiffLen_interpBF} shows that if the sampling 
 
 \subsubsection[Interpolation 2]{Interpolation of Data After Deconvolution}
 \label{Subsubsec:METH_Interpolation_AFdecon}
-\begin{figure}[h]
+\begin{figure}[!htb]
 	\centering
 	\includegraphics[width=\textwidth]{SiteA_InterpAF_SpecificResampling_BD.png}
 	\caption[Back diffused data, Site A, different resamplings after deconvolution.]{\small Site A, effect of cubic spline interpolation after signal has been deconvoluted. The interpolation is introduced to make peak detection more stable.}
@@ -384,7 +398,7 @@ As the actual isotopic signal is continuous and that the discretization is intro
 
 
 
-\begin{figure}[h]
+\begin{figure}[!htb]
 	\centering
 	\includegraphics[width=\textwidth]{AllCores_InterpAF_deltaVSdiffLen_BD.png}
 	\caption[Diffusion length versus resampling size after deconvolution, all cores.]{\small Final diffusion length estimate, given new resample by cubic spline interpolation after deconvolution for Alphabet cores from sites A, B, D, E and G.. The original sample size interval is illustrated as black vertical lines.}
@@ -394,22 +408,20 @@ As the actual isotopic signal is continuous and that the discretization is intro
 
 \subsection[Spectral Transforms]{Spectral Transform's Effect on Diffusion Length}
 \label{Subsec:Method_TestStab_SpecTrans}
+The different ways of performing spectral transformation also influences the final $\sigma$ estimate, not only due to the transformation itself, but for FFT and DCT, the methods demand an interpolation, which in itself influences the results. 
 
-\subsubsection{Visual Inspection}
-\label{Subsubsec:Method_TestStab_SpecTrans_VisInspection}
-
-\begin{figure}[h]
+\begin{figure}[!htb]
 	\centering
-	\includegraphics[width=0.8\textwidth]{SiteA_SpecTrans_VisInspection.png}
+	\includegraphics[width=0.8\textwidth]{SiteA_SpecTrans_VisInspection.pdf}
 	\caption[Qualitative Example of Spectral Transform's Effect on $\sigma$]{\small A visual example of the differences in final back diffused data when using different spectral transforms. }
 	\label{fig:SiteA_SpecTrans_VisInspection}
 \end{figure}
 
+Figure \ref{label:SiteA_SpecTrans_VisInspection} shows an example of the qualitative differences between using FFT, DCT or NDCT for spectral analysis. The most obvious visual difference between the transforms is in the end sections of the interval. This might be due to some specific boundary conditions imposed on the fast Fourier and Cosine transforms. Furthermore, by careful visual inspection, it can be seen that the NDCT seems to cater to some effects of the nonuniform samplings, that the FFT and DCT do not.
 
-\subsubsection{Speed Examination}
-\label{Subsubsec:Method_TestStab_SpecTrans_Speed}
+There are not grave differences between the three spectral transforms, but some difference there is. What might also be taken into consideration is, that this method might be run a large number of times - as is the case later on in this thesis - for example to estimate accuracy of the method, and one might therefore want to choose the method that gives the fastest results. Thus, the speed of the different transforms has been tested, as can be seen in Figure \ref{fig:SiteA_SpecTrans_Speed}, with 200 separate runs where the Laki and Tambora positions have been drawn from a distribution with a standard deviation of 2 months from the estimated location. Not surprisingly, the NDCT is much slower than the DCT and the FFT, and it might prove efficient to choose either DCT or FFT if the algorithm has to run many times. For the case of this thesis, the final results have been made with the NDCT, so as not to miss any of the effects that might come from unevenly sampled data.
 
-\begin{figure}[h]
+\begin{figure}[!htb]
 	\centering
 	\includegraphics[width=0.95\textwidth]{SiteA_SpecTrans_Speed.png}
 	\caption[Speed and $\sigma$ Estimates, Spectral Transforms]{\small Diffusion length estimate along with speed of algorithm given the three different spectral transforms examined in this work. The volcanic event depths have been drawn from a Gaussian distribution with a width corresponding to ~1 month around the estimated mean depth of the event.}
@@ -421,49 +433,58 @@ As the actual isotopic signal is continuous and that the discretization is intro
 
 \subsection[LT locations]{Laki and Tambora as Gaussian Distributions}
 \label{Subsec:Method_TestStab_LTlocations}
+As mentioned previously, the Laki and Tambora event depth locations are not exact. Thus to accommodate for error in this positioning, the algorithm has been tested with Laki and Tambora locations drawn from Gaussian distributions. This was examined in four ways:
 
+\begin{itemize}
+	\item Variation in both Laki and Tambora position, corresponding to the entire events.
+	\item Variation in only the Tambora position while keeping a fixed section length, corresponding to the mean value $\bar{d}_{L}-\bar{d}_{T}$.
+	\item Variation in only the Laki position while keeping a fixed section length, corresponding to the mean value $\bar{d}_{L}-\bar{d}_{T}$.
+	\item Variation corresponding to a Gaussian distribution with a standard deviation of a depth that resembles to months in time.
+	
+\end{itemize}
 
+The first variation of both Laki and Tambora can be seen in Figure \ref{fig:SiteA_Vary_LandT}. The method has been run 500 times with new locations drawn for each run, and the same constraints imposed each time. This results in an estimate of the diffusion length for Site A between Laki and Tambora of $\sigma=7.32\pm 0.67$ [cm]. But considering the lengths of the volcanic events, as seen in the ECM data, one might question this result. Due to more or else time incorporated as the depth section is widened or narrowed, some of the constraints might not be very well chosen any more. It might be that a larger depth interval could gain an extra peak or trough, so that the constraint should be $N_P=34$ instead of $N_P =33$. This is some work that could be continued on the algorithm, ensuring that the extra interval length increase or decrease loosens the count constraint.
 
-\subsubsection[Vary L and T]{Varying both Laki and Tambora Position}
-\label{Subsubsec:Method_TestStab_LTlocations_LandT}
+%\subsubsection[Vary L and T]{Varying both Laki and Tambora Position}
+%\label{Subsubsec:Method_TestStab_LTlocations_LandT}
 
-\begin{figure}[h]
+\begin{figure}[!htb]
 	\centering
-	\includegraphics[width=0.95\textwidth]{SiteA_Vary_LandT.png}
+	\includegraphics[width=0.95\textwidth]{SiteA_Vary_LandT.pdf}
 	\caption[Diffusion Length Variations, Varying Laki and Tambora]{\small Diffusion length estimates when varying the depth locations of the volcanic events. The locations of both Laki and Tambora events have been drawn from Gaussian distributions as the ones presented in Section \ref{Sec:Data_VolcanicHorizons}.}
 	\label{fig:SiteA_Vary_LandT}
 \end{figure}
 
+The next method examines what happens when only changing the Laki or Tambora position. The results for 500 runs can be seen in Figure \ref{fig:SiteA_Vary_Lonly} and \ref{fig:SiteA_Vary_Tonly}. An interesting feature shows here, and is also visible in some of the later results: the diffusion length estimates seem to not be Gaussian distributed, but concentrated around two or more different diffusion lengths. This could be an effect of the direct search algorithm, which might quantize the possible $\sigma$ estimates when creating the grid. This could be examined by trying to randomize the grid creation. Furthermore, it would be interesting to examine if there is a correlation between the positioning of the depth interval and the estimated diffusion length.  
 
+%\subsubsection[Vary T]{Varying only Tambora Position}
+%\label{Subsubsec:Method_TestStab_LTlocations_T}
 
-\subsubsection[Vary T]{Varying only Tambora Position}
-\label{Subsubsec:Method_TestStab_LTlocations_T}
-
-\begin{figure}[h]
+\begin{figure}[!htb]
 	\centering
-	\includegraphics[width=0.95\textwidth]{SiteA_Vary_Lonly.png}
+	\includegraphics[width=0.95\textwidth]{SiteA_Vary_Lonly.pdf}
 	\caption[Diffusion Length Variations, Varying only Laki]{\small Diffusion length estimates for Site A when varying only the Laki volcanic event. The locations are drawn from Gaussian distributions as the ones presented in Section \ref{Sec:Data_VolcanicHorizons}. The depth section is kept at a constant length, corresponding to the mean distance value, $\bar{d}_{\text{Laki}}-\bar{d}_{\text{Tambora}}$.}
 	\label{fig:SiteA_Vary_Tonly}
 \end{figure}
 
+The final method is an investigation of drawing the locations of both Laki and Tambora from distributions with a standard deviation of what corresponds to two months and a mean value of where the middle of the volcanic event is estimated to be. An illustration of how much this is in depth is shown in Figure \ref{fig:SiteA_LandT_Gauss_2Mnth}. The results can be seen in Figure \ref{fig:SiteA_LandT_Gauss_2Mnth_NDCT}. Again, the possible effect of the quantized grid search can be seen.
 
+%\subsubsection[Vary L]{Varying only Laki Position}
+%\label{Subsubsec:Method_TestStab_LTlocations_L}
 
-\subsubsection[Vary L]{Varying only Laki Position}
-\label{Subsubsec:Method_TestStab_LTlocations_L}
-
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.95\textwidth]{SiteA_Vary_Tonly.png}
+	\includegraphics[width=0.95\textwidth]{SiteA_Vary_Tonly.pdf}
 	\caption[Diffusion Length Variations, Varying only Tambora]{\small Diffusion length estimates for Site A when varying only the Tambora volcanic event. The locations are drawn from Gaussian distributions as the ones presented in Section \ref{Sec:Data_VolcanicHorizons}. The depth section is kept at a constant length, corresponding to the mean distance value, $\bar{d}_{\text{Laki}}-\bar{d}_{\text{Tambora}}$.}
 	\label{fig:SiteA_Vary_Lonly}
 \end{figure}
 
 
 
-\subsubsection[2 Month Variability]{Variation Corresponding to 2 Months}
-\label{Subsubsec:Method_TestStab_LTlocations_2Month}
+%\subsubsection[2 Month Variability]{Variation Corresponding to 2 Months}
+%\label{Subsubsec:Method_TestStab_LTlocations_2Month}
 
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.95\textwidth]{SiteA_LandT_Gauss_2Mnth.png}
 	\caption[Illustration of 2 Month Standard Deviation Variation of Volcanic Events Locations]{\small Illustration of the method implemented to manage the uncertainty of the exact depth location of the volcanic events. The method establishes a Gaussian distribution with a mean of the estimated middle of the volcanic event and a standard deviation of what corresponds to two months.}
@@ -477,19 +498,30 @@ As the actual isotopic signal is continuous and that the discretization is intro
 %	\label{fig:SiteA_LandT_Gauss_2mnth_DCT}
 %\end{figure}
 
-\begin{figure}[h]
+\begin{figure}[!htb]
 	\centering
-	\includegraphics[width=0.95\textwidth]{SiteA_Vary_LandT_2mnth_NDCT.png}
+	\includegraphics[width=0.95\textwidth]{SiteA_Vary_LandT_2mnth_NDCT.pdf}
 	\caption[2 Month Variation of Event Locations, Site A]{\small 500 runs with locations of Laki and Tambora events drawn from a Gaussian distribution with a standard deviation of two months. Using NDCT as spectral transform.}
 	\label{fig:SiteA_LandT_Gauss_2mnth_NDCT}
 \end{figure}
 
 
 
-\section[Upgrades][Upgrades]{Possible Algorithms Upgrades}
+\section[Upgrades][Upgrades]{Possible Algorithm Upgrades}
 \label{Sec:Method_Upgrades}
 
-This section will discuss ideas on how to improve on both the method and the algorithm
+\begin{itemize}
+	\item Better peak detection, through intelligent pattern recognition.
+	\item Taking summer-FALL-winter-SPRING into account.
+	\item More detailed constrained optimization. If length changes, chane expected number of peaks, so on.
+	\item Examine the frequency filter a bit more - is it allowing too much noise? Maybe also make variable.
+	\item More data! Or, higher sampling resolution.
+	\item Examine what happens with the quantized results. Maybe create a better optimization routine with more randomization.
+	\item Why do we look for the maximal $\sigma$ to fulfill constraints? Maybe interesting to see how wide a range of $\sigma$ that fulfills constraints! This could give a temperature range instead of just one temperature.
+	\item Implement $\sigma(z)$ and figure out how to relate this to temperature. 
+	\item Figure out a way to make faster algorithm when deconvoluting with $\sigma(z)$.
+	\item When calculating $\sigma_{firn}$, it might be better to use the $\sigma(z)$, if the samples are nonuniform, as the diffusion length estimate then could be made individually based on both sample size and diff len
+\end{itemize}
 
 \subsection[Peak Detection]{Peak Detection}
 \label{Subsec:Method_Upgrades_PeakDet}

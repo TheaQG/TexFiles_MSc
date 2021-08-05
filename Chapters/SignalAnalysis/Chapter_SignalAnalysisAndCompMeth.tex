@@ -1,6 +1,6 @@
 %!TeX root = Chapter_SignalAnalysisAndCompMeth
 \documentclass[../../CompleteThesis2/Complete_2ndDraft]{subfiles}
-\graphicspath{{../../Figures/}}
+%\graphicspath{{../../Figures/}}
 \begin{document}
 The presented data obtained through various experimental measurements, electrical conductivity measurements and water isotopic measurements, are easily compared with a time series, as they typically show some quantity measured all along the depth of an ice core. This depth is often, at short intervals, treated as a regular linear time series thus making it possible to use some of the known signal analysis methods. Of course, when considering the entirety of an ice core, the linearity disappears as thinning and compression makes the depth series non linear. But when considering short lengths of core it is possible to estimate a linearity, assuming conformity in this specific layer. 
 
@@ -402,14 +402,14 @@ In Figure \ref{Fig:AllCores_ALT_at_DiffLsecs} different $\lambda_A$ depth profil
 Considering Figure \ref{Fig:AllCores_ALTatLT_vs_lSec} the $\lambda_A$ estimates  of the Laki to Tambora depth sectionsshow low stability at short section lengths and increasing accuracy and precision as the section length increases, until at some point, especially clear in Site E, but also visible in Site G and Site A, the accuracy start to drop as the variance of the $\lambda_{\text{LT}}$ estimate increases.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.95\textwidth]{AllCores_ALT_at_DiffLsecs.png}
+	\includegraphics[width=\textwidth]{AllCores_ALT_at_DiffLsecs.png}
 	\caption[$\lambda$ Depth Profiles, Different $l_{\text{sec}}$]{\small Examples of the $\lambda$ depth profile given different section lengths. All profiles are computed with a shift of 1 m.}
 	\label{fig:AllCores_ALT_at_DiffLsecs}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.95\textwidth]{AllCores_ALTatLT_vs_lSec.png}
+	\includegraphics[width=\textwidth]{AllCores_ALTatLT_vs_lSec.png}
 	\caption[$\lambda_{\text{LT}}$ vs. Section Length]{\small The annual layer thickness estimates in the section between Laki and Tambora as computed with different section lengths, $l_{\text{sec}}$, used in the spectral analysis. The section is shifted 1 m and then computed again. The $\lambda_{\text{LT}}$ is then calculated as a mean of th $\lambda$ estimates falling into the Laki to Tambora depth section.}
 	\label{fig:AllCores_ALTatLT_vs_lSec}
 \end{figure}
@@ -426,7 +426,7 @@ For this project though, a rough estimate of the $\lambda_{\text{LT}}$ at a give
 Interestingly, though, is that especially for Site E and Site G, there are some depths where the $\lambda_A$ estimates seem to be increasing instead of decreasing. Luckily for this work, these depth are not of interest, and the specific depth between the Laki and Tambora events seem to be stable at almost any shift length. Only site E presents some troubles where $\lambda_A$ has presented itself difficult to estimate exactly at the Laki to Tambora depth. For this specific core it could therefore be necessary to decrease the shift length to be able to get more estimates in the Laki to Tambora area.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.95\textwidth]{AllCores_ALT_at_DiffShifts.png}
+	\includegraphics[width=\textwidth]{AllCores_ALT_at_DiffShifts.png}
 	\caption[$\lambda$ Depth Profiles, Different $s_{\text{sec}}$]{\small Examples of $\lambda$ depth profiles given different shift lengths. All profiles are computed with a section length for spectral analysis of $l_{\text{sec}}=5$ m.}
 	\label{fig:AllCores_ALT_at_DiffShifts}
 \end{figure}
@@ -435,7 +435,7 @@ In Figure \ref{Fig:AllCores_ALTvsShift} the $\lambda_{\text{LT}}$ versus shift l
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.95\textwidth]{AllCores_ALTvsShift.png}
+	\includegraphics[width=0.85\textwidth]{AllCoresInOne_ALTvsShift.png}
 	\caption[$\lambda_{\text{LT}}0$ vs. $s_{\text{sec}}$]{\small Annual layer thickness estimate at the depth section between Laki and Tambora, $\lambda_{\text{LT}}$ versus different shifts of the sections used in the spectral analysis.}
 	\label{fig:AllCores_ALTvsShift}
 \end{figure}

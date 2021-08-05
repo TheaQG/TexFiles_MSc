@@ -9,12 +9,12 @@
 \contentsline {todo}{Make references to where values in table are from}{26}%
 \contentsline {todo}{DATA-ALPHABET-SPECS: Put rest of specifications in appendix.}{26}%
 \contentsline {todo}{References here.}{46}%
-\contentsline {todo}{COMPMETH-PEAKDET: Write about better peak detection with cubic spline interpolation (enhanced resolution)}{48}%
-\contentsline {todo}{SIGNAL-INTERP: REFERENCE!!}{49}%
-\contentsline {todo}{RES-DATAEST: Write entire section.}{72}%
-\contentsline {todo}{RES-DATAESTSTST: Write entire section.}{72}%
-\contentsline {todo}{RES-DATAESTACCUM: Write entire section.}{73}%
-\contentsline {todo}{RES-DATAESTCFM: Write entire section.}{73}%
+\contentsline {todo}{COMPMETH-PEAKDET: Write about better peak detection with cubic spline interpolation (enhanced resolution)}{47}%
+\contentsline {todo}{SIGNAL-INTERP: REFERENCE!!}{48}%
+\contentsline {todo}{RES-DATAEST: Write entire section.}{74}%
+\contentsline {todo}{RES-DATAESTSTST: Write entire section.}{75}%
+\contentsline {todo}{RES-DATAESTACCUM: Write entire section.}{75}%
+\contentsline {todo}{RES-DATAESTCFM: Write entire section.}{75}%
 \contentsline {todo}{CONC: Write a better conclusion. Please..}{77}%
 \contentsline {todo}{Make specifications for cores.}{84}%
 \contentsline {todo}{SIGNAL-MEM: Write this entire section - maybe not necessary? Maybe use in reconstruction of missing data...}{96}%

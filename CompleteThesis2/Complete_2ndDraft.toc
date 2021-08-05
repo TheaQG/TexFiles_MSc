@@ -46,47 +46,37 @@
 \contentsline {subsection}{\numberline {4.2.2}ALT from Spectral Analysis}{40}%
 \contentsline {subsubsection}{\numberline {4.2.2.1}Change in $l_{sec}$}{41}%
 \contentsline {subsubsection}{\numberline {4.2.2.2}Change in $l_{shift}$}{43}%
-\contentsline {section}{\numberline {4.3}Peak Detection}{45}%
-\contentsline {subsection}{\numberline {4.3.1}Constrained Peak Detection}{48}%
-\contentsline {section}{\numberline {4.4}Splines and Interpolation}{49}%
-\contentsline {subsection}{\numberline {4.4.1}Interpolation}{50}%
-\contentsline {subsection}{\numberline {4.4.2}Interpolation in this Project}{51}%
-\contentsline {subsubsection}{\numberline {4.4.2.1}Interpolation 1}{52}%
-\contentsline {subsubsection}{\numberline {4.4.2.2}Interpolation 2}{53}%
-\contentsline {chapter}{\chapternumberline {5}Method}{59}%
-\contentsline {section}{\numberline {5.1}$\sigma $ Estimation Method}{59}%
-\contentsline {subsection}{\numberline {5.1.1}Corrections on $\sigma $}{60}%
-\contentsline {subsubsection}{\numberline {5.1.1.1}Ice Diffusion, $\sigma _{\text {ice}}$}{60}%
-\contentsline {subsubsection}{\numberline {5.1.1.2}Sampling Diffusion, $\sigma _{\text {dis}}$}{60}%
-\contentsline {subsubsection}{\numberline {5.1.1.3}Thinning Function $S(z)$}{60}%
-\contentsline {subsection}{\numberline {5.1.2}Constraints}{60}%
-\contentsline {section}{\numberline {5.2}Testing and Stability}{61}%
-\contentsline {subsection}{\numberline {5.2.1}Constraints or No Constraints}{61}%
-\contentsline {subsection}{\numberline {5.2.2}Spectral Transforms}{61}%
-\contentsline {subsubsection}{\numberline {5.2.2.1}Visual Inspection}{61}%
-\contentsline {subsubsection}{\numberline {5.2.2.2}Speed Examination}{61}%
-\contentsline {subsection}{\numberline {5.2.3}LT locations}{61}%
-\contentsline {subsubsection}{\numberline {5.2.3.1}Vary L and T}{61}%
-\contentsline {subsubsection}{\numberline {5.2.3.2}Vary T}{61}%
-\contentsline {subsubsection}{\numberline {5.2.3.3}Vary L}{61}%
-\contentsline {subsubsection}{\numberline {5.2.3.4}2 Month Variability}{61}%
-\contentsline {section}{\numberline {5.3}Upgrades}{61}%
-\contentsline {subsection}{\numberline {5.3.1}Peak Detection}{61}%
-\contentsline {subsection}{\numberline {5.3.2}Optimization Routine}{61}%
+\contentsline {section}{\numberline {4.3}Peak Detection}{46}%
+\contentsline {section}{\numberline {4.4}Splines and Interpolation}{47}%
+\contentsline {subsection}{\numberline {4.4.1}Interpolation}{48}%
+\contentsline {subsection}{\numberline {4.4.2}Interpolation in this Project}{49}%
+\contentsline {chapter}{\chapternumberline {5}Method and Discussion}{51}%
+\contentsline {section}{\numberline {5.1}$\sigma $ Estimation Method}{51}%
+\contentsline {subsection}{\numberline {5.1.1}Module 1: Initialization and Back Diffusion}{52}%
+\contentsline {subsection}{\numberline {5.1.2}Module 2}{54}%
+\contentsline {subsection}{\numberline {5.1.3}Constrained Peak Detection}{56}%
+\contentsline {section}{\numberline {5.2}Testing and Stability}{57}%
+\contentsline {subsection}{\numberline {5.2.1}Constraints or No Constraints}{59}%
+\contentsline {subsection}{\numberline {5.2.2}Effects of Interpolations}{59}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}Interpolation 1}{60}%
+\contentsline {subsubsection}{\numberline {5.2.2.2}Interpolation 2}{61}%
+\contentsline {subsection}{\numberline {5.2.3}Spectral Transforms}{64}%
+\contentsline {subsection}{\numberline {5.2.4}LT locations}{65}%
+\contentsline {section}{\numberline {5.3}Upgrades}{67}%
+\contentsline {subsection}{\numberline {5.3.1}Peak Detection}{69}%
+\contentsline {subsection}{\numberline {5.3.2}Optimization Routine}{69}%
 \contentsline {chapter}{\chapternumberline {6}Results}{71}%
 \contentsline {section}{\numberline {6.1}Annual Layer Thickness}{71}%
-\contentsline {section}{\numberline {6.2}Diffusion Lengths}{72}%
-\contentsline {subsection}{\numberline {6.2.1}AWI B-cores}{72}%
-\contentsline {subsection}{\numberline {6.2.2}Alphabet Cores}{72}%
-\contentsline {subsubsection}{\numberline {6.2.2.1}Diffusion Length V N Peaks}{72}%
-\contentsline {subsubsection}{\numberline {6.2.2.2}$\sigma $ v. Spectral Transforms}{72}%
-\contentsline {subsubsection}{\numberline {6.2.2.3}$\sigma $ Constant or Variable}{72}%
-\contentsline {subsubsection}{\numberline {6.2.2.4}$\sigma $ Constraints or No constraints}{72}%
-\contentsline {subsubsection}{\numberline {6.2.2.5}Final $\sigma $ Estimates}{72}%
-\contentsline {section}{\numberline {6.3}Temperature Estimates from Data}{72}%
-\contentsline {subsection}{\numberline {6.3.1}Steady State Solution}{72}%
-\contentsline {subsubsection}{\numberline {6.3.1.1}Accumulation Distributions}{73}%
-\contentsline {subsection}{\numberline {6.3.2}Iso-CFM Possibilities}{73}%
+\contentsline {section}{\numberline {6.2}Diffusion Lengths}{71}%
+\contentsline {subsection}{\numberline {6.2.1}$\sigma $ Constraints or No constraints}{72}%
+\contentsline {subsection}{\numberline {6.2.2}Diffusion Length V N Peaks}{72}%
+\contentsline {subsection}{\numberline {6.2.3}$\sigma $ v. Spectral Transforms}{73}%
+\contentsline {subsection}{\numberline {6.2.4}$\sigma $ Constant or Variable}{74}%
+\contentsline {subsection}{\numberline {6.2.5}Final $\sigma $ Estimates}{74}%
+\contentsline {section}{\numberline {6.3}Temperature Estimates from Data}{74}%
+\contentsline {subsection}{\numberline {6.3.1}Steady State Solution}{75}%
+\contentsline {subsubsection}{\numberline {6.3.1.1}Accumulation Distributions}{75}%
+\contentsline {subsection}{\numberline {6.3.2}Iso-CFM Possibilities}{75}%
 \contentsline {chapter}{\chapternumberline {7}Conclusion}{77}%
 \contentsline {chapter}{Bibliography}{79}%
 \contentsline {chapter}{APPENDICES}{81}%
