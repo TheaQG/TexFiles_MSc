@@ -4,7 +4,7 @@
 \begin{document}
 The presented data obtained through various experimental measurements, electrical conductivity measurements and water isotopic measurements, are easily compared with a time series, as they typically show some quantity measured all along the depth of an ice core. This depth is often, at short intervals, treated as a regular linear time series thus making it possible to use some of the known signal analysis methods. Of course, when considering the entirety of an ice core, the linearity disappears as thinning and compression makes the depth series non linear. But when considering short lengths of core it is possible to estimate a linearity, assuming conformity in this specific layer. 
 
-This section will contain a detailed presentation of the signal analysis and computational methods used to obtain the restored and enhanced signal that is sought after. In Figure \ref{Fig:COMPMETH_Flowchart} the general back diffusion method for signal restoration and enhancement is presented, with the specific modules described in this section highlighted in bold text and with an emerald colour.
+This section will contain a detailed presentation of the signal analysis and computational methods used to obtain the restored and enhanced signal that is sought after. In Figure \ref{Fig:COMPMETH_Flowchart} the general back diffusion method for signal restoration and enhancement is presented, with the specific modules described in this section highlighted in bold text and with an YellowGreen colour.
 
 The method presented in Figure \ref{Fig:COMPMETH_Flowchart} is a subpart of the final algorithm that will be presented in the subsequent chapters. Figure \ref{Fig:COMPMETH_Flowchart} describes the flow of back diffusing a measured depth series given a empirically modelled $\sigma$. Thus it describes a single process, which is implemented in the optimization algorithm later on, where the diffusion length is the unknown parameter that is being optimized.
 
@@ -17,8 +17,8 @@ In this chapter spectral analysis and frequency filtering are presented as the m
 		\node(in1) [io, left of=start, xshift=-3cm, text width=4cm, align=center] {Measured depth series, $d$};
 		\node(empty1) [below of=in1, yshift=0.12cm] {};
 		\node(empty2) [below of=in1, xshift=-0.15cm] {};
-		\node(in1pro1) [draw, fill=Emerald, minimum height=1cm, below of=in1, yshift=-0.5cm] {\textbf{Spline interpolation}};
-		\node(in1pro2) [draw, fill=Emerald, minimum height=1cm, below of=in1, yshift=-2cm] {\textbf{Spectral analysis of }$\tilde{d}$};
+		\node(in1pro1) [draw, fill=YellowGreen, minimum height=1cm, below of=in1, yshift=-0.5cm] {\textbf{Spline interpolation}};
+		\node(in1pro2) [draw, fill=YellowGreen, minimum height=1cm, below of=in1, yshift=-2cm] {\textbf{Spectral analysis of }$\tilde{d}$};
 		
 		\node(in1pro3) [process, below of=in1pro2, text width=4cm, align=center] {Construct Wiener filter, $\tilde{F}$};
 		
@@ -44,20 +44,20 @@ In this chapter spectral analysis and frequency filtering are presented as the m
 		\draw[arrow] (in2pro3) -- (in2pro4);
 		
 		%----------------------------------------------------%
-		\node(pro0) [draw, fill=Emerald, minimum height=1cm, below of=start, yshift=-6.5cm, text width=4.8cm, align=center] {\textbf{Frequency Filters},   $\tilde{F}\cdot\tilde{\mathcal{G}}^{-1}$};
-		\node(pro1) [draw, fill=Emerald, minimum height=1cm, below of=pro0,align=center, text width=4cm] {\textbf{Deconvolution}, $\mathcal{F}\left[\tilde{d}\cdot\tilde{F}\cdot\tilde{\mathcal{G}}^{-1}\right]$};
+		\node(pro0) [draw, fill=YellowGreen, minimum height=1cm, below of=start, yshift=-6.5cm, text width=4.8cm, align=center] {\textbf{Frequency Filters},   $\tilde{F}\cdot\tilde{\mathcal{G}}^{-1}$};
+		\node(pro1) [draw, fill=YellowGreen, minimum height=1cm, below of=pro0,align=center, text width=4cm] {\textbf{Deconvolution}, $\mathcal{F}\left[\tilde{d}\cdot\tilde{F}\cdot\tilde{\mathcal{G}}^{-1}\right]$};
 		\node(stop) [startstop, below of=pro1] {STOP};
 		\node(out1) [io, right of=stop, align=center, xshift=2.2cm, text width=2.5cm] {\footnotesize{Back diffused depth series, $D$}};
-		\node(out2) [io, below of=out1, align=center] {\footnotesize{$\sigma_{\text{out}}$}};
+		%\node(out2) [io, below of=out1, align=center] {\footnotesize{$\sigma_{\text{out}}$}};
 		
-		\node(pro2) [draw, fill=Emerald, minimum height=1cm, right of=out1, xshift=2cm, scale=0.9, text width=3cm, align=center] {\textbf{Spline \\interpolation}};
-		\node(goal1) [draw, fill=Emerald, minimum height=1cm, below of=pro2, align=center] {\textbf{Peak detection}};
+		\node(pro2) [draw, fill=YellowGreen, minimum height=1cm, right of=out1, xshift=2cm, scale=0.9, text width=3cm, align=center] {\textbf{Spline \\interpolation}};
+		\node(goal1) [draw, fill=YellowGreen, minimum height=1cm, below of=pro2, align=center] {\textbf{Peak detection}};
 		\draw[arrow] (in1pro3) |- (pro0);
 		\draw[arrow] (in2pro4) |- (pro0);
 		\draw[arrow] (pro0) -- (pro1);
 		\draw[arrow] (pro1) -- (stop);
 		\draw[arrow] (stop) -- (out1);
-		\draw[arrow] (stop) |- (out2);
+		%\draw[arrow] (stop) |- (out2);
 		\draw[arrow] (out1) -- (pro2);
 		\draw[arrow] (pro2) -- (goal1);
 	\end{tikzpicture}
@@ -194,14 +194,14 @@ For the data of this thesis a spectral method, determining the effect of mixing 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth]{SpectralTransforms_3.png}
+	\includegraphics[width=\textwidth]{SpectralTransforms_3.pdf}
 	\caption[FFT, DCT, NDCT, Site A]{\small Examples of three different spectral transforms, FFT, DCT, NDCT, performed on the depth series between Tambora and Laki eruptions from Site A.}
 	\label{fig:SpectralTransforms_3}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth]{SpectralTransforms_PSD.png}
+	\includegraphics[width=\textwidth]{SpectralTransforms_PSD.pdf}
 	\caption[FFT, DCT, NDCT PSDs, Site A]{\small Examples of power spectral densities related to the three different spectral transforms, FFT, DCT, NDCT, seen in Figure \ref{fig:SpectralTransforms_3}.}
 	\label{fig:SpectralTransforms_PSD}
 \end{figure}
@@ -292,7 +292,7 @@ It is then possible to estimate the parameters $P_0$, $\sigma_{\text{tot}}^2$, $
 
 \begin{figure}
 	\centering
-	\includegraphics[width=\textwidth]{SpectralTransforms_PSDwFits.png}
+	\includegraphics[width=\textwidth]{SpectralTransforms_PSDwFits.pdf}
 	\caption[FFT, DCT, NDCT PSDs with Fit, Site A]{\small Noise, signal and total fit to PSD, illustrating the construction of the Wiener Filter, see Sec. \ref{Sec:SignalAnalysis_Restoration}.}
 	\label{fig:SpectralTransforms_PSDwFits}
 \end{figure}
@@ -304,14 +304,14 @@ An example of the constructed Wiener filter can be seen in Figure \ref{fig:SiteA
 	\centering
 	\begin{subfigure}{\marginparwidth}
 		\centering
-		\includegraphics[width=\textwidth]{SiteA_WienerFilter.jpg}
+		\includegraphics[width=\textwidth]{SiteA_WienerFilter.pdf}
 		\caption{\footnotesize}
 		\label{fig:SiteA_WienerFilter}
 	\end{subfigure}\\[1ex]
 	
 	\begin{subfigure}{\marginparwidth}
 		\centering
-		\includegraphics[width=\textwidth]{SiteA_WienerFilter_loglog.jpg}
+		\includegraphics[width=\textwidth]{SiteA_WienerFilter_loglog.pdf}
 		\caption{\footnotesize}
 		\label{fig:SiteA_WienerFilter_loglog}
 	\end{subfigure}
@@ -368,7 +368,7 @@ From the spectral analysis, an estimate on the annual layer thickness can be giv
 
 \begin{marginfigure}
 	\centering
-	\includegraphics[width=\marginparwidth]{ALTestimate_example.png}
+	\includegraphics[width=\marginparwidth]{SiteBALTestimate_example.pdf}
 	\caption[$\lambda$ estimation example, Site B, in frequency domain.]{\footnotesize Example of annual layer thickness estimation for section of 5 meters at depth [0;5] m, Site B.}
 	\label{Fig:SiteB_0-5m_ALTestimate_example}
 \end{marginfigure}
@@ -385,7 +385,7 @@ Figure \ref{Fig:AllCores_ALT_l5_s4} shows the $\lambda_A$ estimates of the entir
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.95\textwidth]{AllCores_ALTs.png}
+	\includegraphics[width=0.95\textwidth]{AllCores_ALTs.pdf}
 	\caption[$\lambda$ for Full Cores]{\small Annual layer thickness estimates, $\lambda$, calculated through spectral integration of 5 m sections of the entire core lengths. The average is based on using both FFT, DCT and NDCT spectral estimations. Blank spaces, akin to the sections below 60 m depth at Site E shows problematic areas, where the spectral estimation have had trouble with determining $\lambda$. The black vertical lines show the depth sections between Laki and Tambora events.}
 	\label{fig:AllCores_ALT_l5_s4}
 \end{figure}
@@ -402,14 +402,14 @@ In Figure \ref{Fig:AllCores_ALT_at_DiffLsecs} different $\lambda_A$ depth profil
 Considering Figure \ref{Fig:AllCores_ALTatLT_vs_lSec} the $\lambda_A$ estimates  of the Laki to Tambora depth sectionsshow low stability at short section lengths and increasing accuracy and precision as the section length increases, until at some point, especially clear in Site E, but also visible in Site G and Site A, the accuracy start to drop as the variance of the $\lambda_{\text{LT}}$ estimate increases.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth]{AllCores_ALT_at_DiffLsecs.png}
+	\includegraphics[width=\textwidth]{AllCores_ALT_at_DiffLsecs.pdf}
 	\caption[$\lambda$ Depth Profiles, Different $l_{\text{sec}}$]{\small Examples of the $\lambda$ depth profile given different section lengths. All profiles are computed with a shift of 1 m.}
 	\label{fig:AllCores_ALT_at_DiffLsecs}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth]{AllCores_ALTatLT_vs_lSec.png}
+	\includegraphics[width=\textwidth]{AllCores_ALTatLT_vs_lSec.pdf}
 	\caption[$\lambda_{\text{LT}}$ vs. Section Length]{\small The annual layer thickness estimates in the section between Laki and Tambora as computed with different section lengths, $l_{\text{sec}}$, used in the spectral analysis. The section is shifted 1 m and then computed again. The $\lambda_{\text{LT}}$ is then calculated as a mean of th $\lambda$ estimates falling into the Laki to Tambora depth section.}
 	\label{fig:AllCores_ALTatLT_vs_lSec}
 \end{figure}
@@ -426,7 +426,7 @@ For this project though, a rough estimate of the $\lambda_{\text{LT}}$ at a give
 Interestingly, though, is that especially for Site E and Site G, there are some depths where the $\lambda_A$ estimates seem to be increasing instead of decreasing. Luckily for this work, these depth are not of interest, and the specific depth between the Laki and Tambora events seem to be stable at almost any shift length. Only site E presents some troubles where $\lambda_A$ has presented itself difficult to estimate exactly at the Laki to Tambora depth. For this specific core it could therefore be necessary to decrease the shift length to be able to get more estimates in the Laki to Tambora area.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth]{AllCores_ALT_at_DiffShifts.png}
+	\includegraphics[width=\textwidth]{AllCores_ALT_at_DiffShifts.pdf}
 	\caption[$\lambda$ Depth Profiles, Different $s_{\text{sec}}$]{\small Examples of $\lambda$ depth profiles given different shift lengths. All profiles are computed with a section length for spectral analysis of $l_{\text{sec}}=5$ m.}
 	\label{fig:AllCores_ALT_at_DiffShifts}
 \end{figure}
@@ -435,7 +435,7 @@ In Figure \ref{Fig:AllCores_ALTvsShift} the $\lambda_{\text{LT}}$ versus shift l
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.85\textwidth]{AllCoresInOne_ALTvsShift.png}
+	\includegraphics[width=0.85\textwidth]{AllCoresInOne_ALTvsShift.pdf}
 	\caption[$\lambda_{\text{LT}}0$ vs. $s_{\text{sec}}$]{\small Annual layer thickness estimate at the depth section between Laki and Tambora, $\lambda_{\text{LT}}$ versus different shifts of the sections used in the spectral analysis.}
 	\label{fig:AllCores_ALTvsShift}
 \end{figure}
@@ -449,17 +449,14 @@ In Figure \ref{Fig:AllCores_ALTvsShift} the $\lambda_{\text{LT}}$ versus shift l
 Knowing that water isotopic data are a proxy for temperature, the most obvious way to determine annual layers in the signals is by detecting peaks and troughs. During colder periods, e.g. winter, the air masses arriving at the ice core sites have formed more precipitation before reaching the sites, and the vapor that results in this final precipitation is then more depleted of heavy isotopes, resulting in lower isotopic values, troughs in Figure \ref{Fig:ICE_Crete_10m_dated}. The precipitation falling during warmer conditions, e.g. summer, is correspondingly less depleted of the heavy isotopes, and results in higher isotopic values, peaks in Figure \ref{Fig:COMPMETH_Crete_10m_PeaksTroughs}.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth]{Crete_10m_PeaksTroughs.png}
+	\includegraphics[width=\textwidth]{Crete_10m_PeaksTroughs.pdf}
 	\caption[10 m of Crête core with peaks and troughs.]{\small Ten meters of the top of Cretê ice core, with identification and dating of 19 annual layers, with peaks(blue) corresponding to summers and troughs(orange) corresponding to winters.}
 	\label{Fig:COMPMETH_Crete_10m_PeaksTroughs}
 \end{figure}
 
-Peak detection and layer counting has previously been carried out by visual inspection of the ice core depth signals, but as computers and algorithms have become more integrated in data analysis, it is now more common to use different computational methods. Developing and implementing layer counting and peak detection algorithms can be done in a number of different ways, but for this project, at first a very simple method has been initially implemented and later the method has been improved and optimized through a number of different constraints. One could also use different pattern recognition techniques[REFERENCE]\todo{References here.} to achieve more intelligent detection, and later some of these methods will be presented.
+Peak detection and layer counting has previously been carried out by visual inspection of the ice core depth signals, but as computers and algorithms have become more integrated in data analysis, it is now more common to use different computational methods. Developing and implementing layer counting and peak detection algorithms can be done in a number of different ways, but for this project, at first a very simple method has been initially implemented and later the method has been improved and optimized through a number of different constraints. One could also use different pattern recognition techniques[REFERENCE] to achieve more intelligent detection, and later some of these methods will be presented.
 
 The most naïve approach, and the one first implemented in this project, to peak detection is to simply find local maxima by comparing neighbouring values. When examining point $d_i$, the point is deemed a local maxima, if $d_{i\pm1} < d_i$. Local minima, troughs, can be found in exactly the same manner by finding minima as $d_{i\pm1} > d_i$. A very simple constraint for this method is to keep a required minimal distance between peaks, so that two peaks cannot be detected within a point distance of $\Delta d_{\text{min}}$. For example at a depth of 12 m in Figure \ref{Fig:COMPMETH_Crete_10m_PeaksTroughs} two troughs can be seen, but only one is chosen, as they are within the threshold distance to each other, which here is set to $\Delta d_{\text{min}} = 7$ points. Here, the lowest of the two troughs is chosen. The threshold distance can be chosen in different ways, for this short section it has been chosen through visual inspection, but more generally it can be chosen by examining some of the intrinsic properties of the signal like the estimated $\lambda_A$, as explained in Section \ref{Subsubsec:SignalAnalysis_SpectralAnalysis_ALT}.
-
-\todo{COMPMETH-PEAKDET: Write about better peak detection with cubic spline interpolation (enhanced resolution)}
-
 
 
 
@@ -469,19 +466,19 @@ For the purpose of this thesis, interpolation of data needs to be fast, efficien
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth]{SiteA_DataSplineInterp.png}
+	\includegraphics[width=\textwidth]{SiteA_DataSplineInterp.pdf}
 	\caption[Even resampling of unevenly sampled data, Site A.]{\small Unevenly sampled signal from Site A resampled using cubic spline interpolation to an even signal with a new sample size equal to the minimum sample size found in the raw signal.}
 	\label{Fig:COMPMETH_SiteA_DataSplineInterp}
 \end{figure}
 
-Cubic spline interpolation has been used in two instances during this analysis, both times through the \lstinline[language=Python]|Python SciPy| package \lstinline[language=Python]|scipy.interpolate.CubicSpline|\todo{SIGNAL-INTERP: REFERENCE!!}. Firstly, to assure equally spaced data points, so as to be able to perform a useful frequency analysis through spectral transformation, see Section, \ref{sec:???}. Secondly cubic spline interpolation was used to improve on peak detection in the final back diffused data. The final data have a rather low resolution, leading to an initial guess of peak positioning that might be shifted due to the discretization. Through cubic spline interpolation it is possible to construct a smooth estimate of a signal of higher resolution, leading to a peak positioning estimate that might be less shifted, see Figure \ref{fig:InterpFinal}.
+Cubic spline interpolation has been used in two instances during this analysis, both times through the \lstinline[language=Python]|Python SciPy| package \lstinline[language=Python]|scipy.interpolate.CubicSpline|. Firstly, to assure equally spaced data points, so as to be able to perform a useful frequency analysis through spectral transformation, see Section, \ref{sec:???}. Secondly cubic spline interpolation was used to improve on peak detection in the final back diffused data. The final data have a rather low resolution, leading to an initial guess of peak positioning that might be shifted due to the discretization. Through cubic spline interpolation it is possible to construct a smooth estimate of a signal of higher resolution, leading to a peak positioning estimate that might be less shifted, see Figure \ref{fig:InterpFinal}.
 
 
 \subsection[Interpolation][Interpolation]{Interpolation}
 \label{Subsec:CompMeths_SplinesAndInterpolation_Interpolation}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth]{SiteA_MultiSplineInterp.png}
+	\includegraphics[width=\textwidth]{SiteA_MultiSplineInterp.pdf}
 	\caption[Different resamplings of Site A.]{\small Four different resampled signals of Site A data, showing loss of information when resampling resolution is low.}
 	\label{Fig:COMPMETH_SiteA_MultiSplineInterp}
 \end{figure}

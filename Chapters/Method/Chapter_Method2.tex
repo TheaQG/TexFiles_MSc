@@ -71,7 +71,7 @@ The first module of the algorithm, containing initialization and describing the 
 		\node(pro1) [process, below of=pro0, yshift=-0.4cm, ,align=center, text width=4cm, align=center] {\textbf{Deconvolution} $\mathcal{F}\left[\tilde{d}\cdot\tilde{F}\cdot\tilde{\mathcal{G}}^{-1}\right]$ \\(Uniform resampling)};
 		\node(stop) [startstop, below of=pro1, yshift=-0.4cm] {\textbf{STOP}};
 		\node(out1) [io, right of=stop, align=center, xshift=2.2cm, text width=2.5cm] {\footnotesize{Back diffused depth series, $D$}};
-		\node(out2) [io, below of=out1, align=center] {\footnotesize{$\sigma_{\text{out}}$}};
+		%\node(out2) [io, below of=out1, align=center] {\footnotesize{$\sigma_{\text{out}}$}};
 		\draw[arrow] (in1pro3) |- (pro0);
 		%		\draw[arrow] (decSigma1) |- (pro0);
 		%		\draw[arrow] (decSigma2) |- (pro0);
@@ -80,7 +80,7 @@ The first module of the algorithm, containing initialization and describing the 
 		\draw[arrow] (pro0) -- (pro1);
 		\draw[arrow] (pro1) -- (stop);
 		\draw[arrow] (stop) -- (out1);
-		\draw[arrow] (stop) |- (out2);
+		%\draw[arrow] (stop) |- (out2);
 		
 		%		\draw[arrow] (in2pro3) -| (pro0);
 		
@@ -376,7 +376,7 @@ Figure \ref{Fig:COMPMETH_SamplingVsDiffLen_interpBF} shows that if the sampling 
 }[0.5cm]%
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=\textwidth]{AllCores_DiffLenVdelta_InterpBF_const.png}
+	\includegraphics[width=\textwidth]{AllCores_DiffLenVdelta_InterpBF_const.pdf}
 	\caption[Diffusion length versus resampling size before deconvolution, all cores.]{\small Diffusion length estimates versus resamples through cubic spline interpolation before deconvolution for Alphabet cores from sites A, B, D, E and G.}
 	\label{Fig:COMPMETH_SamplingVsDiffLen_interpBF}
 \end{figure}
@@ -387,8 +387,8 @@ Figure \ref{Fig:COMPMETH_SamplingVsDiffLen_interpBF} shows that if the sampling 
 \label{Subsubsec:METH_Interpolation_AFdecon}
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=\textwidth]{SiteA_InterpAF_SpecificResampling_BD.png}
-	\caption[Back diffused data, Site A, different resamplings after deconvolution.]{\small Site A, effect of cubic spline interpolation after signal has been deconvoluted. The interpolation is introduced to make peak detection more stable.}
+	\includegraphics[width=\textwidth]{SiteA_InterpAF_SpecificResampling_BD.pdf}
+	\caption[Back diffused dat	a, Site A, different resamplings after deconvolution.]{\small Site A, effect of cubic spline interpolation after signal has been deconvoluted. The interpolation is introduced to make peak detection more stable.}
 	\label{Fig:COMPMETH_SiteA_InterpAF_4samplings}
 \end{figure}
 
@@ -400,7 +400,7 @@ As the actual isotopic signal is continuous and that the discretization is intro
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=\textwidth]{AllCores_InterpAF_deltaVSdiffLen_BD.png}
+	\includegraphics[width=\textwidth]{AllCores_InterpAF_deltaVSdiffLen_BD.pdf}
 	\caption[Diffusion length versus resampling size after deconvolution, all cores.]{\small Final diffusion length estimate, given new resample by cubic spline interpolation after deconvolution for Alphabet cores from sites A, B, D, E and G.. The original sample size interval is illustrated as black vertical lines.}
 	\label{Fig:COMPMETH_AllCores_SamplingVsDiffLen}\textit{}
 \end{figure}
@@ -423,7 +423,7 @@ There are not grave differences between the three spectral transforms, but some 
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=0.95\textwidth]{SiteA_SpecTrans_Speed.png}
+	\includegraphics[width=0.95\textwidth]{SiteA_SpecTrans_Speed.pdf}
 	\caption[Speed and $\sigma$ Estimates, Spectral Transforms]{\small Diffusion length estimate along with speed of algorithm given the three different spectral transforms examined in this work. The volcanic event depths have been drawn from a Gaussian distribution with a width corresponding to ~1 month around the estimated mean depth of the event.}
 	\label{fig:SiteA_SpecTrans_Speed}
 \end{figure}
@@ -486,7 +486,7 @@ The final method is an investigation of drawing the locations of both Laki and T
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.95\textwidth]{SiteA_LandT_Gauss_2Mnth.png}
+	\includegraphics[width=0.95\textwidth]{SiteA_LandT_Gauss_2Mnth.pdf}
 	\caption[Illustration of 2 Month Standard Deviation Variation of Volcanic Events Locations]{\small Illustration of the method implemented to manage the uncertainty of the exact depth location of the volcanic events. The method establishes a Gaussian distribution with a mean of the estimated middle of the volcanic event and a standard deviation of what corresponds to two months.}
 	\label{fig:SiteA_LandT_Gauss_2Mnth}
 \end{figure}
@@ -509,25 +509,24 @@ The final method is an investigation of drawing the locations of both Laki and T
 
 \section[Upgrades][Upgrades]{Possible Algorithm Upgrades}
 \label{Sec:Method_Upgrades}
+Forwardly, a number of different areas in the method and the algorithm could be upgraded and continuously developed. Some of these further work points will be presented and discussed here.
 
-\begin{itemize}
-	\item Better peak detection, through intelligent pattern recognition.
-	\item Taking summer-FALL-winter-SPRING into account.
-	\item More detailed constrained optimization. If length changes, chane expected number of peaks, so on.
-	\item Examine the frequency filter a bit more - is it allowing too much noise? Maybe also make variable.
-	\item More data! Or, higher sampling resolution.
-	\item Examine what happens with the quantized results. Maybe create a better optimization routine with more randomization.
-	\item Why do we look for the maximal $\sigma$ to fulfill constraints? Maybe interesting to see how wide a range of $\sigma$ that fulfills constraints! This could give a temperature range instead of just one temperature.
-	\item Implement $\sigma(z)$ and figure out how to relate this to temperature. 
-	\item Figure out a way to make faster algorithm when deconvoluting with $\sigma(z)$.
-	\item When calculating $\sigma_{firn}$, it might be better to use the $\sigma(z)$, if the samples are nonuniform, as the diffusion length estimate then could be made individually based on both sample size and diff len
-\end{itemize}
+The peak detection method in the optimization module is, as mentioned, very simply developed. There are ways that this method could be improved, for example by taking the entire yearly pattern of winter(peak)-spring-summer(trough)-fall (PSTF) into account when detecting the pattern. This could possibly be done by investigating the derivative in the signal, and assigning S and F values to the steepest part between a P and a T. There is also a possibility to develop a more sophisticated and maybe intelligent pattern recognition algorithm to detect yearly cycles in the signals, which would improve the cceratinty of detecting the right number of years in the section. By implementing more seasons, it also allows for more precis dating.
 
-\subsection[Peak Detection]{Peak Detection}
-\label{Subsec:Method_Upgrades_PeakDet}
+Considering the optimization routing, some issues have already presented themselves, through the distribution of the final results. These quantizations of the final results might be an effect of the search method, and could maybe be avoided by introducing a factor of randomness into the grid search. Furthermore, when shifting the estimated volcanic event positions to generate uncertainties, the optimization should also take into account if the constraints should be changed. If the locations add or subtract length from the signal, the number of peaks and troughs should also be considered to be raised or lowered. This could be worked in with the more detailed pattern recognition.
 
-\subsection[Optimization Routine]{Optimization Routine}
-\label{Subsec:Method_Upgrades_OptiRout}
+The frequency filter construction could also be investigated further. It might be allowing too much noise, or filtering some cycles away that were actually interesting. The construction could be made variable and work with the optimization module to tune and change as the constraints do. Some of these issues could be dealt with by gaining a higher resolution from the data by increasing the sampling rate in future measurements - interpolation can only get us so far without a large risk of misinterpretation. 
+
+This work has focused on estimating the maximal diffusion length that fulfills the imposed constraints. Another focus point could be on investigating all $\sigma$ that fulfill the constraints. This could give a temperature range estimate instead of just one temperature estimate. Furthermore, the stability of the method at a given section might be investigated through this as well, as a section that only allows for a very limited $\sigma$ range might actually show that the imposed constraints are not valid.
+
+
+Furthermore, the time frame of this work has not allowed for an in depth investigation and implementation of working with a variable diffusion length, $\sigma(z)$, instead of a constant $\sigma_{\text{const}}$. If this was implemented further, it might allow for a further analysis of the variation in temperature in the depth section, instead of only examining the mean temperature of the time frame. Implementing $\sigma(z)$ could also allow for a better estimate of $\sigma_{\text{firn}}$, if the samples are unevenly sampled, as the firn diffusion length estimate then could be made individually point by point based on both sample size and diffusion length estimate at that point.
+
+%\subsection[Peak Detection]{Peak Detection}
+%\label{Subsec:Method_Upgrades_PeakDet}
+%
+%\subsection[Optimization Routine]{Optimization Routine}
+%\label{Subsec:Method_Upgrades_OptiRout}
 
 
 

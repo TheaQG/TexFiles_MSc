@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.30)  5 AUG 2021 15:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.30)  12 AUG 2021 13:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1006,6 +1006,21 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks49
 \@floatcapt=\box72
 )
+(/usr/share/texlive/texmf-dist/tex/latex/marginfix/marginfix.sty
+Package: marginfix 2013/09/08 v1.1 Fix Margin Paragraphs
+\Mfx@inject@insert=\insert248
+\Mfx@marginbox=\box73
+\Mfx@marginpos@min=\dimen333
+\Mfx@marginpos@max=\dimen334
+\Mfx@marginspace=\dimen335
+\Mfx@marginheight=\dimen336
+\Mfx@piece@content=\box74
+\Mfx@piece@count=\count364
+\Mfx@mparshift=\dimen337
+\marginheightadjustment=\dimen338
+\marginposadjustment=\dimen339
+\Mfx@strutheight=\dimen340
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2020/01/08 v3.1.5b (3.1.5b)
@@ -1021,7 +1036,7 @@ File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
 tex
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\arrowsize=\dimen333
+\arrowsize=\dimen341
 )) (/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2020/02/14 v1.6 Multi-file projects (package)
 )))
@@ -1042,20 +1057,20 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
-\AtBeginShipoutBox=\box73
+\AtBeginShipoutBox=\box75
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count364
-\scratchdimen=\dimen334
-\scratchbox=\box74
-\nofMPsegments=\count365
-\nofMParguments=\count366
+\scratchcounter=\count365
+\scratchdimen=\dimen342
+\scratchbox=\box76
+\nofMPsegments=\count366
+\nofMParguments=\count367
 \everyMPshowfont=\toks50
-\MPscratchCnt=\count367
-\MPscratchDim=\dimen335
-\MPnumerator=\count368
-\makeMPintoPDFobject=\count369
+\MPscratchCnt=\count368
+\MPscratchDim=\dimen343
+\MPnumerator=\count369
+\makeMPintoPDFobject=\count370
 \everyMPtoPDFconversion=\toks51
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1070,7 +1085,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count370
+\c@lstlisting=\count371
 
 ABD: EveryShipout initializing macros
 LaTeX Info: Redefining \celsius on input line 4.
@@ -1152,18 +1167,18 @@ Overfull \hbox (79.35733pt too wide) in paragraph at lines 172--173
 LaTeX Warning: Reference `Fig:AllCores_NpeaksVDiffLen' on page 5 undefined on i
 nput line 188.
 
-<../../Figures/AllCores_NpeaksVDiffLen.pdf, id=62, 429.50275pt x 503.52478pt>
+<../../Figures/AllCores_NpeaksVDiffLen.pdf, id=61, 400.37581pt x 544.9158pt>
 File: ../../Figures/AllCores_NpeaksVDiffLen.pdf Graphic file (type pdf)
 <use ../../Figures/AllCores_NpeaksVDiffLen.pdf>
 Package pdftex.def Info: ../../Figures/AllCores_NpeaksVDiffLen.pdf  used on inp
 ut line 192.
-(pdftex.def)             Requested size: 111.0pt x 130.12967pt.
+(pdftex.def)             Requested size: 111.0pt x 151.0704pt.
 [5 <../../Figures/AllCores_NpeaksVDiffLen.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 296.
 
-<../../Figures/SiteA_InterpBF_SpecificResamplings.pdf, id=84, 1050.8058pt x 105
+<../../Figures/SiteA_InterpBF_SpecificResamplings.pdf, id=83, 1050.8058pt x 105
 0.8058pt>
 File: ../../Figures/SiteA_InterpBF_SpecificResamplings.pdf Graphic file (type p
 df)
@@ -1176,7 +1191,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
 [7 <../../Figures/SiteA_InterpBF_SpecificResamplings.pdf>]
-<../../Figures/SiteB_ConstVNoConst.pdf, id=135, 924.18762pt x 364.18907pt>
+<../../Figures/SiteB_ConstVNoConst.pdf, id=134, 924.18762pt x 364.18907pt>
 File: ../../Figures/SiteB_ConstVNoConst.pdf Graphic file (type pdf)
 <use ../../Figures/SiteB_ConstVNoConst.pdf>
 Package pdftex.def Info: ../../Figures/SiteB_ConstVNoConst.pdf  used on input l
@@ -1217,22 +1232,22 @@ Underfull \hbox (badness 2600) in paragraph at lines 376--376
  []
 
 Package marginnote Info: xpos seems to be 147.26999pt on input line 376.
-<../../Figures/AllCores_DiffLenVdelta_InterpBF_const.png, id=162, 1049.9225pt x
- 544.0325pt>
-File: ../../Figures/AllCores_DiffLenVdelta_InterpBF_const.png Graphic file (typ
-e png)
-<use ../../Figures/AllCores_DiffLenVdelta_InterpBF_const.png>
-Package pdftex.def Info: ../../Figures/AllCores_DiffLenVdelta_InterpBF_const.pn
-g  used on input line 379.
-(pdftex.def)             Requested size: 369.0pt x 191.20285pt.
-<../../Figures/SiteA_InterpAF_SpecificResampling_BD.png, id=164, 1049.9225pt x 
-1264.725pt>
-File: ../../Figures/SiteA_InterpAF_SpecificResampling_BD.png Graphic file (type
- png)
-<use ../../Figures/SiteA_InterpAF_SpecificResampling_BD.png>
-Package pdftex.def Info: ../../Figures/SiteA_InterpAF_SpecificResampling_BD.png
+<../../Figures/AllCores_DiffLenVdelta_InterpBF_const.pdf, id=161, 1050.8058pt x
+ 544.9158pt>
+File: ../../Figures/AllCores_DiffLenVdelta_InterpBF_const.pdf Graphic file (typ
+e pdf)
+<use ../../Figures/AllCores_DiffLenVdelta_InterpBF_const.pdf>
+Package pdftex.def Info: ../../Figures/AllCores_DiffLenVdelta_InterpBF_const.pd
+f  used on input line 379.
+(pdftex.def)             Requested size: 369.0pt x 191.3553pt.
+<../../Figures/SiteA_InterpAF_SpecificResampling_BD.pdf, id=162, 1050.8058pt x 
+1050.8058pt>
+File: ../../Figures/SiteA_InterpAF_SpecificResampling_BD.pdf Graphic file (type
+ pdf)
+<use ../../Figures/SiteA_InterpAF_SpecificResampling_BD.pdf>
+Package pdftex.def Info: ../../Figures/SiteA_InterpAF_SpecificResampling_BD.pdf
   used on input line 390.
-(pdftex.def)             Requested size: 369.0pt x 444.49371pt.
+(pdftex.def)             Requested size: 369.0pt x 369.00612pt.
 
 LaTeX Warning: Reference `Fig:COMPMETH_SamlingVsDiffLen' on page 10 undefined o
 n input line 395.
@@ -1240,17 +1255,20 @@ n input line 395.
 [10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11 <../../Figures/AllCores_DiffLenVdelta_InterpBF_const.png>] [12 <../../Figu
-res/SiteA_InterpAF_SpecificResampling_BD.png>]
-<../../Figures/AllCores_InterpAF_deltaVSdiffLen_BD.png, id=180, 1049.9225pt x 6
-93.59125pt>
-File: ../../Figures/AllCores_InterpAF_deltaVSdiffLen_BD.png Graphic file (type 
-png)
-<use ../../Figures/AllCores_InterpAF_deltaVSdiffLen_BD.png>
-Package pdftex.def Info: ../../Figures/AllCores_InterpAF_deltaVSdiffLen_BD.png 
+ [11 <../../Figures/AllCores_DiffLenVdelta_InterpBF_const.pdf>]
+<../../Figures/AllCores_InterpAF_deltaVSdiffLen_BD.pdf, id=199, 1050.8058pt x 6
+93.65385pt>
+File: ../../Figures/AllCores_InterpAF_deltaVSdiffLen_BD.pdf Graphic file (type 
+pdf)
+<use ../../Figures/AllCores_InterpAF_deltaVSdiffLen_BD.pdf>
+Package pdftex.def Info: ../../Figures/AllCores_InterpAF_deltaVSdiffLen_BD.pdf 
  used on input line 403.
-(pdftex.def)             Requested size: 369.0pt x 243.76599pt.
-<../../Figures/SiteA_SpecTrans_VisInspection.pdf, id=181, 748.19662pt x 364.189
+(pdftex.def)             Requested size: 369.0pt x 243.58688pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12 <../../Figures/SiteA_InterpAF_SpecificResampling_BD.pdf>]
+<../../Figures/SiteA_SpecTrans_VisInspection.pdf, id=237, 748.19662pt x 364.189
 07pt>
 File: ../../Figures/SiteA_SpecTrans_VisInspection.pdf Graphic file (type pdf)
 <use ../../Figures/SiteA_SpecTrans_VisInspection.pdf>
@@ -1262,15 +1280,18 @@ on input line 415.
 LaTeX Warning: Reference `label:SiteA_SpecTrans_VisInspection' on page 13 undef
 ined on input line 420.
 
-[13 <../../Figures/AllCores_InterpAF_deltaVSdiffLen_BD.png>]
-<../../Figures/SiteA_SpecTrans_Speed.png, id=188, 790.955pt x 391.4625pt>
-File: ../../Figures/SiteA_SpecTrans_Speed.png Graphic file (type png)
-<use ../../Figures/SiteA_SpecTrans_Speed.png>
-Package pdftex.def Info: ../../Figures/SiteA_SpecTrans_Speed.png  used on input
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13 <../../Figures/AllCores_InterpAF_deltaVSdiffLen_BD.pdf>]
+<../../Figures/SiteA_SpecTrans_Speed.pdf, id=267, 833.82697pt x 400.37581pt>
+File: ../../Figures/SiteA_SpecTrans_Speed.pdf Graphic file (type pdf)
+<use ../../Figures/SiteA_SpecTrans_Speed.pdf>
+Package pdftex.def Info: ../../Figures/SiteA_SpecTrans_Speed.pdf  used on input
  line 426.
-(pdftex.def)             Requested size: 350.54887pt x 173.4984pt.
+(pdftex.def)             Requested size: 350.54887pt x 168.32162pt.
  [14 <../../Figures/SiteA_SpecTrans_VisInspection.pdf>]
-<../../Figures/SiteA_Vary_LandT.pdf, id=212, 815.69537pt x 540.5796pt>
+<../../Figures/SiteA_Vary_LandT.pdf, id=290, 815.69537pt x 540.5796pt>
 File: ../../Figures/SiteA_Vary_LandT.pdf Graphic file (type pdf)
 <use ../../Figures/SiteA_Vary_LandT.pdf>
 Package pdftex.def Info: ../../Figures/SiteA_Vary_LandT.pdf  used on input line
@@ -1285,8 +1306,8 @@ put line 454.
 LaTeX Warning: Reference `Sec:Data_VolcanicHorizons' on page 15 undefined on in
 put line 454.
 
-[15 <../../Figures/SiteA_SpecTrans_Speed.png>]
-<../../Figures/SiteA_Vary_Lonly.pdf, id=218, 817.5173pt x 396.0396pt>
+[15 <../../Figures/SiteA_SpecTrans_Speed.pdf>]
+<../../Figures/SiteA_Vary_Lonly.pdf, id=306, 817.5173pt x 396.0396pt>
 File: ../../Figures/SiteA_Vary_Lonly.pdf Graphic file (type pdf)
 <use ../../Figures/SiteA_Vary_Lonly.pdf>
 Package pdftex.def Info: ../../Figures/SiteA_Vary_Lonly.pdf  used on input line
@@ -1305,7 +1326,7 @@ put line 466.
 LaTeX Warning: Reference `fig:SiteA_LandT_Gauss_2Mnth_NDCT' on page 16 undefine
 d on input line 470.
 
-<../../Figures/SiteA_Vary_Tonly.pdf, id=219, 817.5173pt x 396.0396pt>
+<../../Figures/SiteA_Vary_Tonly.pdf, id=307, 817.5173pt x 396.0396pt>
 File: ../../Figures/SiteA_Vary_Tonly.pdf Graphic file (type pdf)
 <use ../../Figures/SiteA_Vary_Tonly.pdf>
 Package pdftex.def Info: ../../Figures/SiteA_Vary_Tonly.pdf  used on input line
@@ -1322,16 +1343,16 @@ put line 478.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<../../Figures/SiteA_LandT_Gauss_2Mnth.png, id=220, 829.0975pt x 323.2075pt>
-File: ../../Figures/SiteA_LandT_Gauss_2Mnth.png Graphic file (type png)
-<use ../../Figures/SiteA_LandT_Gauss_2Mnth.png>
-Package pdftex.def Info: ../../Figures/SiteA_LandT_Gauss_2Mnth.png  used on inp
+<../../Figures/SiteA_LandT_Gauss_2Mnth.pdf, id=308, 833.9958pt x 328.1058pt>
+File: ../../Figures/SiteA_LandT_Gauss_2Mnth.pdf Graphic file (type pdf)
+<use ../../Figures/SiteA_LandT_Gauss_2Mnth.pdf>
+Package pdftex.def Info: ../../Figures/SiteA_LandT_Gauss_2Mnth.pdf  used on inp
 ut line 489.
-(pdftex.def)             Requested size: 350.54887pt x 136.65366pt.
+(pdftex.def)             Requested size: 350.54887pt x 137.91364pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<../../Figures/SiteA_Vary_LandT_2mnth_NDCT.pdf, id=221, 815.69537pt x 540.5796p
+<../../Figures/SiteA_Vary_LandT_2mnth_NDCT.pdf, id=309, 815.69537pt x 540.5796p
 t>
 File: ../../Figures/SiteA_Vary_LandT_2mnth_NDCT.pdf Graphic file (type pdf)
 <use ../../Figures/SiteA_Vary_LandT_2mnth_NDCT.pdf>
@@ -1341,24 +1362,34 @@ Package pdftex.def Info: ../../Figures/SiteA_Vary_LandT_2mnth_NDCT.pdf  used on
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16 <../../Figures/SiteA_Vary_LandT.pdf>]
-Underfull \vbox (badness 3428) has occurred while \output is active []
-
- [17 <../../Figures/SiteA_Vary_Lonly.pdf> <../../Figures/SiteA_Vary_Tonly.pdf
+ [16 <../../Figures/SiteA_Vary_LandT.pdf>] [17 <../../Figures/SiteA_Vary_Lonly.
+pdf> <../../Figures/SiteA_Vary_Tonly.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/SiteA_Vary_Tonly.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
->] [18 <../../Figures/SiteA_LandT_Gauss_2Mnth.png> <../../Figures/SiteA_Vary_La
-ndT_2mnth_NDCT.pdf>] [19] (./Chapter_Method2.aux)
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18 <../../Figures/SiteA_LandT_Gauss_2Mnth.pdf> <../../Figures/SiteA_Vary_Land
+T_2mnth_NDCT.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/SiteA_Vary_LandT_2mnth_ND
+CT.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+[20] (./Chapter_Method2.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 24243 strings out of 481239
- 458521 string characters out of 5920377
- 718255 words of memory out of 5000000
- 39049 multiletter control sequences out of 15000+600000
+ 24313 strings out of 481239
+ 459761 string characters out of 5920377
+ 717938 words of memory out of 5000000
+ 39116 multiletter control sequences out of 15000+600000
  549354 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,22n,96p,1330b,840s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1383,10 +1414,10 @@ nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10
 .pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/wasy-type1/wasy10.pfb>
-Output written on Chapter_Method2.pdf (19 pages, 1229199 bytes).
+Output written on Chapter_Method2.pdf (20 pages, 797264 bytes).
 PDF statistics:
- 384 PDF objects out of 1000 (max. 8388607)
- 284 compressed objects within 3 object streams
+ 482 PDF objects out of 1000 (max. 8388607)
+ 349 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  174 words of extra memory for PDF output out of 10000 (max. 10000000)
 

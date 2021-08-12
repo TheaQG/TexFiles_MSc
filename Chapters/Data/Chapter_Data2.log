@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.30)  2 AUG 2021 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.30)  12 AUG 2021 11:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -598,6 +598,28 @@ Package color Info: Driver file: pdftex.def on input line 147.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Package option `usenames' ignored on input line 216.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
@@ -671,24 +693,7 @@ File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
 File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-LaTeX Info: Redefining \color on input line 709.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
+))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
 
@@ -1001,6 +1006,21 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks49
 \@floatcapt=\box72
 )
+(/usr/share/texlive/texmf-dist/tex/latex/marginfix/marginfix.sty
+Package: marginfix 2013/09/08 v1.1 Fix Margin Paragraphs
+\Mfx@inject@insert=\insert248
+\Mfx@marginbox=\box73
+\Mfx@marginpos@min=\dimen333
+\Mfx@marginpos@max=\dimen334
+\Mfx@marginspace=\dimen335
+\Mfx@marginheight=\dimen336
+\Mfx@piece@content=\box74
+\Mfx@piece@count=\count364
+\Mfx@mparshift=\dimen337
+\marginheightadjustment=\dimen338
+\marginposadjustment=\dimen339
+\Mfx@strutheight=\dimen340
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2020/01/08 v3.1.5b (3.1.5b)
@@ -1016,7 +1036,7 @@ File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
 tex
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\arrowsize=\dimen333
+\arrowsize=\dimen341
 )) (/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2020/02/14 v1.6 Multi-file projects (package)
 )))
@@ -1037,20 +1057,20 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
-\AtBeginShipoutBox=\box73
+\AtBeginShipoutBox=\box75
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count364
-\scratchdimen=\dimen334
-\scratchbox=\box74
-\nofMPsegments=\count365
-\nofMParguments=\count366
+\scratchcounter=\count365
+\scratchdimen=\dimen342
+\scratchbox=\box76
+\nofMPsegments=\count366
+\nofMParguments=\count367
 \everyMPshowfont=\toks50
-\MPscratchCnt=\count367
-\MPscratchDim=\dimen335
-\MPnumerator=\count368
-\makeMPintoPDFobject=\count369
+\MPscratchCnt=\count368
+\MPscratchDim=\dimen343
+\MPnumerator=\count369
+\makeMPintoPDFobject=\count370
 \everyMPtoPDFconversion=\toks51
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1065,7 +1085,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count370
+\c@lstlisting=\count371
 
 ABD: EveryShipout initializing macros
 LaTeX Info: Redefining \celsius on input line 4.
@@ -1079,24 +1099,24 @@ Package gensymb Info: Using \Omega for \ohm on input line 4.
 
 Package gensymb Warning: Not defining \micro.
 
-<../../Figures/summersWinters_LT.png, id=29, 942.52126pt x 242.9075pt>
-File: ../../Figures/summersWinters_LT.png Graphic file (type png)
-<use ../../Figures/summersWinters_LT.png>
-Package pdftex.def Info: ../../Figures/summersWinters_LT.png  used on input lin
+<../../Figures/summersWinters_LT.pdf, id=29, 942.8087pt x 242.92345pt>
+File: ../../Figures/summersWinters_LT.pdf Graphic file (type pdf)
+<use ../../Figures/summersWinters_LT.pdf>
+Package pdftex.def Info: ../../Figures/summersWinters_LT.pdf  used on input lin
 e 11.
-(pdftex.def)             Requested size: 369.0pt x 95.10048pt.
+(pdftex.def)             Requested size: 369.0pt x 95.07706pt.
 
 LaTeX Warning: Citation `Wei2008' on page 1 undefined on input line 16.
 
 
 LaTeX Warning: Citation `Dai2009' on page 1 undefined on input line 16.
 
-<../../Figures/SiteA_ECMd18O_combo.png, id=31, 722.7pt x 433.62pt>
-File: ../../Figures/SiteA_ECMd18O_combo.png Graphic file (type png)
-<use ../../Figures/SiteA_ECMd18O_combo.png>
-Package pdftex.def Info: ../../Figures/SiteA_ECMd18O_combo.png  used on input l
+<../../Figures/SiteA_ECMd18O_combo.pdf, id=30, 713.11842pt x 418.7529pt>
+File: ../../Figures/SiteA_ECMd18O_combo.pdf Graphic file (type pdf)
+<use ../../Figures/SiteA_ECMd18O_combo.pdf>
+Package pdftex.def Info: ../../Figures/SiteA_ECMd18O_combo.pdf  used on input l
 ine 21.
-(pdftex.def)             Requested size: 295.20113pt x 177.11708pt.
+(pdftex.def)             Requested size: 332.09775pt x 195.01839pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1139,19 +1159,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <../../Figures/summersWinters_LT.png>]
-<../../Figures/TambDepth_corr.png, id=42, 552.0625pt x 765.86125pt>
-File: ../../Figures/TambDepth_corr.png Graphic file (type png)
-<use ../../Figures/TambDepth_corr.png>
-Package pdftex.def Info: ../../Figures/TambDepth_corr.png  used on input line 4
+ <../../Figures/summersWinters_LT.pdf>]
+<../../Figures/TambDepth_corr.pdf, id=49, 588.1975pt x 805.0075pt>
+File: ../../Figures/TambDepth_corr.pdf Graphic file (type pdf)
+<use ../../Figures/TambDepth_corr.pdf>
+Package pdftex.def Info: ../../Figures/TambDepth_corr.pdf  used on input line 4
 0.
-(pdftex.def)             Requested size: 166.04887pt x 230.35614pt.
-<../../Figures/LakiDepth_corr.png, id=43, 544.0325pt x 763.85374pt>
-File: ../../Figures/LakiDepth_corr.png Graphic file (type png)
-<use ../../Figures/LakiDepth_corr.png>
-Package pdftex.def Info: ../../Figures/LakiDepth_corr.png  used on input line 4
+(pdftex.def)             Requested size: 166.04887pt x 227.25536pt.
+<../../Figures/LakiDepth_corr.pdf, id=50, 588.1975pt x 805.0075pt>
+File: ../../Figures/LakiDepth_corr.pdf Graphic file (type pdf)
+<use ../../Figures/LakiDepth_corr.pdf>
+Package pdftex.def Info: ../../Figures/LakiDepth_corr.pdf  used on input line 4
 7.
-(pdftex.def)             Requested size: 166.04887pt x 233.14404pt.
+(pdftex.def)             Requested size: 166.04887pt x 227.25536pt.
 
 
 LaTeX Warning: Citation `ClausenHammer1988' on page 2 undefined on input line 5
@@ -1164,34 +1184,30 @@ LaTeX Warning: Citation `ClausenHammer1988' on page 2 undefined on input line 5
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \vbox (badness 6842) has occurred while \output is active []
-
- [2 <../../Figures/SiteA_ECMd18O_combo.png>]
-<../../Figures/SiteATambDepth_Gauss.png, id=53, 399.4925pt x 399.4925pt>
-File: ../../Figures/SiteATambDepth_Gauss.png Graphic file (type png)
-<use ../../Figures/SiteATambDepth_Gauss.png>
-Package pdftex.def Info: ../../Figures/SiteATambDepth_Gauss.png  used on input 
+[2 <../../Figures/SiteA_ECMd18O_combo.pdf>]
+<../../Figures/SiteATambDepth_Gauss.pdf, id=84, 400.37581pt x 400.37581pt>
+File: ../../Figures/SiteATambDepth_Gauss.pdf Graphic file (type pdf)
+<use ../../Figures/SiteATambDepth_Gauss.pdf>
+Package pdftex.def Info: ../../Figures/SiteATambDepth_Gauss.pdf  used on input 
 line 82.
-(pdftex.def)             Requested size: 111.0pt x 110.99763pt.
- [3 <../../Figures/TambDepth_corr.png> <../../Figures/LakiDepth_corr.png>]
+(pdftex.def)             Requested size: 111.0pt x 110.99869pt.
 
-LaTeX Warning: Marginpar on page 4 moved by 105.81758pt.
+Underfull \vbox (badness 5878) has occurred while \output is active []
 
-<../../Figures/SiteALakiDepth_Gauss.png, id=60, 399.4925pt x 399.4925pt>
-File: ../../Figures/SiteALakiDepth_Gauss.png Graphic file (type png)
-<use ../../Figures/SiteALakiDepth_Gauss.png>
-Package pdftex.def Info: ../../Figures/SiteALakiDepth_Gauss.png  used on input 
+ [3 <../../Figures/TambDepth_corr.pdf> <../../Figures/LakiDepth_corr.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/LakiDepth_corr.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+>]
+<../../Figures/SiteALakiDepth_Gauss.pdf, id=98, 400.37581pt x 400.37581pt>
+File: ../../Figures/SiteALakiDepth_Gauss.pdf Graphic file (type pdf)
+<use ../../Figures/SiteALakiDepth_Gauss.pdf>
+Package pdftex.def Info: ../../Figures/SiteALakiDepth_Gauss.pdf  used on input 
 line 90.
-(pdftex.def)             Requested size: 111.0pt x 110.99763pt.
-
-LaTeX Warning: Marginpar on page 4 moved by 338.97775pt.
+(pdftex.def)             Requested size: 111.0pt x 110.99869pt.
 
 
 LaTeX Warning: Reference `Alphabet_Map' on page 4 undefined on input line 101.
-
-
-LaTeX Warning: Marginpar on page 4 moved by 302.35368pt.
 
 
 LaTeX Warning: Citation `Weissbach2016' on page 4 undefined on input line 108.
@@ -1199,12 +1215,12 @@ LaTeX Warning: Citation `Weissbach2016' on page 4 undefined on input line 108.
 
 LaTeX Warning: Reference `App:Data_AWI' on page 4 undefined on input line 108.
 
-<../../Figures/B23_ECMd18O_combo.png, id=61, 722.7pt x 433.62pt>
-File: ../../Figures/B23_ECMd18O_combo.png Graphic file (type png)
-<use ../../Figures/B23_ECMd18O_combo.png>
-Package pdftex.def Info: ../../Figures/B23_ECMd18O_combo.png  used on input lin
+<../../Figures/B23_ECMd18O_combo.pdf, id=99, 717.22435pt x 418.7529pt>
+File: ../../Figures/B23_ECMd18O_combo.pdf Graphic file (type pdf)
+<use ../../Figures/B23_ECMd18O_combo.pdf>
+Package pdftex.def Info: ../../Figures/B23_ECMd18O_combo.pdf  used on input lin
 e 112.
-(pdftex.def)             Requested size: 295.20113pt x 177.11708pt.
+(pdftex.def)             Requested size: 295.20113pt x 172.35431pt.
 
 LaTeX Warning: Citation `Weissbach2016' on page 4 undefined on input line 113.
 
@@ -1214,159 +1230,118 @@ LaTeX Warning: Citation `Weissbach2016' on page 4 undefined on input line 113.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[4 <../../Figures/SiteATambDepth_Gauss.pdf> <../../Figures/SiteALakiDepth_Gauss
+.pdf
 
-LaTeX Warning: Marginpar on page 4 moved by 95.7069pt.
+pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/SiteALakiDepth_Gauss.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<../../Figures/AlphabetCores1.pdf, id=121, 247.39534pt x 339.66899pt>
+File: ../../Figures/AlphabetCores1.pdf Graphic file (type pdf)
+<use ../../Figures/AlphabetCores1.pdf>
+Package pdftex.def Info: ../../Figures/AlphabetCores1.pdf  used on input line 1
+22.
+(pdftex.def)             Requested size: 111.0pt x 152.39871pt.
 
-<../../Figures/AllAlphabetCores.png, id=62, 842.14626pt x 842.14626pt>
-File: ../../Figures/AllAlphabetCores.png Graphic file (type png)
-<use ../../Figures/AllAlphabetCores.png>
-Package pdftex.def Info: ../../Figures/AllAlphabetCores.png  used on input line
- 124.
-(pdftex.def)             Requested size: 295.20113pt x 295.20535pt.
+Underfull \hbox (badness 4316) in paragraph at lines 123--123
+[]\OT1/cmr/m/n/10.95 Figure 0.7: |\OT1/cmr/m/n/9 Lo-ca-tion
+ []
+
+
+Underfull \hbox (badness 3460) in paragraph at lines 123--123
+\OT1/cmr/m/n/9 of Al-pha-bet cores along
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\OT1/cmr/m/n/9 with some ma-jor ice
+ []
+
+<../../Figures/AlphabetCores1_Zoom.pdf, id=122, 455.30101pt x 122.50276pt>
+File: ../../Figures/AlphabetCores1_Zoom.pdf Graphic file (type pdf)
+<use ../../Figures/AlphabetCores1_Zoom.pdf>
+Package pdftex.def Info: ../../Figures/AlphabetCores1_Zoom.pdf  used on input l
+ine 129.
+(pdftex.def)             Requested size: 350.54887pt x 94.3218pt.
+<../../Figures/AllAlphabetCores.pdf, id=123, 842.66821pt x 842.66821pt>
+File: ../../Figures/AllAlphabetCores.pdf Graphic file (type pdf)
+<use ../../Figures/AllAlphabetCores.pdf>
+Package pdftex.def Info: ../../Figures/AllAlphabetCores.pdf  used on input line
+ 137.
+(pdftex.def)             Requested size: 295.20113pt x 295.19545pt.
+
+LaTeX Warning: Citation `bibid' on page 5 undefined on input line 142.
+
+
+LaTeX Warning: Citation `Clausen1988' on page 5 undefined on input line 142.
+
+
+LaTeX Warning: Citation `ClausenHammer1988' on page 5 undefined on input line 1
+45.
+
+
+LaTeX Warning: Citation `Clausen1988' on page 5 undefined on input line 145.
+
+<../../Figures/AllAlphabetCores_LT.pdf, id=124, 842.66821pt x 842.66821pt>
+File: ../../Figures/AllAlphabetCores_LT.pdf Graphic file (type pdf)
+<use ../../Figures/AllAlphabetCores_LT.pdf>
+Package pdftex.def Info: ../../Figures/AllAlphabetCores_LT.pdf  used on input l
+ine 150.
+(pdftex.def)             Requested size: 295.20113pt x 295.19545pt.
+[5 <../../Figures/B23_ECMd18O_combo.pdf> <../../Figures/AlphabetCores1.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/AlphabetCores1.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+> <../../Figures/AlphabetCores1_Zoom.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/AlphabetCores1_Zoom.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation `bibid' on page 4 undefined on input line 129.
-
-
-LaTeX Warning: Citation `Clausen1988' on page 4 undefined on input line 129.
-
-
-LaTeX Warning: Citation `ClausenHammer1988' on page 4 undefined on input line 1
-30.
-
-
-LaTeX Warning: Citation `Clausen1988' on page 4 undefined on input line 130.
-
-[4 <../../Figures/SiteATambDepth_Gauss.png> <../../Figures/SiteALakiDepth_Gauss
-.png>]
-<../../Figures/AllAlphabetCores_LT.png, id=72, 842.14626pt x 842.14626pt>
-File: ../../Figures/AllAlphabetCores_LT.png Graphic file (type png)
-<use ../../Figures/AllAlphabetCores_LT.png>
-Package pdftex.def Info: ../../Figures/AllAlphabetCores_LT.png  used on input l
-ine 135.
-(pdftex.def)             Requested size: 295.20113pt x 295.20535pt.
+LaTeX Warning: Reference `Tab:SiteA_CoreSpecs' on page 6 undefined on input lin
+e 160.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Reference `App:CoreSpecs' on page 5 undefined on input line 147.
-
-
-
-LaTeX Warning: Marginpar on page 5 moved by 34.2475pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-Package marginnote Info: Margin note 5.1 is on absolute page 5 on input line 20
-4.
-Package marginnote Info: xpos seems to be 97.26999pt on input line 204.
-
-Overfull \hbox (24.04512pt too wide) in paragraph at lines 204--204
- [] 
- []
-
-
-Underfull \hbox (badness 5260) in paragraph at lines 204--204
-\OT1/cmr/m/n/10 of event, $\OML/cmm/m/it/10 A$ \OT1/cmr/m/n/10 de-scribes
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--204
-\OT1/cmr/m/n/10 ac-cu-mu-la-tion rate, $\OML/cmm/m/it/10 T$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--204
-\OT1/cmr/m/n/10 de-scribes tem-per-a-ture,
- []
-
-
-Underfull \hbox (badness 3568) in paragraph at lines 204--204
-\OML/cmm/m/it/10 ^^Z$ \OT1/cmr/m/n/10 de-scribes den-sity at
- []
-
-
-Underfull \hbox (badness 1314) in paragraph at lines 204--204
-\OT1/cmr/m/n/10 given depth and $\OML/cmm/m/it/10 s$ \OT1/cmr/m/n/10 de-
- []
-
-
-Underfull \hbox (badness 1490) in paragraph at lines 204--204
-\OT1/cmr/m/n/10 scribes the width of a
- []
-
-
-Underfull \hbox (badness 7133) in paragraph at lines 204--204
-\OML/cmm/m/it/10 L$ \OT1/cmr/m/n/10 and $\OML/cmm/m/it/10 T$ \OT1/cmr/m/n/10 st
-ands for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--204
-\OT1/cmr/m/n/10 Tamb-ora, re-spec-tively,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--204
-\OT1/cmr/m/n/10 sub-script $0$ de-scribes
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--204
-\OT1/cmr/m/n/10 and su-per-scripts $\OML/cmm/m/it/10 CH$
- []
-
-
-Underfull \hbox (badness 1406) in paragraph at lines 204--204
-\OT1/cmr/m/n/10 and $\OML/cmm/m/it/10 TQ$ \OT1/cmr/m/n/10 rep-re-sents the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--204
-\OT1/cmr/m/n/10 orig-i-nal and cor-rected
- []
-
-
-Underfull \hbox (badness 7907) in paragraph at lines 204--204
-\OT1/cmr/m/n/10 val-ues for depth and
- []
-
-[5 <../../Figures/B23_ECMd18O_combo.png>] [6 <../../Figures/AllAlphabetCores.pn
-g>] [7 <../../Figures/AllAlphabetCores_LT.png>] [8] (./Chapter_Data2.aux)
+[6 <../../Figures/AllAlphabetCores.pdf>] [7 <../../Figures/AllAlphabetCores_LT.
+pdf>] [8] (./Chapter_Data2.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 23919 strings out of 481239
- 451353 string characters out of 5920377
- 716883 words of memory out of 5000000
- 38734 multiletter control sequences out of 15000+600000
- 545405 words of font info for 78 fonts, out of 8000000 for 9000
+ 23885 strings out of 481239
+ 450583 string characters out of 5920377
+ 715342 words of memory out of 5000000
+ 38694 multiletter control sequences out of 15000+600000
+ 545097 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,16n,96p,1264b,902s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,13n,96p,1264b,603s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Chapter_Data2.pdf (8 pages, 764812 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/wasy-type1/wasy10.pfb>
+Output written on Chapter_Data2.pdf (8 pages, 534122 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 292 PDF objects out of 1000 (max. 8388607)
+ 197 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 154 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 164 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,6 +1,62 @@
 %!TeX root = Chapter_Conclusion2
 \documentclass[../../CompleteThesis2/Complete_2ndDraft]{subfiles}
+%\graphicspath{{../../Figures/}}
 \begin{document}
-	This is great. I did a great thesis. High-five to me!
-	\todo{CONC: Write a better conclusion. Please..}
+	
+As the need for more accurate and precise models for the future increases, so does the need for better and wider understanding of the past. This work set out to investigate a new method to expand our knowledge of paleotemperatures. Through a series of methodical computational and theoretical analysis, a model for estimating the temperature of an ice core time series was developed. 
+
+The starting idea was to utilize the fact that diffusion length is temperature dependent, and to use signal analysis, theoretical knowledge of diffusion processes in ice and constrained pattern recognition to estimate the diffusion length $\sigma$ empirically in a water isotopic depth series. Throughout the thesis was presented the different methods used and the mathematical and theoretical foundations on which they were developed. A variety of methods were tested, discussed and further developed to finally generate a generic method.
+
+The final method reconstructs the - by diffusion washed out - measured signal by back diffusion, using $\sigma$ as a tuning parameter of the diffusion process. The method finds the optimal diffusion length by choosing the $\sigma$ which results in the known number of years in a given section. In this thesis, the two volcanic events of Laki in 1783 and Tambora in 1815 have been used for specific dating of the examined water isotopic depth series, but the method is not restricted to volcanic markers nor to isotopic depth series. Any series exhibiting annual cycles and affected by diffusion could be used.
+
+This back diffusion method results in final optimal diffusion length estimates, $\sigma_{\text{opt}}$, which are presented in Table \ref{Tab:SigmaEstFinal2} along with the for sampling and ice diffusion corrected firn diffusion estimates, $\sigma_{\text{firn}}$.
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{l l l | c }
+		& & & $\sigma_{\text{final}}$\\[0.15cm]
+		\hline
+		\hline 
+		\multirow{2}{*}{\textbf{Site A}} & $\sigma_{\text{opt}}$ & [cm] & $7.37 \pm 0.54$ \\[0.1cm]
+		& $\sigma_{\text{firn}}$ & [cm] & $7.27\pm 0.55$ \\[0.1cm]
+		\hline
+		
+		\multirow{2}{*}{\textbf{Site B}} & $\sigma_{\text{opt}}$ & [cm] & $7.35 \pm 0.22$ \\[0.1cm]
+		& $\sigma_{\text{firn}}$ & [cm] & $7.26\pm 0.22$\\[0.1cm]
+		\hline
+		
+		\multirow{2}{*}{\textbf{Site D}} & $\sigma_{\text{opt}}$ & [cm] & $7.21 \pm 0.28$ \\[0.1cm]
+		& $\sigma_{\text{firn}}$ & [cm] & $7.12 \pm 0.28$\\[0.1cm]
+		\hline
+		
+		\multirow{2}{*}{\textbf{Site E}} & $\sigma_{\text{opt}}$ & [cm] & $ 8.22\pm 0.15$ \\[0.1cm]
+		& $\sigma_{\text{firn}}$ & [cm] & $8.12 \pm 0.15$\\[0.1cm]
+		\hline
+		
+		\multirow{2}{*}{\textbf{Site G}} & $\sigma_{\text{opt}}$ & [cm] & $9.46 \pm 0.24$ \\[0.1cm]
+		& $\sigma_{\text{firn}}$ & [cm] & $9.38 \pm 0.24$\\[0.1cm]
+		
+		\hline
+	\end{tabular}
+	\caption[Final $\sigma$ Estimates]{\small Final diffusion length estimates, based on conclusions made previously in different tests.}
+	\label{Tab:SigmaEstFinal2}
+\end{table}
+
+From the optimal $\sigma$ a steady state temperature was estimated. These results can be seen in Table \ref{Tab:TempResults}, both the temperature estimated from $\sigma_{\text{Opt}}$ and $\sigma_{\text{firn}}$. For further studies, it is obvious to work from here with the diffusion length estimates and using them in more complex temperature estimate models, and not just a steady state solution.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{l c|c|c|c|c|c}
+		& & Site A & Site B & Site D & Site E & Site G \\
+		\hline
+		\hline
+		$T_0$ & [$^{\text{o}}$C] & -29.41 & -29.77 & -28.3 & -30.37 & -30.1 \\[0.1cm]
+		$\bar{T}_{\text{StSt}}^{\text{Opt}}$ & [$^{\text{o}}$C] & $-31.04 \pm 2.02$ & $-30.46 \pm 0.83$ & $-30.00 \pm 1.05$ & $-30.80 \pm 0.48$ & $-25.93 \pm 0.70$ \\[0.5cm]
+		$\bar{T}_{\text{StSt}}^{\text{Firn}}$ & [$^{\text{o}}$C] & $-31.41 \pm 2.07$ & $-30.81 \pm 0.85$ & $-30.35 \pm 1.07$ & $-31.14 \pm 0.49$ & $-26.18 \pm 0.71$ \\[0.15cm]
+	\end{tabular}
+	\caption[Steady State Temperature Estimates]{\small Steady state temperature estimates based on the final firn diffusion length estimates found. $T_0$ is the temperature used to generate the theoretical diffusion length and density profiles, and originates from \cite[add. text]{keylist}}
+	\label{Tab:TempResults}
+\end{table}	
+
+The method has room for improvement, especially some of the simpler assumptions like the constraints and the optimization routine could benefit from some more development. Moreover, the work carried out in this thesis leaves room for further examination and development, but lays a good basis to be used as a stepping stone in future research.
+
 \end{document}

@@ -2,103 +2,98 @@
 \contentsline {section}{Darkness}{ii}%
 \contentsline {section}{Acknowledgments}{ii}%
 \contentsline {section}{Abstract}{iii}%
-\contentsline {chapter}{List of Figures}{x}%
-\contentsline {chapter}{List of Tables}{xii}%
-\contentsline {chapter}{Listings}{xii}%
+\contentsline {chapter}{List of Figures}{vii}%
+\contentsline {chapter}{List of Tables}{ix}%
+\contentsline {chapter}{Listings}{x}%
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}%
-\contentsline {section}{\numberline {1.1}The Study of Ice Cores}{1}%
+\contentsline {section}{\numberline {1.1}Ice Cores}{1}%
 \contentsline {section}{\numberline {1.2}A Rare Gem}{2}%
-\contentsline {section}{\numberline {1.3}Using the Rare Gem}{4}%
+\contentsline {section}{\numberline {1.3}Using the Rare Gem}{3}%
 \contentsline {chapter}{\chapternumberline {2}Ice Theory}{5}%
 \contentsline {section}{\numberline {2.1}Water Isotopes}{5}%
 \contentsline {subsection}{\numberline {2.1.1}$\delta $ Notation}{5}%
 \contentsline {subsection}{\numberline {2.1.2}Relation to Temperature}{6}%
-\contentsline {section}{\numberline {2.2}Densification and Diffusion}{6}%
+\contentsline {section}{\numberline {2.2}Densification and Diffusion}{7}%
 \contentsline {subsection}{\numberline {2.2.1}Densification}{7}%
 \contentsline {subsubsection}{\numberline {2.2.1.1}HL in This Thesis}{8}%
 \contentsline {subsection}{\numberline {2.2.2}Diffusion}{9}%
 \contentsline {subsubsection}{\numberline {2.2.2.1}In Firn}{9}%
-\contentsline {subsubsection}{\numberline {2.2.2.2}In Solid Phase}{10}%
-\contentsline {subsection}{\numberline {2.2.3}Reconstruction of temperatures}{11}%
-\contentsline {section}{\numberline {2.3}CFM}{14}%
-\contentsline {subsection}{\numberline {2.3.1}Iso-CFM}{14}%
-\contentsline {subsubsection}{\numberline {2.3.1.1}Diffusion Length Profiles}{15}%
-\contentsline {section}{\numberline {2.4}Temperature Estimation}{17}%
-\contentsline {section}{\numberline {2.5}ECM and DEP}{17}%
-\contentsline {subsection}{\numberline {2.5.1}ECM}{18}%
-\contentsline {subsection}{\numberline {2.5.2}Volcanic Horizons}{20}%
-\contentsline {chapter}{\chapternumberline {3}Data}{21}%
-\contentsline {section}{\numberline {3.1}Volcanic Horizons}{21}%
-\contentsline {subsection}{\numberline {3.1.1}Corrected Depth}{22}%
-\contentsline {subsection}{\numberline {3.1.2}Gaussian Distribution}{23}%
-\contentsline {section}{\numberline {3.2}Selection}{24}%
-\contentsline {subsection}{\numberline {3.2.1}AWI B-cores}{24}%
-\contentsline {subsection}{\numberline {3.2.2}Crete Area}{25}%
-\contentsline {subsubsection}{\numberline {3.2.2.1}Data Specifications}{26}%
-\contentsline {chapter}{\chapternumberline {4}Signal Analysis \& Comp. Meth.}{29}%
-\contentsline {section}{\numberline {4.1}Spectral Transforms}{31}%
-\contentsline {subsection}{\numberline {4.1.1}PSD}{31}%
-\contentsline {subsubsection}{\numberline {4.1.1.1}Spectral Transforms}{32}%
-\contentsline {section}{\numberline {4.2}Back Diffusion}{35}%
-\contentsline {subsection}{\numberline {4.2.1}Signal Restoration}{35}%
-\contentsline {subsubsection}{\numberline {4.2.1.1}Spectral Filtering}{36}%
-\contentsline {subsubsection}{\numberline {4.2.1.2}Final Restoration}{39}%
-\contentsline {subsection}{\numberline {4.2.2}ALT from Spectral Analysis}{40}%
-\contentsline {subsubsection}{\numberline {4.2.2.1}Change in $l_{sec}$}{41}%
-\contentsline {subsubsection}{\numberline {4.2.2.2}Change in $l_{shift}$}{43}%
-\contentsline {section}{\numberline {4.3}Peak Detection}{46}%
-\contentsline {section}{\numberline {4.4}Splines and Interpolation}{47}%
-\contentsline {subsection}{\numberline {4.4.1}Interpolation}{48}%
-\contentsline {subsection}{\numberline {4.4.2}Interpolation in this Project}{49}%
-\contentsline {chapter}{\chapternumberline {5}Method and Discussion}{51}%
-\contentsline {section}{\numberline {5.1}$\sigma $ Estimation Method}{51}%
-\contentsline {subsection}{\numberline {5.1.1}Module 1: Initialization and Back Diffusion}{52}%
-\contentsline {subsection}{\numberline {5.1.2}Module 2}{54}%
-\contentsline {subsection}{\numberline {5.1.3}Constrained Peak Detection}{56}%
-\contentsline {section}{\numberline {5.2}Testing and Stability}{57}%
-\contentsline {subsection}{\numberline {5.2.1}Constraints or No Constraints}{59}%
-\contentsline {subsection}{\numberline {5.2.2}Effects of Interpolations}{59}%
-\contentsline {subsubsection}{\numberline {5.2.2.1}Interpolation 1}{60}%
-\contentsline {subsubsection}{\numberline {5.2.2.2}Interpolation 2}{61}%
-\contentsline {subsection}{\numberline {5.2.3}Spectral Transforms}{64}%
-\contentsline {subsection}{\numberline {5.2.4}LT locations}{65}%
-\contentsline {section}{\numberline {5.3}Upgrades}{67}%
-\contentsline {subsection}{\numberline {5.3.1}Peak Detection}{69}%
-\contentsline {subsection}{\numberline {5.3.2}Optimization Routine}{69}%
-\contentsline {chapter}{\chapternumberline {6}Results}{71}%
-\contentsline {section}{\numberline {6.1}Annual Layer Thickness}{71}%
-\contentsline {section}{\numberline {6.2}Diffusion Lengths}{71}%
-\contentsline {subsection}{\numberline {6.2.1}$\sigma $ Constraints or No constraints}{72}%
-\contentsline {subsection}{\numberline {6.2.2}Diffusion Length V N Peaks}{72}%
-\contentsline {subsection}{\numberline {6.2.3}$\sigma $ v. Spectral Transforms}{73}%
-\contentsline {subsection}{\numberline {6.2.4}$\sigma $ Constant or Variable}{74}%
-\contentsline {subsection}{\numberline {6.2.5}Final $\sigma $ Estimates}{74}%
-\contentsline {section}{\numberline {6.3}Temperature Estimates from Data}{74}%
-\contentsline {subsection}{\numberline {6.3.1}Steady State Solution}{75}%
-\contentsline {subsubsection}{\numberline {6.3.1.1}Accumulation Distributions}{75}%
-\contentsline {subsection}{\numberline {6.3.2}Iso-CFM Possibilities}{75}%
-\contentsline {chapter}{\chapternumberline {7}Conclusion}{77}%
-\contentsline {chapter}{Bibliography}{79}%
-\contentsline {chapter}{APPENDICES}{81}%
-\contentsline {chapter}{Appendices}{83}%
-\contentsline {section}{Appendix I: Firn Diffusivity}{83}%
-\contentsline {section}{Appendix II: AWI B-cores}{84}%
-\contentsline {subsection}{Core Specifications}{84}%
-\contentsline {section}{Appendix III: Alphabet Cores}{88}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}In Solid Phase}{11}%
+\contentsline {subsection}{\numberline {2.2.3}Reconstruction of temperatures}{12}%
+\contentsline {section}{\numberline {2.3}CFM}{15}%
+\contentsline {subsection}{\numberline {2.3.1}Iso-CFM}{16}%
+\contentsline {subsubsection}{\numberline {2.3.1.1}Diffusion Length Profiles}{16}%
+\contentsline {section}{\numberline {2.4}Temperature Estimation}{18}%
+\contentsline {section}{\numberline {2.5}ECM and DEP}{19}%
+\contentsline {subsection}{\numberline {2.5.1}ECM}{19}%
+\contentsline {chapter}{\chapternumberline {3}Data}{23}%
+\contentsline {section}{\numberline {3.1}Volcanic Horizons}{23}%
+\contentsline {subsection}{\numberline {3.1.1}Corrected Depth}{24}%
+\contentsline {subsection}{\numberline {3.1.2}Gaussian Distribution}{25}%
+\contentsline {section}{\numberline {3.2}Selection}{26}%
+\contentsline {subsection}{\numberline {3.2.1}AWI B-cores}{26}%
+\contentsline {subsection}{\numberline {3.2.2}Crete Area}{27}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}Data Specifications}{29}%
+\contentsline {chapter}{\chapternumberline {4}Signal Analysis \& Comp. Meth.}{31}%
+\contentsline {section}{\numberline {4.1}Spectral Transforms}{33}%
+\contentsline {subsection}{\numberline {4.1.1}PSD}{33}%
+\contentsline {subsubsection}{\numberline {4.1.1.1}Spectral Transforms}{34}%
+\contentsline {section}{\numberline {4.2}Back Diffusion}{37}%
+\contentsline {subsection}{\numberline {4.2.1}Signal Restoration}{37}%
+\contentsline {subsubsection}{\numberline {4.2.1.1}Spectral Filtering}{38}%
+\contentsline {subsubsection}{\numberline {4.2.1.2}Final Restoration}{41}%
+\contentsline {subsection}{\numberline {4.2.2}ALT from Spectral Analysis}{42}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}Change in $l_{sec}$}{43}%
+\contentsline {subsubsection}{\numberline {4.2.2.2}Change in $l_{shift}$}{45}%
+\contentsline {section}{\numberline {4.3}Peak Detection}{48}%
+\contentsline {section}{\numberline {4.4}Splines and Interpolation}{49}%
+\contentsline {subsection}{\numberline {4.4.1}Interpolation}{50}%
+\contentsline {subsection}{\numberline {4.4.2}Interpolation in this Project}{51}%
+\contentsline {chapter}{\chapternumberline {5}Method and Discussion}{53}%
+\contentsline {section}{\numberline {5.1}$\sigma $ Estimation Method}{53}%
+\contentsline {subsection}{\numberline {5.1.1}Module 1: Initialization and Back Diffusion}{54}%
+\contentsline {subsection}{\numberline {5.1.2}Module 2}{56}%
+\contentsline {subsection}{\numberline {5.1.3}Constrained Peak Detection}{58}%
+\contentsline {section}{\numberline {5.2}Testing and Stability}{59}%
+\contentsline {subsection}{\numberline {5.2.1}Constraints or No Constraints}{61}%
+\contentsline {subsection}{\numberline {5.2.2}Effects of Interpolations}{61}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}Interpolation 1}{62}%
+\contentsline {subsubsection}{\numberline {5.2.2.2}Interpolation 2}{63}%
+\contentsline {subsection}{\numberline {5.2.3}Spectral Transforms}{65}%
+\contentsline {subsection}{\numberline {5.2.4}LT locations}{67}%
+\contentsline {section}{\numberline {5.3}Upgrades}{69}%
+\contentsline {chapter}{\chapternumberline {6}Results}{73}%
+\contentsline {section}{\numberline {6.1}Annual Layer Thickness}{73}%
+\contentsline {section}{\numberline {6.2}Diffusion Lengths}{73}%
+\contentsline {subsection}{\numberline {6.2.1}$\sigma $ Constraints or No constraints}{74}%
+\contentsline {subsection}{\numberline {6.2.2}Diffusion Length V N Peaks}{75}%
+\contentsline {subsection}{\numberline {6.2.3}$\sigma $ v. Spectral Transforms}{75}%
+\contentsline {subsection}{\numberline {6.2.4}$\sigma $ Constant or Variable}{77}%
+\contentsline {subsection}{\numberline {6.2.5}Final $\sigma $ Estimates}{77}%
+\contentsline {section}{\numberline {6.3}Temperature Estimates from Data}{77}%
+\contentsline {subsection}{\numberline {6.3.1}Iso-CFM Possibilities}{78}%
+\contentsline {chapter}{\chapternumberline {7}Conclusion}{81}%
+\contentsline {chapter}{Bibliography}{85}%
+\contentsline {chapter}{APPENDICES}{87}%
+\contentsline {chapter}{Appendices}{89}%
+\contentsline {section}{Appendix I: Firn Diffusivity}{89}%
+\contentsline {section}{Appendix II: AWI B-cores}{90}%
 \contentsline {subsection}{Core Specifications}{90}%
-\contentsline {section}{Appendix IV: Spectral Transforms}{91}%
-\contentsline {subsubsection}{DFT \& FFT}{91}%
-\contentsline {subsubsection}{NUFT}{93}%
-\contentsline {subsubsection}{DCT}{94}%
-\contentsline {subsubsection}{NDCT}{95}%
-\contentsline {subsubsection}{MEM}{96}%
-\contentsline {section}{Appendix V: Splines and Interpolations}{97}%
-\contentsline {subsubsection}{Existence and Uniqueness}{97}%
-\contentsline {subsubsection}{Polynomial}{98}%
-\contentsline {subsubsection}{Piecewise Polynomial}{99}%
-\contentsline {section}{Appendix VII: Synthetic Diffusion}{102}%
-\contentsline {section}{Appendix IIX: HL Empirical Model}{103}%
-\contentsline {section}{Appendix IX: Iso-CFM}{107}%
-\contentsline {subsubsection}{Diffusivity}{107}%
-\contentsline {subsubsection}{Diffusion Length Profiles}{110}%
-\contentsline {section}{Appendix X: DEP}{114}%
+\contentsline {section}{Appendix III: Alphabet Cores}{94}%
+\contentsline {subsection}{Core Specifications}{96}%
+\contentsline {section}{Appendix IV: Spectral Transforms}{97}%
+\contentsline {subsubsection}{DFT \& FFT}{97}%
+\contentsline {subsubsection}{NUFT}{99}%
+\contentsline {subsubsection}{DCT}{100}%
+\contentsline {subsubsection}{NDCT}{101}%
+\contentsline {subsubsection}{MEM}{102}%
+\contentsline {section}{Appendix V: Splines and Interpolations}{103}%
+\contentsline {subsubsection}{Existence and Uniqueness}{103}%
+\contentsline {subsubsection}{Polynomial}{104}%
+\contentsline {subsubsection}{Piecewise Polynomial}{105}%
+\contentsline {section}{Appendix VII: Synthetic Diffusion}{108}%
+\contentsline {section}{Appendix IIX: HL Empirical Model}{109}%
+\contentsline {section}{Appendix IX: Iso-CFM}{113}%
+\contentsline {subsubsection}{Diffusivity}{113}%
+\contentsline {subsubsection}{Diffusion Length Profiles}{115}%
+\contentsline {section}{Appendix X: DEP}{118}%

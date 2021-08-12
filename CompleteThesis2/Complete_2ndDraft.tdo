@@ -1,24 +1,6 @@
-\contentsline {todo}{INTRO: References missing in entire section}{1}%
-\contentsline {todo}{ICE-ISO: Implement illustration of fractionation and deposition}{6}%
-\contentsline {todo}{ICE-DIFF: DESCRIBE HOW TO SOLVE FOR SIGMA and a discussion of the ice diffusion constant(ice diffusivity?).}{11}%
-\contentsline {todo}{Make illustration of ice vs. firn diffusion to see if ice diffusion can be neglected.}{13}%
-\contentsline {todo}{Implement and write about thinning function.}{13}%
-\contentsline {todo}{ICE-TEMP.EST: Give an example of temperature estimation?}{17}%
-\contentsline {todo}{DATA: Make spatial map of B-cores locations.}{24}%
-\contentsline {todo}{DATA: Make map of Alphabet core locations.}{25}%
-\contentsline {todo}{Make references to where values in table are from}{26}%
-\contentsline {todo}{DATA-ALPHABET-SPECS: Put rest of specifications in appendix.}{26}%
-\contentsline {todo}{References here.}{46}%
-\contentsline {todo}{COMPMETH-PEAKDET: Write about better peak detection with cubic spline interpolation (enhanced resolution)}{47}%
-\contentsline {todo}{SIGNAL-INTERP: REFERENCE!!}{48}%
-\contentsline {todo}{RES-DATAEST: Write entire section.}{74}%
-\contentsline {todo}{RES-DATAESTSTST: Write entire section.}{75}%
-\contentsline {todo}{RES-DATAESTACCUM: Write entire section.}{75}%
-\contentsline {todo}{RES-DATAESTCFM: Write entire section.}{75}%
-\contentsline {todo}{CONC: Write a better conclusion. Please..}{77}%
-\contentsline {todo}{Make specifications for cores.}{84}%
-\contentsline {todo}{SIGNAL-MEM: Write this entire section - maybe not necessary? Maybe use in reconstruction of missing data...}{96}%
-\contentsline {todo}{COMP-INTERP: REFERENCE!!!}{98}%
-\contentsline {todo}{COMP-INTERP: REFERENCES!!}{99}%
-\contentsline {todo}{SIGNAL-SYNTHDATA: Write about synthetic data generation.}{102}%
-\contentsline {todo}{ICE-DENS: Figure out where this comes from.}{106}%
+\contentsline {todo}{Make specifications for cores.}{86}%
+\contentsline {todo}{SIGNAL-MEM: Write this entire section - maybe not necessary? Maybe use in reconstruction of missing data...}{98}%
+\contentsline {todo}{COMP-INTERP: REFERENCE!!!}{100}%
+\contentsline {todo}{COMP-INTERP: REFERENCES!!}{101}%
+\contentsline {todo}{SIGNAL-SYNTHDATA: Write about synthetic data generation.}{104}%
+\contentsline {todo}{ICE-DENS: Figure out where this comes from.}{108}%

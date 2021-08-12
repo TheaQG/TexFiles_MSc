@@ -12,7 +12,7 @@
 	
 	
 	\subsection[Core Specifications]{AWI B-Cores: Core Specifications}
-	\todo{Make specifications for cores.}
+%	\todo{Make specifications for cores.}
 	\begin{table}[h]
 		\centering
 		\begin{tabular}{l l|c}
@@ -243,7 +243,7 @@
 	
 	\subsubsection[MEM][MEM]{Maximum Entropy Method (Burg's Method)}
 	\label{Subsubsec:SignalAnalysis_BackDiffusion_SpectralAnalysis_MEM}
-	\todo{SIGNAL-MEM: Write this entire section - maybe not necessary? Maybe use in reconstruction of missing data...}
+%	\todo{SIGNAL-MEM: Write this entire section - maybe not necessary? Maybe use in reconstruction of missing data...}
 	
 	
 	
@@ -305,7 +305,7 @@
 		\end{bmatrix}
 		= \boldsymbol{y}.
 	\end{equation}
-	This type of matrix with geometric progression, i.e. the columns are successive powers of some independent variable $t$ is called a \todo{COMP-INTERP: REFERENCE!!!}Vandermonde matrix. \\
+	This type of matrix with geometric progression, i.e. the columns are successive powers of some independent variable $t$ is called a Vandermonde matrix. \\
 	When using the monomial basis and using a standard linear equation solver to determining the interpolants coefficients requires $\mathcal{O}(n^3)$ work and often results in ill-conditioned Vandermonde matrices $\boldsymbol{A}$, especially for high-degree polynomials. This ill-conditioning is due to the monomials of higher and higher degree being more and more indistinguishable from each other. This makes the columns of $\boldsymbol{A}$ nearly linearly dependent, resulting in almost singular matrices, and thus highly sensitive coefficients. For high enough $n$, the Vandermonde matrix becomes efficiently singular, to computational precision at least, though, as mentioned, this can be worked around, but requires some additional computational work. 
 	
 	\begin{marginfigure}
@@ -316,7 +316,7 @@
 	\end{marginfigure}
 	\subsubsection[Piecewise Polynomial]{Piecewise Polynomial Interpolation and Splines}
 	\label{Sec:CompMeths_SplinesAndInterpolation_Interpolation_PiecewisePolynomial}
-	The amount of work needed to solve the system as well as the conditioning of the system can be improved by using a different basis all together. Some different bases superior to the monomial that are worth mentioning are the Lagrange basis functions, the Newton basis functions and the orthogonal polynomials\todo{COMP-INTERP: REFERENCES!!}. But for this thesis we take a step further into the interpolation theory, as the choice of basis functions might not be enough to work around some of the problems connected with fitting a single polynomial to a large number of data points(i.e. oscillatory behaviour in the interpolant, nonconvergence or issues around the boundaries).\\
+	The amount of work needed to solve the system as well as the conditioning of the system can be improved by using a different basis all together. Some different bases superior to the monomial that are worth mentioning are the Lagrange basis functions, the Newton basis functions and the orthogonal polynomials. But for this thesis we take a step further into the interpolation theory, as the choice of basis functions might not be enough to work around some of the problems connected with fitting a single polynomial to a large number of data points(i.e. oscillatory behaviour in the interpolant, nonconvergence or issues around the boundaries).\\
 	These practical and theoretical issues can be avoided through the use of piecewise polynomial interpolation, with the advantage that a large number of data points can be fitted with low-degree polynomials. \\
 	When turning to piecewise polynomial interpolation of the data points $(t_i,y_i),\quad i=1,...,n$, $t_1 < t_2 < \cdots < t_n$, a different polynomial is chosen for each subinterval $[t_i,t{i+1}]$. Each point $t_i$, where the interpolant changes is called knots or control points. The simplest piecewise interpolation is piecewise linear interpolation, where each knot is connected with a straight line. If we consider this simple example it appears that by eliminating the problems of nonconvergence and unwanted oscillatory behaviour, the smoothness of the interpolant is sacrificed. This might be true for this simplistic example but since there are a number of degrees of freedom in choosing each piecewise polynomial interpolant, the smoothness can be reintroduced by explotiting a number of these measures. One way of doing this is by demanding knowledge of both the values and the derivatives of the interpolant at each data pint. This just adds more equations to the system, and thus to have a well-defined solution, the number of equations must match the number of parameters. This type of interpolation is known as Hermite interpolation. The most common choice for this interpolation, to still maintain simplicity and computational efficiency, is cubic Hermite interpolation. This introduces a piecewise cubic polynomial with $n$ knots, and thus $n-1$ interpolants each with 4 parameters to fit, leading to $4(n-1)$ parameters to be determined. Since each of the $n-1$ cubics must match the data points at each end of the subinterval, it results in $2(n-1)$ equations, and requiring the derivative to be continuous, i.e. match at the end points, an additional of $n-2$ equations are taken in. This leads to a system consisting of $2(n-1) + (n-2) = 3n - 4$ equations to fit to the $4n - 4$ parameters. This leaves $n$ free parameters, meaning that a cubic Hermite interpolant is not unique and the remaining free parameters can be used to accommodate further or additional constraints that might be around the problem at hand. \\\newline
 	\indent \textbf{Cubic Spline Interpolation}\\
@@ -353,7 +353,7 @@
 	\newpage
 	\section[Appendix VII: Synthetic Diffusion]{APPENDIX VII: Diffusion Illustrated Through Synthetic Data}
 	\label{AppVII:SignalAnalysis_SyntheticData}
-	\todo{SIGNAL-SYNTHDATA: Write about synthetic data generation.}
+	%\todo{SIGNAL-SYNTHDATA: Write about synthetic data generation.}
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.8\textwidth]{AR1_process.png}
@@ -488,7 +488,7 @@
 		t_{0.55} = \frac{1}{k_0 A}\ln\left[\frac{\rho_i - \rho_0}{\rho_i - 0.55}\right]
 	\end{equation}
 	
-	\todo{ICE-DENS: Figure out where this comes from.}
+	%\todo{ICE-DENS: Figure out where this comes from.}
 	\textbf{2. stage of densificaion:} The depth-density profile
 	\begin{equation}
 		\rho(h) = \frac{\rho_i Z_1}{1 + Z_1}
