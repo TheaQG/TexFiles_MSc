@@ -133,7 +133,7 @@ In the above the transform used to define the PSD was presented as the Fourier t
 		X_n\equiv \frac{1}{N} \sum_{n=0}^{N-1}\tilde{X}_n \, e^{-2\pi i k \frac{n}{N}}
 	\end{equation}
 
-	The DFT is dependent on the sampling interval, $\Delta$, which limits the bandwidth to frequencies smaller in magnitude than the so-called Nyquist critical frequency, $f_{NQ}\equiv\frac{1}{2\Delta}$. That is $\tilde{X}(f)=0$ for $|f|\geq f_{NQ}$. Thus when considering a signal with frequencies both inside and outside this Nyquist interval, the spectral information outside of the interval will be falsely interpreted as being inside the interval - this is called aliasing, and gives rise to an increased power at the daughter frequency of the aliased frequencies.
+	The DFT is dependent on the sampling interval, $\Delta_z$, which limits the bandwidth to frequencies smaller in magnitude than the so-called Nyquist critical frequency, $f_{NQ}\equiv\frac{1}{2\Delta_z}$. That is $\tilde{X}(f)=0$ for $|f|\geq f_{NQ}$. Thus when considering a signal with frequencies both inside and outside this Nyquist interval, the spectral information outside of the interval will be falsely interpreted as being inside the interval - this is called aliasing, and gives rise to an increased power at the daughter frequency of the aliased frequencies.
 	
 	Computation of the DFT can be very slow, since it involves complex multiplication between a number of vectors and matrices, which grow in size as the number of data points increases. Generally, this matrix multiplication leads to a process of $\mathcal{O}(N^2)$. Luckily, a number of different algorithms have been developed for fast and efficient computation of the DFT, and the one considered in this thesis is referred to as the Fast Fourier Transform (FFT). The speed up is mainly caused by the fact that it is possible to separate the Fourier transform into even and odd indexed sequences and compute these subsets simultaneously. This reduces the number of computations needed to $\mathcal{O}(N\,\log_2\, N)$. For this thesis the FFT used is the one implemented in the \lstinline[language=python]|scipy.fft|. For optimal functionality and efficiency of this algorithm, the number of points computed in the frequency space must be of a power of 2.
 	
@@ -275,19 +275,21 @@ This optimal (Wiener) filter $\tilde{F}$, defined for each wave number $k = 2\pi
 	\label{eq:WienerFilter}
 \end{equation}
 
-In this work, the power spectral densities of the signal and the noise, respectively, are determined through analysis of the power spectral density of the combined signal/noise PSD.\\
+In this work, the power spectral densities of the signal and the noise, respectively, are determined through analysis of the power spectral density of the combined signal/noise PSD.
+
 The PSD of the noise free measured signal, $|\tilde{\delta_m}(\omega)|^2$, is assumed describe as 
 \begin{equation}
 	|\tilde{\delta}_m(\omega)|^2 = P_0 e^{-k^2 \sigma_{\text{tot}}^2}
 	\label{eq:SignalPSD}
 \end{equation}
-where $\sigma_{\text{tot}}^2$ describes the total estimated diffusion length of the mixing.\\
+where $\sigma_{\text{tot}}^2$ describes the total estimated diffusion length of the mixing. 
+
 The noise is assumed to be red noise, described by an autoregressive process of first order, AR1:
 \begin{equation}
-	|\tilde{\eta}(\omega)|^2 = \frac{\sigma_{\eta}^2 \Delta z}{|1 + a_1 \exp(-2\pi i \omega \Delta z)|^2}
+	|\tilde{\eta}(\omega)|^2 = \frac{\sigma_{\eta}^2 \Delta_z}{|1 + a_1 \exp(-2\pi i \omega \Delta_z)|^2}
 	\label{eq:NoisePSD}
 \end{equation}
-where $\sigma_{\eta}^2$ is the variance of the red noise, $a_1$ is the AR1 coefficient and $\Delta z$ is the resolution of the time/depth data.
+where $\sigma_{\eta}^2$ is the variance of the red noise, $a_1$ is the AR1 coefficient and $\Delta_z$ is the resolution of the time/depth data.
 It is then possible to estimate the parameters $P_0$, $\sigma_{\text{tot}}^2$, $\sigma_{\eta}^2$ and $a_1$ by curve fitting, separately, the two expressions in Eq. \ref{eq:SignalPSD} and \ref{eq:NoisePSD} to the data. The estimated parameters are varied to find the optimal guess to use for the filter.
 
 \begin{figure}
@@ -319,6 +321,21 @@ An example of the constructed Wiener filter can be seen in Figure \ref{fig:SiteA
 	\label{fig:SiteA_WienerFilters}
 \end{marginfigure}
 
+\subsubsection[$\sigma_{\text{const}}$ vs. $\sigma(z)$]{$\sigma_{\text{const}}$ vs. $\sigma(z)$}
+
+\begin{marginfigure}
+	\centering
+	\includegraphics[width=\marginparwidth]{SiteA_DiffProf_Sigz.pdf}
+	\caption[Diffusion length profile, LT]{\footnotesize Diffusion length profile with section between Laki and Tambora highlighted.}
+	\label{Fig:SiteA_DiffProf_Sigz}
+\end{marginfigure}
+
+\begin{marginfigure}
+	\centering
+	\includegraphics[width=\marginparwidth]{SiteA_sigmaz_fit.pdf}
+	\caption[Diffusion length profile, fit at LT]{\footnotesize Diffusion length profile at Laki to Tambora depth, with $\sigma(z)$ fit.}
+	\label{Fig:SiteA_sigmaz_fit}
+\end{marginfigure}
 \subsubsection[Final Restoration][Final Restoration]{Final Restoration}
 \label{Subsubsec:SignalAnalysis_BackDiffusion_FinalRestoration}
 

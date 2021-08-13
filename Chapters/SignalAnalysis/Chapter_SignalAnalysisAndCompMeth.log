@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.30)  12 AUG 2021 13:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.30)  13 AUG 2021 15:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1173,31 +1173,61 @@ Underfull \vbox (badness 1348) has occurred while \output is active []
 File: ../../Figures/SpectralTransforms_PSDwFits.pdf Graphic file (type pdf)
 <use ../../Figures/SpectralTransforms_PSDwFits.pdf>
 Package pdftex.def Info: ../../Figures/SpectralTransforms_PSDwFits.pdf  used on
- input line 295.
+ input line 297.
 (pdftex.def)             Requested size: 369.0pt x 115.30905pt.
 
 
 LaTeX Warning: Reference `Sec:SignalAnalysis_Restoration' on page 10 undefined 
-on input line 296.
+on input line 298.
 
 
 LaTeX Warning: Reference `Sec:SignalAnalysis_Restoration' on page 10 undefined 
-on input line 296.
+on input line 298.
 
 <../../Figures/SiteA_WienerFilter.pdf, id=114, 361.35pt x 289.08pt>
 File: ../../Figures/SiteA_WienerFilter.pdf Graphic file (type pdf)
 <use ../../Figures/SiteA_WienerFilter.pdf>
 Package pdftex.def Info: ../../Figures/SiteA_WienerFilter.pdf  used on input li
-ne 307.
+ne 309.
 (pdftex.def)             Requested size: 111.0pt x 88.79784pt.
 <../../Figures/SiteA_WienerFilter_loglog.pdf, id=115, 361.35pt x 289.08pt>
 File: ../../Figures/SiteA_WienerFilter_loglog.pdf Graphic file (type pdf)
 <use ../../Figures/SiteA_WienerFilter_loglog.pdf>
 Package pdftex.def Info: ../../Figures/SiteA_WienerFilter_loglog.pdf  used on i
-nput line 314.
+nput line 316.
 (pdftex.def)             Requested size: 111.0pt x 88.79784pt.
-[10 <../../Figures/SpectralTransforms_PSDwFits.pdf> <../../Figures/SiteA_Wiener
-Filter.pdf
+<../../Figures/SiteA_DiffProf_Sigz.pdf, id=116, 400.37581pt x 472.6458pt>
+File: ../../Figures/SiteA_DiffProf_Sigz.pdf Graphic file (type pdf)
+<use ../../Figures/SiteA_DiffProf_Sigz.pdf>
+Package pdftex.def Info: ../../Figures/SiteA_DiffProf_Sigz.pdf  used on input l
+ine 328.
+(pdftex.def)             Requested size: 111.0pt x 131.03455pt.
+
+Underfull \hbox (badness 3780) in paragraph at lines 329--329
+[]\OT1/cmr/m/n/10.95 Figure 0.6: |\OT1/cmr/m/n/9 Dif-fu-sion
+ []
+
+<../../Figures/SiteA_sigmaz_fit.pdf, id=117, 544.75743pt x 400.37581pt>
+File: ../../Figures/SiteA_sigmaz_fit.pdf Graphic file (type pdf)
+<use ../../Figures/SiteA_sigmaz_fit.pdf>
+Package pdftex.def Info: ../../Figures/SiteA_sigmaz_fit.pdf  used on input line
+ 335.
+(pdftex.def)             Requested size: 111.0pt x 81.5766pt.
+
+Underfull \hbox (badness 3780) in paragraph at lines 336--336
+[]\OT1/cmr/m/n/10.95 Figure 0.7: |\OT1/cmr/m/n/9 Dif-fu-sion
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 336--336
+\OT1/cmr/m/n/9 length pro-file at Laki to
+ []
+
+
+Underfull \vbox (badness 7238) has occurred while \output is active []
+
+ [10 <../../Figures/SpectralTransforms_PSDwFits.pdf> <../../Figures/SiteA_Wiene
+rFilter.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/SiteA_WienerFilter.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
@@ -1206,36 +1236,41 @@ PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/SiteA_WienerFilter_loglog
 .pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../../Figures/SiteA_filtersEx.jpg, id=170, 867.24pt x 578.16pt>
+<../../Figures/SiteA_filtersEx.jpg, id=172, 867.24pt x 578.16pt>
 File: ../../Figures/SiteA_filtersEx.jpg Graphic file (type jpg)
 <use ../../Figures/SiteA_filtersEx.jpg>
 Package pdftex.def Info: ../../Figures/SiteA_filtersEx.jpg  used on input line 
-350.
+367.
 (pdftex.def)             Requested size: 369.0pt x 246.00146pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11]
+[11 <../../Figures/SiteA_DiffProf_Sigz.pdf> <../../Figures/SiteA_sigmaz_fit.pdf
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/SiteA_sigmaz_fit.pdf): PD
+F inclusion: multiple pdfs with page group included in a single page
+>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12 <../../Figures/SiteA_filtersEx.jpg>]
-<../../Figures/SiteBALTestimate_example.pdf, id=180, 443.6575pt x 732.7375pt>
+<../../Figures/SiteBALTestimate_example.pdf, id=211, 443.6575pt x 732.7375pt>
 File: ../../Figures/SiteBALTestimate_example.pdf Graphic file (type pdf)
 <use ../../Figures/SiteBALTestimate_example.pdf>
 Package pdftex.def Info: ../../Figures/SiteBALTestimate_example.pdf  used on in
-put line 371.
+put line 388.
 (pdftex.def)             Requested size: 111.0pt x 183.31808pt.
 
 
 LaTeX Warning: Reference `Fig:AllCores_ALT_l5_s4' on page 13 undefined on input
- line 383.
+ line 400.
 
-<../../Figures/AllCores_ALTs.pdf, id=181, 1050.31238pt x 689.45581pt>
+<../../Figures/AllCores_ALTs.pdf, id=212, 1050.31238pt x 689.45581pt>
 File: ../../Figures/AllCores_ALTs.pdf Graphic file (type pdf)
 <use ../../Figures/AllCores_ALTs.pdf>
-Package pdftex.def Info: ../../Figures/AllCores_ALTs.pdf  used on input line 38
-8.
+Package pdftex.def Info: ../../Figures/AllCores_ALTs.pdf  used on input line 40
+5.
 (pdftex.def)             Requested size: 350.54887pt x 230.1091pt.
 [13 <../../Figures/SiteBALTestimate_example.pdf> <../../Figures/AllCores_ALTs.p
 df
@@ -1245,136 +1280,148 @@ nclusion: multiple pdfs with page group included in a single page
 >]
 
 LaTeX Warning: Reference `Fig:AllCores_ALT_at_DiffLsecs' on page 14 undefined o
-n input line 400.
+n input line 417.
 
 
 LaTeX Warning: Reference `Fig:AllCores_ALTatLT_vs_lSec' on page 14 undefined on
- input line 402.
+ input line 419.
 
-<../../Figures/AllCores_ALT_at_DiffLsecs.pdf, id=210, 1123.0758pt x 688.90492pt
+<../../Figures/AllCores_ALT_at_DiffLsecs.pdf, id=241, 1123.0758pt x 688.90492pt
 >
 File: ../../Figures/AllCores_ALT_at_DiffLsecs.pdf Graphic file (type pdf)
 <use ../../Figures/AllCores_ALT_at_DiffLsecs.pdf>
 Package pdftex.def Info: ../../Figures/AllCores_ALT_at_DiffLsecs.pdf  used on i
-nput line 405.
+nput line 422.
 (pdftex.def)             Requested size: 369.0pt x 226.3407pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../../Figures/AllCores_ALTatLT_vs_lSec.pdf, id=211, 1060.63158pt x 689.45581pt
+<../../Figures/AllCores_ALTatLT_vs_lSec.pdf, id=242, 1060.63158pt x 689.45581pt
 >
 File: ../../Figures/AllCores_ALTatLT_vs_lSec.pdf Graphic file (type pdf)
 <use ../../Figures/AllCores_ALTatLT_vs_lSec.pdf>
 Package pdftex.def Info: ../../Figures/AllCores_ALTatLT_vs_lSec.pdf  used on in
-put line 412.
+put line 429.
 (pdftex.def)             Requested size: 369.0pt x 239.86136pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Command \l invalid in math mode on input line 422.
+LaTeX Warning: Command \l invalid in math mode on input line 439.
 
-[14]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
 
 LaTeX Warning: Reference `Fig:AllCores_ALT_at_DiffShifts' on page 15 undefined 
-on input line 424.
+on input line 441.
 
-<../../Figures/AllCores_ALT_at_DiffShifts.pdf, id=216, 1122.94482pt x 617.1858p
+<../../Figures/AllCores_ALT_at_DiffShifts.pdf, id=247, 1122.94482pt x 617.1858p
 t>
 File: ../../Figures/AllCores_ALT_at_DiffShifts.pdf Graphic file (type pdf)
 <use ../../Figures/AllCores_ALT_at_DiffShifts.pdf>
 Package pdftex.def Info: ../../Figures/AllCores_ALT_at_DiffShifts.pdf  used on 
-input line 429.
+input line 446.
 (pdftex.def)             Requested size: 369.0pt x 202.80553pt.
+
+Underfull \vbox (badness 6094) has occurred while \output is active []
+
+ [15 <../../Figures/AllCores_ALT_at_DiffLsecs.pdf>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `Fig:AllCores_ALTvsShift' on page 15 undefined on inpu
-t line 434.
+LaTeX Warning: Reference `Fig:AllCores_ALTvsShift' on page 16 undefined on inpu
+t line 451.
 
-
-Underfull \vbox (badness 1616) has occurred while \output is active []
-
- [15 <../../Figures/AllCores_ALT_at_DiffLsecs.pdf>]
-<../../Figures/AllCoresInOne_ALTvsShift.pdf, id=235, 617.1858pt x 328.1058pt>
+<../../Figures/AllCoresInOne_ALTvsShift.pdf, id=266, 617.1858pt x 328.1058pt>
 File: ../../Figures/AllCoresInOne_ALTvsShift.pdf Graphic file (type pdf)
 <use ../../Figures/AllCoresInOne_ALTvsShift.pdf>
 Package pdftex.def Info: ../../Figures/AllCoresInOne_ALTvsShift.pdf  used on in
-put line 438.
+put line 455.
 (pdftex.def)             Requested size: 313.65225pt x 166.74597pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: Reference `Fig:ICE_Crete_10m_dated' on page 16 undefined on inpu
-t line 449.
+t line 466.
 
-<../../Figures/Crete_10m_PeaksTroughs.pdf, id=236, 1267.6158pt x 400.37581pt>
+<../../Figures/Crete_10m_PeaksTroughs.pdf, id=267, 1267.6158pt x 400.37581pt>
 File: ../../Figures/Crete_10m_PeaksTroughs.pdf Graphic file (type pdf)
 <use ../../Figures/Crete_10m_PeaksTroughs.pdf>
 Package pdftex.def Info: ../../Figures/Crete_10m_PeaksTroughs.pdf  used on inpu
-t line 452.
+t line 469.
 (pdftex.def)             Requested size: 369.0pt x 116.54587pt.
+[16 <../../Figures/AllCores_ALTatLT_vs_lSec.pdf>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[16 <../../Figures/AllCores_ALTatLT_vs_lSec.pdf>] [17 <../../Figures/AllCores_A
-LT_at_DiffShifts.pdf> <../../Figures/AllCoresInOne_ALTvsShift.pdf
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17 <../../Figures/AllCores_ALT_at_DiffShifts.pdf> <../../Figures/AllCoresInOn
+e_ALTvsShift.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/AllCoresInOne_ALTvsShift.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Overfull \hbox (2.90508pt too wide) in paragraph at lines 459--460
+Overfull \hbox (2.90508pt too wide) in paragraph at lines 476--477
 []\OT1/cmr/m/n/10.95 The most na^^?^^Pve ap-proach, and the one first im-ple-me
 nted in this project,
  []
 
 
-LaTeX Warning: Reference `fig:Interp' on page 18 undefined on input line 465.
+LaTeX Warning: Reference `fig:Interp' on page 18 undefined on input line 482.
 
-[18 <../../Figures/Crete_10m_PeaksTroughs.pdf>]
-<../../Figures/SiteA_DataSplineInterp.pdf, id=350, 758.28625pt x 394.39708pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18 <../../Figures/Crete_10m_PeaksTroughs.pdf>]
+<../../Figures/SiteA_DataSplineInterp.pdf, id=381, 758.28625pt x 394.39708pt>
 File: ../../Figures/SiteA_DataSplineInterp.pdf Graphic file (type pdf)
 <use ../../Figures/SiteA_DataSplineInterp.pdf>
 Package pdftex.def Info: ../../Figures/SiteA_DataSplineInterp.pdf  used on inpu
-t line 469.
+t line 486.
 (pdftex.def)             Requested size: 369.0pt x 191.92026pt.
 
 
-LaTeX Warning: Reference `sec:???' on page 19 undefined on input line 474.
+LaTeX Warning: Reference `sec:???' on page 19 undefined on input line 491.
 
 
 LaTeX Warning: Reference `fig:InterpFinal' on page 19 undefined on input line 4
-74.
+91.
 
 
-Overfull \hbox (20.45427pt too wide) in paragraph at lines 474--475
+Overfull \hbox (20.45427pt too wide) in paragraph at lines 491--492
 \OT1/cmr/m/n/10.95 anal-y-sis, both times through the [][][][][][][][] pack-age
  [][][][][][][][][]
  []
 
-<../../Figures/SiteA_MultiSplineInterp.pdf, id=351, 1050.8058pt x 833.9958pt>
+<../../Figures/SiteA_MultiSplineInterp.pdf, id=382, 1050.8058pt x 833.9958pt>
 File: ../../Figures/SiteA_MultiSplineInterp.pdf Graphic file (type pdf)
 <use ../../Figures/SiteA_MultiSplineInterp.pdf>
 Package pdftex.def Info: ../../Figures/SiteA_MultiSplineInterp.pdf  used on inp
-ut line 481.
+ut line 498.
 (pdftex.def)             Requested size: 369.0pt x 292.87006pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19 <../../Figures/SiteA_DataSplineInterp.pdf>]
-Underfull \vbox (badness 2790) has occurred while \output is active []
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19 <../../Figures/SiteA_DataSplineInterp.pdf>]
+Underfull \vbox (badness 7012) has occurred while \output is active []
 
  [20 <../../Figures/SiteA_MultiSplineInterp.pdf>]
 
 LaTeX Warning: Reference `Appendix V: Splines and Interpolations' on page 21 un
-defined on input line 498.
+defined on input line 515.
 
 
 LaTeX Warning: Reference `Subsec:METH_Interpolation' on page 21 undefined on in
-put line 504.
+put line 521.
 
 [21] (./Chapter_SignalAnalysisAndCompMeth.aux)
 
@@ -1382,40 +1429,41 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 24624 strings out of 481239
- 461990 string characters out of 5920377
- 899315 words of memory out of 5000000
- 39420 multiletter control sequences out of 15000+600000
- 546081 words of font info for 81 fonts, out of 8000000 for 9000
+ 24642 strings out of 481239
+ 462531 string characters out of 5920377
+ 899414 words of memory out of 5000000
+ 39434 multiletter control sequences out of 15000+600000
+ 546702 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,12n,96p,1239b,1353s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></u
-sr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/wasy-type1/wasy10.pfb>
-Output written on Chapter_SignalAnalysisAndCompMeth.pdf (21 pages, 1050367 byte
+t/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/wasy-type1/wasy10.pfb>
+Output written on Chapter_SignalAnalysisAndCompMeth.pdf (21 pages, 1088926 byte
 s).
 PDF statistics:
- 469 PDF objects out of 1000 (max. 8388607)
- 330 compressed objects within 4 object streams
+ 502 PDF objects out of 1000 (max. 8388607)
+ 358 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 184 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 194 words of extra memory for PDF output out of 10000 (max. 10000000)
 

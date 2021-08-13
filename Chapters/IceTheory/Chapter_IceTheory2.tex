@@ -188,21 +188,21 @@ From Eqs. \ref{Eq:Diff_Len_Firn} and \ref{Eq:Diff_Len_Ice} it is possible to mod
 Reconstruction of paleotemperatures can be attempted through a number of various techniques (REFERENCES). For this work, the focus is on restoring a signal by single isotopic back-diffusion.\\
 Trivially, convolution in time domain is equal to multiplication in the frequency domain. According to equation (\ref{Eq:diff_solution_conv}), the transfer function describing the diffusion in the frequency domain, will be the Fourier transform of the Gaussian filter:
 \begin{equation}
-	\mathcal{F}[\mathcal{G}(z)] = \hat{\mathcal{G}} = e^{-\frac{k^2\sigma^2}{2}}, \qquad k = 2\pi f = \frac{2\pi}{\Delta}
+	\mathcal{F}[\mathcal{G}(z)] = \hat{\mathcal{G}} = e^{-\frac{k^2\sigma^2}{2}}, \qquad k = 2\pi f = \frac{2\pi}{\Delta_z}
 	\label{Eq:Transer_Fct}
 \end{equation} 
-where $\Delta$ is the discrete sampling size. This filter keeps larger wavelength frequencies ($>$ 50 cm) unaltered but attenuates short wavelengths ($<$ 20 cm) heavily, which is exactly the effect of diffusion on the isotopic signal. In the Gaussian filter $\sigma$ represents the diffusion length.
+where $\Delta_z$ is the discrete sampling size. This filter keeps larger wavelength frequencies ($>$ 50 cm) unaltered but attenuates short wavelengths ($<$ 20 cm) heavily, which is exactly the effect of diffusion on the isotopic signal. In the Gaussian filter $\sigma$ represents the diffusion length.
 
 An estimate of the diffusion length $\sigma$ can be made from the power spectral density(PSD) of an isotopic time series. In the frequency domain a PSD composed of an initial signal, a filter function and a white noise term can be described as:
 \begin{equation}
 	P_s = P_0(k) e^{-k^2\sigma^2} + |\hat{\eta}(k)|^2, \qquad f \in [0, f_{Nq}]
 	\label{Eq:PSD_general}
 \end{equation} 
-where the diffused and noise-affected signal, $P_s$, is equal to the original signal, $P_0(k)$, times a filter, $e^{-k^2\sigma^2}$ (our previously inspected Gaussian filter), plus a noise term, $|\hat{\eta}(k)|^2$, over a frequency space ranging from zero to the Nyquist frequency, $f_{Nq}$. The Nyquist frequency is dependent on the sampling resolution by $f_{Nq} = \frac{1}{2\Delta}$.
+where the diffused and noise-affected signal, $P_s$, is equal to the original signal, $P_0(k)$, times a filter, $e^{-k^2\sigma^2}$ (our previously inspected Gaussian filter), plus a noise term, $|\hat{\eta}(k)|^2$, over a frequency space ranging from zero to the Nyquist frequency, $f_{Nq}$. The Nyquist frequency is dependent on the sampling resolution by $f_{Nq} = \frac{1}{2\Delta_z}$.
 
 The noise term, often categorized as white noise, but red noise is also seen in isotopic signals(REFERENCES), is given as
 \begin{equation}
-	|\hat{\eta}(k)|^2 = \frac{\sigma_n^2 \Delta}{|1 - a_1 \, e^{ik\Delta}|^2}
+	|\hat{\eta}(k)|^2 = \frac{\sigma_n^2 \Delta_z}{|1 - a_1 \, e^{ik\Delta_z}|^2}
 	\label{Eq:PSD_Noise_Term}
 \end{equation}
 
@@ -238,7 +238,7 @@ This estimated diffusion length needs to be corrected: the obtained $\hat{\sigma
 \begin{itemize}
 	\item \textbf{Sampling diffusion}: This diffusion is due to the sampling method. Sampling at a certain discrete resolution - be it discrete sections or resolution in CFA system due to step or impulse response - gives an additional diffusion length of
 	\begin{equation}
-		\sigma_{dis} = \frac{2 \Delta^2}{\pi^2}\ln\left(\frac{\pi}{2}\right)
+		\sigma_{dis} = \frac{2 \Delta_z^2}{\pi^2}\ln\left(\frac{\pi}{2}\right)
 		\label{Eq:Diff_Len_corr_Discrete}
 	\end{equation}
 	\item \textbf{Ice diffusion} When below the close-off depth, a correction for the ice diffusion must also be made.

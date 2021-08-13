@@ -101,17 +101,17 @@ Finally, the right and the left flow are combined to construct the final restora
 \begin{figure}[!]
 	\begin{tikzpicture}[node distance=1.5cm, auto]
 		\node(pro1) [process, align=center] {$\sigma_0$ estimate};
-		\node(in1) [io, right of=pro1, text width=2cm, align=center, xshift=3cm] {Inputs: $\Delta$, $\epsilon$, $N_{\sigma}$}; 
+		\node(in1) [io, right of=pro1, text width=2cm, align=center, xshift=3cm] {Inputs: $\Delta_{\sigma}$, $\epsilon$, $N_{\sigma}$}; 
 		\node(pro2) [process, text width = 4.3cm, align=center, below of=pro1, yshift=-1.8cm] {Construct $\bar{\sigma}_0$ grid, 
 			\begin{align}
 				\bar{\sigma} &= \begin{bmatrix}
-					\sigma_0 - \left(\frac{N_{\sigma}}{2}-1\right)\Delta\\
+					\sigma_0 - \left(\frac{N_{\sigma}}{2}-1\right)\Delta_{\sigma}\\
 					\vdots\\
-					\sigma_0 - \Delta\\
+					\sigma_0 - \Delta_{\sigma}\\
 					\sigma_0 \\
-					\sigma_0 + \Delta\\
+					\sigma_0 + \Delta_{\sigma}\\
 					\vdots \\
-					\sigma_0 + \left(\frac{N_{\sigma}}{2}-1\right)\Delta
+					\sigma_0 + \left(\frac{N_{\sigma}}{2}-1\right)\Delta_{\sigma}
 				\end{bmatrix}
 				\nonumber
 		\end{align}};%$\bar{\sigma}=$ [$\sigma_{-2}$, $\sigma_{-1}$, $\sigma_0$, $\sigma_{1}$, $\sigma_{2}$]};
@@ -136,13 +136,13 @@ Finally, the right and the left flow are combined to construct the final restora
 		\node(empty2) [process, below of=pro4dec2, yshift=-3cm, minimum width=5cm, minimum height=3cm] {};
 		\node(for2) [below of=pro4dec2, yshift=-2cm] {Construct new $\bar{\sigma}$ grid with:};
 		\node(for2dec1) [decision, below of=for2, scale=0.9, text width = 4.5cm] {$\sigma_{min}=$ \textbf{max}$(\bar{\sigma}(P_i==0))$,\\ $\sigma_{max}=$ \textbf{min}$(\bar{\sigma}(P_i==1))$,\\
-			$\Delta=\frac{\sigma_{max} - \sigma_{min}}{N_{\sigma}-1}$};
+			$\Delta_{\sigma}=\frac{\sigma_{max} - \sigma_{min}}{N_{\sigma}-1}$};
 		\node(pro5) [process, left of=empty2, text width=4cm,xshift=-4cm, yshift=2cm] {\begin{align}
 				\bar{\sigma} &= \begin{bmatrix}
 					\sigma_{min}\\
-					\sigma_{min} +\Delta\\
+					\sigma_{min} +\Delta_{\sigma}\\
 					\vdots\\
-					\sigma_{max} - \Delta\\
+					\sigma_{max} - \Delta_{\sigma}\\
 					\sigma_{max}
 				\end{bmatrix}
 				\nonumber
@@ -177,7 +177,7 @@ Finally, the right and the left flow are combined to construct the final restora
 
 \subsection[Module 2]{Module 2: Estimating the Optimal $\sigma$}
 \label{Subsec:Method_SigmaMethod_Module2}
-The second module contains the optimization of $\sigma$. It is based on a constrained direct search method which examines the one dimensional $\sigma$ space. A flow chart of the module can be seen in Figure \ref{Fig:METH_Flowchart_Optimization}. The module takes three initialization parameters as input, the starting grid size $\Delta$, a small size $\epsilon$ and the number of grid points to examine $N_{\sigma}$, as well as the constraints imposed on the depth interval, described in the following section, \ref{Subsec:Meth_PeakDetection_Constrained}.
+The second module contains the optimization of $\sigma$. It is based on a constrained direct search method which examines the one dimensional $\sigma$ space. A flow chart of the module can be seen in Figure \ref{Fig:METH_Flowchart_Optimization}. The module takes three initialization parameters as input, the starting grid sizing $\Delta_{\sigma}$, a small size $\epsilon$ and the number of grid points to examine $N_{\sigma}$, as well as the constraints imposed on the depth interval, described in the following section, \ref{Subsec:Meth_PeakDetection_Constrained}.
 
 
 
@@ -352,16 +352,16 @@ The first interpolation is needed, if the fast spectral transforms FFT or FCT ar
 
 Even though the first interpolation method was later abandoned, some analysis was carried out with it to examine the effect of the size of the resampled, interpolated data on the final diffusion length estimate. Examples of a resampled signal can be seen in Figure \ref{Fig:COMPMETH_SiteA_DataSplineInterp} and Figure \ref{Fig:COMPMETH_SiteA_MultiSplineInterp}. Figure \ref{Fig:COMPMETH_SiteA_MultiSplineInterp} shows how sample resolution affects information from the signal. The higher sampling resolution, the more information is retained. But higher sampling resolution also means more data to be analyzed, which might slow down any analysis algorithms developed. This might create some headache if an entire ice core length of a couple thousand meters should be examined, but for this study only af few meters are of interest, and thus it should not create delays in the computation time.
 
-To examine the effect of the resampling resolution on the final diffusion length estimate when conducting a spline interpolation before carrying out the back-diffusion, the full diffusion length analysis has been performed with 100 new interpolation resampling sizes in the range $[\Delta_{\text{min}};\Delta_{\text{max}}]$. This gives an idea of the stability of the method considering both sample size of the raw data and resampling by interpolation. The minimum and maximum interpolation samplings are presented in Table \ref{tab:InterpSamples} and an illustration of the test results can be seen in Figure \ref{Fig:COMPMETH_SamplingVsDiffLen_interpBF}. 
+To examine the effect of the resampling resolution on the final diffusion length estimate when conducting a spline interpolation before carrying out the back-diffusion, the full diffusion length analysis has been performed with 100 new interpolation resampling sizes in the range $[\Delta_z^{\text{min}};\Delta_z^{\text{max}}]$. This gives an idea of the stability of the method considering both sample size of the raw data and resampling by interpolation. The minimum and maximum interpolation samplings are presented in Table \ref{tab:InterpSamples} and an illustration of the test results can be seen in Figure \ref{Fig:COMPMETH_SamplingVsDiffLen_interpBF}. 
 
-Figure \ref{Fig:COMPMETH_SamplingVsDiffLen_interpBF} shows that if the sampling size of the interpolation if decreased, it becomes difficult for the algorithm to determine a diffusion length that fulfills the constraints. This is due to the spectral transforms and back diffusion method being sensitive to smaller variations that the spline interpolation introduces to the signal, as can be seen in the first panel in Figure \ref{Fig:COMPMETH_SiteA_interpBF_SpecificSamplings}. Furthermore, Figure \ref{Fig:COMPMETH_SamplingVsDiffLen_interpBF} shows a less stable diffusion length estimate as the resampling size increases, and a general tendency to result in higher diffusion lengths as many features become washed out in the signal and needs more enhancement by cranking up the diffusion length estimate, see final panel in Figure \ref{Fig:COMPMETH_SiteA_interpBF_SpecificSamplings}. The interpolation before deconvolution is only necessary for running the method with the spectral transforms that are based on uniform sampling, i.e. the FFT and the DCT. For these two methods a choice of interpolation size can be made, but the general setting in the algorithm is to resample at the smallest sampling size found in the depth interval, $\Delta_{\text{min}}$.
+Figure \ref{Fig:COMPMETH_SamplingVsDiffLen_interpBF} shows that if the sampling size of the interpolation if decreased, it becomes difficult for the algorithm to determine a diffusion length that fulfills the constraints. This is due to the spectral transforms and back diffusion method being sensitive to smaller variations that the spline interpolation introduces to the signal, as can be seen in the first panel in Figure \ref{Fig:COMPMETH_SiteA_interpBF_SpecificSamplings}. Furthermore, Figure \ref{Fig:COMPMETH_SamplingVsDiffLen_interpBF} shows a less stable diffusion length estimate as the resampling size increases, and a general tendency to result in higher diffusion lengths as many features become washed out in the signal and needs more enhancement by cranking up the diffusion length estimate, see final panel in Figure \ref{Fig:COMPMETH_SiteA_interpBF_SpecificSamplings}. The interpolation before deconvolution is only necessary for running the method with the spectral transforms that are based on uniform sampling, i.e. the FFT and the DCT. For these two methods a choice of interpolation size can be made, but the general setting in the algorithm is to resample at the smallest sampling size found in the depth interval, $\Delta_z^{\text{min}}$.
 
 \marginnote{%
 	\footnotesize
 	\centering
 	\begin{tabular}{lccc}
 		\toprule
-		\textbf{Site} & $\Delta_{\text{min}}$& $\Delta_{\text{max}}$ & $\Delta_{\text{OG}}$\\
+		\textbf{Site} & $\Delta_z^{\text{min}}$& $\Delta_z^{\text{max}}$ & $\Delta_z^{\text{OG}}$\\
 		& [cm] & [cm] & [cm] \\
 		\midrule
 		A & 1.0 & 10.6 & 3.8-4.0\\
@@ -371,7 +371,7 @@ Figure \ref{Fig:COMPMETH_SamplingVsDiffLen_interpBF} shows that if the sampling 
 		G & 1.0 & 10.3 & 4.0-4.2\\
 		\bottomrule
 	\end{tabular}
-	\captionof{table}[Tested sample resolutions for resampling before back-diffusion.]{\footnotesize Minimal and maximal new sample resolution used for testing interpolation before back-diffusion. Each test is run with 100 different new sample resolutions between $\Delta_{\text{min}}$ and $\Delta_{\text{max}}$.}
+	\captionof{table}[Tested sample resolutions for resampling before back-diffusion.]{\footnotesize Minimal and maximal new sample resolution used for testing interpolation before back-diffusion. Each test is run with 100 different new sample resolutions between $\Delta_z^{\text{min}}$ and $\Delta_z^{\text{max}}$.}
 	\label{tab:InterpSamples}
 }[0.5cm]%
 \begin{figure}[!htb]
@@ -394,7 +394,7 @@ Figure \ref{Fig:COMPMETH_SamplingVsDiffLen_interpBF} shows that if the sampling 
 
 The second interpolation is carried out after deconvoluting and back-diffusing the signal, but before detecting peaks. Splines are especially effective when trying to find features like peaks in data which underlying signal is continuous, smooth and differentiable, but the sampling is discrete and thus the data are discrete and non-smooth. The isotopic signal under examination here is assumed to be truly smooth and continuous throughout the core - unless any gaps are present. Thus the cubic spline interpolation is a good tool for estimating a higher resolution version of the final back-diffused data series to use for peak detection. This makes the detection of peaks and troughs more precise, as there might not be a discrete data point exactly at the top of a peak, but the spline interpolation then estimates where the most likely top of the peak must be, on the basis of the existing data. Examples of three different interpolation samplings are presented in Figure \ref{Fig:COMPMETH_SiteA_InterpAF_4samplings}. The effect of resampling after deconvolution on the final diffusion length estimate is illustrated in Figure \ref{Fig:COMPMETH_SamlingVsDiffLen}. 
 
-As the actual isotopic signal is continuous and that the discretization is introduced by different measurement samplings, it is assumed that the spline interpolation after deconvolution results in a more likely peak detection, when decreasing the numerical resampling size. Therefore, for the method, a resample size of $\Delta_{\text{min}}/2$ is chosen for interpolation after back diffusion and before peak detection. In Figure \ref{Fig:COMPMETH_AllCores_SamplingVsDiffLen} The diffusion length estimate versus the resampling size after deconvolution and shows a convergence towards a fixed diffusion length as sampling size is decreased, and a much noisier diffusion length estimates as sampling size is increased. Furthermore, at certain larger sampling sizes the sought after pattern of peaks and troughs is not even reached. This resampling is carried out both for the FFT, DCT and NDCT spectral analysis methods, as the inverse NDCT can be resampled uniformly without any loss of information.
+As the actual isotopic signal is continuous and that the discretization is introduced by different measurement samplings, it is assumed that the spline interpolation after deconvolution results in a more likely peak detection, when decreasing the numerical resampling size. Therefore, for the method, a resample size of $\Delta_z^{\text{min}}/2$ is chosen for interpolation after back diffusion and before peak detection. In Figure \ref{Fig:COMPMETH_AllCores_SamplingVsDiffLen} The diffusion length estimate versus the resampling size after deconvolution and shows a convergence towards a fixed diffusion length as sampling size is decreased, and a much noisier diffusion length estimates as sampling size is increased. Furthermore, at certain larger sampling sizes the sought after pattern of peaks and troughs is not even reached. This resampling is carried out both for the FFT, DCT and NDCT spectral analysis methods, as the inverse NDCT can be resampled uniformly without any loss of information.
 
 
 

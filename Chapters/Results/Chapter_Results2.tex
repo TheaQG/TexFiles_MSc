@@ -36,7 +36,7 @@ The final annual layer thickness estimates are determined with a section length 
 	\centering
 	\begin{tabular}{lc}
 		\toprule
-		\textbf{Site} & $\Delta$\\
+		\textbf{Site} & $\bar{\Delta}_z$\\
 		& [cm]\\
 		\midrule
 		A & $3.92 \pm 0.06$\\
@@ -195,36 +195,42 @@ In Table \ref{Tab:DiffLens_SpecTrans} the estimated diffusion lengths, both opti
 
 \subsection[$\sigma$ Constant or Variable]{Diffusion Length Estimates if Diffusion Length Constant or Variable}
 \label{Subsec:Results_DiffLenEst_AlphabetCores_SigConstVar}
-
-\begin{table}[ht]
+\begin{figure}[h]
 	\centering
-	\begin{tabular}{l l l | c | c}
-		& & & $\sigma_{\text{constant}}$ & $\sigma(z)$\\[0.15cm]
-		\hline
-		\hline 
-		\multirow{2}{*}{\textbf{Site A}} & $\sigma_{\text{opt}}$ & [cm] & $ \pm$ & $ \pm $\\[0.1cm]
-		& $\sigma_{\text{firn}}$ & [cm] & & \\[0.1cm]
-		\hline
-		
-		\multirow{2}{*}{\textbf{Site B}} & $\sigma_{\text{opt}}$ & [cm] & $ \pm $ & $ \pm $ \\[0.1cm]
-		& $\sigma_{\text{firn}}$ & [cm] & & \\[0.1cm]
-		\hline
-		
-		\multirow{2}{*}{\textbf{Site D}} & $\sigma_{\text{opt}}$ & [cm] & $ \pm $ & $ \pm $ \\[0.1cm]
-		& $\sigma_{\text{firn}}$ & [cm] & & \\[0.1cm]
-		\hline
-		
-		\multirow{2}{*}{\textbf{Site E}} & $\sigma_{\text{opt}}$ & [cm] & $ \pm $ & $ \pm $ \\[0.1cm]
-		& $\sigma_{\text{firn}}$ & [cm] & & \\[0.1cm]
-		\hline
-		
-		\multirow{2}{*}{\textbf{Site G}} & $\sigma_{\text{opt}}$ & [cm] & $ \pm $ & $ \pm $ \\[0.1cm]
-		& $\sigma_{\text{firn}}$ & [cm] & & \\[0.1cm]
-		
-		\hline
-	\end{tabular}
-	\caption[$\sigma$ Given Constant or Varying]{\small Optimal and corrected firn diffusion length estimates given either a $\sigma$ estimated to be constant, $\sigma_{\text{constant}}$, or varying, $\sigma(z)$, over the Laki to Tambora depth section. }
-\end{table}
+	\includegraphics[width=0.95\textwidth]{SiteA_sigmaz_v_sigmaMin.pdf}
+	\caption[Deconvolution with $\sigma_{\text{constant}}$ and $\sigma(z)$]{\small Backdiffused data, deconvolution with $\sigma_{\text{constant}} = \sigma_{\text{LT}}^{\text{min}}$ and $\sigma(z)$.}
+	\label{fig:SiteA_sigmaz_v_sigmaMin}
+\end{figure}
+
+%\begin{table}[ht]
+%	\centering
+%	\begin{tabular}{l l l | c | c}
+%		& & & $\sigma_{\text{constant}}$ & $\sigma(z)$\\[0.15cm]
+%		\hline
+%		\hline 
+%		\multirow{2}{*}{\textbf{Site A}} & $\sigma_{\text{opt}}$ & [cm] & $ \pm$ & $ \pm $\\[0.1cm]
+%		& $\sigma_{\text{firn}}$ & [cm] & & \\[0.1cm]
+%		\hline
+%		
+%		\multirow{2}{*}{\textbf{Site B}} & $\sigma_{\text{opt}}$ & [cm] & $ \pm $ & $ \pm $ \\[0.1cm]
+%		& $\sigma_{\text{firn}}$ & [cm] & & \\[0.1cm]
+%		\hline
+%		
+%		\multirow{2}{*}{\textbf{Site D}} & $\sigma_{\text{opt}}$ & [cm] & $ \pm $ & $ \pm $ \\[0.1cm]
+%		& $\sigma_{\text{firn}}$ & [cm] & & \\[0.1cm]
+%		\hline
+%		
+%		\multirow{2}{*}{\textbf{Site E}} & $\sigma_{\text{opt}}$ & [cm] & $ \pm $ & $ \pm $ \\[0.1cm]
+%		& $\sigma_{\text{firn}}$ & [cm] & & \\[0.1cm]
+%		\hline
+%		
+%		\multirow{2}{*}{\textbf{Site G}} & $\sigma_{\text{opt}}$ & [cm] & $ \pm $ & $ \pm $ \\[0.1cm]
+%		& $\sigma_{\text{firn}}$ & [cm] & & \\[0.1cm]
+%		
+%		\hline
+%	\end{tabular}
+%	\caption[$\sigma$ Given Constant or Varying]{\small Optimal and corrected firn diffusion length estimates given either a $\sigma$ estimated to be constant, $\sigma_{\text{constant}}$, or varying, $\sigma(z)$, over the Laki to Tambora depth section. }
+%\end{table}
 
 %\begin{table}[ht]
 %	\centering
@@ -252,6 +258,12 @@ In Table \ref{Tab:DiffLens_SpecTrans} the estimated diffusion lengths, both opti
 
 \subsection[Final $\sigma$ Estimates]{Final $\sigma$ Estimates Based on Previous Conclusions}
 \label{Subsec:Results_DiffLenEst_AlphabetCores_FinalEstimates}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.95\textwidth]{SiteA_TheoDiffLens.pdf}
+	\caption[$\sigma$, theoretical and optimal.]{\small Example of back diffused data from Site A, both deconvoluted with maximum and minimum expected $\sigma$ and with the final $\sigma_{\text{opt}}$.}
+	\label{fig:SiteA_TheoDiffLens}
+\end{figure}
 The temperature estimates are, as described previously, made based on a steady state model, with a constant accumulation rate. The estimate is then made numerically through a Newton-Raphson scheme from \lstinline[language=Python]|scipy.optimize.newton|, finding the roots of $\sigma_{\text{model}}\cdot \frac{\rho_{\text{CO}}}{\rho_{\text{ice}}} - \sigma_{\text{data}}$.
 
 \begin{table}[ht]
