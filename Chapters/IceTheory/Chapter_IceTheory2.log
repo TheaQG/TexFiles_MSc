@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.30)  13 AUG 2021 09:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.30)  20 AUG 2021 11:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -350,14 +350,76 @@ Package tocvsec2 [2008/07/23] emulated by memoir.
 Package verbatim [2008/07/23] emulated by memoir.
 Package verse [2008/07/23] emulated by memoir.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/minitoc/minitoc.sty
+Package: minitoc 2018/07/12 v62 Package minitoc
+
+(/usr/share/texlive/texmf-dist/tex/latex/minitoc/mtcmess.sty
+Package: mtcmess 2006/03/14
+)
+Package minitoc Info: I0001
+(minitoc)             *** minitoc package, version 62 ***.
+\tf@mtc=\write4
+\mtcindent=\skip191
+\mtcskipamount=\skip192
+Package minitoc Info: I0005
+(minitoc)             compatible with hyperref.
+Package minitoc Info: I0030
+(minitoc)             the memoir class is loaded: 
+(minitoc)             compatibility attempted.
+Package minitoc Info: I0027
+(minitoc)             recent version of the memoir class.
+Package minitoc Info: I0032
+(minitoc)             This version of the memoir class uses 
+(minitoc)             a version of \chapter which is 
+(minitoc)             incompatible with the minitoc package. 
+(minitoc)             We try to patch.
+Package minitoc Info: I0023
+(minitoc)             part level macros available.
+Package minitoc Info: I0003
+(minitoc)             chapter level macros available.
+\mtc@toks=\toks24
+\mtc@strutbox=\box50
+\mtc@hstrutbox=\box51
+Package minitoc Info: I0002
+(minitoc)             Autoconfiguration of extensions.
+\openout4 = `Chapter_IceTheory2.mtc0'.
+
+\openout4 = `Chapter_IceTheory2.mtc'.
+
+
+(./Chapter_IceTheory2.mtc0)
+Package minitoc Info: I0012
+(minitoc)             Long extensions (Unix-like) will be used.
+Package minitoc Info: I0031
+(minitoc)             ==> this version is configured for UNIX-like 
+(minitoc)                 (long extensions) file names.
+\openout4 = `Chapter_IceTheory2.mtc'.
+
+\openout4 = `Chapter_IceTheory2.mtc0'.
+
+\c@mtc=\count292
+\c@minitocdepth=\count293
+\c@ptc=\count294
+\c@parttocdepth=\count295
+\ptcindent=\skip193
+Package minitoc Info: I0010
+(minitoc)             The english language is selected.
+(minitoc)              on input line 4910.
+
+(/usr/share/texlive/texmf-dist/tex/latex/minitoc/english.mld
+File: english.mld 2006/01/13
+)
+(/usr/share/texlive/texmf-dist/tex/latex/minitoc/english.mld
+File: english.mld 2006/01/13
+))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks24
-\inpenc@posthook=\toks25
+\inpenc@prehook=\toks25
+\inpenc@posthook=\toks26
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
-\@mathmargin=\skip191
+\@mathmargin=\skip194
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -365,7 +427,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks26
+\@emptytoks=\toks27
 \ex@=\dimen179
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -375,41 +437,41 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count292
+\inf@bad=\count296
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count293
-\leftroot@=\count294
+\uproot@=\count297
+\leftroot@=\count298
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count295
-\DOTSCASE@=\count296
+\classnum@=\count299
+\DOTSCASE@=\count300
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box50
-\strutbox@=\box51
+\Mathstrutbox@=\box52
+\strutbox@=\box53
 \big@size=\dimen181
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count297
-\c@MaxMatrixCols=\count298
+\macc@depth=\count301
+\c@MaxMatrixCols=\count302
 \dotsspace@=\muskip16
-\c@parentequation=\count299
-\dspbrk@lvl=\count300
-\tag@help=\toks27
-\row@=\count301
-\column@=\count302
-\maxfields@=\count303
-\andhelp@=\toks28
+\c@parentequation=\count303
+\dspbrk@lvl=\count304
+\tag@help=\toks28
+\row@=\count305
+\column@=\count306
+\maxfields@=\count307
+\andhelp@=\toks29
 \eqnshift@=\dimen182
 \alignsep@=\dimen183
 \tagshift@=\dimen184
 \tagwidth@=\dimen185
 \totwidth@=\dimen186
 \lineht@=\dimen187
-\@envbody=\toks29
-\multlinegap=\skip192
-\multlinetaggap=\skip193
-\mathdisplay@stack=\toks30
+\@envbody=\toks30
+\multlinegap=\skip195
+\multlinetaggap=\skip196
+\mathdisplay@stack=\toks31
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
@@ -436,18 +498,18 @@ Package: expl3 2020-02-14 L3 programming layer (loader)
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count304
-\l__pdf_internal_box=\box52
+\l__kernel_color_stack_int=\count308
+\l__pdf_internal_box=\box54
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2020-02-14 LaTeX2e option processing using LaTeX3 keys
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2020-02-14 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count305
-\g__xparse_grabber_int=\count306
-\l__xparse_m_args_int=\count307
-\l__xparse_v_nesting_int=\count308
+\l__xparse_current_arg_int=\count309
+\g__xparse_grabber_int=\count310
+\l__xparse_m_args_int=\count311
+\l__xparse_v_nesting_int=\count312
 )
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
@@ -459,37 +521,37 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 ))
 Package: media9 2020/01/27 v1.05 acrobat-9/X compatible media
-\g_mix_pkgresizeflag_int=\count309
+\g_mix_pkgresizeflag_int=\count313
 
 (/usr/share/texlive/texmf-dist/tex/latex/media9/pdfbase.sty
 Package: pdfbase 2020/01/27 v0.36 driver independent access to low-level PDF fe
 atures
-\g_pbs_page_int=\count310
-\g_pbs_oc_int=\count311
+\g_pbs_page_int=\count314
+\g_pbs_oc_int=\count315
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ocgx2/ocgbase.sty
 Package: ocgbase 2019/11/04 v0.17 support package for ocgx2.sty
-\g_ocgbase_nd_int=\count312
+\g_ocgbase_nd_int=\count316
 )
-\l_mix_poster_box=\box53
+\l_mix_poster_box=\box55
 \g_mix_wd_dim=\dimen188
 \g_mix_ht_dim=\dimen189
 \g_mix_dp_dim=\dimen190
-\g_mix_rmcnt_int=\count313
-\l_mix_viewcnt_int=\count314
-\g@mix@page@int=\count315
-\g_mix_resizeflag_int=\count316
-\l_mix_lineno_int=\count317
-\l_mix_pbtn_box=\box54
+\g_mix_rmcnt_int=\count317
+\l_mix_viewcnt_int=\count318
+\g@mix@page@int=\count319
+\g_mix_resizeflag_int=\count320
+\l_mix_lineno_int=\count321
+\l_mix_pbtn_box=\box56
 \mix@btn@dim=\dimen191
-\g_mix_mbtncnt_int=\count318
+\g_mix_mbtncnt_int=\count322
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks31
+\KV@toks@=\toks32
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
@@ -511,9 +573,9 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen194
 \WF@size=\dimen195
-\c@WF@wrappedlines=\count319
-\WF@box=\box55
-\WF@everypar=\toks32
+\c@WF@wrappedlines=\count323
+\WF@box=\box57
+\WF@everypar=\toks33
 Package: wrapfig 2003/01/31  v 3.6
 )
 
@@ -537,8 +599,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 61.
 \caption@hangindent=\dimen259
 Package caption Info: memoir document class detected.
 )
-\c@caption@flags=\count320
-\c@continuedfloat=\count321
+\c@caption@flags=\count324
+\c@continuedfloat=\count325
 Package caption Info: wrapfig package is loaded.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
@@ -548,32 +610,32 @@ Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
-\c@subfigure=\count322
-\c@subtable=\count323
+\c@subfigure=\count326
+\c@subtable=\count327
 )
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup7
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count324
-\lst@gtempboxa=\box56
-\lst@token=\toks33
-\lst@length=\count325
+\lst@mode=\count328
+\lst@gtempboxa=\box58
+\lst@token=\toks34
+\lst@length=\count329
 \lst@currlwidth=\dimen262
-\lst@column=\count326
-\lst@pos=\count327
+\lst@column=\count330
+\lst@pos=\count331
 \lst@lostspace=\dimen263
 \lst@width=\dimen264
-\lst@newlines=\count328
-\lst@lineno=\count329
+\lst@newlines=\count332
+\lst@lineno=\count333
 \lst@maxwidth=\dimen265
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count330
-\lst@skipnumbers=\count331
-\lst@framebox=\box57
+\c@lstnumber=\count334
+\lst@skipnumbers=\count335
+\lst@framebox=\box59
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2019/09/10 1.8c listings configuration
@@ -582,9 +644,9 @@ Package: listings 2019/09/10 1.8c (Carsten Heinz)
 
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
-\multirow@colwidth=\skip194
-\multirow@cntb=\count332
-\multirow@dima=\skip195
+\multirow@colwidth=\skip197
+\multirow@cntb=\count336
+\multirow@dima=\skip198
 \bigstrutjot=\dimen266
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
@@ -623,13 +685,13 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks34
+\pgfutil@everybye=\toks35
 \pgfutil@tempdima=\dimen267
 \pgfutil@tempdimb=\dimen268
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
 ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box58
+\pgfutil@abb=\box60
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -645,12 +707,12 @@ Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
 Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks35
-\pgfkeys@temptoks=\toks36
+\pgfkeys@pathtoks=\toks36
+\pgfkeys@temptoks=\toks37
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
 ex
-\pgfkeys@tmptoks=\toks37
+\pgfkeys@tmptoks=\toks38
 ))
 \pgf@x=\dimen269
 \pgf@y=\dimen270
@@ -662,16 +724,16 @@ ex
 \pgf@yc=\dimen276
 \pgf@xd=\dimen277
 \pgf@yd=\dimen278
-\w@pgf@writea=\write4
+\w@pgf@writea=\write5
 \r@pgf@reada=\read4
-\c@pgf@counta=\count333
-\c@pgf@countb=\count334
-\c@pgf@countc=\count335
-\c@pgf@countd=\count336
-\t@pgf@toka=\toks38
-\t@pgf@tokb=\toks39
-\t@pgf@tokc=\toks40
-\pgf@sys@id@count=\count337
+\c@pgf@counta=\count337
+\c@pgf@countb=\count338
+\c@pgf@countc=\count339
+\c@pgf@countd=\count340
+\t@pgf@toka=\toks39
+\t@pgf@tokb=\toks40
+\t@pgf@tokc=\toks41
+\pgf@sys@id@count=\count341
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
 )
@@ -687,8 +749,8 @@ File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count338
-\pgfsyssoftpath@bigbuffer@items=\count339
+\pgfsyssoftpath@smallbuffer@items=\count342
+\pgfsyssoftpath@bigbuffer@items=\count343
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -702,11 +764,11 @@ Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen279
-\pgfmath@count=\count340
-\pgfmath@box=\box59
-\pgfmath@toks=\toks41
-\pgfmath@stack@operand=\toks42
-\pgfmath@stack@operation=\toks43
+\pgfmath@count=\count344
+\pgfmath@box=\box61
+\pgfmath@toks=\toks42
+\pgfmath@stack@operand=\toks43
+\pgfmath@stack@operation=\toks44
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
@@ -726,7 +788,7 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count341
+\c@pgfmathroundto@lastzeros=\count345
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
@@ -762,10 +824,10 @@ File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
 File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfpic=\box60
-\pgf@hbox=\box61
-\pgf@layerbox@main=\box62
-\pgf@picture@serial@count=\count342
+\pgfpic=\box62
+\pgf@hbox=\box63
+\pgf@layerbox@main=\box64
+\pgf@picture@serial@count=\count346
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
@@ -798,8 +860,8 @@ File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@max=\dimen303
-\pgf@sys@shading@range@num=\count343
-\pgf@shadingcount=\count344
+\pgf@sys@shading@range@num=\count347
+\pgf@shadingcount=\count348
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
@@ -807,7 +869,7 @@ File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
 File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfexternal@startupbox=\box63
+\pgfexternal@startupbox=\box65
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
@@ -826,7 +888,7 @@ File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfnodeparttextbox=\box64
+\pgfnodeparttextbox=\box66
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
@@ -841,7 +903,7 @@ Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
 Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
 )) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count345
+\etb@tempcnta=\count349
 )
 (/usr/share/texlive/texmf-dist/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
@@ -854,10 +916,10 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks44
-\XKV@tempa@toks=\toks45
+\XKV@toks=\toks45
+\XKV@tempa@toks=\toks46
 )
-\XKV@depth=\count346
+\XKV@depth=\count350
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
@@ -869,7 +931,7 @@ Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
 
 (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box65
+\collectedbox=\box67
 )
 \tc@llx=\dimen306
 \tc@lly=\dimen307
@@ -891,13 +953,13 @@ File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 
 (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count347
+\c@checkoddpage=\count351
 LaTeX Info: Redefining \checkoddpage on input line 45.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box66
-\sift@deathcycles=\count348
+\@vwid@box=\box68
+\sift@deathcycles=\count352
 \@vwid@loff=\dimen318
 \@vwid@roff=\dimen319
 ))
@@ -920,8 +982,8 @@ Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen320
 \pgffor@skip=\dimen321
-\pgffor@stack=\toks46
-\pgffor@toks=\toks47
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
@@ -929,7 +991,7 @@ Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count349
+\pgf@plot@mark@count=\count353
 \pgfplotmarksize=\dimen322
 )
 \tikz@lastx=\dimen323
@@ -940,22 +1002,22 @@ File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \tikz@lastmovetoy=\dimen328
 \tikzleveldistance=\dimen329
 \tikzsiblingdistance=\dimen330
-\tikz@figbox=\box67
-\tikz@figbox@bg=\box68
-\tikz@tempbox=\box69
-\tikz@tempbox@bg=\box70
-\tikztreelevel=\count350
-\tikznumberofchildren=\count351
-\tikznumberofcurrentchild=\count352
-\tikz@fig@count=\count353
+\tikz@figbox=\box69
+\tikz@figbox@bg=\box70
+\tikz@tempbox=\box71
+\tikz@tempbox@bg=\box72
+\tikztreelevel=\count354
+\tikznumberofchildren=\count355
+\tikznumberofcurrentchild=\count356
+\tikz@fig@count=\count357
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count354
-\pgfmatrixcurrentcolumn=\count355
-\pgf@matrix@numberofcolumns=\count356
+\pgfmatrixcurrentrow=\count358
+\pgfmatrixcurrentcolumn=\count359
+\pgf@matrix@numberofcolumns=\count360
 )
-\tikz@expandcount=\count357
+\tikz@expandcount=\count361
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -978,44 +1040,44 @@ File: tikzlibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 File: pgflibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ))) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count358
-\calc@Bcount=\count359
+\calc@Acount=\count362
+\calc@Bcount=\count363
 \calc@Adimen=\dimen331
 \calc@Bdimen=\dimen332
-\calc@Askip=\skip196
-\calc@Bskip=\skip197
+\calc@Askip=\skip256
+\calc@Bskip=\skip257
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count360
-\calc@Cskip=\skip198
+\calc@Ccount=\count364
+\calc@Cskip=\skip258
 )
-\c@@todonotes@numberoftodonotes=\count361
+\c@@todonotes@numberoftodonotes=\count365
 )
 (/usr/share/texlive/texmf-dist/tex/latex/marginnote/marginnote.sty
 Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
-\c@mn@abspage=\count362
+\c@mn@abspage=\count366
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count363
-\float@exts=\toks48
-\float@box=\box71
-\@float@everytoks=\toks49
-\@floatcapt=\box72
+\c@float@type=\count367
+\float@exts=\toks49
+\float@box=\box73
+\@float@everytoks=\toks50
+\@floatcapt=\box74
 )
 (/usr/share/texlive/texmf-dist/tex/latex/marginfix/marginfix.sty
 Package: marginfix 2013/09/08 v1.1 Fix Margin Paragraphs
 \Mfx@inject@insert=\insert248
-\Mfx@marginbox=\box73
+\Mfx@marginbox=\box75
 \Mfx@marginpos@min=\dimen333
 \Mfx@marginpos@max=\dimen334
 \Mfx@marginspace=\dimen335
 \Mfx@marginheight=\dimen336
-\Mfx@piece@content=\box74
-\Mfx@piece@count=\count364
+\Mfx@piece@content=\box76
+\Mfx@piece@count=\count368
 \Mfx@mparshift=\dimen337
 \marginheightadjustment=\dimen338
 \marginposadjustment=\dimen339
@@ -1039,8 +1101,13 @@ File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \arrowsize=\dimen341
 )) (/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2020/02/14 v1.6 Multi-file projects (package)
-)))
-(./Chapter_IceTheory2.aux)
+)
+
+Package minitoc Warning: W0010
+(minitoc)                No file Chapter_IceTheory2.toc. 
+(minitoc)                MINITOCS NOT PREPARED on input line 109.
+
+)) (./Chapter_IceTheory2.aux)
 \openout1 = `Chapter_IceTheory2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -1057,21 +1124,46 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
-\AtBeginShipoutBox=\box75
+\c@minilofdepth=\count369
+\c@minilotdepth=\count370
+\c@partlofdepth=\count371
+\c@partlotdepth=\count372
+\c@sectlofdepth=\count373
+\c@sectlotdepth=\count374
+Package minitoc(hints) Info: I0049
+(minitoc(hints))             ==> You requested the hints option. 
+(minitoc(hints))             Some hints are eventually given below.
+Package minitoc(hints) Info: I0042
+(minitoc(hints))             --- The appendix package is loaded. 
+(minitoc(hints))             See the minitoc package documentation 
+(minitoc(hints))             for specific precautions.
+Package minitoc(hints) Info: I0046
+(minitoc(hints))             --- The tocbibind package is loaded. 
+(minitoc(hints))             See the minitoc package documentation 
+(minitoc(hints))             for specific precautions.
+Package minitoc(hints) Info: I0047
+(minitoc(hints))             --- The tocloft package is loaded. 
+(minitoc(hints))             See the minitoc package documentation 
+(minitoc(hints))             for specific precautions.
+Package minitoc(hints) Info: I0044
+(minitoc(hints))             --- The memoir class is loaded. 
+(minitoc(hints))             See the minitoc package documentation 
+(minitoc(hints))             for specific precautions.
+\AtBeginShipoutBox=\box77
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count365
+\scratchcounter=\count375
 \scratchdimen=\dimen342
-\scratchbox=\box76
-\nofMPsegments=\count366
-\nofMParguments=\count367
-\everyMPshowfont=\toks50
-\MPscratchCnt=\count368
+\scratchbox=\box78
+\nofMPsegments=\count376
+\nofMParguments=\count377
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count378
 \MPscratchDim=\dimen343
-\MPnumerator=\count369
-\makeMPintoPDFobject=\count370
-\everyMPtoPDFconversion=\toks51
+\MPnumerator=\count379
+\makeMPintoPDFobject=\count380
+\everyMPtoPDFconversion=\toks52
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1085,7 +1177,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count371
+\c@lstlisting=\count381
 
 ABD: EveryShipout initializing macros
 LaTeX Info: Redefining \celsius on input line 4.
@@ -1099,186 +1191,278 @@ Package gensymb Info: Using \Omega for \ohm on input line 4.
 
 Package gensymb Warning: Not defining \micro.
 
+Package minitoc Info: I0006
+(minitoc)             Chapter_IceTheory2.mtc0 is empty on input line 8.
+
+LaTeX Warning: Citation `WaterIsoRatios' on page 1 undefined on input line 12.
+
 <../../Figures/Crete_10m_dated.pdf, id=29, 1251.54245pt x 328.1058pt>
 File: ../../Figures/Crete_10m_dated.pdf Graphic file (type pdf)
 <use ../../Figures/Crete_10m_dated.pdf>
 Package pdftex.def Info: ../../Figures/Crete_10m_dated.pdf  used on input line 
-15.
+16.
 (pdftex.def)             Requested size: 369.0pt x 96.73529pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 21
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 22
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 21
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 22
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<../../Figures/Fractionation.png, id=30, 962.09438pt x 639.13782pt>
-File: ../../Figures/Fractionation.png Graphic file (type png)
-<use ../../Figures/Fractionation.png>
-Package pdftex.def Info: ../../Figures/Fractionation.png  used on input line 25
-.
-(pdftex.def)             Requested size: 111.0pt x 73.73824pt.
+<../../Figures/FractionationDrawing.pdf, id=30, 247.38414pt x 162.7309pt>
+File: ../../Figures/FractionationDrawing.pdf Graphic file (type pdf)
+<use ../../Figures/FractionationDrawing.pdf>
+Package pdftex.def Info: ../../Figures/FractionationDrawing.pdf  used on input 
+line 27.
+(pdftex.def)             Requested size: 111.0pt x 73.01466pt.
 
-Underfull \hbox (badness 1424) in paragraph at lines 26--26
+Underfull \hbox (badness 1424) in paragraph at lines 28--28
 []\OT1/cmr/m/n/10.95 Figure 0.2: |\OT1/cmr/m/n/9 Frac-tion-a-
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 26--26
+Underfull \hbox (badness 1242) in paragraph at lines 28--28
 \OT1/cmr/m/n/9 tion through evap-o-ra-tion,
  []
 
+
+LaTeX Warning: Citation `Lamb2017' on page 1 undefined on input line 38.
+
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <../../Figures/Fractionation.png> <../../Figures/Crete_10m_dated.pdf>]
-<../../Figures/firn_popular.jpg, id=73, 510.708pt x 555.2745pt>
+ <../../Figures/FractionationDrawing.pdf> <../../Figures/Crete_10m_dated.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/Crete_10m_dated.pdf): PDF
+ inclusion: multiple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: Citation `NUBASE2016' on page 2 undefined on input line 42.
+
+
+LaTeX Warning: Reference `Fig:ICE_DENS_FirnColumn' on page 2 undefined on input
+ line 59.
+
+
+LaTeX Warning: Citation `Holme2018' on page 2 undefined on input line 59.
+
+
+LaTeX Warning: Citation `Kahle2018' on page 2 undefined on input line 59.
+
+<../../Figures/firn_popular.jpg, id=87, 510.708pt x 555.2745pt>
 File: ../../Figures/firn_popular.jpg Graphic file (type jpg)
 <use ../../Figures/firn_popular.jpg>
-Package pdftex.def Info: ../../Figures/firn_popular.jpg  used on input line 60.
+Package pdftex.def Info: ../../Figures/firn_popular.jpg  used on input line 63.
 
 (pdftex.def)             Requested size: 111.0pt x 120.6865pt.
- [2 <../../Figures/Firn_popular.jpg>]
+
+LaTeX Warning: Citation `Blunier2000' on page 2 undefined on input line 64.
+
+
+LaTeX Warning: Citation `Blunier2000' on page 2 undefined on input line 64.
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 64--64
+\OT1/cmr/m/n/9 de-po-si-tion to glacial ice.
+ []
+
+[2]
+
+LaTeX Warning: Citation `HerronLangway1980' on page 3 undefined on input line 7
+2.
+
 
 LaTeX Warning: Citation `HerronLangway1980' on page 3 undefined on input line 7
 4.
 
 
-LaTeX Warning: Reference `AppIIX:HLmodel' on page 3 undefined on input line 74.
+LaTeX Warning: Citation `Barnola1991' on page 3 undefined on input line 77.
+
+
+LaTeX Warning: Citation `Goujon2003' on page 3 undefined on input line 77.
+
+
+LaTeX Warning: Citation `HerronLangway1980' on page 3 undefined on input line 7
+7.
+
+
+LaTeX Warning: Reference `AppIIX:HLmodel' on page 3 undefined on input line 77.
 
 
 [3]
 
-LaTeX Warning: Reference `AppIIX:HLmodel' on page 4 undefined on input line 85.
+LaTeX Warning: Reference `AppIIX:HLmodel' on page 4 undefined on input line 88.
 
 
-<../../Figures/DensProf_Examples.pdf, id=84, 400.37581pt x 472.49657pt>
+<../../Figures/DensProf_Examples.pdf, id=97, 400.37581pt x 472.49657pt>
 File: ../../Figures/DensProf_Examples.pdf Graphic file (type pdf)
 <use ../../Figures/DensProf_Examples.pdf>
 Package pdftex.def Info: ../../Figures/DensProf_Examples.pdf  used on input lin
-e 90.
+e 93.
 (pdftex.def)             Requested size: 111.0pt x 130.99318pt.
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
-<../../Figures/SiteA_DensProfile_wHL.pdf, id=85, 400.37581pt x 472.6458pt>
+<../../Figures/SiteA_DensProfile_wHL.pdf, id=98, 400.37581pt x 472.6458pt>
 File: ../../Figures/SiteA_DensProfile_wHL.pdf Graphic file (type pdf)
 <use ../../Figures/SiteA_DensProfile_wHL.pdf>
 Package pdftex.def Info: ../../Figures/SiteA_DensProfile_wHL.pdf  used on input
- line 97.
+ line 100.
 (pdftex.def)             Requested size: 111.0pt x 131.03455pt.
 
-Underfull \hbox (badness 4366) in paragraph at lines 98--98
+Underfull \hbox (badness 4366) in paragraph at lines 101--101
 \OT1/cmr/m/n/9 files from ice core Site
  []
 
 
-Underfull \hbox (badness 6944) in paragraph at lines 98--98
+Underfull \hbox (badness 6944) in paragraph at lines 101--101
 \OT1/cmr/m/n/9 A near Cr^ete. Both
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 98--98
+Underfull \hbox (badness 3407) in paragraph at lines 101--101
 \OT1/cmr/m/n/9 pro-file fit-ted to the in-
  []
 
+
+LaTeX Warning: Citation `Johnsen2000a' on page 4 undefined on input line 111.
+
+<../../Figures/ADiffusionIllustration.pdf, id=99, 293.88803pt x 119.11615pt>
+File: ../../Figures/ADiffusionIllustration.pdf Graphic file (type pdf)
+<use ../../Figures/ADiffusionIllustration.pdf>
+Package pdftex.def Info: ../../Figures/ADiffusionIllustration.pdf  used on inpu
+t line 114.
+(pdftex.def)             Requested size: 147.59775pt x 59.8251pt.
 [4 <../../Figures/DensProf_Examples.pdf> <../../Figures/SiteA_DensProfile_wHL.p
 df
 
 pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/SiteA_DensProfile_wHL.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Overfull \hbox (2.59918pt too wide) in paragraph at lines 117--118
-[]\OT1/cmr/m/n/10.95 Diffusion is mod-eled through Fick's $2[]$ law, which de-s
-cribes the change
- []
 
-[5]
+LaTeX Warning: Citation `Johnsen2000a' on page 5 undefined on input line 123.
 
-LaTeX Warning: Citation `Johnsen1977' on page 6 undefined on input line 153.
+
+LaTeX Warning: Citation `Fick1851' on page 5 undefined on input line 127.
+
+[5 <../../Figures/ADiffusionIllustration.pdf>]
+
+LaTeX Warning: Citation `Johnsen1977' on page 6 undefined on input line 161.
 
 [6]
 
-LaTeX Warning: Citation `RAMSEIER1967' on page 7 undefined on input line 171.
+LaTeX Warning: Citation `HerronLangway1980' on page 7 undefined on input line 1
+72.
 
 
-LaTeX Warning: Citation `Johnsen2000' on page 7 undefined on input line 171.
-
-[7] [8] [9]
-
-LaTeX Warning: Citation `Stevens2020' on page 10 undefined on input line 263.
+LaTeX Warning: Citation `Ramsier1967' on page 7 undefined on input line 179.
 
 
-LaTeX Warning: Citation `Gkinis2019' on page 10 undefined on input line 263.
+LaTeX Warning: Citation `Johnsen2000' on page 7 undefined on input line 179.
+
+[7]
+
+LaTeX Warning: Citation `Jouzel1997' on page 8 undefined on input line 196.
 
 
-LaTeX Warning: Citation `Gkinis2019' on page 10 undefined on input line 265.
+LaTeX Warning: Citation `Holme2018' on page 8 undefined on input line 196.
 
 
-LaTeX Warning: Citation `Patankar1980' on page 10 undefined on input line 265.
+LaTeX Warning: Citation `Gkinis2014' on page 8 undefined on input line 196.
+
+
+LaTeX Warning: Citation `McGillem1984' on page 8 undefined on input line 197.
+
+
+LaTeX Warning: Citation `Shannon1949' on page 8 undefined on input line 209.
+
+
+LaTeX Warning: Citation `Holme2018' on page 8 undefined on input line 211.
+
+[8]
+
+LaTeX Warning: Reference `Sec:SignalAnalysis_BackDiffusion' on page 9 undefined
+ on input line 243.
+
+[9]
+
+LaTeX Warning: Citation `Stevens2020' on page 10 undefined on input line 271.
+
+
+LaTeX Warning: Citation `Gkinis2019' on page 10 undefined on input line 271.
+
+
+LaTeX Warning: Citation `Gkinis2019' on page 10 undefined on input line 273.
+
+
+LaTeX Warning: Citation `Patankar1980' on page 10 undefined on input line 273.
 
 [10]
 
 LaTeX Warning: Citation `HerronLangway1980' on page 11 undefined on input line 
-269.
+277.
 
 
-LaTeX Warning: Citation `Stevens2020' on page 11 undefined on input line 269.
+LaTeX Warning: Citation `Stevens2020' on page 11 undefined on input line 277.
 
 
-Overfull \hbox (10.3268pt too wide) in paragraph at lines 269--270
+Overfull \hbox (10.3268pt too wide) in paragraph at lines 277--278
 []\OT1/cmr/m/n/10.95 The user starts by spec-i-fy-ing in-put parameters(firn-de
 nsification physics,
  []
 
 
-LaTeX Warning: Citation `Gkinis_2021' on page 11 undefined on input line 274.
+LaTeX Warning: Citation `Gkinis_2021' on page 11 undefined on input line 282.
 
 
-LaTeX Warning: Citation `Gkinis_2021' on page 11 undefined on input line 274.
+LaTeX Warning: Citation `Gkinis_2021' on page 11 undefined on input line 282.
 
 [11]
-<../../Figures/Analytical_DiffLenEq_terms_SiteA.pdf, id=148, 485.6544pt x 557.9
+<../../Figures/Analytical_DiffLenEq_terms_SiteA.pdf, id=629, 485.6544pt x 557.9
 2442pt>
 File: ../../Figures/Analytical_DiffLenEq_terms_SiteA.pdf Graphic file (type pdf
 )
 <use ../../Figures/Analytical_DiffLenEq_terms_SiteA.pdf>
 Package pdftex.def Info: ../../Figures/Analytical_DiffLenEq_terms_SiteA.pdf  us
-ed on input line 289.
+ed on input line 297.
 (pdftex.def)             Requested size: 221.40225pt x 254.34976pt.
 
 
-LaTeX Warning: Reference `AppIX:CFM' on page 12 undefined on input line 294.
+LaTeX Warning: Reference `AppIX:CFM' on page 12 undefined on input line 302.
 
 
-LaTeX Warning: Citation `Gkinis2021' on page 12 undefined on input line 294.
+LaTeX Warning: Citation `Gkinis2021' on page 12 undefined on input line 302.
 
 
-LaTeX Warning: Reference `AppIX:CFM' on page 12 undefined on input line 296.
+LaTeX Warning: Reference `Fig:DensProf_Examples' on page 12 undefined on input 
+line 302.
 
-<../../Figures/ContourPlot_Alphabet.pdf, id=149, 545.72449pt x 413.3844pt>
+
+LaTeX Warning: Reference `AppIX:CFM' on page 12 undefined on input line 304.
+
+<../../Figures/ContourPlot_Alphabet.pdf, id=630, 545.72449pt x 413.3844pt>
 File: ../../Figures/ContourPlot_Alphabet.pdf Graphic file (type pdf)
 <use ../../Figures/ContourPlot_Alphabet.pdf>
 Package pdftex.def Info: ../../Figures/ContourPlot_Alphabet.pdf  used on input 
-line 300.
+line 308.
 (pdftex.def)             Requested size: 258.29887pt x 195.65945pt.
 
-LaTeX Warning: Citation `Gkinis2021' on page 12 undefined on input line 306.
+LaTeX Warning: Citation `Gkinis2021' on page 12 undefined on input line 314.
 
 [12] [13 <../../Figures/Analytical_DiffLenEq_terms_SiteA.pdf> <../../Figures/Co
 ntourPlot_Alphabet.pdf
@@ -1286,58 +1470,99 @@ ntourPlot_Alphabet.pdf
 pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/ContourPlot_Alphabet.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../../Figures/DiffProf_Examples.pdf, id=190, 415.77786pt x 455.38274pt>
+<../../Figures/DiffProf_Examples.pdf, id=671, 415.77786pt x 455.38274pt>
 File: ../../Figures/DiffProf_Examples.pdf Graphic file (type pdf)
 <use ../../Figures/DiffProf_Examples.pdf>
 Package pdftex.def Info: ../../Figures/DiffProf_Examples.pdf  used on input lin
-e 310.
+e 318.
 (pdftex.def)             Requested size: 111.0pt x 121.5722pt.
 
-Underfull \hbox (badness 6110) in paragraph at lines 311--311
+Underfull \hbox (badness 6110) in paragraph at lines 319--319
 \OT1/cmr/m/n/9 rep-re-sent-ing present day
  []
 
 
-LaTeX Warning: Reference `Eq:Firn_Temp_est_Roots' on page 14 undefined on input
- line 318.
+LaTeX Warning: Citation `Press2007' on page 14 undefined on input line 332.
 
 
-LaTeX Warning: Citation `Press2007' on page 14 undefined on input line 324.
+LaTeX Warning: Citation `Press2007' on page 14 undefined on input line 332.
 
-
-LaTeX Warning: Citation `Press2007' on page 14 undefined on input line 324.
-
-<../../Figures/SiteA_ECM_d18O_full.pdf, id=191, 833.9958pt x 400.37581pt>
+<../../Figures/SiteA_ECM_d18O_full.pdf, id=672, 833.9958pt x 400.37581pt>
 File: ../../Figures/SiteA_ECM_d18O_full.pdf Graphic file (type pdf)
 <use ../../Figures/SiteA_ECM_d18O_full.pdf>
 Package pdftex.def Info: ../../Figures/SiteA_ECM_d18O_full.pdf  used on input l
-ine 338.
+ine 346.
 (pdftex.def)             Requested size: 369.0pt x 177.14948pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14 <../../Figures/DiffProf_Examples.pdf>] [15 <../../Figures/SiteA_ECM_d18O_fu
-ll.pdf>]
 
-LaTeX Warning: Reference `AppX:DEP' on page 16 undefined on input line 366.
+LaTeX Warning: Citation `Hammer1980' on page 14 undefined on input line 351.
+
+[14 <../../Figures/DiffProf_Examples.pdf>]
+
+LaTeX Warning: Citation `Taylor1993' on page 15 undefined on input line 362.
+
+[15 <../../Figures/SiteA_ECM_d18O_full.pdf>]
+
+LaTeX Warning: Citation `Moore1993' on page 16 undefined on input line 374.
 
 
-LaTeX Warning: Reference `Fig:ICE_SiteA_ECM' on page 16 undefined on input line
- 370.
+LaTeX Warning: Citation `Moore1993a' on page 16 undefined on input line 374.
 
-[16] [17] (./Chapter_IceTheory2.aux)
+
+LaTeX Warning: Reference `AppX:DEP' on page 16 undefined on input line 374.
+
+
+LaTeX Warning: Citation `Langway1988' on page 16 undefined on input line 406.
+
+
+LaTeX Warning: Citation `Wei2008' on page 16 undefined on input line 406.
+
+
+LaTeX Warning: Citation `Dai2009' on page 16 undefined on input line 406.
+
+[16]
+Package minitoc Info: I0009
+(minitoc)             Listing minitoc auxiliary files. 
+(minitoc)             Creating the Chapter_IceTheory2.maf file.
+\openout4 = `Chapter_IceTheory2.maf'.
+
+
+
+Package minitoc(hints) Warning: W0068
+(minitoc(hints))                You have used \minitoc but not 
+(minitoc(hints))                \tableofcontents
+(minitoc(hints))                nor \faketableofcontents.
+
+
+Package minitoc(hints) Warning: W0033
+(minitoc(hints))                The caption package should be 
+(minitoc(hints))                loaded BEFORE the minitoc package.
+
+Package minitoc(hints) Info: I0053
+(minitoc(hints))             You have loaded the float package; 
+(minitoc(hints))             please be aware that the minitoc package 
+(minitoc(hints))             facilities can not be used for new types 
+(minitoc(hints))             of floats defined by the float package.
+
+Package minitoc(hints) Warning: W0024
+(minitoc(hints))                Some hints have been written 
+(minitoc(hints))                in the Chapter_IceTheory2.log file.
+
+[17] (./Chapter_IceTheory2.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 24318 strings out of 481239
- 454530 string characters out of 5920377
- 896493 words of memory out of 5000000
- 39120 multiletter control sequences out of 15000+600000
- 545618 words of font info for 78 fonts, out of 8000000 for 9000
+ 26077 strings out of 481239
+ 478578 string characters out of 5920377
+ 931897 words of memory out of 5000000
+ 40668 multiletter control sequences out of 15000+600000
+ 545926 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,12n,96p,1363b,1291s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,12n,96p,1500b,1291s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
@@ -1360,11 +1585,12 @@ nts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.p
 fb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/wasy-type1/wasy10.pfb>
-Output written on Chapter_IceTheory2.pdf (17 pages, 1014135 bytes).
+ve/texmf-dist/fonts/type1/public/wasy-type1/wasy10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/wasy-type1/wasy9.pfb>
+Output written on Chapter_IceTheory2.pdf (17 pages, 613562 bytes).
 PDF statistics:
- 307 PDF objects out of 1000 (max. 8388607)
- 236 compressed objects within 3 object streams
+ 791 PDF objects out of 1000 (max. 8388607)
+ 559 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
- 154 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
 

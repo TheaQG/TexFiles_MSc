@@ -1,9 +1,38 @@
 \begin{thebibliography}{10}
 
+\bibitem{Aciego2011}
+S.~Aciego, B.~Bourdon, J.~Schwander, H.~Baur, and A.~Forieri.
+\newblock {Toward a radiometric ice clock: uranium ages of the Dome C ice
+  core.}
+\newblock {\em Quaternary Science Reviews}, 30(19):2389--2397., 2011.
+
 \bibitem{Ahmed1974_DCT}
 N.~Ahmed, T.~Natarajan, and K.~R. Rao.
 \newblock {Discrete Cosine Transform}.
 \newblock {\em IEEE Transactions on Computers}, C-23(1):90--93, 1974.
+
+\bibitem{NUBASE2016}
+G.~Audi, F.~G. Kondev, Meng Wang, W.~J. Huang, and S.~Naimi.
+\newblock {The NUBASE2016 evaluation of nuclear properties}.
+\newblock {\em Chinese Physics C}, 41(3):1--138, 2017.
+
+\bibitem{BarkanLuz2005}
+Eugeni Barkan and Boaz Luz.
+\newblock {High precision measurements of 17O/16O and 18O/16O ratios in H2O}.
+\newblock {\em Rapid Communications in Mass Spectrometry}, 19(24):3737--3742,
+  2005.
+
+\bibitem{Barnola1991}
+JM~Barnola, P~Pimienta, D~Raynaud, and YS~Korotkevich.
+\newblock {CO 2 -climate relationship as deduced from the Vostok ice core: a
+  re-examination based on new measurements and on a re-evaluation of the air
+  dating.}
+\newblock {\em Tellus}, B 43(2):83--90, 1991.
+
+\bibitem{Blunier2000}
+T.~Blunier and J.~Schwander.
+\newblock {Gas enclosure in ice: age difference and fractionation}.
+\newblock {\em Physics of ice core records}, pages 307--326, 2000.
 
 \bibitem{Bruun1978__BruunsFFT}
 G~Bruun.
@@ -11,16 +40,60 @@ G~Bruun.
 \newblock {\em IEEE Transactions on Acoustics, Speech and Signal Processing
   (ASSP)}, 26(1):56--63, 1978.
 
-\bibitem{Clausen1988}
+\bibitem{Capron2013}
+Emilie Capron, A~Landais, PC~Tzedakis, E~Bard, T~Blunier, D~Dahl-Jensen,
+  T~Dokken, R~Gersonde, F~Parrenin, M~Schulz, B~Vinther, and C~Waelbroek.
+\newblock {Dating and synchronizing paleoclimatic records over the last
+  interglacial}.
+\newblock {\em PAGES news}, 21(1):26--27, 2013.
+
+\bibitem{Clausen1988a}
+H.B. Clausen, N.S. Gundestrup, S.J. Johnsen, R.~Bindschadler, and J.~Zwally.
+\newblock {Glaciological Investigations in the Cr{\^{e}}te Area, Central
+  Greenland: A Search for a new Deep-Drilling Site}.
+\newblock {\em Annals of Glaciology}, 10:10--15, 1988.
+
+\bibitem{ClausenHammer1988}
 H.B. Clausen and C.U. Hammer.
 \newblock {The Laki and Tambora Eruptions as Revealed in Greenland Ice Cores
   from 11 Locations}.
 \newblock {\em Annals of Glaciology}, 10:16--22, 1988.
 
+\bibitem{Dai2009}
+Jihong Cole-Dai, David Ferris, Alyson Lanciki, Jo{\"{e}}l Savarino,
+  M{\'{e}}lanie Baroni, and Mark~H. Thiemens.
+\newblock {Cold decade (AD 1810-1819) caused by Tambora (1815) and another
+  (1809) stratospheric volcanic eruption}.
+\newblock {\em Geophysical Research Letters}, 36(22), 2009.
+
 \bibitem{Cooley1965}
 J.~W. Cooley and J.~W. Tukey.
 \newblock {An Algorithm for the Machine Calculation of Complex Fourier Series}.
 \newblock {\em AMS: Mathematics of Computation}, 19:297--301, 1965.
+
+\bibitem{Dansgaard1964}
+W.~Dansgaard.
+\newblock {Stable isotopes in precipitation}.
+\newblock {\em Tellus}, 16(4):436--468, 1964.
+
+\bibitem{Ellehoj2013}
+MD~Elleh{\o}j, HC~Steen-Larsen, SJ~Johnsen, and MB~Madsen.
+\newblock {Ice-vapor equilibrium fractionation factor of hydrogen and oxygen
+  isotopes: experi- mental investigations and implications for stable water
+  isotope studies}.
+\newblock {\em Rapid Communications in Mass Spectrometry}, 27(19):2149--2158,
+  2013.
+
+\bibitem{Fick1851}
+Adolf Fick.
+\newblock {{\"{U}}ber Diffusion}.
+\newblock {\em Annalen der Physik}, 94(1):59--86, 1851.
+
+\bibitem{Gkinis2014}
+V.~Gkinis, S.~B. Simonsen, S.~L. Buchardt, J.~W.C. White, and B.~M. Vinther.
+\newblock {Water isotope diffusion rates from the NorthGRIP ice core for the
+  last 16,000 years - Glaciological and paleoclimatic implications}.
+\newblock {\em Earth and Planetary Science Letters}, 405:132--141, 2014.
 
 \bibitem{Gkinis2019}
 Vasileios Gkinis, Christian Holme, Emma~C Kahle, C~Max Stevens, Eric~J Steig,
@@ -29,12 +102,32 @@ Vasileios Gkinis, Christian Holme, Emma~C Kahle, C~Max Stevens, Eric~J Steig,
   Firn Model}.
 \newblock {\em Journal of Glaciology}, in review(x):1--54, 2019.
 
-\bibitem{Gkinis_2021}
+\bibitem{Gkinis2021}
 Vasileios Gkinis, Christian Holme, Emma~C Kahle, Max~C Stevens, Bo~M Vinther,
   and Eric~J Steig.
 \newblock {Numerical experiments on firn isotope diffusion with the Community
   Firn Model}.
 \newblock 2021.
+
+\bibitem{WaterIsoRatios}
+Vasileios Gkinis, Trevor~J Popp, Sigfus~J Johnsen, Thomas Blunier, M~Bigler,
+  S~Sch{\"{u}}pbach, E~Kettner, and Sigfus~J Johnsen.
+\newblock {Water isotopic ratios from a continuously melted ice core sample}.
+\newblock {\em Atmospheric Measurement Techniques}, 4(4):2531--2542, 2011.
+
+\bibitem{GkinisQuistgaard2021}
+Vasileios Gkinis, Bo~M. Vinther, Trevor~J. Popp, Thea Quistgaard, Anne~Katrine
+  Faber, Christian~T. Holme, Camilla~Marie Jensen, Mika Lanzky, Anine~Maria
+  L{\"{u}}tt, Vasileios Mandrakis, Niels~Ole {\O}rum, Anna~Sofie Pedersen,
+  Nikol Vaxevani, Yongbiao Weng, Emilie Capron, Dorthe Dahl-Jensen, Maria
+  H{\"{o}}rhold, Tyler~R. Jones, Jean Jouzel, Ama{\"{e}}lle Landais,
+  Val{\'{e}}rie Masson-Delmotte, Hans Oerter, Sune~O. Rasmussen, Hans~Christian
+  Steen-Larsen, J{\o}rgen~Peder Steffensen, {\'{A}}rn{\'{y}}~Erla
+  Sveinbj{\"{o}}rnsd{\'{o}}ttir, Anders Svensson, Bruce Vaughn, and James~W.C.
+  White.
+\newblock {A 120,000-year long climate record from a NW-Greenland deep ice core
+  at ultra-high resolution}.
+\newblock {\em Scientific Data}, 8(1):1--10, 2021.
 
 \bibitem{Good1958_PrimeFFT}
 I.~J. Good.
@@ -42,15 +135,48 @@ I.~J. Good.
 \newblock {\em Journal of the Royal Statistical Society. Series B
   (Methodological)}, 20(2):361--372, 1958.
 
+\bibitem{Goujon2003}
+C~Goujon, JM~Barnola, and C~Ritz.
+\newblock {Modeling the densification of polar firn including heat diffusion:
+  application to close-off characteristics and gas isotopic fractionation for
+  Antarctica and Greenland sites.}
+\newblock {\em JGR: Atmospheres}, 108(D24):4792--4792, 2003.
+
+\bibitem{HallPrupacher1976}
+W.~D. Hall and H.~R. Pruppacher.
+\newblock {The Survival of Ice Particles Falling from Cirrus Clouds in
+  Subsaturated Air}.
+\newblock {\em Journal of the Atmospheric Sciences}, 33(October):1995--2006,
+  1976.
+
+\bibitem{Hammer1980}
+C.~U. Hammer.
+\newblock {Acidity of Polar Ice Cores in Relation to Absolute Dating, Past
+  Volcanism, and Radio–Echoes}.
+\newblock {\em Journal of Glaciology}, 25(93):359--372, 1980.
+
 \bibitem{HerronLangway1980}
 M.~M. Herron and C.~C.~Jr. Langway.
 \newblock {Firn densification: an Empirical Model}.
 \newblock {\em Journal of Glaciology}, 25(93), 1980.
 
+\bibitem{Holme2018}
+Christian Holme, Vasileios Gkinis, and Bo~M. Vinther.
+\newblock {Molecular diffusion of stable water isotopes in polar firn as a
+  proxy for past temperatures}.
+\newblock {\em Geochimica et Cosmochimica Acta}, 225:128--145, 2018.
+
 \bibitem{Johnsen1977}
 S.~J. Johnsen.
 \newblock {Stable isotope homogenization of polar firn and ice}.
 \newblock {\em Isotopes and impurities in snow and ice}, (1):210--219, 1977.
+
+\bibitem{Johnsen2001}
+S.~J. Johnsen, D.~Dahl-Jensen, N.~Gundestrup, J.~P. Steffensen, H.~B. Clausen,
+  H.~Miller, V.~Masson-Delmotte, A.~E. Sveinbj{\"{o}}rnsdottir, and J~White.
+\newblock {Oxygen isotope and palaeotemperature records from six Greenland
+  ice-core stations: Camp Century, Dye-3, GRIP, GISP2, Renland and NorthGRIP}.
+\newblock {\em Journal of Quaternary Science}, 16((4)):299--307, 2001.
 
 \bibitem{Johnsen2000a}
 Sigfus Johnsen, Henrik Clausen, Kurt~M Cuffey, Georg Hoffmann, Jakob Schwander,
@@ -60,16 +186,59 @@ Sigfus Johnsen, Henrik Clausen, Kurt~M Cuffey, Georg Hoffmann, Jakob Schwander,
 \newblock {\em Physics of Ice Core Records, 121-140}, pages 121--140, 2000.
 
 \bibitem{Johnsen2000}
-Sigf{\'{u}}s~J. Johnsen, Henrik~B. Clausen, Kurt~M. Cuffey, Georg Hoffmann,
-  Jakob Schwander, and Creyts Timothy.
+Sigf{\'{u}}s~J Johnsen, Henrik~B Clausen, Kurt~M Cuffey, Georg Hoffmann, Jakob
+  Schwander, and Creyts Timothy.
 \newblock {Diffusion of stable isotopes in polar firn and ice: the isotope
   effect in firn diffusion}.
 \newblock {\em Physics of Ice Records}, pages 121--140, 2000.
+
+\bibitem{Jouzel1997}
+J.~Jouzel, R.~B. Alley, K.~M. Cuffey, W.~Dansgaard, P.~Grootes, G.~Hoffmann,
+  S.~J. Johnsen, R.~D. Koster, D.~Peel, C.~A. Shuman, M.~Stievenard,
+  M.~Stuiver, and J.~White.
+\newblock {Validity of the temperature reconstruction from water isotopes in
+  ice cores}.
+\newblock {\em Journal of Geophysical Research: Oceans}, 102(C12):26471--26487,
+  1997.
+
+\bibitem{Kahle2018}
+Emma~C. Kahle, Christian Holme, Tyler~R. Jones, Vasileios Gkinis, and Eric~J.
+  Steig.
+\newblock {A Generalized Approach to Estimating Diffusion Length of Stable
+  Water Isotopes From Ice-Core Data}.
+\newblock {\em Journal of Geophysical Research: Earth Surface},
+  123(10):2377--2391, 2018.
+
+\bibitem{Lamb2017}
+Kara~D. Lamb, Benjamin~W. Clouser, Maximilien Bolot, Laszlo Sarkozy, Volker
+  Ebert, Harald Saathoff, Ottmar M{\"{o}}hler, and Elisabeth~J. Moyer.
+\newblock {Laboratory measurements of HDO/H2O isotopic fractionation during ice
+  deposition in simulated cirrus clouds}.
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 114(22):5612--5617, 2017.
+
+\bibitem{Lambert2008}
+F.~Lambert, B.~Delmonte, J.-R. Petit, M.~Bigler, P.R. Kaufmann, M.A. Hutterli,
+  T.F. Stocker, U.~Ruth, J.P. Steffensen, and V.~Maggi.
+\newblock {Dust-climate couplings over the past 800, 000 years from the EPICA
+  Dome C ice core.}
+\newblock {\em Nature}, 452((7187)):616--619., 2008.
+
+\bibitem{Langway1988}
+C.C. Langway, H.B. Clausen, and C.U. Hammer.
+\newblock {An Inter-Hemispheric Volcanic Time-Marker in Ice Cores from
+  Greenland and Antarctica}.
+\newblock {\em Annals of Glaciology}, 10:102--108, 1988.
 
 \bibitem{Lee2005}
 June~Yub Lee and Leslie Greengard.
 \newblock {The type 3 nonuniform FFT and its applications}.
 \newblock {\em Journal of Computational Physics}, 206(1):1--5, 2005.
+
+\bibitem{Majoube1970}
+M.~Majoube.
+\newblock {Fractionation factor of 18O between water vapour and ice}.
+\newblock {\em Nature}, 226(5252):1242, 1970.
 
 \bibitem{Makhoul1980}
 J.~Makhoul.
@@ -77,15 +246,111 @@ J.~Makhoul.
 \newblock {\em IEEE Transactions on Signal Processing}, ASSP-28(1):27--34,
   1980.
 
+\bibitem{Marshall2020}
+Alan Marshall.
+\newblock {Did a volcanic eruption in Indonesia really lead to the creation of
+  Frankenstein?}
+\newblock {\em The Conversation}, January(24), 2020.
+
 \bibitem{Marvasti1993}
 Farokh Marvasti.
 \newblock {\em {Nonuniform Sampling}}.
 \newblock 1993.
 
+\bibitem{McGillem1984}
+Clare~D. McGillem and George~R. Cooper.
+\newblock {\em {Continuous and Discrete Signal and System Analysis}}.
+\newblock 1984.
+
+\bibitem{Merlivat1978}
+L.~Merlivat.
+\newblock {Molecular diffusivities of H2 16O, H D 16O, and H2 18O gases.}
+\newblock {\em Journal of Chemical Physics}, 69(6):2864--2871, 1978.
+
+\bibitem{MerlivatNief1967}
+L.~Merlivat and G.~Nief.
+\newblock {Fractionnement isotopique lors des changements d'{\'{e}}tat
+  solide-vapeur et liquide-vapeur de l'eau {\'{A}} des temp{\'{e}}ratures
+  inf{\'{e}}rieures {\'{A}} 0°C}.
+\newblock {\em Tellus}, 19(1):122--127, 1967.
+
+\bibitem{Moore1987}
+J~Moore and J~Paren.
+\newblock {A New Technique For Dielectric Logging of Antarctic Ice Cores}.
+\newblock {\em Journal de Physique Colloques}, 48(C1):155--160, 1987.
+
+\bibitem{Moore1993}
+J.~C. Moore and S.~Fujita.
+\newblock {Dielectric properties of ice containing acid and salt impurity at
+  microwave and low frequencies}.
+\newblock {\em Journal of Geophysical Research}, 98(B6):9769--9780, 1993.
+
+\bibitem{Moore1990}
+J.~C. Moore, J.~G. Paren, and R.~Mulvaney.
+\newblock {Chemical evidence in polar ice cores from dielectric profiling}.
+\newblock {\em Annals of Glaciology}, 14:195--198, 1990.
+
+\bibitem{MurphyKoop_2005}
+DM~Murphy and T~Koop.
+\newblock {Review of the vapour pressures of ice and supercooled water for
+  atmospheric applications.}
+\newblock {\em Quarterly Journal of the Royal Meteorological Society},
+  131(608):1539--1565, 2005.
+
+\bibitem{NGRIP2014}
+Members NGRIP.
+\newblock {High-resolution record of Northern Hemisphere climate extending into
+  the last interglacial period.}
+\newblock {\em Quaternary research.}, 82(1):147--151, 2014.
+
+\bibitem{Oppenheimer2003}
+Clive Oppenheimer.
+\newblock {Climatic, environmental and human con sequences of the largest known
+  historic eruption: Tambora volcano (Indonesia) 1815}.
+\newblock {\em Progress in Physical Geography}, 27(2):230--259, 2003.
+
+\bibitem{Parsecal1806}
+Marc-Antoine {Parseval des Ch{\^{e}}nes}.
+\newblock {M{\'{e}}moire sur les s{\'{e}}ries et sur l'int{\'{e}}gration
+  compl{\`{e}}te d'une {\'{e}}quation aux diff{\'{e}}rences partielles
+  lin{\'{e}}aire du second ordre, {\`{a}} coefficients constants}.
+\newblock {\em M{\'{e}}moires pr{\'{e}}sent{\'{e}}s {\`{a}} l'Institut des
+  Sciences, Lettres et Arts, par divers savants, et lus dans ses
+  assembl{\'{e}}es. Sciences, math{\'{e}}matiques et physiques}, 1:638--648,
+  1806.
+
 \bibitem{Patankar1980}
 S.V. Patankar.
 \newblock {\em {Numerical Heat Transfer and Fluid Flow}}.
 \newblock Boca Raton, 1st edition, 1980.
+
+\bibitem{EGRIP2016}
+Sandra Petersen.
+\newblock {About EastGRIP}.
+
+\bibitem{Press2007}
+William~H. Press, Saul~A. Teukolsky, William~T. Vetterling, and Brian~P.
+  Flannery.
+\newblock {\em {Numerical Recipes: The Art of Scientific Computing.}}
+\newblock Cambridge University Press, 2007.
+
+\bibitem{Ramsier1967}
+Ren{\'{e}}~O. Ramseier.
+\newblock {Self-diffusion of tritium in natural and synthetic ice
+  monocrystals}.
+\newblock {\em Journal of Applied Physics}, 38(6):2553--2556, 1967.
+
+\bibitem{Rasmussen2005}
+S.~O. Rasmussen, K.~K. Andersen, S.~J. Johnsen, M.~Bigler, and T.~McCormack.
+\newblock {Deconvolution-based resolution enhancement of chemical ice core
+  records obtained by continuous flow analysis}.
+\newblock {\em Journal of Geophysical Research D: Atmospheres},
+  110(17):163--169, 2005.
+
+\bibitem{Rasmussen2014}
+Sune~O Rasmussen, A~Svensson, and M~Winstrup.
+\newblock {State of the art of ice core annual layer dating}.
+\newblock {\em Past Global Changes Magazine}, 22(1):26--27, 2014.
 
 \bibitem{Ruiz-Antolin2018}
 Diego Ruiz-Antolin and Alex Townsend.
@@ -93,11 +358,21 @@ Diego Ruiz-Antolin and Alex Townsend.
   approximation}.
 \newblock {\em SIAM Journal on Scientific Computing}, 40(1):A529--A547, 2018.
 
+\bibitem{Shannon1949}
+Claude~E. Shannon.
+\newblock {Communication in the Presence of Noise}.
+\newblock {\em Proceedings of the IRE}, 37(1):10--21, 1949.
+
 \bibitem{Potts2001}
 Gabriele Steidl, Daniel Potts, and Manfred Tasche.
 \newblock {Fast Fourier Transform For Nonequispaced Data: A Tutorial}.
 \newblock In {\em Modern Sampling Theory}, volume~2, chapter Chapter 1, pages
   1--23. 2001.
+
+\bibitem{Steingrimsson1998}
+J{\'{o}}n Steingr{\'{i}}msson and Keneva Kunz.
+\newblock {Fires of the earth: the Laki eruption, 1783–1784.}
+\newblock {\em University of Iceland Press.}, December, 1998.
 
 \bibitem{Stevens2020}
 C.~Max Stevens, Vincent Verjans, Jessica M.~D. Lundin, Emma~C. Kahle, Annika~N.
@@ -105,10 +380,40 @@ C.~Max Stevens, Vincent Verjans, Jessica M.~D. Lundin, Emma~C. Kahle, Annika~N.
 \newblock {The Community Firn Model (CFM) v1.0}.
 \newblock {\em Geoscientific Model Development}, 13(9):4355--4377, 2020.
 
+\bibitem{Stone2004}
+R.~Stone.
+\newblock {Iceland ' s Doomsday Scenario ?}
+\newblock {\em Science}, 306(5700):1278--1281, 2004.
+
+\bibitem{Taylor1993}
+K.~C. Taylor, C.~U. Hammer, R.~B. Alley, H.~B. Clausen, D.~Dahl-Jensen, A.~J.
+  Gow, N.~S. Gundestrup, J.~Kipfstuh, J.~C. Moore, and E.~D. Waddington.
+\newblock {Electrical conductivity measurements from the GISP2 and GRIP
+  Greenland ice cores}, 1993.
+
+\bibitem{Thordaldson2004}
+Thorvaldur Thordaldson and Stephen Self.
+\newblock {Atmospheric and environmental effects of the 1783–1784 Laki
+  eruption: A review and reassessment}.
+\newblock {\em Journal of Geophysical Research}, 108(D1 40111):159--171, 2004.
+
 \bibitem{Tian2000}
 B.~Tian and Q.~H. Liu.
 \newblock {Nonuniform fast cosine transform and chebyshev PSTD algorithms}.
 \newblock {\em Progress in Electromagnetics Research}, 28:253--273, 2000.
+
+\bibitem{MEMSpectralAnalysis}
+Tad~J Ulrych and Thomas~N Bishop.
+\newblock {Maximum entropy spectral analysis and autoregressive decomposition}.
+\newblock {\em Reviews of Geophysics}, 13(1):183--200, 1975.
+
+\bibitem{Vinther2006}
+B.~M. Vinther, H.~B. Clausen, S.~J. Johnsen, S.~O. Rasmussen, K.~K. Andersen,
+  S.~L. Buchardt, D.~Dahl-Jensen, I.~K. Seierstad, M.~L. Siggaard-Andersen,
+  J.~P. Steffensen, A.~Svensson, J.~Olsen, and J.~Heinemeier.
+\newblock {A synchronized dating of three Greenland ice cores throughout the
+  Holocene}.
+\newblock {\em Journal of Geophysical Research Atmospheres}, 111(13), 2006.
 
 \bibitem{Virtanen2020_SciPy}
 Pauli Virtanen, Ralf Gommers, Travis~E. Oliphant, Matt Haberland, Tyler Reddy,
@@ -142,11 +447,35 @@ Pauli Virtanen, Ralf Gommers, Travis~E. Oliphant, Matt Haberland, Tyler Reddy,
   Python}.
 \newblock {\em Nature Methods}, 17(3):261--272, 2020.
 
+\bibitem{Wei2008}
+Lijia Wei, Ellen Mosley-Thompson, Paolo Gabrielli, Lonnie~G. Thompsn, and Carlo
+  Barbante.
+\newblock {Synchronous deposition of volcanic ash and sulfate aerosols over
+  Greenland in 1783 from the Laki eruption (Iceland)}.
+\newblock {\em Geophysical Research Letters}, 35(16), 2008.
+
 \bibitem{Weissbach2016}
 S.~Weissbach, A.~Wegner, T.~Opel, H.~Oerter, B.~M. Vinther, and S.~Kipfstuhl.
 \newblock {Spatial and temporal oxygen isotope variability in northern
   Greenland-implications for a new climate record over the past millennium}.
 \newblock {\em Climate of the Past}, 12(2):171--188, 2016.
+
+\bibitem{Wheatley2015}
+Joe Wheatley.
+\newblock {\em {Automated Bayesian Layer Counting of Ice Cores}}.
+\newblock Phd, University of Sheffield, 2015.
+
+\bibitem{Winstrup2012}
+M.~Winstrup, A.~M. Svensson, S.~O. Rasmussen, O.~Winther, E.~J. Steig, and
+  A.~E. Axelrod.
+\newblock {An automated approach for annual layer counting in ice cores}.
+\newblock {\em Climate of the Past}, 8(6):1881--1895, 2012.
+
+\bibitem{Zerefos2007}
+C.~S. Zerefos, V.~T. Gerogiannis, D.~Balis, S.~C. Zerefos, and A.~Kazantzidis.
+\newblock {Atmospheric effects of volcanic eruptions as seen by famous artists
+  and depicted in their paintings}.
+\newblock {\em Atmospheric Chemistry and Physics}, 7(15):4027--4042, 2007.
 
 \bibitem{Zhao2008}
 Xianfeng Zhao, Bingbing Xia, and Yi~Deng.

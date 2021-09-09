@@ -1,0 +1,8 @@
+\changetocdepth {3}
+\contentsline {section}{Darkness}{iv}{section*.1}%
+\contentsline {chapter}{Contents}{vi}{section*.4}%
+\contentsline {xchapter}{}{vi}{section*.4}%
+\contentsline {chapter}{List of Figures}{vii}{section*.5}%
+\contentsline {xchapter}{}{vii}{section*.5}%
+\contentsline {chapter}{List of Tables}{vii}{section*.6}%
+\contentsline {xchapter}{}{vii}{section*.6}%

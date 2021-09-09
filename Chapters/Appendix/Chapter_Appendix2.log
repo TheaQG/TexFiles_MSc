@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.30)  4 AUG 2021 11:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.30)  17 AUG 2021 17:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1006,6 +1006,21 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks49
 \@floatcapt=\box72
 )
+(/usr/share/texlive/texmf-dist/tex/latex/marginfix/marginfix.sty
+Package: marginfix 2013/09/08 v1.1 Fix Margin Paragraphs
+\Mfx@inject@insert=\insert248
+\Mfx@marginbox=\box73
+\Mfx@marginpos@min=\dimen333
+\Mfx@marginpos@max=\dimen334
+\Mfx@marginspace=\dimen335
+\Mfx@marginheight=\dimen336
+\Mfx@piece@content=\box74
+\Mfx@piece@count=\count364
+\Mfx@mparshift=\dimen337
+\marginheightadjustment=\dimen338
+\marginposadjustment=\dimen339
+\Mfx@strutheight=\dimen340
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2020/01/08 v3.1.5b (3.1.5b)
@@ -1021,7 +1036,7 @@ File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
 tex
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\arrowsize=\dimen333
+\arrowsize=\dimen341
 )) (/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2020/02/14 v1.6 Multi-file projects (package)
 )))
@@ -1042,20 +1057,20 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
-\AtBeginShipoutBox=\box73
+\AtBeginShipoutBox=\box75
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count364
-\scratchdimen=\dimen334
-\scratchbox=\box74
-\nofMPsegments=\count365
-\nofMParguments=\count366
+\scratchcounter=\count365
+\scratchdimen=\dimen342
+\scratchbox=\box76
+\nofMPsegments=\count366
+\nofMParguments=\count367
 \everyMPshowfont=\toks50
-\MPscratchCnt=\count367
-\MPscratchDim=\dimen335
-\MPnumerator=\count368
-\makeMPintoPDFobject=\count369
+\MPscratchCnt=\count368
+\MPscratchDim=\dimen343
+\MPnumerator=\count369
+\makeMPintoPDFobject=\count370
 \everyMPtoPDFconversion=\toks51
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1070,7 +1085,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count370
+\c@lstlisting=\count371
 
 ABD: EveryShipout initializing macros
 LaTeX Info: Redefining \celsius on input line 4.
@@ -1120,18 +1135,18 @@ Package epstopdf Info: Source file: <../../Figures/Core_LT_B16.eps>
 (epstopdf)                    size: 25202 bytes
 (epstopdf)             Command: <repstopdf --outfile=../../Figures/Core_LT_B16-
 eps-converted-to.pdf ../../Figures/Core_LT_B16.eps>
-(epstopdf)             \includegraphics on input line 52.
+(epstopdf)             \includegraphics on input line 48.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/Core_LT_B16-eps-converted
 -to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
 owed
-<../../Figures/Core_LT_B16-eps-converted-to.pdf, id=46, 867.24pt x 650.43pt>
+<../../Figures/Core_LT_B16-eps-converted-to.pdf, id=45, 867.24pt x 650.43pt>
 File: ../../Figures/Core_LT_B16-eps-converted-to.pdf Graphic file (type pdf)
 <use ../../Figures/Core_LT_B16-eps-converted-to.pdf>
 Package pdftex.def Info: ../../Figures/Core_LT_B16-eps-converted-to.pdf  used o
-n input line 52.
+n input line 48.
 (pdftex.def)             Requested size: 162.42172pt x 121.81638pt.
 Package epstopdf Info: Source file: <../../Figures/Core_LT_B18.eps>
 (epstopdf)                    date: 2020-09-21 13:46:12
@@ -1142,18 +1157,18 @@ Package epstopdf Info: Source file: <../../Figures/Core_LT_B18.eps>
 (epstopdf)                    size: 33355 bytes
 (epstopdf)             Command: <repstopdf --outfile=../../Figures/Core_LT_B18-
 eps-converted-to.pdf ../../Figures/Core_LT_B18.eps>
-(epstopdf)             \includegraphics on input line 52.
+(epstopdf)             \includegraphics on input line 48.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/Core_LT_B18-eps-converted
 -to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
 owed
-<../../Figures/Core_LT_B18-eps-converted-to.pdf, id=47, 867.24pt x 650.43pt>
+<../../Figures/Core_LT_B18-eps-converted-to.pdf, id=46, 867.24pt x 650.43pt>
 File: ../../Figures/Core_LT_B18-eps-converted-to.pdf Graphic file (type pdf)
 <use ../../Figures/Core_LT_B18-eps-converted-to.pdf>
 Package pdftex.def Info: ../../Figures/Core_LT_B18-eps-converted-to.pdf  used o
-n input line 52.
+n input line 48.
 (pdftex.def)             Requested size: 162.42172pt x 121.81638pt.
 Package epstopdf Info: Source file: <../../Figures/Core_LT_B19.eps>
 (epstopdf)                    date: 2020-09-21 13:46:13
@@ -1164,18 +1179,18 @@ Package epstopdf Info: Source file: <../../Figures/Core_LT_B19.eps>
 (epstopdf)                    size: 25657 bytes
 (epstopdf)             Command: <repstopdf --outfile=../../Figures/Core_LT_B19-
 eps-converted-to.pdf ../../Figures/Core_LT_B19.eps>
-(epstopdf)             \includegraphics on input line 52.
+(epstopdf)             \includegraphics on input line 48.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/Core_LT_B19-eps-converted
 -to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
 owed
-<../../Figures/Core_LT_B19-eps-converted-to.pdf, id=48, 867.24pt x 650.43pt>
+<../../Figures/Core_LT_B19-eps-converted-to.pdf, id=47, 867.24pt x 650.43pt>
 File: ../../Figures/Core_LT_B19-eps-converted-to.pdf Graphic file (type pdf)
 <use ../../Figures/Core_LT_B19-eps-converted-to.pdf>
 Package pdftex.def Info: ../../Figures/Core_LT_B19-eps-converted-to.pdf  used o
-n input line 52.
+n input line 48.
 (pdftex.def)             Requested size: 162.42172pt x 121.81638pt.
 Package epstopdf Info: Source file: <../../Figures/Core_LT_B20.eps>
 (epstopdf)                    date: 2020-09-21 13:46:13
@@ -1186,18 +1201,18 @@ Package epstopdf Info: Source file: <../../Figures/Core_LT_B20.eps>
 (epstopdf)                    size: 24219 bytes
 (epstopdf)             Command: <repstopdf --outfile=../../Figures/Core_LT_B20-
 eps-converted-to.pdf ../../Figures/Core_LT_B20.eps>
-(epstopdf)             \includegraphics on input line 53.
+(epstopdf)             \includegraphics on input line 49.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/Core_LT_B20-eps-converted
 -to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
 owed
-<../../Figures/Core_LT_B20-eps-converted-to.pdf, id=49, 867.24pt x 650.43pt>
+<../../Figures/Core_LT_B20-eps-converted-to.pdf, id=48, 867.24pt x 650.43pt>
 File: ../../Figures/Core_LT_B20-eps-converted-to.pdf Graphic file (type pdf)
 <use ../../Figures/Core_LT_B20-eps-converted-to.pdf>
 Package pdftex.def Info: ../../Figures/Core_LT_B20-eps-converted-to.pdf  used o
-n input line 53.
+n input line 49.
 (pdftex.def)             Requested size: 162.42172pt x 121.81638pt.
 Package epstopdf Info: Source file: <../../Figures/Core_LT_B21.eps>
 (epstopdf)                    date: 2020-09-21 13:46:13
@@ -1208,18 +1223,18 @@ Package epstopdf Info: Source file: <../../Figures/Core_LT_B21.eps>
 (epstopdf)                    size: 24466 bytes
 (epstopdf)             Command: <repstopdf --outfile=../../Figures/Core_LT_B21-
 eps-converted-to.pdf ../../Figures/Core_LT_B21.eps>
-(epstopdf)             \includegraphics on input line 53.
+(epstopdf)             \includegraphics on input line 49.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/Core_LT_B21-eps-converted
 -to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
 owed
-<../../Figures/Core_LT_B21-eps-converted-to.pdf, id=50, 867.24pt x 650.43pt>
+<../../Figures/Core_LT_B21-eps-converted-to.pdf, id=49, 867.24pt x 650.43pt>
 File: ../../Figures/Core_LT_B21-eps-converted-to.pdf Graphic file (type pdf)
 <use ../../Figures/Core_LT_B21-eps-converted-to.pdf>
 Package pdftex.def Info: ../../Figures/Core_LT_B21-eps-converted-to.pdf  used o
-n input line 53.
+n input line 49.
 (pdftex.def)             Requested size: 162.42172pt x 121.81638pt.
 Package epstopdf Info: Source file: <../../Figures/Core_LT_B22.eps>
 (epstopdf)                    date: 2020-09-21 13:46:14
@@ -1230,18 +1245,18 @@ Package epstopdf Info: Source file: <../../Figures/Core_LT_B22.eps>
 (epstopdf)                    size: 28549 bytes
 (epstopdf)             Command: <repstopdf --outfile=../../Figures/Core_LT_B22-
 eps-converted-to.pdf ../../Figures/Core_LT_B22.eps>
-(epstopdf)             \includegraphics on input line 53.
+(epstopdf)             \includegraphics on input line 49.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/Core_LT_B22-eps-converted
 -to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
 owed
-<../../Figures/Core_LT_B22-eps-converted-to.pdf, id=51, 867.24pt x 650.43pt>
+<../../Figures/Core_LT_B22-eps-converted-to.pdf, id=50, 867.24pt x 650.43pt>
 File: ../../Figures/Core_LT_B22-eps-converted-to.pdf Graphic file (type pdf)
 <use ../../Figures/Core_LT_B22-eps-converted-to.pdf>
 Package pdftex.def Info: ../../Figures/Core_LT_B22-eps-converted-to.pdf  used o
-n input line 53.
+n input line 49.
 (pdftex.def)             Requested size: 162.42172pt x 121.81638pt.
 Package epstopdf Info: Source file: <../../Figures/Core_LT_B23.eps>
 (epstopdf)                    date: 2020-09-21 13:46:14
@@ -1252,21 +1267,21 @@ Package epstopdf Info: Source file: <../../Figures/Core_LT_B23.eps>
 (epstopdf)                    size: 27544 bytes
 (epstopdf)             Command: <repstopdf --outfile=../../Figures/Core_LT_B23-
 eps-converted-to.pdf ../../Figures/Core_LT_B23.eps>
-(epstopdf)             \includegraphics on input line 54.
+(epstopdf)             \includegraphics on input line 50.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/Core_LT_B23-eps-converted
 -to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
 owed
-<../../Figures/Core_LT_B23-eps-converted-to.pdf, id=52, 867.24pt x 650.43pt>
+<../../Figures/Core_LT_B23-eps-converted-to.pdf, id=51, 867.24pt x 650.43pt>
 File: ../../Figures/Core_LT_B23-eps-converted-to.pdf Graphic file (type pdf)
 <use ../../Figures/Core_LT_B23-eps-converted-to.pdf>
 Package pdftex.def Info: ../../Figures/Core_LT_B23-eps-converted-to.pdf  used o
-n input line 54.
+n input line 50.
 (pdftex.def)             Requested size: 162.42172pt x 121.81638pt.
 
-LaTeX Warning: Float too large for page by 22.68921pt on input line 56.
+LaTeX Warning: Float too large for page by 22.68921pt on input line 52.
 
 [3 <../../Figures/Core_LT_B16-eps-converted-to.pdf> <../../Figures/Core_LT_B18-
 eps-converted-to.pdf> <../../Figures/Core_LT_B19-eps-converted-to.pdf> <../../F
@@ -1284,28 +1299,28 @@ Package epstopdf Info: Source file: <../../Figures/fig_dens_B16B18B19B20B21B22B
 (epstopdf)             Command: <repstopdf --outfile=../../Figures/fig_dens_B16
 B18B19B20B21B22B23-eps-converted-to.pdf ../../Figures/fig_dens_B16B18B19B20B21B
 22B23.eps>
-(epstopdf)             \includegraphics on input line 65.
+(epstopdf)             \includegraphics on input line 61.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/fig_dens_B16B18B19B20B21B
 22B23-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at mos
 t version <1.5> allowed
-<../../Figures/fig_dens_B16B18B19B20B21B22B23-eps-converted-to.pdf, id=293, 108
+<../../Figures/fig_dens_B16B18B19B20B21B22B23-eps-converted-to.pdf, id=292, 108
 4.05pt x 722.7pt>
 File: ../../Figures/fig_dens_B16B18B19B20B21B22B23-eps-converted-to.pdf Graphic
  file (type pdf)
 <use ../../Figures/fig_dens_B16B18B19B20B21B22B23-eps-converted-to.pdf>
 Package pdftex.def Info: ../../Figures/fig_dens_B16B18B19B20B21B22B23-eps-conve
-rted-to.pdf  used on input line 65.
+rted-to.pdf  used on input line 61.
 (pdftex.def)             Requested size: 553.5pt x 369.01321pt.
 
-Overfull \hbox (12.09976pt too wide) in paragraph at lines 65--67
+Overfull \hbox (12.09976pt too wide) in paragraph at lines 61--63
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 48.86235pt on input line 68.
+LaTeX Warning: Float too large for page by 48.86235pt on input line 64.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1322,44 +1337,44 @@ Package epstopdf Info: Source file: <../../Figures/fig_densAve_B16B18B19B20B21B
 (epstopdf)             Command: <repstopdf --outfile=../../Figures/fig_densAve_
 B16B18B19B20B21B22B23-eps-converted-to.pdf ../../Figures/fig_densAve_B16B18B19B
 20B21B22B23.eps>
-(epstopdf)             \includegraphics on input line 76.
+(epstopdf)             \includegraphics on input line 72.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ../../Figures/fig_densAve_B16B18B19B20B
 21B22B23-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at 
 most version <1.5> allowed
-<../../Figures/fig_densAve_B16B18B19B20B21B22B23-eps-converted-to.pdf, id=336, 
+<../../Figures/fig_densAve_B16B18B19B20B21B22B23-eps-converted-to.pdf, id=335, 
 1084.05pt x 722.7pt>
 File: ../../Figures/fig_densAve_B16B18B19B20B21B22B23-eps-converted-to.pdf Grap
 hic file (type pdf)
 <use ../../Figures/fig_densAve_B16B18B19B20B21B22B23-eps-converted-to.pdf>
 Package pdftex.def Info: ../../Figures/fig_densAve_B16B18B19B20B21B22B23-eps-co
-nverted-to.pdf  used on input line 76.
+nverted-to.pdf  used on input line 72.
 (pdftex.def)             Requested size: 553.5pt x 369.01321pt.
 
-Overfull \hbox (12.09976pt too wide) in paragraph at lines 76--78
+Overfull \hbox (12.09976pt too wide) in paragraph at lines 72--74
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 36.73322pt on input line 79.
+LaTeX Warning: Float too large for page by 36.73322pt on input line 75.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5 <../../Figures/fig_densAve_B16B18B19B20B21B22B23-eps-converted-to.pdf>]
-<../../Figures/AllAlphabetCores.png, id=384, 842.14626pt x 842.14626pt>
+<../../Figures/AllAlphabetCores.png, id=383, 842.14626pt x 842.14626pt>
 File: ../../Figures/AllAlphabetCores.png Graphic file (type png)
 <use ../../Figures/AllAlphabetCores.png>
 Package pdftex.def Info: ../../Figures/AllAlphabetCores.png  used on input line
- 90.
+ 86.
 (pdftex.def)             Requested size: 332.09775pt x 332.09799pt.
-<../../Figures/AllAlphabetCores_LT.png, id=386, 842.14626pt x 842.14626pt>
+<../../Figures/AllAlphabetCores_LT.png, id=385, 842.14626pt x 842.14626pt>
 File: ../../Figures/AllAlphabetCores_LT.png Graphic file (type png)
 <use ../../Figures/AllAlphabetCores_LT.png>
 Package pdftex.def Info: ../../Figures/AllAlphabetCores_LT.png  used on input l
-ine 97.
+ine 93.
 (pdftex.def)             Requested size: 369.0pt x 369.0035pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1382,84 +1397,94 @@ g>]
 [8] [9]
 
 LaTeX Warning: Reference `Eq:FourierTransform' on page 10 undefined on input li
-ne 157.
+ne 153.
 
 
-LaTeX Warning: Citation `Cooley1965' on page 10 undefined on input line 176.
+LaTeX Warning: Citation `Cooley1965' on page 10 undefined on input line 172.
 
 
 LaTeX Warning: Citation `Good1958_PrimeFFT' on page 10 undefined on input line 
-176.
+172.
 
 
 LaTeX Warning: Citation `Bruun1978__BruunsFFT' on page 10 undefined on input li
-ne 176.
+ne 172.
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
 
 LaTeX Warning: Citation `Virtanen2020_SciPy' on page 10 undefined on input line
- 176.
+ 172.
 
 
-LaTeX Warning: Citation `Cooley1965' on page 10 undefined on input line 176.
+LaTeX Warning: Citation `Cooley1965' on page 10 undefined on input line 172.
 
 [10]
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 181.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 177.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 181.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 177.
 
 
-LaTeX Warning: Citation `Potts2001' on page 11 undefined on input line 186.
+LaTeX Warning: Citation `Potts2001' on page 11 undefined on input line 182.
 
 
-LaTeX Warning: Citation `Marvasti1993' on page 11 undefined on input line 186.
+LaTeX Warning: Citation `Marvasti1993' on page 11 undefined on input line 182.
 
 
 LaTeX Warning: Citation `Ruiz-Antolin2018' on page 11 undefined on input line 1
-86.
+82.
 
 
-LaTeX Warning: Citation `Lee2005' on page 11 undefined on input line 186.
+LaTeX Warning: Citation `Lee2005' on page 11 undefined on input line 182.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--187
+Underfull \hbox (badness 10000) in paragraph at lines 181--183
 
  []
 
 [11]
 
-LaTeX Warning: Citation `Ahmed1974_DCT' on page 12 undefined on input line 191.
+LaTeX Warning: Citation `Ahmed1974_DCT' on page 12 undefined on input line 187.
 
 
 
-LaTeX Warning: Citation `Ahmed1974_DCT' on page 12 undefined on input line 192.
+LaTeX Warning: Citation `Ahmed1974_DCT' on page 12 undefined on input line 188.
 
 
-[12]
 
-LaTeX Warning: Citation `Makhoul1980' on page 13 undefined on input line 224.
+Underfull \vbox (badness 1688) has occurred while \output is active []
+
+ [12]
+
+LaTeX Warning: Citation `Makhoul1980' on page 13 undefined on input line 220.
 
 
 LaTeX Warning: Citation `Virtanen2020_SciPy' on page 13 undefined on input line
- 224.
+ 220.
 
 
-LaTeX Warning: Citation `Tian2000' on page 13 undefined on input line 241.
+LaTeX Warning: Command \textasciiacute invalid in math mode on input line 226.
 
 
-LaTeX Warning: Citation `Zhao2008' on page 13 undefined on input line 241.
+LaTeX Warning: Command \textasciiacute invalid in math mode on input line 226.
+
+Missing character: There is no ´ in font cmr10!
+
+LaTeX Warning: Citation `Tian2000' on page 13 undefined on input line 237.
 
 
-LaTeX Warning: Reference `Sec:Method' on page 13 undefined on input line 241.
+LaTeX Warning: Citation `Zhao2008' on page 13 undefined on input line 237.
+
+
+LaTeX Warning: Reference `Sec:Method' on page 13 undefined on input line 237.
 
 [13] [14]
-Overfull \hbox (3.05711pt too wide) in paragraph at lines 267--271
+Overfull \hbox (3.05711pt too wide) in paragraph at lines 261--265
 \OT1/cmr/m/n/10.95 So the ex-is-tence and unique-ness of an in-ter-polant is gi
 ven by the non-singularity
  []
@@ -1468,22 +1493,22 @@ ven by the non-singularity
 <../../Figures/Monomials.png, id=443, 386.44376pt x 265.99374pt>
 File: ../../Figures/Monomials.png Graphic file (type png)
 <use ../../Figures/Monomials.png>
-Package pdftex.def Info: ../../Figures/Monomials.png  used on input line 313.
+Package pdftex.def Info: ../../Figures/Monomials.png  used on input line 307.
 (pdftex.def)             Requested size: 111.0pt x 76.40157pt.
 
-Underfull \hbox (badness 3009) in paragraph at lines 323--323
+Underfull \hbox (badness 3009) in paragraph at lines 317--317
 \OT1/cmr/m/n/9 con-tin-u-ously dif-fer-en-tiable
  []
 
 
-Overfull \hbox (22.14932pt too wide) in paragraph at lines 319--326
+Overfull \hbox (22.14932pt too wide) in paragraph at lines 313--320
 \OT1/cmr/m/n/10.95 When turn-ing to piece-wise poly-no-mial in-ter-po-la-tion o
 f the data points $(\OML/cmm/m/it/10.95 t[]; y[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/
 it/10.95 ;  i \OT1/cmr/m/n/10.95 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--326
+Underfull \hbox (badness 10000) in paragraph at lines 313--320
 
  []
 
@@ -1491,20 +1516,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 319--326
 <../../Figures/AR1_process.png, id=462, 709.65125pt x 397.485pt>
 File: ../../Figures/AR1_process.png Graphic file (type png)
 <use ../../Figures/AR1_process.png>
-Package pdftex.def Info: ../../Figures/AR1_process.png  used on input line 359.
+Package pdftex.def Info: ../../Figures/AR1_process.png  used on input line 353.
 
 (pdftex.def)             Requested size: 295.20113pt x 165.34743pt.
 <../../Figures/AR1_process_W_backDiff.png, id=463, 709.65125pt x 397.485pt>
 File: ../../Figures/AR1_process_W_backDiff.png Graphic file (type png)
 <use ../../Figures/AR1_process_W_backDiff.png>
 Package pdftex.def Info: ../../Figures/AR1_process_W_backDiff.png  used on inpu
-t line 366.
+t line 360.
 (pdftex.def)             Requested size: 295.20113pt x 165.34743pt.
 <../../Figures/AR1_process_W_backDiff_PSD.png, id=464, 650.43pt x 722.7pt>
 File: ../../Figures/AR1_process_W_backDiff_PSD.png Graphic file (type png)
 <use ../../Figures/AR1_process_W_backDiff_PSD.png>
 Package pdftex.def Info: ../../Figures/AR1_process_W_backDiff_PSD.png  used on 
-input line 373.
+input line 367.
 (pdftex.def)             Requested size: 221.40225pt x 246.00146pt.
 
 
@@ -1512,20 +1537,20 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [20 <../../Figures/AR1_process.png> <../../Figures/AR1_process_W_backDiff.png>]
 
-Overfull \hbox (1.26256pt too wide) in paragraph at lines 388--389
+Overfull \hbox (1.26256pt too wide) in paragraph at lines 382--383
 []\OT1/cmr/m/n/10.95 Densification of firn, which can be de-scribed as the pro-
 por-tional change
  []
 
 
-Overfull \hbox (13.26022pt too wide) detected at line 408
+Overfull \hbox (13.26022pt too wide) detected at line 402
 \OML/cmm/m/it/10.95 C[] \OT1/cmr/m/n/10.95 = []\OML/cmm/m/it/10.95 ; \OT1/cmr/m
 /n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 55 \OML/cmm/m/it/10.95 < ^^Z 
 < \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 8
  []
 
 [21 <../../Figures/AR1_process_W_backDiff_PSD.png>]
-Overfull \hbox (19.93082pt too wide) in paragraph at lines 444--447
+Overfull \hbox (19.93082pt too wide) in paragraph at lines 438--441
 \OT1/cmr/m/n/10.95 and plot-ting $[](\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 )$
  ver-sus tem-per-a-ture - a so-called Ar-rhe-nius plot(REFERENCES)
  []
@@ -1535,107 +1560,109 @@ Overfull \hbox (19.93082pt too wide) in paragraph at lines 444--447
 File: ../../Figures/DensProf_Examples.png Graphic file (type png)
 <use ../../Figures/DensProf_Examples.png>
 Package pdftex.def Info: ../../Figures/DensProf_Examples.png  used on input lin
-e 508.
+e 502.
 (pdftex.def)             Requested size: 221.40225pt x 269.41814pt.
- [24]
+ [24 <../../Figures/DensProf_Examples.png>]
 
-LaTeX Warning: Citation `Johnsen2000' on page 25 undefined on input line 521.
-
-[25 <../../Figures/DensProf_Examples.png>]
-
-LaTeX Warning: Citation `MurphyKoop_2005' on page 26 undefined on input line 53
-6.
+LaTeX Warning: Citation `Johnsen2000' on page 25 undefined on input line 515.
 
 
-LaTeX Warning: Citation `Johnsen2000a' on page 26 undefined on input line 547.
+LaTeX Warning: Citation `MurphyKoop_2005' on page 25 undefined on input line 53
+0.
 
+
+LaTeX Warning: Citation `Johnsen2000a' on page 25 undefined on input line 541.
+
+[25]
 
 LaTeX Warning: Citation `HallPrupacher1976' on page 26 undefined on input line 
-557.
+551.
 
 
-LaTeX Warning: Citation `Merlivat1978' on page 26 undefined on input line 563.
+LaTeX Warning: Citation `Merlivat1978' on page 26 undefined on input line 557.
+
+
+LaTeX Warning: Citation `Majoube1970' on page 26 undefined on input line 565.
+
+
+LaTeX Warning: Citation `Ellehoj2013' on page 26 undefined on input line 565.
+
+
+LaTeX Warning: Citation `MerlivatNief1967' on page 26 undefined on input line 5
+75.
+
+
+LaTeX Warning: Citation `Ellehoj2013' on page 26 undefined on input line 575.
+
+
+LaTeX Warning: Citation `Lamb2017' on page 26 undefined on input line 575.
+
+
+LaTeX Warning: Citation `BarkanLuz2005' on page 26 undefined on input line 591.
+
+
+
+LaTeX Warning: Citation `Gkinis2021' on page 26 undefined on input line 591.
+
+
+LaTeX Warning: Citation `Majoube1970' on page 26 undefined on input line 591.
+
+
+LaTeX Warning: Citation `MerlivatNief1967' on page 26 undefined on input line 5
+91.
 
 [26]
 
-LaTeX Warning: Citation `Majoube1970' on page 27 undefined on input line 571.
+LaTeX Warning: Citation `Johnsen2000' on page 27 undefined on input line 595.
 
-
-LaTeX Warning: Citation `Ellehoj2013' on page 27 undefined on input line 571.
-
-
-LaTeX Warning: Citation `MerlivatNief1967' on page 27 undefined on input line 5
-81.
-
-
-LaTeX Warning: Citation `Ellehoj2013' on page 27 undefined on input line 581.
-
-
-LaTeX Warning: Citation `Lamb2017' on page 27 undefined on input line 581.
-
-
-LaTeX Warning: Citation `BarkanLuz2005' on page 27 undefined on input line 597.
-
-
-
-LaTeX Warning: Citation `Gkinis2021' on page 27 undefined on input line 597.
-
-
-LaTeX Warning: Citation `Majoube1970' on page 27 undefined on input line 597.
-
-
-LaTeX Warning: Citation `MerlivatNief1967' on page 27 undefined on input line 5
-97.
-
-
-LaTeX Warning: Citation `Johnsen2000' on page 27 undefined on input line 601.
-
-[27]
-<../../Figures/Analytical_DiffLenEq_terms_SiteA.png, id=507, 484.81125pt x 557.
+<../../Figures/Analytical_DiffLenEq_terms_SiteA.png, id=503, 484.81125pt x 557.
 08125pt>
 File: ../../Figures/Analytical_DiffLenEq_terms_SiteA.png Graphic file (type png
 )
 <use ../../Figures/Analytical_DiffLenEq_terms_SiteA.png>
 Package pdftex.def Info: ../../Figures/Analytical_DiffLenEq_terms_SiteA.png  us
-ed on input line 623.
+ed on input line 617.
 (pdftex.def)             Requested size: 221.40225pt x 254.40741pt.
 
+LaTeX Warning: Citation `Gkinis2021' on page 27 undefined on input line 622.
 
-LaTeX Warning: Citation `Gkinis2021' on page 28 undefined on input line 628.
-
+[27]
 
 LaTeX Warning: Citation `HerronLangway1980' on page 28 undefined on input line 
-639.
+633.
 
-[28] [29 <../../Figures/Analytical_DiffLenEq_terms_SiteA.png>]
-<../../Figures/ContourPlot_Alphabet.png, id=517, 532.99126pt x 399.4925pt>
+[28 <../../Figures/Analytical_DiffLenEq_terms_SiteA.png>]
+<../../Figures/ContourPlot_Alphabet.png, id=513, 532.99126pt x 399.4925pt>
 File: ../../Figures/ContourPlot_Alphabet.png Graphic file (type png)
 <use ../../Figures/ContourPlot_Alphabet.png>
 Package pdftex.def Info: ../../Figures/ContourPlot_Alphabet.png  used on input 
-line 678.
+line 672.
 (pdftex.def)             Requested size: 258.29887pt x 193.60733pt.
 
 
-LaTeX Warning: Citation `Gkinis2021' on page 30 undefined on input line 684.
+LaTeX Warning: Citation `Gkinis2021' on page 29 undefined on input line 678.
 
-[30 <../../Figures/ContourPlot_Alphabet.png>]
-<../../Figures/DiffProf_Examples.png, id=523, 528.97626pt x 506.89375pt>
+<../../Figures/DiffProf_Examples.png, id=514, 528.97626pt x 506.89375pt>
 File: ../../Figures/DiffProf_Examples.png Graphic file (type png)
 <use ../../Figures/DiffProf_Examples.png>
 Package pdftex.def Info: ../../Figures/DiffProf_Examples.png  used on input lin
-e 688.
+e 682.
 (pdftex.def)             Requested size: 258.29887pt x 247.51384pt.
- [31 <../../Figures/DiffProf_Examples.png>] [32] [33] (./Chapter_Appendix2.aux)
+[29]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [30 <../../Figures/ContourPlot_Alphabet.png>] [31 <../../Figures/DiffProf_Exam
+ples.png>]
+[32] [33] (./Chapter_Appendix2.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 24501 strings out of 481239
- 460070 string characters out of 5920377
- 897114 words of memory out of 5000000
- 39286 multiletter control sequences out of 15000+600000
+ 24435 strings out of 481239
+ 457980 string characters out of 5920377
+ 894419 words of memory out of 5000000
+ 39216 multiletter control sequences out of 15000+600000
  548493 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,20n,96p,2070b,1293s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1661,7 +1688,7 @@ nts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.p
 fb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on Chapter_Appendix2.pdf (33 pages, 2055022 bytes).
+Output written on Chapter_Appendix2.pdf (33 pages, 2050189 bytes).
 PDF statistics:
  612 PDF objects out of 1000 (max. 8388607)
  225 compressed objects within 3 object streams

@@ -2,14 +2,17 @@
 \documentclass[../../CompleteThesis2/Complete_2ndDraft]{subfiles}
 %\graphicspath{{../../Figures/}}
 \begin{document}
-	
-As the need for more accurate and precise models for the future increases, so does the need for better and wider understanding of the past. This work set out to investigate a new method to expand our knowledge of paleotemperatures. Through a series of methodical computational and theoretical analysis, a model for estimating the temperature of an ice core time series was developed. 
+In this final chapter of the thesis, the main finding will be summed up, along with a short presentation of the final results. Lastly an outlook section presents the next steps the conclusions point to be taken, in future research.
+\minitoc	
+
+\section[Conclusions]{Conclusions}
+As the need for more accurate and precise models for the future increases, so does the need for better and wider understanding of the past. This work set out to investigate a new method to expand our knowledge of how to reconstruct paleotemperatures best. Through a series of methodical computational and theoretical analyses, a model for estimating the temperature of an ice core time series was developed. 
 
 The starting idea was to utilize the fact that diffusion length is temperature dependent, and to use signal analysis, theoretical knowledge of diffusion processes in ice and constrained pattern recognition to estimate the diffusion length $\sigma$ empirically in a water isotopic depth series. Throughout the thesis was presented the different methods used and the mathematical and theoretical foundations on which they were developed. A variety of methods were tested, discussed and further developed to finally generate a generic method.
 
-The final method reconstructs the - by diffusion washed out - measured signal by back diffusion, using $\sigma$ as a tuning parameter of the diffusion process. The method finds the optimal diffusion length by choosing the $\sigma$ which results in the known number of years in a given section. In this thesis, the two volcanic events of Laki in 1783 and Tambora in 1815 have been used for specific dating of the examined water isotopic depth series, but the method is not restricted to volcanic markers nor to isotopic depth series. Any series exhibiting annual cycles and affected by diffusion could be used.
+The final method reconstructs the measured signal by back diffusion, attempting to reconstruct the part of the signal that was washed out by diffusion, using $\sigma$ as a tuning parameter of the diffusion process. The method finds the optimal diffusion length by choosing the $\sigma$ which results in the known number of years in a given section. In this thesis, the two volcanic events of Laki in 1783 and Tambora in 1815 have been used for specific dating of the examined water isotopic depth series, but the method is not restricted to volcanic markers nor to isotopic depth series. Any series exhibiting annual cycles and affected by diffusion could be used.
 
-This back diffusion method results in final optimal diffusion length estimates, $\sigma_{\text{opt}}$, which are presented in Table \ref{Tab:SigmaEstFinal2} along with the for sampling and ice diffusion corrected firn diffusion estimates, $\sigma_{\text{firn}}$.
+This back diffusion method results in final optimal diffusion length estimates, $\sigma_{\text{opt}}$, which are presented in Table \ref{Tab:SigmaEstFinal2} along with the firn diffusion estimates, $\sigma_{\text{firn}}$, corrected for sampling and ice diffusion.
 \begin{table}[ht]
 	\centering
 	\begin{tabular}{l l l | c }
@@ -41,7 +44,7 @@ This back diffusion method results in final optimal diffusion length estimates, 
 	\label{Tab:SigmaEstFinal2}
 \end{table}
 
-From the optimal $\sigma$ a steady state temperature was estimated. These results can be seen in Table \ref{Tab:TempResults}, both the temperature estimated from $\sigma_{\text{Opt}}$ and $\sigma_{\text{firn}}$. For further studies, it is obvious to work from here with the diffusion length estimates and using them in more complex temperature estimate models, and not just a steady state solution.
+From the optimal $\sigma$ a steady state temperature was estimated. These results can be seen in Table \ref{Tab:TempResults}, both the temperature estimated from $\sigma_{\text{Opt}}$ and $\sigma_{\text{firn}}$. For further studies, it is evident to use the diffusion length estimates and using them in more complex temperature estimate models, and not just a steady state solution.
 
 \begin{table}[ht]
 	\centering
@@ -53,12 +56,29 @@ From the optimal $\sigma$ a steady state temperature was estimated. These result
 		$\bar{T}_{\text{StSt}}^{\text{Opt}}$ & [$^{\text{o}}$C] & $-31.04 \pm 2.02$ & $-30.46 \pm 0.83$ & $-30.00 \pm 1.05$ & $-30.80 \pm 0.48$ & $-25.93 \pm 0.70$ \\[0.5cm]
 		$\bar{T}_{\text{StSt}}^{\text{Firn}}$ & [$^{\text{o}}$C] & $-31.41 \pm 2.07$ & $-30.81 \pm 0.85$ & $-30.35 \pm 1.07$ & $-31.14 \pm 0.49$ & $-26.18 \pm 0.71$ \\[0.15cm]
 	\end{tabular}
-	\caption[Steady State Temperature Estimates]{\small Steady state temperature estimates based on the final firn diffusion length estimates found. $T_0$ is the temperature used to generate the theoretical diffusion length and density profiles, and originates from \cite[add. text]{keylist}}
+	\caption[Steady State Temperature Estimates]{\small Steady state temperature estimates based on the final firn diffusion length estimates found. $T_0$ is the temperature used to generate the theoretical diffusion length and density profiles, and originates from \cite[H. Clausen et al., 1988]{Clausen1988a}.}
 	\label{Tab:TempResults}
 \end{table}	
 
-The method has room for improvement, especially some of the simpler assumptions like the constraints and the optimization routine could benefit from some more development. Moreover, the work carried out in this thesis leaves room for further examination and development, but lays a good basis to be used as a stepping stone in future research.
 
 \section[Outlook]{Outlook}
 \label{Sec:Outlook}
+Using the estimated $\sigma_{\text{firm}}$ results and the general conclusions from this thesis, an apparent next step would be to examine the paleotemperature in the given depth section more thoroughly. To be able to verify the efficience of the developed methods in this thesis, a more extensive and complex examination of the temperature would be needed. 
+Along with this, implementing $\sigma(z)$ and investigating how it affects the final temperature estimates can also be used for more precise and accurate temperature estimation. 
+
+Additionally, the method would benefit from being tested on multiple new ice cores, and on new depth sections, i.e. between other known volcanic events. This could also help verifying the chosen constraints, as the new cores would have a different annual layer thickness profile. This could also lead to an investigation on the choice of constraints. These constraints could be further developed and more seasonality could be implemented, and maybe the constraints should be tuned differently for different ice cores.
+
+As a byproduct of this work, an interesting feature presented itself, namely the relationship between the number of peaks versus the diffusion length used in back diffusion. If it is possible to estimate the most stable number of peaks (i.e. where a change in diffusion length does not dramatically change the number of counted peaks), is could be possible to date a depth series with no dating markers.
+
+Finally, the in depth analysis of stability of this method considering different computational tools points to the research field being more careful about the technical data analysis. Especially considering interpolation, which again points to more careful and higher resolution data measurements, and considering choice of spectral transforms, where this work concludes that the NDCT restores best.
+
+The method has room for improvement, especially some of the simpler assumptions like the constraints and the optimization routine could benefit from further development. Moreover, the work carried out in this thesis leaves room for additional examination and development, but lays a good foundation to be used as a stepping stone in future research.
+%Annual spectral signals appearing as peaks in the PSD, can influence the  estimate of diffusion lengths. This can be taken into account by introducing a weight function omitting the annual signal from the PSD through:
+%\begin{equation}
+%	w(f) = \begin{cases}
+%		0, & f_{\lambda} - d f_{\lambda} \leq f \leq f_{\lambda} + d f_{\lambda} \\
+%		1, & f < f_{\lambda} - d f_{\lambda}, f > f_{\lambda} + d f_{\lambda}
+%	\end{cases}
+%\end{equation}
+
 \end{document}

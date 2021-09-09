@@ -3,70 +3,59 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Complete_2ndDraft.aux
 The style file: plain.bst
 Database file #1: /home/thea/Documents/Bibliographies/MasterThesis.bib
-Repeated entry---line 659 of file /home/thea/Documents/Bibliographies/MasterThesis.bib
+Repeated entry---line 905 of file /home/thea/Documents/Bibliographies/MasterThesis.bib
+ : @article{Johnsen2000
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1098 of file /home/thea/Documents/Bibliographies/MasterThesis.bib
  : @misc{Patankar1980
  :                   ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "RAMSEIER1967"
-Warning--I didn't find a database entry for "Gkinis2021"
-Warning--I didn't find a database entry for "Press2007"
-Warning--I didn't find a database entry for "Wei2008"
-Warning--I didn't find a database entry for "Dai2009"
-Warning--I didn't find a database entry for "ClausenHammer1988"
-Warning--I didn't find a database entry for "bibid"
-Warning--I didn't find a database entry for "keylist"
-Warning--I didn't find a database entry for "MurphyKoop_2005"
-Warning--I didn't find a database entry for "HallPrupacher1976"
-Warning--I didn't find a database entry for "Merlivat1978"
-Warning--I didn't find a database entry for "Majoube1970"
-Warning--I didn't find a database entry for "Ellehoj2013"
-Warning--I didn't find a database entry for "MerlivatNief1967"
-Warning--I didn't find a database entry for "Lamb2017"
-Warning--I didn't find a database entry for "BarkanLuz2005"
-Warning--empty journal in Gkinis_2021
+Warning--empty journal in Gkinis2021
 Warning--there's a number but no volume in Johnsen1977
 Warning--empty publisher in Marvasti1993
+Warning--empty publisher in McGillem1984
 Warning--empty publisher in Patankar1980
 Warning--empty publisher in Potts2001
-You've used 22 entries,
+You've used 74 entries,
             2118 wiz_defined-function locations,
-            687 strings with 10666 characters,
-and the built_in function-call counts, 11207 in all, are:
-= -- 998
-> -- 935
-< -- 5
-+ -- 372
-- -- 350
-* -- 1040
-:= -- 1971
-add.period$ -- 67
-call.type$ -- 22
-change.case$ -- 240
+            1020 strings with 21959 characters,
+and the built_in function-call counts, 31567 in all, are:
+= -- 2950
+> -- 2212
+< -- 6
++ -- 878
+- -- 804
+* -- 2780
+:= -- 5478
+add.period$ -- 221
+call.type$ -- 74
+change.case$ -- 621
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 270
-empty$ -- 572
-format.name$ -- 350
-if$ -- 2133
+cite$ -- 80
+duplicate$ -- 838
+empty$ -- 1912
+format.name$ -- 804
+if$ -- 6127
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 24
-newline$ -- 113
-num.names$ -- 44
-pop$ -- 223
+int.to.str$ -- 74
+missing$ -- 75
+newline$ -- 371
+num.names$ -- 148
+pop$ -- 532
 preamble$ -- 1
-purify$ -- 219
+purify$ -- 550
 quote$ -- 0
-skip$ -- 186
+skip$ -- 578
 stack$ -- 0
-substring$ -- 535
-swap$ -- 46
-text.length$ -- 5
+substring$ -- 1896
+swap$ -- 107
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 84
-warning$ -- 5
-while$ -- 83
-width$ -- 24
-write$ -- 241
-(There was 1 error message)
+type$ -- 288
+warning$ -- 6
+while$ -- 271
+width$ -- 76
+write$ -- 803
+(There were 2 error messages)

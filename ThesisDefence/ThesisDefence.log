@@ -1,0 +1,3300 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.30)  9 SEP 2021 17:01
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**ThesisDefence.tex
+(./ThesisDefence.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
+Document Class: beamer 2019/09/29 v3.57 A class for typesetting presentations
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count167
+)
+\beamer@tempbox=\box45
+\beamer@tempcount=\count168
+\c@beamerpauses=\count169
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasedecode.sty
+\beamer@slideinframe=\count170
+\beamer@minimum=\count171
+\beamer@decode@box=\box46
+)
+\beamer@commentbox=\box47
+\beamer@modecount=\count172
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+\headdp=\dimen134
+\footheight=\dimen135
+\sidebarheight=\dimen136
+\beamer@tempdim=\dimen137
+\beamer@finalheight=\dimen138
+\beamer@animht=\dimen139
+\beamer@animdp=\dimen140
+\beamer@animwd=\dimen141
+\beamer@leftmargin=\dimen142
+\beamer@rightmargin=\dimen143
+\beamer@leftsidebar=\dimen144
+\beamer@rightsidebar=\dimen145
+\beamer@boxsize=\dimen146
+\beamer@vboxoffset=\dimen147
+\beamer@descdefault=\dimen148
+\beamer@descriptionwidth=\dimen149
+\beamer@lastskip=\skip47
+\beamer@areabox=\box48
+\beamer@animcurrent=\box49
+\beamer@animshowbox=\box50
+\beamer@sectionbox=\box51
+\beamer@logobox=\box52
+\beamer@linebox=\box53
+\beamer@sectioncount=\count173
+\beamer@subsubsectionmax=\count174
+\beamer@subsectionmax=\count175
+\beamer@sectionmax=\count176
+\beamer@totalheads=\count177
+\beamer@headcounter=\count178
+\beamer@partstartpage=\count179
+\beamer@sectionstartpage=\count180
+\beamer@subsectionstartpage=\count181
+\beamer@animationtempa=\count182
+\beamer@animationtempb=\count183
+\beamer@xpos=\count184
+\beamer@ypos=\count185
+\beamer@ypos@offset=\count186
+\beamer@showpartnumber=\count187
+\beamer@currentsubsection=\count188
+\beamer@coveringdepth=\count189
+\beamer@sectionadjust=\count190
+\beamer@tocsectionnumber=\count191
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseoptions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+))
+\beamer@paperwidth=\skip48
+\beamer@paperheight=\skip49
+
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count192
+\Gm@cntv=\count193
+\c@Gm@tempcnt=\count194
+\Gm@bindingoffset=\dimen150
+\Gm@wd@mp=\dimen151
+\Gm@odd@mp=\dimen152
+\Gm@even@mp=\dimen153
+\Gm@layoutwidth=\dimen154
+\Gm@layoutheight=\dimen155
+\Gm@layouthoffset=\dimen156
+\Gm@layoutvoffset=\dimen157
+\Gm@dimlist=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen158
+\Gin@req@width=\dimen159
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks16
+\pgfutil@tempdima=\dimen160
+\pgfutil@tempdimb=\dimen161
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box54
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks17
+\pgfkeys@temptoks=\toks18
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks19
+))
+\pgf@x=\dimen162
+\pgf@y=\dimen163
+\pgf@xa=\dimen164
+\pgf@ya=\dimen165
+\pgf@xb=\dimen166
+\pgf@yb=\dimen167
+\pgf@xc=\dimen168
+\pgf@yc=\dimen169
+\pgf@xd=\dimen170
+\pgf@yd=\dimen171
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count195
+\c@pgf@countb=\count196
+\c@pgf@countc=\count197
+\c@pgf@countd=\count198
+\t@pgf@toka=\toks20
+\t@pgf@tokb=\toks21
+\t@pgf@tokc=\toks22
+\pgf@sys@id@count=\count199
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfsyssoftpath@smallbuffer@items=\count266
+\pgfsyssoftpath@bigbuffer@items=\count267
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen172
+\pgfmath@count=\count268
+\pgfmath@box=\box55
+\pgfmath@toks=\toks23
+\pgfmath@stack@operand=\toks24
+\pgfmath@stack@operation=\toks25
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count269
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@picminx=\dimen173
+\pgf@picmaxx=\dimen174
+\pgf@picminy=\dimen175
+\pgf@picmaxy=\dimen176
+\pgf@pathminx=\dimen177
+\pgf@pathmaxx=\dimen178
+\pgf@pathminy=\dimen179
+\pgf@pathmaxy=\dimen180
+\pgf@xx=\dimen181
+\pgf@xy=\dimen182
+\pgf@yx=\dimen183
+\pgf@yy=\dimen184
+\pgf@zx=\dimen185
+\pgf@zy=\dimen186
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@path@lastx=\dimen187
+\pgf@path@lasty=\dimen188
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@shorten@end@additional=\dimen189
+\pgf@shorten@start@additional=\dimen190
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfpic=\box56
+\pgf@hbox=\box57
+\pgf@layerbox@main=\box58
+\pgf@picture@serial@count=\count270
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgflinewidth=\dimen191
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@pt@x=\dimen192
+\pgf@pt@y=\dimen193
+\pgf@pt@temp=\dimen194
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowsep=\dimen195
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@max=\dimen196
+\pgf@sys@shading@range@num=\count271
+\pgf@shadingcount=\count272
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfexternal@startupbox=\box59
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/xxcolor.sty
+Package: xxcolor 2003/10/24 ver 0.1
+\XC@nummixins=\count273
+\XC@countmixins=\count274
+)
+(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen197
+\Hy@linkcounter=\count275
+\Hy@pagecounter=\count276
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count277
+\pdfmajorversion=\count278
+Package hyperref Info: Option `bookmarks' set `true' on input line 4421.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4421.
+Package hyperref Info: Option `implicit' set `false' on input line 4421.
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count279
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen198
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count280
+\Field@Width=\dimen199
+\Fld@charsize=\dimen256
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+\Hy@abspage=\count281
+
+
+Package hyperref Message: Stopped early.
+
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+)
+\Fld@listcount=\count282
+\c@bookmark@seq@number=\count283
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaserequires.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasecompatibility.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasefont.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks26
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/sansmathaccent.sty
+Package: sansmathaccent 2020/01/31
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2020/01/24 v3.29 KOMA-Script package (loading files)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetranslator.sty
+(/usr/share/texlive/texmf-dist/tex/latex/translator/translator.sty
+Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
+))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemisc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetwoscreens.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseoverlay.sty
+\beamer@argscount=\count284
+\beamer@lastskipcover=\skip50
+\beamer@trivlistdepth=\count285
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetitle.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasesection.sty
+\c@lecture=\count286
+\c@part=\count287
+\c@section=\count288
+\c@subsection=\count289
+\c@subsubsection=\count290
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframe.sty
+\beamer@framebox=\box60
+\beamer@frametitlebox=\box61
+\beamer@zoombox=\box62
+\beamer@zoomcount=\count291
+\beamer@zoomframecount=\count292
+\beamer@frametextheight=\dimen257
+\c@subsectionslide=\count293
+\beamer@frametopskip=\skip51
+\beamer@framebottomskip=\skip52
+\beamer@frametopskipautobreak=\skip53
+\beamer@framebottomskipautobreak=\skip54
+\beamer@envbody=\toks27
+\framewidth=\dimen258
+\c@framenumber=\count294
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseverbatim.sty
+\beamer@verbatimfileout=\write4
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframesize.sty
+\beamer@splitbox=\box63
+\beamer@autobreakcount=\count295
+\beamer@autobreaklastheight=\dimen259
+\beamer@frametitletoks=\toks28
+\beamer@framesubtitletoks=\toks29
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframecomponents.sty
+\beamer@footins=\box64
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasecolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasenotes.sty
+\beamer@frameboxcopy=\box65
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetoc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetemplates.sty
+\beamer@sbttoks=\toks30
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty
+\bmb@box=\box66
+\bmb@colorbox=\box67
+\bmb@boxshadow=\box68
+\bmb@boxshadowball=\box69
+\bmb@boxshadowballlarge=\box70
+\bmb@temp=\dimen260
+\bmb@dima=\dimen261
+\bmb@dimb=\dimen262
+\bmb@prevheight=\dimen263
+)
+\beamer@blockheadheight=\dimen264
+))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaselocalstructure.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks31
+)
+\c@figure=\count296
+\c@table=\count297
+\abovecaptionskip=\skip55
+\belowcaptionskip=\skip56
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty
+\beamer@section@min@dim=\dimen265
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip57
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks32
+\ex@=\dimen266
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen267
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count298
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count299
+\leftroot@=\count300
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count301
+\DOTSCASE@=\count302
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box71
+\strutbox@=\box72
+\big@size=\dimen268
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count303
+\c@MaxMatrixCols=\count304
+\dotsspace@=\muskip17
+\c@parentequation=\count305
+\dspbrk@lvl=\count306
+\tag@help=\toks33
+\row@=\count307
+\column@=\count308
+\maxfields@=\count309
+\andhelp@=\toks34
+\eqnshift@=\dimen269
+\alignsep@=\dimen270
+\tagshift@=\dimen271
+\tagwidth@=\dimen272
+\totwidth@=\dimen273
+\lineht@=\dimen274
+\@envbody=\toks35
+\multlinegap=\skip58
+\multlinetaggap=\skip59
+\mathdisplay@stack=\toks36
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks37
+\thm@bodyfont=\toks38
+\thm@headfont=\toks39
+\thm@notefont=\toks40
+\thm@headpunct=\toks41
+\thm@preskip=\skip60
+\thm@postskip=\skip61
+\thm@headsep=\skip62
+\dth@everypar=\toks42
+)
+\c@theorem=\count310
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasethemes.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemedefault.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerfontthemedefault.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemedefault.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
+\beamer@dima=\dimen275
+\beamer@dimb=\dimen276
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty)))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/02/14 3.40 The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/02/14 3.40 Babel switching mechanism
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/02/14 3.40 Babel common definitions
+\babel@savecnt=\count311
+\U@D=\dimen277
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read3
+LaTeX Info: Redefining \textlatin on input line 2319.
+\bbl@dirlevel=\count312
+)
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for ukenglish
+(babel)             (\language82) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for ukenglish
+(babel)             (\language82) on input line 108.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks43
+\inpenc@posthook=\toks44
+)
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemesplit.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesplit.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerfontthemestructurebold.st
+y)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+\epsfxsize=\dimen278
+\epsfysize=\dimen279
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen280
+\captionmargin@=\dimen281
+\captionwidth=\dimen282
+\caption@tempdima=\dimen283
+\caption@indent=\dimen284
+\caption@parindent=\dimen285
+\caption@hangindent=\dimen286
+Package caption Info: beamer document class detected.
+)
+\c@caption@flags=\count313
+\c@continuedfloat=\count314
+Package caption Info: beamer document class.
+Package caption Info: hyperref package is loaded.
+Package caption Info: Hyperref support is turned off
+(caption)             because hyperref has stopped early.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+\c@subfigure=\count315
+\c@subtable=\count316
+)
+(/usr/share/texlive/texmf-dist/tex/latex/srcltx/srcltx.sty
+Package: srcltx 2006/11/12 v1.6 Source specials for inverse search in DVI files
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\src@lastline=\count317
+\src@new@everypar=\toks45
+\src@new@output=\toks46
+)
+(/usr/share/texlive/texmf-dist/tex/latex/media9/media9.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-02-14 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count318
+\l__pdf_internal_box=\box73
+))
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2020-02-14 LaTeX2e option processing using LaTeX3 keys
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2020-02-14 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count319
+\g__xparse_grabber_int=\count320
+\l__xparse_m_args_int=\count321
+\l__xparse_v_nesting_int=\count322
+)
+Package: media9 2020/01/27 v1.05 acrobat-9/X compatible media
+\g_mix_pkgresizeflag_int=\count323
+
+(/usr/share/texlive/texmf-dist/tex/latex/media9/pdfbase.sty
+Package: pdfbase 2020/01/27 v0.36 driver independent access to low-level PDF fe
+atures
+\g_pbs_page_int=\count324
+\g_pbs_oc_int=\count325
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ocgx2/ocgbase.sty
+Package: ocgbase 2019/11/04 v0.17 support package for ocgx2.sty
+\g_ocgbase_nd_int=\count326
+)
+\l_mix_poster_box=\box74
+\g_mix_wd_dim=\dimen287
+\g_mix_ht_dim=\dimen288
+\g_mix_dp_dim=\dimen289
+\g_mix_rmcnt_int=\count327
+\l_mix_viewcnt_int=\count328
+\g@mix@page@int=\count329
+\g_mix_resizeflag_int=\count330
+\l_mix_lineno_int=\count331
+\l_mix_pbtn_box=\box75
+\mix@btn@dim=\dimen290
+\g_mix_mbtncnt_int=\count332
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count333
+\mult@box=\box76
+\multicol@leftmargin=\dimen291
+\c@unbalance=\count334
+\c@collectmore=\count335
+\doublecol@number=\count336
+\multicoltolerance=\count337
+\multicolpretolerance=\count338
+\full@width=\dimen292
+\page@free=\dimen293
+\premulticols=\dimen294
+\postmulticols=\dimen295
+\multicolsep=\skip63
+\multicolbaselineskip=\skip64
+\partial@page=\box77
+\last@line=\box78
+\maxbalancingoverflow=\dimen296
+\mult@rightbox=\box79
+\mult@grightbox=\box80
+\mult@gfirstbox=\box81
+\mult@firstbox=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\c@minrows=\count339
+\c@columnbadness=\count340
+\c@finalcolumnbadness=\count341
+\last@try=\dimen297
+\multicolovershoot=\dimen298
+\multicolundershoot=\dimen299
+\mult@nat@firstbox=\box120
+\colbreak@box=\box121
+\mc@col@check@num=\count342
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks47
+\XKV@tempa@toks=\toks48
+)
+\XKV@depth=\count343
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box122
+)
+\tc@llx=\dimen300
+\tc@lly=\dimen301
+\tc@urx=\dimen302
+\tc@ury=\dimen303
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen304
+\adjbox@Height=\dimen305
+\adjbox@Depth=\dimen306
+\adjbox@Totalheight=\dimen307
+\adjbox@pwidth=\dimen308
+\adjbox@pheight=\dimen309
+\adjbox@pdepth=\dimen310
+\adjbox@ptotalheight=\dimen311
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count344
+)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box123
+\sift@deathcycles=\count345
+\@vwid@loff=\dimen312
+\@vwid@roff=\dimen313
+))
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip65
+\bibsep=\skip66
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count346
+)
+(/usr/share/texlive/texmf-dist/tex/latex/appendixnumberbeamer/appendixnumberbea
+mer.sty) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodeparttextbox=\box124
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@nodesepstart=\dimen314
+\pgf@nodesepend=\dimen315
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+Package srcltx Info: Expanded filename `pgfkeys.code.tex' to `pgfkeys.code.tex'
+ on input line 10.
+
+:<+ pgfkeys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+:<-
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+Package srcltx Info: Expanded filename `pgfmath.code.tex' to `pgfmath.code.tex'
+ on input line 11.
+
+:<+ pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+:<-
+)
+Package srcltx Info: Expanded filename `pgffor.code.tex' to `pgffor.code.tex' o
+n input line 14.
+
+:<+ pgffor.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen316
+\pgffor@skip=\dimen317
+\pgffor@stack=\toks49
+\pgffor@toks=\toks50
+)
+:<-
+)
+Package srcltx Info: Expanded filename `tikz.code.tex' to `tikz.code.tex' on in
+put line 13.
+
+:<+ tikz.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@plot@mark@count=\count347
+\pgfplotmarksize=\dimen318
+)
+\tikz@lastx=\dimen319
+\tikz@lasty=\dimen320
+\tikz@lastxsaved=\dimen321
+\tikz@lastysaved=\dimen322
+\tikz@lastmovetox=\dimen323
+\tikz@lastmovetoy=\dimen324
+\tikzleveldistance=\dimen325
+\tikzsiblingdistance=\dimen326
+\tikz@figbox=\box125
+\tikz@figbox@bg=\box126
+\tikz@tempbox=\box127
+\tikz@tempbox@bg=\box128
+\tikztreelevel=\count348
+\tikznumberofchildren=\count349
+\tikznumberofcurrentchild=\count350
+\tikz@fig@count=\count351
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfmatrixcurrentrow=\count352
+\pgfmatrixcurrentcolumn=\count353
+\pgf@matrix@numberofcolumns=\count354
+)
+\tikz@expandcount=\count355
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+:<-
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
+tex
+File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\arrowsize=\dimen327
+)) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemePaloAlto.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
+\beamer@sidebarwidth=\dimen328
+\beamer@headheight=\dimen329
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemestructure.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemecircles.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerfontthemeserif.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesmoothbars.sty)
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 88.
+
+(./ThesisDefence.aux)
+\openout1 = `ThesisDefence.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(59.22636pt, 290.74263pt, 14.22636pt)
+* v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
+* \paperwidth=364.19536pt
+* \paperheight=273.14662pt
+* \textwidth=290.74263pt
+* \textheight=244.6939pt
+* \oddsidemargin=-13.04362pt
+* \evensidemargin=-13.04362pt
+* \topmargin=-72.26999pt
+* \headheight=14.22636pt
+* \headsep=0.0pt
+* \topskip=11.0pt
+* \footskip=14.22636pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count356
+\scratchdimen=\dimen330
+\scratchbox=\box129
+\nofMPsegments=\count357
+\nofMParguments=\count358
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count359
+\MPscratchDim=\dimen331
+\MPnumerator=\count360
+\makeMPintoPDFobject=\count361
+\everyMPtoPDFconversion=\toks52
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box130
+Package hyperref Info: Link coloring OFF on input line 93.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count362
+)
+LaTeX Info: Redefining \ref on input line 93.
+LaTeX Info: Redefining \pageref on input line 93.
+LaTeX Info: Redefining \nameref on input line 93.
+
+(./ThesisDefence.out) (./ThesisDefence.out)
+\@outlinefile=\write5
+\openout5 = `ThesisDefence.out'.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
+-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/translator/translator-bibliography-dic
+tionary-English.dict
+Dictionary: translator-bibliography-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/translator/translator-environment-dict
+ionary-English.dict
+Dictionary: translator-environment-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/translator/translator-months-dictionar
+y-English.dict
+Dictionary: translator-months-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/translator/translator-numbers-dictiona
+ry-English.dict
+Dictionary: translator-numbers-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/translator/translator-theorem-dictiona
+ry-English.dict
+Dictionary: translator-theorem-dictionary, Language: English 
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+ (./ThesisDefence.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+<../Figures/TurnerEruptionofSoufriere-Mountains.jpg, id=254, 947.54pt x 690.58p
+t>
+File: ../Figures/TurnerEruptionofSoufriere-Mountains.jpg Graphic file (type jpg
+)
+<use ../Figures/TurnerEruptionofSoufriere-Mountains.jpg>
+Package pdftex.def Info: ../Figures/TurnerEruptionofSoufriere-Mountains.jpg  us
+ed on input line 104.
+(pdftex.def)             Requested size: 232.59499pt x 169.51497pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 104
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 104
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 104
+ [] 
+ []
+
+[2
+
+ <../Figures/TurnerEruptionofSoufriere-Mountains.jpg>] (./ThesisDefence.toc)
+Overfull \hbox (45.0pt too wide) detected at line 110
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 110
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 110
+ [] 
+ []
+
+[3
+
+] (./ThesisDefence.toc)
+Overfull \hbox (45.0pt too wide) detected at line 123
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 123
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 123
+ [] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{Navigation3})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.123 	\subsection{Basic Problem}
+                                 pdfTeX warning (ext4): destination with the sa
+me identifier (name{page.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.123 	\subsection{Basic Problem}
+                                  [3
+
+]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 137
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 137
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 13
+7.
+
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+<../Figures/FractionationDrawing.pdf, id=573, 247.38414pt x 162.7309pt>
+File: ../Figures/FractionationDrawing.pdf Graphic file (type pdf)
+<use ../Figures/FractionationDrawing.pdf>
+Package pdftex.def Info: ../Figures/FractionationDrawing.pdf  used on input lin
+e 137.
+(pdftex.def)             Requested size: 130.83328pt x 86.06569pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 137
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 137
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 137
+ [] 
+ []
+
+[4
+
+ <../Figures/FractionationDrawing.pdf>]
+<../Figures/Crete_10m_dated.pdf, id=693, 1251.54245pt x 328.1058pt>
+File: ../Figures/Crete_10m_dated.pdf Graphic file (type pdf)
+<use ../Figures/Crete_10m_dated.pdf>
+Package pdftex.def Info: ../Figures/Crete_10m_dated.pdf  used on input line 148
+.
+(pdftex.def)             Requested size: 290.74263pt x 76.21872pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 148
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 148
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 148
+ [] 
+ []
+
+[5
+
+ <../Figures/Crete_10m_dated.pdf>]
+<../Figures/Crete_first100m.pdf, id=823, 1267.6158pt x 328.1058pt>
+File: ../Figures/Crete_first100m.pdf Graphic file (type pdf)
+<use ../Figures/Crete_first100m.pdf>
+Package pdftex.def Info: ../Figures/Crete_first100m.pdf  used on input line 163
+.
+(pdftex.def)             Requested size: 290.74263pt x 75.25247pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 163
+ [] 
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
+163.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Overfull \hbox (45.0pt too wide) detected at line 163
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 163
+ [] 
+ []
+
+[6
+
+ <../Figures/Crete_first100m.pdf>]
+File: ../Figures/Crete_first100m.pdf Graphic file (type pdf)
+<use ../Figures/Crete_first100m.pdf>
+Package pdftex.def Info: ../Figures/Crete_first100m.pdf  used on input line 163
+.
+(pdftex.def)             Requested size: 290.74263pt x 75.25247pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 163
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 163
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 163
+ [] 
+ []
+
+[7
+
+]
+File: ../Figures/Crete_first100m.pdf Graphic file (type pdf)
+<use ../Figures/Crete_first100m.pdf>
+Package pdftex.def Info: ../Figures/Crete_first100m.pdf  used on input line 163
+.
+(pdftex.def)             Requested size: 290.74263pt x 75.25247pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 163
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 163
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 163
+ [] 
+ []
+
+[8
+
+]
+<../Figures/AlphabetCores1.pdf, id=1137, 247.39534pt x 339.66899pt>
+File: ../Figures/AlphabetCores1.pdf Graphic file (type pdf)
+<use ../Figures/AlphabetCores1.pdf>
+Package pdftex.def Info: ../Figures/AlphabetCores1.pdf  used on input line 183.
+
+(pdftex.def)             Requested size: 145.3713pt x 199.59442pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 183
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 183
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 183
+ [] 
+ []
+
+
+Overfull \vbox (20.12257pt too high) detected at line 183
+ []
+
+[9
+
+ <../Figures/AlphabetCores1.pdf>]
+<../Figures/AlphabetCores1_Zoom.pdf, id=1261, 455.30101pt x 122.50276pt>
+File: ../Figures/AlphabetCores1_Zoom.pdf Graphic file (type pdf)
+<use ../Figures/AlphabetCores1_Zoom.pdf>
+Package pdftex.def Info: ../Figures/AlphabetCores1_Zoom.pdf  used on input line
+ 183.
+(pdftex.def)             Requested size: 247.133pt x 66.49255pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 183
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 183
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 183
+ [] 
+ []
+
+[10
+
+ <../Figures/AlphabetCores1_Zoom.pdf>]
+<../Figures/SiteA_ECM_d18O_full.pdf, id=1378, 833.9958pt x 400.37581pt>
+File: ../Figures/SiteA_ECM_d18O_full.pdf Graphic file (type pdf)
+<use ../Figures/SiteA_ECM_d18O_full.pdf>
+Package pdftex.def Info: ../Figures/SiteA_ECM_d18O_full.pdf  used on input line
+ 203.
+(pdftex.def)             Requested size: 290.74263pt x 139.57768pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 203
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 203
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 203
+ [] 
+ []
+
+[11
+
+ <../Figures/SiteA_ECM_d18O_full.pdf>]
+<../Figures/SiteA_ECMd18O_combo.pdf, id=1495, 713.11842pt x 418.7529pt>
+File: ../Figures/SiteA_ECMd18O_combo.pdf Graphic file (type pdf)
+<use ../Figures/SiteA_ECMd18O_combo.pdf>
+Package pdftex.def Info: ../Figures/SiteA_ECMd18O_combo.pdf  used on input line
+ 203.
+(pdftex.def)             Requested size: 290.74263pt x 170.73134pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 203
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 203
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 203
+ [] 
+ []
+
+[12
+
+ <../Figures/SiteA_ECMd18O_combo.pdf>] (./ThesisDefence.toc)
+Overfull \hbox (45.0pt too wide) detected at line 205
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 205
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 205
+ [] 
+ []
+
+[13
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 252
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 252
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 252
+ [] 
+ []
+
+[14
+
+] (./ThesisDefence.toc)
+Overfull \hbox (45.0pt too wide) detected at line 262
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 262
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 262
+ [] 
+ []
+
+[15
+
+]
+<../Figures/firn_popular.jpg, id=1946, 510.708pt x 555.2745pt>
+File: ../Figures/firn_popular.jpg Graphic file (type jpg)
+<use ../Figures/firn_popular.jpg>
+Package pdftex.def Info: ../Figures/firn_popular.jpg  used on input line 304.
+(pdftex.def)             Requested size: 116.29527pt x 126.43953pt.
+<../Figures/whiteFoto.png, id=1949, 278.03876pt x 359.3425pt>
+File: ../Figures/whiteFoto.png Graphic file (type png)
+<use ../Figures/whiteFoto.png>
+Package pdftex.def Info: ../Figures/whiteFoto.png  used on input line 304.
+(pdftex.def)             Requested size: 116.29527pt x 150.30322pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 304
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 304
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 304
+ [] 
+ []
+
+[16
+
+ <../Figures/Firn_popular.jpg> <../Figures/whiteFoto.png>]
+File: ../Figures/firn_popular.jpg Graphic file (type jpg)
+<use ../Figures/firn_popular.jpg>
+Package pdftex.def Info: ../Figures/firn_popular.jpg  used on input line 304.
+(pdftex.def)             Requested size: 116.29527pt x 126.43953pt.
+File: ../Figures/whiteFoto.png Graphic file (type png)
+<use ../Figures/whiteFoto.png>
+Package pdftex.def Info: ../Figures/whiteFoto.png  used on input line 304.
+(pdftex.def)             Requested size: 116.29527pt x 150.30322pt.
+<../Figures/DensProf_Examples.pdf, id=2057, 400.37581pt x 472.49657pt>
+File: ../Figures/DensProf_Examples.pdf Graphic file (type pdf)
+<use ../Figures/DensProf_Examples.pdf>
+Package pdftex.def Info: ../Figures/DensProf_Examples.pdf  used on input line 3
+04.
+(pdftex.def)             Requested size: 110.48361pt x 130.38756pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 304
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 304
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 304
+ [] 
+ []
+
+
+Overfull \vbox (153.56769pt too high) detected at line 304
+ []
+
+[17
+
+ <../Figures/DensProf_Examples.pdf>]
+File: ../Figures/firn_popular.jpg Graphic file (type jpg)
+<use ../Figures/firn_popular.jpg>
+Package pdftex.def Info: ../Figures/firn_popular.jpg  used on input line 304.
+(pdftex.def)             Requested size: 116.29527pt x 126.43953pt.
+File: ../Figures/whiteFoto.png Graphic file (type png)
+<use ../Figures/whiteFoto.png>
+Package pdftex.def Info: ../Figures/whiteFoto.png  used on input line 304.
+(pdftex.def)             Requested size: 116.29527pt x 150.30322pt.
+<../Figures/SiteA_DensProfile_wHL.pdf, id=2175, 400.37581pt x 472.6458pt>
+File: ../Figures/SiteA_DensProfile_wHL.pdf Graphic file (type pdf)
+<use ../Figures/SiteA_DensProfile_wHL.pdf>
+Package pdftex.def Info: ../Figures/SiteA_DensProfile_wHL.pdf  used on input li
+ne 304.
+(pdftex.def)             Requested size: 110.48361pt x 130.42874pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 304
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 304
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 304
+ [] 
+ []
+
+
+Overfull \vbox (153.56769pt too high) detected at line 304
+ []
+
+[18
+
+ <../Figures/SiteA_DensProfile_wHL.pdf>]
+<../Figures/ADiffusionIllustration.pdf, id=2281, 293.88803pt x 119.11615pt>
+File: ../Figures/ADiffusionIllustration.pdf Graphic file (type pdf)
+<use ../Figures/ADiffusionIllustration.pdf>
+Package pdftex.def Info: ../Figures/ADiffusionIllustration.pdf  used on input l
+ine 315.
+(pdftex.def)             Requested size: 174.44734pt x 70.70685pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 315
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 315
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 315
+ [] 
+ []
+
+[19
+
+ <../Figures/ADiffusionIllustration.pdf>]
+<../Figures/Crete_DiffProfile.pdf, id=2847, 393.80968pt x 472.6458pt>
+File: ../Figures/Crete_DiffProfile.pdf Graphic file (type pdf)
+<use ../Figures/Crete_DiffProfile.pdf>
+Package pdftex.def Info: ../Figures/Crete_DiffProfile.pdf  used on input line 3
+64.
+(pdftex.def)             Requested size: 116.29527pt x 139.57353pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 364
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 364
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 364
+ [] 
+ []
+
+[20
+
+ <../Figures/Crete_DiffProfile.pdf>]
+File: ../Figures/Crete_DiffProfile.pdf Graphic file (type pdf)
+<use ../Figures/Crete_DiffProfile.pdf>
+Package pdftex.def Info: ../Figures/Crete_DiffProfile.pdf  used on input line 3
+64.
+(pdftex.def)             Requested size: 116.29527pt x 139.57353pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 364
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 364
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 364
+ [] 
+ []
+
+[21
+
+]
+File: ../Figures/Crete_DiffProfile.pdf Graphic file (type pdf)
+<use ../Figures/Crete_DiffProfile.pdf>
+Package pdftex.def Info: ../Figures/Crete_DiffProfile.pdf  used on input line 3
+64.
+(pdftex.def)             Requested size: 116.29527pt x 139.57353pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 364
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 364
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 364
+ [] 
+ []
+
+[22
+
+]
+File: ../Figures/Crete_DiffProfile.pdf Graphic file (type pdf)
+<use ../Figures/Crete_DiffProfile.pdf>
+Package pdftex.def Info: ../Figures/Crete_DiffProfile.pdf  used on input line 3
+64.
+(pdftex.def)             Requested size: 116.29527pt x 139.57353pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 364
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 364
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 364
+ [] 
+ []
+
+[23
+
+]
+File: ../Figures/Crete_DiffProfile.pdf Graphic file (type pdf)
+<use ../Figures/Crete_DiffProfile.pdf>
+Package pdftex.def Info: ../Figures/Crete_DiffProfile.pdf  used on input line 3
+64.
+(pdftex.def)             Requested size: 116.29527pt x 139.57353pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 364
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 364
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 364
+ [] 
+ []
+
+[24
+
+] (./ThesisDefence.toc)
+Overfull \hbox (45.0pt too wide) detected at line 378
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 378
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 378
+ [] 
+ []
+
+[25
+
+]
+<../Figures/SiteA_ECM_only.pdf, id=3466, 761.7258pt x 183.56581pt>
+File: ../Figures/SiteA_ECM_only.pdf Graphic file (type pdf)
+<use ../Figures/SiteA_ECM_only.pdf>
+Package pdftex.def Info: ../Figures/SiteA_ECM_only.pdf  used on input line 419.
+
+(pdftex.def)             Requested size: 232.59499pt x 56.0505pt.
+File: ../Figures/whiteFoto.png Graphic file (type png)
+<use ../Figures/whiteFoto.png>
+Package pdftex.def Info: ../Figures/whiteFoto.png  used on input line 419.
+(pdftex.def)             Requested size: 87.22366pt x 112.72742pt.
+File: ../Figures/whiteFoto.png Graphic file (type png)
+<use ../Figures/whiteFoto.png>
+Package pdftex.def Info: ../Figures/whiteFoto.png  used on input line 419.
+(pdftex.def)             Requested size: 87.22366pt x 112.72742pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 419
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 419
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 419
+ [] 
+ []
+
+
+Overfull \vbox (10.8787pt too high) detected at line 419
+ []
+
+[26
+
+ <../Figures/SiteA_ECM_only.pdf>]
+File: ../Figures/SiteA_ECM_only.pdf Graphic file (type pdf)
+<use ../Figures/SiteA_ECM_only.pdf>
+Package pdftex.def Info: ../Figures/SiteA_ECM_only.pdf  used on input line 419.
+
+(pdftex.def)             Requested size: 232.59499pt x 56.0505pt.
+<../Figures/SiteATambDepth_Gauss.pdf, id=3570, 400.37581pt x 400.37581pt>
+File: ../Figures/SiteATambDepth_Gauss.pdf Graphic file (type pdf)
+<use ../Figures/SiteATambDepth_Gauss.pdf>
+Package pdftex.def Info: ../Figures/SiteATambDepth_Gauss.pdf  used on input lin
+e 419.
+(pdftex.def)             Requested size: 87.22366pt x 87.22154pt.
+<../Figures/SiteALakiDepth_Gauss.pdf, id=3571, 400.37581pt x 400.37581pt>
+File: ../Figures/SiteALakiDepth_Gauss.pdf Graphic file (type pdf)
+<use ../Figures/SiteALakiDepth_Gauss.pdf>
+Package pdftex.def Info: ../Figures/SiteALakiDepth_Gauss.pdf  used on input lin
+e 419.
+(pdftex.def)             Requested size: 87.22366pt x 87.22154pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 419
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 419
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 419
+ [] 
+ []
+
+
+Overfull \vbox (14.39023pt too high) detected at line 419
+ []
+
+[27
+
+ <../Figures/SiteATambDepth_Gauss.pdf> <../Figures/SiteALakiDepth_Gauss.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../Figures/SiteALakiDepth_Gauss.pdf): P
+DF inclusion: multiple pdfs with page group included in a single page
+>]
+<../Figures/summersWinters_LT.pdf, id=3684, 899.78952pt x 242.92345pt>
+File: ../Figures/summersWinters_LT.pdf Graphic file (type pdf)
+<use ../Figures/summersWinters_LT.pdf>
+Package pdftex.def Info: ../Figures/summersWinters_LT.pdf  used on input line 4
+45.
+(pdftex.def)             Requested size: 261.66658pt x 70.64244pt.
+File: ../Figures/whiteFoto.png Graphic file (type png)
+<use ../Figures/whiteFoto.png>
+Package pdftex.def Info: ../Figures/whiteFoto.png  used on input line 445.
+(pdftex.def)             Requested size: 87.22366pt x 112.72742pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 445
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 445
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 445
+ [] 
+ []
+
+
+Overfull \vbox (12.89801pt too high) detected at line 445
+ []
+
+[28
+
+ <../Figures/summersWinters_LT.pdf>]
+File: ../Figures/summersWinters_LT.pdf Graphic file (type pdf)
+<use ../Figures/summersWinters_LT.pdf>
+Package pdftex.def Info: ../Figures/summersWinters_LT.pdf  used on input line 4
+45.
+(pdftex.def)             Requested size: 261.66658pt x 70.64244pt.
+<../Figures/SiteA_LandT_Gauss_2Mnth2.pdf, id=3789, 833.9958pt x 255.8358pt>
+File: ../Figures/SiteA_LandT_Gauss_2Mnth2.pdf Graphic file (type pdf)
+<use ../Figures/SiteA_LandT_Gauss_2Mnth2.pdf>
+Package pdftex.def Info: ../Figures/SiteA_LandT_Gauss_2Mnth2.pdf  used on input
+ line 445.
+(pdftex.def)             Requested size: 261.66658pt x 80.26859pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 445
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 445
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 445
+ [] 
+ []
+
+
+Overfull \vbox (8.43918pt too high) detected at line 445
+ []
+
+[29
+
+ <../Figures/SiteA_LandT_Gauss_2Mnth2.pdf>] (./ThesisDefence.toc)
+Overfull \hbox (45.0pt too wide) detected at line 454
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 454
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 454
+ [] 
+ []
+
+[30
+
+]
+<../Figures/Crete_dO18Profile_raw.pdf, id=4011, 1050.8058pt x 219.7008pt>
+File: ../Figures/Crete_dO18Profile_raw.pdf Graphic file (type pdf)
+<use ../Figures/Crete_dO18Profile_raw.pdf>
+Package pdftex.def Info: ../Figures/Crete_dO18Profile_raw.pdf  used on input li
+ne 495.
+(pdftex.def)             Requested size: 261.66658pt x 54.70715pt.
+File: ../Figures/whiteFoto.png Graphic file (type png)
+<use ../Figures/whiteFoto.png>
+Package pdftex.def Info: ../Figures/whiteFoto.png  used on input line 495.
+(pdftex.def)             Requested size: 101.76169pt x 131.51805pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 495
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 495
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 495
+ [] 
+ []
+
+
+Overfull \vbox (15.75336pt too high) detected at line 495
+ []
+
+[31
+
+ <../Figures/Crete_dO18Profile_raw.pdf>]
+File: ../Figures/Crete_dO18Profile_raw.pdf Graphic file (type pdf)
+<use ../Figures/Crete_dO18Profile_raw.pdf>
+Package pdftex.def Info: ../Figures/Crete_dO18Profile_raw.pdf  used on input li
+ne 495.
+(pdftex.def)             Requested size: 261.66658pt x 54.70715pt.
+<../Figures/Crete_SpectralTransforms_3.pdf, id=4130, 1011.78pt x 361.35pt>
+File: ../Figures/Crete_SpectralTransforms_3.pdf Graphic file (type pdf)
+<use ../Figures/Crete_SpectralTransforms_3.pdf>
+Package pdftex.def Info: ../Figures/Crete_SpectralTransforms_3.pdf  used on inp
+ut line 495.
+(pdftex.def)             Requested size: 261.66658pt x 93.45255pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 495
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 495
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 495
+ [] 
+ []
+
+
+Overfull \vbox (5.68785pt too high) detected at line 495
+ []
+
+[32
+
+ <../Figures/Crete_SpectralTransforms_3.pdf>]
+File: ../Figures/Crete_dO18Profile_raw.pdf Graphic file (type pdf)
+<use ../Figures/Crete_dO18Profile_raw.pdf>
+Package pdftex.def Info: ../Figures/Crete_dO18Profile_raw.pdf  used on input li
+ne 495.
+(pdftex.def)             Requested size: 261.66658pt x 54.70715pt.
+<../Figures/Crete_SpectralTransforms_PSD.pdf, id=4235, 1011.78pt x 361.35pt>
+File: ../Figures/Crete_SpectralTransforms_PSD.pdf Graphic file (type pdf)
+<use ../Figures/Crete_SpectralTransforms_PSD.pdf>
+Package pdftex.def Info: ../Figures/Crete_SpectralTransforms_PSD.pdf  used on i
+nput line 495.
+(pdftex.def)             Requested size: 261.66658pt x 93.45255pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 495
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 495
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 495
+ [] 
+ []
+
+
+Overfull \vbox (5.68785pt too high) detected at line 495
+ []
+
+[33
+
+ <../Figures/Crete_SpectralTransforms_PSD.pdf>]
+<../Figures/CreteNDCT_PSDwFits.pdf, id=4346, 433.62pt x 433.62pt>
+File: ../Figures/CreteNDCT_PSDwFits.pdf Graphic file (type pdf)
+<use ../Figures/CreteNDCT_PSDwFits.pdf>
+Package pdftex.def Info: ../Figures/CreteNDCT_PSDwFits.pdf  used on input line 
+514.
+(pdftex.def)             Requested size: 130.83328pt x 130.83466pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 514
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 514
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 514
+ [] 
+ []
+
+[34
+
+ <../Figures/CreteNDCT_PSDwFits.pdf>]
+File: ../Figures/CreteNDCT_PSDwFits.pdf Graphic file (type pdf)
+<use ../Figures/CreteNDCT_PSDwFits.pdf>
+Package pdftex.def Info: ../Figures/CreteNDCT_PSDwFits.pdf  used on input line 
+514.
+(pdftex.def)             Requested size: 130.83328pt x 130.83466pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 514
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 514
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 514
+ [] 
+ []
+
+[35
+
+]
+File: ../Figures/CreteNDCT_PSDwFits.pdf Graphic file (type pdf)
+<use ../Figures/CreteNDCT_PSDwFits.pdf>
+Package pdftex.def Info: ../Figures/CreteNDCT_PSDwFits.pdf  used on input line 
+514.
+(pdftex.def)             Requested size: 130.83328pt x 130.83466pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 514
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 514
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 514
+ [] 
+ []
+
+[36
+
+]
+File: ../Figures/CreteNDCT_PSDwFits.pdf Graphic file (type pdf)
+<use ../Figures/CreteNDCT_PSDwFits.pdf>
+Package pdftex.def Info: ../Figures/CreteNDCT_PSDwFits.pdf  used on input line 
+514.
+(pdftex.def)             Requested size: 130.83328pt x 130.83466pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 514
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 514
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 514
+ [] 
+ []
+
+[37
+
+]
+<../Figures/SiteA_WienerFilter.pdf, id=4762, 361.35pt x 289.08pt>
+File: ../Figures/SiteA_WienerFilter.pdf Graphic file (type pdf)
+<use ../Figures/SiteA_WienerFilter.pdf>
+Package pdftex.def Info: ../Figures/SiteA_WienerFilter.pdf  used on input line 
+532.
+(pdftex.def)             Requested size: 130.83328pt x 104.6642pt.
+<../Figures/SiteA_WienerFilter_loglog.pdf, id=4763, 361.35pt x 289.08pt>
+File: ../Figures/SiteA_WienerFilter_loglog.pdf Graphic file (type pdf)
+<use ../Figures/SiteA_WienerFilter_loglog.pdf>
+Package pdftex.def Info: ../Figures/SiteA_WienerFilter_loglog.pdf  used on inpu
+t line 532.
+(pdftex.def)             Requested size: 130.83328pt x 104.6642pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 532
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 532
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 532
+ [] 
+ []
+
+[38
+
+ <../Figures/SiteA_WienerFilter.pdf> <../Figures/SiteA_WienerFilter_loglog.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../Figures/SiteA_WienerFilter_loglog.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<../Figures/SiteA_filtersEx.jpg, id=4887, 867.24pt x 578.16pt>
+File: ../Figures/SiteA_filtersEx.jpg Graphic file (type jpg)
+<use ../Figures/SiteA_filtersEx.jpg>
+Package pdftex.def Info: ../Figures/SiteA_filtersEx.jpg  used on input line 544
+.
+(pdftex.def)             Requested size: 203.51895pt x 135.67352pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 544
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 544
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 544
+ [] 
+ []
+
+
+Overfull \vbox (0.38pt too high) detected at line 544
+ []
+
+[39
+
+ <../Figures/SiteA_filtersEx.jpg>] (./ThesisDefence.toc)
+Overfull \hbox (45.0pt too wide) detected at line 546
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 546
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 546
+ [] 
+ []
+
+[40
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 602
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 602
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 602
+ [] 
+ []
+
+[41
+
+]
+<../Figures/Crete_5m_PeaksTroughs.pdf, id=5206, 472.6458pt x 255.8358pt>
+File: ../Figures/Crete_5m_PeaksTroughs.pdf Graphic file (type pdf)
+<use ../Figures/Crete_5m_PeaksTroughs.pdf>
+Package pdftex.def Info: ../Figures/Crete_5m_PeaksTroughs.pdf  used on input li
+ne 646.
+(pdftex.def)             Requested size: 130.83328pt x 70.81764pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+[42
+
+ <../Figures/Crete_5m_PeaksTroughs.pdf>]
+File: ../Figures/Crete_5m_PeaksTroughs.pdf Graphic file (type pdf)
+<use ../Figures/Crete_5m_PeaksTroughs.pdf>
+Package pdftex.def Info: ../Figures/Crete_5m_PeaksTroughs.pdf  used on input li
+ne 646.
+(pdftex.def)             Requested size: 130.83328pt x 70.81764pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+[43
+
+]
+File: ../Figures/Crete_5m_PeaksTroughs.pdf Graphic file (type pdf)
+<use ../Figures/Crete_5m_PeaksTroughs.pdf>
+Package pdftex.def Info: ../Figures/Crete_5m_PeaksTroughs.pdf  used on input li
+ne 646.
+(pdftex.def)             Requested size: 130.83328pt x 70.81764pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+[44
+
+]
+<../Figures/Crete_ALT.pdf, id=5521, 409.67548pt x 361.13353pt>
+File: ../Figures/Crete_ALT.pdf Graphic file (type pdf)
+<use ../Figures/Crete_ALT.pdf>
+Package pdftex.def Info: ../Figures/Crete_ALT.pdf  used on input line 646.
+(pdftex.def)             Requested size: 101.76169pt x 89.70456pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+[45
+
+ <../Figures/Crete_ALT.pdf>]
+File: ../Figures/Crete_ALT.pdf Graphic file (type pdf)
+<use ../Figures/Crete_ALT.pdf>
+Package pdftex.def Info: ../Figures/Crete_ALT.pdf  used on input line 646.
+(pdftex.def)             Requested size: 101.76169pt x 89.70456pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+[46
+
+]
+File: ../Figures/Crete_ALT.pdf Graphic file (type pdf)
+<use ../Figures/Crete_ALT.pdf>
+Package pdftex.def Info: ../Figures/Crete_ALT.pdf  used on input line 646.
+(pdftex.def)             Requested size: 101.76169pt x 89.70456pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+[47
+
+]
+<../Figures/AllCores_NpeaksVDiffLen.pdf, id=5827, 544.9158pt x 400.37581pt>
+File: ../Figures/AllCores_NpeaksVDiffLen.pdf Graphic file (type pdf)
+<use ../Figures/AllCores_NpeaksVDiffLen.pdf>
+Package pdftex.def Info: ../Figures/AllCores_NpeaksVDiffLen.pdf  used on input 
+line 646.
+(pdftex.def)             Requested size: 116.29527pt x 85.44376pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 646
+ [] 
+ []
+
+[48
+
+ <../Figures/AllCores_NpeaksVDiffLen.pdf>] (./ThesisDefence.toc)
+Overfull \hbox (45.0pt too wide) detected at line 648
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 648
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 648
+ [] 
+ []
+
+[49
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 712
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 712
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 712
+ [] 
+ []
+
+[50
+
+] (./ThesisDefence.toc)
+Overfull \hbox (45.0pt too wide) detected at line 720
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 720
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 720
+ [] 
+ []
+
+[51
+
+]
+<../Figures/Crete_RawData.pdf, id=6270, 914.09804pt x 364.18907pt>
+File: ../Figures/Crete_RawData.pdf Graphic file (type pdf)
+<use ../Figures/Crete_RawData.pdf>
+Package pdftex.def Info: ../Figures/Crete_RawData.pdf  used on input line 737.
+(pdftex.def)             Requested size: 290.74263pt x 115.83157pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 737
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 737
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 737
+ [] 
+ []
+
+[52
+
+ <../Figures/Crete_RawData.pdf>]
+<../Figures/Crete_ConstVNoConst.pdf, id=6387, 914.09804pt x 364.18907pt>
+File: ../Figures/Crete_ConstVNoConst.pdf Graphic file (type pdf)
+<use ../Figures/Crete_ConstVNoConst.pdf>
+Package pdftex.def Info: ../Figures/Crete_ConstVNoConst.pdf  used on input line
+ 737.
+(pdftex.def)             Requested size: 290.74263pt x 115.83157pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 737
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 737
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 737
+ [] 
+ []
+
+[53
+
+ <../Figures/Crete_ConstVNoConst.pdf>]
+<../Figures/Crete_ConstVNoConst_sigma.pdf, id=6503, 833.9958pt x 328.1058pt>
+File: ../Figures/Crete_ConstVNoConst_sigma.pdf Graphic file (type pdf)
+<use ../Figures/Crete_ConstVNoConst_sigma.pdf>
+Package pdftex.def Info: ../Figures/Crete_ConstVNoConst_sigma.pdf  used on inpu
+t line 754.
+(pdftex.def)             Requested size: 261.66658pt x 102.94333pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 754
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 754
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 754
+ [] 
+ []
+
+[54
+
+ <../Figures/Crete_ConstVNoConst_sigma.pdf>]
+<../Figures/Crete_ConstVNoConst_time.pdf, id=6613, 833.9958pt x 328.1058pt>
+File: ../Figures/Crete_ConstVNoConst_time.pdf Graphic file (type pdf)
+<use ../Figures/Crete_ConstVNoConst_time.pdf>
+Package pdftex.def Info: ../Figures/Crete_ConstVNoConst_time.pdf  used on input
+ line 754.
+(pdftex.def)             Requested size: 261.66658pt x 102.94333pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 754
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 754
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 754
+ [] 
+ []
+
+[55
+
+ <../Figures/Crete_ConstVNoConst_time.pdf>] (./ThesisDefence.toc)
+Overfull \hbox (45.0pt too wide) detected at line 759
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 759
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 759
+ [] 
+ []
+
+[56
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 768
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 768
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 768
+ [] 
+ []
+
+[57
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 768
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 768
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 768
+ [] 
+ []
+
+[58
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 768
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 768
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 768
+ [] 
+ []
+
+[59
+
+]
+File: ../Figures/AllCores_NpeaksVDiffLen.pdf Graphic file (type pdf)
+<use ../Figures/AllCores_NpeaksVDiffLen.pdf>
+Package pdftex.def Info: ../Figures/AllCores_NpeaksVDiffLen.pdf  used on input 
+line 777.
+(pdftex.def)             Requested size: 203.51895pt x 149.53574pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 777
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 777
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 777
+ [] 
+ []
+
+[60
+
+]
+<../Figures/AllCores_NpeaksVDiffLen_separate.pdf, id=7231, 833.9958pt x 689.455
+81pt>
+File: ../Figures/AllCores_NpeaksVDiffLen_separate.pdf Graphic file (type pdf)
+<use ../Figures/AllCores_NpeaksVDiffLen_separate.pdf>
+Package pdftex.def Info: ../Figures/AllCores_NpeaksVDiffLen_separate.pdf  used 
+on input line 785.
+(pdftex.def)             Requested size: 203.51895pt x 168.2396pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 785
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 785
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 785
+ [] 
+ []
+
+[61
+
+ <../Figures/AllCores_NpeaksVDiffLen_separate.pdf>]
+<../Figures/AllCores_sigmaOptEsts_wCrete.pdf, id=7334, 1084.05pt x 722.7pt>
+File: ../Figures/AllCores_sigmaOptEsts_wCrete.pdf Graphic file (type pdf)
+<use ../Figures/AllCores_sigmaOptEsts_wCrete.pdf>
+Package pdftex.def Info: ../Figures/AllCores_sigmaOptEsts_wCrete.pdf  used on i
+nput line 795.
+(pdftex.def)             Requested size: 232.59499pt x 155.05766pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 795
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 795
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 795
+ [] 
+ []
+
+[62
+
+ <../Figures/AllCores_sigmaOptEsts_wCrete.pdf>]
+<../Figures/AllCores_sigmaEsts_wCrete.pdf, id=7443, 1084.05pt x 722.7pt>
+File: ../Figures/AllCores_sigmaEsts_wCrete.pdf Graphic file (type pdf)
+<use ../Figures/AllCores_sigmaEsts_wCrete.pdf>
+Package pdftex.def Info: ../Figures/AllCores_sigmaEsts_wCrete.pdf  used on inpu
+t line 806.
+(pdftex.def)             Requested size: 232.59499pt x 155.05766pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 806
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 806
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 806
+ [] 
+ []
+
+[63
+
+ <../Figures/AllCores_sigmaEsts_wCrete.pdf>]
+<../Figures/AllCores_StStTempEsts_wCrete.pdf, id=7552, 1084.05pt x 722.7pt>
+File: ../Figures/AllCores_StStTempEsts_wCrete.pdf Graphic file (type pdf)
+<use ../Figures/AllCores_StStTempEsts_wCrete.pdf>
+Package pdftex.def Info: ../Figures/AllCores_StStTempEsts_wCrete.pdf  used on i
+nput line 814.
+(pdftex.def)             Requested size: 232.59499pt x 155.05766pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 814
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 814
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 814
+ [] 
+ []
+
+[64
+
+ <../Figures/AllCores_StStTempEsts_wCrete.pdf>] (./ThesisDefence.toc)
+Overfull \hbox (45.0pt too wide) detected at line 823
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 823
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 823
+ [] 
+ []
+
+[65
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 833
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 833
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 833
+ [] 
+ []
+
+[66
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 833
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 833
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 833
+ [] 
+ []
+
+[67
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 833
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 833
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 833
+ [] 
+ []
+
+[68
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 833
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 833
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 833
+ [] 
+ []
+
+[69
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 833
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 833
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 833
+ [] 
+ []
+
+[70
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 843
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 843
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 843
+ [] 
+ []
+
+[71
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 843
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 843
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 843
+ [] 
+ []
+
+[72
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 843
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 843
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 843
+ [] 
+ []
+
+[73
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 843
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 843
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 843
+ [] 
+ []
+
+[74
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 854
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 854
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 854
+ [] 
+ []
+
+[75
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 854
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 854
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 854
+ [] 
+ []
+
+[76
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 854
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 854
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 854
+ [] 
+ []
+
+[77
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 854
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 854
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 854
+ [] 
+ []
+
+[78
+
+] (./ThesisDefence.toc)
+Overfull \hbox (45.0pt too wide) detected at line 859
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 859
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 859
+ [] 
+ []
+
+[79
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 869
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 869
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 869
+ [] 
+ []
+
+[80
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 869
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 869
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 869
+ [] 
+ []
+
+[81
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 869
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 869
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 869
+ [] 
+ []
+
+[82
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 869
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 869
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 869
+ [] 
+ []
+
+[83
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 880
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 880
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 880
+ [] 
+ []
+
+[84
+
+]
+Overfull \hbox (45.0pt too wide) detected at line 886
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 886
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 886
+ [] 
+ []
+
+[85
+
+]
+<../Figures/Crete_SpecTrans_VisInspection.pdf, id=9698, 750.66942pt x 367.63367
+pt>
+File: ../Figures/Crete_SpecTrans_VisInspection.pdf Graphic file (type pdf)
+<use ../Figures/Crete_SpecTrans_VisInspection.pdf>
+Package pdftex.def Info: ../Figures/Crete_SpecTrans_VisInspection.pdf  used on 
+input line 902.
+(pdftex.def)             Requested size: 261.66658pt x 128.1464pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 902
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 902
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 902
+ [] 
+ []
+
+[86
+
+ <../Figures/Crete_SpecTrans_VisInspection.pdf>]
+<../Figures/Crete_SpecTrans_Speed.pdf, id=9750, 829.43298pt x 396.0396pt>
+File: ../Figures/Crete_SpecTrans_Speed.pdf Graphic file (type pdf)
+<use ../Figures/Crete_SpecTrans_Speed.pdf>
+Package pdftex.def Info: ../Figures/Crete_SpecTrans_Speed.pdf  used on input li
+ne 902.
+(pdftex.def)             Requested size: 261.66658pt x 124.94046pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 902
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 902
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 902
+ [] 
+ []
+
+[87
+
+ <../Figures/Crete_SpecTrans_Speed.pdf>]
+<../Figures/Crete_InterpBF_SpecificResamplings.pdf, id=9794, 1046.46967pt x 829
+.65959pt>
+File: ../Figures/Crete_InterpBF_SpecificResamplings.pdf Graphic file (type pdf)
+
+<use ../Figures/Crete_InterpBF_SpecificResamplings.pdf>
+Package pdftex.def Info: ../Figures/Crete_InterpBF_SpecificResamplings.pdf  use
+d on input line 918.
+(pdftex.def)             Requested size: 247.133pt x 195.93216pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 918
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 918
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 918
+ [] 
+ []
+
+[88
+
+ <../Figures/Crete_InterpBF_SpecificResamplings.pdf>]
+<../Figures/Crete_DiffLenVdelta_InterpBF_const.pdf, id=9862, 468.3096pt x 323.7
+6959pt>
+File: ../Figures/Crete_DiffLenVdelta_InterpBF_const.pdf Graphic file (type pdf)
+
+<use ../Figures/Crete_DiffLenVdelta_InterpBF_const.pdf>
+Package pdftex.def Info: ../Figures/Crete_DiffLenVdelta_InterpBF_const.pdf  use
+d on input line 918.
+(pdftex.def)             Requested size: 203.51895pt x 140.70525pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 918
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 918
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 918
+ [] 
+ []
+
+[89
+
+ <../Figures/Crete_DiffLenVdelta_InterpBF_const.pdf>]
+<../Figures/Crete_InterpAF_SpecificResampling_BD.pdf, id=9910, 1046.46967pt x 8
+29.65959pt>
+File: ../Figures/Crete_InterpAF_SpecificResampling_BD.pdf Graphic file (type pd
+f)
+<use ../Figures/Crete_InterpAF_SpecificResampling_BD.pdf>
+Package pdftex.def Info: ../Figures/Crete_InterpAF_SpecificResampling_BD.pdf  u
+sed on input line 934.
+(pdftex.def)             Requested size: 247.133pt x 195.93216pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 934
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 934
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 934
+ [] 
+ []
+
+[90
+
+ <../Figures/Crete_InterpAF_SpecificResampling_BD.pdf>]
+<../Figures/Crete_InterpAF_deltaVSdiffLen_BD.pdf, id=9973, 540.5796pt x 251.499
+6pt>
+File: ../Figures/Crete_InterpAF_deltaVSdiffLen_BD.pdf Graphic file (type pdf)
+<use ../Figures/Crete_InterpAF_deltaVSdiffLen_BD.pdf>
+Package pdftex.def Info: ../Figures/Crete_InterpAF_deltaVSdiffLen_BD.pdf  used 
+on input line 934.
+(pdftex.def)             Requested size: 203.51895pt x 94.68436pt.
+
+Overfull \hbox (45.0pt too wide) detected at line 934
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 934
+ [] 
+ []
+
+
+Overfull \hbox (45.0pt too wide) detected at line 934
+ [] 
+ []
+
+[91
+
+ <../Figures/Crete_InterpAF_deltaVSdiffLen_BD.pdf>]
+\tf@nav=\write6
+\openout6 = `ThesisDefence.nav'.
+
+\tf@toc=\write7
+\openout7 = `ThesisDefence.toc'.
+
+\tf@snm=\write8
+\openout8 = `ThesisDefence.snm'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 957.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 957.
+ (./ThesisDefence.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 957.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 957.
+Package rerunfilecheck Info: File `ThesisDefence.out' has not changed.
+(rerunfilecheck)             Checksum: B70B6342A3000DB8B241245CEEF3CC71;375.
+ ) 
+Here is how much of TeX's memory you used:
+ 28308 strings out of 481239
+ 567579 string characters out of 5920377
+ 883108 words of memory out of 5000000
+ 42633 multiletter control sequences out of 15000+600000
+ 545687 words of font info for 74 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,22n,80p,806b,951s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfss1440.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/wasy-type1/wasy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/wasy-type1/wasy6.pfb>
+Output written on ThesisDefence.pdf (92 pages, 2285829 bytes).
+PDF statistics:
+ 10146 PDF objects out of 10688 (max. 8388607)
+ 9601 compressed objects within 97 object streams
+ 214 named destinations out of 1000 (max. 500000)
+ 358 words of extra memory for PDF output out of 10000 (max. 10000000)
+

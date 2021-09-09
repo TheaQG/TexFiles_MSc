@@ -2,8 +2,8 @@
 \documentclass[../../CompleteThesis2/Complete_2ndDraft.tex]{subfiles}
 %\graphicspath{{../../Figures/}}
 \begin{document}
-	\section[Appendix I: Firn Diffusivity]{APPENDIX I: Firn Diffusivity}
-	\label{AppI:FirnDiffusivity}
+%	\section[Appendix I: Firn Diffusivity]{APPENDIX I: Firn Diffusivity}
+%	\label{AppI:FirnDiffusivity}
 
 
 	\newpage	
@@ -15,29 +15,25 @@
 %	\todo{Make specifications for cores.}
 	\begin{table}[h]
 		\centering
-		\begin{tabular}{l l|c}
-			\multicolumn{3}{c}{\textbf{Site A}} \\[0.1cm] 
+		\begin{tabular}{l l|c c c}
+			& & \textbf{B19}& \textbf{B22}& \textbf{B23} \\[0.1cm]
+			%\multicolumn{3}{c}{\textbf{Site A}} \\[0.1cm] 
 			\hline 
-			&& \\
-			$d_{L}^{CH}$ & [m] & 80.85 \\[0.15cm]
-			$d_{T}^{CH}$ & [m] & 70.9 \\[0.15cm]
-			$A_0$ W.E & [m] & 0.307 \\[0.15cm]
-			$A_0$ I.E. & [m] & 0.281519 \\[0.15cm]
-			$T_0$ & [$^{\text{o}}$C] & -29.41 \\[0.15cm]
-			$\rho_0$ & [$\text{kg}\,\text{m}^{-3}$] & 343.0\\[0.15cm]
-			$z_0$ & & 0.55 \\[0.15cm]
-			$s_L^{CH}$ & [cm] & 30.0 \\[0.15cm]
-			$s_T^{CH}$ & [cm] & 65.0 \\[0.15cm]
-			$\rho_L$ & [$\text{kg}\,\text{m}^{-3}$] & 836.0 \\[0.15cm]
-			$\rho_T$ & [$\text{kg}\,\text{m}^{-3}$] & 812.0 \\[0.15cm]		
-			$d_{L}^{TQ}$ & [m] & 80.87 \\[0.15cm]
-			$d_{T}^{TQ}$ & [m] & 70.90 \\[0.15cm]
-			$s_L^{TQ}$ & [cm] & 34.0 \\[0.15cm]
-			$s_T^{TQ}$ & [cm] & 40.0 \\[0.15cm]
+			&&&& \\
+			$d_{L}$ & [m] & 80.85 & 83.7 & 93.8 \\[0.15cm]
+			$d_{T}$ & [m] & 70.9 & 73.0 & 81.5\\[0.15cm]
+			$A_0$ W.E & [m] & 0.307 & 0.327 & 0.365\\[0.15cm]
+			$A_0$ I.E. & [m] & 0.282 & 0.300 & 0.335\\[0.15cm]
+			$T_0$ & [$^{\text{o}}$C] & -29.41 & -29.77 & -28.3 \\[0.15cm]
+		
+%			$d_{L}^{TQ}$ & [m] & 80.87 & 83.82 & 93.95 \\[0.15cm]
+%			$d_{T}^{TQ}$ & [m] & 70.90 & 73.01 & 81.55 \\[0.15cm]
+%			$s_L^{TQ}$ & [cm] & 34.0 & 30.0 & 30.0 \\[0.15cm]
+%			$s_T^{TQ}$ & [cm] & 40.0 & 57.0 & 55.0\\[0.15cm]
 			
 		\end{tabular}
-		\caption[Core specifications for core drilled at Site A.]{\small Core specifications for core drilled at Site A. $d$ describes depth of event, $A$ describes accumulation rate, $T$ describes temperature, $\rho$ describes density at given depth and $s$ describes the width of a given event. Subscripts $L$ and $T$ stands for volcanic events Laki and Tambora, respectively, subscript $0$ describes initial surface condition, and superscripts $CH$ and $TQ$ represents the original and corrected values for depth and width of events.}
-		\label{Tab:AWI_Bcores_CoreSpecs}
+		\caption[Core specifications for AWI B-cores]{\small }
+		\label{Tab:AWI_Bcores_Specs}
 	\end{table}
 	
 	
@@ -241,8 +237,6 @@
 	the NDFT (\cite{Tian2000}, \cite{Zhao2008}) but it has showed to be out of the scope of this project and has not been implemented. This of course slows down the final optimization algorithm, as it requires a number of spectral transformations. In Section \ref{Sec:Method} it is described how the final algorithm has been designed to minimize the use of NDCT, and thus speeding up the final computations.
 	
 	
-	\subsubsection[MEM][MEM]{Maximum Entropy Method (Burg's Method)}
-	\label{Subsubsec:SignalAnalysis_BackDiffusion_SpectralAnalysis_MEM}
 %	\todo{SIGNAL-MEM: Write this entire section - maybe not necessary? Maybe use in reconstruction of missing data...}
 	
 	
@@ -697,7 +691,7 @@
 	\section[Appendix X: DEP]{APPENDIX X: Dielectric Profiling}
 	\label{AppX:DEP}
 	
-	A method was later developed to demonstrate how both acids and salts play a decisive role in the determination of the electrical behavior of ice. The dielectric response of an ice core can be used to determine the total ionic concentration of the core. For ECM the measurements are sensitive to the fluctuating distance between ice core and electrodes, and after each measurement a fresh piece of ice needs to be prepared to repeat a measurement.
+	In this thesis has previously been presented a method for measuring electrical conductivity in ice cores, which is used for locating volcanic events.	A different method was later developed to demonstrate how both acids and salts play a decisive role in the determination of the electrical behavior of ice. The dielectric response of an ice core can be used to determine the total ionic concentration of the core. For ECM the measurements are sensitive to the fluctuating distance between ice core and electrodes, and after each measurement a fresh piece of ice needs to be prepared to repeat a measurement.
 	
 	A new dielectric profiling technique (DEP) was developed (REFERENCES) with the advantages over the ECM that no direct contact is needed between the electrodes and the ice, so that the ice can stay in a protective polythene sleeve and the experiment easily can be repeated on the same piece of ice. Together the ice core and the polythene sleeve creates a complete system, where the plastic acts as an electrical blocking layer.\\
 	The dielectric response is measured by a sweeping of the AF-LF frequency range for the entire ice-polythene system. At LF the conductivity of the composite system is within a few percentages of the intrinsic behavior of the ice itself. At HF-VHF frequencies it also approximates well enough (REFERENCES).
